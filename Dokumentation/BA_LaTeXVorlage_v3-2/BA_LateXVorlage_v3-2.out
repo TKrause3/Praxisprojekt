@@ -1,0 +1,28 @@
+\BOOKMARK [1][]{section.3}{1 Einleitung}{}% 1
+\BOOKMARK [2][]{subsection.4}{1.1 Problemstellung}{section.3}% 2
+\BOOKMARK [2][]{subsection.5}{1.2 Zielsetzung}{section.3}% 3
+\BOOKMARK [3][]{subsubsection.6}{1.2.1 Geplante Funktionsweise}{subsection.5}% 4
+\BOOKMARK [2][]{subsection.7}{1.3 Anforderungen}{section.3}% 5
+\BOOKMARK [3][]{subsubsection.8}{1.3.1 Funktionale Anforderungen}{subsection.7}% 6
+\BOOKMARK [3][]{subsubsection.9}{1.3.2 Organisationale Anforderungen}{subsection.7}% 7
+\BOOKMARK [3][]{subsubsection.10}{1.3.3 Qualitative Anforderungen}{subsection.7}% 8
+\BOOKMARK [1][]{section.11}{2 K\374nstliche Neuronale Netze}{}% 9
+\BOOKMARK [2][]{subsection.13}{2.1 Convolutional Neural Network}{section.11}% 10
+\BOOKMARK [2][]{subsection.15}{2.2 Abw\344gung von Neuronalen Netzen}{section.11}% 11
+\BOOKMARK [3][]{subsubsection.16}{2.2.1 Auswahl des Netzes}{subsection.15}% 12
+\BOOKMARK [1][]{section.22}{3 Durchf\374hrung}{}% 13
+\BOOKMARK [2][]{subsection.23}{3.1 Entwicklungsumgebung}{section.22}% 14
+\BOOKMARK [3][]{subsubsection.24}{3.1.1 Verwendete Hardware Konfiguration}{subsection.23}% 15
+\BOOKMARK [3][]{subsubsection.25}{3.1.2 Anaconda python}{subsection.23}% 16
+\BOOKMARK [2][]{subsection.26}{3.2 Frameworks}{section.22}% 17
+\BOOKMARK [3][]{subsubsection.27}{3.2.1 Tensorflow}{subsection.26}% 18
+\BOOKMARK [3][]{subsubsection.28}{3.2.2 Ben\366tigte Bibliotheken}{subsection.26}% 19
+\BOOKMARK [2][]{subsection.29}{3.3 Trainingsdaten Generieren}{section.22}% 20
+\BOOKMARK [3][]{subsubsection.30}{3.3.1 Funktionsweise}{subsection.29}% 21
+\BOOKMARK [3][]{subsubsection.31}{3.3.2 Auswahl der Klassen}{subsection.29}% 22
+\BOOKMARK [2][]{subsection.32}{3.4 Trainieren}{section.22}% 23
+\BOOKMARK [1][]{section.34}{4 Testergebnisse}{}% 24
+\BOOKMARK [1][]{section.39}{5 Fazit}{}% 25
+\BOOKMARK [2][]{subsection.40}{5.1 Bewertung durch Anforderungen}{section.39}% 26
+\BOOKMARK [2][]{subsection.41}{5.2 Bewertung der Netze}{section.39}% 27
+\BOOKMARK [1][]{section.42}{6 Aussicht}{}% 28

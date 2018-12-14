@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Schematischer Aufbau eines K\IeC {\"u}nstlichen neuronalen Netzes\relax }}{4}{figure.caption.12}
+\contentsline {figure}{\numberline {2}{\ignorespaces Funktionsweise eines Convolutional Neural Network\relax }}{6}{figure.caption.14}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ausgaben von Neuronalen Netzen\relax }}{7}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Makierung durch Maskierung}}}{7}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Makierung durch K\IeC {\"a}sten}}}{7}{figure.caption.18}
+\contentsline {figure}{\numberline {4}{\ignorespaces Analysiertes Bild, durch das Testnetz\relax }}{8}{figure.caption.21}
+\contentsline {figure}{\numberline {5}{\ignorespaces Loss Graph des umtrainierten inceptionV2\relax }}{17}{figure.caption.35}
+\contentsline {figure}{\numberline {6}{\ignorespaces Erster Test des Neuronalen Netzes\relax }}{18}{figure.caption.36}
+\contentsline {figure}{\numberline {7}{\ignorespaces Loss Graph des umtrainierten resnet101\relax }}{18}{figure.caption.37}
+\contentsline {figure}{\numberline {8}{\ignorespaces Objekt erkennung des optimierten resnet101\relax }}{19}{figure.caption.38}
