@@ -183,70 +183,61 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \setcounter{page}{1}
    
   
-  \section{Einleitung}
-Im Rahmen des Praxisprojektes in der Medieninformatik, geht es um die Definition und Umsetzung einer Projektidee, mit Hilfe zuvor erlernter Grundlagen aus den Modulen des Studiums und der Erarbeitung neuer Themen. Folgende Dokumentation beschreibt die ersten Entwicklungsschritte von der Ideenfindung über den Konzeptentwurf bis hin zur Durchführung. Sie umfasst neben einer Zieldefinition, die ersten Ergebnisse der Entwicklungsphase, sowie einer Evaluation der Trainingsphase im Hinblick auf die Anforderungen. Die bis zu diesem Projektstand ausgearbeiteten Ergebnisse sollen den Projektverlauf mit den getroffenen Abwägungen und Alternativen verdeutlichen. Zur Ausführung des Konzepts wird auf ein Projektplan gesetzt, der geplante Aktivitäten festlegt und gewünschte Ergebnisse in einem zeitlichen Rahmen definiert.
+  \section{Motivation}
+Das richtige Verwalten von Lebensmitteln, welche gekühlt im Kühlschrank aufbewahrt werden müssen, ist nicht immer leicht. Oft müssen schlecht gewordene Lebensmittel weggeschmissen werden, weil sie vergessen werden oder es fehlen Lebensmittel, welche gebraucht werden. Gerade in Haushalten mit mehreren Personen, wie zum Beispiel Familien oder Wohngemeinschaften, ist das Kühlschrankmanagement schwierig, da nicht jeder Bewohner weiß, welche Lebensmittel aus dem Kühlschrank genommen wurden und welche hineingelegt werden. Der häufigste Grund ist dabei die unzureichende Kommunikation unter den Bewohnern. Aus diesem Grund werden schnell verderbende Lebensmittel leicht vergessen oder Produkte durch fehlerhafte Absprache mehrfach oder nicht gekauft. \\ Eine Idee um dieses Problem zu lösen ist den Kühlschrankinhalt mithilfe einer Kamera, welche im Inneren des Kühlschranks angebracht ist, aufzuzeichnen und die enthaltenden Lebensmittel mit einem neuronalen Netz zu klassifizieren. Aus den Ergebnissen der Analyse wird nun eine Produktliste vom Inneren des Kühlschranks erstellt und anschließend in einer Datenbank gespeichert. Über eine mobile Anwendung können die erhobenen Daten dem Benutzer zur Verfügung gestellt werden.
   
-  \subsection{Problemstellung} 
-Das richtige Verwalten von Lebensmitteln, welche gekühlt im Kühlschrank aufbewahrt werden müssen, ist nicht immer leicht. Oft müssen schlecht gewordene Lebensmittel weggeschmissen werden, weil sie vergessen werden oder es fehlen Lebensmittel, welche gebraucht werden. Gerade in Haushalten mit mehreren Personen, wie zum Beispiel Familien oder Wohngemeinschaften, ist das Kühlschrankmanagement schwierig, da nicht jeder Bewohner weiß welche Lebensmittel aus dem Kühlschrank genommen wurden und welche hinein gelegt werden. Die Kommunikation dafür fehlt in den meisten fällen. Aus diesem Grund werden schnell verderbende Lebensmittel leicht vergessen oder Produkte durch fehlerhafte Absprache mehrfach oder nicht gekauft.
-  
-  \subsection{Zielsetzung}
-Im Laufe des Praxisprojektes soll ein Künstliches neuronales Netz entwickelt werden, welches den Inhalt eines Kühlschranks mit Hilfe einer Kameraaufnahme und anschließender Bilderkennung bestimmen kann. Dabei soll ermittelt werden, welche Lebensmittel sich im Kühlschrank befinden und seit wann diese gelagert werden. Außerdem könnten diese Informationen die Möglichkeit für weitere Anwendungen dienen.
-  
-  \subsubsection{Geplante Funktionsweise}
-Der Kühlschrankinhalt soll mithilfe einer drahtlosen Kamera, welche im inneren des Kühlschranks angebracht ist, aufgezeichnet werden. Beim schließen der Kühlschranktür soll unter Verwendung eines Kontaktsensors ein Bild aufgezeichnet und an ein externes System gesendet werden. Um ein gut sichtbares Bild zu erhalten, sollen verschiedene Möglichkeiten zur Verbesserung der Lichtverhältnisse evaluiert werden. Für die Bilderkennung so wie einer Klassifizierung sollen verschiedene Ansätze verglichen und anschließend bewertet werden. Durch die Klassifizierung soll das System alle Produkte, welche sich auf dem Bild befinden identifizieren und einordnen können. Aus den Ergebnissen der Analyse wird nun eine Produktliste vom Inneren des Kühlschranks erstellt und anschließend in einer Datenbank gespeichert. Das User Interface soll als mobile Anwendung implementiert werden, auf der alle erhobenen Informationen dem Benutzer in Form einer Liste zur Verfügung gestellt werden. Dabei kann der Benutzer aktuelle Informationen vom Server abrufen.
-\\
-\\
-Die ersten Schritte um das geplante System zu modellieren, ist die Entwicklung eines künstlichen neuronalen Netzes. Aus diesem Grund wird der Fokus für das Praxisprojekt, auf das künstliche neuronale Netz gelegt. Ziel des Projektes ist die Entwicklung eines neuronalen Netzes welches mehrere vordefinierte Klassen zuverlässig erkennt und zuordnen kann. Das Netz soll außerdem so konzipiert werden, das Produkte unabhängig ihrer Position im Bild erkannt werden können. Außerdem sollte das Neuronale Netz auch mit leicht verdeckten Objekten zurecht kommen. Ein Optionales Ziel welches erstrebenswert wäre ist eine Unempfindlichkeit gegenüber Licht- und Bildqualitätsverhältnissen.
+  \subsection{Ziele} 
+Ziel dieses Projektes ist die Entwicklung eines künstlichen neuronalen Netzes, welches mehrere vordefinierte Klassen zuverlässig erkennt und zuordnen kann. Das Netz soll außerdem so konzipiert werden, das Produkte unabhängig ihrer Position im Bild erkannt werden können. Desweiteren soll das neuronale Netz auch mit leicht verdeckten Objekten zurecht kommen. Ein optionales Ziel, welches ebenfalls erstrebenswert ist, ist eine Unempfindlichkeit gegenüber Licht- und Bildqualitätsverhältnissen.  ????????? Soll dieser Satz raus????
 
 \newpage
 	
   \subsection{Anforderungen}
-In diesem Kapitel, sollen die ersten Anforderungen an das zu entwickelnde künstliche neuronales Netz, welche mit Hilfe der Anforderungsschablonen von 'Die SOPHISTen'[QUELLE] verfasst wurden. Diese Anforderungen sind nicht endgültig oder gar vollzählig, da dass das Ziel für dieses Projekt kein voll funktionsfähiger Prototyp sein soll und weiter Anforderungen sich aus der Weiterentwicklung und Vervollständigung des Systems ergeben. 
+In diesem Kapitel sollen die Anforderungen an das zu entwickelnde künstliche neuronales Netz, mit Hilfe der Anforderungsschablonen von 'Die SOPHISTen'[QUELLE] definiert werden. 
   
   \subsubsection{Funktionale Anforderungen}
   
   \begin{itemize}
-\item Das System muss fähig sein, eingegebene Informationen in Bild- und Videoformat aufzunehmen und zu verarbeiten. 
-\item Das System muss fähig sein, die Trainierten Klassen zu erkennen und einzuordnen.
-\item Das System soll fähig sein, mehrere Objekte auf einem Bild gleichzeitig erkennen und und deren Position festzustellen.
+\item Das System muss fähig sein Bilder zu verarbeiten. 
+\item Das System muss fähig sein die trainierten Klassen zu erkennen und einzuordnen.
+\item Das System soll fähig sein mehrere Objekte auf einem Bild gleichzeitig zu erkennen und deren Position festzustellen.
   \end{itemize}  
 	
   \subsubsection{Organisationale Anforderungen}
   
  \begin{itemize}
-\item Das System wird so gestaltet sein das die Existierenden Klassen unkompliziert erweitert werden können.
-\item Das System wird so gestaltet sein, das es mit wenig aufwand betrieben werden kann.
-\item Die Installation benötigter Module, soll für den Benutzer so einfach wie möglich gemacht werden.
-\item Das System soll so gestaltet sein, das es einfach auf ein Endgerät transferiert werden kann.
+\item Das System wird so gestaltet sein, dass die existierenden Klassen unkompliziert erweitert werden können.
+\item Das System wird so gestaltet sein, dass es mit wenig Aufwand betrieben werden kann.
+\item Das System soll so gestaltet sein, dass es einfach auf ein Endgerät transferiert werden kann.
+\item Die Installation benötigter Module soll für den Benutzer so einfach wie möglich gemacht werden.
   \end{itemize}
   
   \subsubsection{Qualitative Anforderungen}
   
  \begin{itemize}
-\item Das System soll so ausgewählt werden, das die Geschwindigkeit der Objekterkennung möglichst hoch ist.
-\item Das zu Trainierende Netz, muss eine möglichst hohe Genauigkeit aufweisen. 
-\item Das zu entwickelnde Netz, soll auf den Aktuellen Plattformen arbeiten und neue Technologien unterstützen.
-\item Das system soll fähig sein, auch leicht verdeckte Objekte richtig zu identifizieren.
-\item Das System soll fähig sein, auch bei schlechten Bildverhältnissen gute Ergebnisse zu liefern.
+\item Das zu trainierende Netz muss eine möglichst hohe Genauigkeit aufweisen. 
+\item Das zu entwickelnde Netz soll auf den aktuellen Plattformen arbeiten und neue Technologien unterstützen.
+\item Das System soll so ausgelegt werden, dass die Geschwindigkeit der Objekterkennung möglichst hoch ist.
+\item Das System soll fähig sein leicht verdeckte Objekte richtig zu identifizieren.
+\item Das System soll fähig sein bei schlechten Bildverhältnissen gute Ergebnisse zu liefern.
   \end{itemize}  
   
   \section{Künstliche Neuronale Netze}  
-Der Begriff \"Neuronale Netze\" kommt aus der Biologie und beschreibt die Funktionsweise des Menschlichen Gehirn. Das Gehirn eines Menschen besteht aus ungefähr $10^{11}$ Nervenzellen[QUELLE], den so genannten Neuronen, welche untereinander verbunden sind. Diese nehmen Informationen auf. Wenn deren Schwellwert, welcher bei jedem Neuron unterschiedlich ist, überschritten wird, gibt er einen Wert an das nächste Neuron weiter. Das Netz ist unter anderem für das menschliche Lernen zuständig. Das bedeutet, dass ein neuronales Netz eine Verbindung aus vielen Nervenzellen bildet, welche erhaltene Informationen verarbeiten und weiter leiten. 
+Die Bezeichnung \"neuronale Netze\" kommt aus der Biologie und beschreibt die Funktionsweise des menschlichen Gehirns. Das Gehirn eines Menschen besteht aus ungefähr $10^{11}$ Nervenzellen[QUELLE], den so genannten Neuronen. Diese sind untereinander verbunden und tauschen Informationen aus. Wird eine bestimmte Reizschwelle überschritten, werden Signale an das nächste Neuron weitergegeben. Ein neuronales Netz kann somit als eine Verbindung aus vielen Nervenzellen bezeichnet werden, welches Informationen verarbeitet und weiterleitet. Das neuronale Netz ist unter anderem für das menschliche Lernen zuständig. 
 \\
 \\
-Ein künstliches neuronales Netz ist dementsprechend eine Nachbildung eines Menschlichen Gehirns welches auf Grundlage mathematischer Formeln arbeitet. Auf die verwendeten Formeln, wird in diesem Kapitel nicht eingegangen, eher soll die Funktionsweise erläutert werden. Künstliche Neuronale Netze (KNN) stellen einen Bestandteil des Maschinellen Lernens dar. Oft werden KNN,s für die Klassifizierung von Datensetzen (Bildern, Statistiken, Profile in Sozialen Netzwerken) verwendet. Netze welche auf eine Reihe von Klassen trainiert wurden, liefert nach Eingabeinformationen, eine oder mehrere Wahrscheinlichkeiten als Ausgabe. Diese Ausgabe soll dabei bestimmen, wie hoch die Wahrscheinlichkeit ist, das es sich bei der Eingabe um die Ermittelte Klasse handelt. Als Eingabe kann es sich Beispielsweise um ein Bild oder Video handeln. Die Klassen auf welche das Neuronale Netz Trainiert ist, können dabei Hunde und Katzen sein. Das Künstliche Neuronale Netz soll also berechnen ob es sich auf dem eingegebenen Bild um eine Katze oder einen Hund handelt.
+Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines menschlichen Gehirns, welches auf Grundlage mathematischer Formeln arbeitet. Auf die verwendeten Formeln, wird in dieser Arbeit nicht eingegangen, eher soll die Funktionsweise von künstlichen neuronalen Netzen erläutert werden. Künstliche Neuronale Netze (KNN) stellen einen Bestandteil des maschinellen Lernens dar. Oft werden KNN für die Klassifizierung von Datensätzen (Bildern, Statistiken, Profile in sozialen Netzwerken) verwendet. Das Ergebnis der Klassifikation ist eine Zugehörigkeitswahrscheinlichkeit der Eingabedaten zu den definierten Klassen.
 \\
 \\
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.5]{Sources/nnet.png}
-		\caption{Schematischer Aufbau eines Künstlichen neuronalen Netzes}
+		\caption{Schematischer Aufbau eines künstlichen neuronalen Netzes [QUELLE] }
 	\label{img:KNN}
 \end{figure}
 \\
 \\
-Der Aufbau eines Künstlichen Neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht, ist der \"Input Layer\". Dieser \"Layer\" bekommt alle Eingangsdaten von einem Bild. Jedes Pixel auf dem Bild wird mit einem Neuron verbunden, dabei hat jedes Neuron eine andere Gewichtung und Schwellwert bei dem er Informationen weiter leitet. Wird der Schwellwert erreicht, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \"Hidden Layer\". Jeder \"Layer\" ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie Beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \"Layer\" durchlaufen wurden. Die dritte Schicht besteht aus dem \"Output Layer\". Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \"Output Layer\" mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, um welche Klasse es sich in dem Bild handelt.
+Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \"Input Layer\". Dieser \"Layer\" bekommt alle Eingangsdaten von einem Bild. Jeder Pixel auf dem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \"Hidden Layer\". Jeder \"Layer\" ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \"Layer\" durchlaufen wurden. Die dritte Schicht besteht aus dem \"Output Layer\". Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \"Output Layer\" mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
 
 
   \subsection{Convolutional Neural Network}
@@ -259,14 +250,14 @@ Bei einem \"Convolutional Layer\" (Abbildung \ref{img:CNN}), oder auch im Deutsc
     [h]
 	\centering
 	\includegraphics[scale=1.5]{Sources/cnn.png}
-		\caption{Funktionsweise eines Convolutional Neural Network}
+		\caption{Funktionsweise eines Convolutional Neural Network [QUELLE]}
 	\label{img:CNN}
 \end{figure}
 
-Der \"Pooling Layer\" (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \"Convolutional Layer\". Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und Horizontal wie auch Vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen, oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus \"Fully Connected Layer\" welche den normalen Aufbau eines künstlichen neuronalen Netzes darstellt. Das bedeutet, alle Ausgaben werden wie beim KNN mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Wahrscheinlichkeiten der Objekte berechnet.
+Der \"Pooling Layer\" (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \"Convolutional Layer\". Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und Horizontal wie auch Vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen, oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus \"Fully Connected Layer\" welche den normalen Aufbau eines künstlichen neuronalen Netzes darstellt. Das bedeutet, alle Ausgaben werden wie beim KNN mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Wahrscheinlichkeiten der Objekte berechnet[QUELLE].
   
   \subsection{Abwägung von Neuronalen Netzen} 
-Für das Entwickeln eines neuen neuronalen Netzes wird eine hohe Anzahl an Trainingsdaten sowie viel Rechenleistung benötigt. Bestehende Netze wurden mit mehreren 100 Tausend Bilden, Tage, bis Wochen lang trainiert. Eine andere Möglichkeit besteht darin, frei verfügbar trainierte Netze zu verwenden. Diese Netze haben für ihre bis zu 80 Klassen eine Genauigkeit von durchschnittlich 90 Prozent oder eine mAP von 30. Einige dieser trainierten Netze werden von Unternehmen als Open-Source zur Verfügung gestellt.
+Für das Entwickeln eines neuen neuronalen Netzes wird eine hohe Anzahl an Trainingsdaten sowie viel Rechenleistung benötigt. Bestehende Netze wurden mit mehreren 100 Tausend Bilden, mehrere Tage, bis Wochen lang trainiert. Eine andere Möglichkeit besteht darin, frei verfügbar trainierte Netze zu verwenden. Diese Netze haben für ihre bis zu 80 Klassen eine Genauigkeit von durchschnittlich 90 Prozent oder eine mAP (Mean Average Precision) von 30. Einige dieser trainierten Netze werden von Unternehmen als Open-Source zur Verfügung gestellt.
 \\
 \\
 Um ein eigenes Netz mit einer annähernd hohen Genauigkeit zu erreichen ist in der Hinsicht auf die eigenen Ressourcen schwierig. Aus diesem Grund, soll für das Projekt ein bestehendes Neuronales ausgewählt werden welches mit eigenen Klassen und Trainingsdaten trainiert wird. Die Kriterien für das ausgewählte Netz, sind zum einen eine hohe Genauigkeit und eine moderate Geschwindigkeit haben mit der das spätere System effizient arbeiten kann. Der wichtige Aspekt ist die Genauigkeit und Verlässlichkeit der Prognosen. Weitere Anforderungen wurden in den vorherigen Kapiteln bereits aufgestellt.
@@ -304,7 +295,7 @@ ssd\_resnet\_50\_fpn\_coco & 76 ms & 35 & Boxen
 \end{table}
 
 
-In der Tabelle, werden 6 mögliche Modelle aufgeführt. Beschrieben werden diese durch eine Geschwindigkeit in welcher das Neuronale Netz im durchschnitt arbeitet, einer Genauigkeit und eines Ausgabetyps. Die zweite Spalte, COCO mAP (Mean Average Precision) gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich auf alle ausgeführten Durchläufe des Systems. In der Letzten spalte wird die Ausgabeform beschrieben. Hierbei kann zwischen Boxen und Masken unterschieden werden. Dabei wird je nach Ausgabetyp entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das object erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen.
+In der Tabelle, werden 6 mögliche Modelle aufgeführt. Beschrieben werden diese durch eine Geschwindigkeit in welcher das Neuronale Netz im durchschnitt arbeitet, einer Genauigkeit und eines Ausgabetyps. Die zweite Spalte, COCO mAP gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich auf alle ausgeführten Durchläufe des Systems. In der Letzten spalte wird die Ausgabeform beschrieben. Hierbei kann zwischen Boxen und Masken unterschieden werden. Dabei wird je nach Ausgabetyp entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das object erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen.
 
 %einbinden einer Grafik 
 \begin{figure} 
@@ -314,7 +305,7 @@ In der Tabelle, werden 6 mögliche Modelle aufgeführt. Beschrieben werden diese
     \label{img:Mask} 
     \subfigure[Makierung durch Kästen]{\includegraphics[width=0.39\textwidth]{Sources/boxes.jpg}}
     \label{img:Boxes} 
-\caption{Ausgaben von Neuronalen Netzen} 
+\caption{Ausgaben von Neuronalen Netzen [QUELLE]} 
 \end{figure} 
 
 \newpage
@@ -328,7 +319,7 @@ Das ausgewählte Modell wurde für Testzwecke mit 6 Klassen um-trainiert. Die Kl
     [h]
 	\centering
 	\includegraphics[scale=0.5]{Sources/kartenset.png}
-	\caption{Analysiertes Bild, durch das Testnetz}
+	\caption{Analysiertes Bild, durch das Testnetz [QUELLE]}
 	\label{img:Kartenset}
 \end{figure}
 \\
@@ -414,7 +405,7 @@ Pandas ist eine Programmbibliothek von Python. Der Name stammt von \"Paneldata\"
   \end{itemize}
   
 \textbf{opencv-python}\\\\
-OpenCV ist ein Bildverarbeitungsprogramm, mit welchem einige Parameter von Bildern und Videos verändert werden können. OpenCV steht dabei für \"Open Computer Vision\" und beschäftigt sich mit dem Maschinellen sehen. Dadurch, das dass zu entwickelnde CNN auf Basis von visuellen Daten arbeiten soll, welche mehr als ein Objekt gleichzeitig beinhalten kann, benötigen wir eine Aufteilung von Bildbereichen. Weitere Einsatzbereiche entstehen dann, wenn Beispielsweise die Helligkeit des Bildes nicht ausreicht. Hierbei kann die Helligkeit künstlich angepasst werden.
+OpenCV steht für „Open Source Computer Vision Library“ und ist eine freie Programmbibliothek für maschinelles Sehen. Dadurch, das dass zu entwickelnde CNN auf Basis von visuellen Daten arbeiten soll, welche mehr als ein Objekt gleichzeitig beinhalten kann, benötigen wir eine Aufteilung von Bildbereichen. Weitere Einsatzbereiche entstehen dann, wenn Beispielsweise die Helligkeit des Bildes nicht ausreicht. Hierbei kann die Helligkeit künstlich angepasst werden.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade opencv-python
@@ -449,7 +440,7 @@ Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu
 
   \item ID: 5 Name: 'Brunch, Aufstrich'
 
-  \item ID: 6 Name: 'Margarine'
+  \item ID: 6 Name: 'Margarine, Aufstrich'
   
   \end{itemize}
     
@@ -458,7 +449,7 @@ Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu
   
   \subsection{Trainieren}
 Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden kann, muss ein großer Datensatz generiert werden. Wie im obrigen Abschnitt beschrieben, werden Klassen ausgewählt, welche eine gewisse Ähnlichkeit aufweisen. Dadurch soll überprüft werden, ob das neuronale Netz auch Objekte mit nur kleinen Unterschieden auseinanderhalten kann.\\
-Die ausgewählten Objekte für die Klassifizierung, sind jeweils zwei Packungen, Flaschen und Aufstriche. Wie die Einteilung der Klassen im Detail aussehen wird in der Folgenden Tabelle gezeigt.
+Als Testobjekte wurden zwei Tetra Packs, zwei Flaschen und zwei Aufstriche verwendet. Die Einteilung der Klassen wird in der folgenden Tabelle gezeigt.
 \\
 \\
 
@@ -489,11 +480,11 @@ Die ausgewählten Objekte für die Klassifizierung, sind jeweils zwei Packungen,
 
 \vspace{1 cm}
 
-Zunächst müssen Testdaten in Form von Bildern generiert werden, dafür wurden zum einen, Bilder von Online-Suchmaschinen, je nach Verwendbarkeit für das Netz heruntergeladen. Dabei sollte das Bild eine Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht zusätzlich mehr Zeit benötigt. Des weiteren wurden Objekte der aufgeführten Klassen, in verschiedensten Winkeln und Lichtverhältnissen Fotografiert. Die aufgenommenen Bilder übersteigen mit 3-5 MB die maximale Größe der Testdaten. Aus diesem Grund, werden die Bilder mit einem Programm um den Faktor 0.2 verkleinert. Verwendet wird für die Komprimierung ein in Python geschriebenes Programm (reziser.py).\\
+Zunächst müssen Testdaten in Form von Bildern generiert werden, dafür wurden zum einen, Bilder von Online-Suchmaschinen, je nach Verwendbarkeit für das Netz heruntergeladen. Dabei sollte das Bild eine Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht zusätzlich mehr Zeit benötigt. Des weiteren wurden Objekte der aufgeführten Klassen, in verschiedensten Winkeln und Lichtverhältnissen Fotografiert. Die aufgenommenen Bilder übersteigen mit 3-5 MB die maximale Größe der Testdaten. Aus diesem Grund, wurden die Bilder mit einem Programm um den Faktor 0.2 verkleinert. Verwendet wird für die Komprimierung ein in Python geschriebenes Programm (reziser.py).\\
 \\
-Damit die API von Tensorflow weiß, welche Klassen auf dem Bild zu sehen sind und wo sich diese im Bild befinden, müssen die Bilder gelabelt werden. Das Programm labelImg.py wird dafür verwendet. Hier wird jedes Bild mit den Positionsdaten und und der Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem Markieren werden Die Daten in Trainings und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML Dateien, in zwei CSV Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle Notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
+Damit die API von Tensorflow weiß, welche Klassen auf dem Bild zu sehen sind und wo sich diese im Bild befinden, müssen die Bilder gelabelt werden, hierfür wurde das Programm labelImg.py verwendet. Beim labeln werden die zu klassifiezierenden Objekte auf dem Bild mit den Positionsdaten und Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem markieren werden Die Daten in Trainings und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML Dateien, in zwei CSV Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle Notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
 \\
-Nachdem alle Bilddaten gelabelt wurden und die CSV Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Für das Training benötigen wir die Trainingsdaten, welche im vorhinein erstellt wurden, eine Labelmap (labelmap.pbtxt) in welcher unsere Ausgewählten Klassen eingetragen sind. Außerdem brauchen wir die konfigurations Datei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco). Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
+Nachdem alle Bilddaten gelabelt wurden und die CSV Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Zusätzlich zu den Traningsdaten wird eine  Labelmap (labelmap.pbtxt) benötigt in welcher die ausgewählten Klassen eingetragen sind ???Was sind die Ausgewählten KLassen, bzw was meinst du mit ausgewählt???. Außerdem brauchen wir die konfigurations Datei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco). Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
 Zusätzlich Parameter: \\
 \textbf{--logtostderr}\\
 \textbf{--train\_dir=training/}\\
@@ -511,12 +502,12 @@ Gibt den Pfad zur letzten Speicherstand des Trainings an.\\
 \textbf{--output\_directory inference\_graph}\\
 Bestimmt den Ort an welchen der Graph exportiert wird.\\\\
 
-Ab diesem Zwischenstand, kann das Neuronale Netz für die Objekterkennung verwendet werden. Im weiteren Unterpunkt, wird das Netz mit Ungelabelten Bildern getestet. Dabei soll herausgestellt werden, wie zuverlässig das Netz ist und ob es alle Objekte erkennt.
+Ab diesem Zwischenstand, kann das Neuronale Netz für die Objekterkennung verwendet werden.
   
 \newpage
 
 \section{Testergebnisse}
-Wie im vorherigen Kapitel schon beschrieben wurde, soll in diesem Kapitel die Zuverlässigkeit sowie Geschwindigkeit, des neuronalen Netzes geprüft und ausgewertet werden. Dabei wurden Testbilder verwendet, welche nicht im Trainings- und Testdatensatz vorhanden waren. Es soll sichergestellt werden, dass das Netz die Objekte nicht durch das Training kennt.
+In diesem Kapitel soll die Zuverlässigkeit sowie Geschwindigkeit, des neuronalen Netzes geprüft und ausgewertet werden. Dazu wird das Netz mit ungelabelten Bildern getestet, wobei nur Testbilder verwendet werden, welche nicht im Trainings- und Testdatensatz vorhanden waren. Es soll sichergestellt werden, dass das Netz die Objekte nicht durch das Training kennt. Anschließend wird überprüft wie zuverlässig das Netz ist und ob es alle Objekte erkannt hat. 
 \\
 Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den fortschritt des Trainings grafisch darzustellen. In der folgenden Grafik wird der auftretende 'Loss' in Verhältnis zu der Trainingszeit gestellt. 
 \\
