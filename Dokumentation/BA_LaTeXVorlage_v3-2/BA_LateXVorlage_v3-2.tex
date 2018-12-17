@@ -221,10 +221,10 @@ In diesem Kapitel sollen die Anforderungen an das zu entwickelnde künstliche ne
 \item Das System soll fähig sein bei schlechten Bildverhältnissen gute Ergebnisse zu liefern.
   \end{itemize}  
   
-  \section{Künstliche Neuronale Netze}  
+  \section{Neuronale Netze}  
 Die Bezeichnung \"neuronale Netze\" kommt aus der Biologie und beschreibt die Funktionsweise des menschlichen Gehirns. Das Gehirn eines Menschen besteht aus ungefähr $10^{11}$ Nervenzellen[QUELLE], den so genannten Neuronen. Diese sind untereinander verbunden und tauschen Informationen aus. Wird eine bestimmte Reizschwelle überschritten, werden Signale an das nächste Neuron weitergegeben. Ein neuronales Netz kann somit als eine Verbindung aus vielen Nervenzellen bezeichnet werden, welches Informationen verarbeitet und weiterleitet. Das neuronale Netz ist unter anderem für das menschliche Lernen zuständig. 
 \\
-\\
+\subsection{Künstliches neuronales Netz}
 Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines menschlichen Gehirns, welches auf Grundlage mathematischer Formeln arbeitet. Auf die verwendeten Formeln, wird in dieser Arbeit nicht eingegangen, eher soll die Funktionsweise von künstlichen neuronalen Netzen erläutert werden. Künstliche Neuronale Netze (KNN) stellen einen Bestandteil des maschinellen Lernens dar. Oft werden KNN für die Klassifizierung von Datensätzen (Bildern, Statistiken, Profile in sozialen Netzwerken) verwendet. Das Ergebnis der Klassifikation ist eine Zugehörigkeitswahrscheinlichkeit der Eingabedaten zu den definierten Klassen.
 \\
 \\
@@ -237,14 +237,14 @@ Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines mensc
 \end{figure}
 \\
 \\
-Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \"Input Layer\". Dieser \"Layer\" bekommt alle Eingangsdaten von einem Bild. Jeder Pixel auf dem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \"Hidden Layer\". Jeder \"Layer\" ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \"Layer\" durchlaufen wurden. Die dritte Schicht besteht aus dem \"Output Layer\". Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \"Output Layer\" mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
+Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \"Input Layer\". Dieser \"Layer\" bekommt alle Eingangsdaten von einem Bild ??????nixht nur bilder möglich??????. Jeder Pixel auf dem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \"Hidden Layer\". Jeder \"Layer\" ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \"Layer\" durchlaufen wurden. Die dritte Schicht besteht aus dem \"Output Layer\". Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \"Output Layer\" mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
 
 
-  \subsection{Convolutional Neural Network}
-Anders als bei einem KNN, welches auf Grundlage des Menschlichen Gehirns entworfen wurde, orientiert sich ein \"Convolutional Neural Network\" (CNN) an dem Konzept des menschlichen Sehens. Dabei werden maschinell, kleine Bereiche visueller Informationen so simuliert, als wären sie benachbarte Sehnerven im Auge[QUELLE]. Gerade für die Verarbeitung von Bilddaten werden häufig \"Convolutional Neural Networks\" eingesetzt. Voraussetzung für ein CNN ist die Darstellung und Anordnung der Datenpunkte. Diese müssen eine matrixartige Anordnung von Werten haben, wie beispielsweise Pixel.
+  \subsection{Convolutional Neural Network / faltendes neuronales Netzwerk ????????????????????????? überschrieften mal in deutsch mal in englisch  ??????????????????????}
+Anders als bei einem KNN, welches auf Grundlage des menschlichen Gehirns entworfen wurde, orientiert sich ein \"Convolutional Neural Network\" (CNN) an dem Konzept des menschlichen Sehens. Dabei werden maschinell kleine Bereiche visueller Informationen so simuliert, als wären sie benachbarte Sehnerven im Auge[QUELLE]. Gerade für die Verarbeitung von Bilddaten werden häufig \"Convolutional Neural Networks\" eingesetzt. Voraussetzung für die Verwendung eines CNN ist die matrixartige Anordnung der Datenpunkte, wie beispielweise bei einem digitalen Bild.
 \\
 \\
-Bei einem \"Convolutional Layer\" (Abbildung \ref{img:CNN}), oder auch im Deutschen Faltungsschicht, werden über die Pixel des Eingabebildes eine Schablone gelegt. Diese wird je nach Bildgröße, mehrere male Horizontal wie auch Vertikal verschoben. Diese Layer haben meist eine ungerade quadratische Abmessung (3x3, 5x5, 7x7). Die frühen schichten bilden zunächst ein Skalarprodukt der betroffenen Pixel und können dadurch grobe kanten erkennen. Jeder Layer ist dabei auf eine bestimmte Art von Mustern trainiert. Je mehr Layer durchlaufen, desto genauer werden die Muster welche das neuronale Netz erkennt und umso mehr wird das Eingabebild runter skaliert.
+Bei einem \"Convolutional Layer\" (Abbildung \ref{img:CNN}) wird über die Pixel des Eingabebildes eine Schablone gelegt. Die Schablone wird je nach Bildgröße mehrfach horizontal, wie auch vertikal verschoben. Diese Layer haben meist eine ungerade quadratische Abmessung (3x3, 5x5, 7x7). Die frühen Schichten bilden zunächst ein Skalarprodukt der betroffenen Pixel und können dadurch grobe Kanten erkennen. Jeder Layer ist dabei auf eine bestimmte Art von Mustern trainiert. Je mehr Layer durchlaufen werden, desto genauer werden die Muster, welche das neuronale Netz erkennt.
 
 \begin{figure}
     [h]
@@ -254,84 +254,15 @@ Bei einem \"Convolutional Layer\" (Abbildung \ref{img:CNN}), oder auch im Deutsc
 	\label{img:CNN}
 \end{figure}
 
-Der \"Pooling Layer\" (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \"Convolutional Layer\". Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und Horizontal wie auch Vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen, oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus \"Fully Connected Layer\" welche den normalen Aufbau eines künstlichen neuronalen Netzes darstellt. Das bedeutet, alle Ausgaben werden wie beim KNN mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Wahrscheinlichkeiten der Objekte berechnet[QUELLE].
-  
-  \subsection{Abwägung von Neuronalen Netzen} 
-Für das Entwickeln eines neuen neuronalen Netzes wird eine hohe Anzahl an Trainingsdaten sowie viel Rechenleistung benötigt. Bestehende Netze wurden mit mehreren 100 Tausend Bilden, mehrere Tage, bis Wochen lang trainiert. Eine andere Möglichkeit besteht darin, frei verfügbar trainierte Netze zu verwenden. Diese Netze haben für ihre bis zu 80 Klassen eine Genauigkeit von durchschnittlich 90 Prozent oder eine mAP (Mean Average Precision) von 30. Einige dieser trainierten Netze werden von Unternehmen als Open-Source zur Verfügung gestellt.
-\\
-\\
-Um ein eigenes Netz mit einer annähernd hohen Genauigkeit zu erreichen ist in der Hinsicht auf die eigenen Ressourcen schwierig. Aus diesem Grund, soll für das Projekt ein bestehendes Neuronales ausgewählt werden welches mit eigenen Klassen und Trainingsdaten trainiert wird. Die Kriterien für das ausgewählte Netz, sind zum einen eine hohe Genauigkeit und eine moderate Geschwindigkeit haben mit der das spätere System effizient arbeiten kann. Der wichtige Aspekt ist die Genauigkeit und Verlässlichkeit der Prognosen. Weitere Anforderungen wurden in den vorherigen Kapiteln bereits aufgestellt.
-\\
-\\
-In der folgenden Abwägung, wurden einige verfügbare Netze aufgeführt, die für Tensorflow zur Verfügung gestellt werden. Dabei werden die aufgeführten Modelle in Genauigkeit und Geschwindigkeit verglichen.
- 
-  \subsubsection{Auswahl des Netzes} 
-In Hinsicht auf Trainierte Netze bietet \"Tensorflow\" einige Möglichkeiten an. Hierbei handelt es sich um die \"Tensorflow detection model zoo\"[QUELLE] welche mit verschiedensten Datensätzen und Durchläufen trainiert wurden. Die Datensätze die verwendet wurden sind unter anderem das COCO dataset, das Kitti dataset, das Open Images dataset, das AVA v2.1 dataset und das iNaturalist Species Detection Dataset. Die COCO-Models bieten das größte Spektrum an Netzen. Bei dem COCO Datenset handelt es sich um 'Common Objects In Context' und beinhaltet rund 330 Tausend Bilder, welche über 1.5 Millionen schichten in 90 Klassen trainiert wurden. Da es sich um häufige auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für unser vorhaben geeignet. In der folgenden Tabelle, wurden ein paar dieser Modelle ausgesucht und verglichen.
-\\
-\\
+Der \"Pooling Layer\" (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \"Convolutional Layer\". Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und horizontal wie auch vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen, oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus dem \"Fully Connected Layer\", welcher den normalen Aufbau eines künstlichen neuronalen Netzes darstellt. Das bedeutet alle Ausgaben werden, wie bei einem KNN, mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Zuordnungswahrscheinlichkeiten der Objekte zu den trainierten Klassen berechnet[QUELLE].
 
-\begin{table}
-[h]
-\begin{tabular}{|l|c|c|c|}
- 
-Modell Name & Geschwindigkeit & COCO mAP & Ausgabe\\
- & & & \\
-faster\_rcnn\_inception\_v2\_coco & 58 ms & 28 & Boxen\\
- & & & \\
-faster\_rcnn\_resnet50\_coco & 89 ms & 30 & Boxen\\
- & & & \\
-rfcn\_resnet101\_coco & 92 ms & 30 & Boxen\\
- & & & \\
-faster\_rcnn\_resnet101\_coco & 106 ms & 32 & Boxen\\
- & & & \\
-ssd\_mobilenet\_v1\_fpn\_coco & 53 ms & 32 & Boxen\\
- & & & \\
-ssd\_resnet\_50\_fpn\_coco & 76 ms & 35 & Boxen
-
-\vspace{0.5 cm}
- 
-\end{tabular}
-\caption{Trainierte Modelle auf dem COCO Dataset [QUELLE]}
-\end{table}
-
-
-In der Tabelle, werden 6 mögliche Modelle aufgeführt. Beschrieben werden diese durch eine Geschwindigkeit in welcher das Neuronale Netz im durchschnitt arbeitet, einer Genauigkeit und eines Ausgabetyps. Die zweite Spalte, COCO mAP gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich auf alle ausgeführten Durchläufe des Systems. In der Letzten spalte wird die Ausgabeform beschrieben. Hierbei kann zwischen Boxen und Masken unterschieden werden. Dabei wird je nach Ausgabetyp entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das object erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen.
-
-%einbinden einer Grafik 
-\begin{figure} 
-	[h]
-	\centering
-    \subfigure[Makierung durch Maskierung]{\includegraphics[width=0.39\textwidth]{Sources/sample.jpg}}
-    \label{img:Mask} 
-    \subfigure[Makierung durch Kästen]{\includegraphics[width=0.39\textwidth]{Sources/boxes.jpg}}
-    \label{img:Boxes} 
-\caption{Ausgaben von Neuronalen Netzen [QUELLE]} 
-\end{figure} 
-
-\newpage
-
-Bei dem Vergleich der Aufgezählten Modellen fällt auf, das alle eine ähnliche Genauigkeit aufweisen und sich leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet, und ausgewertet.
-\\
-
-Das ausgewählte Modell wurde für Testzwecke mit 6 Klassen um-trainiert. Die Klassen bestanden aus einem Skart-kartenset von Neun bis Ass [QUELLE]. Rund Fünf Stunden wurde das Netz trainiert, und hat dabei 60 tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergeben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
-\\
-\begin{figure}
-    [h]
-	\centering
-	\includegraphics[scale=0.5]{Sources/kartenset.png}
-	\caption{Analysiertes Bild, durch das Testnetz [QUELLE]}
-	\label{img:Kartenset}
-\end{figure}
-\\
-Das erfolgreiche Training und testen des Netzes hat die Verwendung des Ausgewählten Modells bestärkt. Die Vorgehensweise sieht in den weiteren Schritten eine Definition und Festlegung der Trainings-Daten für das benötigte neuronale Netz. 
-
-\newpage
 
   \section{Durchführung}
-In diesem Kapitel der Dokumentation, wird die Praktische Durchführung beschrieben und Entscheidungen aufgeführt. Dabei werden die verwendeten Frameworks und die Entwicklungsumgebung aufgezeigt und erläutert. Im weiteren geht es um das festlegen der Klassen für das Netz und die anschließende Durchführung.
+In diesem Kapitel wird die praktische Durchführung beschrieben und gemachte Entscheidungen erläutert. Zu beginn werden die verwendeten Frameworks und die Entwicklungsumgebung vorgestellt. Da für das erstellen eines neuronalen Netzes eine hohe Anzahl an Trainingsdaten, sowie viel Rechenleistung benötigt wird, folgt eine evaluation von vortrainierten Netzen welche für diese Projekt verwendert werden sollen. Im Anschluss werden die zuverwendenden Klassen und Trainingsdaten erstellt. Abschließend werden die ausgewählten Netze mit den generierten Trainingsdaten trainiert. \\
+\\
 
 \subsection{Entwicklungsumgebung}
-Um ein bestehendes neuronales Netz neu zu trainieren werden neben dem dem Neuronalen Netz weitere Frameworks sowie eine Entwicklungsumgebung benötigt. In den kommenden Unterpunkten wird die Entwicklungsumgebung sowie alle benötigten Bibliotheken aufgeführt. 
+Um ein bestehendes neuronales Netz neu zu trainieren werden neben dem Neuronalen Netz weitere Frameworks sowie eine Entwicklungsumgebung benötigt. In den kommenden Unterpunkten wird die Entwicklungsumgebung sowie alle benötigten Bibliotheken aufgeführt. 
 
   \subsubsection{Verwendete Hardware Konfiguration}
 Das Netz wurde auf einem Windows 8.1 Betriebssystem trainiert. Berechnet wurden die Trainingsschritte von einer Nvidia GeForce GTX 980 GPU mit 4GB VRAM, einer Intel Core i5 CPU und 16GB RAM (Arbeitsspeicher). Für einen Trainingsschritt, mit dem ausgewählten Netz, benötigt die Grafikkarte durchschnittlich 250ms. Im Vergleich hat die CPU 2 Sekunden pro Schritt benötigt. Die Grafikkarte arbeitet somit 8 mal schneller durch den Vorteil mit Matrixmultiplikationen und soll für das Training verwendet werden.
@@ -410,6 +341,71 @@ OpenCV steht für „Open Source Computer Vision Library“ und ist eine freie P
   \begin{itemize}
 \item Installation in Python: pip install --upgrade opencv-python
   \end{itemize}
+
+  \subsection{Abwägung von neuronalen Netzen} 
+In der folgenden Abwägung werden einige verfügbare Netze aufgeführt, die für Tensorflow zur Verfügung gestellt werden. Dabei werden die aufgeführten Modelle in Genauigkeit und Geschwindigkeit verglichen.
+ 
+  \subsubsection{Auswahl des Netzes} 
+In Hinsicht auf Trainierte Netze bietet \"Tensorflow\" einige Möglichkeiten an. Hierbei handelt es sich um die \"Tensorflow detection model zoo\"[QUELLE] welche mit verschiedensten Datensätzen und Durchläufen trainiert wurden. Die Datensätze die verwendet wurden sind unter anderem das COCO dataset, das Kitti dataset, das Open Images dataset, das AVA v2.1 dataset und das iNaturalist Species Detection Dataset. Die COCO-Models bieten das größte Spektrum an Netzen. Bei dem COCO Datenset handelt es sich um 'Common Objects In Context' und beinhaltet rund 330 Tausend Bilder, welche über 1.5 Millionen schichten in 90 Klassen trainiert wurden. Da es sich um häufige auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für unser vorhaben geeignet. In der folgenden Tabelle, wurden ein paar dieser Modelle ausgesucht und verglichen.
+\\
+\\
+
+\begin{table}
+[h]
+\begin{tabular}{|l|c|c|c|}
+ 
+Modell Name & Geschwindigkeit & COCO mAP & Ausgabe\\
+ & & & \\
+faster\_rcnn\_inception\_v2\_coco & 58 ms & 28 & Boxen\\
+ & & & \\
+faster\_rcnn\_resnet50\_coco & 89 ms & 30 & Boxen\\
+ & & & \\
+rfcn\_resnet101\_coco & 92 ms & 30 & Boxen\\
+ & & & \\
+faster\_rcnn\_resnet101\_coco & 106 ms & 32 & Boxen\\
+ & & & \\
+ssd\_mobilenet\_v1\_fpn\_coco & 53 ms & 32 & Boxen\\
+ & & & \\
+ssd\_resnet\_50\_fpn\_coco & 76 ms & 35 & Boxen
+
+\vspace{0.5 cm}
+ 
+\end{tabular}
+\caption{Trainierte Modelle auf dem COCO Dataset [QUELLE]}
+\end{table}
+
+
+In der Tabelle, werden 6 mögliche Modelle aufgeführt. Beschrieben werden diese durch eine Geschwindigkeit in welcher das Neuronale Netz im durchschnitt arbeitet, einer Genauigkeit und eines Ausgabetyps. Die zweite Spalte, COCO mAP gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich auf alle ausgeführten Durchläufe des Systems. In der Letzten spalte wird die Ausgabeform beschrieben. Hierbei kann zwischen Boxen und Masken unterschieden werden. Dabei wird je nach Ausgabetyp entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das object erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen.
+
+%einbinden einer Grafik 
+\begin{figure} 
+	[h]
+	\centering
+    \subfigure[Makierung durch Maskierung]{\includegraphics[width=0.39\textwidth]{Sources/sample.jpg}}
+    \label{img:Mask} 
+    \subfigure[Makierung durch Kästen]{\includegraphics[width=0.39\textwidth]{Sources/boxes.jpg}}
+    \label{img:Boxes} 
+\caption{Ausgaben von Neuronalen Netzen [QUELLE]} 
+\end{figure} 
+
+\newpage
+
+Bei dem Vergleich der Aufgezählten Modellen fällt auf, das alle eine ähnliche Genauigkeit aufweisen und sich leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet, und ausgewertet.
+\\
+
+Das ausgewählte Modell wurde für Testzwecke mit 6 Klassen um-trainiert. Die Klassen bestanden aus einem Skart-kartenset von Neun bis Ass [QUELLE]. Rund Fünf Stunden wurde das Netz trainiert, und hat dabei 60 tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergeben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
+\\
+\begin{figure}
+    [h]
+	\centering
+	\includegraphics[scale=0.5]{Sources/kartenset.png}
+	\caption{Analysiertes Bild, durch das Testnetz [QUELLE]}
+	\label{img:Kartenset}
+\end{figure}
+\\
+Das erfolgreiche Training und testen des Netzes hat die Verwendung des Ausgewählten Modells bestärkt. Die Vorgehensweise sieht in den weiteren Schritten eine Definition und Festlegung der Trainings-Daten für das benötigte neuronale Netz. 
+
+\newpage
   
   \subsection{Trainingsdaten Generieren} 
 Zu beginn ist ein un-trainiertes neuronales Netz noch "Dumm", da es bis zu diesem Zeitpunkt noch kein wissen darüber hat, welche Objekte es erkennen soll und welche Eigenschaften diese haben. Damit das zu entwickelnde Neuronale Netz weiß was es erkennen und klassifizieren soll, müssen zunächst Trainings und Testdaten generiert werden. Für das Training werden optimaler weise mehrere Tausend Trainings- und Testbilder benötigt, damit eine möglichst hohe Genauigkeit erreicht werden kann. Auch die Trainingsphase dauert in der Ausführung einige Stunden. 
