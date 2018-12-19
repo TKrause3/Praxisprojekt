@@ -1,0 +1,22 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Schematischer Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic} \relax }}{3}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces Funktionsweise eines Convolutional Neural Network\cite {info7040061}\relax }}{4}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Ausgaben von Neuronalen Netzen\relax }}{10}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Makierung durch Maskierung \cite {artikle2018test2}}}}{10}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Makierung durch K\IeC {\"a}sten \cite {google2018test1}}}}{10}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Analysiertes Bild, durch das Testnetz\relax }}{10}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Loss Graph des umtrainierten inceptionV2\relax }}{15}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces Erster Test des Neuronalen Netzes\relax }}{16}{figure.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces Loss Graph des umtrainierten resnet101\relax }}{16}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Objekt erkennung des optimierten resnet101\relax }}{17}{figure.caption.37}
