@@ -239,7 +239,7 @@ Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines mensc
 Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \glqq Input Layer\grqq. Dieser \glqq Layer\grqq bekommt alle Eingangsdaten von einem beliebigen Datensatz. Jeder Pixel auf einem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \glqq Hidden Layer\grqq. Jeder \glqq Layer\grqq ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \glqq Layer\grqq durchlaufen wurden. Die dritte Schicht besteht aus dem \glqq Output Layer\grqq. Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \glqq Output Layer\grqq mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
 
 
-  \subsection{Faltendes Neuronales Netzwerk}
+  \subsection{Faltendes neuronales Netz}
 Anders als bei einem KNN, welches auf Grundlage des menschlichen Gehirns entworfen wurde, orientiert sich ein \glqq Convolutional Neural Network\grqq (CNN) an dem Konzept des menschlichen Sehens \cite{lecun1989backpropagation}. Dabei werden maschinell kleine Bereiche visueller Informationen so simuliert, als wären sie benachbarte Sehnerven im Auge. Gerade für die Verarbeitung von Bilddaten werden häufig \glqq Convolutional Neural Networks\grqq eingesetzt \cite[326]{goodfellow2016deep}. Voraussetzung für die Verwendung eines CNN ist die matrixartige Anordnung der Datenpunkte, wie beispielweise bei einem digitalen Bild.
 \\
 \\
@@ -264,10 +264,10 @@ In diesem Kapitel wird die praktische Durchführung beschrieben und gemachte Ent
 Um ein bestehendes neuronales Netz neu zu trainieren werden neben dem Neuronalen Netz weitere Frameworks sowie eine Entwicklungsumgebung benötigt. In den kommenden Unterpunkten wird die Entwicklungsumgebung sowie alle benötigten Bibliotheken aufgeführt. 
 
   \subsubsection{Verwendete Hardware Konfiguration}
-Das Netz wurde auf einem Windows 8.1 Betriebssystem trainiert. Berechnet wurden die Trainingsschritte von einer Nvidia GeForce GTX 980 GPU mit 4GB VRAM (Grafikspeicher), einer Intel Core i5 CPU und 16GB RAM (Arbeitsspeicher). Für einen Trainingsschritt, mit dem ausgewählten Netz, benötigt die Grafikkarte durchschnittlich 250ms. Im Vergleich hat die CPU 2 Sekunden pro Schritt benötigt. Die Grafikkarte arbeitet somit 8 mal schneller durch den Vorteil mit Matrixmultiplikationen und soll für das Training verwendet werden.
+Das Netz wurde auf einem Windows 8.1 Betriebssystem trainiert. Berechnet wurden die Trainingsschritte von einer Nvidia GeForce GTX 980 GPU mit 4GB VRAM (Grafikspeicher), einer Intel Core i5 CPU und 16GB RAM (Arbeitsspeicher). ?????Für einen Trainingsschritt, mit dem ausgewählten Netz, benötigt die Grafikkarte durchschnittlich 250ms. Im Vergleich hat die CPU 2 Sekunden pro Schritt benötigt. Die Grafikkarte arbeitet somit 8 mal schneller durch den Vorteil mit Matrixmultiplikationen und soll für das Training verwendet werden. ?????
 
   \subsubsection{Anaconda python}
-Das verwendete CNN wurde in der Programmiersprache Python erstellt, weswegen wir zum um-trainieren mit Python arbeiten. Des weiteren bietet Python eine Vielzahl an verfügbaren Bibliotheken welche wir benötigen. Anaconda \cite{conda2018} ist eine \glqq Open-Source-Distribution\grqq für die Programmiersprache Python. Mit dieser können wir gleichzeitig mehrere Versionen von Python generieren und die notwendigen Bibliotheken installieren. Anaconda bietet den Vorteil einfach zwischen den verschieden Python Versionen wechseln zu können \\
+ ????? Das verwendete CNN wurde in der Programmiersprache Python erstellt, weswegen wir zum um-trainieren mit Python arbeiten. ???? Des weiteren bietet Python eine Vielzahl an verfügbaren Bibliotheken welche wir benötigen. Anaconda \cite{conda2018} ist eine \glqq Open-Source-Distribution\grqq für die Programmiersprache Python. Mit dieser können wir gleichzeitig mehrere Versionen von Python generieren und die notwendigen Bibliotheken installieren. Anaconda bietet den Vorteil einfach zwischen den verschieden Python Versionen wechseln zu können \\
 In diesem Projekt wurde mit der Python version 3.6.7 gearbeitet.
 
   \begin{itemize}
@@ -275,10 +275,10 @@ In diesem Projekt wurde mit der Python version 3.6.7 gearbeitet.
   \end{itemize}
   
   \subsection{Frameworks}
-Um das Künstliche neuronale Netz zu trainieren, wird ein Framework und mehrere Programm-Bibliotheken benötigt. Die Auswahl wird im folgenden aufgezählt und kurz erläutert.
+Um ein künstliches neuronales Netz zu trainieren, wird ein Framework und mehrere Programm-Bibliotheken benötigt. Die Auswahl wird im folgenden aufgezählt und kurz erläutert.
  
   \subsubsection{Tensorflow}
-Bei Tensorflow \cite{google2018tens} handelt es sich um eine Plattform unabhängige Programmbibliothek unter Open-Source-Lizenz, die sich für Aufgaben rund um maschinelles Lernen und Künstliche Intelligenz (KI) einsetzen lässt. Ursprünglich entwickelte Google die Software für den internen Bedarf. Das Framework bietet vielfältige Einsatzmöglichkeiten und gestattet es, lernende neuronale Netze zu erstellen und diese zu verändern. Es zeichnet sich durch seine gute Skalierbarkeit aus und ist auf unterschiedlichen Systemen vom Smartphone bis zu Clustern mit vielen Servern betreibbar. Außerdem verweist Google auf verschiedenste trainierte Modelle welche für das Projekt verwendet werden. Tensorflow kann auf allen CPU's betrieben werden, oder mit Nvidia Grafikkarten, welche CUDA unterstützen.
+Bei Tensorflow \cite{google2018tens} handelt es sich um eine Plattform unabhängige Programmbibliothek unter Open-Source-Lizenz, die sich für Aufgaben rund um maschinelles Lernen und Künstliche Intelligenz (KI) einsetzen lässt. Ursprünglich entwickelte Google die Software für den internen Bedarf. Das Framework bietet vielfältige Einsatzmöglichkeiten und gestattet es, lernende neuronale Netze zu erstellen und diese zu verändern. Es zeichnet sich durch seine gute Skalierbarkeit aus und ist auf unterschiedlichen Systemen vom Smartphone bis zu Clustern mit vielen Servern einsetzbar. Außerdem stellt Google verschiedene trainierte Modelle bereit welche für das Projekt verwendet können. Tensorflow kann auf allen CPU's betrieben werden, oder mit Nvidia Grafikkarten, welche CUDA unterstützen.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade gpu-tensorflow
@@ -291,14 +291,14 @@ Für das Arbeiten mit Tensorflow und CNN's benötigt man einige spezielle Python
 \\
  
 \textbf{Pillow}\\\\
-Pillow ist eine \glqq Imaging Library \glqq für Python. Diese Bibliothek wird dafür genutzt um Bilddateien zu öffnen, verändern und speichern zu können. Pillow benötigen wir, um in unserem Künstlichen neuronalen Netz mit Bildern und Videos arbeiten zu können.
+Pillow ist eine \glqq Imaging Library \glqq für Python. Diese Bibliothek wird dafür genutzt um Bilddateien öffnen, verändern und speichern zu können.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade pillow
   \end{itemize}
 
 \textbf{lxml}\\\\ 
-lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei den Elementebaum von XML stark. Verwendet wird lxml dafür, um die Markierungen von Klassen und deren Positionen auszulesen, damit diese umgewandelt werden können. Durch die Arbeit mit Elementbäumen werden nur die benötigten Informationen herausgefiltert, wodurch wir eine schnellere Ausführung und bessere Arbeitszeiten erreichen.
+lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei den Elementebaum von XML stark. Verwendet wird lxml dafür, um die Markierungen von Objektsklassen und deren Positionen auszulesen. Durch die Arbeit mit Elementbäumen werden nur die benötigten Informationen herausgefiltert, woraus einem bessern Laufzeitverhalten resultiert.
   
   \begin{itemize}
 \item Installation in Python: pip install --upgrade lxml
@@ -306,36 +306,36 @@ lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei d
   
   
 \textbf{Cython}\\\\
-Python ist im vergleich zu C eine recht langsame Programmiersprache, was die Ausführungzeit des Programmcodes wesentlich erhöht. Cython ist eine Programmbibliothek und auch Programmiersprache, welche die wesentlich langsame Programmiersprache Python erweitert und in der Ausführung beschleunigt. Dabei wird Python-Code in C kompiliert oder es kann externer code von C, eingebunden werden um ihn für die Ausführung zu nutzen. Das hat den Vorteil, das die Geschwindigkeit des Programms erhöht wird. Gerade für das Trainieren künstlicher neuronaler Netze, wird viel Rechenleistung benötigt. Das führt zu einer hohen Ausführungszeit des Programms. Um eine bessere Performance erreichen zu können greifen wir auf Cython zurück.
+Python ist im vergleich zu C eine recht langsame Programmiersprache, was die Ausführungzeit des Programmcodes wesentlich erhöht. Cython ist eine Programmbibliothek und auch Programmiersprache, welche die wesentlich langsame Programmiersprache Python erweitert und in der Ausführung beschleunigt. Dabei wird Python-Code in C kompiliert oder es kann externer code von C, eingebunden werden um ihn für die Ausführung zu nutzen. Das hat den Vorteil, das die Geschwindigkeit des Programms erhöht wird. Gerade für das Trainieren künstlicher neuronaler Netze, wird viel Rechenleistung benötigt.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade Cython
   \end{itemize}
 
 \textbf{Jupyter}\\\\
-Jupyter oder auch \glqq Jupyter Notebook\grqq ist eine open-source Web Applikation die es ermöglicht Dokumente welche Live Code, Abbildungen oder Text beinhalten zu teilen. Dabei kann man den Inhalt der Dateien im Browser aufrufen und ausführen. Verwendet wird diese Bibliothek, um die Lauffähigkeit des Neuronalen Netzes zu überprüfen.  
+Jupyter oder auch \glqq Jupyter Notebook\grqq ist eine open-source Web Applikation die es ermöglicht Dokumente welche Live Code, Abbildungen oder Text beinhalten zu teilen. Dabei können Inhalte von Dateien im Browser aufgerufen und ausfeführt werden. Verwendet wird diese Bibliothek um die korrekte installation von Tensorflow zu überprüfen.  
 
 \begin{itemize}
 \item Installation in Python: pip install --upgrade jupyter
   \end{itemize}
   
 \textbf{matplotlib}\\\\
-Die Programmbibliothek matplotlib ermöglicht es mit python, mathematische Darstellungen in der Python-Konsole oder im Code integriert anzufertigen und Visuell auszugeben.
-Matplotlib wird zum einen dafür verwendet die Erkennung, eines Objektes, auf einem Bild, an der jeweiligen Position anzuzeigen und zu beschreiben.
+Die Programmbibliothek matplotlib ermöglicht es mathematische Formlen in der Python-Konsole oder im Code zu verarbeiten und zu visualisieren.
+Matplotlib wird verwendet um die Erkennung von Objekten und deren Positionen auf einem Bild dazustellen.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade matplotlib
   \end{itemize}
   
 \textbf{Pandas}\\\\
-Pandas ist eine Programmbibliothek von Python. Der Name stammt von \glqq Paneldata\grqq, was eine Bezeichnung von Datensätzen ist. Diese Bibliothek kann für die selektierung und Inditzierung von Daten verwendet werden. In dem künstlichen neuronalen Netz, wird pandas unter anderem für die Erhebung der XML Dateien der Trainingsdaten verwendet.
+Pandas ist eine Programmbibliothek von Python. Der Name stammt von \glqq Paneldata\grqq, was eine Bezeichnung von Datensätzen ist. Diese Bibliothek ermöglicht eine enfache selektierung und Inditzierung von Daten. In diesem Projekt wird Pandas für die Erhebung ???? nicht klar was gemeint ist ?????der XML Dateien der Trainingsdaten verwendet.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade pandas
   \end{itemize}
   
 \textbf{opencv-python}\\\\
-OpenCV steht für \glqq Open Source Computer Vision Library\grqq  und ist eine freie Programmbibliothek für maschinelles Sehen. Dadurch, das dass zu entwickelnde CNN auf Basis von visuellen Daten arbeiten soll, welche mehr als ein Objekt gleichzeitig beinhalten kann, benötigen wir eine Aufteilung von Bildbereichen. Weitere Einsatzbereiche entstehen dann, wenn Beispielsweise die Helligkeit des Bildes nicht ausreicht. Hierbei kann die Helligkeit künstlich angepasst werden.
+OpenCV steht für \glqq Open Source Computer Vision Library\grqq  und ist eine freie Programmbibliothek für maschinelles Sehen. Diese Bibliothek ermöglicht die Aufteilung eines Bildes in verschiedene Bildbereiche. Außerdem können weitere Bildoptimierungen vorgenommen werden, wie das anpassen der Bild Helligkeit.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade opencv-python
@@ -345,7 +345,7 @@ OpenCV steht für \glqq Open Source Computer Vision Library\grqq  und ist eine f
 In der folgenden Abwägung werden einige verfügbare Netze aufgeführt, die für Tensorflow zur Verfügung gestellt werden. Dabei werden die aufgeführten Modelle in Genauigkeit und Geschwindigkeit verglichen.
  
   \subsubsection{Auswahl des Netzes} 
-In Hinsicht auf Trainierte Netze bietet \glqq Tensorflow\grqq einige Möglichkeiten an. Hierbei handelt es sich um die \glqq Tensorflow detection model zoo\grqq \cite{google2018zoo} welche mit verschiedensten Datensätzen und Durchläufen trainiert wurden. Die Datensätze die verwendet wurden sind unter anderem das COCO dataset, das Kitti dataset, das Open Images dataset, das AVA v2.1 dataset und das iNaturalist Species Detection Dataset. Die COCO-Models bieten das größte Spektrum an Netzen. Bei dem COCO Datenset handelt es sich um \glqq Common Objects In Context\grqq \cite{common2018data} und beinhaltet rund 330 Tausend Bilder, welche über 1.5 Millionen schichten in 90 Klassen trainiert wurden. Da es sich um häufige auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für unser vorhaben geeignet. In der folgenden Tabelle, wurden ein paar dieser Modelle ausgesucht und verglichen.
+In Hinsicht auf Trainierte Netze bietet \glqq Tensorflow\grqq einige Möglichkeiten an. Hierbei handelt es sich um die \glqq Tensorflow detection model zoo\grqq \cite{google2018zoo} welche mit verschiedensten Datensätzen ausgiebig trainiert wurden. ??? Bei dem COCO Datenset handelt es sich um \glqq Common Objects In Context\grqq \cite{common2018data} und beinhaltet rund 330 Tausend Bilder, welche über 1.5 Millionen schichten in 90 Klassen trainiert wurden. Da es sich um häufige auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für unser vorhaben geeignet. In der folgenden Tabelle, wurden ein paar dieser Modelle ausgesucht und verglichen. ???
 \\
 \\
 
@@ -389,10 +389,10 @@ In der Tabelle, werden 6 mögliche Modelle aufgeführt wobei diese anhand der du
 
 \newpage
 
-Bei dem vergleich der Modelle fällt auf, das alle eine ähnliche Genauigkeit aufweisen und sich nur leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet, und ausgewertet.
+Bei dem vergleich der Modelle fällt auf, dass alle eine ähnliche Genauigkeit aufweisen und sich nur leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet, und ausgewertet.
 \\
 
-Das ausgewählte Modell wurde für Testzwecke mit 6 Klassen um-trainiert. Die Klassen bestanden aus einem Skart-kartenset von Neun bis Ass \cite{evan2018pic}. Rund Fünf Stunden wurde das Netz trainiert, und hat dabei 60 tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergeben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
+Das ausgewählte Modell wurde mit 6 Klassen um-trainiert. Die Klassen bestanden aus einem Skart-kartenset von Neun bis Ass \cite{evan2018pic}. Rund Fünf Stunden wurde das Netz trainiert, und hat dabei 60 tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergeben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
 \\
 \begin{figure}
     [h]
