@@ -407,42 +407,40 @@ Das erfolgreiche Training und testen des Netzes hat die Verwendung des Ausgewäh
 
   
   \subsection{Trainingsdaten Generieren} 
-Zu beginn hat ein untrainiertes neuronales Netz, in seinen Neuronen, zufällige Gewichtungen und Schwellwerte, da es bis zu diesem Zeitpunkt noch keine Informationen darüber hat, welche Objekte es erkennen soll und welche Eigenschaften diese haben. Damit das zu entwickelnde Neuronale Netz die Informationen erhält, für eine Klassifizierung, müssen zunächst Trainings und Testdaten generiert werden. Für das Training werden optimaler weise mehrere Tausend Trainings- und Testbilder benötigt, damit eine möglichst hohe Genauigkeit erreicht werden kann. Auch die Trainingsphase dauert in der Ausführung einige Stunden. 
+Zu beginn hat ein untrainiertes neuronales Netz, in seinen Neuronen, zufällige Gewichtungen und Schwellwerte, da es bis zu diesem Zeitpunkt noch keine Informationen darüber hat, welche Objekte es erkennen soll und welche Eigenschaften diese haben. Damit das zu entwickelnde neuronale Netz die Informationen erhält welche für eine Klassifizierung notwendig sind müssen zunächst Trainings und Testdaten generiert werden. Für das Training werden optimaler weise mehrere Tausend Trainings- und Testbilder benötigt, damit eine möglichst hohe Genauigkeit erreicht werden kann. Auch die Trainingsphase dauert in der Ausführung einige Stunden. 
 \\
 \\
-Wie in der Auswahl des Neuronalen Netz bereits beschrieben wird wegen der begrenzten Zeitressource ein trainiertes Netz von COCO verwendet. der Vorteil bei der Verwendung eines bereits trainierten Netzes besteht darin, das die Gewichtungen der frühen Schichten gut eingestellt sind und diese nicht verändert werden müssen. Lediglich die letzten Schichten sollen mit den eigenen Daten umtrainiert werden. Durch die guten Einstellungen der ersten Schichten, werden weniger Trainings- und Testdaten benötigt, um eine hohe Genauigkeit des Neuronalen Netzes zu erreichen.
+Wie bereits in vorherigen Kapitel beschrieben wird wegen der begrenzten Zeitressource ein vortrainiertes Netz verwendet welches mit den COCO Testdaten trainiert wurde verwendet. Der Vorteil eines vortrainierten Netzes besteht darin, das die Gewichtungen der frühen Schichten gut eingestellt sind und diese nicht verändert werden müssen. Lediglich die letzten Schichten sollen mit den eigenen Daten umtrainiert werden. Durch die guten Einstellungen der ersten Schichten, werden weniger Trainings- und Testdaten benötigt, um eine hohe Genauigkeit des Neuronalen Netzes zu erreichen.
 
   \subsubsection{Funktionsweise}
-Wie gerade schon angeschnitten, bekommen bei Netzen welche neu trainiert werden jedes Neuron zunächst ein zufälliges Anfangs-Gewicht und Schwellwert. Beim starten der Trainingsphase werden Daten in das Netz eingeführt. Jedes Neuron verarbeiten nun alle Eingangssignale mit der zugewiesenen Gewichtung und geben die Ergebnisse an das nächste Neuron weiter. 
+Bei einem untrainierten Netz werden jedem Neuron zunächst ein zufälliges Anfangs-Gewicht sowie ein Schwellwert zugewiesen. Beim starten der Trainingsphase werden Daten in das Netz eingeführt. Jedes Neuron verarbeiten nun alle Eingangssignale mit der zugewiesenen Gewichtung und geben die Ergebnisse an das nächste Neuron weiter. 
 \\
 \\
-Im Output-Layer wird nun das Ergebnis der Berechnungen ermittelt. Das Ergebnis des Netzes wird mit der Tatsächlichen Bezeichnung des Objektes verglichen. Lag das Netz bei der Bestimmung falsch wird zunächst der entstandene Fehler Berechnet und die Neuronen werden dementsprechend angepasst. Dabei werden die Gewichtungen der Neuronen so stark verändert je mehr Einfluss diese auf das resultierende Ergebnis hatten. Dieser Vorgang wird nun viele male wiederholt. Das ist die kurze Fassung, wie ein Künstliches Neuronales Netz lernt. 
+Im Output-Layer wird nun das Ergebnis der Berechnungen ermittelt. Das Ergebnis des Netzes wird mit der Tatsächlichen Bezeichnung des Objektes verglichen. Lag das Netz bei der Bestimmung falsch wird zunächst der entstandene Fehler Berechnet und die Neuronen werden dementsprechend angepasst. Dabei werden die Gewichtungen der Neuronen so stark verändert je mehr Einfluss diese auf das resultierende Ergebnis hatten. Dieser Vorgang wird nun viele male wiederholt. \\
   
   \subsubsection{Auswahl der Klassen} 
-Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu erkennen, indem Klassen ausgewählt werden, welch eine gewisse Ähnlichkeit aufweisen jedoch unterschiedliche Bezeichnungen haben. Beispiele sind hier Flaschen, Tetra Packs oder auch Schachteln.
+Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu erkennen, indem Klassen ausgewählt werden, welche Ähnlichkeiten aufweisen jedoch ????????????????? unterschiedliche Bezeichnungen haben??????????. Beispiele sind hier Flaschen, Tetra Packs oder auch Schachteln.
 
-  \vspace{0.5 cm}
+\vspace{0.5 cm}
 
-  \begin{itemize}
+\begin{itemize}
+
+\item ID: 1 Name: \glqq Milch, Packung\grqq
+
+\item ID: 2 Name: \glqq Orangensaft, Packung\grqq
+
+\item ID: 3 Name: \glqq Wasser, Flasche\grqq
+
+\item ID: 4 Name: \glqq Bier, Flasche\grqq
+
+\item ID: 5 Name: \glqq Brunch, Aufstrich\grqq
+
+\item ID: 6 Name: \glqq Margarine, Aufstrich\grqq
+
+\end{itemize}
   
-  \item ID: 1 Name: \glqq Milch, Packung\grqq
-  
-  \item ID: 2 Name: \glqq Orangensaft, Packung\grqq
 
-  \item ID: 3 Name: \glqq Wasser, Flasche \grqq
-
-  \item ID: 4 Name: \glqq Bier, Flasche \grqq
-
-  \item ID: 5 Name: \glqq Brunch, Aufstrich\grqq
-
-  \item ID: 6 Name: \glqq Margarine, Aufstrich\grqq
-  
-  \end{itemize}
-    
-  
-  \subsection{Trainieren}
-Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden kann, muss ein großer Datensatz generiert werden. Wie im letzten Abschnitt beschrieben, werden Klassen ausgewählt, welche eine hohe Ähnlichkeit aufweisen. Dadurch soll überprüft werden, ob das neuronale Netz auch Objekte mit nur detaillierten Unterschieden auseinanderhalten kann.\\
-Als Testobjekte wurden zwei Tetra Packs, zwei Flaschen und zwei Aufstriche verwendet. Die Einteilung der Klassen wird in der folgenden Tabelle gezeigt.
+Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden kann, muss ein großer Datensatz generiert werden. Um Aussagen über die Genauigkeit des Netzes machen zu können wurden Objekte mit hoher Ähnlichkeit verwendet. Als Testobjekte wurden zwei Tetra Packs, zwei Flaschen und zwei Aufstriche verwendet. Die Einteilung der Klassen ist in der folgenden Tabelle aufgeführt.
 \\
 \\
 
@@ -452,41 +450,44 @@ Als Testobjekte wurden zwei Tetra Packs, zwei Flaschen und zwei Aufstriche verwe
 \caption{Ausgewählte Klassen und Struktur}
 \label{klassen}
 \begin{tabular}{|c|l|c|}
- 
-   Klasse   &   Bezeichnung   &   Bereich   \\
- & & \\
-   1   &   Milch - Packung   &   1-99   \\
- & & \\
-   2   &   Orangensaft - Packung   &   100-199   \\
- & & \\
-   3   &   Wasser - Flasche   &   200-299   \\
- & & \\
-   4   &   Bier - Flasche   &   300-399   \\
- & & \\
-   5   &   Brunch - Aufstrich   &   400-499   \\
- & & \\
-   6   &   Margarine   &   500-599   \\
- & & \\
-   7   &   Gemischt   &   600-699
- 
+  
+    Klasse   &   Bezeichnung   &   Bereich   \\
+  & & \\
+    1   &   Milch - Packung   &   1-99   \\
+  & & \\
+    2   &   Orangensaft - Packung   &   100-199   \\
+  & & \\
+    3   &   Wasser - Flasche   &   200-299   \\
+  & & \\
+    4   &   Bier - Flasche   &   300-399   \\
+  & & \\
+    5   &   Brunch - Aufstrich   &   400-499   \\
+  & & \\
+    6   &   Margarine   &   500-599   \\
+  & & \\
+    7   &   Gemischt   &   600-699
+  
 \end{tabular}
 \end{table}
 
 \vspace{1 cm}
 
-Zunächst müssen Testdaten in Form von Bildern generiert werden, dafür wurden zum einen, Bilder von Online-Suchmaschinen, je nach Verwendbarkeit für das Netz heruntergeladen. Dabei sollte das Bild eine Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht zusätzlich mehr Zeit benötigt. Des weiteren wurden Objekte der aufgeführten Klassen (Tabelle\ref{klassen}), in verschiedensten Winkeln und Lichtverhältnissen Fotografiert. Die aufgenommenen Bilder übersteigen mit 3-5 MB die maximale Größe der Testdaten. Aus diesem Grund, wurden die Bilder mit einem Programm um den Faktor 0.2 verkleinert. Verwendet wird für die Komprimierung ein in Python geschriebenes Programm (reziser.py).\\
+Zunächst müssen Testdaten in Form von Bildern generiert werden, wozu Bilder aus dem Internet, sowie selst erstellte Fotografien der Objekte verwendet, welche aus  verschieden Winkeln und unterschiedlichen Lichtverhältnissen aufgenommen wurden. Dabei sollte ein Bild die Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht unnötig viel Zeit benötigt. Die selbst erstellten Bilder wurden deshalb um den Faktor 0.2 verkleinert. Verwendet wurde für die Komprimierung das in Python geschriebenes Programm (reziser.py).\\
 \\
-Damit die API von Tensorflow weiß, welche Klassen auf dem Bild zu sehen sind und wo sich diese im Bild befinden, müssen die Bilder gelabelt werden, hierfür wurde das Programm labelImg.py verwendet. Beim labeln werden die zu klassifiezierenden Objekte auf dem Bild mit den Positionsdaten und Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem markieren werden Die Daten in Trainings und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML Dateien, in zwei CSV Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle Notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
+Zum erstellen eines Ground True müssen die Bilder gelabelt werden, hierfür wurde das Programm labelImg.py verwendet. Beim labeln werden die zu klassifiezierenden Objekte auf dem Bild mit den Positionsdaten und Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem markieren werden die Daten in Trainings und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML Dateien, in zwei CSV Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
 \\
-Nachdem alle Bilddaten gelabelt wurden und die CSV Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Zusätzlich zu den Traningsdaten wird eine  Labelmap (labelmap.pbtxt) benötigt in welcher die aus Kaptitel 3.4.2 ausgewählten Klassen aufgeführt werden. Außerdem brauchen wir die Konfigurationsdatei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco). Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
+
+  
+  \subsection{Trainieren}
+Nachdem alle Bilddaten gelabelt wurden und die CSV Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Zusätzlich zu den Traningsdaten wird eine Labelmap (labelmap.pbtxt) benötigt in welcher die aus Kaptitel 3.4.2 ???? Kapitel nummer Prüfen ansonsten Kapitel überschrieften oder querwerweise verwenden ????ausgewählten Klassen aufgeführt werden. Außerdem wird die Konfigurationsdatei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco) benötigt. Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
 Zusätzlich Parameter: \\
 \textbf{--logtostderr}\\
 \textbf{--train\_dir=training/}\\
 Dieser Parameter gibt den Pfad zum Ordner an in welchem die Trainingsergebnisse Gespeichert werden sollen.\\
 \textbf{--pipeline\_config\_path=training/faster\_rcnn\_inception\_v2\_coco.config}\\
-Dieser Parameter gibt den Pfad zu der benötigten config Datei an\\\\
+Dieser Parameter gibt den Pfad zu der KOnfigurationsdatei an\\\\
 \\
-Damit die Ergebnisse so gut wie möglich ausfallen, wird das Netz ca. 10 Stunden, mit der in Kapitel? beschriebenen Konfiguration Trainiert. Dabei schafft das Programm 200.000 Trainings- und Testdurchläufe und ist kurz vor Abschluss der Trainingsphase bei einem durchschnittlichen \glqq loss\grqq von 0,03. Alle 5 Minuten werden die Zwischenstände gespeichert. Aus dem letzten Standpunkt des Trainings wird mit hilfe des export\_inference\_graph.py  ein Sogenannter \glqq frozen inference graph\grqq  generiert, welcher unser Künstliches neuronales Netz darstellt.\\\\
+Damit die Ergebnisse so gut wie möglich ausfallen, wird das Netz ca. 10 Stunden, mit der in Kapitel????????????? beschriebenen Konfiguration trainiert. IN dieser Zeit wurden 200.000 Trainings- und Testdurchläufe ??? Was ist der unterscheid zwischen trainig und Test durchläufen / Ist das TEsten nict teil des Trainings????   durchgeführt. Kurz vor dem Abschluss der Trainingsphase wird ein durchschnittlicher \glqq loss\grqq von 0,03 erreicht. ?????????? der begriff loss ist noch nicht eingeführt?????????????? Alle fünf minuten kann mit hilfe des export\_inference\_graph.py programms ein sogenannter \glqq frozen inference graph\grqq ?????????? einmal kein geschrieben und einmal groß ?????????? generiert werde,n welcher unser Künstliches neuronales Netz darstellt.\\\\
 Mitgegebenen Parameter:\\
 \textbf{--input\_type image\_tensor}\\
 \textbf{--pipeline\_config\_path legacy/training/faster\_rcnn\_inception\_v2\_coco.config}\\
@@ -496,12 +497,12 @@ Gibt den Pfad zur letzten Speicherstand des Trainings an.\\
 \textbf{--output\_directory inference\_graph}\\
 Bestimmt den Ort an welchen der Graph exportiert wird.\\\\
 
-Nach Erstellung der \glqq Frozen Inference Graph\grqq , welcher die Gewichtingen und Objektklassen enthält, ist das Netz an sich fertig und bereit für den praktischen Test. Dafür wurde aus der object\_detection\_tutorial.ipynb Datei von der Tensorflow API ein ausführbares Programm für die Testzwecke geschrieben. Im weiteren wird der Testverlauf beschrieben und Ausgewertet.
+Nach Erstellung des \glqq Frozen Inference Graph\grqq ?????????? einmal kein geschrieben und einmal groß ??????????, welcher die Gewichtingen und Objektklassen enthält, ist das Netz an sich fertig und bereit für den praktischen Test. Dafür wurde aus der object\_detection\_tutorial.ipynb Datei von der Tensorflow API ein ausführbares Programm für die Testzwecke geschrieben. Im weiteren wird der Testverlauf beschrieben und Ausgewertet.
   
 \newpage
 
 \section{Testergebnisse}
-In diesem Kapitel soll die Zuverlässigkeit sowie Geschwindigkeit, des neuronalen Netzes geprüft und ausgewertet werden. Dazu wird das Netz mit nicht markierten Bildern getestet, wobei nur Testbilder verwendet werden, welche nicht im Trainings- und Testdatensatz vorhanden waren. Es soll sichergestellt werden, dass das Netz die Objekte nicht durch das Training kennt. Anschließend wird überprüft wie zuverlässig das Netz ist und ob es alle Objekte erkannt hat. 
+In diesem Kapitel soll die Zuverlässigkeit und die Geschwindigkeit des neuronalen Netzes geprüft und ausgewertet werden. Dazu wird das Netz mit nicht markierten und dem Nertz unbekannten Bildern getestet. Es soll sichergestellt werden, dass das Netz die Objekte nicht bereits durch das Training kennt. Anschließend wird überprüft wie zuverlässig das Netz ist ??? Was meisnt du mit zuverlässig / robust gegebüber falsche klassifizierung , falsch detektionen  ???? und ob es alle Objekte erkannt wurden. 
 \\
 Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den fortschritt des Trainings grafisch darzustellen. In der folgenden Grafik wird der auftretende \glqq Loss \glqq in Verhältnis zu der Trainingszeit gestellt. 
 \\
@@ -517,22 +518,22 @@ Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den fortschritt des 
 	\label{img:loss_graph_200000}
 \end{figure}
 
-Der \glqq Loss\grqq stellt dabei keine Prozentangabe dar, sondern ist eine Zusammenfassung der Fehler, die für jedes Beispiel in Trainings- oder Validierungssätzen gemacht wurden. Je kleiner der \glqq Loss\grqq dabei ist, desto höher ist die Wahrscheinlichkeit. Um die Grafik zu veranschaulichen, wurden kurzfristige Schwankungen geglättet. Zu beginn wird festgestellt, das die ersten 4 Stunden des Trainings den größten fortschritt aufweisen. In dieser Zeit, ist der \glqq Loss\grqq von anfangs 2.0 auf 0.05 gesunken. Dabei wurden rund 60.000 Trainingseinheiten durchlaufen.\\
-Die ersten Testergebnisse sehen gut aus. Alle beinhaltenden Objekte konnten erkannt und zugewiesen werden. Diese wurden auch mit einer hohen Wahrscheinlichkeit identifiziert. Lediglich bei der \glqq Orangensaft - Packung\grqq hat das Netz einen Fehler gemacht. Diese wurde als Milch erkannt und das auch mit einer recht hohen Wahrscheinlichkeit. Zurückzuführen wäre das durch die hohe Ähnlichkeit der Formen.
+Der \glqq Loss\grqq stellt dabei keine Prozentangabe dar, sondern ist eine Zusammenfassung der Fehler, die für jedes Beispiel in Trainings- oder Validierungssätzen gemacht wurden. Je kleiner der \glqq Loss\grqq dabei ist, desto höher ist die Wahrscheinlichkeit ????das die Klassifizierung richtig ist ??? . Um die Grafik zu veranschaulichen, wurden kurzfristige Schwankungen geglättet. Innerhalb der ersten 4 Stunden des Trainings den größten fortschritt beobachtet werden. In dieser Zeit, ist der \glqq Loss\grqq von anfänglich 2.0 auf 0.05 gesunken. Dabei wurden rund 60.000 Trainingseinheiten durchlaufen.\\
+Bei den ersten Testergebnissen welche in Abbildung ????????????? zu sehen sind konnten alle Objekte erkannt und ihnen eine Klasse zugewiesen werden. Jedoch wurde die \glqq Orangensaft - Packung\grqq mit hoher Wahrscheinlichkeit als \glqq Milch - Packung\grqq falsch klassifiziert. Was auf die hohe Ähnlichkeit der Objekte zurückzuführen ist.
 \\
 
 \begin{figure}
     [h]
 	\centering
 	\includegraphics[scale=0.3]{Sources/Erster_Test.jpg}
-	\caption{Erster Test des Neuronalen Netzes}
+	\caption{Erster Test des neuronalen Netzes}
 	\label{img:TestNN}
 \end{figure}
 
-Aus diesem Grund, soll überprüft werden, ob beim aufsetzen des Neuronalen Netzes Fehler gemacht wurden. Außerdem soll ein weiteres Vor-trainiertes Netze mit dem Datensatz getestet werden, Genauigkeit untereinander zu vergleichen. Das dafür ausgewählte Netz ist das faster\_rcnn\_resnet101\_coco. Dieses Modelle wurden aus der Tabelle? ausgewählt, da die mittlere durchschnittliche Genauigkeit.
+Aufgrund der falschen Klassifizierung wurde ein weiteres vortrainiertes Netze mit dem generierten Datensatz trainiert und getestet. Das dafür ausgewählte Netz ist das faster\_rcnn\_resnet101\_coco. Dieses Modelle wurden aus der Tabelle? ausgewählt, da die mittlere durchschnittliche Genauigkeit.
 \\
 \\
-Das zweite Modell welches trainiert wurde ist das faster\_rcnn\_resnet101\_coco mit einer mAP von 32 dafür ist es aber auch wesentlich langsamer. Für einen Trainingsdurchlauf benötigt das Modell mit rund 600ms im durchschnitt, mehr als doppelt so lange wie das faster\_rcnn\_inception\_v2\_coco. Es benötigt dafür aber auch nur die Hälfte an Durchläufen, um eine ähnlich niedrigen 'Loss' zu erreichen.\\ 
+Das zweite Modell welches trainiert wurde ist das faster\_rcnn\_resnet101\_coco mit einer mAP ????mAP nicht eingrführter begriff????????? von 32 dafür ist es aber auch wesentlich langsamer. Für einen Trainingsdurchlauf benötigt das Modell mit rund 600ms im durchschnitt, mehr als doppelt so lange wie das faster\_rcnn\_inception\_v2\_coco. Es benötigt dafür aber auch nur die Hälfte an Durchläufen, um eine ähnlich niedrigen 'Loss' zu erreichen.\\ 
 
 \begin{figure}
     [h]
@@ -543,9 +544,9 @@ Das zweite Modell welches trainiert wurde ist das faster\_rcnn\_resnet101\_coco 
 	\label{img:loss_graph_resnet101}
 \end{figure}
 
-Testergebnisse der einzelnen Klassen zeigen auch das die Genauigkeit besser ist. Der Orangensaft welcher nicht identifiziert wurde, konnte jetzt erreicht werden. Dabei gab es wiederum das Problem das dieser je nach Winkel nicht immer richtig eingeordnet wurde. Um die Stabilität der ausgaben weiter zu erhöhen, sollen die Trainingsdaten weiter angehoben werden und das letzte Modell welches die höchste \glqq mAP\grqq hat soll auf den Datensatz trainiert werden.\\
+Die Testergebnisse der einzelnen Klassen zeigen das die erreichte Genauigkeit besser ist, so das allen erkannten Objekten die richtigen Klassen zugewiesen wurden. Dieses Netz ist zeigte sich aber deutlich Störungsanfälliger so dass je nach Winkel nicht immer alle Objekte erkannt wurden. Um die Stabilität zu erhöhen, wurden die Trainingsdaten erweitert und das letzte Modell welches die höchste \glqq mAP\grqq hat auf den Datensatz trainiert????? Verstehe den Satz nicht :)  ?????.\\
 \\
-Weitere Test mit dem Trainierten Netz haben ergeben, das die Erkennung der Orangensaft Packung funktioniert, solange das Bild und die Oberflächen der Objekte nicht zu dunkel werden. Das Bild (Bild) zeigt alle Trainierten Objekte mit welchen das Modell faster\_rcnn\_resnet101\_coco trainiert wurde. Hier kann man erkennen das alle Klassen richtig zugeordnet werden konnten.
+Weitere Test mit dem Netz haben ergeben, das die Erkennung der Orangensaft Packung funktioniert, solange das Bild und die Oberflächen der Objekte nicht zu dunkel werden. Das Bild (Bild) zeigt alle Trainierten Objekte mit welchen das Modell faster\_rcnn\_resnet101\_coco trainiert wurde. Hier kann man erkennen das alle Klassen richtig zugeordnet werden konnten.
 
 \begin{figure}
     [h]
@@ -556,12 +557,13 @@ Weitere Test mit dem Trainierten Netz haben ergeben, das die Erkennung der Orang
 	\label{img:loss_graph_resnet101}
 \end{figure}
 
-Abgesehen von den leichten schwächen in der Erkennung ähnlicher Objekte hat das generieren eines Neuronalen Netzes Funktioniert. Schlechte Lichtverhältnisse haben die Ausgabe außerdem negativ beeinflusst. Im nächsten Kapitel sollen die Ergebnisse des Projektes, mit den Anforderungen verglichen und ausgewertet werden.
+\\Im nächsten Kapitel sollen die Ergebnisse des Projektes, mit den Anforderungen verglichen und ausgewertet werden.
+
 
 \newpage
 
 \section{Fazit}
-Wie im vorherigen Kapitel beschrieben, hat die Entwicklung eines Künstlichen Neuronalen Netzes gut funktioniert. Lediglich bei ähnlichen Objekten, mit nur kleinen unterschieden, gab es Probleme mit der richtigen Identifizierung. Um ein finales Fazit geben zu können soll in diesem Kapitel auf die Anforderungen eingegangen werden, welche zu Beginn des Projektes festgelegt wurden.\\
+Abgesehen von den leichten schwächen in der Erkennung ähnlicher Objekte hat das generieren eines neuronalen Netzes Funktioniert. Schlechte Lichtverhältnisse haben die Ausgabe außerdem negativ beeinflusst. Lediglich bei ähnlichen Objekten, mit nur kleinen unterschieden, gab es Probleme mit der richtigen Identifizierung. Um ein finales Fazit geben zu können soll in diesem Kapitel auf die Anforderungen eingegangen werden, welche zu Beginn des Projektes festgelegt wurden.\\
 
 \subsection{Bewertung durch Anforderungen}
 
