@@ -17,25 +17,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}K\IeC {\"u}nstliches neuronales Netz}{3}{subsection.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Faltendes Neuronales Netzwerk}{4}{subsection.12}
+\contentsline {subsection}{\numberline {2.2}Faltendes neuronales Netz}{4}{subsection.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{5}{section.14}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{6}{section.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Entwicklungsumgebung}{5}{subsection.15}
+\contentsline {subsection}{\numberline {3.1}Entwicklungsumgebung}{6}{subsection.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardware Konfiguration}{5}{subsubsection.16}
+\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardware Konfiguration}{6}{subsubsection.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.2}Anaconda python}{6}{subsubsection.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Frameworks}{6}{subsection.18}
+\contentsline {subsection}{\numberline {3.2}Frameworks}{7}{subsection.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Tensorflow}{6}{subsubsection.19}
+\contentsline {subsubsection}{\numberline {3.2.1}Tensorflow}{7}{subsubsection.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Ben\IeC {\"o}tigte Bibliotheken}{6}{subsubsection.20}
+\contentsline {subsubsection}{\numberline {3.2.2}Ben\IeC {\"o}tigte Bibliotheken}{7}{subsubsection.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Abw\IeC {\"a}gung von neuronalen Netzen}{8}{subsection.21}
+\contentsline {subsection}{\numberline {3.3}Abw\IeC {\"a}gung von neuronalen Netzen}{9}{subsection.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Auswahl des Netzes}{8}{subsubsection.22}
+\contentsline {subsubsection}{\numberline {3.3.1}Auswahl des Netzes}{9}{subsubsection.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4}Trainingsdaten Generieren}{11}{subsection.28}
 \defcounter {refsection}{0}\relax 
@@ -53,4 +53,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Bewertung der Netze}{19}{subsection.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Aussicht}{19}{section.41}
+\contentsline {section}{\numberline {6}Aussicht}{20}{section.41}
