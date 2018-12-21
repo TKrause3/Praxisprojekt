@@ -186,12 +186,12 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
 Das richtige Verwalten von Lebensmitteln, welche gekühlt im Kühlschrank aufbewahrt werden müssen, ist nicht immer leicht. Oft müssen schlecht gewordene Lebensmittel weggeschmissen werden, weil sie vergessen werden oder es fehlen Lebensmittel, welche gebraucht werden. Gerade in Haushalten mit mehreren Personen, wie zum Beispiel Familien oder Wohngemeinschaften, ist das Kühlschrankmanagement schwierig, da nicht jeder Bewohner weiß, welche Lebensmittel aus dem Kühlschrank genommen wurden und welche hineingelegt werden. Der häufigste Grund ist dabei die unzureichende Kommunikation unter den Bewohnern. Aus diesem Grund werden schnell verderbende Lebensmittel leicht vergessen oder Produkte durch fehlerhafte Absprache mehrfach oder nicht gekauft. \\ Eine Idee um dieses Problem zu lösen ist den Kühlschrankinhalt mithilfe einer Kamera, welche im Inneren des Kühlschranks angebracht ist, aufzuzeichnen und die enthaltenden Lebensmittel mit einem neuronalen Netz zu klassifizieren. Aus den Ergebnissen der Analyse wird nun eine Produktliste vom Inneren des Kühlschranks erstellt und anschließend in einer Datenbank gespeichert. Über eine mobile Anwendung können die erhobenen Daten dem Benutzer zur Verfügung gestellt werden.
   
   \subsection{Zielsetzung} 
-Ziel dieses Projektes ist die Entwicklung eines künstlichen neuronalen Netzes, welches mehrere vordefinierte Klassen zuverlässig erkennt und zuordnen kann. Das Netz soll außerdem so konzipiert werden, das Produkte unabhängig ihrer Position im Bild erkannt werden können. Desweiteren soll das neuronale Netz auch mit leicht verdeckten Objekten zurecht kommen.
+Ziel dieses Projektes ist die Entwicklung eines künstlichen neuronalen Netzes, welches mehrere vordefinierte Klassen zuverlässig erkennt und zuordnen kann. Das Netz soll außerdem so konzipiert werden, dass Produkte unabhängig ihrer Position im Bild erkannt werden können. Desweiteren soll das neuronale Netz auch mit leicht verdeckten Objekten zurecht kommen.
 
 \newpage
 	
   \subsection{Anforderungen}
-In diesem Kapitel sollen die Anforderungen an das zu entwickelnde künstliche neuronales Netz, mit Hilfe der Anforderungsschablonen von \glqq Die SOPHISTen\grqq \cite{sophisten2013schablonen} definiert werden. 
+In diesem Kapitel sollen die Anforderungen an das zu entwickelnde künstliche neuronale Netz, mit Hilfe der Anforderungsschablonen von \glqq Die SOPHISTen\grqq \cite{sophisten2013schablonen}, definiert werden. 
   
   \subsubsection{Funktionale Anforderungen}
   
@@ -224,7 +224,7 @@ In diesem Kapitel sollen die Anforderungen an das zu entwickelnde künstliche ne
 Die Bezeichnung \glqq neuronale Netze\grqq kommt aus der Biologie und beschreibt die Funktionsweise des menschlichen Gehirns. Das Gehirn eines Menschen besteht aus ungefähr $10^{11}$ Nervenzellen \cite[265ff.]{ertel2013grundkurs}, den so genannten Neuronen. Diese sind untereinander verbunden und tauschen Informationen aus. Wird eine bestimmte Reizschwelle überschritten, werden Signale an das nächste Neuron weitergegeben. Ein neuronales Netz kann somit als eine Verbindung aus vielen Nervenzellen bezeichnet werden, welches Informationen verarbeitet und weiterleitet. Das neuronale Netz ist unter anderem für das menschliche Lernen zuständig. 
 \\
 \subsection{Künstliches neuronales Netz}
-Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines menschlichen Gehirns, welches auf Grundlage mathematischer Formeln arbeitet. Auf die verwendeten Formeln, wird in dieser Arbeit nicht eingegangen, eher soll die Funktionsweise von künstlichen neuronalen Netzen erläutert werden \cite[247-285]{ertel2013grundkurs}. Künstliche Neuronale Netze (KNN) stellen einen Bestandteil des maschinellen Lernens dar. Oft werden KNN für die Klassifizierung von Datensätzen (Bildern, Statistiken, Profile in sozialen Netzwerken) verwendet. Das Ergebnis der Klassifikation ist eine Zugehörigkeitswahrscheinlichkeit der Eingabedaten zu den definierten Klassen.
+Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines menschlichen Gehirns, welches auf Grundlage mathematischer Formeln arbeitet. Auf die verwendeten Formeln wird in dieser Arbeit nicht eingegangen, sondern auf die Funktionsweise von künstlichen neuronalen Netzen \cite[247-285]{ertel2013grundkurs}. Künstliche Neuronale Netze (KNN) stellen einen Bestandteil des maschinellen Lernens dar. Oft werden KNN für die Klassifizierung von Datensätzen (Bildern, Statistiken, Profile in sozialen Netzwerken) verwendet. Das Ergebnis der Klassifikation ist eine Zugehörigkeitswahrscheinlichkeit der Eingabedaten zu den definierten Klassen.
 \\
 \\
 \begin{figure}
@@ -236,11 +236,11 @@ Ein künstliches neuronales Netz ist dementsprechend eine Nachahmung eines mensc
 \end{figure}
 \\
 \\
-Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \glqq Input Layer\grqq. Dieser \glqq Layer\grqq bekommt alle Eingangsdaten von einem beliebigen Datensatz. Jeder Pixel auf einem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \glqq Hidden Layer\grqq. Jeder \glqq Layer\grqq ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \glqq Layer\grqq durchlaufen wurden. Die dritte Schicht besteht aus dem \glqq Output Layer\grqq. Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \glqq Output Layer\grqq mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
+Der Aufbau eines künstlichen neuronalen Netzes kann grundsätzlich in drei Schichten aufgeteilt werden (Abbildung \ref{img:KNN}). Die erste Schicht ist der \glqq Input Layer\grqq. Dieser \glqq Layer\grqq bekommt alle Eingangsdaten von einem beliebigen Datensatz. Jedes Pixel auf einem Bild wird mit einem Neuron verbunden, welche sich in der Gewichtung und dem Schwellwert unterscheiden können. Wird der Schwellwert überschritten, gibt das Neuron die verarbeiteten Informationen an die nächste Schicht weiter. Die zweite Schicht besteht aus einem oder mehreren \glqq Hidden Layer\grqq. Jeder \glqq Layer\grqq ist in dieser Schicht auf verschiedene Merkmale trainiert. Anfangs werden nur grobe Strukturen erkannt, wie beispielsweise Geraden oder Kanten. Diese Strukturen werden detaillierter, desto mehr \glqq Layer\grqq durchlaufen werden. Die dritte Schicht besteht aus dem \glqq Output Layer\grqq. Die Muster die in den vorherigen Layern erkannt und zusammengesetzt wurden, vergleicht der \glqq Output Layer\grqq mit den trainierten Klassen und gibt eine prozentuale Wahrscheinlichkeit aus, welche Klassen in dem Bild enthalten sind.
 
 
   \subsection{Faltendes neuronales Netz}
-Anders als bei einem KNN, welches auf Grundlage des menschlichen Gehirns entworfen wurde, orientiert sich ein \glqq Convolutional Neural Network\grqq (CNN) an dem Konzept des menschlichen Sehens \cite{lecun1989backpropagation}. Dabei werden maschinell kleine Bereiche visueller Informationen so simuliert, als wären sie benachbarte Sehnerven im Auge. Gerade für die Verarbeitung von Bilddaten werden häufig \glqq Convolutional Neural Networks\grqq eingesetzt \cite[326]{goodfellow2016deep}. Voraussetzung für die Verwendung eines CNN ist die matrixartige Anordnung der Datenpunkte, wie beispielsweise bei einem digitalen Bild.
+Anders als bei einem KNN, welches auf Grundlage des menschlichen Gehirns entworfen wurde, orientiert sich ein faltendes neuronales Netz, auch \glqq Convolutional Neural Network\grqq (CNN) genannt, an dem Konzept des menschlichen Sehens \cite{lecun1989backpropagation}. Dabei werden maschinell kleine Bereiche visueller Informationen so simuliert, als wären sie benachbarte Sehnerven im Auge. Gerade für die Verarbeitung von Bilddaten werden häufig \glqq Convolutional Neural Networks\grqq eingesetzt \cite[326]{goodfellow2016deep}. Voraussetzung für die Verwendung eines CNN ist die matrixartige Anordnung der Datenpunkte, wie beispielsweise bei einem digitalen Bild.
 \\
 \\
 Bei einem \glqq Convolutional Layer\grqq (Abbildung \ref{img:CNN}) wird über die Pixel des Eingabebildes eine Schablone gelegt. Die Schablone wird je nach Bildgröße mehrfach horizontal, wie auch vertikal verschoben \cite[327-335]{goodfellow2016deep}. Diese Layer haben meist eine ungerade quadratische Abmessung (3x3, 5x5, 7x7). Die frühen Schichten bilden zunächst ein Skalarprodukt der betroffenen Pixel und können dadurch grobe Kanten erkennen. Jeder Layer ist dabei auf eine bestimmte Art von Mustern trainiert. Je mehr Layer durchlaufen werden, desto genauer werden die Muster, welche das neuronale Netz erkennt.
@@ -253,54 +253,54 @@ Bei einem \glqq Convolutional Layer\grqq (Abbildung \ref{img:CNN}) wird über di
 	\label{img:CNN}
 \end{figure}
 
-Der \glqq Pooling Layer\grqq oder auf deutsch, Vereinfachungsschicht (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \glqq Convolutional Layer\grqq \cite[336f.]{goodfellow2016deep}. Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und horizontal wie auch vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen, oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus dem \glqq Fully Connected Layer\grqq, welcher den normalen Aufbau eines künstlichen neuronalen Netzes darstellt \cite[14]{lecun1989backpropagation}. Das bedeutet alle Ausgaben werden, wie bei einem KNN, mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Zuordnungswahrscheinlichkeiten der Objekte zu den trainierten Klassen berechnet.
+Der \glqq Pooling Layer\grqq, oder auf deutsch Vereinfachungsschicht, (Abbildung \ref{img:CNN}) funktioniert ähnlich wie der \glqq Convolutional Layer\grqq \cite[336f.]{goodfellow2016deep}. Auch bei dieser Methode wird eine Schablone über die Pixel des Bildes gelegt und horizontal wie auch vertikal verschoben. Hierbei werden die Farbwerte der beteiligten Pixel verarbeitet. Es kann entweder der höchste Farbwert eines Pixels übernommen oder der durchschnittliche Farbwert berechnet werden. Die letzten Schichten des Netzes bestehen aus dem \glqq Fully Connected Layer\grqq, welcher den normalen Aufbau eines künstlichen neuronalen Netzes darstellt \cite[14]{lecun1989backpropagation}. Das bedeutet alle Ausgaben werden, wie bei einem KNN, mit jedem Neuron verbunden. Die letzte Schicht übergibt seine Ausgaben an den Output Layer, welcher die Zuordnungswahrscheinlichkeiten der Objekte zu den trainierten Klassen berechnet.
 
 \newpage
 
   \section{Durchführung}
-In diesem Kapitel wird die praktische Durchführung beschrieben und gemachte Entscheidungen erläutert. Zu beginn werden die verwendeten Frameworks und die Entwicklungsumgebung vorgestellt. Da für das erstellen eines neuronalen Netzes eine hohe Anzahl an Trainingsdaten, sowie viel Rechenleistung benötigt wird, folgt eine Evaluation von vortrainierten Netzen welche für diese Projekt verwendet werden sollen. Im Anschluss werden die zu verwendenden Klassen und Trainingsdaten erstellt. Abschließend werden die ausgewählten Netze mit den generierten Trainingsdaten trainiert. \\
+In diesem Kapitel wird die praktische Durchführung beschrieben und getroffene Entscheidungen erläutert. Zu Beginn werden die verwendeten Frameworks und die Entwicklungsumgebung vorgestellt. Da für das Erstellen eines neuronalen Netzes eine hohe Anzahl an Trainingsdaten, sowie viel Rechenleistung benötigt wird folgt eine Evaluation von vortrainierten Netzen, welche für dieses Projekt verwendet werden sollen. Im Anschluss werden die zu verwendenden Klassen und Trainingsdaten erstellt. Abschließend werden die ausgewählten Netze mit den generierten Trainingsdaten trainiert. \\
 \\
 
 \subsection{Entwicklungsumgebung}
-Um ein bestehendes neuronales Netz neu zu trainieren werden neben dem Neuronalen Netz weitere Frameworks sowie eine Entwicklungsumgebung benötigt. In den kommenden Unterpunkten wird die Entwicklungsumgebung sowie alle benötigten Bibliotheken aufgeführt. 
+Um ein bestehendes neuronales Netz neu zu trainieren werden neben dem neuronalen Netz weitere Frameworks und eine Entwicklungsumgebung benötigt. In den kommenden Unterpunkten werden die Entwicklungsumgebung sowie alle benötigten Bibliotheken aufgeführt. 
 
-  \subsubsection{Verwendete Hardware Konfiguration}
+  \subsubsection{Verwendete Hardwarekonfiguration}
   \label{konfiguration}
-Das Netz wurde auf einem Windows 8.1 Betriebssystem trainiert. Berechnet wurden die Trainingsschritte von einer Nvidia GeForce GTX 980 GPU mit 4GB VRAM (Grafikspeicher), einer Intel Core i5 CPU und 16GB RAM (Arbeitsspeicher). Für einen Trainingsschritt, mit der verwendeten Konfiguration, benötigt die Grafikkarte durchschnittlich 250ms-600ms. Im Vergleich hat die CPU mit 2-6 Sekunden pro Schritt, ungefähr die Acht fache Zeit benötigt. Der Vorteil liegt hier eindeutig bei der Grafikkarte, durch die Optimierung in Matrixmultiplikationen und wird aus diesem Grund für das Training verwendet.
+Das Netz wurde auf einem Windows 8.1 Betriebssystem trainiert. Berechnet wurden die Trainingsschritte von einer Nvidia GeForce GTX 980 GPU mit 4GB VRAM (Grafikspeicher), einer Intel Core i5 CPU und 16GB RAM (Arbeitsspeicher). Für einen Trainingsschritt, mit der verwendeten Konfiguration, benötigt die Grafikkarte durchschnittlich 250ms-600ms. Im Vergleich hat die CPU, mit 2-6 Sekunden pro Schritt, ungefähr die achtfache Zeit benötigt. Durch die Optimierung der Matrixmultiplikationen, liegt der Vorteil eindeutig bei der Grafikkarte. Aus diesem Grund wird diese für das Training verwendet.
 
-  \subsubsection{Anaconda python}
-Die im späteren aufgeführten CNN's sowie die Tensorflow API wurden in der Programmiersprache Python erstellt, weswegen wir zum um-trainieren mit Python arbeiten. Des weiteren bietet Python eine Vielzahl an verfügbaren Bibliotheken welche wir benötigen. Anaconda \cite{conda2018} ist eine \glqq Open-Source-Distribution\grqq für die Programmiersprache Python. Mit dieser können wir gleichzeitig mehrere Versionen von Python generieren und die notwendigen Bibliotheken installieren. Anaconda bietet den Vorteil einfach zwischen den verschieden Python Versionen wechseln zu können \\
-In diesem Projekt wurde mit der Python version 3.6.7 gearbeitet.
+  \subsubsection{Anaconda Python}
+Die später aufgeführten CNN's sowie die Tensorflow API wurden in der Programmiersprache Python erstellt, weshalb diese auch als Programmmiersprache ausgewählt wurde. Des Weiteren bietet Python eine Vielzahl von verfügbaren Bibliotheken an, welche für das Erstellen der Trainingsdaten und das Trainieren der Netze benötigt werden. Anaconda \cite{conda2018} ist eine \glqq Open-Source-Distribution\grqq für die Programmiersprache Python. Diese ermöglicht es einfach zwischen den verschieden Python-Versionen zu wechseln. \\
+In diesem Projekt wurde mit der Python Version 3.6.7 gearbeitet.
 
   \begin{itemize}
 	\item Installation von Python 3.6.7: conda create -n <Name> python=3.6.7
   \end{itemize}
   
   \subsection{Frameworks}
-Um ein künstliches neuronales Netz zu trainieren, wird ein Framework und mehrere Programm-Bibliotheken benötigt. Die Auswahl wird im folgenden aufgezählt und kurz erläutert.
+Um ein künstliches neuronales Netz zu trainieren, werden ein Framework und mehrere Programm-Bibliotheken benötigt. Die Auswahl wird im Folgenden aufgezählt und kurz erläutert.
  
   \subsubsection{Tensorflow}
-Bei Tensorflow \cite{google2018tens} handelt es sich um eine Plattform unabhängige Programmbibliothek unter Open-Source-Lizenz, die sich für Aufgaben rund um maschinelles Lernen und Künstliche Intelligenz (KI) einsetzen lässt. Ursprünglich entwickelte Google die Software für den internen Bedarf. Das Framework bietet vielfältige Einsatzmöglichkeiten und gestattet es, lernende neuronale Netze zu erstellen und diese zu verändern. Es zeichnet sich durch seine gute Skalierbarkeit aus und ist auf unterschiedlichen Systemen vom Smartphone bis zu Clustern mit vielen Servern einsetzbar. Außerdem stellt Google verschiedene trainierte Modelle bereit welche für das Projekt verwendet können. Tensorflow kann auf allen CPU's betrieben werden, oder mit Nvidia Grafikkarten, welche CUDA unterstützen.
+Bei Tensorflow \cite{google2018tens} handelt es sich um eine plattformunabhängige Programmbibliothek unter Open-Source-Lizenz, die sich für Aufgaben rund um maschinelles Lernen und künstliche Intelligenz (KI) einsetzen lässt. Ursprünglich entwickelte Google die Software für den internen Bedarf. Das Framework bietet vielfältige Einsatzmöglichkeiten und gestattet es, lernende neuronale Netze zu erstellen und diese zu verändern. Es zeichnet sich durch seine gute Skalierbarkeit aus und ist auf unterschiedlichen Systemen vom Smartphone bis zu Clustern mit vielen Servern einsetzbar. Außerdem stellt Google verschiedene trainierte Modelle bereit, welche für das Projekt verwendet werden können. Tensorflow kann auf allen CPU's betrieben werden oder mit Nvidia Grafikkarten, die CUDA unterstützen.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade gpu-tensorflow
   \end{itemize}
   
-Verwendet wird zusätzlich die API von Tensorflow (Models) für die Objekterkennung. In dieser wird eine Grundstruktur für das Trainieren eines CNN zur Verfügung gestellt, welche man je nach Verwendungszweck anpassen kann.
+  Zusätzlich wird die API von Tensorflow (Models) für die Objekterkennung verwendet. In dieser wird eine Grundstruktur für das Trainieren eines CNN zur Verfügung gestellt, welche man je nach Verwendungszweck anpassen kann.
   
   \subsubsection{Benötigte Bibliotheken}
-Für das Arbeiten mit Tensorflow und CNN's benötigt man einige spezielle Python Bibliotheken. Diese werden im folgenden aufgeführt und erläutert. Die Installation geschieht hier über den \glqq Package Installer \glqq von Python.
+Für das Arbeiten mit Tensorflow und CNN's werden einige spezielle Python-Bibliotheken benötigt. Diese Bibliotheken werden im Folgenden aufgeführt und erläutert. Die Installation geschieht hier über den \glqq Package Installer \glqq von Python.
 \\
  
 \textbf{Pillow}\\\\
-Pillow ist eine \glqq Imaging Library \glqq für Python. Diese Bibliothek wird dafür genutzt um Bilddateien öffnen, verändern und speichern zu können.
+Pillow ist eine \glqq Imaging Library \glqq für Python. Diese Bibliothek wird dafür genutzt Bilddateien zu öffnen, zu verändern und speichern zu können.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade pillow
   \end{itemize}
 
 \textbf{lxml}\\\\ 
-lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei den Elementebaum von XML stark. Verwendet wird lxml dafür, um die Markierungen von Objektsklassen und deren Positionen auszulesen. Durch die Arbeit mit Elementbäumen werden nur die benötigten Informationen herausgefiltert, woraus einem bessern Laufzeitverhalten resultiert.
+lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei den Elementebaum von XML stark. Verwendet wird lxml, um die Markierungen von Objektklassen und deren Positionen auszulesen. Durch die Arbeit mit Elementbäumen werden nur die benötigten Informationen herausgefiltert, woraus ein besseres Laufzeitverhalten resultiert.
   
   \begin{itemize}
 \item Installation in Python: pip install --upgrade lxml
@@ -308,36 +308,36 @@ lxml ist eine Weiterführung der XML Sprache für Python. lxml erweitert dabei d
   
   
 \textbf{Cython}\\\\
-Python ist im vergleich zu C eine recht langsame Programmiersprache, was die Ausführungzeit des Programmcodes wesentlich erhöht. Cython ist eine Programmbibliothek und auch Programmiersprache, welche die wesentlich langsame Programmiersprache Python erweitert und in der Ausführung beschleunigt. Dabei wird Python-Code in C kompiliert oder es kann externer code von C, eingebunden werden um ihn für die Ausführung zu nutzen. Das hat den Vorteil, das die Geschwindigkeit des Programms erhöht wird. Gerade für das Trainieren künstlicher neuronaler Netze, wird viel Rechenleistung benötigt.
+Python ist im Vergleich zu C eine recht langsame Programmiersprache, bei der die Ausführungzeit des Programmcodes wesentlich erhöht ist. Cython ist eine Programmbibliothek und auch Programmiersprache, welche die wesentlich langsamere Programmiersprache Python erweitert und in der Ausführung beschleunigt. Dabei wird Python-Code in C kompiliert oder es kann externer Code von C eingebunden werden, um ihn für die Ausführung zu nutzen. Das hat den Vorteil, dass die Geschwindigkeit des Programms erhöht wird. Gerade für das Trainieren künstlicher neuronaler Netze wird viel Rechenleistung benötigt.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade Cython
   \end{itemize}
 
 \textbf{Jupyter}\\\\
-Jupyter oder auch \glqq Jupyter Notebook\grqq ist eine open-source Web Applikation die es ermöglicht Dokumente welche Live Code, Abbildungen oder Text beinhalten zu teilen. Dabei können Inhalte von Dateien im Browser aufgerufen und ausfeführt werden. Verwendet wird diese Bibliothek um die korrekte installation von Tensorflow zu überprüfen.  
+Jupyter, oder auch \glqq Jupyter Notebook\grqq, ist eine open-source Webapplikation, die es ermöglicht Dokumente, welche Live Code, Abbildungen oder Text beinhalten zu teilen. Dabei können Inhalte von Dateien im Browser aufgerufen und ausgeführt werden. Verwendet wird diese Bibliothek, um die korrekte Installation von Tensorflow zu überprüfen.  
 
 \begin{itemize}
 \item Installation in Python: pip install --upgrade jupyter
   \end{itemize}
   
-\textbf{matplotlib}\\\\
-Die Programmbibliothek matplotlib ermöglicht es mathematische Formlen in der Python-Konsole oder im Code zu verarbeiten und zu visualisieren.
-Matplotlib wird verwendet um die Erkennung von Objekten und deren Positionen auf einem Bild dazustellen.
+\textbf{Matplotlib}\\\\
+Die Programmbibliothek matplotlib ?????? Anführungszeichen????? ermöglicht es mathematische Formeln in der Python-Konsole oder im Code zu verarbeiten und zu visualisieren.
+Matplotlib wird verwendet, um die Erkennung von Objekten und deren Positionen auf einem Bild dazustellen.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade matplotlib
   \end{itemize}
   
 \textbf{Pandas}\\\\
-Pandas ist eine Programmbibliothek von Python. Der Name stammt von \glqq Paneldata\grqq, was eine Bezeichnung von Datensätzen ist. Diese Bibliothek ermöglicht eine enfache selektierung und Inditzierung von Daten. In diesem Projekt wird Pandas für die Erhebung von Informationen aus den Trainingsdaten verwendet und für die Generierung von Graphen.
+Pandas ist eine Programmbibliothek von Python. Der Name stammt von \glqq Paneldata\grqq, was eine Bezeichnung von Datensätzen ist. Diese Bibliothek ermöglicht eine einfache Selektierung und Indizierung von Daten. In diesem Projekt wird Pandas für die Erhebung von Informationen aus den Trainingsdaten und für die Generierung von Graphen verwendet.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade pandas
   \end{itemize}
   
-\textbf{opencv-python}\\\\
-OpenCV steht für \glqq Open Source Computer Vision Library\grqq  und ist eine freie Programmbibliothek für maschinelles Sehen. Diese Bibliothek ermöglicht die Aufteilung eines Bildes in verschiedene Bildbereiche. Außerdem können weitere Bildoptimierungen vorgenommen werden, wie das anpassen der Bild Helligkeit.
+\textbf{OpenCV-Python}\\\\
+OpenCV steht für \glqq Open Source Computer Vision Library\grqq und ist eine freie Programmbibliothek für maschinelles Sehen. Diese Bibliothek ermöglicht die Aufteilung eines Bildes in verschiedene Bildbereiche. Außerdem können weitere Bildoptimierungen vorgenommen werden, wie zum Beispiel das Anpassen der Bildhelligkeit.
 
   \begin{itemize}
 \item Installation in Python: pip install --upgrade opencv-python
@@ -347,7 +347,7 @@ OpenCV steht für \glqq Open Source Computer Vision Library\grqq  und ist eine f
 In der folgenden Abwägung werden einige verfügbare Netze aufgeführt, die für Tensorflow zur Verfügung gestellt werden. Dabei werden die aufgeführten Modelle in Genauigkeit und Geschwindigkeit verglichen.
  
   \subsubsection{Auswahl des Netzes} 
-In Hinsicht auf Trainierte Netze bietet \glqq Tensorflow\grqq einige Möglichkeiten an. Hierbei handelt es sich um die \glqq Tensorflow detection model zoo\grqq \cite{google2018zoo} welche mit verschiedensten Datensätzen ausgiebig trainiert wurden. Bei dem COCO Datenset handelt es sich um \glqq Common Objects In Context\grqq \cite{common2018data} und beinhaltet rund 330 Tausend Bilder, welche über 1.5 Millionen schichten in 90 Klassen trainiert wurden. Da es sich um häufige auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für unser vorhaben geeignet. In der folgenden Tabelle, wurden ein paar dieser Modelle ausgesucht und verglichen.
+Hinsichtlich trainierter Netze bietet \glqq Tensorflow\grqq einige Möglichkeiten an. Hierbei handelt es sich um die \glqq Tensorflow detection model zoo\grqq \cite{google2018zoo}, welche mit verschiedensten Datensätzen ausgiebig trainiert wurden. Bei dem COCO Datenset handelt es sich um \glqq Common Objects In Context\grqq \cite{common2018data} und beinhaltet rund 330 Tausend Bilder, die über 1.5 Millionen Schichten in 90 Klassen trainiert wurden. Da es sich um häufig auftretende Objekte in einer realen Umgebung handelt, sind die Modelle gut für das Vorhaben geeignet. In der folgenden Tabelle wurden ein paar dieser Modelle ausgesucht und verglichen.
 \\
 \\
 
@@ -376,51 +376,51 @@ ssd\_resnet\_50\_fpn\_coco & 76 ms & 35 & Boxen
 \end{table}
 
 
-In der Tabelle, werden 6 mögliche Modelle aufgeführt wobei diese anhand der durchschnittlichen Geschwindigkeit, der Genauigkeit und eines Ausgabetyps verglichen werden. Die zweite Spalte, COCO mAP (mean average Persition) gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich auf alle ausgeführten Trainings Durchläufe des Systems. Es stellt als keine Prozentuale Wahrscheinlichkeit dar. In der letzten Spalte wird die Ausgabeform beschrieben. Hierbei kann zwischen Boxen und Masken unterschieden werden. Dabei wird je nach Ausgabetyp entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das object erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen. In der Auswahl befinden sich jedoch keine Modelle welche eine Maskierung ausgeben.
+In der Tabelle werden sechs mögliche Modelle aufgeführt, in der diese anhand der durchschnittlichen Geschwindigkeit, der Genauigkeit und eines Ausgabetyps verglichen werden. Die zweite Spalte COCO mAP (mean average Persition) gibt die mittlere durchschnittliche Genauigkeit an, mit welcher es Objekte erkennt. Berechnet wird diese durch die Genauigkeit der richtigen Ergebnisse im Vergleich zu allen ausgeführten Trainingsdurchläufen des Systems. Die mAP stellt also keine prozentuale Wahrscheinlichkeit dar. In der letzten Spalte wird die Ausgabeform beschrieben. Hier kann zwischen Boxen und Masken unterschieden werden. Je nach Ausgabetyp wird dabei entweder ein viereckiger Kasten (Abbildung \ref{img:Boxes}) um das Objekt erstellt, oder es wird eine Maske (Abbildung \ref{img:Mask}) über dieses gezogen. In der Auswahl befinden sich jedoch keine Modelle welche eine Maskierung ausgeben.
 
 %einbinden einer Grafik 
 \begin{figure} 
 	[h]
 	\centering
-    \subfigure[Makierung durch Maskierung \cite{artikle2018test2}]{\includegraphics[width=0.39\textwidth]{Sources/sample.jpg}}
+    \subfigure[Markierung durch Maskierung \cite{artikle2018test2}]{\includegraphics[width=0.39\textwidth]{Sources/sample.jpg}}
     \label{img:Mask} 
-    \subfigure[Makierung durch Kästen \cite{google2018test1}]{\includegraphics[width=0.39\textwidth]{Sources/boxes.jpg}}
+    \subfigure[Markierung durch Kästen \cite{google2018test1}]{\includegraphics[width=0.39\textwidth]{Sources/boxes.jpg}}
     \label{img:Boxes} 
-\caption{Ausgaben von Neuronalen Netzen} 
+\caption{Ausgaben von neuronalen Netzen} 
 \end{figure} 
 
 \newpage
 
-Bei dem Vergleich der Modelle fällt auf, dass alle eine ähnliche Genauigkeit aufweisen und sich nur leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet, und ausgewertet.
+Bei dem Vergleich der Modelle fällt auf, dass alle eine ähnliche Genauigkeit aufweisen und sich nur leicht unterscheiden. In der Geschwindigkeit jedoch werden die Unterschiede erkennbar größer. Durch die hohe Geschwindigkeit und vergleichsweise hohe Genauigkeit, wird vorerst das faster\_rcnn\_inception\_v2\_coco Modell getestet und ausgewertet.
 \\
 
-Das ausgewählte Modell wurde mit 6 Klassen um-trainiert. Die Klassen bestanden aus einem Skart-kartenset von Neun bis Ass \cite{evan2018pic}. Rund Fünf Stunden wurde das Netz trainiert, und hat dabei 60 tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergeben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
+Das ausgewählte Modell wurde mit sechs Klassen umtrainiert. Die Klassen bestanden aus einem Skart-Kartenset von neun bis Ass \cite{evan2018pic}. Rund fünf Stunden wurde das Netz trainiert und hat dabei 60 Tausend Testdurchläufe absolviert. Eine Überprüfung des Netzes hat eine Genauigkeit von 97 bis 99 Prozent ergeben. Auch Tests ergaben das die Erkennung fehlerfrei funktioniert. Das Testbild (Abbildung \ref{img:Kartenset} zeigt, das alle Karten mit einer hohen Wahrscheinlichkeit identifiziert werden konnten.
 \\
 \begin{figure}
     [h]
 	\centering
 	\includegraphics[scale=0.5]{Sources/kartenset.png}
-	\caption{Analysiertes Bild, durch das Testnetz}
+	\caption{Analysiertes Bild durch das Testnetz}
 	\label{img:Kartenset}
 \end{figure}
 \\
-Das erfolgreiche Training und testen des Netzes hat die Verwendung des Ausgewählten Modells bestärkt. Die Vorgehensweise sieht in den weiteren Schritten eine Definition und Festlegung der Trainings-Daten für das benötigte neuronale Netz. 
+Das erfolgreiche Training und Testen des Netzes hat die Verwendung des ausgewählten Modells bestärkt. Die weitere Vorgehensweise besteht aus einer Definition und Festlegung der Trainingsdaten für das benötigte neuronale Netz. 
 
   
-  \subsection{Trainingsdaten Generieren} 
-Zu beginn hat ein untrainiertes neuronales Netz, in seinen Neuronen, zufällige Gewichtungen und Schwellwerte, da es bis zu diesem Zeitpunkt noch keine Informationen darüber hat, welche Objekte es erkennen soll und welche Eigenschaften diese haben. Damit das zu entwickelnde neuronale Netz die Informationen erhält welche für eine Klassifizierung notwendig sind müssen zunächst Trainings und Testdaten generiert werden. Für das Training werden optimaler weise mehrere Tausend Trainings- und Testbilder benötigt, damit eine möglichst hohe Genauigkeit erreicht werden kann. Auch die Trainingsphase dauert in der Ausführung einige Stunden. 
+  \subsection{Trainingsdaten generieren} 
+Zu Beginn hat ein untrainiertes neuronales Netz in seinen Neuronen zufällige Gewichtungen und Schwellwerte, da es bis zu diesem Zeitpunkt noch keine Informationen darüber hat, welche Objekte es erkennen soll und welche Eigenschaften diese haben. Damit das zu entwickelnde neuronale Netz die Informationen erhält, die für eine Klassifizierung notwendig sind, müssen zunächst Trainings- und Testdaten generiert werden. Für das Training werden optimalerweise mehrere Tausend Trainings- und Testbilder benötigt, damit eine möglichst hohe Genauigkeit erreicht werden kann. Die Trainingsphase dauert in der Ausführung einige Stunden. 
 \\
 \\
-Wie bereits in vorherigen Kapitel beschrieben wird wegen der begrenzten Zeitressource ein vortrainiertes Netz verwendet welches mit den COCO Testdaten trainiert wurde verwendet. Der Vorteil eines vortrainierten Netzes besteht darin, das die Gewichtungen der frühen Schichten gut eingestellt sind und diese nicht verändert werden müssen. Lediglich die letzten Schichten sollen mit den eigenen Daten umtrainiert werden. Durch die guten Einstellungen der ersten Schichten, werden weniger Trainings- und Testdaten benötigt, um eine hohe Genauigkeit des Neuronalen Netzes zu erreichen.
+Wie bereits in einem vorherigen Kapitel beschrieben, wird wegen der begrenzten Zeitressource ein vortrainiertes Netz verwendet, welches mit den COCO Testdaten trainiert wurde. Der Vorteil eines vortrainierten Netzes besteht darin, dass die Gewichtungen der frühen Schichten gut eingestellt sind und diese nicht verändert werden müssen. Lediglich die letzten Schichten sollen mit den eigenen Daten umtrainiert werden. Durch die guten Einstellungen der ersten Schichten werden weniger Trainings- und Testdaten benötigt, um eine hohe Genauigkeit des neuronalen Netzes zu erreichen.
 
   \subsubsection{Funktionsweise}
-Bei einem untrainierten Netz werden jedem Neuron zunächst ein zufälliges Anfangs-Gewicht sowie ein Schwellwert zugewiesen. Beim starten der Trainingsphase werden Daten in das Netz eingeführt. Jedes Neuron verarbeiten nun alle Eingangssignale mit der zugewiesenen Gewichtung und geben die Ergebnisse an das nächste Neuron weiter. 
+Bei einem untrainierten Netz werden jedem Neuron zunächst ein zufälliges Anfangsgewicht sowie ein Schwellwert zugewiesen. Beim Starten der Trainingsphase werden Daten in das Netz eingeführt. Jedes Neuron verarbeitet nun alle Eingangssignale mit der zugewiesenen Gewichtung und gibt die Ergebnisse an das nächste Neuron weiter. 
 \\
 \\
-Im Output-Layer wird nun das Ergebnis der Berechnungen ermittelt. Das Ergebnis des Netzes wird mit der Tatsächlichen Bezeichnung des Objektes verglichen. Lag das Netz bei der Bestimmung falsch wird zunächst der entstandene Fehler Berechnet und die Neuronen werden dementsprechend angepasst. Dabei werden die Gewichtungen der Neuronen so stark verändert je mehr Einfluss diese auf das resultierende Ergebnis hatten. Dieser Vorgang wird nun viele male wiederholt. \\
+Im Output-Layer wird nun das Ergebnis der Berechnungen ermittelt. Das Ergebnis des Netzes wird mit der tatsächlichen Bezeichnung des Objektes verglichen. Lag das Netz bei der Bestimmung falsch wird zunächst der entstandene Fehler berechnet und die Neuronen werden dementsprechend angepasst. Dabei werden die Gewichtungen der Neuronen umso stäker verändert, je mehr Einfluss diese auf das resultierende Ergebnis hatten. Dieser Vorgang wird nun viele Male wiederholt. \\
   
   \subsubsection{Auswahl der Klassen} 
-Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu erkennen, indem Klassen ausgewählt werden, welche Ähnlichkeiten aufweisen jedoch unterschiedliche Bezeichnungen haben. Beispiele sind hier Flaschen, Tetra Packs oder auch Schachteln.
+Bei der Auswahl der Klassen wurde darauf geachtet die Genauigkeit des Netzes zu erkennen, indem Klassen ausgewählt werden, welche Ähnlichkeiten aufweisen, jedoch unterschiedliche Bezeichnungen haben. Beispiele sind hier Flaschen, Tetrapacks oder auch Schachteln.
 
 \vspace{0.5 cm}
 
@@ -442,7 +442,7 @@ Bei der Auswahl der Klassen wurde darauf geachtet, die Genauigkeit des Netzes zu
 \end{itemize}
   
 
-Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden kann, muss ein großer Datensatz generiert werden. Um Aussagen über die Genauigkeit des Netzes machen zu können wurden Objekte mit hoher Ähnlichkeit verwendet. Als Testobjekte wurden zwei Tetra Packs, zwei Flaschen und zwei Aufstriche verwendet. Die Einteilung der Klassen ist in der folgenden Tabelle aufgeführt.
+Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden kann, muss ein großer Datensatz generiert werden. Um Aussagen über die Genauigkeit des Netzes machen zu können, wurden Objekte mit hoher Ähnlichkeit verwendet. Als Testobjekte wurden zwei Tetrapacks, zwei Flaschen und zwei Aufstriche verwendet. Die Einteilung der Klassen ist in der folgenden Tabelle aufgeführt.
 \\
 \\
 
@@ -474,39 +474,39 @@ Damit das zu entwickelnde Netz für die ausgewählten Klassen verwendet werden k
 
 \vspace{1 cm}
 
-Zunächst müssen Testdaten in Form von Bildern generiert werden, wozu Bilder aus dem Internet, sowie selst erstellte Fotografien der Objekte verwendet, welche aus  verschieden Winkeln und unterschiedlichen Lichtverhältnissen aufgenommen wurden. Dabei sollte ein Bild die Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht unnötig viel Zeit benötigt. Die selbst erstellten Bilder wurden deshalb um den Faktor 0.2 verkleinert. Verwendet wurde für die Komprimierung das in Python geschriebenes Programm (reziser.py).\\
+Zunächst müssen Testdaten in Form von Bildern generiert werden, wozu Bilder aus dem Internet, sowie selbst erstellte Fotografien der Objekte verwendet werden, welche aus verschieden Winkeln und unterschiedlichen Lichtverhältnissen aufgenommen wurden. Dabei sollte ein Bild die Größe von 200 KB nicht übersteigen, damit das Training erfolgreich verläuft und nicht unnötig viel Zeit benötigt. Die selbst erstellten Bilder wurden deshalb um den Faktor 0.2 verkleinert. Verwendet wurde für die Komprimierung das in Python geschriebene Programm reziser.py.\\
 \\
-Zum erstellen eines Ground True müssen die Bilder gelabelt werden, hierfür wurde das Programm labelImg.py verwendet. Beim labeln werden die zu klassifiezierenden Objekte auf dem Bild mit den Positionsdaten und Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem markieren werden die Daten in Trainings und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML Dateien, in zwei CSV Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
+Zum Erstellen eines Ground True ??? muss das erklärt werden??? müssen die Bilder gelabelt werden. Hierfür wurde das Programm labelImg.py verwendet. Beim Labeln werden die zu klassifiezierenden Objekte auf dem Bild mit den Positionsdaten und Bezeichnung markiert und in einer XML Datei abgespeichert. Nach dem Markieren werden die Daten in Trainings- und Testdaten aufgeteilt. 80 Prozent kommen in den Trainingsordner und 20 Prozent in den Testordner. Für die Durchführung des Trainings werden die Informationen der einzelnen XML-Dateien in zwei CSV-Dateien zusammengefasst. Diese Dateien beinhalten Tabellen in denen alle notwendigen Informationen zu den Bildern aufgeführt werden. Verwendet wird dafür das Programm xml\_to\_csv.py.\\
 \\
 
   
   \subsection{Trainieren}
-Nachdem alle Bilddaten gelabelt wurden und die CSV Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Zusätzlich zu den Traningsdaten wird eine Labelmap (labelmap.pbtxt) benötigt in welcher die aus Tabelle \ref{tab:klassen1} ausgewählten Klassen aufgeführt werden. Außerdem wird die Konfigurationsdatei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco) benötigt. Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
-Zusätzlich Parameter: \\
+Nachdem alle Bilddaten gelabelt wurden und die CSV-Dateien für die Trainings- und Testdaten erstellt wurden, kann das Training beginnen. Zusätzlich zu den Traningsdaten wird eine Labelmap (labelmap.pbtxt) benötigt, in welcher die aus Tabelle \ref{tab:klassen1} ausgewählten Klassen aufgeführt werden. Außerdem wird die Konfigurationsdatei des verwendeten Netzes (faster\_rcnn\_inception\_v2\_coco) benötigt. Das Training wird mit Ausführung des training.py Programms gestartet. Ab diesem Zeitpunkt, benötigt das Training viel Zeit.\\\\
+Zusätzliche Parameter: \\
 \textbf{--logtostderr}\\
 \textbf{--train\_dir=training/}\\
-Dieser Parameter gibt den Pfad zum Ordner an in welchem die Trainingsergebnisse Gespeichert werden sollen.\\
+Dieser Parameter gibt den Pfad zum Ordner an, in welchem die Trainingsergebnisse gespeichert werden sollen.\\
 \textbf{--pipeline\_config\_path=training/faster\_rcnn\_inception\_v2\_coco.config}\\
-Dieser Parameter gibt den Pfad zu der KOnfigurationsdatei an\\\\
+Dieser Parameter gibt den Pfad zu der Konfigurationsdatei an\\\\
 \\
-Damit die Ergebnisse so gut wie möglich ausfallen, wird das Netz ca. 10 Stunden, mit der in Kapitel\ref{konfiguration} beschriebenen Konfiguration trainiert. IN dieser Zeit wurden 200.000 Trainingsdurchläufe    durchgeführt. Kurz vor dem Abschluss der Trainingsphase wird ein durchschnittlicher \glqq loss\grqq von 0,03 erreicht. Der \glqq loss\grqq beschreibt den Fehler, welches das Netz bei der Bestimmung eines Datensatzes gemacht hat und versucht diesen durch eine Anpassung der Gewichtungen betroffener Neuronen zu minimieren. Alle fünf minuten werden die Zwischenschritte gespeichert. nach abschluss des Trainings kann mit hilfe des export\_inference\_graph.py programms, ein sogenannter \glqq frozen inference graph\grqq  generiert werden, welcher unser Künstliches neuronales Netz darstellt.\\\\
-Mitgegebenen Parameter:\\
+Damit die Ergebnisse so gut wie möglich ausfallen, wird das Netz ca. 10 Stunden mit der in Kapitel\ref{konfiguration} beschriebenen Konfiguration trainiert. In dieser Zeit wurden 200.000 Trainingsdurchläufe durchgeführt. Kurz vor dem Abschluss der Trainingsphase wird ein durchschnittlicher \glqq loss\grqq von 0,03 erreicht. Der \glqq loss\grqq beschreibt den Fehler, welches das Netz bei der Bestimmung eines Datensatzes gemacht hat und versucht diesen durch eine Anpassung der Gewichtungen betroffener Neuronen zu minimieren. Alle fünf Minuten werden die Zwischenschritte gespeichert. Nach Abschluss des Trainings kann, mit Hilfe des export\_inference\_graph.py Programms, ein sogenannter \glqq frozen inference graph\grqq generiert werden, welcher unser künstliches neuronales Netz darstellt.\\\\
+Mitgegebene Parameter:\\
 \textbf{--input\_type image\_tensor}\\
 \textbf{--pipeline\_config\_path legacy/training/faster\_rcnn\_inception\_v2\_coco.config}\\
 Gibt den Pfad zur config Datei an.\\
 \textbf{--trained\_checkpoint\_prefix legacy/training/model.ckpt-XXXX}\\
-Gibt den Pfad zur letzten Speicherstand des Trainings an.\\
+Gibt den Pfad zum letzten Speicherstand des Trainings an.\\
 \textbf{--output\_directory inference\_graph}\\
-Bestimmt den Ort an welchen der Graph exportiert wird.\\\\
+Bestimmt den Ort, an welchen der Graph exportiert wird.\\\\
 
-Nach Erstellung des \glqq frozen inference graph\grqq , welcher die Gewichtungen und Objektklassen enthält, ist das Netz an sich fertig und bereit für den praktischen Test. Dafür wurde aus der object\_detection\_tutorial.ipynb Datei von der Tensorflow API ein ausführbares Programm für die Testzwecke geschrieben. Im weiteren wird der Testverlauf beschrieben und Ausgewertet.
+Nach Erstellung des \glqq frozen inference graph\grqq, welcher die Gewichtungen und Objektklassen enthält, ist das Netz an sich fertig und bereit für den praktischen Test. Dafür wurde aus der object\_detection\_tutorial.ipynb Datei von der Tensorflow API ein ausführbares Programm für Testzwecke geschrieben. Im nächsten Abschnitt wird der Testverlauf beschrieben und ausgewertet.
   
 \newpage
 
 \section{Testergebnisse}
-In diesem Kapitel soll die Zuverlässigkeit und die Geschwindigkeit des neuronalen Netzes geprüft und ausgewertet werden. Dazu wird das Netz mit nicht markierten und dem Netz unbekannten Bildern getestet. Es soll sichergestellt werden, dass das Netz die Objekte nicht bereits durch das Training kennt. Anschließend wird überprüft wie robust das Netz gegenüber falscher Klassifizierungen ist und ob alle Objekte erkannt werden können. 
+In diesem Kapitel soll die Zuverlässigkeit und die Geschwindigkeit des neuronalen Netzes geprüft und ausgewertet werden. Dazu wird das Netz mit nicht markierten und dem Netz unbekannten Bildern getestet. Es soll sichergestellt werden, dass das Netz die Objekte nicht bereits durch das Training kennt. Anschließend wird überprüft, wie robust das Netz gegenüber falscher Klassifizierungen ist und ob alle Objekte erkannt werden können. 
 \\
-Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den fortschritt des Trainings grafisch darzustellen. In der folgenden Grafik wird der auftretende \glqq Loss \glqq in Verhältnis zu der Trainingszeit gestellt. 
+Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den Fortschritt des Trainings grafisch darzustellen. In der folgenden Grafik wird der auftretende \glqq Loss \glqq ins Verhältnis zu der Trainingszeit gestellt. 
 \\
  \begin{itemize}
 \item tensorboard --logdir=legacy/training --host=127.0.0.1
@@ -520,8 +520,8 @@ Tensorflow bietet mit dem Tool Tensorboard die Möglichkeit den fortschritt des 
 	\label{img:loss_graph_200000}
 \end{figure}
 
-Der \glqq loss\grqq stellt dabei keine Prozentangabe dar, sondern ist eine Zusammenfassung der Fehler, die für jedes Beispiel in Trainings- oder Validierungssätzen gemacht wurden. Je kleiner der \glqq loss\grqq dabei ist, desto höher ist die Wahrscheinlichkeit,das die Klassifizierung richtig ist. Um die Grafik zu veranschaulichen, wurden kurzfristige Schwankungen geglättet. Innerhalb der ersten 4 Stunden des Trainings den größten fortschritt beobachtet werden. In dieser Zeit, ist der \glqq loss\grqq von anfänglich 2.0 auf 0.05 gesunken. Dabei wurden rund 60.000 Trainingseinheiten durchlaufen.\\
-Bei den ersten Testergebnissen welche in Abbildung\ref{img:TestNN} zu sehen sind konnten alle Objekte erkannt und ihnen eine Klasse zugewiesen werden. Jedoch wurde die \glqq Orangensaft - Packung\grqq mit einer hohen Wahrscheinlichkeit als \glqq Milch - Packung\grqq falsch klassifiziert. Was auf die hohe Ähnlichkeit der Objekte zurückzuführen ist.
+Der \glqq loss\grqq stellt dabei keine Prozentangabe dar, sondern ist eine Zusammenfassung der Fehler, die für jedes Beispiel in Trainings- oder Validierungssätzen gemacht wurden. Je kleiner der \glqq loss\grqq dabei ist, desto höher ist die Wahrscheinlichkeit, dass die Klassifizierung richtig ist. Um die Grafik zu veranschaulichen, wurden kurzfristige Schwankungen geglättet. Innerhalb der ersten vier Stunden des Trainings konnte der größte Fortschritt beobachtet werden. In dieser Zeit, ist der \glqq loss\grqq von anfänglich 2.0 auf 0.05 gesunken. Dabei wurden rund 60.000 Trainingseinheiten durchlaufen.\\
+Bei den ersten Testergebnissen, welche in Abbildung\ref{img:TestNN} zu sehen sind, konnten alle Objekte erkannt und einer Klasse zugewiesen werden. Jedoch wurde die \glqq Orangensaft - Packung\grqq, mit einer hohen Wahrscheinlichkeit, als \glqq Milch - Packung\grqq falsch klassifiziert, was auf die hohe Ähnlichkeit der Objekte zurückzuführen ist.
 \\
 
 \begin{figure}
@@ -532,10 +532,10 @@ Bei den ersten Testergebnissen welche in Abbildung\ref{img:TestNN} zu sehen sind
 	\label{img:TestNN}
 \end{figure}
 
-Aufgrund der falschen Klassifizierung wurde ein weiteres vortrainiertes Netze mit dem generierten Datensatz trainiert und getestet. Das dafür ausgewählte Netz ist das faster\_rcnn\_resnet101\_coco. Dieses Modelle wurden aus der Tabelle\ref{tab:klassen1} ausgewählt, da die mittlere durchschnittliche Genauigkeit.
+Aufgrund der falschen Klassifizierung wurde ein weiteres vortrainiertes Netze mit dem generierten Datensatz trainiert und getestet. Das dafür ausgewählte Netz ist das faster\_rcnn\_resnet101\_coco. Dieses Modelle wurden aus der Tabelle\ref{tab:klassen1} ausgewählt, da die mittlere durchschnittliche Genauigkeit ??? geil ist ???was ist mit der???.
 \\
 \\
-Das zweite Modell welches trainiert wurde ist das faster\_rcnn\_resnet101\_coco mit einer mAP von 32 dafür ist es aber auch wesentlich langsamer. Für einen Trainingsdurchlauf benötigt das Modell mit rund 600ms im durchschnitt, mehr als doppelt so lange wie das faster\_rcnn\_inception\_v2\_coco. Es benötigt dafür aber auch nur die Hälfte an Durchläufen, um eine ähnlich niedrigen 'Loss' zu erreichen.\\ 
+Das zweite Modell, welches trainiert wurde, ist das faster\_rcnn\_resnet101\_coco mit einer mAP von 32, welches dafür aber wesentlich langsamer ist. Für einen Trainingsdurchlauf benötigt das Modell, mit rund 600ms im Durchschnitt, mehr als doppelt so lange wie das faster\_rcnn\_inception\_v2\_coco. Es benötigt dafür aber nur die Hälfte an Durchläufen, um eine ähnlich niedrigen 'Loss' zu erreichen.\\ 
 
 \begin{figure}
     [h]
@@ -546,44 +546,44 @@ Das zweite Modell welches trainiert wurde ist das faster\_rcnn\_resnet101\_coco 
 	\label{img:loss_graph_resnet101}
 \end{figure}
 
-Die Testergebnisse der einzelnen Klassen zeigen das die erreichte Genauigkeit besser ist, so das allen erkannten Objekten die richtigen Klassen zugewiesen wurden. Dieses Netz zeigte sich aber deutlich Störungsanfälliger so dass je nach Winkel nicht immer alle Objekte erkannt wurden. Um die Stabilität zu erhöhen, wurden die Trainingsdaten, in Form von Bildern, erweitert und das resnet101, welches die höhere \glqq mAP\grqq hat, auf den erweiterten Datensatz trainiert.\\
+Die Testergebnisse der einzelnen Klassen zeigen, dass die erreichte Genauigkeit besser ist, indem allen erkannten Objekten die richtigen Klassen zugewiesen wurden. Dieses Netz zeigte sich aber deutlich Störungsanfälliger, so dass je nach Winkel nicht immer alle Objekte erkannt wurden. Um die Stabilität zu erhöhen, wurden die Trainingsdaten, in Form von Bildern, erweitert und das resnet101, welches die höhere \glqq mAP\grqq hat, auf den erweiterten Datensatz trainiert.\\
 \\
-Test mit dem verbesserten Netz haben ergeben, das die Erkennung der Orangensaft Packung stabiler funktioniert, solange das Bild und die Oberflächen der Objekte nicht zu dunkel werden. Die Abbildung\ref{img:resnet101_test} zeigt alle Trainierten Objekte mit welchen das Modell faster\_rcnn\_resnet101\_coco trainiert wurde. Hier kann man erkennen das alle Klassen richtig zugeordnet werden konnten.
+Tests mit dem verbesserten Netz haben ergeben, dass die Erkennung der Orangensaftpackung stabiler funktioniert, solange das Bild und die Oberflächen der Objekte nicht zu dunkel werden. Die Abbildung\ref{img:resnet101_test} zeigt alle trainierten Objekte, mit denen das Modell faster\_rcnn\_resnet101\_coco trainiert wurde. Hier kann man erkennen, dass alle Klassen richtig zugeordnet werden konnten.
 
 \begin{figure}
     [h]
 	\centering
 	\includegraphics[scale=0.5]{Sources/final_detection.jpg}
 	\vspace{0.3 cm}
-	\caption{Objekt erkennung des optimierten resnet101}
+	\caption{Objekterkennung des optimierten resnet101}
 	\label{img:resnet101_test}
 \end{figure}
 
-Im nächsten Kapitel sollen die Ergebnisse des Projektes, mit den Anforderungen verglichen und ausgewertet werden.
+Im nächsten Kapitel sollen die Ergebnisse des Projektes mit den Anforderungen verglichen und ausgewertet werden.
 
 \newpage
 
 \section{Fazit}
-Das generieren beziehungsweise trainieren eines neuronalen Netzes haut gut Funktioniert. Leichte schwächen konnten bei der richtigen Identifizierung ähnlicher Objekte und der Störungsanfälligkeiit gegenüber Lichtverhältnissen festgestellt werden. Für das Fazit werden in diesem Kapitel die Testergebnisse mit den Anforderungen welche zu Beginn des Projektes festgelegt wurden verglichen werden.\\
+Das generieren, beziehungsweise trainieren eines neuronalen Netzes hat gut funktioniert. Leichte Schwächen konnten bei der richtigen Identifizierung ähnlicher Objekte und der Störungsanfälligkeit gegenüber Lichtverhältnissen festgestellt werden. Für das Fazit werden in diesem Kapitel die Testergebnisse mit den Anforderungen, welche zu Beginn des Projektes festgelegt wurden, verglichen.\\
 
 \subsection{Bewertung durch Anforderungen}
 
-Die ersten Zwei funktionalen Anforderungen konnten erfüllt werden. Lediglich die Genauigkeit konnte zunächst nicht zu voller Zufriedenheit erfüllt werden. Die meisten Objekte können bei schlechteren Bild- und Lichtverhältnissen erkannt werden, lediglich bei zu ähnlichen Objekten kann die Erkennung fehlerhaft sein, wie man bei der Milch und dem Orangensaft beobachten kann. Mit einer Erhöhung der Trainingsdaten und einer Licht Korrektur könnte dies allerdings verbessert werden.\\
+Die ersten zwei funktionalen Anforderungen ?? vllt kurz nennen?? konnten erfüllt werden. Lediglich die Genauigkeit konnte zunächst nicht zu voller Zufriedenheit erfüllt werden. Die meisten Objekte können bei schlechteren Bild- und Lichtverhältnissen erkannt werden, nur bei zu ähnlichen Objekten kann die Erkennung fehlerhaft sein, wie man bei der Milch und dem Orangensaft beobachten konnte. Mit einer Erhöhung der Trainingsdaten und einer Lichtkorrektur könnte dies allerdings verbessert werden.\\
 \\
-Die organisationalen Anforderungen konnten auch zum Großteil erfüllt werden. Klassen können unkompliziert erweitert werden, indem Testdaten der gewünschten Klasse Generiert und gelabelt werden. Das trainieren und ausführen des neuronalen Netzes ist zwar im Moment nicht mit einer Datei ausführbar, aber die notwendigen schritte sind nicht aufwendig. Die Installation aller Notwendigen Module und Bibliotheken kann durch die Eingabeaufforderung oder der \glqq shell\grqq ausgeführt werden. Lediglich für Anaconda muss man eine manuelle Installation durchführen. Das Netz kann auf jedem Endgerät mit der benötigten Entwicklungsumgebung betrieben werden. Für mobile Endgeräte ist das Netz jedoch wegen der benötigten Rechenleistung nicht geeignet.\\
+Die organisationalen Anforderungen konnten auch zum Großteil erfüllt werden. Klassen können unkompliziert erweitert werden, indem Testdaten der gewünschten Klasse generiert und gelabelt werden. Das Trainieren und Ausführen des neuronalen Netzes ist zwar im Moment nicht mit einer Datei ausführbar, aber die notwendigen Schritte sind nicht aufwendig. Die Installation aller notwendigen Module und Bibliotheken kann durch die Eingabeaufforderung oder der \glqq shell\grqq ausgeführt werden. Lediglich für Anaconda muss man eine manuelle Installation durchführen. Das Netz kann auf jedem Endgerät, mit der benötigten Entwicklungsumgebung, betrieben werden. Für mobile Endgeräte ist das Netz jedoch wegen der benötigten Rechenleistung nicht geeignet.\\
 \\
-Bei den qualitativen Anforderungen muss ein Geleichgewicht zwischen Genauigkeit und Geschwindigkeit gefunden werden, da je höher die Genauigkeit des Netzes sein soll, desto länger benötigt es um ein Bild auszuwerten. Umgekehrt sinkt die Genauigkeit umso schnelle das Netz arbeitet. Es wurde also darauf geachtet das es bei beiden Punkten solide Ergebnisse erzielt. Der Schwerpunkt lag aber auf der Genauigkeit des Netzes. Leicht verdeckte Objekte können auch bis zu einem Gewissen Punkt erkannt und richtig zugeordnet werden. Die Genauigkeit kann beispielsweise, durch mehrere Trainingsdaten erhöht werden.\\
+Bei den qualitativen Anforderungen muss ein Gleichgewicht zwischen Genauigkeit und Geschwindigkeit gefunden werden. Denn umso höher die Genauigkeit des Netzes sein soll, desto länger benötigt es um ein Bild auszuwerten. Umgekehrt sinkt die Genauigkeit, umso schneller das Netz arbeitet. Es wurde also darauf geachtet, dass das Netz in beiden Punkten solide Ergebnisse erzielt. Der Schwerpunkt lag aber auf der Genauigkeit des Netzes. Leicht verdeckte Objekte können auch bis zu einem gewissen Punkt erkannt und richtig zugeordnet werden. Die Genauigkeit kann beispielsweise durch mehrere Trainingsdaten erhöht werden.\\
 
 \subsection{Bewertung der Netze}
-Das Neuronale Netz funktioniert größtenteils wie gewollt. Um die richtige Identifikation von ähnlichen Objekten zu steigern sollte die Anzahl an Trainings und Testdaten erhöht werden. Außerdem könnte eine Angleichung der Lichtverhältnisse per Bildverarbeitung dafür sorgen, dass die Genauigkeit des Netzes steigt. Zwischen den getesteten Modellen wurde festgestellt, das die Übereinstimmung der Objekte einen wesentlichen unterschied in der Genauigkeit aufweisen, sodass eine etwas höhere Antwortzeit für den Verwendungszweck kein großes Problem darstellt.\\
+Das neuronale Netz funktioniert größtenteils wie gewollt. Um die richtige Identifikation von ähnlichen Objekten zu steigern, sollte die Anzahl an Trainings- und Testdaten erhöht werden. Außerdem könnte eine Angleichung der Lichtverhältnisse per Bildverarbeitung dafür sorgen, dass die Genauigkeit des Netzes steigt. Bei den getesteten Modellen wurde festgestellt, dass die Übereinstimmung der Objekte einen wesentlichen Unterschied in der Genauigkeit aufweisen, sodass eine etwas höhere Antwortzeit für den Verwendungszweck kein großes Problem darstellt. ???? komischer Satz. Vllt kannst du den nochmal umschreiben???\\
 \\
 
 \newpage
 
 \section{Aussicht}
-Die Entwicklung des neuronalen Netzwerkes hat gezeigt, das es möglich ist den Inhalt von Regal-Systemen mit Hilfe von Objekterkennung zu Identifizieren. Dabei ist aber auch aufgefallen, das mehr Trainingsdaten benötigt werden je ähnlicher die Klassen sind. Das bedeutet das für das geplante System eine große Anzahl an Trainingsdaten generiert werden müssen. Grundsätzlich ist es aber möglich mit den Ergebnissen weiter Arbeiten zu können.\\
+Die Entwicklung des neuronalen Netzwerkes hat gezeigt, dass es möglich ist den Inhalt von Regal-Systemen mit Hilfe von Objekterkennung zu identifizieren. Dabei ist aber auch aufgefallen, dass mehr Trainingsdaten benötigt werden, je ähnlicher die Klassen sind. Das bedeutet, dass für das geplante System eine große Anzahl an Trainingsdaten generiert werden müssen. Grundsätzlich ist es aber möglich mit den Ergebnissen weiter arbeiten zu können.\\
 \\
-Für die Realisierung des geplanten Systems sind weitere Optimierungen des neuronalen Netzes erforderlich. Zum einen soll die Genauigkeit der Identifizierung bei ähnlichen Objekten erhöht werden. Außerdem sollen Optimierungen im Bereich der digitalen Bildverarbeitung vorgenommen werden um die Identifikation robuster gegen Störeinflüsse wie Lichtverhältnisse oder Bildrauschen zu machen. 
+Für die Realisierung des geplanten Systems sind weitere Optimierungen des neuronalen Netzes erforderlich. Zum einen soll die Genauigkeit der Identifizierung bei ähnlichen Objekten erhöht werden. Außerdem sollen Optimierungen im Bereich der digitalen Bildverarbeitung vorgenommen werden, um die Identifikation robuster gegen Störeinflüsse, wie Lichtverhältnisse oder Bildrauschen, zu machen. 
 \\
 
 \newpage
