@@ -9,14 +9,14 @@
 \BOOKMARK [2][]{subsection.12}{2.2 Faltendes neuronales Netz}{section.9}% 9
 \BOOKMARK [1][]{section.14}{3 Durchf\374hrung}{}% 10
 \BOOKMARK [2][]{subsection.15}{3.1 Entwicklungsumgebung}{section.14}% 11
-\BOOKMARK [3][]{subsubsection.16}{3.1.1 Verwendete Hardware Konfiguration}{subsection.15}% 12
-\BOOKMARK [3][]{subsubsection.17}{3.1.2 Anaconda python}{subsection.15}% 13
+\BOOKMARK [3][]{subsubsection.16}{3.1.1 Verwendete Hardwarekonfiguration}{subsection.15}% 12
+\BOOKMARK [3][]{subsubsection.17}{3.1.2 Anaconda Python}{subsection.15}% 13
 \BOOKMARK [2][]{subsection.18}{3.2 Frameworks}{section.14}% 14
 \BOOKMARK [3][]{subsubsection.19}{3.2.1 Tensorflow}{subsection.18}% 15
 \BOOKMARK [3][]{subsubsection.20}{3.2.2 Ben\366tigte Bibliotheken}{subsection.18}% 16
 \BOOKMARK [2][]{subsection.21}{3.3 Abw\344gung von neuronalen Netzen}{section.14}% 17
 \BOOKMARK [3][]{subsubsection.22}{3.3.1 Auswahl des Netzes}{subsection.21}% 18
-\BOOKMARK [2][]{subsection.28}{3.4 Trainingsdaten Generieren}{section.14}% 19
+\BOOKMARK [2][]{subsection.28}{3.4 Trainingsdaten generieren}{section.14}% 19
 \BOOKMARK [3][]{subsubsection.29}{3.4.1 Funktionsweise}{subsection.28}% 20
 \BOOKMARK [3][]{subsubsection.30}{3.4.2 Auswahl der Klassen}{subsection.28}% 21
 \BOOKMARK [2][]{subsection.32}{3.5 Trainieren}{section.14}% 22
