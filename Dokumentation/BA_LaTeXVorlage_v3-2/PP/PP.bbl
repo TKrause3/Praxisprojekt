@@ -38,7 +38,7 @@
     \field{sortinithash}{A}
     \field{title}{Optical character recognition für chinesische Schrift}
     \verb{url}
-    \verb http://pille.iwr.uni-heidelberg.de/~ocr01/nnet.html
+    \verb https://bit.ly/2VfsQOL
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -67,7 +67,7 @@
     \field{sortinithash}{C}
     \field{title}{COCO Datenset}
     \verb{url}
-    \verb http://cocodataset.org/#home
+    \verb https://bit.ly/2DltzbB
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -94,8 +94,7 @@
     \field{sortinithash}{E}
     \field{title}{Testbilder}
     \verb{url}
-    \verb https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tu
-    \verb torial-Train-Multiple-Objects-Windows-10/tree/master/images
+    \verb https://bit.ly/2RjFVHz
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -189,7 +188,7 @@
     \field{sortinithash}{H}
     \field{title}{Anaconda Python}
     \verb{url}
-    \verb https://www.anaconda.com/
+    \verb https://bit.ly/2EtAZdT
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -280,8 +279,7 @@
     \field{sortinithash}{L}
     \field{title}{Bild 3a Maskierung}
     \verb{url}
-    \verb https://vrodo.de/augmented-reality-facebook-gibt-software-fuer-objekt
-    \verb erkennung-frei/
+    \verb https://bit.ly/2BMVrBU
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -309,8 +307,7 @@
     \field{sortinithash}{L}
     \field{title}{Bild 3b Umschlossen}
     \verb{url}
-    \verb https://github.com/tensorflow/models/blob/master/research/object_dete
-    \verb ction/ test_images/image1.jpg
+    \verb https://bit.ly/2QRkQF0
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -338,7 +335,7 @@
     \field{sortinithash}{L}
     \field{title}{Tensorflow}
     \verb{url}
-    \verb https://www.tensorflow.org/
+    \verb https://bit.ly/1MWEhkH
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -366,8 +363,7 @@
     \field{sortinithash}{L}
     \field{title}{Tensorflow detection model zoo}
     \verb{url}
-    \verb https://github.com/tensorflow/models/blob/master/research/object_dete
-    \verb ction/g3doc/detection_model_zoo.md
+    \verb https://bit.ly/2EtFjJP
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -431,7 +427,7 @@
     \field{title}{NIRFaceNet: A Convolutional Neural Network for Near-Infrared
   Face Identification}
     \verb{url}
-    \verb http://www.mdpi.com/2078-2489/7/4/61
+    \verb https://bit.ly/2GGNqUP
     \endverb
     \field{volume}{7}
     \field{journaltitle}{Information}

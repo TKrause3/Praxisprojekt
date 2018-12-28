@@ -15,42 +15,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Neuronale Netze}{3}{section.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}nstliches neuronales Netz}{3}{subsection.10}
+\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}nstliche neuronale Netze}{3}{subsection.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Faltendes neuronales Netz}{4}{subsection.12}
+\contentsline {subsection}{\numberline {2.2}R\IeC {\"u}ckpropagierung}{4}{subsection.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{6}{section.14}
+\contentsline {subsection}{\numberline {2.3}Faltende neuronale Netze}{4}{subsection.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Entwicklungsumgebung}{6}{subsection.15}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrung}{6}{section.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardwarekonfiguration}{6}{subsubsection.16}
+\contentsline {subsection}{\numberline {3.1}Entwicklungsumgebung}{6}{subsection.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Anaconda Python}{6}{subsubsection.17}
+\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardwarekonfiguration}{6}{subsubsection.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Frameworks}{7}{subsection.18}
+\contentsline {subsubsection}{\numberline {3.1.2}Anaconda Python}{6}{subsubsection.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Tensorflow}{7}{subsubsection.19}
+\contentsline {subsection}{\numberline {3.2}Frameworks}{7}{subsection.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Ben\IeC {\"o}tigte Bibliotheken}{7}{subsubsection.20}
+\contentsline {subsubsection}{\numberline {3.2.1}Tensorflow}{7}{subsubsection.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Abw\IeC {\"a}gung von neuronalen Netzen}{9}{subsection.21}
+\contentsline {subsubsection}{\numberline {3.2.2}Ben\IeC {\"o}tigte Bibliotheken}{7}{subsubsection.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Auswahl des Netzes}{9}{subsubsection.22}
+\contentsline {subsection}{\numberline {3.3}Abw\IeC {\"a}gung von neuronalen Netzen}{9}{subsection.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Trainingsdaten generieren}{11}{subsection.28}
+\contentsline {subsubsection}{\numberline {3.3.1}Auswahl des Netzes}{9}{subsubsection.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.1}Funktionsweise}{11}{subsubsection.29}
+\contentsline {subsection}{\numberline {3.4}Trainingsdaten generieren}{11}{subsection.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.2}Auswahl der Klassen}{12}{subsubsection.30}
+\contentsline {subsubsection}{\numberline {3.4.1}Funktionsweise}{12}{subsubsection.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Trainieren}{13}{subsection.32}
+\contentsline {subsubsection}{\numberline {3.4.2}Auswahl der Klassen}{12}{subsubsection.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Testergebnisse}{15}{section.33}
+\contentsline {subsection}{\numberline {3.5}Trainieren}{14}{subsection.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Fazit}{18}{section.38}
+\contentsline {section}{\numberline {4}Testergebnisse}{16}{section.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Bewertung durch Anforderungen}{18}{subsection.39}
+\contentsline {section}{\numberline {5}Fazit}{19}{section.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Bewertung der Netze}{19}{subsection.40}
+\contentsline {subsection}{\numberline {5.1}Bewertung durch Anforderungen}{19}{subsection.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Aussicht}{20}{section.41}
+\contentsline {subsection}{\numberline {5.2}Bewertung der Netze}{20}{subsection.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Aussicht}{21}{section.45}

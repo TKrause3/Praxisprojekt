@@ -5,23 +5,24 @@
 \BOOKMARK [3][]{subsubsection.7}{1.2.2 Organisationale Anforderungen}{subsection.5}% 5
 \BOOKMARK [3][]{subsubsection.8}{1.2.3 Qualitative Anforderungen}{subsection.5}% 6
 \BOOKMARK [1][]{section.9}{2 Neuronale Netze}{}% 7
-\BOOKMARK [2][]{subsection.10}{2.1 K\374nstliches neuronales Netz}{section.9}% 8
-\BOOKMARK [2][]{subsection.12}{2.2 Faltendes neuronales Netz}{section.9}% 9
-\BOOKMARK [1][]{section.14}{3 Durchf\374hrung}{}% 10
-\BOOKMARK [2][]{subsection.15}{3.1 Entwicklungsumgebung}{section.14}% 11
-\BOOKMARK [3][]{subsubsection.16}{3.1.1 Verwendete Hardwarekonfiguration}{subsection.15}% 12
-\BOOKMARK [3][]{subsubsection.17}{3.1.2 Anaconda Python}{subsection.15}% 13
-\BOOKMARK [2][]{subsection.18}{3.2 Frameworks}{section.14}% 14
-\BOOKMARK [3][]{subsubsection.19}{3.2.1 Tensorflow}{subsection.18}% 15
-\BOOKMARK [3][]{subsubsection.20}{3.2.2 Ben\366tigte Bibliotheken}{subsection.18}% 16
-\BOOKMARK [2][]{subsection.21}{3.3 Abw\344gung von neuronalen Netzen}{section.14}% 17
-\BOOKMARK [3][]{subsubsection.22}{3.3.1 Auswahl des Netzes}{subsection.21}% 18
-\BOOKMARK [2][]{subsection.28}{3.4 Trainingsdaten generieren}{section.14}% 19
-\BOOKMARK [3][]{subsubsection.29}{3.4.1 Funktionsweise}{subsection.28}% 20
-\BOOKMARK [3][]{subsubsection.30}{3.4.2 Auswahl der Klassen}{subsection.28}% 21
-\BOOKMARK [2][]{subsection.32}{3.5 Trainieren}{section.14}% 22
-\BOOKMARK [1][]{section.33}{4 Testergebnisse}{}% 23
-\BOOKMARK [1][]{section.38}{5 Fazit}{}% 24
-\BOOKMARK [2][]{subsection.39}{5.1 Bewertung durch Anforderungen}{section.38}% 25
-\BOOKMARK [2][]{subsection.40}{5.2 Bewertung der Netze}{section.38}% 26
-\BOOKMARK [1][]{section.41}{6 Aussicht}{}% 27
+\BOOKMARK [2][]{subsection.10}{2.1 K\374nstliche neuronale Netze}{section.9}% 8
+\BOOKMARK [2][]{subsection.12}{2.2 R\374ckpropagierung}{section.9}% 9
+\BOOKMARK [2][]{subsection.13}{2.3 Faltende neuronale Netze}{section.9}% 10
+\BOOKMARK [1][]{section.15}{3 Durchf\374hrung}{}% 11
+\BOOKMARK [2][]{subsection.16}{3.1 Entwicklungsumgebung}{section.15}% 12
+\BOOKMARK [3][]{subsubsection.17}{3.1.1 Verwendete Hardwarekonfiguration}{subsection.16}% 13
+\BOOKMARK [3][]{subsubsection.18}{3.1.2 Anaconda Python}{subsection.16}% 14
+\BOOKMARK [2][]{subsection.19}{3.2 Frameworks}{section.15}% 15
+\BOOKMARK [3][]{subsubsection.20}{3.2.1 Tensorflow}{subsection.19}% 16
+\BOOKMARK [3][]{subsubsection.21}{3.2.2 Ben\366tigte Bibliotheken}{subsection.19}% 17
+\BOOKMARK [2][]{subsection.22}{3.3 Abw\344gung von neuronalen Netzen}{section.15}% 18
+\BOOKMARK [3][]{subsubsection.23}{3.3.1 Auswahl des Netzes}{subsection.22}% 19
+\BOOKMARK [2][]{subsection.29}{3.4 Trainingsdaten generieren}{section.15}% 20
+\BOOKMARK [3][]{subsubsection.30}{3.4.1 Funktionsweise}{subsection.29}% 21
+\BOOKMARK [3][]{subsubsection.31}{3.4.2 Auswahl der Klassen}{subsection.29}% 22
+\BOOKMARK [2][]{subsection.33}{3.5 Trainieren}{section.15}% 23
+\BOOKMARK [1][]{section.34}{4 Testergebnisse}{}% 24
+\BOOKMARK [1][]{section.39}{5 Fazit}{}% 25
+\BOOKMARK [2][]{subsection.40}{5.1 Bewertung durch Anforderungen}{section.39}% 26
+\BOOKMARK [2][]{subsection.41}{5.2 Bewertung der Netze}{section.39}% 27
+\BOOKMARK [1][]{section.45}{6 Aussicht}{}% 28
