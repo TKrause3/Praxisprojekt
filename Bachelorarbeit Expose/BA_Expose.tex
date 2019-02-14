@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX-Vorlage für Abschlussarbeiten                                       %%
+%% (TH Köln -Campus Gummersbach, Fak. 10)                                    %%
+%%                                                                           %%
+%% Gemäß dem Merkblatt zur Anfertigung von Projekt-, Bachelor-, Master- und  %%
+%% Diplomarbeiten der Fakultät 10 von Frau Prof. Dr. Halfmann &              %%
+%% Herr Prof. Dr. Rühmann (Version vom 27.01.2008)                           %%
+%%                                                                           %%                                                                            
+%% Bitte sprechen Sie unbedingt mit Ihrer Betreuerin bzw. Ihrem Betreuer     %%
+%% bezüglich der Ausgestaltung Ihrer Arbeit!                                 %%
+%%                                                                           %%
+%%                                                                           %%
+%% MERKKASTEN IN DIESER VORLAGE:                                             %%
+%% In dieser Vorlage finden Sie Merkkasten, die Ihnen Informationen          %%
+%% zu bestimmten, formalen Aspekten geben. Sprechen Sie immer auch mit       %% 
+%% Ihrer Betreuerin bzw. Ihrem Betreuer dazu an.                             %%                       
+%% Für die eigene Verwendung der Vorlage entfernen oder kommentieren Sie die %%
+%% Merkkasten. Die betreffenden Bereiche für die Merkkasten in der Vorlage   %%
+%% sind wie folgt kommentiert: <MERKKASTEN> ... </MERKKASTEN>.               %%                            %%                                                                           %%
+%%                                                                           %%
+%% LIZENZ:                                                                   %%
+%% Diese Vorlage darf nicht kommerziell verbreitet                           %%
+%% werden. Eine nicht-kommerzielle Weitergabe ist                            %% 
+%% gestattet.                                                                %%
+%%                                                                           %%
+%% Von Ludger Schönfeld, M. Sc.,
+%% 2014-2017                            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,oneside]{article}
+% Optionen:
+% - a4paper => DIN A4-Format
+% - 12pt    => Schriftgröße (weitere  
+%              grundlegende Fontgrößen: 10pt, 11pt)
+% - oneside => Einseitiger Druck
+
+%% Verwendete Pakete:
+\usepackage[ngerman]{babel} % für die deutsche Sprache
+\usepackage{caption} % Für schönere Bildunterschriften
+\usepackage[T1]{fontenc} % Schriftkodierung (Für Sonderzeichen u.a.)
+\usepackage[utf8]{inputenc} % Für die direkte Eingabe von Umlauten im Editor u.a.
+\usepackage{fancyhdr} % Für Kopf- und Fußzeilen
+\usepackage{lscape} % Für Querformat
+
+%% Schriften (Beispiele)
+%% Weitere LaTeX-Schriften im "LaTeX Font Catalogue"
+%% unter: http://www.tug.dk/FontCatalogue/.
+%% ACHTUNG: Ggf. müssen Schriften noch installiert 
+%% werden!
+
+% Serifen-Schriften:
+\usepackage{lmodern} % Schriftart "Latin Modern"
+%\usepackage{garamond} % Schriftart "Garamond"
+
+%Sans Serif-Schriften:
+%\usepackage[scaled]{uarial}
+%\usepackage[scaled]{helvet}
+%%--------------
+\usepackage[normalem]{ulem} % Für das Unterstreichen von Text z.B. mit \uline{}
+\usepackage[left=3cm,right=2cm,top=1.5cm,bottom=1cm,
+textheight=245mm,textwidth=160mm,includeheadfoot,headsep=1cm,
+footskip=1cm,headheight=14.599pt]{geometry} % Einrichtung der Seite 
+
+\usepackage{graphicx} % Zum Laden von Graphiken
+% INFO: Graphiken einbinden
+%
+% \includegraphics[scale=1.00]{dateiname}
+%
+% => Ausgabeformat: PDF-Dokument:
+%    Es können die folgenden (Graphik-)formate eingebunden
+%    werden: .jpg, .png, .pdf, .mps
+% 
+% => Ausgabeformat: DVI/PS:
+%    Folgende (Graphik-)formate werden unterstützt:
+%    .eps, .ps, .bmp, .pict, .pntg
+\usepackage{epstopdf}
+
+% Pakete für Tabellen
+\usepackage{tabularx} % Einfache Tabellen
+\usepackage{longtable} % Tabellen als Gleitobjekte (für die Aufteilung bei langen 
+ %Tabellen über mehrere Seiten)
+\usepackage{multirow} % Für das Verbinden von Zeilen innerhalb einer Tabelle mit
+ % \multirow{anzahl}{*}{Text}
+
+% (Zusatz-)Pakete für Formeln
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\usepackage{setspace} % Paket zum Setzen des Zeilenabstandes
+% INFO: Zeilenabstand setzen:
+%
+% Befehle:
+% - \singlespacing  => 1-zeilig (Standard)
+% - \onehalfspacing => 1,5-zeilig
+% - \doublespacing  => 2-zeilig 
+\onehalfspacing % Zeilenabstand auf 1,5-zeilig setzen
+
+% Farbboxen (für die Merkkästen in dieser Vorlage):
+\usepackage{tcolorbox}
+\tcbset{colback=white,colframe=orange,
+        fonttitle=\bfseries}
+
+\usepackage[colorlinks,pdfpagelabels,pdfstartview=FitH,
+bookmarksopen=true,bookmarksnumbered=true,linkcolor=black,
+plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkungen
+% INFO: Verlinkungen mit dem hyperref-Paket:
+%
+% Die Angabe von URLs mit dem Befehl \url{} erlaubt einen
+% gesonderten Umgang mit Weblinks. Denn die Links werden verlinkt.
+% Auch erfolgt automatisch am Zeilenende ein Umbruch des Links.
+% Es ist auch nicht erforderlich, Sonderzeichen in der URL manuell zu 
+% entschärfen.
+%
+% TIPP: Sollte ein Umbuch bei einem Link nicht automatisch erfolgen, so kann
+% das daran liegen, dass ein/mehrere Zeichen zusätzlich angegeben werden müssen,
+% an dem der Link umbrochen werden kann.
+% Dies kann mit folgendem Befehl erfolgen (Beispiel):
+% \renewcommand*\UrlBreaks{\do-\do_}
+
+% Das Paket "biblatex" für autom. 
+% Literaturverzeichnisse:
+%\usepackage{csquotes} % Für sprachangepasste Anführungszeichen
+%\usepackage[backend=bibtex,style=alphabetic]  
+%           {biblatex}
+%\addbibresource{bib/literatur.bib}           
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOKUMENT                                %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+  % Deckblatt
+  \pagestyle{empty}
+  \begin{titlepage}
+    \includegraphics[scale=1.00]{Sources/logo_TH-Koeln_CMYK_22pt}\\
+    \begin{center}
+      \Large
+      Technische Hochschule Köln\\
+      Fakultät für Informatik und Ingenieurwissenschaften\\
+      \hrule\par\rule{0pt}{2cm} % Horizontale Trennlinie  mit 2 cm Abtand nach unten erzeugen
+      \LARGE
+      \textsc{Bachelorarbeit - Expose}\\
+      \vspace{1cm} % Vertikaler Abstand von 1cm erzeugen
+      \huge
+      Der Einfluss von Farbnormalisierung in neuronalen Netzen\\
+      \vspace{1 cm}
+      \large
+      Vorgelegt an der TH Köln\\
+      Campus Gummersbach\\
+      im Studiengang\\
+      Medieninformatik\\ 
+      \vspace{1.0cm}
+      ausgearbeitet von:\\
+      \textsc{Torben Krause}\\
+      (Matrikelnummer: 11106885)\\
+      \vspace{1.5cm}
+      \begin{tabular}{ll} % Einfache Tabelle ohne Rahmen, mit 2 Spalten erzeugen
+          \textbf{Erster Prüfer:} & Prof. Dr. Martin Eisemann \\
+          \textbf{Zweiter Prüfer:} & Prof. Dr. ????? \\
+      \end{tabular}
+      \vspace{1.5cm}
+      \\Gummersbach, im Februar
+    \end{center}    
+  \end{titlepage}
+    
+  \newpage
+  \pagestyle{plain}
+  \pagenumbering{arabic}
+  \setcounter{page}{1}
+  
+  \tableofcontents
+  
+  \newpage
+  
+  \section{Problemstellung}
+  Das Trainieren eines künstlichen neuronalen Netzes ist ein langwieriger Prozess, in welchem 
+  eine große Menge von Ressourcen benötigt werden. Zum einen werden Hardwarekomponenten benötigt, 
+  welche für Matrizenmultiplikation geeignet sind, zum anderen wird je nach Umfang des 
+  neuronalen Netzes eine gewisse Trainingszeit vorausgesetzt. Zusätzlich werden für ein 
+  effektives neuronales Netz oftmals mehrere tausend Trainingsdaten benötigt, welche zusätzlich 
+  durch ihre Größe die Trainingszeit beeinflussen. Neben der Größe der Bilder, spielt die  
+  Ausleuchtung der Objekte auf den Bildern eine große Rolle. Durch eine einseitige Beleuchtung 
+  entstehen Schatten und Erhellungen, welche die Farben der Objekte verändern. Durch 
+  die verfälschten Farbwerte, können Problem bei der richtigen Zuordnung der Objekte entstehen. 
+  Diese können den Lernprozess des künstlichen neuronalen Netzes bremsen, was dazu führt das die 
+  Trainingszeit angehoben wird um alle Eigenschaften der definierten Klassen zu identifizieren.
+  \vspace{1 cm}
+  \section{Lösungsansatz}
+  Eine Möglichkeit um Trainingszeiten optimieren zu können besteht darin, die Farbwerte 
+  der Trainingsdaten zu Normalisieren um mögliche Farbverfälschungen, die durch Schatten und 
+  Überbelichtungen entstehen auszugleichen. Dafür werden beispielsweise benachbarte Pixel 
+  welche im Gleichen Farbraum liegen auf einen Farbwert angepasst, damit keine großen 
+  Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche 
+  Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen werden 
+  einige dieser, im folgenden Beschrieben:\vspace{1 cm}
+  \begin{itemize}
+  \item Die umfassende Farbnormalisierung versucht, die Lokalisierungs- und 
+  Objektklassifizierungsergebnisse in Kombination mit der Farbindizierung zu erhöhen. Dieser 
+  Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den 
+  roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel 
+  zu normalisieren. Die zweite stufe sorgt für eine Normalisierung jedes Farbkanal separat, 
+  wodurch die Summe der Farbkomponenten einem Drittel der Pixelanzahl entspricht. Durch diese 
+  Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
+  \item Ein weiterer Ansatz ist das einfache Threshholding. Zunächst wird ein Schwellwert der 
+  Pixel festgelegt. Ist der wert des Pixels höher als der Schwellwert, so wird ihm ein fester 
+  Pixelwert zugeteilt (Weiß). Ist der Pixelwert unter dem Definierten Schwellwert, wird ihm ein 
+  gegensätzlicher Wert zugeteilt (Schwarz). Dieses Vorgehen blendet alle Farben welche im Bild zu 
+  sehen sind aus und hebt die Kanten der Objekte hervor. Es entsteht ein Schwarz-weiß-Bild, in 
+  welchem die Belichtung keinen Einfluss hat.
+  \item Die Colormap Normalization wird auf Bilder angewandt welche Colormaps standardmäßig 
+  verwenden. Diese ordnet die Farben in der Colormap linear von den Datenwerten Minimum bis 
+  Maximum der werte zu. Diese Daten werden von -1 bis +1 zugewiesen. Null ist dabei in der Mitte 
+  der Farbkarte und stellt den mittleren Farbwert, also Weiß da.
+  \end{itemize}   
+  Die aufgeführten Verfahren, stellen nur einen Teil der Algorithmen, welche verwendet werden 
+  können da. Für die Bachelorarbeit sollen im Vorhinein einige der Verfahren ausgewählt und 
+  getestet werden.\vspace{1 cm}
+  \section{Vorgehen}
+  Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf einen 
+  Datensatz angewendet und im folgenden beim Training verwendet werden. Darauf hin 
+  werden die verschiedenen Netze miteinander verglichen. Dabei soll herausgearbeitet werden, 
+  welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls, soll die These 
+  bestätigt und eine Erhöhung der Effizienz des Trainings erkannt werden. 
+  Weiterhin soll geschaut werden welchen Einfluss eine Verringerung der Trainingsdaten auf das 
+  neuronale Netz haben. Sollte eine Normalisierung von Daten, die Effizienz des 
+  Trainings erhöhen, könnten Ressourcen eingespart werden.\\\\
+  \textbf{Geplante Durchführung}\\\\
+  (Die Schritte 2-5 werden für jedes ausgewählte Verfahren durchgeführt.)
+  \begin{enumerate}
+  \item Training eines Datensatzes
+  \item Datensatz Farbnormalisieren
+  \item Training des Netzes mit dem Normalisierten Datensatz
+  \item Auswertung des Trainings
+  \item Vergleich des Normalisierungs-Verfahren
+  \end{enumerate}
+  
+  \newpage
+  
+  \section{Vorläufige Gliederung}
+  
+  \begin{enumerate}
+  \item Deckblatt
+  \item Vorwort
+  \item Danksagung
+  \item Abstract
+  \item Inhaltsverzeichnis
+  \item Abbildungs- und Tabellenverzeichnis
+  \item Abkürzungsverzeichnis
+  \item Einleitung
+  \item Hintergrund (Theoretischer Teil)
+  \begin{enumerate}
+  \item Funktionsweise künstlicher neuronaler Netze
+  \item Entstehung von Trainingsdaten
+  \begin{enumerate}
+  \item Verdeutlichung der Problematik
+  \end{enumerate}
+  \item Aufbau vom Bildern
+  \item Einfluss von Belichtungen
+  \item Bild-Normalisierung
+  \item Begründung der These
+  \end{enumerate}
+  \item Methodik und Durchführung
+  \item Auswertung der Ergebnisse
+  \item Diskussion
+  \item Fazit
+  \item Literaturverzeichnis
+  \item Anhang
+  \item Eidesstattliche Erklärung
+  \end{enumerate}
+  
+  \newpage
+  
+  \section{Zeitplan}  
+  
+  \begin{enumerate}
+  \item Ab 11.02     	Vorbereitung und Recherche
+  \item Start 11.03: 	Bachelorarbeit
+  \item Bis 11.03: 		Literaturrecherche
+  \item Bis 01.04: 		Durchführung des praktischen Teils + Auswertung der Trainingsdaten
+  \item Bis 15.04:		Rohfassung Hauptteil
+  \item Bis 22.04:		Rohfassung Einleitung + Schluss
+  \item Bis 29.04:		Überarbeitung + Korrektur
+  \item Bis 06.05:		Layout + Titelblatt
+  \item Bis 08.05:		Druck + Binden
+  \item Bis 10.05:		Abgabe
+  \end{enumerate}
+  
+\end{document}
+
