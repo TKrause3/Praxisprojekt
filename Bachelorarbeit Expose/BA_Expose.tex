@@ -177,56 +177,56 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \newpage
   
   \section{Problemstellung}
-  Das Trainieren eines künstlichen neuronalen Netzes ist ein langwieriger Prozess, in welchem 
+  Das Trainieren eines künstlichen neuronalen Netzes ist ein langwieriger Prozess, bei dem 
   eine große Menge von Ressourcen benötigt werden. Zum einen werden Hardwarekomponenten benötigt, 
-  welche für Matrizenmultiplikation geeignet sind, zum anderen wird je nach Umfang des 
+  welche für Matrizenmultiplikation geeignet sind, und zum anderen wird je nach Umfang des 
   neuronalen Netzes eine gewisse Trainingszeit vorausgesetzt. Zusätzlich werden für ein 
   effektives neuronales Netz oftmals mehrere tausend Trainingsdaten benötigt, welche zusätzlich 
-  durch ihre Größe die Trainingszeit beeinflussen. Neben der Größe der Bilder, spielt die  
+  durch ihre Größe die Trainingszeit beeinflussen. Neben der Größe der Bilder spielt die  
   Ausleuchtung der Objekte auf den Bildern eine große Rolle. Durch eine einseitige Beleuchtung 
   entstehen Schatten und Erhellungen, welche die Farben der Objekte verändern. Durch 
-  die verfälschten Farbwerte, können Problem bei der richtigen Zuordnung der Objekte entstehen. 
-  Diese können den Lernprozess des künstlichen neuronalen Netzes bremsen, was dazu führt das die 
-  Trainingszeit angehoben wird um alle Eigenschaften der definierten Klassen zu identifizieren.
+  die verfälschten Farbwerte können Probleme bei der richtigen Zuordnung der Objekte entstehen. 
+  Diese können den Lernprozess des künstlichen neuronalen Netzes bremsen, was dazu führt, dass die 
+  Trainingszeit angehoben wird, um alle Eigenschaften der definierten Klassen zu identifizieren.
   \vspace{1 cm}
   \section{Lösungsansatz}
   Eine Möglichkeit um Trainingszeiten optimieren zu können besteht darin, die Farbwerte 
-  der Trainingsdaten zu Normalisieren um mögliche Farbverfälschungen, die durch Schatten und 
-  Überbelichtungen entstehen auszugleichen. Dafür werden beispielsweise benachbarte Pixel 
-  welche im Gleichen Farbraum liegen auf einen Farbwert angepasst, damit keine großen 
+  der Trainingsdaten zu normalisieren, um mögliche Farbverfälschungen, die durch Schatten und 
+  Überbelichtungen entstehen, auszugleichen. Dafür werden beispielsweise benachbarte Pixel, 
+  die im gleichen Farbraum liegen, auf einen Farbwert angepasst, damit keine großen 
   Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche 
-  Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen werden 
-  einige dieser, im folgenden Beschrieben:\vspace{1 cm}
+  Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen, werden 
+  einige im folgenden beschrieben:\vspace{1 cm}
   \begin{itemize}
-  \item Die umfassende Farbnormalisierung versucht, die Lokalisierungs- und 
-  Objektklassifizierungsergebnisse in Kombination mit der Farbindizierung zu erhöhen. Dieser 
+  \item Die umfassende Farbnormalisierung versucht die Lokalisierungs- und 
+  Objektklassifizierungsergebnisse, in Kombination mit der Farbindizierung, zu erhöhen. Dieser 
   Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den 
   roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel 
-  zu normalisieren. Die zweite stufe sorgt für eine Normalisierung jedes Farbkanal separat, 
+  zu normalisieren. Die zweite Stufe sorgt für eine Normalisierung jedes Farbkanals separat, 
   wodurch die Summe der Farbkomponenten einem Drittel der Pixelanzahl entspricht. Durch diese 
   Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
   \item Ein weiterer Ansatz ist das einfache Threshholding. Zunächst wird ein Schwellwert der 
-  Pixel festgelegt. Ist der wert des Pixels höher als der Schwellwert, so wird ihm ein fester 
-  Pixelwert zugeteilt (Weiß). Ist der Pixelwert unter dem Definierten Schwellwert, wird ihm ein 
-  gegensätzlicher Wert zugeteilt (Schwarz). Dieses Vorgehen blendet alle Farben welche im Bild zu 
-  sehen sind aus und hebt die Kanten der Objekte hervor. Es entsteht ein Schwarz-weiß-Bild, in 
+  Pixel festgelegt. Ist der Wert des Pixels höher als der Schwellwert, so wird ihm ein fester 
+  Pixelwert zugeteilt (Weiß). Ist der Pixelwert unter dem definierten Schwellwert, so wird ihm ein 
+  gegensätzlicher Wert zugeteilt (Schwarz). Dieses Vorgehen blendet alle Farben, welche im Bild zu 
+  sehen sind aus und hebt die Kanten der Objekte hervor. Es entsteht ein Schwarz-Weiß-Bild, in 
   welchem die Belichtung keinen Einfluss hat.
-  \item Die Colormap Normalization wird auf Bilder angewandt welche Colormaps standardmäßig 
+  \item Die Colormap Normalization wird auf Bilder angewandt, die Colormaps standardmäßig 
   verwenden. Diese ordnet die Farben in der Colormap linear von den Datenwerten Minimum bis 
-  Maximum der werte zu. Diese Daten werden von -1 bis +1 zugewiesen. Null ist dabei in der Mitte 
-  der Farbkarte und stellt den mittleren Farbwert, also Weiß da.
+  Maximum der Werte zu. Diese Daten werden von -1 bis +1 zugewiesen. Null ist dabei in der Mitte 
+  der Farbkarte und stellt den mittleren Farbwert, also Weiß, dar.
   \end{itemize}   
-  Die aufgeführten Verfahren, stellen nur einen Teil der Algorithmen, welche verwendet werden 
-  können da. Für die Bachelorarbeit sollen im Vorhinein einige der Verfahren ausgewählt und 
+  Die aufgeführten Verfahren stellen nur einen Teil der Algorithmen, welche verwendet werden 
+  können dar. Für die Bachelorarbeit sollen im vorhinein einige der Verfahren ausgewählt und 
   getestet werden.\vspace{1 cm}
   \section{Vorgehen}
   Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf einen 
-  Datensatz angewendet und im folgenden beim Training verwendet werden. Darauf hin 
+  Datensatz angewendet und anschließend beim Training verwendet werden. Daraufhin 
   werden die verschiedenen Netze miteinander verglichen. Dabei soll herausgearbeitet werden, 
-  welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls, soll die These 
+  welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls soll die These 
   bestätigt und eine Erhöhung der Effizienz des Trainings erkannt werden. 
-  Weiterhin soll geschaut werden welchen Einfluss eine Verringerung der Trainingsdaten auf das 
-  neuronale Netz haben. Sollte eine Normalisierung von Daten, die Effizienz des 
+  Weiterhin soll geschaut werden, welchen Einfluss eine Verringerung der Trainingsdaten auf das 
+  neuronale Netz haben. Sollte eine Normalisierung von Daten die Effizienz des 
   Trainings erhöhen, könnten Ressourcen eingespart werden.\\\\
   \textbf{Geplante Durchführung}\\\\
   (Die Schritte 2-5 werden für jedes ausgewählte Verfahren durchgeführt.)
@@ -250,6 +250,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Inhaltsverzeichnis
   \item Abbildungs- und Tabellenverzeichnis
   \item Abkürzungsverzeichnis
+  
   \item Einleitung
   \begin{enumerate} %Einleitung
   \item Problemstellung und Ziele
@@ -280,6 +281,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Auswertung der Ergebnisse
   \item Diskussion
   \item Fazit
+  
   \item Literaturverzeichnis
   \item Anhang
   \item Eidesstattliche Erklärung
