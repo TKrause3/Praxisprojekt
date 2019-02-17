@@ -242,7 +242,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   
   \section{Vorläufige Gliederung}
   
-  \begin{enumerate}
+  \begin{enumerate} %Gleiderung
   \item Deckblatt
   \item Vorwort
   \item Danksagung
@@ -251,18 +251,31 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Abbildungs- und Tabellenverzeichnis
   \item Abkürzungsverzeichnis
   \item Einleitung
-  \item Hintergrund (Theoretischer Teil)
-  \begin{enumerate}
+  \begin{enumerate} %Einleitung
+  \item Problemstellung und Ziele
+  \item Anforderungen
+  \item Strucktur der Arbeit
+  \end{enumerate} %Einleitung
+  \item Theoretische Grundlagen
+  \begin{enumerate} %Theoretische Grundlagen
+  \item neuronale Netze
+  \begin{enumerate} %neuronale Netze
   \item Funktionsweise künstlicher neuronaler Netze
   \item Entstehung von Trainingsdaten
-  \begin{enumerate}
-  \item Verdeutlichung der Problematik
-  \end{enumerate}
+  \end{enumerate} %neuronale Netze
+  \item Das digitale Bild
+  \begin{enumerate} %Das digitale Bild
   \item Aufbau vom Bildern
   \item Einfluss von Belichtungen
   \item Bild-Normalisierung
-  \item Begründung der These
+  \begin{enumerate}
+  \item umfassende Farbnormalisierung 
+  \item Threshholding
+  \item Colormap Normalization
   \end{enumerate}
+  \item Begründung der These
+  \end{enumerate} %Das digitale Bild
+  \end{enumerate} %Theoretische Grundlagen
   \item Methodik und Durchführung
   \item Auswertung der Ergebnisse
   \item Diskussion
@@ -270,7 +283,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Literaturverzeichnis
   \item Anhang
   \item Eidesstattliche Erklärung
-  \end{enumerate}
+  \end{enumerate} %Gleiderung
   
   \newpage
   
