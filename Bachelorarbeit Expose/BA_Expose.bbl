@@ -1,0 +1,136 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{buenaposada2001variations}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BJM}{%
+         family={Buenaposada},
+         familyi={B\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Baumela},
+         familyi={B\bibinitperiod},
+         given={Luis},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{BJMBL1}
+    \strng{fullhash}{BJMBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BB01}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3-4}
+    \field{pages}{51\bibrangedash 61}
+    \field{title}{Variations of Grey World for face tracking}
+    \field{volume}{7}
+    \field{journaltitle}{Image Processing \& Communications}
+    \field{year}{2001}
+  \endentry
+
+  \entry{finlayson1998comprehensive}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FGD}{%
+         family={Finlayson},
+         familyi={F\bibinitperiod},
+         given={Graham\bibnamedelima D},
+         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Schiele},
+         familyi={S\bibinitperiod},
+         given={Bernt},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CJL}{%
+         family={Crowley},
+         familyi={C\bibinitperiod},
+         given={James\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{FGDSBCJL1}
+    \strng{fullhash}{FGDSBCJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{FSC98}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{European conference on computer vision}
+    \field{pages}{475\bibrangedash 490}
+    \field{title}{Comprehensive colour image normalization}
+    \field{year}{1998}
+  \endentry
+
+  \entry{goatman2003colour}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=GKA}{%
+         family={Goatman},
+         familyi={G\bibinitperiod},
+         given={Keith\bibnamedelima A},
+         giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WAD}{%
+         family={Whitwam},
+         familyi={W\bibinitperiod},
+         given={A\bibnamedelima David},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Manivannan},
+         familyi={M\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=OJA}{%
+         family={Olson},
+         familyi={O\bibinitperiod},
+         given={John\bibnamedelima A},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SPF}{%
+         family={Sharp},
+         familyi={S\bibinitperiod},
+         given={Peter\bibnamedelima F},
+         giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKA+1}
+    \strng{fullhash}{GKAWADMAOJASPF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Goa+03}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Proceedings of medical image understanding and analysis}
+    \field{pages}{49\bibrangedash 52}
+    \field{title}{Colour normalisation of retinal images}
+    \field{year}{2003}
+  \endentry
+\enddatalist
+\endinput

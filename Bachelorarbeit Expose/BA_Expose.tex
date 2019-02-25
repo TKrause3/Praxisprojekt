@@ -123,10 +123,9 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
 
 % Das Paket "biblatex" für autom. 
 % Literaturverzeichnisse:
-%\usepackage{csquotes} % Für sprachangepasste Anführungszeichen
-%\usepackage[backend=bibtex,style=alphabetic]  
-%           {biblatex}
-%\addbibresource{bib/literatur.bib}           
+\usepackage{csquotes} % Für sprachangepasste Anführungszeichen
+\usepackage[backend=bibtex,style=alphabetic]{biblatex}
+\addbibresource{bib/literatur.bib}           
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DOKUMENT                                %%
@@ -186,56 +185,26 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   Ausleuchtung der Objekte auf den Bildern eine große Rolle. Durch eine einseitige Beleuchtung 
   entstehen Schatten und Erhellungen, welche die Farben der Objekte verändern. Durch 
   die verfälschten Farbwerte können Probleme bei der richtigen Zuordnung der Objekte entstehen. 
-  Diese können den Lernprozess des künstlichen neuronalen Netzes bremsen, was dazu führt, dass die 
-  Trainingszeit angehoben wird, um alle Eigenschaften der definierten Klassen zu identifizieren.
-  \vspace{1 cm}
+  Diese können die richtige Erkennungsrate
+des künstlichen neuronalen Netzes beeinflussen, da mehrere Farbwerte für die selbe Oberfläche möglich sind. Das kann zu fehlerhaften Zuweisungen zwischen den erlernten Klassen führen.
   \section{Lösungsansatz}
-  Eine Möglichkeit um Trainingszeiten optimieren zu können besteht darin, die Farbwerte 
-  der Trainingsdaten zu normalisieren, um mögliche Farbverfälschungen, die durch Schatten und 
-  Überbelichtungen entstehen, auszugleichen. Dafür werden beispielsweise benachbarte Pixel, 
-  die im gleichen Farbraum liegen, auf einen Farbwert angepasst, damit keine großen 
-  Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche 
-  Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen, werden 
-  einige im folgenden beschrieben:\vspace{1 cm}
+Eine Möglichkeit um die Trainingsergebnisse optimieren zu können besteht darin, die Farbwerte der Trainingsdaten zu normalisieren, um mögliche Farbverfälschungen, welche durch unausgeglichene Belichtungen entstehen, auszugleichen. Ursachen für Farbverfälschungen sind beispielsweise, unterschiedliche Licht-Farben/Positionen oder auch mehrere Lichtquellen. Bei einer Farbnormalisierung, werden beispielsweise benachbarte Pixel, die im gleichen Farbraum liegen, auf einen Farbwert angepasst, damit keine großen Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen, werden einige im folgenden beschrieben:
   \begin{itemize}
-  \item Die umfassende Farbnormalisierung versucht die Lokalisierungs- und 
-  Objektklassifizierungsergebnisse, in Kombination mit der Farbindizierung, zu erhöhen. Dieser 
-  Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den 
-  roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel 
-  zu normalisieren. Die zweite Stufe sorgt für eine Normalisierung jedes Farbkanals separat, 
-  wodurch die Summe der Farbkomponenten einem Drittel der Pixelanzahl entspricht. Durch diese 
-  Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
-  \item Ein weiterer Ansatz ist das einfache Threshholding. Zunächst wird ein Schwellwert der 
-  Pixel festgelegt. Ist der Wert des Pixels höher als der Schwellwert, so wird ihm ein fester 
-  Pixelwert zugeteilt (Weiß). Ist der Pixelwert unter dem definierten Schwellwert, so wird ihm ein 
-  gegensätzlicher Wert zugeteilt (Schwarz). Dieses Vorgehen blendet alle Farben, welche im Bild zu 
-  sehen sind aus und hebt die Kanten der Objekte hervor. Es entsteht ein Schwarz-Weiß-Bild, in 
-  welchem die Belichtung keinen Einfluss hat.
-  \item Die Colormap Normalization wird auf Bilder angewandt, die Colormaps standardmäßig 
-  verwenden. Diese ordnet die Farben in der Colormap linear von den Datenwerten Minimum bis 
-  Maximum der Werte zu. Diese Daten werden von -1 bis +1 zugewiesen. Null ist dabei in der Mitte 
-  der Farbkarte und stellt den mittleren Farbwert, also Weiß, dar.
-  \end{itemize}   
-  Die aufgeführten Verfahren stellen nur einen Teil der Algorithmen, welche verwendet werden 
-  können dar. Für die Bachelorarbeit sollen im vorhinein einige der Verfahren ausgewählt und 
-  getestet werden.\vspace{1 cm}
+  \item Die umfassende Farbnormalisierung versucht die Lokalisierungs- und Objektklassifizierungsergebnisse, in Kombination mit der Farbindizierung, zu erhöhen \cite{finlayson1998comprehensive}. Dieser Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel zu normalisieren. Die zweite Stufe sorgt für eine Normalisierung jedes Farbkanals separat, wodurch die Summe der Farbkomponenten einem Drittel der Pixelanzahl entspricht. Durch diese Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
+  \item Ein weiterer Ansatz ist der Gray World Algorithmus \cite{buenaposada2001variations}. Bei dieser Normalisierung, wird davon ausgegangen, das es drei Faktoren gibt, welche das Beleuchtungsspektrum verändern können. Diese werden auf den roten, grünen und blauen Farbkanälen angewendet. Eine Veränderung der beleuchteten Farbe kann durch die Skalierung von $\alpha$, $\beta$ und $\gamma$ in den RGB-Farbkarnälen modelliert werden. Es kann eine Konstanzlösung erzielt werden, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird.
+  \item Die Histogram Equalization ist eine nicht lineare Transformation, welche die Pixelstruktur beibehält und in der Lage ist, eine monoton steigende Farbtransformation zu Normalisieren \cite{goatman2003colour}. Es gilt als eine stärkere Methode als der Gray-World-Algorithmus. Die Ergebnisse dieser Methode, haben üblicher weise einen dominanten blauen Farbkanal, welcher das Bild unnatürlich aussehen lässt.
+  \end{itemize}
+Die aufgeführten Verfahren stellen nur einen Teil der Algorithmen, welche verwendet werden können dar. Für die Bachelorarbeit sollen im vorhinein einige der Verfahren ausgewählt und getestet werden.
   \section{Vorgehen}
-  Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf einen 
-  Datensatz angewendet und anschließend beim Training verwendet werden. Daraufhin 
-  werden die verschiedenen Netze miteinander verglichen. Dabei soll herausgearbeitet werden, 
-  welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls soll die These 
-  bestätigt und eine Erhöhung der Effizienz des Trainings erkannt werden. 
-  Weiterhin soll geschaut werden, welchen Einfluss eine Verringerung der Trainingsdaten auf das 
-  neuronale Netz haben. Sollte eine Normalisierung von Daten die Effizienz des 
-  Trainings erhöhen, könnten Ressourcen eingespart werden.\\\\
-  \textbf{Geplante Durchführung}\\\\
-  (Die Schritte 2-5 werden für jedes ausgewählte Verfahren durchgeführt.)
+Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf verschiedenen Datensätzen angewendet und im Training verwendet werden. Diese Datensätze bestehen aus mehreren Klassen welche mit unterschiedlichen Lichtverhältnissen aufgenommen werden. Daraufhin werden die verschiedenen Netze miteinander verglichen. Dabei soll herausgearbeitet werden, welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls soll die These bestätigt und eine Erhöhung der Effizienz des Trainings erkannt werden. Weiterhin soll geschaut werden, welchen Einfluss eine Verringerung der Trainingsdaten auf das neuronale Netz haben. Sollte eine Normalisierung von Daten die Effizienz des Trainings erhöhen, könnten Ressourcen eingespart werden.\\\\
+\textbf{Geplante Durchführung}\\\\
+(Die Schritte 2-5 werden für jedes ausgewählte Verfahren durchgeführt. Jedes Training wird auf unterschiedlichen Netzen durchgeführt.)
   \begin{enumerate}
-  \item Training eines Datensatzes
-  \item Datensatz Farbnormalisieren
-  \item Training des Netzes mit dem Normalisierten Datensatz
-  \item Auswertung des Trainings
-  \item Vergleich des Normalisierungs-Verfahren
+\item Training der Datensätze ohne Normalisierung
+\item Datensatz Farbnormalisieren
+\item Training der Normalisierten Datensätzen auf einem weiteren Netz
+\item Auswertung des Trainings
+\item Vergleich des Normalisierungs-Verfahren
   \end{enumerate}
   
   \newpage
@@ -254,8 +223,9 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Einleitung
   \begin{enumerate} %Einleitung
   \item Problemstellung und Ziele
+  \item Begründung der These
   \item Anforderungen
-  \item Strucktur der Arbeit
+  \item Struktur der Arbeit
   \end{enumerate} %Einleitung
   \item Theoretische Grundlagen
   \begin{enumerate} %Theoretische Grundlagen
@@ -270,11 +240,10 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \item Einfluss von Belichtungen
   \item Bild-Normalisierung
   \begin{enumerate}
-  \item umfassende Farbnormalisierung 
-  \item Threshholding
-  \item Colormap Normalization
+  \item Umfassende Farbnormalisierung 
+  \item Gray-World-Algorithmus
+  \item Histogram Equalisation
   \end{enumerate}
-  \item Begründung der These
   \end{enumerate} %Das digitale Bild
   \end{enumerate} %Theoretische Grundlagen
   \item Methodik und Durchführung
@@ -291,17 +260,21 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \section{Zeitplan}  
   
   \begin{enumerate}
-  \item Ab 11.02     	Vorbereitung und Recherche
-  \item Start 11.03: 	Bachelorarbeit
-  \item Bis 11.03: 		Literaturrecherche
-  \item Bis 01.04: 		Durchführung des praktischen Teils + Auswertung der Trainingsdaten
-  \item Bis 15.04:		Rohfassung Hauptteil
-  \item Bis 22.04:		Rohfassung Einleitung + Schluss
-  \item Bis 29.04:		Überarbeitung + Korrektur
-  \item Bis 06.05:		Layout + Titelblatt
-  \item Bis 08.05:		Druck + Binden
-  \item Bis 10.05:		Abgabe
+  \item Ab 11.02:     	Vorbereitung und Recherche
+  \item Start ??.??: 	Bachelorarbeit
+  \item 7 Tage: 		Literaturrecherche
+  \item 21 Tage: 		Durchführung des praktischen Teils + Auswertung der Trainingsdaten
+  \item 14 Tage:		Rohfassung Hauptteil
+  \item 7 Tage:		Rohfassung Einleitung + Schluss
+  \item 14 Tage:		Überarbeitung + Korrektur
+  \item 4 Tage:		Layout + Titelblatt
+  \item 3 Tage:		Druck + Binden
+  \item 2 Tage:		Abgabe
   \end{enumerate}
+  
+  \newpage
+  
+  \printbibliography
   
 \end{document}
 
