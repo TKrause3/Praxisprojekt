@@ -145,7 +145,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
       \textsc{Bachelorarbeit - Expose}\\
       \vspace{1cm} % Vertikaler Abstand von 1cm erzeugen
       \huge
-      Der Einfluss von Farbnormalisierung in neuronalen Netzen\\
+      Der Einfluss von Farbnormalisierung auf künstliche neuronale Netze\\
       \vspace{1 cm}
       \large
       Vorgelegt an der TH Köln\\
@@ -188,23 +188,26 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   Diese können die richtige Erkennungsrate
 des künstlichen neuronalen Netzes beeinflussen, da mehrere Farbwerte für die selbe Oberfläche möglich sind. Das kann zu fehlerhaften Zuweisungen zwischen den erlernten Klassen führen.
   \section{Lösungsansatz}
-Eine Möglichkeit um die Trainingsergebnisse optimieren zu können besteht darin, die Farbwerte der Trainingsdaten zu normalisieren, um mögliche Farbverfälschungen, welche durch unausgeglichene Belichtungen entstehen, auszugleichen. Ursachen für Farbverfälschungen sind beispielsweise, unterschiedliche Licht-Farben/Positionen oder auch mehrere Lichtquellen. Bei einer Farbnormalisierung, werden beispielsweise benachbarte Pixel, die im gleichen Farbraum liegen, auf einen Farbwert angepasst, damit keine großen Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen, werden einige im folgenden beschrieben:
+Eine Möglichkeit um die Trainingsergebnisse optimieren zu können besteht darin, die Farbwerte der Trainingsdaten zu normalisieren, um mögliche Farbverfälschungen, welche durch unausgeglichene Belichtungen entstehen, auszugleichen. Ursachen für Farbverfälschungen können beispielsweise, unterschiedliche Licht-Farben, -Positionen oder auch mehrere Lichtquellen sein. Bei einer Farbnormalisierung, werden beispielsweise die Farbwerte der Pixel angepasst, damit keine großen Farbabweichungen auftreten. Es gibt viele derartige Algorithmen, welche unterschiedliche Ansätze verfolgen. Um einen Einblick in die Möglichkeiten der Algorithmen zu zeigen, werden einige im folgenden beschrieben:
   \begin{itemize}
-  \item Die umfassende Farbnormalisierung versucht die Lokalisierungs- und Objektklassifizierungsergebnisse, in Kombination mit der Farbindizierung, zu erhöhen \cite{finlayson1998comprehensive}. Dieser Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel zu normalisieren. Die zweite Stufe sorgt für eine Normalisierung jedes Farbkanals separat, wodurch die Summe der Farbkomponenten einem Drittel der Pixelanzahl entspricht. Durch diese Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
-  \item Ein weiterer Ansatz ist der Gray World Algorithmus \cite{buenaposada2001variations}. Bei dieser Normalisierung, wird davon ausgegangen, das es drei Faktoren gibt, welche das Beleuchtungsspektrum verändern können. Diese werden auf den roten, grünen und blauen Farbkanälen angewendet. Eine Veränderung der beleuchteten Farbe kann durch die Skalierung von $\alpha$, $\beta$ und $\gamma$ in den RGB-Farbkarnälen modelliert werden. Es kann eine Konstanzlösung erzielt werden, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird.
-  \item Die Histogram Equalization ist eine nicht lineare Transformation, welche die Pixelstruktur beibehält und in der Lage ist, eine monoton steigende Farbtransformation zu Normalisieren \cite{goatman2003colour}. Es gilt als eine stärkere Methode als der Gray-World-Algorithmus. Die Ergebnisse dieser Methode, haben üblicher weise einen dominanten blauen Farbkanal, welcher das Bild unnatürlich aussehen lässt.
+  \item Die umfassende Farbnormalisierung (Comprehensive Color Normalization) versucht die Lokalisierungs- und Objektklassifizierungsergebnisse, in Kombination mit der Farbindizierung, zu erhöhen \cite{finlayson1998comprehensive}. Dieser Algorithmus ist iterativ und arbeitet in zwei Stufen. Die erste Stufe besteht darin, den roten, grünen und blauen Farbraum mit normalisierter Intensität zu verwenden, um jedes Pixel zu normalisieren. Die zweite Stufe sorgt für eine Normalisierung jedes Farbkanals separat, wodurch die Summe der Farbkomponenten einem drittel der Pixelanzahl entspricht. Durch diese Normalisierung wird die Anzahl der Farbwerte in einem Bild verringert.
+  \item Ein weiterer Ansatz ist der Gray-World-Algorithmus \cite{buenaposada2001variations}. Bei dieser Normalisierung, wird davon ausgegangen, das es drei Faktoren gibt, welche das Beleuchtungsspektrum verändern können. Diese werden auf den roten, grünen und blauen Farbkanälen angewendet. Eine Veränderung der beleuchteten Farbe kann durch die Skalierung von $\alpha$, $\beta$ und $\gamma$ in den RGB-Farbkarnälen modelliert werden ($\alpha$R, $\beta$G, $\gamma$B). Es kann eine Konstanzlösung erzielt werden, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird.
+  \item Die Histogram Equalization, oder auch Histogrammausgleichung, ist eine nicht lineare Transformation, welche die Pixelrang beibehält und in der Lage ist, eine monoton steigende Farbtransformation zu Normalisieren \cite{goatman2003colour}. Es gilt als eine stärkere Methode als der Gray-World-Algorithmus. Die Ergebnisse dieser Methode, haben üblicher weise einen übermäßigen blauen Farbkanal, welcher das Bild unnatürlich wirken lässt.
   \end{itemize}
 Die aufgeführten Verfahren stellen nur einen Teil der Algorithmen, welche verwendet werden können dar. Für die Bachelorarbeit sollen im vorhinein einige der Verfahren ausgewählt und getestet werden.
   \section{Vorgehen}
-Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf verschiedenen Datensätzen angewendet und im Training verwendet werden. Diese Datensätze bestehen aus mehreren Klassen welche mit unterschiedlichen Lichtverhältnissen aufgenommen werden. Daraufhin werden die verschiedenen Netze miteinander verglichen. Dabei soll herausgearbeitet werden, welchen Einfluss die normalisierten Bilder auf das Training haben. Bestenfalls soll die These bestätigt und eine Erhöhung der Effizienz des Trainings erkannt werden. Weiterhin soll geschaut werden, welchen Einfluss eine Verringerung der Trainingsdaten auf das neuronale Netz haben. Sollte eine Normalisierung von Daten die Effizienz des Trainings erhöhen, könnten Ressourcen eingespart werden.\\\\
-\textbf{Geplante Durchführung}\\\\
+Für die Bachelorarbeit sollen mehrere Bildnormalisierungs-Algorithmen auf verschiedenen Datensätzen angewendet und im Training verwendet werden. Diese Datensätze bestehen aus mehreren Klassen welche mit unterschiedlichen Positionen aufgenommen werden. Darauf hin werden die verschiedenen Netze miteinander verglichen. Dabei
+soll herausgearbeitet werden, welchen Einfluss die normalisierten Bilder auf das Training
+haben. Optimaler weise, soll die Annahme bestätigt werden, indem eine Erhöhung der fehlerfreien
+Erkennungsrate des neuronalen Netzes aufgezeigt werden kann. Die Trainingsdaten sollen zur Verdeutlichung der Trainingsergebnisse mit verschiedenen Lichtverhältnissen generiert, oder angepasst werden.\\\\
+\textbf{Geplante Durchführung}\\
 (Die Schritte 2-5 werden für jedes ausgewählte Verfahren durchgeführt. Jedes Training wird auf unterschiedlichen Netzen durchgeführt.)
   \begin{enumerate}
 \item Training der Datensätze ohne Normalisierung
 \item Datensatz Farbnormalisieren
 \item Training der Normalisierten Datensätzen auf einem weiteren Netz
 \item Auswertung des Trainings
-\item Vergleich des Normalisierungs-Verfahren
+\item Vergleich der Normalisierungs-Verfahren
   \end{enumerate}
   
   \newpage
@@ -242,7 +245,7 @@ Für die Bachelorarbeit sollen verschiedene Bildnormalisierungs-Algorithmen auf 
   \begin{enumerate}
   \item Umfassende Farbnormalisierung 
   \item Gray-World-Algorithmus
-  \item Histogram Equalisation
+  \item Histogrammausgleichung
   \end{enumerate}
   \end{enumerate} %Das digitale Bild
   \end{enumerate} %Theoretische Grundlagen
