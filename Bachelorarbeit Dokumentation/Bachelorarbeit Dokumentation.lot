@@ -1,0 +1,28 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Tabellarisches Histogramm des Zielbildes\relax }}{23}{table.caption.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung\relax }}{24}{table.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B1)\relax }}{24}{table.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4}{\ignorespaces Tabellarisches Histogramm des Zielbildes (B2)\relax }}{25}{table.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5}{\ignorespaces Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm\relax }}{25}{table.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6}{\ignorespaces \relax }}{25}{table.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7}{\ignorespaces Modelle \cite {google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite {common2018data}\relax }}{27}{table.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8}{\ignorespaces Datensatz mit Nahrungsmitteln\relax }}{27}{table.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}\relax }}{28}{table.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}\relax }}{28}{table.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {11}{\ignorespaces Genauigkeits-Berechnungen des Trainierten Modells ohne Normalisierungsverfahren\relax }}{32}{table.caption.122}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12}{\ignorespaces Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung\relax }}{33}{table.caption.124}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {13}{\ignorespaces Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung\relax }}{34}{table.caption.126}

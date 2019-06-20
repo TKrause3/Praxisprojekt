@@ -1,0 +1,671 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{anyt/global//global/global}
+  \entry{gray2012world}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AS}{%
+         family={Aihara},
+         familyi={A\bibinitperiod},
+         given={Shunsuke},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Github}%
+    }
+    \strng{namehash}{AS1}
+    \strng{fullhash}{AS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Aih12}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{color correction algorithm in python}
+    \verb{url}
+    \verb https://gist.github.com/shunsukeaihara/4603234
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{bistra2018pic}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AB}{%
+         family={Angelova},
+         familyi={A\bibinitperiod},
+         given={Bistra},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Bistra Angelova}%
+    }
+    \strng{namehash}{AB1}
+    \strng{fullhash}{AB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ang18}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Optical character recognition für chinesische Schrift}
+    \verb{url}
+    \verb http://pille.iwr.uni-heidelberg.de/~ocr01/nnet.html
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{burger2009digitale}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BW}{%
+         family={Burger},
+         familyi={B\bibinitperiod},
+         given={Wilhelm},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Burge},
+         familyi={B\bibinitperiod},
+         given={Mark\bibnamedelima James},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{BWBMJ1}
+    \strng{fullhash}{BWBMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{BB09}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Digitale Bildverarbeitung: Eine Algorithmische Einf{\"u}hrung
+  Mit Java}
+    \field{year}{2009}
+  \endentry
+
+  \entry{common2018data}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=iCCO}{%
+         prefix={in},
+         prefixi={i\bibinitperiod},
+         family={Context},
+         familyi={C\bibinitperiod},
+         given={Common\bibnamedelima Objects},
+         giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Common Objects in Context}%
+    }
+    \strng{namehash}{CCOi1}
+    \strng{fullhash}{CCOi1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Con18}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{COCO Datenset}
+    \verb{url}
+    \verb http://cocodataset.org/#home
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{neuron2018UoC}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=oCSDU}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={California San\bibnamedelima Diego},
+         familyi={C\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+         given={University},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Medicalxpress}%
+    }
+    \strng{namehash}{CSDUo1}
+    \strng{fullhash}{CSDUo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CSD18}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Why are neuron axons long and spindly? Study shows they're
+  optimizing signaling efficiency}
+    \verb{url}
+    \verb https://medicalxpress.com/news/2018-07-neuron-axons-spindly-theyre-op
+    \verb timizing.html
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Alpha2016GO}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={DeepMind},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {DeepMind}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Dee16}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Google DeepMind Challenge Match: Lee Sedol vs AlphaGo}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=l-GsfyVCBu0
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ertel2013grundkurs}{book}{}
+    \name{author}{1}{}{%
+      {{hash=EW}{%
+         family={Ertel},
+         familyi={E\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{EW1}
+    \strng{fullhash}{EW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Ert13}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Grundkurs k{\"u}nstliche Intelligenz: eine praxisorientierte
+  Einf{\"u}hrung}
+    \field{year}{2013}
+  \endentry
+
+  \entry{pascal-voc-2007}{misc}{}
+    \name{author}{5}{}{%
+      {{hash=EM}{%
+         family={Everingham},
+         familyi={E\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VGL}{%
+         family={Van\bibnamedelima Gool},
+         familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WCKI}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={C.\bibnamedelima K.\bibnamedelima I.},
+         giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Winn},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EM+1}
+    \strng{fullhash}{EMVGLWCKIWJZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Eve+}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html}
+    \field{title}{The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007
+  {(VOC2007)} {R}esults}
+  \endentry
+
+  \entry{goodfellow2016deep}{book}{}
+    \name{author}{4}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press Cambridge}%
+    }
+    \strng{namehash}{GI+1}
+    \strng{fullhash}{GIBYCABY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Goo+16}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Deep learning}
+    \field{volume}{1}
+    \field{year}{2016}
+  \endentry
+
+  \entry{hoffmann2016lern}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Hoffmann},
+         familyi={H\bibinitperiod},
+         given={Joachim},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={Engelkamp},
+         familyi={E\bibinitperiod},
+         given={Johannes},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{HJEJ1}
+    \strng{fullhash}{HJEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HE16}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Lern-und Ged{\"a}chtnispsychologie}
+    \field{year}{2016}
+  \endentry
+
+  \entry{histogram2012equalisation}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=JMA}{%
+         family={Jazaery},
+         familyi={J\bibinitperiod},
+         given={Mohammad\bibnamedelima Al},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {stackoverflow}%
+    }
+    \strng{namehash}{JMA1}
+    \strng{fullhash}{JMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Jaz16}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{title}{OpenCV Python equalizeHist colored image}
+    \verb{url}
+    \verb https://stackoverflow.com/questions/31998428/opencv-python-equalizehi
+    \verb st-colored-image
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{KhoslaYaoJayadevaprakashFeiFei_FGVC2011}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=KA}{%
+         family={Khosla},
+         familyi={K\bibinitperiod},
+         given={Aditya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JN}{%
+         family={Jayadevaprakash},
+         familyi={J\bibinitperiod},
+         given={Nityananda},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=YB}{%
+         family={Yao},
+         familyi={Y\bibinitperiod},
+         given={Bangpeng},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinithyphendelim F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KAJNYBFFL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Kho+11}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{First Workshop on Fine-Grained Visual Categorization,
+  IEEE Conference on Computer Vision and Pattern Recognition}
+    \field{title}{Novel Dataset for Fine-Grained Image Categorization}
+    \list{location}{1}{%
+      {Colorado Springs, CO}%
+    }
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{google2018tens}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=LG}{%
+         family={LLC},
+         familyi={L\bibinitperiod},
+         given={Google},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Google LLC}%
+    }
+    \strng{namehash}{LG1}
+    \strng{fullhash}{LG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LLC18}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Tensorflow detection model zoo}
+    \verb{url}
+    \verb https://github.com/tensorflow/models/blob/master/research/object_dete
+    \verb ction/g3doc/detection_model_zoo.md
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{convolutional2019layer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=MM}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={Mayank},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oracle + Datascience.com}%
+    }
+    \strng{namehash}{MM1}
+    \strng{fullhash}{MM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Mis19}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Convolutional Neural Networks, Explained}
+    \verb{url}
+    \verb https://www.datascience.com/blog/convolutional-neural-network
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{info7040061}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PM}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Min},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Chongyang},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Tong},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Guangyuan},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMWCCTLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pen+16}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Near-infrared (NIR) face recognition has attracted increasing attention
+  because of its advantage of illumination invariance. However, traditional
+  face recognition methods based on NIR are designed for and tested in
+  cooperative-user applications. In this paper, we present a convolutional
+  neural network (CNN) for NIR face recognition (specifically face
+  identification) in non-cooperative-user applications. The proposed NIRFaceNet
+  is modified from GoogLeNet, but has a more compact structure designed
+  specifically for the Chinese Academy of Sciences Institute of Automation
+  (CASIA) NIR database and can achieve higher identification rates with less
+  training time and less processing time. The experimental results demonstrate
+  that NIRFaceNet has an overall advantage compared to other methods in the NIR
+  face recognition domain when image blur and noise are present. The
+  performance suggests that the proposed NIRFaceNet method may be more suitable
+  for non-cooperative-user applications.%
+    }
+    \verb{doi}
+    \verb 10.3390/info7040061
+    \endverb
+    \field{issn}{2078-2489}
+    \field{number}{4}
+    \field{title}{NIRFaceNet: A Convolutional Neural Network for Near-Infrared
+  Face Identification}
+    \verb{url}
+    \verb https://bit.ly/2GGNqUP
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Information}
+    \field{year}{2016}
+  \endentry
+
+  \entry{sermanet2012convolutional}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SP}{%
+         family={Sermanet},
+         familyi={S\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chintala},
+         familyi={C\bibinitperiod},
+         given={Soumith},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{SPCSLY1}
+    \strng{fullhash}{SPCSLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SCL12}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Pattern Recognition (ICPR), 2012 21st International
+  Conference on}
+    \field{pages}{3288\bibrangedash 3291}
+    \field{title}{Convolutional neural networks applied to house numbers digit
+  classification}
+    \field{year}{2012}
+  \endentry
+
+  \entry{schmidt2013physiologie}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SRF}{%
+         family={Schmidt},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima F},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Thews},
+         familyi={T\bibinitperiod},
+         given={Gerhard},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{SRFTG1}
+    \strng{fullhash}{SRFTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{ST13}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Physiologie des Menschen}
+    \field{year}{2013}
+  \endentry
+
+  \entry{labelimg2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=dt}{%
+         prefix={darrenl},
+         prefixi={d\bibinitperiod},
+         family={tzutalin},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Github}%
+    }
+    \strng{namehash}{td1}
+    \strng{fullhash}{td1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{tzu19}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{labelimg}
+    \verb{url}
+    \verb https://github.com/tzutalin/labelImg
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pooling2018layer}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=sWC}{%
+         prefix={science},
+         prefixi={s\bibinitperiod},
+         family={Wiki},
+         familyi={W\bibinitperiod},
+         given={Computer},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Computer Science Wiki}%
+    }
+    \strng{namehash}{WCs1}
+    \strng{fullhash}{WCs1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Wik18}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Max-pooling / Pooling}
+    \verb{url}
+    \verb https://computersciencewiki.org/index.php/Max-pooling_/_Pooling
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{perzeptron2019}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={Wikipedia},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wikipedia}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Wik19}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Künstliches Neuron}
+    \verb{url}
+    \verb https://de.wikipedia.org/wiki/K%C3%BCnstliches_Neuron
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\enddatalist
+\endinput
