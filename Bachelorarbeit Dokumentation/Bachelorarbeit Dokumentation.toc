@@ -57,4 +57,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Diskussion}{35}{section.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{36}{section.128}
+\contentsline {section}{\numberline {6}Fazit}{37}{section.129}

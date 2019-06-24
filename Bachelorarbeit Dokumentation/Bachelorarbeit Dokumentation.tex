@@ -500,7 +500,7 @@ Graustufe & Ausgleichung B1 & Ausgleichung B2 & Spezifiziertes Histogramm\\
 Aus der neuen Stufen Verteilung entsteht ein neues Histogramm welches weniger Farbstufen enthält. Dadurch verschiebt sich das Histogramm Richtung weiß und das Bild wird erhellt.
 \begin{table}
 [h]
-\caption{}
+\caption{Tabellarisches Histogramm des Refernzbildes (B1) auf Basis des Zielbildes (B2)}
 \centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 \hline
@@ -684,16 +684,16 @@ Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der T
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-Objektklasse & AP(Norm) & AP(GW) & AP(HA) & AP(HS)\\
+Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Wasser - Flasche & 0.948 & \textbf{0.955} & 0.952 & 0.955\\
-Orangensaft - Packung & \textbf{0.999} & 0.998 & 0.997 & 0.677\\
-Milch - Packung & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.871\\
-Margariene & \textbf{1.000} & \textbf{1.000} & 0.997 & 1.000\\
-Brunch - Aufstrich & \textbf{1.000} & 0.995 & \textbf{1.000} & 0.998\\
-Flasche - Bier & 0.997 & 0.970 & \textbf{0.999} & 0.996\\
+Wasser - Flasche & 0.948 & \textbf{0.955} & 0.934 & 0.000\\
+Orangensaft - Packung & \textbf{0.999} & 0.998 & \textbf{1.000} & 0.000\\
+Milch - Packung & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000\\
+Margariene & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000\\
+Brunch - Aufstrich & \textbf{1.000} & 0.995 & 0.959 & 0.000\\
+Flasche - Bier & \textbf{0.997} & 0.970 & 0.986 & 0.000\\
 \hline
-mAP & \textbf{0.991} & 0.987 & \textbf{0.991} & 0.916\\
+mAP & \textbf{0.991} & 0.987 & \textbf{0.980} & 0.000\\
 \hline
 \end{tabular}
 \label{tab:nahrungsmitteltest}
@@ -710,28 +710,28 @@ Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise gr
 \hline
 Objektklasse & AP (N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-sofa & 0.611 & 0.612 & \textbf{0.645} & 0.000\\ 
-aeroplane & 0.845 & \textbf{0.855} & 0.823 & 0.000\\
-horse & \textbf{0.924} & 0.910 & 0.902 & 0.000\\
-train & 0.790 & \textbf{0.804} & 0.791 & 0.000\\
-bird & \textbf{0.750} & 0.733 & 0.695 & 0.000\\ 
-tvmonitor & 0.729 & \textbf{0.733} & 0.711 & 0.000\\
-boat & \textbf{0.680} & 0.644 & 0.584 & 0.000\\
-pottedplant & \textbf{0.430} & 0.415 & 0.411 & 0.000\\
-bus & 0.797 & \textbf{0.810} & 0.733 & 0.000\\ 
-diningtable & 0.532 & \textbf{0.545} & 0.485 & 0.000\\
-car & 0.812 & \textbf{0.815} & 0.780 & 0.000\\
-bottle & \textbf{0.553} & 0.510 & 0.476 & 0.000\\
-cat & \textbf{0.903} & 0.902 & 0.860 & 0.000\\
-person & \textbf{0.791} & 0.779 & 0.758 & 0.000\\
-chair & 0.499 & \textbf{0.515} & 0.487 & 0.000\\
-bicycle & \textbf{0.744} & 0.730 & 0.728 & 0.000\\
-cow & \textbf{0.718} & 0.698 & 0.713 & 0.000\\
-motorbike & \textbf{0.739} & 0.722 & 0.724 & 0.000\\
-dog & \textbf{0.867} & 0.862 & 0.797 & 0.000\\
-sheep & \textbf{0.645} & 0.619 & 0.580 & 0.000\\
+sofa & 0.611 & 0.612 & \textbf{0.637} & 0.000\\ 
+aeroplane & 0.845 & \textbf{0.855} & 0.826 & 0.000\\
+horse & \textbf{0.924} & 0.910 & 0.891 & 0.000\\
+train & 0.790 & \textbf{0.804} & 0.797 & 0.000\\
+bird & \textbf{0.750} & 0.733 & 0.691 & 0.000\\ 
+tvmonitor & 0.729 & \textbf{0.733} & 0.725 & 0.000\\
+boat & \textbf{0.680} & 0.644 & 0.626 & 0.000\\
+pottedplant & \textbf{0.430} & 0.415 & 0.425 & 0.000\\
+bus & 0.797 & \textbf{0.810} & 0.763 & 0.000\\ 
+diningtable & 0.532 & \textbf{0.545} & 0.507 & 0.000\\
+car & 0.812 & \textbf{0.815} & 0.789 & 0.000\\
+bottle & \textbf{0.553} & 0.510 & 0.498 & 0.000\\
+cat & \textbf{0.903} & 0.902 & 0.872 & 0.000\\
+person & \textbf{0.791} & 0.779 & 0.775 & 0.000\\
+chair & 0.499 & \textbf{0.515} & 0.460 & 0.000\\
+bicycle & 0.744 & 0.730 & \textbf{0.752} & 0.000\\
+cow & \textbf{0.718} & 0.698 & 0.694 & 0.000\\
+motorbike & \textbf{0.739} & 0.722 & 0.725 & 0.000\\
+dog & \textbf{0.867} & 0.862 & 0.835 & 0.000\\
+sheep & 0.645 & 0.619 & \textbf{0.664} & 0.000\\
 \hline
-mAP & \textbf{0.718} & 0.710 & 0.684 & 0.000\\
+mAP & \textbf{0.718} & 0.710 & 0.698 & 0.000\\
 \hline
 \end{tabular}
 \end{table}
@@ -772,6 +772,23 @@ mAP & 0.840 & \textbf{0.848} & 0.000 & 0.000\\
 \end{table}    
   \newpage
   \section{Diskussion}
+Die Ergebnisse der trainierten Netze zeigen, das mit die verwendeten Datensätzen zusammen mit den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielen. Ein möglicher Grund könnte zum einen in den vortrainierten Netzen liegen, welche schon zu genau und hochwertig eingestellte Perzeptronen besitzen und durch die vorherigen Datensätze nicht optimal für den Versuch waren. Zum anderen Könnte es an den Datensätzen selber liegen welche Normalisiert wurden. Dafür wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen Aufgenommen. Das Objekt wurde vom Hintergrund segmentiert, um zu überprüfen wie sich die Histogramme voneinander unterscheiden (Abb.). Dieser Vorgang wurde daraufhin auch mit der Histogramm Ausgleichung überprüft (Abb.).\\
+\begin{figure}[htb]
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/image105.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.08\textwidth}
+\includegraphics[width=\textwidth]{Sources/image105_segmentiert.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/image105_Histogramm.png}
+\end{minipage}
+\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\end{figure}\\
+Bei den Normalen Datensätzen, ist aufgefallen, das bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen die Objekte eine unterschiedliche Farbverteilung aufweisen. Das könnte durch Lichtreflexionen anderer Objekte in der Umgebung erklärt werden. Der Normalisierte Datensatz weißt sogar noch größere Unterschiede in den Klassen auf. Das liegt daran, dass Die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen Bildern unterschiedlich ist verrechnet. Das bedeutet, das nicht der Datensatz untereinander Normalisiert wurde, sondern jedes Bild in dem Datensatz für sich.\\\\
+Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorithmen nicht gut geeignet. Die Kriterien für einen Datensatz welcher durch Farbnormalisierung eine höhere Genauigkeit erreichen könnte, liegt in dem Hintergrund welcher verwendet wird. Dabei müssen alle Klassen mit dem selben Hintergrund aufgenommen werden. Dadurch würden alle Klassen auf der selben Basis    normalisiert werden. Gerade die Histogramm Spezifikation (Absch. \ref{s.hs}) hätte hier ein großes Potenzial, da die Auswahl eines Referenzbildes einfacher und effektiver wird, durch den einheitlichen Hintergrund. Um diese Theorie zu überprüfen, wird ein weiterer Datensatz generiert und gelabelt. 
   \newpage
   \section{Fazit}
   \newpage

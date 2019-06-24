@@ -20,3 +20,5 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray World Algorithmus normalisiert wurde\relax }}{29}{figure.caption.66}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {10}{\ignorespaces Auf der linken Seite ist das Originalbild. Auf der rechten seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde\relax }}{30}{figure.caption.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Gr\IeC {\"u}n-, Blau-Kanal\relax }}{35}{figure.caption.128}
