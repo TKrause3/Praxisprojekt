@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  24 JUN 2019 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  25 JUN 2019 15:36
 entering extended mode
 **"./Bachelorarbeit Dokumentation.tex"
 ("Bachelorarbeit Dokumentation.tex"
@@ -468,6 +468,20 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
+("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
+y"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
+.sty"
+File: lstlang1.sty 2019/02/27 1.8b listings language file
+)
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
 .sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -569,6 +583,7 @@ r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1161,21 +1176,21 @@ File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )) ("Bachelorarbeit Dokumentation.aux")
 \openout1 = `"Bachelorarbeit Dokumentation.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 171.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1243,7 +1258,7 @@ kii"
 \c@lstlisting=\count351
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring ON on input line 137.
+Package hyperref Info: Link coloring ON on input line 171.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
@@ -1255,9 +1270,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count352
 )
-LaTeX Info: Redefining \ref on input line 137.
-LaTeX Info: Redefining \pageref on input line 137.
-LaTeX Info: Redefining \nameref on input line 137.
+LaTeX Info: Redefining \ref on input line 171.
+LaTeX Info: Redefining \pageref on input line 171.
+LaTeX Info: Redefining \nameref on input line 171.
  ("Bachelorarbeit Dokumentation.out")
 ("Bachelorarbeit Dokumentation.out")
 \@outlinefile=\write7
@@ -1330,8 +1345,8 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 137.
-Package biblatex Info: Reference segment=0 on input line 137.
+Package biblatex Info: Reference section=0 on input line 171.
+Package biblatex Info: Reference segment=0 on input line 171.
 Package epstopdf Info: Source file: <Sources/logo_TH-Koeln_CMYK_22pt.eps>
 (epstopdf)                    date: 2019-06-22 17:33:14
 (epstopdf)                    size: 531878 bytes
@@ -1341,7 +1356,7 @@ ted-to.pdf>
 (epstopdf)                    size: 25875 bytes
 (epstopdf)             Command: <epstopdf --outfile=Sources/logo_TH-Koeln_CMYK_
 22pt-eps-converted-to.pdf Sources/logo_TH-Koeln_CMYK_22pt.eps>
-(epstopdf)             \includegraphics on input line 144.
+(epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1354,48 +1369,48 @@ File: Sources/logo_TH-Koeln_CMYK_22pt-eps-converted-to.pdf Graphic file (type p
 df)
 <use Sources/logo_TH-Koeln_CMYK_22pt-eps-converted-to.pdf>
 Package pdftex.def Info: Sources/logo_TH-Koeln_CMYK_22pt-eps-converted-to.pdf  
-used on input line 144.
+used on input line 178.
 (pdftex.def)             Requested size: 115.43095pt x 62.23235pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 167.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 201.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 167.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 201.
 
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 167
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 201
 .
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 167
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 201
 .
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 167.
+(Font)              <14.4> on input line 201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 167.
+(Font)              <10> on input line 201.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 167.
-LaTeX Font Info:    Try loading font information for U+msa on input line 167.
+(Font)              <7> on input line 201.
+LaTeX Font Info:    Try loading font information for U+msa on input line 201.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 167.
+LaTeX Font Info:    Try loading font information for U+msb on input line 201.
  ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1424,268 +1439,268 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout10 = `"Bachelorarbeit Dokumentation.toc"'.
 
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--213
+Underfull \hbox (badness 10000) in paragraph at lines 244--247
 
  []
 
-<Sources/neuron.jpg, id=290, 602.25pt x 361.35pt>
+<Sources/neuron.jpg, id=293, 602.25pt x 361.35pt>
 File: Sources/neuron.jpg Graphic file (type jpg)
 <use Sources/neuron.jpg>
-Package pdftex.def Info: Sources/neuron.jpg  used on input line 220.
+Package pdftex.def Info: Sources/neuron.jpg  used on input line 254.
 (pdftex.def)             Requested size: 421.57211pt x 252.94327pt.
-<Sources/perzeptron2.png, id=295, 1204.5pt x 572.1375pt>
+<Sources/perzeptron2.png, id=298, 1204.5pt x 572.1375pt>
 File: Sources/perzeptron2.png Graphic file (type png)
 <use Sources/perzeptron2.png>
-Package pdftex.def Info: Sources/perzeptron2.png  used on input line 230.
+Package pdftex.def Info: Sources/perzeptron2.png  used on input line 264.
 (pdftex.def)             Requested size: 361.35278pt x 171.64256pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--235
+Underfull \hbox (badness 10000) in paragraph at lines 248--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--235
+Underfull \hbox (badness 10000) in paragraph at lines 248--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--235
+Underfull \hbox (badness 10000) in paragraph at lines 248--269
 
  []
 
 [8] [9 <./Sources/neuron.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 [10 <./Sources/perzeptron2.png>]
-<Sources/nnet.png, id=325, 499.3857pt x 269.3262pt>
+<Sources/nnet.png, id=328, 499.3857pt x 269.3262pt>
 File: Sources/nnet.png Graphic file (type png)
 <use Sources/nnet.png>
-Package pdftex.def Info: Sources/nnet.png  used on input line 255.
+Package pdftex.def Info: Sources/nnet.png  used on input line 289.
 (pdftex.def)             Requested size: 249.69223pt x 134.66277pt.
-<Sources/cnnet.jpg, id=330, 739.76375pt x 250.9375pt>
+<Sources/cnnet.jpg, id=333, 739.76375pt x 250.9375pt>
 File: Sources/cnnet.jpg Graphic file (type jpg)
 <use Sources/cnnet.jpg>
-Package pdftex.def Info: Sources/cnnet.jpg  used on input line 265.
+Package pdftex.def Info: Sources/cnnet.jpg  used on input line 299.
 (pdftex.def)             Requested size: 369.88097pt x 125.46843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--272
+Underfull \hbox (badness 10000) in paragraph at lines 273--306
 
  []
 
 [11] [12 <./Sources/nnet.png>] [13 <./Sources/cnnet.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--281
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--281
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--285
+Underfull \hbox (badness 10000) in paragraph at lines 316--319
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--285
+Underfull \hbox (badness 10000) in paragraph at lines 316--319
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
 
-<Sources/CNN.png, id=358, 501.875pt x 461.725pt>
+<Sources/CNN.png, id=361, 501.875pt x 461.725pt>
 File: Sources/CNN.png Graphic file (type png)
 <use Sources/CNN.png>
-Package pdftex.def Info: Sources/CNN.png  used on input line 298.
+Package pdftex.def Info: Sources/CNN.png  used on input line 332.
 (pdftex.def)             Requested size: 250.93687pt x 230.86194pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15]
-<Sources/MaxpoolSample2.png, id=368, 164.25pt x 68.547pt>
+<Sources/MaxpoolSample2.png, id=371, 164.25pt x 68.547pt>
 File: Sources/MaxpoolSample2.png Graphic file (type png)
 <use Sources/MaxpoolSample2.png>
-Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 308.
+Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 342.
 (pdftex.def)             Requested size: 328.49918pt x 137.09363pt.
-<Sources/labelimg.jpg, id=372, 433.62pt x 243.91125pt>
+<Sources/labelimg.jpg, id=375, 433.62pt x 243.91125pt>
 File: Sources/labelimg.jpg Graphic file (type jpg)
 <use Sources/labelimg.jpg>
-Package pdftex.def Info: Sources/labelimg.jpg  used on input line 320.
+Package pdftex.def Info: Sources/labelimg.jpg  used on input line 354.
 (pdftex.def)             Requested size: 433.61894pt x 243.91064pt.
  [16 <./Sources/CNN.png> <./Sources/MaxpoolSample2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 [17 <./Sources/labelimg.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 333--344
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--344
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--344
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--344
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--344
+Underfull \hbox (badness 10000) in paragraph at lines 367--378
 
  []
 
 [18] [19]
-<Sources/histogramm.jpg, id=398, 405.76593pt x 233.37187pt>
+<Sources/histogramm.jpg, id=401, 405.76593pt x 233.37187pt>
 File: Sources/histogramm.jpg Graphic file (type jpg)
 <use Sources/histogramm.jpg>
-Package pdftex.def Info: Sources/histogramm.jpg  used on input line 352.
+Package pdftex.def Info: Sources/histogramm.jpg  used on input line 386.
 (pdftex.def)             Requested size: 405.76494pt x 233.37129pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--363
+Underfull \hbox (badness 10000) in paragraph at lines 379--397
 
  []
 
 [20] [21 <./Sources/histogramm.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 366--369
+Underfull \hbox (badness 10000) in paragraph at lines 400--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--369
+Underfull \hbox (badness 10000) in paragraph at lines 400--403
 
  []
 
 [22]
-Overfull \hbox (23.89241pt too wide) in paragraph at lines 413--434
+Overfull \hbox (23.89241pt too wide) in paragraph at lines 447--468
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--464
+Underfull \hbox (badness 10000) in paragraph at lines 403--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--464
+Underfull \hbox (badness 10000) in paragraph at lines 403--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--464
+Underfull \hbox (badness 10000) in paragraph at lines 403--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--464
+Underfull \hbox (badness 10000) in paragraph at lines 403--498
 
  []
 
@@ -1694,7 +1709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--464
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 473--513
+Underfull \hbox (badness 10000) in paragraph at lines 507--547
 
  []
 
@@ -1703,157 +1718,473 @@ Underfull \hbox (badness 10000) in paragraph at lines 473--513
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--592
+Underfull \hbox (badness 10000) in paragraph at lines 573--628
 
  []
 
+[26] [27] [28]
 
-Underfull \hbox (badness 10000) in paragraph at lines 539--592
+Package xcolor Warning: Incompatible color definition on input line 633.
 
- []
 
-[26]
+Package xcolor Warning: Incompatible color definition on input line 634.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 601.
+Package xcolor Warning: Incompatible color definition on input line 635.
 
+
+Package xcolor Warning: Incompatible color definition on input line 636.
+
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 636.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 601.
-<Sources/gwn.png, id=458, 1043.9pt x 391.4625pt>
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 636.
+
+
+Package xcolor Warning: Incompatible color definition on input line 637.
+
+
+Package xcolor Warning: Incompatible color definition on input line 638.
+
+<Sources/gwn.png, id=462, 1043.9pt x 391.4625pt>
 File: Sources/gwn.png Graphic file (type png)
 <use Sources/gwn.png>
-Package pdftex.def Info: Sources/gwn.png  used on input line 609.
+Package pdftex.def Info: Sources/gwn.png  used on input line 644.
 (pdftex.def)             Requested size: 313.17241pt x 117.43965pt.
+
+Package xcolor Warning: Incompatible color definition on input line 650.
+
+
+Package xcolor Warning: Incompatible color definition on input line 651.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
+
+
+Package xcolor Warning: Incompatible color definition on input line 653.
 
 [29 <./Sources/gwn.png (PNG copy)>]
-<Sources/histeq.jpg, id=483, 1043.9pt x 391.4625pt>
+
+Package xcolor Warning: Incompatible color definition on input line 654.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 656.
+
+
+Package xcolor Warning: Incompatible color definition on input line 657.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 659.
+
+
+Package xcolor Warning: Incompatible color definition on input line 660.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 662.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 663.
+
+
+Package xcolor Warning: Incompatible color definition on input line 664.
+
+<Sources/histeq.jpg, id=482, 1043.9pt x 391.4625pt>
 File: Sources/histeq.jpg Graphic file (type jpg)
 <use Sources/histeq.jpg>
-Package pdftex.def Info: Sources/histeq.jpg  used on input line 629.
+Package pdftex.def Info: Sources/histeq.jpg  used on input line 670.
 (pdftex.def)             Requested size: 313.17241pt x 117.43965pt.
- [30 <./Sources/histeq.jpg>]
-Overfull \hbox (80.55264pt too wide) in paragraph at lines 658--659
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+
+Package xcolor Warning: Incompatible color definition on input line 677.
+
+
+Package xcolor Warning: Incompatible color definition on input line 678.
+
+
+Package xcolor Warning: Incompatible color definition on input line 680.
+
+
+Package xcolor Warning: Incompatible color definition on input line 680.
+
+
+Package xcolor Warning: Incompatible color definition on input line 681.
+
+
+Package xcolor Warning: Incompatible color definition on input line 682.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+
+Package xcolor Warning: Incompatible color definition on input line 684.
+
+[30 <./Sources/histeq.jpg>]
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 685.
+
+
+Package xcolor Warning: Incompatible color definition on input line 687.
+
+
+Package xcolor Warning: Incompatible color definition on input line 687.
+
+
+Package xcolor Warning: Incompatible color definition on input line 689.
+
+
+Package xcolor Warning: Incompatible color definition on input line 689.
+
+
+Package xcolor Warning: Incompatible color definition on input line 690.
+
+
+Package xcolor Warning: Incompatible color definition on input line 691.
+
+
+Package xcolor Warning: Incompatible color definition on input line 692.
+
+
+Package xcolor Warning: Incompatible color definition on input line 694.
+
+
+Package xcolor Warning: Incompatible color definition on input line 694.
+
+
+Package xcolor Warning: Incompatible color definition on input line 695.
+
+
+Package xcolor Warning: Incompatible color definition on input line 695.
+
+
+Package xcolor Warning: Incompatible color definition on input line 695.
+
+
+Package xcolor Warning: Incompatible color definition on input line 695.
+
+
+Package xcolor Warning: Incompatible color definition on input line 696.
+
+
+Package xcolor Warning: Incompatible color definition on input line 697.
+
+
+Package xcolor Warning: Incompatible color definition on input line 697.
+
+
+Package xcolor Warning: Incompatible color definition on input line 697.
+
+
+Package xcolor Warning: Incompatible color definition on input line 697.
+
+
+Package xcolor Warning: Incompatible color definition on input line 698.
+
+
+Package xcolor Warning: Incompatible color definition on input line 699.
+
+
+Package xcolor Warning: Incompatible color definition on input line 699.
+
+
+Package xcolor Warning: Incompatible color definition on input line 699.
+
+
+Package xcolor Warning: Incompatible color definition on input line 699.
+
+
+Package xcolor Warning: Incompatible color definition on input line 701.
+
+
+Package xcolor Warning: Incompatible color definition on input line 701.
+
+
+Package xcolor Warning: Incompatible color definition on input line 702.
+
+<Sources/HS_beispiel.png, id=511, 578.16pt x 216.81pt>
+File: Sources/HS_beispiel.png Graphic file (type png)
+<use Sources/HS_beispiel.png>
+Package pdftex.def Info: Sources/HS_beispiel.png  used on input line 708.
+(pdftex.def)             Requested size: 462.52863pt x 173.44823pt.
+
+Overfull \hbox (7.28452pt too wide) in paragraph at lines 708--709
+ [][] 
  []
 
-
-Overfull \hbox (101.70251pt too wide) in paragraph at lines 659--661
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.15298pt too wide) in paragraph at lines 662--664
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.00311pt too wide) in paragraph at lines 664--665
-[][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (45.30286pt too wide) in paragraph at lines 665--667
-[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (115.80243pt too wide) in paragraph at lines 674--675
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[31] [32] [33] [34]
-<Sources/image105.jpg, id=547, 1335.99126pt x 1001.7425pt>
+[31 <./Sources/HS_beispiel.png>] [32] [33] [34]
+<Sources/image105.jpg, id=550, 1335.99126pt x 1001.7425pt>
 File: Sources/image105.jpg Graphic file (type jpg)
 <use Sources/image105.jpg>
-Package pdftex.def Info: Sources/image105.jpg  used on input line 778.
+Package pdftex.def Info: Sources/image105.jpg  used on input line 814.
 (pdftex.def)             Requested size: 136.57462pt x 102.39648pt.
-<Sources/image105_segmentiert.png, id=548, 207.77625pt x 584.1825pt>
+<Sources/image105_segmentiert.png, id=551, 207.77625pt x 584.1825pt>
 File: Sources/image105_segmentiert.png Graphic file (type png)
 <use Sources/image105_segmentiert.png>
-Package pdftex.def Info: Sources/image105_segmentiert.png  used on input line 7
-82.
+Package pdftex.def Info: Sources/image105_segmentiert.png  used on input line 8
+18.
 (pdftex.def)             Requested size: 36.42035pt x 102.3939pt.
-<Sources/image105_Histogramm.png, id=549, 462.528pt x 346.896pt>
+<Sources/image105_Histogramm.png, id=552, 462.528pt x 346.896pt>
 File: Sources/image105_Histogramm.png Graphic file (type png)
 <use Sources/image105_Histogramm.png>
-Package pdftex.def Info: Sources/image105_Histogramm.png  used on input line 78
-6.
+Package pdftex.def Info: Sources/image105_Histogramm.png  used on input line 82
+2.
 (pdftex.def)             Requested size: 136.57462pt x 102.4287pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--792
+Underfull \hbox (badness 10000) in paragraph at lines 811--828
 
  []
 
 [35 <./Sources/image105.jpg> <./Sources/image105_segmentiert.png> <./Sources/im
 age105_Histogramm.png>] [36] [37]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 795.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 831.
 
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (17.55217pt too wide) in paragraph at lines 796--796
+Overfull \hbox (17.55217pt too wide) in paragraph at lines 832--832
 []\T1/lmr/m/n/12 Common Ob-jects in Con-text. \T1/lmr/m/it/12 CO-CO Da-ten-set\
 T1/lmr/m/n/12 . 2018. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]$\T1/lmtt/m/n/12 
 http : / / cocodataset .
  []
 
 
-Overfull \hbox (125.13501pt too wide) in paragraph at lines 796--796
+Overfull \hbox (125.13501pt too wide) in paragraph at lines 832--832
 \T1/lmr/m/it/12 (VOC2007) Re-sults\T1/lmr/m/n/12 . http://www.pascal-network.or
 g/challenges/VOC/voc2007/workshop/index.html. 
  []
 
 
-Overfull \hbox (2.83942pt too wide) in paragraph at lines 796--796
+Overfull \hbox (2.83942pt too wide) in paragraph at lines 832--832
 []\T1/lmr/m/n/12 Mayank Mishra. \T1/lmr/m/it/12 Con-vo-lu-tio-nal Neural Net-wo
 rks, Ex-plai-ned\T1/lmr/m/n/12 . 2019. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]
 $\T1/lmtt/m/n/12 https :
  []
 
 [38]
-Overfull \hbox (74.52756pt too wide) in paragraph at lines 796--796
+Overfull \hbox (74.52756pt too wide) in paragraph at lines 832--832
 []\T1/lmr/m/n/12 Computer science Wi-ki. \T1/lmr/m/it/12 Max-pooling / Poo-ling
 \T1/lmr/m/n/12 . 2018. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]$\T1/lmtt/m/n/12
  https : / / computersciencewiki .
  []
 
 [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 800--801
+Underfull \hbox (badness 10000) in paragraph at lines 836--837
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--801
+Underfull \hbox (badness 10000) in paragraph at lines 836--837
 
  []
 
 [41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 806.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 806.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 842.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 842.
  ("Bachelorarbeit Dokumentation.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 806.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 806.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 842.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 842.
 Package rerunfilecheck Info: File `"Bachelorarbeit Dokumentation".out' has not 
 changed.
-(rerunfilecheck)             Checksum: 7B8749D04F6F7B81FFDC0A9BA5DC44ED;2167.
+(rerunfilecheck)             Checksum: 34BC9D7D9D59C6EE204F52EEA51C0688;2167.
 Package logreq Info: Writing requests to '"Bachelorarbeit Dokumentation".run.xm
 l'.
 \openout1 = `"Bachelorarbeit Dokumentation.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27051 strings out of 492970
- 497871 string characters out of 3126150
- 791854 words of memory out of 3000000
- 30238 multiletter control sequences out of 15000+200000
- 66119 words of font info for 61 fonts, out of 3000000 for 9000
+ 27279 strings out of 492970
+ 500812 string characters out of 3126150
+ 848297 words of memory out of 3000000
+ 30461 multiletter control sequences out of 15000+200000
+ 72097 words of font info for 63 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  54i,11n,73p,1302b,3134s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
@@ -1867,16 +2198,18 @@ s/type1/public/lm/lmcsc10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Torben/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Torben/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Torben/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Torben/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Torben/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Torben/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Torb
-en/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Bachelorarbeit Dokumentation.pdf" (42 pages, 2571798 bytes).
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Torben/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Torben/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Torben/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Torben/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Torben/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/To
+rben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "Bachelorarbeit Dokumentation.pdf" (42 pages, 2825212 bytes).
 
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

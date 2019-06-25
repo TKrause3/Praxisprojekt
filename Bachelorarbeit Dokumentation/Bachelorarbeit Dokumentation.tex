@@ -93,6 +93,40 @@ footskip=1cm,headheight=14.599pt]{geometry} % Einrichtung der Seite
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{listings}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{lightgray},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 
 \usepackage{setspace} % Paket zum Setzen des Zeilenabstandes
 % INFO: Zeilenabstand setzen:
@@ -536,15 +570,16 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \end{table}\\
 Das faster\_rcnn\_inception\_v2\_coco soll für das Projekt verwendet werden. Dieses hat eine mAP von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste mAP hat, sollten die Unterschiede in der Genauigkeit stärker ausfallen. Das ausgewählte Modell wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
   \subsection{Trainingsdaten}\label{s.tdaten}
-Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\\\
-In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:
+Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\
+In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:\\\\
+Der erste Datensatz besteht aus mehreren Nahrungsmitteln, welche in der Tabelle \ref{tab:nahrungsmittel} jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen beinhalten. Dieser Datensatz ist mit seinen ca. 1000 Bildern der kleinste Datensatz 
 \begin{table}
 [h]
 \caption{Datensatz mit Nahrungsmitteln}
 \centering
 \begin{tabular}{|l|l|}
 \hline
-Objektklasse & Objektklasse\\
+Klassenname & Klassenname\\
 \hline
 Milch - Packung & Orangensaft - Packung\\
 Wasser - Flasche & Bier - Flasche\\
@@ -561,7 +596,7 @@ Der PascalVOC Datensatz umfasst 20 Klassen und besteht aus 5.000 Bildern. Von 20
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
-Objektname & Objektname & Objektname & Objektname\\
+Klassenname & Klassenname & Klassenname & Klassenname\\
 \hline
 Person & Vogel & Katze & Kuh\\
 Hund & Pferd & Schaf & Zug\\
@@ -572,14 +607,14 @@ Tisch & Blumentopf & Sofa & Bildschirm\\
 \end{tabular}
 \label{tab:pvoc}
 \end{table}\\
-Der dritte Datensatz, welcher verwendet wird, ist der Stanford Dogs Datensatz. Dieser beinhaltet mehr als 24.000 Bilder und 120 Klassen, wobei es inhaltlich um die Erkennung der Hunderasse geht. Dabei ist der Datensatz so aufgebaut, dass die enthaltenen Rassen mit den zugehörigen Annotationen in einzelnen Ordnern geordnet sind. Für die Übersicht wurden 20 verschiedene Rassen ausgewählt und für das Training verwendet.\\
+Der letzte Datensatz, welcher verwendet wird, ist der Stanford Dogs Datensatz. Dieser beinhaltet mehr als 24.000 Bilder und 120 Klassen, wobei es inhaltlich um die Erkennung der Hunderasse geht. Dabei ist der Datensatz so aufgebaut, dass die enthaltenen Rassen mit den zugehörigen Annotationen in einzelnen Ordnern geordnet sind. Für die Übersicht wurden 20 verschiedene Rassen ausgewählt und für das Training verwendet.\\
 \begin{table}
 [h]
 \caption{Stanford Dog Dataset \cite{KhoslaYaoJayadevaprakashFeiFei_FGVC2011}}
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
-Objektname & Objektname & Objektname & Objektname\\
+Klassenname & Klassenname & Klassenname & Klassenname\\
 \hline
 Chihuahua & Japanese spaniel & Maltese dog & Pekinese\\
 Shih-Tzu & Blenheim Spaniel & Papillon & Toy Terrier\\
@@ -589,7 +624,7 @@ Redbone & Borzoi & Irish Wolfhound & Italian Greyhound\\
 \hline
 \end{tabular}
 \end{table}\\
-
+Von der Struktur der Datensätze, sind sie ähnlich aufgebaut. Viele verschiedene Klassen mit verschiedenen Szenen und Kontexten. Im weiteren wird zunächst auf die Umsetzung der Normalisierungsverfahren eingegangen, um weiter Erkenntnisse zu erlangen.
 \newpage
 \subsection{Normalisierung-Algorithmen}\label{s.nalgorithmen}
 Für die Normalisierung der Datensätze ist eine Methode nötig, um mehrere Bilder möglichst schnell hintereinander zu bearbeiten. Für die Normalisierung wurden Python Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus verarbeitet. Dafür wurde mit unter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das verarbeiten von Bildern benötigt. 
@@ -602,80 +637,81 @@ def grey_world(nimg):
     nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
     return  nimg.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
-In dem verwendeten Gray World Algorithmus \cite{gray2012world} Zunächst wird das Bild
+In dem verwendeten Gray World Algorithmus \cite{gray2012world} Zunächst wird das Bild in 32 Bit umgewandelt. Daraufhin wird der Grünkanal verwendet und der durchschnitt berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals Dividiert. Das Ergebnis des wird mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben. Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.3]{Sources/gwn.png}
-	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray World Algorithmus normalisiert wurde}
+	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray-World-Algorithmus normalisiert wurde}
 	\label{img:gwnimg}
 \end{figure}
 \subsubsection{Histogramm Ausgleich}
 \begin{lstlisting}
-def histogram_equalisation(img):
-    img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-    R, G, B = cv.split(img)
-    output1_R = cv.equalizeHist(R)
-    output1_G = cv.equalizeHist(G)
-    output1_B = cv.equalizeHist(B)
-    output1 = cv.merge((output1_R, output1_G, output1_B))
-    im = Image.fromarray(output1)
-    return im
+import cv2
+import numpy as np
+
+img = cv2.imread('input.jpg')
+img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+
+# equalize the histogram of the Y channel
+img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
+
+# convert the YUV image back to RGB format
+img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
+
+cv2.imshow('Color input image', img)
+cv2.imshow('Histogram equalized', img_output)
+cv2.waitKey(0)
 \end{lstlisting}
 Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den RGB Farbraum umgewandelt. Der Farbraum ist abweichend von der Reihenfolge der Kanäle identisch mit dem RGB Farbraum. Im zweiten Schritt werden die Farbkanäle des Bildes aufgesplittet. Der Rote, Grüne und Blaue Farbkanal bekommen jeweils einen Histogramm Ausgleich, wie in Kapitel\ref{s.histogramme} beschrieben. Die normalisierten Farbkanäle müssen wieder miteinander verschmolzen und werden und wird schlussendlich in einem Bildformat zurückgegeben. Das Ergebnis wird als JPG Bild abgespeichert.
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.3]{Sources/histeq.jpg}
-	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde}
+	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde}
 	\label{img:histogrameq}
 \end{figure}
 	
 \subsubsection{Histogramm Spezifikation}
 \begin{lstlisting}
-def histeq(im,nbr_bins=256):
+import matplotlib.pyplot as plt
+import io
 
-   #get image histogram
-   imhist,bins = histogram(im.flatten(),nbr_bins,normed=True)
-   cdf = imhist.cumsum() #cumulative distribution function
-   cdf = 255 * cdf / cdf[-1] #normalize
+from skimage import data
+from skimage import exposure
+from skimage.transform import match_histograms
 
-   #use linear interpolation of cdf to find new pixel values
-   im2 = interp(im.flatten(),bins[:-1],cdf)
+reference = io.imread('reference.jpg')
+image = io.imread('image.jpg')
 
-   return im2.reshape(im.shape), cdf
+matched = match_histograms(image, reference, multichannel=True)
 
-imsrc = imread("test1.jpg")
-imtint = imread("image1.jpg")
+fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(8, 3),
+                                    sharex=True, sharey=True)
+for aa in (ax1, ax2, ax3):
+    aa.set_axis_off()
 
-nbr_bins=255
-if len(imsrc.shape) < 3:
-    imsrc = imsrc[:,:,np.newaxis]
-    imtint = imtint[:,:,np.newaxis]
+ax1.imshow(image)
+ax1.set_title('Source')
+ax2.imshow(reference)
+ax2.set_title('Reference')
+ax3.imshow(matched)
+ax3.set_title('Matched')
 
-imres = imsrc.copy()
-for d in range(imsrc.shape[2]):
-    imhist,bins = np.histogram(imsrc[:,:,d].flatten(),nbr_bins,density=True)
-    tinthist,bins = np.histogram(imtint[:,:,d].flatten(),nbr_bins,density=True)
-
-    cdfsrc = imhist.cumsum() #cumulative distribution function
-    cdfsrc = (255 * cdfsrc / cdfsrc[-1]).astype(np.uint8) #normalize
-
-    cdftint = tinthist.cumsum() #cumulative distribution function
-    cdftint = (255 * cdftint / cdftint[-1]).astype(np.uint8) #normalize
-
-    im2 = np.interp(imsrc[:,:,d].flatten(),bins[:-1],cdfsrc)
-    im3 = np.interp(im2,cdftint, bins[:-1])
-    imres[:,:,d] = im3.reshape((imsrc.shape[0],imsrc.shape[1] ))
-
-try:
-    imsave("histnormresult.jpg", imres)
-except:
-    imsave("histnormresult.jpg", imres.reshape((imsrc.shape[0],imsrc.shape[1] )))
+plt.tight_layout()
+plt.show()
 \end{lstlisting}
+Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Absch.\ref{s.hs}) oder auch \textit{Histogram matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, ein wesentlich bessere Helligkeit aufweist.
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.8]{Sources/HS_beispiel.png}
+	\caption{Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation}
+	\label{img:histogramspez}
+\end{figure}
   \newpage
   \section{Ergebnisse}
-Nachdem alle Trainingseinheiten mit den verschiedenen Normalisierungsverfahren durchlaufen wurden, sollen die Ergebnisse aufgeführt und verglichen werden. Als Vergleichswerte konnte mithilfe von Tensorboard die Genauigkeiten des Netzes erhoben werden. Jede Klasse hat eine eigene durchschnittliche Genauigkeit (AP) und eine Genauigkeit für das gesamte Netz in Form einer mAP. In den folgenden Tabellen werden bestimmte Abkürzungen verwendet: N = Normaler Datensatz, GW = Gray-World-Algorithmus, HA = Histogramm Ausgleich, HS = Histogramm Spezifikation
+Nachdem alle Trainingseinheiten mit den verschiedenen Normalisierungsverfahren durchlaufen wurden, sollen die Ergebnisse aufgeführt und verglichen werden. Als Vergleichswerte konnte mithilfe von Tensorboard die Genauigkeiten des Netzes erhoben werden. Jede Klasse hat eine eigene durchschnittliche Genauigkeit (AP) und eine Genauigkeit für das gesamte Netz in Form einer mAP. In den folgenden Tabellen werden bestimmte Abkürzungen verwendet: N = Normaler Datensatz, GW = Gray-World-Algorithmus, HA = Histogramm Ausgleich, HS = Histogramm Spezifikation (Die besten Ergebnisse einer Klasse wurden durch Fettschrift hervorgehoben) 
   \subsection{Nahrungsmittel Datensatz}
 Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der Tabelle \ref{tab:nahrungsmitteltest} aufgeführt ist. Dieser enthält im Vergleich zu den anderen Datensätzen weniger Objektklassen und weniger Bilder. Außerdem ist, sind die Objekte unter ähnlichen Bedingungen entstanden. Das bedeutet, dass die Lichteinstrahlung in den meisten Fällen gleich ist und nur auf wenigen unterschiedlichen Hintergründen aufgenommen wurden.
 \begin{table}
@@ -708,7 +744,7 @@ Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise gr
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-Objektklasse & AP (N) & AP(GW) & AP(HA) & AP(HS)\\
+Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
 sofa & 0.611 & 0.612 & \textbf{0.637} & 0.000\\ 
 aeroplane & 0.845 & \textbf{0.855} & 0.826 & 0.000\\
@@ -743,30 +779,30 @@ Der dritte Datensatz welcher in dieser Arbeit verwendet wird, ist der Hunde Date
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-Objektklasse & AP (N) & AP(GW) & AP(HA) & AP(HS)\\
+Objektklasse & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Chihuaua & 0.729 & \textbf{0.854} & 0.000 & 0.000\\ 
-Shih-Tzu & 0.864 & \textbf{0.879} & 0.000 & 0.000\\
-Rhodesian Ridgeback & \textbf{0.741} & 0.706 & 0.000 & 0.000\\
-Bloodhound & 0.872 & \textbf{0.878} & 0.000 & 0.000\\
-Redbone & \textbf{0.617} & 0.546 & 0.000 & 0.000\\ 
-Japanese Spaniel & 0.886 & \textbf{0.919} & 0.000 & 0.000\\
-Blenheim Spaniel & \textbf{0.980} & 0.966 & 0.000 & 0.000\\
-Afghan Hound & \textbf{0.955} & 0.946 & 0.000 & 0.000\\
-Bluetrick & \textbf{0.897} & 0.892 & 0.000 & 0.000\\ 
-Borzoi & \textbf{0.931} & 0.922 & 0.000 & 0.000\\
-Maltese dog & \textbf{0.905} & 0.901 & 0.000 & 0.000\\
-Papillon & 0.971 & \textbf{0.984} & 0.000 & 0.000\\
-Basset & 0.763 & \textbf{0.779} & 0.000 & 0.000\\
-Coonhound & 0.863 & \textbf{0.864} & 0.000 & 0.000\\
-Irish Wolfhound & \textbf{0.945} & 0.930 & 0.000 & 0.000\\
-Pekinese & 0.723 & \textbf{0.840} & 0.000 & 0.000\\
-Toy Terrier & 0.838 & \textbf{0.856} & 0.000 & 0.000\\
-Beagle & 0.725 & \textbf{0.743} & 0.000 & 0.000\\
-Walker Hound & \textbf{0.767} & 0.705 & 0.000 & 0.000\\
-Italian Greyhound & 0.822 & \textbf{0.845} & 0.000 & 0.000\\
+Chihuaua & 0.729 & \textbf{0.854} & 0.780 & 0.000\\ 
+Shih-Tzu & 0.864 & \textbf{0.879} & 0.857 & 0.000\\
+Rhodesian Ridgeback & \textbf{0.741} & 0.706 & 0.711 & 0.000\\
+Bloodhound & 0.872 & \textbf{0.878} & 0.904 & 0.000\\
+Redbone & \textbf{0.617} & 0.546 & 0.486 & 0.000\\ 
+Japanese Spaniel & 0.886 & 0.919 & \textbf{0.939} & 0.000\\
+Blenheim Spaniel & \textbf{0.980} & 0.966 & 0.944 & 0.000\\
+Afghan Hound & \textbf{0.955} & 0.946 & 0.947 & 0.000\\
+Bluetrick & \textbf{0.897} & 0.892 & 0.864 & 0.000\\ 
+Borzoi & \textbf{0.931} & 0.922 & 0.932 & 0.000\\
+Maltese dog & \textbf{0.905} & 0.901 & 0.874 & 0.000\\
+Papillon & 0.971 & \textbf{0.984} & 0.973 & 0.000\\
+Basset & 0.763 & \textbf{0.779} & 0.707 & 0.000\\
+Coonhound & 0.863 & 0.864 & \textbf{0.895} & 0.000\\
+Irish Wolfhound & \textbf{0.945} & 0.930 & 0.940 & 0.000\\
+Pekinese & 0.723 & \textbf{0.840} & 0.743 & 0.000\\
+Toy Terrier & 0.838 & \textbf{0.856} & 0.784 & 0.000\\
+Beagle & 0.725 & \textbf{0.743} & 0.665 & 0.000\\
+Walker Hound & \textbf{0.767} & 0.705 & 0.757 & 0.000\\
+Italian Greyhound & 0.822 & \textbf{0.845} & 0.800 & 0.000\\
 \hline
-mAP & 0.840 & \textbf{0.848} & 0.000 & 0.000\\
+mAP & 0.840 & \textbf{0.848} & 0.829 & 0.000\\
 \hline
 \end{tabular}
 \end{table}    

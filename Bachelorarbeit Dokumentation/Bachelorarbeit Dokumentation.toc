@@ -45,16 +45,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.4.2}Histogramm Ausgleich}{29}{subsubsection.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.4.3}Histogramm Spezifikation}{30}{subsubsection.79}
+\contentsline {subsubsection}{\numberline {3.4.3}Histogramm Spezifikation}{30}{subsubsection.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Ergebnisse}{32}{section.120}
+\contentsline {section}{\numberline {4}Ergebnisse}{32}{section.114}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Nahrungsmittel Datensatz}{32}{subsection.121}
+\contentsline {subsection}{\numberline {4.1}Nahrungsmittel Datensatz}{32}{subsection.115}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}PascalVOC Datensatz}{33}{subsection.123}
+\contentsline {subsection}{\numberline {4.2}PascalVOC Datensatz}{33}{subsection.117}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Stanford Dogs Dataset}{34}{subsection.125}
+\contentsline {subsection}{\numberline {4.3}Stanford Dogs Dataset}{34}{subsection.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{35}{section.127}
+\contentsline {section}{\numberline {5}Diskussion}{35}{section.121}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{37}{section.129}
+\contentsline {section}{\numberline {6}Fazit}{37}{section.123}
