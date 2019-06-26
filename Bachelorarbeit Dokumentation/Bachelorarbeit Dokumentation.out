@@ -1,29 +1,29 @@
 \BOOKMARK [1][]{section.7}{1 Einleitung}{}% 1
 \BOOKMARK [2][]{subsection.8}{1.1 Problemstellung und Ziele}{section.7}% 2
-\BOOKMARK [2][]{subsection.9}{1.2 Erl\344uterung der These}{section.7}% 3
-\BOOKMARK [2][]{subsection.10}{1.3 Anforderungen}{section.7}% 4
-\BOOKMARK [2][]{subsection.15}{1.4 Struktur der Arbeit}{section.7}% 5
-\BOOKMARK [1][]{section.16}{2 Theoretische Grundlagen}{}% 6
-\BOOKMARK [2][]{subsection.17}{2.1 K\374nstliche Intelligenz}{section.16}% 7
-\BOOKMARK [2][]{subsection.18}{2.2 Neuronale Netze}{section.16}% 8
-\BOOKMARK [3][]{subsubsection.27}{2.2.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.18}% 9
-\BOOKMARK [3][]{subsubsection.32}{2.2.2 Entstehung von Trainingsdaten}{subsection.18}% 10
-\BOOKMARK [2][]{subsection.34}{2.3 Mean average Precision}{section.16}% 11
-\BOOKMARK [2][]{subsection.36}{2.4 Digitale Bilder}{section.16}% 12
-\BOOKMARK [3][]{subsubsection.37}{2.4.1 Aufbau von Digitalbildern}{subsection.36}% 13
-\BOOKMARK [3][]{subsubsection.39}{2.4.2 Einfluss von Belichtungen}{subsection.36}% 14
-\BOOKMARK [3][]{subsubsection.40}{2.4.3 Arten der Farbnormalisierung}{subsection.36}% 15
-\BOOKMARK [1][]{section.49}{3 Methodik und Durchf\374hrung}{}% 16
-\BOOKMARK [2][]{subsection.50}{3.1 Frameworks und Entwicklungsumgebung}{section.49}% 17
-\BOOKMARK [2][]{subsection.51}{3.2 Verwendetes Modell}{section.49}% 18
-\BOOKMARK [2][]{subsection.53}{3.3 Trainingsdaten}{section.49}% 19
-\BOOKMARK [2][]{subsection.57}{3.4 Normalisierung-Algorithmen}{section.49}% 20
-\BOOKMARK [3][]{subsubsection.58}{3.4.1 Gray-World-Algorithmus}{subsection.57}% 21
-\BOOKMARK [3][]{subsubsection.67}{3.4.2 Histogramm Ausgleich}{subsection.57}% 22
-\BOOKMARK [3][]{subsubsection.85}{3.4.3 Histogramm Spezifikation}{subsection.57}% 23
-\BOOKMARK [1][]{section.114}{4 Ergebnisse}{}% 24
-\BOOKMARK [2][]{subsection.115}{4.1 Nahrungsmittel Datensatz}{section.114}% 25
-\BOOKMARK [2][]{subsection.117}{4.2 PascalVOC Datensatz}{section.114}% 26
-\BOOKMARK [2][]{subsection.119}{4.3 Stanford Dogs Dataset}{section.114}% 27
-\BOOKMARK [1][]{section.121}{5 Diskussion}{}% 28
-\BOOKMARK [1][]{section.123}{6 Fazit}{}% 29
+\BOOKMARK [2][]{subsection.10}{1.2 Erl\344uterung der These}{section.7}% 3
+\BOOKMARK [2][]{subsection.11}{1.3 Anforderungen}{section.7}% 4
+\BOOKMARK [2][]{subsection.16}{1.4 Struktur der Arbeit}{section.7}% 5
+\BOOKMARK [1][]{section.17}{2 Theoretische Grundlagen}{}% 6
+\BOOKMARK [2][]{subsection.18}{2.1 K\374nstliche Intelligenz}{section.17}% 7
+\BOOKMARK [2][]{subsection.19}{2.2 Neuronale Netze}{section.17}% 8
+\BOOKMARK [3][]{subsubsection.28}{2.2.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.19}% 9
+\BOOKMARK [3][]{subsubsection.33}{2.2.2 Entstehung von Trainingsdaten}{subsection.19}% 10
+\BOOKMARK [2][]{subsection.35}{2.3 Mean average Precision}{section.17}% 11
+\BOOKMARK [2][]{subsection.37}{2.4 Digitale Bilder}{section.17}% 12
+\BOOKMARK [3][]{subsubsection.38}{2.4.1 Aufbau von Digitalbildern}{subsection.37}% 13
+\BOOKMARK [3][]{subsubsection.40}{2.4.2 Einfluss von Belichtungen}{subsection.37}% 14
+\BOOKMARK [3][]{subsubsection.41}{2.4.3 Arten der Farbnormalisierung}{subsection.37}% 15
+\BOOKMARK [1][]{section.50}{3 Methodik und Durchf\374hrung}{}% 16
+\BOOKMARK [2][]{subsection.51}{3.1 Verwendetes Modell}{section.50}% 17
+\BOOKMARK [2][]{subsection.53}{3.2 Trainingsdaten}{section.50}% 18
+\BOOKMARK [2][]{subsection.57}{3.3 Normalisierung-Algorithmen}{section.50}% 19
+\BOOKMARK [3][]{subsubsection.58}{3.3.1 Gray-World-Algorithmus}{subsection.57}% 20
+\BOOKMARK [3][]{subsubsection.67}{3.3.2 Histogramm Ausgleich}{subsection.57}% 21
+\BOOKMARK [3][]{subsubsection.85}{3.3.3 Histogramm Spezifikation}{subsection.57}% 22
+\BOOKMARK [1][]{section.114}{4 Ergebnisse}{}% 23
+\BOOKMARK [2][]{subsection.115}{4.1 Frameworks und Entwicklungsumgebung}{section.114}% 24
+\BOOKMARK [2][]{subsection.116}{4.2 Nahrungsmittel Datensatz}{section.114}% 25
+\BOOKMARK [2][]{subsection.118}{4.3 PascalVOC Datensatz}{section.114}% 26
+\BOOKMARK [2][]{subsection.120}{4.4 Stanford Dogs Dataset}{section.114}% 27
+\BOOKMARK [1][]{section.122}{5 Diskussion}{}% 28
+\BOOKMARK [1][]{section.125}{6 Fazit}{}% 29

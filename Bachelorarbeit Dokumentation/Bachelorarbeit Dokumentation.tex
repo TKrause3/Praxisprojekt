@@ -185,7 +185,7 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
       \textsc{B A C H E L O R A R B E I T}\\
       \vspace{1cm} % Vertikaler Abstand von 1cm erzeugen
       \huge
-      Auswirkung von Farbnormalisierung der Trainingsdaten auf künstliche neuronale Netze\\
+      Der Einfluss von Farbnormalisierung auf die Klassifizierung von Bildern durch künstliche neuronale Netze\\
       \Large
       \vspace{1 cm}
       \large
@@ -221,7 +221,14 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \section{Einleitung}\label{s.einleitung} 
 In keinem Zeitabschnitt waren digitale Technologien so stark im Fokus wie heutzutage. Gerade der Bereich selbstständig lernenden Computer werden in der Forschung untersucht und vorangetrieben. Auch bekannt unter dem Namen \textit{Deep Learning} oder künstliche Intelligenz (KI), ist mit diesen Bezeichnungen meist der Bereich der künstlichen neuronalen Netze gemeint. Solche Netze können durch eingeführte Datensätze oder Regeln lernen. Dadurch werden sie in dem trainierten Bereich \textit{intelligent}. Durch genügend Beispiele in den Trainingsdaten können sie Hypothesen aufstellen. Die Faktoren, welche beim Training wichtig sind, stellen zum einen die Menge, wie auch die Qualität der Trainingsdaten dar, zum anderen die Zeit, in welcher das neuronale Netz trainiert wird. Durch steigende Rechenleistung kann das Verfahren beschleunigt werden, da normalerweise viel Zeit für das Training benötigt wird. In der Vergangenheit konnten die Forschungen durch zu langsame Hardware nicht effektiv weiter geführt werden. Mit der Leistung heutige CPUs und GPUs ist dies ohne Probleme möglich.\\ 
   \subsection{Problemstellung und Ziele}\label{s.probuziel}
-Beim Erstellen eines neuronalen Netzes kann es auch zu Schwierigkeiten kommen. Probleme können beispielsweise durch schlechte Datensätze auftreten. Im Bereich der Objekterkennung können dadurch Probleme, wie fehlerhafte Zuordnungen auftreten. Datensätze bestehen üblicherweise aus mehreren Hunderttausend Bildern und bei Vortrainierten um die Tausend Bilder. Die richtige Ausleuchtung ist ein wichtiger Aspekte bei der Generierung der Trainingsbilder, da schon kleine Veränderungen der Lichtverhältnisse die Farben der Objekte verändern kann. Ein und dasselbe Objekt kann dadurch in vielen verschiedenen Farbvariationen auftreten. Gerade bei einem Datensatz mit wenig Bildern, kann das zu fehlerhaften Prognosen führen. Häufig kann eine konstante Ausleuchtung nicht gewährleistet werden, weil die Bilder in der freien Umwelt erstellt werden und eine Ausleuchtung zu umständlich wäre. Das bedeutet das dieses Problem hauptsächlich in der Nachbereitung der Bilder angegangen werden kann.\\
+Beim Erstellen eines neuronalen Netzes kann es auch zu Schwierigkeiten kommen. Probleme können beispielsweise durch schlechte Datensätze auftreten. Im Bereich der Objekterkennung können dadurch Probleme, wie fehlerhafte Zuordnungen auftreten. Datensätze bestehen üblicherweise aus mehreren Hunderttausend Bildern und bei Vortrainierten um die Tausend Bilder. Die richtige Ausleuchtung ist ein wichtiger Aspekte bei der Generierung der Trainingsbilder, da schon kleine Veränderungen der Lichtverhältnisse die Farben der Objekte verändern kann. Ein und dasselbe Objekt kann dadurch in vielen verschiedenen Farbvariationen auftreten, wie man in Abbildung \ref{Struktur} erkennen kann. Durch weniger licht wirken die Farben dunkler und unterscheiden sich sichtlich. Gerade bei einem Datensatz mit wenig Bildern, kann das zu fehlerhaften Prognosen führen. Häufig kann eine konstante Ausleuchtung nicht gewährleistet werden, weil die Bilder in der freien Umwelt erstellt werden und eine Ausleuchtung zu umständlich wäre. Das bedeutet das dieses Problem hauptsächlich in der Nachbereitung der Bilder angegangen werden kann.
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.7]{Sources/Vergleich.png}
+	\caption{Vergleich einer Szene welche einmal gut und einmal wenig ausgeleuchtet wurde}
+	\label{img:neuron}
+\end{figure}\\
   \subsection{Erläuterung der These}\label{s.these}
 Für solche Probleme bietet die Bildverarbeitung einige Lösungsansätze, welche von der Theorie aus, eine konstante Farbgebung und dadurch eine Erhöhung der Genauigkeit bringen könnten. Ob es in der praktischen Ausführung die erwarteten Ergebnisse erzielt, soll getestet werden. Deswegen sollen in dieser Arbeit verschiedene Verfahren der Farbnormalisierung von Bildern auf die Trainings- und Testdatensätze angewendet und auf verschiedene künstliche neuronale Netze trainiert werden. Beim Vergleich der Trainingsergebnisse soll herausgestellt werden, ob das Normalisieren der Daten einen positiven Einfluss auf die Genauigkeit hat und welche Unterschiede die Normalisierung-Verfahren aufweisen.\\
   \subsection{Anforderungen}\label{s.anforderungen}
@@ -370,7 +377,7 @@ Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, 
 \textbf{RGB}\label{s.rgb}\\
 Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in () kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).\\\\
 \textbf{HSV}\label{s.hsv}\\
-Anders als bei RGB ist HSV anders aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\
+Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\
 \textbf{CMY/CMYK}\label{s.cmy}\\
 Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.\\\\
 \textbf{Lab}\label{s.lab}\\
@@ -546,10 +553,7 @@ Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
 \end{table}\\
 \newpage
   \section{Methodik und Durchführung}\label{s.methudurchf}
-Nach der theoretischen Grundlage soll sich der zweite Teil der Arbeit um die Versuchsbeschreibung, Durchführung und Auswertung der Ergebnisse handeln. Dabei wird zunächst die Versuchsumgebung und die verwendeten Frameworks eingegangen, und wie diese für den Versuch genutzt werden.
-  \subsection{Frameworks und Entwicklungsumgebung}\label{s.entwicklung}
-Wie in vorherigen Kapiteln schon beschrieben ist das Trainieren eines künstlichen neuronalen Netzes oder eines faltenden neuronalen Netzes sehr rechenintensiv. Die enthaltenen Daten werden parallel mittels Matrizenmultiplikation verarbeitet. Aus diesem Grund werden für die Verarbeitung Grafikprozessoren hauptsächlich verwendet da diese im Gegensatz zu normalen Prozessoren für die Berechnung von Matrizen konzipiert wurden.\\
-Auf Softwareseite gibt es eine Menge an Frameworks, mit welcher sich CNNs realisieren lassen. Einige von denen sind beispielsweise Tensorflow, Keras und Theano. Wegen der vorliegenden Erfahrung und der Möglichkeit Trainingsfortschritte grafisch anzeigen zu können, wird der praktische Teil der Arbeit mittels Tensorflow durchgeführt. Tensorflow ist ein Open Source Framework von Google, welches zum entwickeln künstlicher neuronaler Netze genutzt werden kann. Programmiert wurde das Framework in den Programmiersprachen C und Python, welche auch für die Entwicklung genutzt werden. Mit dem Framework Tensorflow kommen einige Möglichkeiten. Zum einen gibt es eine übersichtliche Dokumentation, zum anderen werden vortrainierte Netze, Open Source und für die Entwicklung die Tensorflow Object Detection API angeboten. Zur Verfügung stehen verschiedenste Netze auf Basis von verschiedenen Datensätzen.
+Nach der theoretischen Grundlage soll sich der zweite Teil der Arbeit um die Versuchsbeschreibung, Durchführung und Auswertung der Ergebnisse handeln. Dabei werden zunächst die verwendeten Datensätze sowie die umsetzung der Normalisierungs Algorithmen. In den Ergebnissen, wird auf die Versuchsumgebung und die verwendeten Frameworks eingegangen, und wie diese für den Versuch genutzt wurden.
  \subsection{Verwendetes Modell}\label{s.modell}
 Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) besitzen eine vielzahl an Datensätzen mit welchen, neuronale Netze trainiert werden können. Einige dieser Netze wurde auf der Object detection API von Tensorflow trainiert und stehen als Open Source zur Verfügung. Die folgende Tabelle führt ausgewählte Modelle auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können.\\
 \begin{table}
@@ -641,7 +645,7 @@ In dem verwendeten Gray World Algorithmus \cite{gray2012world} Zunächst wird da
 \begin{figure}
 	[h]
 	\centering
-	\includegraphics[scale=0.3]{Sources/gwn.png}
+	\includegraphics[scale=0.7]{Sources/gwn.png}
 	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray-World-Algorithmus normalisiert wurde}
 	\label{img:gwnimg}
 \end{figure}
@@ -663,11 +667,11 @@ cv2.imshow('Color input image', img)
 cv2.imshow('Histogram equalized', img_output)
 cv2.waitKey(0)
 \end{lstlisting}
-Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den RGB Farbraum umgewandelt. Der Farbraum ist abweichend von der Reihenfolge der Kanäle identisch mit dem RGB Farbraum. Im zweiten Schritt werden die Farbkanäle des Bildes aufgesplittet. Der Rote, Grüne und Blaue Farbkanal bekommen jeweils einen Histogramm Ausgleich, wie in Kapitel\ref{s.histogramme} beschrieben. Die normalisierten Farbkanäle müssen wieder miteinander verschmolzen und werden und wird schlussendlich in einem Bildformat zurückgegeben. Das Ergebnis wird als JPG Bild abgespeichert.
+Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum umgewandelt. Der Farbraum ist ähnlich dem Lab Farbraum (Absch.\ref{s.lab}). Der Y Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, das das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben.
 \begin{figure}
 	[h]
 	\centering
-	\includegraphics[scale=0.3]{Sources/histeq.jpg}
+	\includegraphics[scale=0.7]{Sources/histeq.jpg}
 	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde}
 	\label{img:histogrameq}
 \end{figure}
@@ -711,7 +715,10 @@ Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, 
 \end{figure}
   \newpage
   \section{Ergebnisse}
-Nachdem alle Trainingseinheiten mit den verschiedenen Normalisierungsverfahren durchlaufen wurden, sollen die Ergebnisse aufgeführt und verglichen werden. Als Vergleichswerte konnte mithilfe von Tensorboard die Genauigkeiten des Netzes erhoben werden. Jede Klasse hat eine eigene durchschnittliche Genauigkeit (AP) und eine Genauigkeit für das gesamte Netz in Form einer mAP. In den folgenden Tabellen werden bestimmte Abkürzungen verwendet: N = Normaler Datensatz, GW = Gray-World-Algorithmus, HA = Histogramm Ausgleich, HS = Histogramm Spezifikation (Die besten Ergebnisse einer Klasse wurden durch Fettschrift hervorgehoben) 
+Nachdem alle Trainingseinheiten mit den verschiedenen Normalisierungsverfahren durchlaufen wurden, sollen die Ergebnisse aufgeführt und verglichen werden. Zunächst wird auf die Entwicklungsumgebung beschrieben und im Anschluss auf die Ergebnisse der Auswertung. Als Vergleichswerte konnte mithilfe von Tensorboard die Genauigkeiten des Netzes erhoben werden. Jede Klasse hat eine eigene durchschnittliche Genauigkeit (AP) und eine Genauigkeit für das gesamte Netz in Form einer mAP. In den folgenden Tabellen werden bestimmte Abkürzungen verwendet: N = Normaler Datensatz, GW = Gray-World-Algorithmus, HA = Histogramm Ausgleich, HS = Histogramm Spezifikation (Die besten Ergebnisse einer Klasse wurden durch Fettschrift hervorgehoben) 
+\subsection{Frameworks und Entwicklungsumgebung}\label{s.entwicklung}
+Wie in vorherigen Kapiteln schon beschrieben ist das Trainieren eines künstlichen neuronalen Netzes oder eines faltenden neuronalen Netzes sehr rechenintensiv. Die enthaltenen Daten werden parallel mittels Matrizenmultiplikation verarbeitet. Aus diesem Grund werden für die Verarbeitung Grafikprozessoren hauptsächlich verwendet da diese im Gegensatz zu normalen Prozessoren für die Berechnung von Matrizen konzipiert wurden.\\
+Auf Softwareseite gibt es eine Menge an Frameworks, mit welcher sich CNNs realisieren lassen. Einige von denen sind beispielsweise Tensorflow, Keras und Theano. Wegen der vorliegenden Erfahrung und der Möglichkeit Trainingsfortschritte grafisch anzeigen zu können, wird der praktische Teil der Arbeit mittels Tensorflow durchgeführt. Tensorflow ist ein Open Source Framework von Google, welches zum entwickeln künstlicher neuronaler Netze genutzt werden kann. Programmiert wurde das Framework in den Programmiersprachen C und Python, welche auch für die Entwicklung genutzt werden. Mit dem Framework Tensorflow kommen einige Möglichkeiten. Zum einen gibt es eine übersichtliche Dokumentation, zum anderen werden vortrainierte Netze, Open Source und für die Entwicklung die Tensorflow Object Detection API angeboten. Zur Verfügung stehen verschiedenste Netze auf Basis von verschiedenen Datensätzen.
   \subsection{Nahrungsmittel Datensatz}
 Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der Tabelle \ref{tab:nahrungsmitteltest} aufgeführt ist. Dieser enthält im Vergleich zu den anderen Datensätzen weniger Objektklassen und weniger Bilder. Außerdem ist, sind die Objekte unter ähnlichen Bedingungen entstanden. Das bedeutet, dass die Lichteinstrahlung in den meisten Fällen gleich ist und nur auf wenigen unterschiedlichen Hintergründen aufgenommen wurden.
 \begin{table}
@@ -809,6 +816,19 @@ mAP & 0.840 & \textbf{0.848} & 0.829 & 0.000\\
   \newpage
   \section{Diskussion}
 Die Ergebnisse der trainierten Netze zeigen, das mit die verwendeten Datensätzen zusammen mit den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielen. Ein möglicher Grund könnte zum einen in den vortrainierten Netzen liegen, welche schon zu genau und hochwertig eingestellte Perzeptronen besitzen und durch die vorherigen Datensätze nicht optimal für den Versuch waren. Zum anderen Könnte es an den Datensätzen selber liegen welche Normalisiert wurden. Dafür wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen Aufgenommen. Das Objekt wurde vom Hintergrund segmentiert, um zu überprüfen wie sich die Histogramme voneinander unterscheiden (Abb.). Dieser Vorgang wurde daraufhin auch mit der Histogramm Ausgleichung überprüft (Abb.).\\
+\begin{figure}[htb]
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/image112.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.08\textwidth}
+\includegraphics[width=\textwidth]{Sources/image112_segmentiert.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/image112_Histogramm.png}
+\end{minipage}
+\end{figure}
 \begin{figure}[htb]
 \begin{minipage}[c]{0.3\textwidth}
 \includegraphics[width=\textwidth]{Sources/image105.jpg}
