@@ -1,73 +1,72 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.6)  26 JUN 2019 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.13)  30 JUN 2019 14:56
 entering extended mode
 **"./Bachelorarbeit Dokumentation.tex"
 ("Bachelorarbeit Dokumentation.tex"
-LaTeX2e <2018-04-01> patch level 5
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
 "
-Package: babel 2018/09/26 3.24 The Babel package
+Package: babel 2018/02/14 3.18 The Babel package
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.de
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.de
 f"
-File: switch.def 2018/09/26 3.24 Babel switching mechanism
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg
 "
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
 man.ldf"
-Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthogra
-phy)
+Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\nger
 manb.ldf"
-Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogr
-aphy)
+Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def
 "
-File: babel.def 2018/09/26 3.24 Babel common definitions
-\babel@savecnt=\count88
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count87
 \U@D=\dimen103
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.
 def")
-\bbl@dirlevel=\count89
+\bbl@dirlevel=\count88
 )
-Package babel Info: Making " an active character on input line 121.
+Package babel Info: Making " an active character on input line 125.
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.s
 ty"
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.
 sty"
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
 ty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
@@ -80,21 +79,330 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \caption@parindent=\dimen109
 \caption@hangindent=\dimen110
 )
-\c@caption@flags=\count90
-\c@ContinuedFloat=\count91
+\c@ContinuedFloat=\count89
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
+)) ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
 sty"
-Package: inputenc 2018/04/06 v1.3b Input encoding file
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr
 .sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -108,29 +416,29 @@ s
 \f@nch@O@olf=\skip50
 \f@nch@O@orf=\skip51
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscape.s
 ty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
 .sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
 "
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
 hics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
 ex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -165,38 +473,38 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ulem\ulem.sty"
 \UL@box=\box26
 \UL@hyphenbox=\box27
 \UL@skip=\skip52
 \UL@hook=\toks17
 \UL@height=\dimen111
-\UL@pe=\count92
+\UL@pe=\count90
 \UL@pixel=\dimen112
 \ULC@box=\box28
 Package: ulem 2012/05/18
 \ULdepth=\dimen113
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
 .sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
 sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
 .sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
 .sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count93
-\Gm@cntv=\count94
-\c@Gm@tempcnt=\count95
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
 \Gm@bindingoffset=\dimen114
 \Gm@wd@mp=\dimen115
 \Gm@odd@mp=\dimen116
@@ -207,7 +515,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen121
 \Gm@dimlist=\toks18
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
 .cfg")
 
 Package geometry Warning: Over-specification in `h'-direction.
@@ -218,49 +526,49 @@ Package geometry Warning: Over-specification in `v'-direction.
     `height' (768.597pt) is ignored.
 
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
 .sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
 .sty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
 -base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
 err.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
 ty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
 nekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
 s.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
 s.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
 eys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
 ds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
 ex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -270,9 +578,9 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
 cmds.sty"
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -286,28 +594,26 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\tabularx.st
 y"
-Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen124
-\ar@mcellbox=\box29
 \extrarowheight=\dimen125
 \NC@list=\toks19
 \extratabsurround=\skip53
 \backup@length=\skip54
-\ar@cellbox=\box30
 )
 \TX@col@width=\dimen126
 \TX@old@table=\dimen127
 \TX@old@col=\dimen128
 \TX@target=\dimen129
 \TX@delta=\dimen130
-\TX@cols=\count96
+\TX@cols=\count94
 \TX@ftn=\toks20
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs
 .sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen131
@@ -320,91 +626,91 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen138
 \cmidrulekern=\dimen139
 \defaultaddspace=\dimen140
-\@cmidla=\count97
-\@cmidlb=\count98
+\@cmidla=\count95
+\@cmidlb=\count96
 \@aboverulesep=\dimen141
 \@belowrulesep=\dimen142
-\@thisruleclass=\count99
-\@lastruleclass=\count100
+\@thisruleclass=\count97
+\@lastruleclass=\count98
 \@thisrulewidth=\dimen143
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.s
 ty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip55
 \LTright=\skip56
 \LTpre=\skip57
 \LTpost=\skip58
-\LTchunksize=\count101
+\LTchunksize=\count99
 \LTcapwidth=\dimen144
-\LT@head=\box31
-\LT@firsthead=\box32
-\LT@foot=\box33
-\LT@lastfoot=\box34
-\LT@cols=\count102
-\LT@rows=\count103
-\c@LT@tables=\count104
-\c@LT@chunks=\count105
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count100
+\LT@rows=\count101
+\c@LT@tables=\count102
+\c@LT@chunks=\count103
 \LT@p@ftn=\toks21
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multirow
 .sty"
-Package: multirow 2018/08/03 v2.3 Span multiple rows of a table
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip59
-\multirow@cntb=\count106
+\multirow@cntb=\count104
 \multirow@dima=\skip60
 \bigstrutjot=\dimen145
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.s
 ty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.s
 ty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.st
 y"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks22
 \ex@=\dimen146
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.st
 y"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen147
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count107
+\inf@bad=\count105
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count108
-\leftroot@=\count109
+\uproot@=\count106
+\leftroot@=\count107
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count110
-\DOTSCASE@=\count111
+\classnum@=\count108
+\DOTSCASE@=\count109
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box35
-\strutbox@=\box36
+\Mathstrutbox@=\box33
+\strutbox@=\box34
 \big@size=\dimen148
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
 \dotsspace@=\muskip10
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
 \tag@help=\toks23
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
 \andhelp@=\toks24
 \eqnshift@=\dimen149
 \alignsep@=\dimen150
@@ -419,7 +725,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty
 "
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks27
@@ -432,7 +738,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip66
 \dth@everypar=\toks32
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
 .sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -440,95 +746,95 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
 .sty"
-\lst@mode=\count119
-\lst@gtempboxa=\box37
+\lst@mode=\count117
+\lst@gtempboxa=\box35
 \lst@token=\toks33
-\lst@length=\count120
+\lst@length=\count118
 \lst@currlwidth=\dimen155
-\lst@column=\count121
-\lst@pos=\count122
+\lst@column=\count119
+\lst@pos=\count120
 \lst@lostspace=\dimen156
 \lst@width=\dimen157
-\lst@newlines=\count123
-\lst@lineno=\count124
+\lst@newlines=\count121
+\lst@lineno=\count122
 \lst@maxwidth=\dimen158
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.
 sty"
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count125
-\lst@skipnumbers=\count126
-\lst@framebox=\box38
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count123
+\lst@skipnumbers=\count124
+\lst@framebox=\box36
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings
 .cfg"
-File: listings.cfg 2019/02/27 1.8b listings configuration
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2019/02/27 1.8b (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
 y"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
 r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1
 .sty"
-File: lstlang1.sty 2019/02/27 1.8b listings language file
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace
 .sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tcolorbox\tcolorb
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tcolorbox\tcolorb
 ox.sty"
-Package: tcolorbox 2018/07/26 version 4.14 text color boxes
+Package: tcolorbox 2018/12/07 version 4.15 text color boxes
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
 f.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgf
 rcs.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfutil-common.tex"
 \pgfutil@everybye=\toks34
 \pgfutil@tempdima=\dimen159
 \pgfutil@tempdimb=\dimen160
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfutil-common-lists.tex"))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfutil-latex.def"
-\pgfutil@abb=\box39
+\pgfutil@abb=\box37
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfrcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pg
 fcore.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\p
 gfsys.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfkeys.code.tex"
 \pgfkeys@pathtoks=\toks35
 \pgfkeys@temptoks=\toks36
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\p
 gfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks37
 ))
@@ -542,43 +848,43 @@ gfkeysfiltered.code.tex"
 \pgf@yc=\dimen168
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count127
-\c@pgf@countb=\count128
-\c@pgf@countc=\count129
-\c@pgf@countd=\count130
+\c@pgf@counta=\count125
+\c@pgf@countb=\count126
+\c@pgf@countc=\count127
+\c@pgf@countd=\count128
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count131
-\pgfsyssoftpath@bigbuffer@items=\count132
+\pgfsyssoftpath@smallbuffer@items=\count129
+\pgfsyssoftpath@bigbuffer@items=\count130
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer
 \pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
 "
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
 r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -594,48 +900,48 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 h.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hcalc.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hutil.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hparser.code.tex"
 \pgfmath@dimen=\dimen169
-\pgfmath@count=\count133
-\pgfmath@box=\box40
+\pgfmath@count=\count131
+\pgfmath@box=\box38
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
 \pgfmath@stack@operation=\toks43
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.basic.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.trigonometric.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.random.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.comparison.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.base.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.round.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.misc.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfunctions.integerarithmetics.code.tex")))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmat
 hfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count134
+\c@pgfmathroundto@lastzeros=\count132
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen170
@@ -653,145 +959,145 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen182
 \pgf@zy=\dimen183
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen184
 \pgf@path@lasty=\dimen185
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen186
 \pgf@shorten@start@additional=\dimen187
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box41
-\pgf@hbox=\box42
-\pgf@layerbox@main=\box43
-\pgf@picture@serial@count=\count135
+\pgfpic=\box39
+\pgf@hbox=\box40
+\pgf@layerbox@main=\box41
+\pgf@picture@serial@count=\count133
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen188
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen189
 \pgf@pt@y=\dimen190
 \pgf@pt@temp=\dimen191
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen192
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen193
-\pgf@sys@shading@range@num=\count136
+\pgf@sys@shading@range@num=\count134
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box44
+\pgfexternal@startupbox=\box42
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\
 pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
 moduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box45
+\pgfnodeparttextbox=\box43
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgf
 moduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
 \pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen194
 \pgf@nodesepend=\dimen195
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility
 \pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.st
 y"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks44
 \verbatim@line=\toks45
 \verbatim@in@stream=\read2
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\environ\environ.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\environ\environ.s
 ty"
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\trimspaces\trimsp
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\trimspaces\trimsp
 aces.sty"
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox
 .sty"
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count137
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count135
 )
-\tcb@titlebox=\box46
-\tcb@upperbox=\box47
-\tcb@lowerbox=\box48
-\tcb@phantombox=\box49
-\c@tcbbreakpart=\count138
-\c@tcblayer=\count139
-\tcolorbox@number=\count140
+\tcb@titlebox=\box44
+\tcb@upperbox=\box45
+\tcb@lowerbox=\box46
+\tcb@phantombox=\box47
+\c@tcbbreakpart=\count136
+\c@tcblayer=\count137
+\tcolorbox@number=\count138
+\tcb@temp=\box48
+\tcb@temp=\box49
 \tcb@temp=\box50
 \tcb@temp=\box51
-\tcb@temp=\box52
-\tcb@temp=\box53
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref
 .sty"
-Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
 -hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub
 -generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
@@ -820,72 +1126,72 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.
 sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen196
-\Hy@linkcounter=\count141
-\Hy@pagecounter=\count142
+\Hy@linkcounter=\count139
+\Hy@pagecounter=\count140
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.d
 ef"
-File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count143
+\Hy@SavedSpaceFactor=\count141
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref
 .cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4409.
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4409.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4409.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4409
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4383
 .
-Package hyperref Info: Option `plainpages' set `false' on input line 4409.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 4409.
-Package hyperref Info: Hyper figures OFF on input line 4535.
-Package hyperref Info: Link nesting OFF on input line 4540.
-Package hyperref Info: Hyper index ON on input line 4543.
-Package hyperref Info: Plain pages OFF on input line 4550.
-Package hyperref Info: Backreferencing OFF on input line 4555.
+Package hyperref Info: Option `plainpages' set `false' on input line 4383.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count144
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count142
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5141.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen197
-\Fld@menulength=\count145
+\Fld@menulength=\count143
 \Field@Width=\dimen198
 \Fld@charsize=\dimen199
-Package hyperref Info: Hyper figures OFF on input line 6396.
-Package hyperref Info: Link nesting OFF on input line 6401.
-Package hyperref Info: Hyper index ON on input line 6404.
-Package hyperref Info: backreferencing OFF on input line 6411.
-Package hyperref Info: Link coloring ON on input line 6414.
-Package hyperref Info: Link coloring with OCG OFF on input line 6421.
-Package hyperref Info: PDF/A mode OFF on input line 6426.
-LaTeX Info: Redefining \ref on input line 6466.
-LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count146
-\c@Item=\count147
-\c@Hfootnote=\count148
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count144
+\c@Item=\count145
+\c@Hfootnote=\count146
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.
 def"
-File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count149
-\c@bookmark@seq@number=\count150
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count147
+\c@bookmark@seq@number=\count148
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfil
 echeck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -893,85 +1199,92 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
 .sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
-\csq@reset=\count151
-\csq@gtype=\count152
-\csq@glevel=\count153
-\csq@qlevel=\count154
-\csq@maxlvl=\count155
-\csq@tshold=\count156
+\csq@reset=\count149
+\csq@gtype=\count150
+\csq@glevel=\count151
+\csq@qlevel=\count152
+\csq@maxlvl=\count153
+\csq@tshold=\count154
 \csq@ltx@everypar=\toks46
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
 .def"
 File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquotes
 .cfg"
 File: csquotes.cfg 
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
 .sty"
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
+
+LaTeX Warning: You have requested, on input line 37, version
+               `2018/01/30' of package pdftexcmds,
+               but only version
+               `2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)'
+               is available.
+
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.sty
 "
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count157
+\lrq@indent=\count155
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logreq.def
 "
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count158
-\c@listtotal=\count159
-\c@listcount=\count160
-\c@liststart=\count161
-\c@liststop=\count162
-\c@citecount=\count163
-\c@citetotal=\count164
-\c@multicitecount=\count165
-\c@multicitetotal=\count166
-\c@instcount=\count167
-\c@maxnames=\count168
-\c@minnames=\count169
-\c@maxitems=\count170
-\c@minitems=\count171
-\c@citecounter=\count172
-\c@maxcitecounter=\count173
-\c@savedcitecounter=\count174
-\c@uniquelist=\count175
-\c@uniquename=\count176
-\c@refsection=\count177
-\c@refsegment=\count178
-\c@maxextratitle=\count179
-\c@maxextratitleyear=\count180
-\c@maxextraname=\count181
-\c@maxextradate=\count182
-\c@maxextraalpha=\count183
-\c@abbrvpenalty=\count184
-\c@highnamepenalty=\count185
-\c@lownamepenalty=\count186
-\c@maxparens=\count187
-\c@parenlevel=\count188
-\blx@tempcnta=\count189
-\blx@tempcntb=\count190
-\blx@tempcntc=\count191
-\blx@maxsection=\count192
-\blx@maxsegment@0=\count193
-\blx@notetype=\count194
-\blx@parenlevel@text=\count195
-\blx@parenlevel@foot=\count196
-\blx@sectionciteorder@0=\count197
-\blx@entrysetcounter=\count198
+\c@tabx@nest=\count156
+\c@listtotal=\count157
+\c@listcount=\count158
+\c@liststart=\count159
+\c@liststop=\count160
+\c@citecount=\count161
+\c@citetotal=\count162
+\c@multicitecount=\count163
+\c@multicitetotal=\count164
+\c@instcount=\count165
+\c@maxnames=\count166
+\c@minnames=\count167
+\c@maxitems=\count168
+\c@minitems=\count169
+\c@citecounter=\count170
+\c@maxcitecounter=\count171
+\c@savedcitecounter=\count172
+\c@uniquelist=\count173
+\c@uniquename=\count174
+\c@refsection=\count175
+\c@refsegment=\count176
+\c@maxextratitle=\count177
+\c@maxextratitleyear=\count178
+\c@maxextraname=\count179
+\c@maxextradate=\count180
+\c@maxextraalpha=\count181
+\c@abbrvpenalty=\count182
+\c@highnamepenalty=\count183
+\c@lownamepenalty=\count184
+\c@maxparens=\count185
+\c@parenlevel=\count186
+\blx@tempcnta=\count187
+\blx@tempcntb=\count188
+\blx@tempcntc=\count189
+\blx@maxsection=\count190
+\blx@maxsegment@0=\count191
+\blx@notetype=\count192
+\blx@parenlevel@text=\count193
+\blx@parenlevel@foot=\count194
+\blx@sectionciteorder@0=\count195
+\blx@entrysetcounter=\count196
 \labelnumberwidth=\skip68
 \labelalphawidth=\skip69
 \biblabelsep=\skip70
@@ -982,13 +1295,13 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \bibhang=\skip75
 \blx@bcfin=\read3
 \blx@bcfout=\write6
-\c@mincomprange=\count199
-\c@maxcomprange=\count266
-\c@mincompwidth=\count267
+\c@mincomprange=\count197
+\c@maxcomprange=\count198
+\c@mincompwidth=\count199
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.d
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-dm.d
 ef"
 File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
@@ -996,74 +1309,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count268
-\c@savedafterword=\count269
-\c@annotator=\count270
-\c@savedannotator=\count271
-\c@author=\count272
-\c@savedauthor=\count273
-\c@bookauthor=\count274
-\c@savedbookauthor=\count275
-\c@commentator=\count276
-\c@savedcommentator=\count277
-\c@editor=\count278
-\c@savededitor=\count279
-\c@editora=\count280
-\c@savededitora=\count281
-\c@editorb=\count282
-\c@savededitorb=\count283
-\c@editorc=\count284
-\c@savededitorc=\count285
-\c@foreword=\count286
-\c@savedforeword=\count287
-\c@holder=\count288
-\c@savedholder=\count289
-\c@introduction=\count290
-\c@savedintroduction=\count291
-\c@namea=\count292
-\c@savednamea=\count293
-\c@nameb=\count294
-\c@savednameb=\count295
-\c@namec=\count296
-\c@savednamec=\count297
-\c@translator=\count298
-\c@savedtranslator=\count299
-\c@shortauthor=\count300
-\c@savedshortauthor=\count301
-\c@shorteditor=\count302
-\c@savedshorteditor=\count303
-\c@labelname=\count304
-\c@savedlabelname=\count305
-\c@institution=\count306
-\c@savedinstitution=\count307
-\c@lista=\count308
-\c@savedlista=\count309
-\c@listb=\count310
-\c@savedlistb=\count311
-\c@listc=\count312
-\c@savedlistc=\count313
-\c@listd=\count314
-\c@savedlistd=\count315
-\c@liste=\count316
-\c@savedliste=\count317
-\c@listf=\count318
-\c@savedlistf=\count319
-\c@location=\count320
-\c@savedlocation=\count321
-\c@organization=\count322
-\c@savedorganization=\count323
-\c@origlocation=\count324
-\c@savedoriglocation=\count325
-\c@origpublisher=\count326
-\c@savedorigpublisher=\count327
-\c@publisher=\count328
-\c@savedpublisher=\count329
-\c@language=\count330
-\c@savedlanguage=\count331
-\c@origlanguage=\count332
-\c@savedoriglanguage=\count333
-\c@pageref=\count334
-\c@savedpageref=\count335
+\c@afterword=\count266
+\c@savedafterword=\count267
+\c@annotator=\count268
+\c@savedannotator=\count269
+\c@author=\count270
+\c@savedauthor=\count271
+\c@bookauthor=\count272
+\c@savedbookauthor=\count273
+\c@commentator=\count274
+\c@savedcommentator=\count275
+\c@editor=\count276
+\c@savededitor=\count277
+\c@editora=\count278
+\c@savededitora=\count279
+\c@editorb=\count280
+\c@savededitorb=\count281
+\c@editorc=\count282
+\c@savededitorc=\count283
+\c@foreword=\count284
+\c@savedforeword=\count285
+\c@holder=\count286
+\c@savedholder=\count287
+\c@introduction=\count288
+\c@savedintroduction=\count289
+\c@namea=\count290
+\c@savednamea=\count291
+\c@nameb=\count292
+\c@savednameb=\count293
+\c@namec=\count294
+\c@savednamec=\count295
+\c@translator=\count296
+\c@savedtranslator=\count297
+\c@shortauthor=\count298
+\c@savedshortauthor=\count299
+\c@shorteditor=\count300
+\c@savedshorteditor=\count301
+\c@labelname=\count302
+\c@savedlabelname=\count303
+\c@institution=\count304
+\c@savedinstitution=\count305
+\c@lista=\count306
+\c@savedlista=\count307
+\c@listb=\count308
+\c@savedlistb=\count309
+\c@listc=\count310
+\c@savedlistc=\count311
+\c@listd=\count312
+\c@savedlistd=\count313
+\c@liste=\count314
+\c@savedliste=\count315
+\c@listf=\count316
+\c@savedlistf=\count317
+\c@location=\count318
+\c@savedlocation=\count319
+\c@organization=\count320
+\c@savedorganization=\count321
+\c@origlocation=\count322
+\c@savedoriglocation=\count323
+\c@origpublisher=\count324
+\c@savedorigpublisher=\count325
+\c@publisher=\count326
+\c@savedpublisher=\count327
+\c@language=\count328
+\c@savedlanguage=\count329
+\c@origlanguage=\count330
+\c@savedoriglanguage=\count331
+\c@pageref=\count332
+\c@savedpageref=\count333
 \shorthandwidth=\skip76
 \shortjournalwidth=\skip77
 \shortserieswidth=\skip78
@@ -1081,14 +1394,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-comp
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-comp
 at.def"
 File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-bibt
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\blx-bibt
 ex.def"
 File: blx-bibtex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 
@@ -1100,36 +1413,36 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
 .def"
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
-\c@textcitecount=\count336
-\c@textcitetotal=\count337
-\c@textcitemaxnames=\count338
-\c@biburlnumpenalty=\count339
-\c@biburlucpenalty=\count340
-\c@biburllcpenalty=\count341
-\c@smartand=\count342
+\c@textcitecount=\count334
+\c@textcitetotal=\count335
+\c@textcitemaxnames=\count336
+\c@biburlnumpenalty=\count337
+\c@biburlucpenalty=\count338
+\c@biburllcpenalty=\count339
+\c@smartand=\count340
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\alph
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\alph
 abetic.bbx"
 File: alphabetic.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\stan
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bbx\stan
 dard.bbx"
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count343
-\c@bbx:relatedtotal=\count344
+\c@bbx:relatedcount=\count341
+\c@bbx:relatedtotal=\count342
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\alph
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cbx\alph
 abetic.cbx"
 File: alphabetic.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
@@ -1146,7 +1459,7 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\biblatex
 .cfg"
 File: biblatex.cfg 
 ))
@@ -1157,20 +1470,20 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\nger
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\nger
 man.lbx"
 File: ngerman.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\germ
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\germ
 an.lbx"
 File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\germ
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lbx\germ
 an.lbx"
 File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )) ("Bachelorarbeit Dokumentation.aux"
@@ -1195,7 +1508,7 @@ LaTeX Font Info:    ... okay on input line 171.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
 LaTeX Font Info:    ... okay on input line 171.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 171.
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1203,25 +1516,25 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption
 .sty"
-Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
+\scratchcounter=\count343
 \scratchdimen=\dimen256
-\scratchbox=\box54
-\nofMPsegments=\count346
-\nofMParguments=\count347
+\scratchbox=\box52
+\nofMPsegments=\count344
+\nofMParguments=\count345
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count348
+\MPscratchCnt=\count346
 \MPscratchDim=\dimen257
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
 \everyMPtoPDFconversion=\toks48
 )
 *geometry* driver: auto-detecting
@@ -1258,20 +1571,20 @@ kii"
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count351
+\c@lstlisting=\count349
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
+\AtBeginShipoutBox=\box53
 Package hyperref Info: Link coloring ON on input line 171.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.
 sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettit
 lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count352
+\c@section@level=\count350
 )
 LaTeX Info: Redefining \ref on input line 171.
 LaTeX Info: Redefining \pageref on input line 171.
@@ -1351,11 +1664,11 @@ Package biblatex Warning: BibTeX reported the following issues
 Package biblatex Info: Reference section=0 on input line 171.
 Package biblatex Info: Reference segment=0 on input line 171.
 Package epstopdf Info: Source file: <Sources/logo_TH-Koeln_CMYK_22pt.eps>
-(epstopdf)                    date: 2019-06-22 17:33:14
+(epstopdf)                    date: 2015-11-01 15:43:18
 (epstopdf)                    size: 531878 bytes
 (epstopdf)             Output file: <Sources/logo_TH-Koeln_CMYK_22pt-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2019-06-24 11:02:22
+(epstopdf)                    date: 2019-06-30 14:49:36
 (epstopdf)                    size: 25875 bytes
 (epstopdf)             Command: <epstopdf --outfile=Sources/logo_TH-Koeln_CMYK_
 22pt-eps-converted-to.pdf Sources/logo_TH-Koeln_CMYK_22pt.eps>
@@ -1381,25 +1694,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 201.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 201.
 
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 201
 .
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 201
 .
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1410,17 +1723,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 201.
 LaTeX Font Info:    Try loading font information for U+msa on input line 201.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 201.
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 208.
+ [1
 
-{C:/Users/Torben/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Sources/
-logo_TH-Koeln_CMYK_22pt-eps-converted-to.pdf>] [1]
+{C:/Users/Agando/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Sources/
+logo_TH-Koeln_CMYK_22pt-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 214.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 214.
+ [1]
 ("Bachelorarbeit Dokumentation.lof"
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 4.
@@ -1432,20 +1755,41 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@lof=\write8
 \openout8 = `"Bachelorarbeit Dokumentation.lof"'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 216.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 216.
  [2] ("Bachelorarbeit Dokumentation.lot")
 \tf@lot=\write9
 \openout9 = `"Bachelorarbeit Dokumentation.lot"'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 218.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 218.
 
 [3] ("Bachelorarbeit Dokumentation.toc")
 \tf@toc=\write10
 \openout10 = `"Bachelorarbeit Dokumentation.toc"'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 220.
  [4]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 221.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 221.
+
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 223.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 223.
 <Sources/Vergleich.png, id=275, 578.16pt x 216.81pt>
 File: Sources/Vergleich.png Graphic file (type png)
 <use Sources/Vergleich.png>
@@ -1459,22 +1803,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--232
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 232.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 232.
 
 Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 234.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 234.
 [5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 234.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 234.
+
 Underfull \hbox (badness 10000) in paragraph at lines 235--237
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 240.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 240.
 [6 <./Sources/Vergleich.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 244.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 244.
+
 Underfull \hbox (badness 10000) in paragraph at lines 245--247
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 247.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 247.
 [7]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 248.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 250.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 250.
+
 Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
@@ -1484,6 +1863,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--254
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 254.
 <Sources/neuron.jpg, id=300, 602.25pt x 361.35pt>
 File: Sources/neuron.jpg Graphic file (type jpg)
 <use Sources/neuron.jpg>
@@ -1509,7 +1892,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--276
 
  []
 
-[8] [9 <./Sources/neuron.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 276.
+[8]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 276.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 276.
+ [9 <./Sources/neuron.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 276--278
 
  []
@@ -1519,6 +1911,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 280.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 280.
 [10 <./Sources/perzeptron2.png>]
 <Sources/nnet.png, id=334, 499.3857pt x 269.3262pt>
 File: Sources/nnet.png Graphic file (type png)
@@ -1570,7 +1966,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--313
 
  []
 
-[11] [12 <./Sources/nnet.png>] [13 <./Sources/cnnet.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 313.
+[11]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 313.
+ [12 <./Sources/nnet.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 313.
+ [13 <./Sources/cnnet.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 313--315
 
  []
@@ -1585,6 +1995,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--322
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 322.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 322.
 
 Underfull \hbox (badness 10000) in paragraph at lines 323--326
 
@@ -1595,6 +2009,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--326
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 326.
 [14]
 Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
@@ -1608,32 +2026,48 @@ Package pdftex.def Info: Sources/CNN.png  used on input line 339.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 345.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 345.
 [15]
 <Sources/MaxpoolSample2.png, id=377, 164.25pt x 68.547pt>
 File: Sources/MaxpoolSample2.png Graphic file (type png)
 <use Sources/MaxpoolSample2.png>
 Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 349.
 (pdftex.def)             Requested size: 328.49918pt x 137.09363pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 355.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 355.
 <Sources/labelimg.jpg, id=381, 433.62pt x 243.91125pt>
 File: Sources/labelimg.jpg Graphic file (type jpg)
 <use Sources/labelimg.jpg>
 Package pdftex.def Info: Sources/labelimg.jpg  used on input line 361.
 (pdftex.def)             Requested size: 433.61894pt x 243.91064pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 366.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 366.
  [16 <./Sources/CNN.png> <./Sources/MaxpoolSample2.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 366.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 366.
+
 Underfull \hbox (badness 10000) in paragraph at lines 367--368
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 368.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 368.
 [17 <./Sources/labelimg.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 374--385
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 374--385
-
- []
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 373.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 373.
 
 Underfull \hbox (badness 10000) in paragraph at lines 374--385
 
@@ -1649,7 +2083,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--385
 
  []
 
-[18] [19]
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--385
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 385.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 385.
+[18]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 385.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 385.
+ [19]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 385.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 385.
 <Sources/histogramm.jpg, id=407, 405.76593pt x 233.37187pt>
 File: Sources/histogramm.jpg Graphic file (type jpg)
 <use Sources/histogramm.jpg>
@@ -1680,7 +2137,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--404
 
  []
 
-[20] [21 <./Sources/histogramm.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 404.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 404.
+[20]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 404.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 404.
+ [21 <./Sources/histogramm.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 404.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 404.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 406.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 406.
+
 Underfull \hbox (badness 10000) in paragraph at lines 407--410
 
  []
@@ -1690,6 +2165,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--410
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 410.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 410.
 [22]
 Overfull \hbox (23.89241pt too wide) in paragraph at lines 454--475
  [][] 
@@ -1715,25 +2194,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--505
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 505.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 505.
 [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 505.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 505.
 [24]
 Underfull \hbox (badness 10000) in paragraph at lines 514--554
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 554.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 554.
 [25]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 555.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 555.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 557.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 557.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 576.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 576.
+
 Underfull \hbox (badness 10000) in paragraph at lines 577--632
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 632.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 632.
 [26]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 632.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 632.
 [27]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 633.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 633.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 635.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 635.
+
 
 Package xcolor Warning: Incompatible color definition on input line 637.
 
@@ -1748,7 +2269,7 @@ Package xcolor Warning: Incompatible color definition on input line 640.
 
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 640.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
@@ -1768,6 +2289,10 @@ Package pdftex.def Info: Sources/gwn.png  used on input line 648.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 652.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 652.
 
 Package xcolor Warning: Incompatible color definition on input line 654.
 
@@ -1855,6 +2380,10 @@ Package xcolor Warning: Incompatible color definition on input line 661.
 
 Package xcolor Warning: Incompatible color definition on input line 663.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 663.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 663.
 [28]
 
 Package xcolor Warning: Incompatible color definition on input line 663.
@@ -1969,6 +2498,10 @@ Package pdftex.def Info: Sources/histeq.jpg  used on input line 674.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 679.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 679.
 
 Package xcolor Warning: Incompatible color definition on input line 681.
 
@@ -2026,6 +2559,10 @@ Package xcolor Warning: Incompatible color definition on input line 689.
 
 Package xcolor Warning: Incompatible color definition on input line 689.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 691.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 691.
 [29 <./Sources/gwn.png>]
 
 Package xcolor Warning: Incompatible color definition on input line 691.
@@ -2118,11 +2655,54 @@ Overfull \hbox (7.28452pt too wide) in paragraph at lines 712--713
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./Sources/histeq.jpg>] [31 <./Sources/HS_beispiel.png>] [32]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 716.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 716.
+[30 <./Sources/histeq.jpg>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 717.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 717.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 719.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 719.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 722.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 722.
+ [31 <./Sources/HS_beispiel.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 722.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 722.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 746.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 746.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 781.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 781.
+ [32]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 781.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 781.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 816.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 816.
 [33]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 817.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 817.
 <Sources/image112.jpg, id=554, 1335.99126pt x 1001.7425pt>
 File: Sources/image112.jpg Graphic file (type jpg)
 <use Sources/image112.jpg>
@@ -2162,13 +2742,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 818--848
 
  []
 
-[34] [35 <./Sources/image112.jpg> <./Sources/image112_segmentiert.png> <./Sourc
-es/image112_Histogramm.png> <./Sources/image105.jpg> <./Sources/image105_segmen
-tiert.png> <./Sources/image105_Histogramm.png>] [36]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 848.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 848.
+[34]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 848.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 848.
+ [35 <./Sources/image112.jpg> <./Sources/image112_segmentiert.png> <./Sources/i
+mage112_Histogramm.png> <./Sources/image105.jpg> <./Sources/image105_segmentier
+t.png> <./Sources/image105_Histogramm.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 849.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 849.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 850.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 850.
+ [36]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 851.
 
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Overfull \hbox (17.55217pt too wide) in paragraph at lines 852--852
@@ -2190,6 +2788,10 @@ rks, Ex-plai-ned\T1/lmr/m/n/12 . 2019. \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]
 $\T1/lmtt/m/n/12 https :
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 851.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 851.
 [37]
 Overfull \hbox (74.52756pt too wide) in paragraph at lines 852--852
 []\T1/lmr/m/n/12 Computer science Wi-ki. \T1/lmr/m/it/12 Max-pooling / Poo-ling
@@ -2197,7 +2799,16 @@ Overfull \hbox (74.52756pt too wide) in paragraph at lines 852--852
  https : / / computersciencewiki .
  []
 
-[38] [39]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 852.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 852.
+[38]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 854.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 854.
+ [39]
 Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
@@ -2207,6 +2818,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 862.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 862.
 [40]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 862.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 862.
@@ -2226,33 +2841,33 @@ l'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27300 strings out of 492970
- 501407 string characters out of 3126150
- 846297 words of memory out of 3000000
- 30477 multiletter control sequences out of 15000+200000
+ 27539 strings out of 493305
+ 503093 string characters out of 3129367
+ 841038 words of memory out of 3000000
+ 30382 multiletter control sequences out of 15000+200000
  72097 words of font info for 63 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  54i,11n,73p,1302b,3134s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
-nc}{C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hex.enc}{C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-mathit.enc}{C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathsy.enc}{C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
-dvips/lm/lm-rm.enc}<C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmbx12.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmcsc10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Torben/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Torben/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Torben/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Torben/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Torben/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Torben/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Torben/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/To
-rben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Use
-rs/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Bachelorarbeit Dokumentation.pdf" (41 pages, 3594601 bytes).
+{C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
+nc}{C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hex.enc}{C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-mathit.enc}{C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-mathsy.enc}{C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-rm.enc}<C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmbx12.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmcsc10.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Agando/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Agando/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Agando/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Agando/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Agando/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Users/Agando/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Agando/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Agando/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Ag
+ando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "Bachelorarbeit Dokumentation.pdf" (41 pages, 3594638 bytes).
 
 PDF statistics:
  713 PDF objects out of 1000 (max. 8388607)
