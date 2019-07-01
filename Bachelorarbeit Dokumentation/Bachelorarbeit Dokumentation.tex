@@ -641,7 +641,7 @@ def grey_world(nimg):
     nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
     return  nimg.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
-In dem verwendeten Gray World Algorithmus \cite{gray2012world} Zunächst wird das Bild in 32 Bit umgewandelt. Daraufhin wird der Grünkanal verwendet und der durchschnitt berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals Dividiert. Das Ergebnis des wird mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben. Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
+In dem verwendeten Gray World Algorithmus \cite{gray2012world} zunächst wird das Bild in 32 Bit umgewandelt. Daraufhin wird der Grünkanal verwendet und der Durchschnitt berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals dividiert. Das Ergebnis des wird mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben. Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
 \begin{figure}
 	[h]
 	\centering
@@ -667,7 +667,7 @@ cv2.imshow('Color input image', img)
 cv2.imshow('Histogram equalized', img_output)
 cv2.waitKey(0)
 \end{lstlisting}
-Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum umgewandelt. Der Farbraum ist ähnlich dem Lab Farbraum (Absch.\ref{s.lab}). Der Y Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, das das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben.
+Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum umgewandelt. Der Farbraum ist ähnlich dem Lab Farbraum (Absch.\ref{s.lab}). Der Y Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben.
 \begin{figure}
 	[h]
 	\centering
@@ -705,7 +705,7 @@ ax3.set_title('Matched')
 plt.tight_layout()
 plt.show()
 \end{lstlisting}
-Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Absch.\ref{s.hs}) oder auch \textit{Histogram matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, ein wesentlich bessere Helligkeit aufweist.
+Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Absch.\ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist.
 \begin{figure}
 	[h]
 	\centering
@@ -729,14 +729,14 @@ Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der T
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Wasser - Flasche & 0.948 & \textbf{0.955} & 0.934 & 0.000\\
-Orangensaft - Packung & \textbf{0.999} & 0.998 & \textbf{1.000} & 0.000\\
-Milch - Packung & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000\\
-Margariene & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 0.000\\
-Brunch - Aufstrich & \textbf{1.000} & 0.995 & 0.959 & 0.000\\
-Flasche - Bier & \textbf{0.997} & 0.970 & 0.986 & 0.000\\
+Wasser - Flasche & 0.948 & \textbf{0.955} & 0.934 & 0.917\\
+Orangensaft - Packung & 0.999 & 0.998 & \textbf{1.000} & 0.999\\
+Milch - Packung & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000}\\
+Margariene & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000}\\
+Brunch - Aufstrich & \textbf{1.000} & 0.995 & 0.959 & 0.975\\
+Flasche - Bier & \textbf{0.997} & 0.970 & 0.986 & 0.979\\
 \hline
-mAP & \textbf{0.991} & 0.987 & \textbf{0.980} & 0.000\\
+mAP & \textbf{0.991} & 0.987 & 0.980 & 0.978\\
 \hline
 \end{tabular}
 \label{tab:nahrungsmitteltest}
@@ -753,28 +753,28 @@ Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise gr
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-sofa & 0.611 & 0.612 & \textbf{0.637} & 0.000\\ 
-aeroplane & 0.845 & \textbf{0.855} & 0.826 & 0.000\\
-horse & \textbf{0.924} & 0.910 & 0.891 & 0.000\\
-train & 0.790 & \textbf{0.804} & 0.797 & 0.000\\
-bird & \textbf{0.750} & 0.733 & 0.691 & 0.000\\ 
-tvmonitor & 0.729 & \textbf{0.733} & 0.725 & 0.000\\
-boat & \textbf{0.680} & 0.644 & 0.626 & 0.000\\
-pottedplant & \textbf{0.430} & 0.415 & 0.425 & 0.000\\
-bus & 0.797 & \textbf{0.810} & 0.763 & 0.000\\ 
-diningtable & 0.532 & \textbf{0.545} & 0.507 & 0.000\\
-car & 0.812 & \textbf{0.815} & 0.789 & 0.000\\
-bottle & \textbf{0.553} & 0.510 & 0.498 & 0.000\\
-cat & \textbf{0.903} & 0.902 & 0.872 & 0.000\\
-person & \textbf{0.791} & 0.779 & 0.775 & 0.000\\
-chair & 0.499 & \textbf{0.515} & 0.460 & 0.000\\
-bicycle & 0.744 & 0.730 & \textbf{0.752} & 0.000\\
-cow & \textbf{0.718} & 0.698 & 0.694 & 0.000\\
-motorbike & \textbf{0.739} & 0.722 & 0.725 & 0.000\\
-dog & \textbf{0.867} & 0.862 & 0.835 & 0.000\\
-sheep & 0.645 & 0.619 & \textbf{0.664} & 0.000\\
+sofa & 0.611 & 0.612 & \textbf{0.637} & 0.602\\ 
+aeroplane & 0.845 & \textbf{0.855} & 0.826 & 0.843\\
+horse & \textbf{0.924} & 0.910 & 0.891 & 0.905\\
+train & 0.790 & \textbf{0.804} & 0.797 & 0.817\\
+bird & \textbf{0.750} & 0.733 & 0.691 & 0.708\\ 
+tvmonitor & 0.729 & \textbf{0.733} & 0.725 & 0.691\\
+boat & \textbf{0.680} & 0.644 & 0.626 & 0.559\\
+pottedplant & \textbf{0.430} & 0.415 & 0.425 & 0.340\\
+bus & 0.797 & \textbf{0.810} & 0.763 & 0.776\\ 
+diningtable & 0.532 & \textbf{0.545} & 0.507 & 0.517\\
+car & 0.812 & \textbf{0.815} & 0.789 & 0.775\\
+bottle & \textbf{0.553} & 0.510 & 0.498 & 0.451\\
+cat & \textbf{0.903} & 0.902 & 0.872 & 0.841\\
+person & \textbf{0.791} & 0.779 & 0.775 & 0.757\\
+chair & 0.499 & \textbf{0.515} & 0.460 & 0.440\\
+bicycle & 0.744 & 0.730 & \textbf{0.752} & 0.697\\
+cow & \textbf{0.718} & 0.698 & 0.694 & 0.653\\
+motorbike & \textbf{0.739} & 0.722 & 0.725 & 0.725\\
+dog & \textbf{0.867} & 0.862 & 0.835 & 0.811\\
+sheep & 0.645 & 0.619 & \textbf{0.664} & 0.561\\
 \hline
-mAP & \textbf{0.718} & 0.710 & 0.698 & 0.000\\
+mAP & \textbf{0.718} & 0.710 & 0.698 & 0.673\\
 \hline
 \end{tabular}
 \end{table}
@@ -815,42 +815,102 @@ mAP & 0.840 & \textbf{0.848} & 0.829 & 0.000\\
 \end{table}    
   \newpage
   \section{Diskussion}
-Die Ergebnisse der trainierten Netze zeigen, das mit die verwendeten Datensätzen zusammen mit den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielen. Ein möglicher Grund könnte zum einen in den vortrainierten Netzen liegen, welche schon zu genau und hochwertig eingestellte Perzeptronen besitzen und durch die vorherigen Datensätze nicht optimal für den Versuch waren. Zum anderen Könnte es an den Datensätzen selber liegen welche Normalisiert wurden. Dafür wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen Aufgenommen. Das Objekt wurde vom Hintergrund segmentiert, um zu überprüfen wie sich die Histogramme voneinander unterscheiden (Abb.). Dieser Vorgang wurde daraufhin auch mit der Histogramm Ausgleichung überprüft (Abb.).\\
+Die Ergebnisse der trainierten Netze zeigen, dass mit die verwendeten Datensätzen zusammen mit den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielen. Ein möglicher Grund könnte zum einen in den vortrainierten Netzen liegen, welche schon zu genau und hochwertig eingestellte Perzeptronen besitzen und durch die vorherigen Datensätze nicht optimal für den Versuch waren. Zum anderen könnte es an den Datensätzen selber liegen, welche normalisiert wurden. Dafür wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen aufgenommen. Das Objekt wurde vom Hintergrund segmentiert, um zu überprüfen, wie sich die Histogramme voneinander unterscheiden (Abb.\ref{img:evalnorm}). Dieser Vorgang wurde daraufhin auch mit der Histogramm Ausgleichung überprüft (Abb.\ref{img:evalHA}).\\
 \begin{figure}[htb]
-\begin{minipage}[c]{0.3\textwidth}
-\includegraphics[width=\textwidth]{Sources/image112.jpg}
+\begin{minipage}[c]{0.2\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild1.jpg}
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.08\textwidth}
-\includegraphics[width=\textwidth]{Sources/image112_segmentiert.png}
+\includegraphics[width=\textwidth]{Sources/Bild1.png}
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.3\textwidth}
-\includegraphics[width=\textwidth]{Sources/image112_Histogramm.png}
+\includegraphics[width=\textwidth]{Sources/Bild1_histo.png}
 \end{minipage}
 \end{figure}
 \begin{figure}[htb]
-\begin{minipage}[c]{0.3\textwidth}
-\includegraphics[width=\textwidth]{Sources/image105.jpg}
+\begin{minipage}[c]{0.2\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild2.jpg}
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.08\textwidth}
-\includegraphics[width=\textwidth]{Sources/image105_segmentiert.png}
+\includegraphics[width=\textwidth]{Sources/Bild2.png}
 \end{minipage}
 \hfill
 \begin{minipage}[c]{0.3\textwidth}
-\includegraphics[width=\textwidth]{Sources/image105_Histogramm.png}
+\includegraphics[width=\textwidth]{Sources/Bild2_histo.png}
 \end{minipage}
-\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\label{img:evalnorm}
+\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal des Objektes}
 \end{figure}\\
-Bei den Normalen Datensätzen, ist aufgefallen, das bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen die Objekte eine unterschiedliche Farbverteilung aufweisen. Das könnte durch Lichtreflexionen anderer Objekte in der Umgebung erklärt werden. Der Normalisierte Datensatz weißt sogar noch größere Unterschiede in den Klassen auf. Das liegt daran, dass Die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen Bildern unterschiedlich ist verrechnet. Das bedeutet, das nicht der Datensatz untereinander Normalisiert wurde, sondern jedes Bild in dem Datensatz für sich.\\\\
-Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorithmen nicht gut geeignet. Die Kriterien für einen Datensatz welcher durch Farbnormalisierung eine höhere Genauigkeit erreichen könnte, liegt in dem Hintergrund welcher verwendet wird. Dabei müssen alle Klassen mit dem selben Hintergrund aufgenommen werden. Dadurch würden alle Klassen auf der selben Basis    normalisiert werden. Gerade die Histogramm Spezifikation (Absch. \ref{s.hs}) hätte hier ein großes Potenzial, da die Auswahl eines Referenzbildes einfacher und effektiver wird, durch den einheitlichen Hintergrund. Um diese Theorie zu überprüfen, wird ein weiterer Datensatz generiert und gelabelt. 
+Bei den normalen Datensätzen ist aufgefallen, das bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen die Objekte eine unterschiedliche Farbverteilung aufweisen. Das könnte durch Lichtreflexionen anderer Objekte in der Umgebung erklärt werden. Der normalisierte Datensatz weißt sogar noch größere Unterschiede in den Klassen auf. Das liegt daran, dass die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen Bildern unterschiedlich ist, verrechnet. Das bedeutet, dass nicht der Datensatz untereinander normalisiert wurde, sondern jedes Bild in dem Datensatz für sich.\\\\
+Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorithmen nicht gut geeignet. Die Kriterien für einen Datensatz welcher durch Farbnormalisierung eine höhere Genauigkeit erreichen könnte, liegt in dem Hintergrund, welcher verwendet wird. Dabei müssen alle Klassen mit demselben Hintergrund aufgenommen werden. Dadurch würden alle Klassen auf derselben Basis normalisiert werden. Gerade die Histogramm Spezifikation (Absch. \ref{s.hs}) hätte hier ein großes Potenzial, da die Auswahl eines Referenzbildes einfacher und effektiver wird, durch den einheitlichen Hintergrund. Um diese Theorie zu überprüfen, wird ein weiterer Datensatz generiert und gelabelt. 
+\subsection{Obst Datensatz}
+Für einen weiteren Versuch, wurde der Obstdatensatz erstellt. Dieser besteht aus den Objekten welche in Tabelle \ref{tab:obst} aufgelistet sind. Bei diesem Datensatz wurde darauf geachtet einen einheitlichen Hintergrund zu verwenden, um die Funktionalität bei anderen Einstellungen zu testen. Außerdem wurde im Vergleich zum Nahrungsmittel Datensatz (Tabelle.\ref{tab:nahrungsmittel}) darauf geachtet, ähnlichere Kassen zu verwenden, auf welchen Optimaler weise keine Schrift enthalten ist.
+\begin{table}
+[h]
+\caption{Datensatz mit Obstsorten}
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Klassenname & Klassenname\\
+\hline
+Orange & Mango\\
+Banane & Nektarine\\
+Apfel & Birne\\
+\hline
+\end{tabular}
+\label{tab:obst}
+\end{table}\\ 
+\subsection{Auswertung des Früchte Datensatzes}
   \newpage
   \section{Fazit}
   \newpage
   \printbibliography
   \newpage
   \section*{Anhang}
+\begin{figure}[htb]
+\begin{minipage}[c]{0.2\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild1_HA.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.08\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild1_HA.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild1_HA_histo.png}
+\end{minipage}
+\end{figure}
+\begin{figure}[htb]
+\begin{minipage}[c]{0.2\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild2_HA.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.08\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild2_HA.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild2_HA_histo.png}
+\end{minipage}
+\end{figure}
+\begin{figure}[htb]
+\begin{minipage}[c]{0.2\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild3_HA.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.08\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild3_HA.png}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+\includegraphics[width=\textwidth]{Sources/Bild3_HA_histo.png}
+\end{minipage}
+\label{img:evalHA}
+\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\end{figure}
   \newpage
   \section*{Eidesstattliche Erklärung}
 Ich versichere, dass ich die Bachelorarbeit selbständig angefertigt und keine anderen als die von mir angegebenen und bei Zitaten kenntlich gemachten Quellen und Hilfsmittel benutzt und die vorliegende Arbeit an keiner anderen Stelle zur Erlangung eines Abschlusses vorgelegt habe.\\\\

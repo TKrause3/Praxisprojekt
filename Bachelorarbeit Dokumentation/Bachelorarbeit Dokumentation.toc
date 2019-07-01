@@ -57,4 +57,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Diskussion}{34}{section.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{36}{section.125}
+\contentsline {subsection}{\numberline {5.1}Obst Datensatz}{35}{subsection.125}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Auswertung des Fr\IeC {\"u}chte Datensatzes}{36}{subsection.127}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Fazit}{37}{section.128}
