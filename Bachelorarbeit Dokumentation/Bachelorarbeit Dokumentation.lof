@@ -19,16 +19,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {9}{\ignorespaces Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}\relax }}{21}{figure.caption.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray-World-Algorithmus normalisiert wurde\relax }}{29}{figure.caption.66}
+\contentsline {figure}{\numberline {10}{\ignorespaces Auswirkung des Gray-World Algorithmus\relax }}{30}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde\relax }}{30}{figure.caption.84}
+\contentsline {figure}{\numberline {11}{\ignorespaces Auswirkung der Histogramm Ausgleichung\relax }}{30}{figure.caption.91}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation\relax }}{32}{figure.caption.113}
+\contentsline {figure}{\numberline {12}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation\relax }}{31}{figure.caption.102}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Gr\IeC {\"u}n-, Blau-Kanal des Objektes\relax }}{37}{figure.caption.129}
+\contentsline {figure}{\numberline {13}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung\relax }}{37}{figure.caption.118}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Gr\IeC {\"u}n-, Blau-Kanal\relax }}{41}{figure.caption.135}
+\contentsline {figure}{\numberline {14}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Histogramm Ausgleich\relax }}{40}{figure.caption.124}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Gr\IeC {\"u}n-, Blau-Kanal\relax }}{42}{figure.caption.138}
+\contentsline {figure}{\numberline {15}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Gray-World Algorithmus\relax }}{41}{figure.caption.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Gr\IeC {\"u}n-, Blau-Kanal\relax }}{43}{figure.caption.141}
+\contentsline {figure}{\numberline {16}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation\relax }}{42}{figure.caption.130}

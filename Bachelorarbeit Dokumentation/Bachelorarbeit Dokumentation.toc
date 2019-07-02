@@ -41,26 +41,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Gray-World-Algorithmus}{29}{subsubsection.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Histogramm Ausgleich}{29}{subsubsection.67}
+\contentsline {subsubsection}{\numberline {3.3.2}Histogramm Ausgleich}{29}{subsubsection.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Histogramm Spezifikation}{30}{subsubsection.85}
+\contentsline {subsubsection}{\numberline {3.3.3}Histogramm Spezifikation}{31}{subsubsection.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Ergebnisse}{32}{section.114}
+\contentsline {section}{\numberline {4}Ergebnisse}{32}{section.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{32}{subsection.115}
+\contentsline {subsection}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{32}{subsection.104}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Nahrungsmittel Datensatz}{33}{subsection.116}
+\contentsline {subsection}{\numberline {4.2}Nahrungsmittel Datensatz}{32}{subsection.105}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}PascalVOC Datensatz}{33}{subsection.118}
+\contentsline {subsection}{\numberline {4.3}PascalVOC Datensatz}{33}{subsection.107}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Stanford Dogs Dataset}{34}{subsection.120}
+\contentsline {subsection}{\numberline {4.4}Stanford Dogs Dataset}{33}{subsection.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Zwischenstand}{35}{subsection.122}
+\contentsline {subsection}{\numberline {4.5}Zwischenstand}{34}{subsection.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Obst Datensatz}{36}{subsection.123}
+\contentsline {subsection}{\numberline {4.6}Obst Datensatz}{35}{subsection.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{36}{subsection.125}
+\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{35}{subsection.114}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{37}{section.127}
+\contentsline {section}{\numberline {5}Diskussion}{36}{section.116}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{38}{section.130}
+\contentsline {section}{\numberline {6}Fazit}{37}{section.119}

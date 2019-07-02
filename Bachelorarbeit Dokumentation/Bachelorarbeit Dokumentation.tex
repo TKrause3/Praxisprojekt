@@ -94,6 +94,16 @@ footskip=1cm,headheight=14.599pt]{geometry} % Einrichtung der Seite
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
 \usepackage{color}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -635,76 +645,65 @@ Von der Struktur der Datensätze, sind sie ähnlich aufgebaut. Viele verschieden
 Für die Normalisierung der Datensätze ist eine Methode nötig, um mehrere Bilder möglichst schnell hintereinander zu bearbeiten. Für die Normalisierung wurden Python Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus verarbeitet. Dafür wurde mit unter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das verarbeiten von Bildern benötigt. 
 \subsubsection{Gray-World-Algorithmus}
 \begin{lstlisting}
-def grey_world(nimg):
-    nimg = nimg.transpose(2, 0, 1).astype(np.uint32)
-    mu_g = np.average(nimg[1])
-    nimg[0] = np.minimum(nimg[0]*(mu_g/np.average(nimg[0])),255)
-    nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
-    return  nimg.transpose(1, 2, 0).astype(np.uint8)
+# Importieren des Bildes
+nimg = cv.imread(i, 1)
+
+# Umwandlung des Bildes und der Kanäle in 32 Bit
+nimg = nimg.transpose(2, 0, 1).astype(np.uint32)
+
+# Zwischenspeichern des durchschnittlichen Grünkanals in die Variable mu_g
+mu_g = np.average(nimg[1])
+
+# Berechnng des rot-Kanals: 
+nimg[0] = np.minimum(nimg[0]*(mu_g/np.average(nimg[0])),255)
+
+# Berechnung des blau-Kanals:
+nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
+
+Zurükwandlung des Bildes in 8 Bit
+img_output = nimg.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
 In dem verwendeten Gray World Algorithmus \cite{gray2012world} zunächst wird das Bild in 32 Bit umgewandelt. Daraufhin wird der Grünkanal verwendet und der Durchschnitt berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals dividiert. Das Ergebnis des wird mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben. Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.7]{Sources/gwn.png}
-	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit mit dem Gray-World-Algorithmus normalisiert wurde}
+	\caption{Auswirkung des Gray-World Algorithmus}
 	\label{img:gwnimg}
 \end{figure}
 \subsubsection{Histogramm Ausgleich}
 \begin{lstlisting}
-import cv2
-import numpy as np
-
+# Importieren des Bildes
 img = cv2.imread('input.jpg')
+
+# Umwandlung des Farbraumes von BGR zu YUV
 img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
 
-# equalize the histogram of the Y channel
+# Ausgleichung vom Histogramm des Y Kanals
 img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
 
-# convert the YUV image back to RGB format
+# Umwandlung des Farbraumes in den BGR Farbraum
 img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
-
-cv2.imshow('Color input image', img)
-cv2.imshow('Histogram equalized', img_output)
-cv2.waitKey(0)
 \end{lstlisting}
 Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum umgewandelt. Der Farbraum ist ähnlich dem Lab Farbraum (Absch.\ref{s.lab}). Der Y Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben.
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.7]{Sources/histeq.jpg}
-	\caption{Auf der linken Seite ist das Originalbild. Auf der rechten Seite ist das Bild welches mit einer Histogramm Ausgleichung bearbeitet wurde}
+	\caption{Auswirkung der Histogramm Ausgleichung}
 	\label{img:histogrameq}
 \end{figure}
 	
 \subsubsection{Histogramm Spezifikation}
 \begin{lstlisting}
-import matplotlib.pyplot as plt
-import io
-
-from skimage import data
-from skimage import exposure
-from skimage.transform import match_histograms
-
+# Importieren des Referenzbildes
 reference = io.imread('reference.jpg')
+
+# Importieren des zu Normalisierenden Bildes
 image = io.imread('image.jpg')
 
+# Weiterleitung der beiden Bilder an die match_histogram-Methode der Skimage Bibliothek
 matched = match_histograms(image, reference, multichannel=True)
-
-fig, (ax1, ax2, ax3) = plt.subplots(nrows=1, ncols=3, figsize=(8, 3),
-                                    sharex=True, sharey=True)
-for aa in (ax1, ax2, ax3):
-    aa.set_axis_off()
-
-ax1.imshow(image)
-ax1.set_title('Source')
-ax2.imshow(reference)
-ax2.set_title('Reference')
-ax3.imshow(matched)
-ax3.set_title('Matched')
-
-plt.tight_layout()
-plt.show()
 \end{lstlisting}
 Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Absch.\ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist. Die Problematik bei dieser Normalisierungs Methode besteht darin, das ein einheitliches Referenzbild genutzt werden muss auf welchem dann der gesamte Datensatz Normalisiert wird.
 \begin{figure}
@@ -725,20 +724,20 @@ Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der T
 Bei den Histogramm Normalisierungen (Ausgleich und Spezifizierung) kann mehr interpretiert werden. Auch hier sind die Unterschiede nur in einzelnen Objektklassen besser geworden und in anderen zurückgegangen. Die Varianz der verschiedenen Netze liegt bei gerade mal 0.05, was in der Praxis keinen bedeutenden Unterschied macht. Dennoch schneiden die Histogramm Normalisierungen insgesamt am schlechtesten ab.
 \begin{table}
 [h]
-\caption{Genauigkeits-Berechnungen des Trainierten Modells ohne Normalisierungsverfahren}
+\caption{Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel Datensatz}
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Wasser - Flasche & 0.948 & \textbf{0.955} & 0.934 & 0.917\\
-Orangensaft - Packung & 0.999 & 0.998 & \textbf{1.000} & 0.999\\
-Milch - Packung & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000}\\
-Margariene & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000}\\
-Brunch - Aufstrich & \textbf{1.000} & 0.995 & 0.959 & 0.975\\
-Flasche - Bier & \textbf{0.997} & 0.970 & 0.986 & 0.979\\
+Wasser - Flasche & 0.948 & \textcolor{green}{0.955} & 0.934 & \textcolor{red}{0.917}\\
+Orangensaft - Packung & 0.999 & \textcolor{red}{0.998} & \textcolor{green}{1.000} & 0.999\\
+Milch - Packung & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
+Margariene & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
+Brunch - Aufstrich & \textcolor{green}{1.000} & 0.995 & \textcolor{red}{0.959} & 0.975\\
+Flasche - Bier & \textcolor{green}{0.997} & \textcolor{red}{0.970} & 0.986 & 0.979\\
 \hline
-mAP & \textbf{0.991} & 0.987 & 0.980 & 0.978\\
+mAP & \textcolor{green}{0.991} & 0.987 & 0.980 & \textcolor{red}{0.978}\\
 \hline
 \end{tabular}
 \label{tab:nahrungsmitteltest}
@@ -747,34 +746,34 @@ mAP & \textbf{0.991} & 0.987 & 0.980 & 0.978\\
 Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise große Unterschiede der einzelnen Objektklassen auftreten. Das kann daher resultieren, dass unterschiedlich viele Bilder pro klasse enthalten sind. Ähnlich wie beim vorherigen Datensatz konnte zwischen dem originalen Datensatz und der Gray-World-Normalisierung kein deutlicher Unterschied festgestellt werden. Einige Klassen haben zwar eine höhere durchschnittliche Wahrscheinlichkeit, dennoch gibt es auch hier mehrere Bereiche, wo die Genauigkeit abgenommen hat. Auch die mAP hat ca. 0.8\% Genauigkeit verloren. Anders als beim Nahrungsmittel Datensatz schneidet der Histogramm Ausgleich schlechter ab. Nur ein paar Objektklassen konnten besser erkannt werden. Insgesamt verliert das neuronale Netz 3.4\% der Genauigkeit, was einen wichtigen Unterschied macht. Einige Objektklassen sinken durch die Ausgleichung unter die 50\% Genauigkeit, was vergleichbar mit raten wäre. Hier wird auch die Schwäche der Histogramm Spezifikation deutlich. Durchschnittlich 4.5\% Genauigkeit wird durch die Normalisierung eingebüßt. 
 \begin{table}
 [h]
-\caption{Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung}
+\caption{Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz}
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-sofa & 0.611 & 0.612 & \textbf{0.637} & 0.602\\ 
-aeroplane & 0.845 & \textbf{0.855} & 0.826 & 0.843\\
-horse & \textbf{0.924} & 0.910 & 0.891 & 0.905\\
-train & 0.790 & \textbf{0.804} & 0.797 & 0.817\\
-bird & \textbf{0.750} & 0.733 & 0.691 & 0.708\\ 
-tvmonitor & 0.729 & \textbf{0.733} & 0.725 & 0.691\\
-boat & \textbf{0.680} & 0.644 & 0.626 & 0.559\\
-pottedplant & \textbf{0.430} & 0.415 & 0.425 & 0.340\\
-bus & 0.797 & \textbf{0.810} & 0.763 & 0.776\\ 
-diningtable & 0.532 & \textbf{0.545} & 0.507 & 0.517\\
-car & 0.812 & \textbf{0.815} & 0.789 & 0.775\\
-bottle & \textbf{0.553} & 0.510 & 0.498 & 0.451\\
-cat & \textbf{0.903} & 0.902 & 0.872 & 0.841\\
-person & \textbf{0.791} & 0.779 & 0.775 & 0.757\\
-chair & 0.499 & \textbf{0.515} & 0.460 & 0.440\\
-bicycle & 0.744 & 0.730 & \textbf{0.752} & 0.697\\
-cow & \textbf{0.718} & 0.698 & 0.694 & 0.653\\
-motorbike & \textbf{0.739} & 0.722 & 0.725 & 0.725\\
-dog & \textbf{0.867} & 0.862 & 0.835 & 0.811\\
-sheep & 0.645 & 0.619 & \textbf{0.664} & 0.561\\
+sofa & 0.611 & 0.612 & \textcolor{green}{0.637} & \textcolor{red}{0.602}\\ 
+aeroplane & 0.845 & \textcolor{green}{0.855} & \textcolor{red}{0.826} & 0.843\\
+horse & \textcolor{green}{0.924} & 0.910 & \textcolor{red}{0.891} & 0.905\\
+train & 0.790 & \textcolor{green}{0.804} & \textcolor{red}{0.797} & 0.817\\
+bird & \textcolor{green}{0.750} & 0.733 & \textcolor{red}{0.691} & 0.708\\ 
+tvmonitor & 0.729 & \textcolor{green}{0.733} & 0.725 & \textcolor{red}{0.691}\\
+boat & \textcolor{green}{0.680} & 0.644 & 0.626 & \textcolor{red}{0.559}\\
+pottedplant & \textcolor{green}{0.430} & 0.415 & 0.425 & \textcolor{red}{0.340}\\
+bus & 0.797 & \textcolor{green}{0.810} & \textcolor{red}{0.763} & 0.776\\ 
+diningtable & 0.532 & \textcolor{green}{0.545} & \textcolor{red}{0.507} & 0.517\\
+car & 0.812 & \textcolor{green}{0.815} & 0.789 & \textcolor{red}{0.775}\\
+bottle & \textcolor{green}{0.553} & 0.510 & 0.498 & \textcolor{red}{0.451}\\
+cat & \textcolor{green}{0.903} & 0.902 & 0.872 & \textcolor{red}{0.841}\\
+person & \textcolor{green}{0.791} & 0.779 & 0.775 & \textcolor{red}{0.757}\\
+chair & 0.499 & \textcolor{green}{0.515} & 0.460 & \textcolor{red}{0.440}\\
+bicycle & 0.744 & 0.730 & \textcolor{green}{0.752} & \textcolor{red}{0.697}\\
+cow & \textcolor{green}{0.718} & 0.698 & 0.694 & \textcolor{red}{0.653}\\
+motorbike & \textcolor{green}{0.739} & \textcolor{red}{0.722} & 0.725 & 0.725\\
+dog & \textcolor{green}{0.867} & 0.862 & 0.835 & \textcolor{red}{0.811}\\
+sheep & 0.645 & 0.619 & \textcolor{green}{0.664} & \textcolor{red}{0.561}\\
 \hline
-mAP & \textbf{0.718} & 0.710 & 0.698 & 0.673\\
+mAP & \textcolor{green}{0.718} & 0.710 & 0.698 & \textcolor{red}{0.673}\\
 \hline
 \end{tabular}
 \end{table}
@@ -782,34 +781,34 @@ mAP & \textbf{0.718} & 0.710 & 0.698 & 0.673\\
 Auch bei Überprüfung des dritten Datensatzes fallen ähnliche Muster auf. Der GW-Algorithmus weißt bei diesem Datensatz sogar bessere Ergebnisse wie der originale Datensatz auf. Beim vergleichen der Datensätze fällt hier auf, das mehr verschiedene Lichtfarben genutzt wurden, als bei den anderen beiden Datensätzen. Diese konnten vom GW-Algorithmus vereinheitlicht werden. Beim Histogramm Ausgleich und der Spezifikation wurden wie auch bei den vorherigen Datensätzen schlechtere Genauigkeiten beobachtet.   
 \begin{table}
 [h]
-\caption{Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung}
+\caption{Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz}
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
 Objektklasse & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Chihuaua & 0.729 & \textbf{0.854} & 0.780 & 0.746\\ 
-Shih-Tzu & 0.864 & \textbf{0.879} & 0.857 & 0.832\\
-Rhodesian Ridgeback & \textbf{0.741} & 0.706 & 0.711 & 0.699\\
-Bloodhound & 0.872 & \textbf{0.878} & 0.904 & 0.848\\
-Redbone & \textbf{0.617} & 0.546 & 0.486 & 0.507\\ 
-Japanese Spaniel & 0.886 & 0.919 & \textbf{0.939} & 0.837\\
-Blenheim Spaniel & \textbf{0.980} & 0.966 & 0.944 & 0.906\\
-Afghan Hound & \textbf{0.955} & 0.946 & 0.947 & 0.953\\
-Bluetrick & \textbf{0.897} & 0.892 & 0.864 & 0.870\\ 
-Borzoi & \textbf{0.931} & 0.922 & 0.932 & 0.925\\
-Maltese dog & \textbf{0.905} & 0.901 & 0.874 & 0.784\\
-Papillon & 0.971 & \textbf{0.984} & 0.973 & 0.952\\
-Basset & 0.763 & \textbf{0.779} & 0.707 & 0.711\\
-Coonhound & 0.863 & 0.864 & \textbf{0.895} & 0.901\\
-Irish Wolfhound & \textbf{0.945} & 0.930 & 0.940 & 0.905\\
-Pekinese & 0.723 & \textbf{0.840} & 0.743 & 0.782\\
-Toy Terrier & 0.838 & \textbf{0.856} & 0.784 & 0.804\\
-Beagle & 0.725 & \textbf{0.743} & 0.665 & 0.669\\
-Walker Hound & \textbf{0.767} & 0.705 & 0.757 & 0.733\\
-Italian Greyhound & 0.822 & \textbf{0.845} & 0.800 & 0.785\\
+Chihuaua & \textcolor{red}{0.729} & \textcolor{green}{0.854} & 0.780 & 0.746\\ 
+Shih-Tzu & 0.864 & \textcolor{green}{0.879} & 0.857 & \textcolor{red}{0.832}\\
+Rhodesian Ridgeback & \textcolor{green}{0.741} & 0.706 & 0.711 & \textcolor{red}{0.699}\\
+Bloodhound & 0.872 & \textcolor{green}{0.878} & 0.904 & \textcolor{red}{0.848}\\
+Redbone & \textcolor{green}{0.617} & 0.546 & \textcolor{red}{0.486} & 0.507\\ 
+Japanese Spaniel & 0.886 & 0.919 & \textcolor{green}{0.939} & \textcolor{red}{0.837}\\
+Blenheim Spaniel & \textcolor{green}{0.980} & 0.966 & 0.944 & \textcolor{red}{0.906}\\
+Afghan Hound & \textcolor{green}{0.955} & \textcolor{red}{0.946} & 0.947 & 0.953\\
+Bluetrick & \textcolor{green}{0.897} & 0.892 & \textcolor{red}{0.864} & 0.870\\ 
+Borzoi & \textcolor{green}{0.931} & \textcolor{red}{0.922} & 0.932 & 0.925\\
+Maltese dog & \textcolor{green}{0.905} & 0.901 & \textcolor{red}{0.874} & 0.784\\
+Papillon & 0.971 & \textcolor{green}{0.984} & 0.973 & \textcolor{red}{0.952}\\
+Basset & 0.763 & \textcolor{green}{0.779} & \textcolor{red}{0.707} & 0.711\\
+Coonhound & \textcolor{red}{0.863} & 0.864 & \textcolor{green}{0.895} & 0.901\\
+Irish Wolfhound & \textcolor{green}{0.945} & 0.930 & 0.940 & \textcolor{red}{0.905}\\
+Pekinese & \textcolor{red}{0.723} & \textcolor{green}{0.840} & 0.743 & 0.782\\
+Toy Terrier & 0.838 & \textcolor{green}{0.856} & \textcolor{red}{0.784} & 0.804\\
+Beagle & 0.725 & \textcolor{green}{0.743} & \textcolor{red}{0.665} & 0.669\\
+Walker Hound & \textcolor{green}{0.767} & \textcolor{red}{0.705} & 0.757 & 0.733\\
+Italian Greyhound & 0.822 & \textcolor{green}{0.845} & 0.800 & \textcolor{red}{0.785}\\
 \hline
-mAP & 0.840 & \textbf{0.848} & 0.829 & 0.807\\
+mAP & 0.840 & \textcolor{green}{0.848} & 0.829 & \textcolor{red}{0.807}\\
 \hline
 \end{tabular}
 \end{table}
@@ -846,14 +845,14 @@ Dieser Datensatz wird nun genau wie die vorherigen Datensätze, mit den untersch
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Orange & 1.000 & 0.000 & 0.000 & 0.000\\
-Nektarine & 1.000 & 0.000 & 0.000 & 0.000\\
-Banane & 1.000 & 0.000 & 0.000 & 0.000\\
-Mango & 1.000 & 0.000 & 0.000 & 0.000\\
-Apfel & 1.000 & 0.000 & 0.000 & 0.000\\
-Birne & 1.000 & 0.000 & 0.000 & 0.000\\
+Orange & 1.000 & 1.000 & 0.000 & 0.000\\
+Nektarine & 1.000 & 1.000 & 0.000 & 0.000\\
+Banane & 1.000 & 1.000 & 0.000 & 0.000\\
+Mango & 1.000 & 1.000 & 0.000 & 0.000\\
+Apfel & 1.000 & 1.000 & 0.000 & 0.000\\
+Birne & 1.000 & 1.000 & 0.000 & 0.000\\
 \hline
-mAP & 1.000 & 0.000 & 0.000 & 0.000\\
+mAP & 1.000 & 1.000 & 0.000 & 0.000\\
 \hline
 \end{tabular}
 \end{table}    
@@ -886,7 +885,7 @@ Die Ergebnisse der trainierten Netze zeigen, dass mit die verwendeten Datensätz
 \begin{minipage}[c]{0.3\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild2_histo.png}
 \end{minipage}
-\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal des Objektes}
+\caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung}
 \label{img:evalnorm}
 \end{figure}\\
 Bei den normalen Datensätzen ist aufgefallen, das bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen die Objekte eine unterschiedliche Farbverteilung aufweisen. Das könnte durch Lichtreflexionen anderer Objekte in der Umgebung erklärt werden. Der normalisierte Datensatz weißt sogar noch größere Unterschiede in den Klassen auf. Das liegt daran, dass die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen Bildern unterschiedlich ist, verrechnet. Das bedeutet, dass nicht der Datensatz untereinander normalisiert wurde, sondern jedes Bild in dem Datensatz für sich.\\\\
@@ -934,7 +933,7 @@ Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorith
 \begin{minipage}[c]{0.3\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild3_HA_histo.png}
 \end{minipage}
-\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Histogramm Ausgleich}
 \label{img:evalHA}
 \end{figure}
 \newpage
@@ -976,7 +975,7 @@ Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorith
 \begin{minipage}[c]{0.3\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild3_GW_histo.png}
 \end{minipage}
-\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Gray-World Algorithmus}
 \label{img:evalGW}
 \end{figure}
 \newpage
@@ -1018,7 +1017,7 @@ Die Datensätze sind mit dem verwendeten Aufbau und den Normalisierungs Algorith
 \begin{minipage}[c]{0.3\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild3_HS_histo.png}
 \end{minipage}
-\caption{Links: das aufgenommene Bild im Datensatz ohne Normalisierung, Mitte: Segmentiertes Objekt aus dem Hintergrund entnommen, Rechts: Histogramm inkl. Rot-, Grün-, Blau-Kanal}
+\caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation}
 \label{img:evalHS}
 \end{figure}
 \newpage

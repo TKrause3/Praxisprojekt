@@ -38,7 +38,7 @@
     \field{sortinithash}{A}
     \field{title}{color correction algorithm in python}
     \verb{url}
-    \verb https://gist.github.com/shunsukeaihara/4603234
+    \verb https://bit.ly/2LwjBY7
     \endverb
     \field{year}{2012}
   \endentry
@@ -64,7 +64,7 @@
     \field{sortinithash}{A}
     \field{title}{Optical character recognition für chinesische Schrift}
     \verb{url}
-    \verb http://pille.iwr.uni-heidelberg.de/~ocr01/nnet.html
+    \verb https://bit.ly/2VfsQOL
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -154,8 +154,7 @@
     \field{title}{Why are neuron axons long and spindly? Study shows they're
   optimizing signaling efficiency}
     \verb{url}
-    \verb https://medicalxpress.com/news/2018-07-neuron-axons-spindly-theyre-op
-    \verb timizing.html
+    \verb https://bit.ly/2zOekEL
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -180,7 +179,7 @@
     \field{sortinithash}{D}
     \field{title}{Google DeepMind Challenge Match: Lee Sedol vs AlphaGo}
     \verb{url}
-    \verb https://www.youtube.com/watch?v=l-GsfyVCBu0
+    \verb https://bit.ly/1M7Y9io
     \endverb
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
@@ -251,7 +250,7 @@
     \field{labelalpha}{Eve+}
     \field{sortinit}{E}
     \field{sortinithash}{E}
-  \field{howpublished}{http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html}
+    \field{howpublished}{https://bit.ly/2Yy6tFG}
     \field{title}{The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007
   {(VOC2007)} {R}esults}
   \endentry
@@ -348,8 +347,7 @@
     \field{sortinithash}{J}
     \field{title}{OpenCV Python equalizeHist colored image}
     \verb{url}
-    \verb https://stackoverflow.com/questions/31998428/opencv-python-equalizehi
-    \verb st-colored-image
+    \verb https://bit.ly/3270Z6X
     \endverb
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
@@ -420,8 +418,7 @@
     \field{sortinithash}{L}
     \field{title}{Tensorflow detection model zoo}
     \verb{url}
-    \verb https://github.com/tensorflow/models/blob/master/research/object_dete
-    \verb ction/g3doc/detection_model_zoo.md
+    \verb https://bit.ly/2EtFjJP
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -448,7 +445,7 @@
     \field{sortinithash}{M}
     \field{title}{Convolutional Neural Networks, Explained}
     \verb{url}
-    \verb https://www.datascience.com/blog/convolutional-neural-network
+    \verb https://bit.ly/2FMuRMg
     \endverb
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
@@ -608,7 +605,7 @@
     \field{sortinithash}{T}
     \field{title}{labelimg}
     \verb{url}
-    \verb https://github.com/tzutalin/labelImg
+    \verb https://bit.ly/2uvF2jj
     \endverb
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
@@ -637,7 +634,7 @@
     \field{sortinithash}{W}
     \field{title}{Max-pooling / Pooling}
     \verb{url}
-    \verb https://computersciencewiki.org/index.php/Max-pooling_/_Pooling
+    \verb https://bit.ly/2OzVjdB
     \endverb
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
@@ -662,7 +659,7 @@
     \field{sortinithash}{W}
     \field{title}{Künstliches Neuron}
     \verb{url}
-    \verb https://de.wikipedia.org/wiki/K%C3%BCnstliches_Neuron
+    \verb https://bit.ly/2Xmy6oj
     \endverb
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}

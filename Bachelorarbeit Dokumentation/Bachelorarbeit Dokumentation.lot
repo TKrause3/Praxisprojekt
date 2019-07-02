@@ -21,12 +21,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {10}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}\relax }}{28}{table.caption.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {11}{\ignorespaces Genauigkeits-Berechnungen des Trainierten Modells ohne Normalisierungsverfahren\relax }}{33}{table.caption.117}
+\contentsline {table}{\numberline {11}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel Datensatz\relax }}{33}{table.caption.106}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {12}{\ignorespaces Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung\relax }}{34}{table.caption.119}
+\contentsline {table}{\numberline {12}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz\relax }}{34}{table.caption.108}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13}{\ignorespaces Genauigkeitsberechnungen des Trainierten Modells mit Histogramm Ausgleich und Spezifizierung\relax }}{35}{table.caption.121}
+\contentsline {table}{\numberline {13}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz\relax }}{35}{table.caption.110}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {14}{\ignorespaces Klassen des Obst Datensatzes mit konstantem Hintergrund\relax }}{36}{table.caption.124}
+\contentsline {table}{\numberline {14}{\ignorespaces Klassen des Obst Datensatzes mit konstantem Hintergrund\relax }}{36}{table.caption.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {15}{\ignorespaces Genauigkeits-Berechnungen des Modells des Obst Datensatzes\relax }}{36}{table.caption.126}
+\contentsline {table}{\numberline {15}{\ignorespaces Genauigkeits-Berechnungen des Modells des Obst Datensatzes\relax }}{36}{table.caption.115}

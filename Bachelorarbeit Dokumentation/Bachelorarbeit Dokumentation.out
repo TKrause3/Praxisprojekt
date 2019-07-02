@@ -18,15 +18,15 @@
 \BOOKMARK [2][]{subsection.53}{3.2 Trainingsdaten}{section.50}% 18
 \BOOKMARK [2][]{subsection.57}{3.3 Normalisierung-Algorithmen}{section.50}% 19
 \BOOKMARK [3][]{subsubsection.58}{3.3.1 Gray-World-Algorithmus}{subsection.57}% 20
-\BOOKMARK [3][]{subsubsection.67}{3.3.2 Histogramm Ausgleich}{subsection.57}% 21
-\BOOKMARK [3][]{subsubsection.85}{3.3.3 Histogramm Spezifikation}{subsection.57}% 22
-\BOOKMARK [1][]{section.114}{4 Ergebnisse}{}% 23
-\BOOKMARK [2][]{subsection.115}{4.1 Frameworks und Entwicklungsumgebung}{section.114}% 24
-\BOOKMARK [2][]{subsection.116}{4.2 Nahrungsmittel Datensatz}{section.114}% 25
-\BOOKMARK [2][]{subsection.118}{4.3 PascalVOC Datensatz}{section.114}% 26
-\BOOKMARK [2][]{subsection.120}{4.4 Stanford Dogs Dataset}{section.114}% 27
-\BOOKMARK [2][]{subsection.122}{4.5 Zwischenstand}{section.114}% 28
-\BOOKMARK [2][]{subsection.123}{4.6 Obst Datensatz}{section.114}% 29
-\BOOKMARK [2][]{subsection.125}{4.7 Auswertung des Obst Datensatzes}{section.114}% 30
-\BOOKMARK [1][]{section.127}{5 Diskussion}{}% 31
-\BOOKMARK [1][]{section.130}{6 Fazit}{}% 32
+\BOOKMARK [3][]{subsubsection.78}{3.3.2 Histogramm Ausgleich}{subsection.57}% 21
+\BOOKMARK [3][]{subsubsection.92}{3.3.3 Histogramm Spezifikation}{subsection.57}% 22
+\BOOKMARK [1][]{section.103}{4 Ergebnisse}{}% 23
+\BOOKMARK [2][]{subsection.104}{4.1 Frameworks und Entwicklungsumgebung}{section.103}% 24
+\BOOKMARK [2][]{subsection.105}{4.2 Nahrungsmittel Datensatz}{section.103}% 25
+\BOOKMARK [2][]{subsection.107}{4.3 PascalVOC Datensatz}{section.103}% 26
+\BOOKMARK [2][]{subsection.109}{4.4 Stanford Dogs Dataset}{section.103}% 27
+\BOOKMARK [2][]{subsection.111}{4.5 Zwischenstand}{section.103}% 28
+\BOOKMARK [2][]{subsection.112}{4.6 Obst Datensatz}{section.103}% 29
+\BOOKMARK [2][]{subsection.114}{4.7 Auswertung des Obst Datensatzes}{section.103}% 30
+\BOOKMARK [1][]{section.116}{5 Diskussion}{}% 31
+\BOOKMARK [1][]{section.119}{6 Fazit}{}% 32
