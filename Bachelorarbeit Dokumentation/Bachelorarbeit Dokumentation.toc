@@ -59,8 +59,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6}Obst Datensatz}{35}{subsection.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{35}{subsection.114}
+\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{36}{subsection.114}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{36}{section.116}
+\contentsline {section}{\numberline {5}Diskussion}{37}{section.116}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{37}{section.119}
+\contentsline {section}{\numberline {6}Fazit}{38}{section.119}

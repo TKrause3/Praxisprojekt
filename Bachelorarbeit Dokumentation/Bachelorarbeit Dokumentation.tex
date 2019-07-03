@@ -837,6 +837,7 @@ Apfel & Birne\\
 \end{table}  
 Dieser Datensatz wird nun genau wie die vorherigen Datensätze, mit den unterschiedlichen Methoden Normalisiert. Dabei soll zum einen die Genauigkeit der einzelnen Klassen betrachtet werden, zum anderen die Trainingsdaten an sich. Dabei soll überprüft werden, ob die Trainingsbilder wie erwartet aussehen und was für Anomalien auftreten. 
 \subsection{Auswertung des Obst Datensatzes}
+Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das die Normalisierungsmethoden keinen Negativen Einfluss auf den Datensatz haben. Da die genauigkeit bei 100\% der Testdaten lagen, kann von den Zahlen aus, leider keine Aussage getroffen werden, inwieweit die Methoden einen positiven Einfluss auf die Klassifizierung haben. Eine weitere Möglichkeit dies zu überprüfen, könnte mit Hilfe besonders schwierigen Testbildern überprüft werden. Dafür sollen Bildaufnahmen bei sehr unterschiedlichen Lichteinflüssen verwendet werden.
 \begin{table}
 [h]
 \caption{Genauigkeits-Berechnungen des Modells des Obst Datensatzes}
@@ -845,17 +846,18 @@ Dieser Datensatz wird nun genau wie die vorherigen Datensätze, mit den untersch
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Orange & 1.000 & 1.000 & 0.000 & 0.000\\
-Nektarine & 1.000 & 1.000 & 0.000 & 0.000\\
-Banane & 1.000 & 1.000 & 0.000 & 0.000\\
-Mango & 1.000 & 1.000 & 0.000 & 0.000\\
-Apfel & 1.000 & 1.000 & 0.000 & 0.000\\
-Birne & 1.000 & 1.000 & 0.000 & 0.000\\
+Orange & 1.000 & 1.000 & 1.000 & 0.000\\
+Nektarine & 1.000 & 1.000 & 1.000 & 0.000\\
+Banane & 1.000 & 1.000 & 1.000 & 0.000\\
+Mango & 1.000 & 1.000 & 1.000 & 0.000\\
+Apfel & 1.000 & 1.000 & 0.999 & 0.000\\
+Birne & 1.000 & 1.000 & 1.000 & 0.000\\
 \hline
-mAP & 1.000 & 1.000 & 0.000 & 0.000\\
+mAP & 1.000 & 1.000 & 1.000 & 0.000\\
 \hline
 \end{tabular}
-\end{table}    
+\end{table}\\
+Die Auswertung der normalisierten Trainingsdaten hat ergeben, das wesentlich weniger farb-Anomalien auftreten. Dabei ist aufgefallen das gerade bei den Histogramm Normalisierungen mit einheitlichen Hintergrund deutliche Verbesserungen erzielt wurden. Zu große Veränderungen treten nur dann auf, wenn zu viele Objekte auf dem Bild enthalten sind, da diese die Umgebung zu stark abändern. Die Histogramm Spezifikation geht mit diesem Problem aber noch am besten um, weil dieser immer ein Referenz-Histogramm hat, um es anzupassen.        
   \newpage
 \section{Diskussion}
 In diesem Kapitel sollen die Ergebnisse und Erkenntnisse welche im Verlauf der Arbeit herausgearbeitet wurden kurz aufgeführt und erläutert werden, damit am ende ein Gesammtfazit gezogen werden kann.\\\\
