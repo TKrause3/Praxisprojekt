@@ -6,27 +6,28 @@
 \BOOKMARK [1][]{section.17}{2 Theoretische Grundlagen}{}% 6
 \BOOKMARK [2][]{subsection.18}{2.1 K\374nstliche Intelligenz}{section.17}% 7
 \BOOKMARK [2][]{subsection.19}{2.2 Neuronale Netze}{section.17}% 8
-\BOOKMARK [3][]{subsubsection.28}{2.2.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.19}% 9
-\BOOKMARK [3][]{subsubsection.33}{2.2.2 Entstehung von Trainingsdaten}{subsection.19}% 10
-\BOOKMARK [2][]{subsection.35}{2.3 Mean average Precision}{section.17}% 11
-\BOOKMARK [2][]{subsection.37}{2.4 Digitale Bilder}{section.17}% 12
-\BOOKMARK [3][]{subsubsection.38}{2.4.1 Aufbau von Digitalbildern}{subsection.37}% 13
-\BOOKMARK [3][]{subsubsection.40}{2.4.2 Einfluss von Belichtungen}{subsection.37}% 14
-\BOOKMARK [3][]{subsubsection.41}{2.4.3 Arten der Farbnormalisierung}{subsection.37}% 15
-\BOOKMARK [1][]{section.50}{3 Methodik und Durchf\374hrung}{}% 16
-\BOOKMARK [2][]{subsection.51}{3.1 Verwendetes Modell}{section.50}% 17
-\BOOKMARK [2][]{subsection.53}{3.2 Trainingsdaten}{section.50}% 18
-\BOOKMARK [2][]{subsection.57}{3.3 Normalisierung-Algorithmen}{section.50}% 19
-\BOOKMARK [3][]{subsubsection.58}{3.3.1 Gray-World-Algorithmus}{subsection.57}% 20
-\BOOKMARK [3][]{subsubsection.78}{3.3.2 Histogramm Ausgleich}{subsection.57}% 21
-\BOOKMARK [3][]{subsubsection.92}{3.3.3 Histogramm Spezifikation}{subsection.57}% 22
-\BOOKMARK [1][]{section.103}{4 Ergebnisse}{}% 23
-\BOOKMARK [2][]{subsection.104}{4.1 Frameworks und Entwicklungsumgebung}{section.103}% 24
-\BOOKMARK [2][]{subsection.105}{4.2 Nahrungsmittel Datensatz}{section.103}% 25
-\BOOKMARK [2][]{subsection.107}{4.3 PascalVOC Datensatz}{section.103}% 26
-\BOOKMARK [2][]{subsection.109}{4.4 Stanford Dogs Dataset}{section.103}% 27
-\BOOKMARK [2][]{subsection.111}{4.5 Zwischenstand}{section.103}% 28
-\BOOKMARK [2][]{subsection.112}{4.6 Obst Datensatz}{section.103}% 29
-\BOOKMARK [2][]{subsection.114}{4.7 Auswertung des Obst Datensatzes}{section.103}% 30
-\BOOKMARK [1][]{section.116}{5 Diskussion}{}% 31
-\BOOKMARK [1][]{section.119}{6 Fazit}{}% 32
+\BOOKMARK [3][]{subsubsection.29}{2.2.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.19}% 9
+\BOOKMARK [3][]{subsubsection.34}{2.2.2 Entstehung von Trainingsdaten}{subsection.19}% 10
+\BOOKMARK [2][]{subsection.36}{2.3 Mean average Precision}{section.17}% 11
+\BOOKMARK [2][]{subsection.38}{2.4 Digitale Bilder}{section.17}% 12
+\BOOKMARK [3][]{subsubsection.39}{2.4.1 Aufbau von Digitalbildern}{subsection.38}% 13
+\BOOKMARK [3][]{subsubsection.41}{2.4.2 Einfluss von Belichtungen}{subsection.38}% 14
+\BOOKMARK [3][]{subsubsection.42}{2.4.3 Arten der Farbnormalisierung}{subsection.38}% 15
+\BOOKMARK [1][]{section.51}{3 Methodik und Durchf\374hrung}{}% 16
+\BOOKMARK [2][]{subsection.52}{3.1 Verwendetes Modell}{section.51}% 17
+\BOOKMARK [2][]{subsection.54}{3.2 Trainingsdaten}{section.51}% 18
+\BOOKMARK [2][]{subsection.58}{3.3 Normalisierung-Algorithmen}{section.51}% 19
+\BOOKMARK [3][]{subsubsection.59}{3.3.1 Gray-World-Algorithmus}{subsection.58}% 20
+\BOOKMARK [3][]{subsubsection.79}{3.3.2 Histogramm Ausgleich}{subsection.58}% 21
+\BOOKMARK [3][]{subsubsection.93}{3.3.3 Histogramm Spezifikation}{subsection.58}% 22
+\BOOKMARK [1][]{section.104}{4 Ergebnisse}{}% 23
+\BOOKMARK [2][]{subsection.105}{4.1 Frameworks und Entwicklungsumgebung}{section.104}% 24
+\BOOKMARK [2][]{subsection.106}{4.2 Nahrungsmittel Datensatz}{section.104}% 25
+\BOOKMARK [2][]{subsection.108}{4.3 PascalVOC Datensatz}{section.104}% 26
+\BOOKMARK [2][]{subsection.110}{4.4 Stanford Dogs Dataset}{section.104}% 27
+\BOOKMARK [2][]{subsection.112}{4.5 Zwischenstand}{section.104}% 28
+\BOOKMARK [2][]{subsection.113}{4.6 Obst Datensatz}{section.104}% 29
+\BOOKMARK [2][]{subsection.115}{4.7 Auswertung des Obst Datensatzes}{section.104}% 30
+\BOOKMARK [1][]{section.117}{5 Diskussion}{}% 31
+\BOOKMARK [2][]{subsection.120}{5.1 Laufzeittest}{section.117}% 32
+\BOOKMARK [1][]{section.122}{6 Fazit}{}% 33

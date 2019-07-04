@@ -1,34 +1,36 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Vergleich einer Szene welche einmal gut und einmal wenig ausgeleuchtet wurde\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {1}{\ignorespaces Szene mit unterschiedlicher Ausleuchtung\relax }}{6}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Aufbau eines Neurons \cite {neuron2018UoC}\relax }}{9}{figure.caption.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3}{\ignorespaces Schematische Modellierung eines Perzeptrons nach Rosenblatt \cite {perzeptron2019}\relax }}{10}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic}\relax }}{12}{figure.caption.25}
+\contentsline {figure}{\numberline {4}{\ignorespaces Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic}\relax }}{12}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Aufbau eines Convolutional neural Network \cite {info7040061}\relax }}{13}{figure.caption.26}
+\contentsline {figure}{\numberline {5}{\ignorespaces Aufbau eines Convolutional neural Network \cite {info7040061}\relax }}{13}{figure.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Funktionsweise der Faltungsschicht \cite {convolutional2019layer}\relax }}{16}{figure.caption.31}
+\contentsline {figure}{\numberline {6}{\ignorespaces Funktionsweise der Faltungsschicht \cite {convolutional2019layer}\relax }}{16}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling variante \cite {pooling2018layer}\relax }}{16}{figure.caption.32}
+\contentsline {figure}{\numberline {7}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling variante \cite {pooling2018layer}\relax }}{16}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labelimg Programm \cite {labelimg2019}\relax }}{17}{figure.caption.34}
+\contentsline {figure}{\numberline {8}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labelimg Programm \cite {labelimg2019}\relax }}{17}{figure.caption.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}\relax }}{21}{figure.caption.39}
+\contentsline {figure}{\numberline {9}{\ignorespaces Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}\relax }}{21}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Auswirkung des Gray-World Algorithmus\relax }}{30}{figure.caption.77}
+\contentsline {figure}{\numberline {10}{\ignorespaces Auswirkung des Gray-World Algorithmus\relax }}{30}{figure.caption.78}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Auswirkung der Histogramm Ausgleichung\relax }}{30}{figure.caption.91}
+\contentsline {figure}{\numberline {11}{\ignorespaces Auswirkung der Histogramm Ausgleichung\relax }}{30}{figure.caption.92}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation\relax }}{31}{figure.caption.102}
+\contentsline {figure}{\numberline {12}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation\relax }}{31}{figure.caption.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung\relax }}{37}{figure.caption.118}
+\contentsline {figure}{\numberline {13}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung\relax }}{38}{figure.caption.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Histogramm Ausgleich\relax }}{41}{figure.caption.124}
+\contentsline {figure}{\numberline {14}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Histogramm Ausgleich\relax }}{43}{figure.caption.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Gray-World Algorithmus\relax }}{42}{figure.caption.127}
+\contentsline {figure}{\numberline {15}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Gray-World Algorithmus\relax }}{44}{figure.caption.130}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation\relax }}{43}{figure.caption.130}
+\contentsline {figure}{\numberline {16}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation\relax }}{45}{figure.caption.133}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {17}{\ignorespaces Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen\relax }}{46}{figure.caption.134}
