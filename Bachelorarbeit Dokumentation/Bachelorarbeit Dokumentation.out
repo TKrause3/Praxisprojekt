@@ -4,15 +4,15 @@
 \BOOKMARK [2][]{subsection.11}{1.3 Anforderungen}{section.7}% 4
 \BOOKMARK [2][]{subsection.16}{1.4 Struktur der Arbeit}{section.7}% 5
 \BOOKMARK [1][]{section.17}{2 Theoretische Grundlagen}{}% 6
-\BOOKMARK [2][]{subsection.18}{2.1 K\374nstliche Intelligenz}{section.17}% 7
-\BOOKMARK [2][]{subsection.19}{2.2 Neuronale Netze}{section.17}% 8
-\BOOKMARK [3][]{subsubsection.29}{2.2.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.19}% 9
-\BOOKMARK [3][]{subsubsection.34}{2.2.2 Entstehung von Trainingsdaten}{subsection.19}% 10
-\BOOKMARK [2][]{subsection.36}{2.3 Mean average Precision}{section.17}% 11
-\BOOKMARK [2][]{subsection.38}{2.4 Digitale Bilder}{section.17}% 12
-\BOOKMARK [3][]{subsubsection.39}{2.4.1 Aufbau von Digitalbildern}{subsection.38}% 13
-\BOOKMARK [3][]{subsubsection.41}{2.4.2 Einfluss von Belichtungen}{subsection.38}% 14
-\BOOKMARK [3][]{subsubsection.42}{2.4.3 Arten der Farbnormalisierung}{subsection.38}% 15
+\BOOKMARK [2][]{subsection.18}{2.1 Digitale Bilder}{section.17}% 7
+\BOOKMARK [3][]{subsubsection.19}{2.1.1 Aufbau von Digitalbildern}{subsection.18}% 8
+\BOOKMARK [3][]{subsubsection.21}{2.1.2 Einfluss von Belichtungen}{subsection.18}% 9
+\BOOKMARK [3][]{subsubsection.22}{2.1.3 Arten der Farbnormalisierung}{subsection.18}% 10
+\BOOKMARK [2][]{subsection.31}{2.2 K\374nstliche Intelligenz}{section.17}% 11
+\BOOKMARK [2][]{subsection.32}{2.3 Neuronale Netze}{section.17}% 12
+\BOOKMARK [3][]{subsubsection.42}{2.3.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.32}% 13
+\BOOKMARK [3][]{subsubsection.47}{2.3.2 Entstehung von Trainingsdaten}{subsection.32}% 14
+\BOOKMARK [2][]{subsection.49}{2.4 Mean average Precision}{section.17}% 15
 \BOOKMARK [1][]{section.51}{3 Methodik und Durchf\374hrung}{}% 16
 \BOOKMARK [2][]{subsection.52}{3.1 Verwendetes Modell}{section.51}% 17
 \BOOKMARK [2][]{subsection.54}{3.2 Trainingsdaten}{section.51}% 18

@@ -13,23 +13,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Theoretische Grundlagen}{8}{section.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}K\IeC {\"u}nstliche Intelligenz}{8}{subsection.18}
+\contentsline {subsection}{\numberline {2.1}Digitale Bilder}{8}{subsection.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Neuronale Netze}{8}{subsection.19}
+\contentsline {subsubsection}{\numberline {2.1.1}Aufbau von Digitalbildern}{10}{subsubsection.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Funktionsweise k\IeC {\"u}nstlicher und Faltender neuronaler Netze}{14}{subsubsection.29}
+\contentsline {subsubsection}{\numberline {2.1.2}Einfluss von Belichtungen}{12}{subsubsection.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Entstehung von Trainingsdaten}{16}{subsubsection.34}
+\contentsline {subsubsection}{\numberline {2.1.3}Arten der Farbnormalisierung}{12}{subsubsection.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}Mean average Precision}{18}{subsection.36}
+\contentsline {subsection}{\numberline {2.2}K\IeC {\"u}nstliche Intelligenz}{15}{subsection.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Digitale Bilder}{18}{subsection.38}
+\contentsline {subsection}{\numberline {2.3}Neuronale Netze}{16}{subsection.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}Aufbau von Digitalbildern}{20}{subsubsection.39}
+\contentsline {subsubsection}{\numberline {2.3.1}Funktionsweise k\IeC {\"u}nstlicher und Faltender neuronaler Netze}{22}{subsubsection.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Einfluss von Belichtungen}{22}{subsubsection.41}
+\contentsline {subsubsection}{\numberline {2.3.2}Entstehung von Trainingsdaten}{24}{subsubsection.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.3}Arten der Farbnormalisierung}{22}{subsubsection.42}
+\contentsline {subsection}{\numberline {2.4}Mean average Precision}{24}{subsection.49}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{26}{section.51}
 \defcounter {refsection}{0}\relax 

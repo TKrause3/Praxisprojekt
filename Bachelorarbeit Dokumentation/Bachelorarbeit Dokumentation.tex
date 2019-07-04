@@ -472,7 +472,7 @@ Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion ??? g??? überge
 \begin{eqnarray} g( \sum_{i=0}^n x_{i} *w_{i}) \end{eqnarray}\\
 Als Aktivierungsfunktion können sowohl lineare als auch nicht linearen Funktionen verwendet werden. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} ??? b ??? addiert.\\
 \begin{eqnarray} g(( \sum_{i=0}^n x_{i} *w_{i}) +b \end{eqnarray}\\
-Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht ??? w_{jb} ??? , welches unabhängig der Eingabewerte ist.\\
+Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht ??? $w_{jb}$ ??? , welches unabhängig der Eingabewerte ist.\\
 \begin{eqnarray} Bias = 1*w_{jb} \end{eqnarray}\\\\
 Maschinelles Lernen möchte unter anderem Maschinen in die Lage versetzten Objekte, Strukturen oder auch Abläufe anhand von vorher beigebrachten Beispielen eigenständig zu erkennen. Eine Methode um dieses Ziel erreichen zu können sind die künstlichen neuronalen Netze. Diese werden mit Datensätzen des jeweiligen Schwerpunktes trainiert. Es gibt vier grundlegende Methoden ein solches Netz zu trainieren.\\\\
 \textbf{Überwachtes lernen}\\
@@ -550,9 +550,6 @@ Die Pooling Schicht oder auch \textit{Pooling Layer} kommt nach jeder Faltungssc
 nachdem das Eingabebild durch alle Faltungs- und Pooling Schichten verarbeitet wurde, werden die Daten an den Fully connected Layer übergeben \cite[14]{sermanet2012convolutional}. Dieser verwendet, wie bei einem normalen KNN, Perzeproten um die Daten zu verarbeiten. Die vorherigen Schichten wurden durchlaufen, damit diese rechenintensive Schicht nicht zu viel Informationen verarbeiten muss. 
   \subsubsection{Entstehung von Trainingsdaten}\label{s.trainingsdaten} 
 Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benötigt es zunächst eine Reihe von Beispieldaten. Anhand dieser Beispieldaten lernt das neuronale Netz, welche Eigenschaften das zu erlernende Objekt hat und wie es aufgebaut ist. Für diesen Vorgang werden üblicherweise mehrere Hunderttausend Daten benötigt, um ein akzeptables Ergebnis zu erzielen. Eine Möglichkeit, das Training mit weniger Trainingsdaten durchzuführen, ist das Verwenden vortrainierter Netze. Diese Netze wurden mit rund 300.000 Bildern über mehrere Tage trainiert und als Open Source zur Verfügung gestellt. Beim Verwenden dieser Netze werden lediglich die obersten Schichten, welche für die Zuweisung verantwortlich sind, durch den neuen Datensatz verändert wodurch wesentlich weniger Testdaten pro Objektklasse benötigt werden. 
-
-
-
 \begin{figure}
 	[h]
 	\centering
@@ -608,7 +605,6 @@ Klassenname & Klassenname\\
 Milch - Packung & Orangensaft - Packung\\
 Wasser - Flasche & Bier - Flasche\\
 Brunch - Aufstrich & Margarine - Aufstrich\\
-
 \hline
 \end{tabular}
 \label{tab:nahrungsmittel}

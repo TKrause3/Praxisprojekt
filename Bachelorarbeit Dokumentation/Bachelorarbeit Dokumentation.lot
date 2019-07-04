@@ -1,23 +1,23 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Tabellarisches Histogramm des Zielbildes\relax }}{23}{table.caption.44}
+\contentsline {table}{\numberline {1}{\ignorespaces Tabellarisches Histogramm des Zielbildes\relax }}{13}{table.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung\relax }}{24}{table.caption.46}
+\contentsline {table}{\numberline {2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung\relax }}{14}{table.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1)\relax }}{24}{table.caption.47}
+\contentsline {table}{\numberline {3}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1)\relax }}{14}{table.caption.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B2)\relax }}{25}{table.caption.48}
+\contentsline {table}{\numberline {4}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B2)\relax }}{14}{table.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm\relax }}{25}{table.caption.49}
+\contentsline {table}{\numberline {5}{\ignorespaces Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm\relax }}{15}{table.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)\relax }}{25}{table.caption.50}
+\contentsline {table}{\numberline {6}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)\relax }}{15}{table.caption.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7}{\ignorespaces Modelle \cite {google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite {common2018data}\relax }}{26}{table.caption.53}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8}{\ignorespaces Datensatz mit Nahrungsmitteln\relax }}{27}{table.caption.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}\relax }}{27}{table.caption.56}
+\contentsline {table}{\numberline {9}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}\relax }}{28}{table.caption.56}
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {10}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}\relax }}{28}{table.caption.57}
 \defcounter {refsection}{0}\relax 
