@@ -258,7 +258,189 @@ Für ein besseres Verständnis der einzelnen Entwicklungsschritte in den später
 In der zweiten Hälfte der Arbeit wird es um die Durchführung des praktischen Teils der Arbeit gehen. In diesem wird zunächst die Grundlage aufgeführt, auf welcher das Training durchgeführt wurde. Die verwendeten Farbnormalisierungsverfahren werden zusätzlich in der technischen Umsetzung erläutert. Zum Schluss kommt es zur Durchführung des Trainings der verschiedenen Netze, welche daraufhin verglichen und ausgewertet werden. In einer Diskussion wird nun das Ergebnis der Auswertung anhand der angeführten These evaluiert und ein Fazit der Arbeit getroffen.
   \newpage
   \section{Theoretische Grundlagen}\label{s.grundlagen}
-Das folgende Kapitel soll eine kurze und leicht verständliche Einführung sein. In den nächsten Abschnitten soll es um die Themen der künstlichen neuronalen Netze, der Aufbau digitaler Bilder, sowie die Bildverarbeitung gehen. Zunächst beginnt der kommende Abschnitt mit einigen Schwerpunkten der künstlichen neuronalen Netze und einer kurzen Einführung in die künstliche Intelligenz. Dabei werden hauptsächlich für die Arbeit relevante Grundlagen vermittelt und sind deswegen nicht vollständig. 
+  Das folgende Kapitel soll eine kurze und leicht verständliche Einführung sein, in dem die Theoretischen Grundlagen über den Aufbau von digitalen Bildern der einfluss von Belichtung sowie den verwendeten Bildbearbeitung Methoden gelegt. Anschlißend folgt ein Überblick über die Grundlagen der künstlichen Intelligen. Der letzte Abschnitt wittmet sich den Schwerpunkten der künstlichen neuronalen Netze. Dabei werden hauptsächlich für die Arbeit relevante Grundlagen vermittelt. 
+  \subsection{Digitale Bilder}\label{s.digibilder}
+  Damit der Ansatz der These, dass die Farbnormalisierung von Trainingsdaten das Trainingsverhalten und die spätere Genauigkeit künstlicher neuronaler Netze verbessern kann, nachvollzogen werden kann, soll in diesem Unterkapitel, auf die Aufnahme digitaler Bilder, mit deren Eigenschaften und Aufbau eingegangen werden. Außerdem sollen die Schwächen herausgearbeitet und mögliche Lösungsansätze erläutert werden. Zunächst folgt eine kurze Einführung.\\\\
+  Noch vor einiger Zeit war die Aufnahme und Verarbeitung von Bildern nur einer kleinen Gruppe von Spezialisten, mit kostspieliger Ausrüstung möglich. Spätestens seid der Entwicklung von digitalen Aufnahmegeräten wie Digitalkameras, Scannern und Multimedia-PCs ist die Aufnahme und Verarbeitung von Bildern, nicht mehr einer kleinen Gruppe von Spezialisten vorbehalten, sondern für jeden erschwinglich. Mittlerweile gibt es eine riesige Community von Menschen, bei denen das Arbeiten mit digitalen Bildern schon längst zum Alltag geworden sind. Durch heutige Bildverarbeitungsprogramme wird ein tiefer gehendes Wissen nicht mehr zwingend vorausgesetzt, denn viele komplexen Abläufe werden automatisiert. Das führt zu dem Problem, das Aufbau und zusammenhänge der Bilder häufig nicht verstanden und falsch genutzt werden. Auch im professionellen Bereich wie, Werbung, Medizin, Deep Learning, werden fast ausschließlich digitale Bilder verwendet. Auch hier entstehen oft, durch das fehlende Verständnis der Zusammenhänge, häufig zur Unterschätzung der Probleme und nicht selten zu ineffizienten Lösungen, teuren Fehlern und persönlicher Frustration.\\
+  Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, also mit der Bearbeitung von Bildern mittels Bearbeitungssoftware. In der Bildverarbeitung geht es anders als in der Bearbeitung, um die Software selber, welche für die Konzeption und Erstellung von digitalen Bildern genutzt wird. In der Programmierung sind Bilder nichts weiter als Zahlen-Matrizen ??wie in Abbildung ... ein bild von einem Graustufen Bild und seiner Matrix (3x3)  könnte hier gut sein??? , welche man nach Belieben lesen und verändern kann, um seine geplanten Ziele zu erreichen. Grundsätzlich bestehen digitale Bilder aus rastern. Diese besitzen mehrere werte, welche auch Pixel genannt werden. In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (CMY, CMYK, HSV, Lab, etc).\\\\
+  \textbf{RGB}\label{s.rgb}\\
+  Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in () ??? Verweiß fehlt ??? kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).\\\\
+  \textbf{HSV}\label{s.hsv}\\
+  Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\
+  \textbf{CMY/CMYK}\label{s.cmy}\\
+  Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.\\\\
+  \textbf{Lab}\label{s.lab}\\
+  Der Lab-Farbraum ist ein Messraum, in welchem jede wahrnehmbare Farbe enthalten ist. Der Farbraum wurde auf Grundlage der Gegenfarbentheorie konstruiert. Eine wichtige Eigenschaft, ist die Geräteunabhängigkeit. Das bedeutet, die Farben werden unabhängig der Erzeugung und der Wiedergabe definiert. Die umfassende Definition kann in der DIN 6174 nachgelesen werden. Auf Grundlage der Gegenfarbentheorie liegen sich auf der a Achse die Farben Grün und Rot gegenüber. Die b Achse entspricht den Gegenfarben Blau und Gelb. Senkrecht durch die Ebenen befindet sich die L Achse welche von 0 (weiß) bis 100 (Schwarz) geht. Diese gibt die Helligkeit wieder und hat Zwischenschritte für die Graustufen.
+    \subsubsection{Aufbau von Digitalbildern}\label{s.aufbdigibilder}
+  Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.\\\\
+  \textbf{Histogramme}\label{s.histogramme}\\
+  Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digitale}. Speziell bei Bildern zeigen Histogramme die Häufigkeit der auftretenden Intensität-werte. Am einfachsten lässt sich das mit Graustufenbildern nachvollziehen. Ein Beispiel dafür zeigt die (Abbildung \ref{img:histogramm}) für ein Graustufenbild $I$ mit möglichen Intensität-werten im Bereich $I(n,V)E[0,K-1]$ enthält das Histogramm $H$ genau $K$ Einträge. Die Menge der Einträge bei einem 8 Bit Graustufenbild sind $2^8$ Farbabstufungen ($K=2^8=256$). Der Wert des Histogramms an der Stelle $i$ ist $h(i)$ die Anzahl der Pixel von $I$ mit einem Intensitätswert $i$, für alle ($0<i<K$). Mathematisch ausgedrückt ergibt sich $h(i)=card{(u,v) | I(u,v)=i}$\\
+  daraus lässt sich entnehmen, dass $h(0)$ die Anzahl der Pixel mit dem Wert 0, $h(1)$ die Anzahl des Wertes 1 usw., $h(255)$ ist schließlich der letzte Wert und gibt die Menge aller weißen Pixel in dem Bild an $(K-1)$. Eine Histogramm Berechnung stellt somit einen eindimensionalen Vektor $h$ der Länge $K$ da.\\
+  \begin{figure}
+    [h]
+    \centering
+    \includegraphics[scale=1.0]{Sources/histogramm.jpg}
+    \caption{Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite[42]{burger2009digitale}}
+    \label{img:histogramm}
+  \end{figure}
+  $card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
+  Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
+  \textbf{Kontrast}\label{s.kontrast}\\
+  Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abb. (NOCH HINZUFÜGEN) die verschiedenen Histogramme zeigen.\\\\
+  \textbf{Dynamik}\label{s.dynamik}\\
+  Dynamik bedeutet, wie viel verschiedene Pixelwerten in einem Bild genutzt werden, und die jeweilige Anzahl\cite[44]{burger2009digitale}. Im besten Fall entspricht die Dynamik der insgesamt genutzten Anzahl an Pixelwerten. Also $K-1$ genutzter Farbabstufungen, damit der Wertebereich voll ausgeschöpft wird.\\\\
+  Anders als der Kontrast, welcher immer erhöht werden kann, solange der maximale Wertebereich nicht erreicht worden ist, kann die Dynamik eines Bildes nicht so leicht verbessert werden. Aus diesem Grund ist eine hohe Dynamik von Vorteil, denn dadurch wird die Gefahr von Qualitätsverlust bei Verarbeitungsschritten verringert. Trotz der Tatsache, das viele Ausgabegeräte mit Farbtiefen von 8 Bit arbeiten, nehmen heutige Kameras bis zu 12-14 Bit pro Kanal auf, um einen möglichen Qualitätsverlust vorzubeugen.
+    \subsubsection{Einfluss von Belichtungen}\label{s.belichtung}
+  In dem Kapitel\ref{s.aufbdigibilder} wurde Beschrieben wie die Farben in Bildern gespeichert werden und welche unterschiedlichen Arten von Farbräumen es gibt \cite[41ff.]{burger2009digitale}. Bei der Aufnahme von Bildern ist gerade die Belichtung entscheiden. Eine hohe Belichtung sorgt dafür, dass Farben heller wirken, wobei wenig licht dafür sorgt das Farben dunkler erscheinen. Diese Tatsache kann beim Deep Learning zu Problemen führen, da ein und dasselbe Objekt unterschiedliche Farben annehmen kann und je nach Belichtungsintensität variiert. Ein künstliches neuronales Netz kann Objekte welche es normalerweise trainiert hat nicht immer erkennen, wenn die Farbe zu stark von der eigentlichen Farbe abweicht. Um Belichtungen auf Bildern auszugleichen und zu normalisieren, gibt es einige verfahren, welche diesem Problem entgegenwirken. Die Ausgewählten verfahren werden aufgeführt und beschrieben. Diese stellen nicht die Originalfarbe des Objektes wieder her, sondern sorgen für eine konstante Farbvariation, welche sich nicht stark verändert.
+    \subsubsection{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}
+  Die Farbnormalisierung ist ein Thema der Bildverarbeitung und wird hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.\\\\
+  \textbf{Gray-World-Algorithmus}\label{s.gw}\\
+  Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Es wird davon ausgegangen, dass das Farbspektrum durch drei konstante Faktoren modelliert werden kann. Dafür skalieren die Konstanten $\alpha$, $\beta$ und $\gamma$ an die Kanäle R, G und B. Dadurch kann eine Konstanzlösung erzielt werden, welcher bei unterschiedlichen Belichtungen unveränderlich ist, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird, wie in folgender Formel beschrieben:\\
+  \begin{eqnarray} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{eqnarray}\\
+  Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein größeres Problem dieses Normalisierung-verfahren besteht darin, das nicht alle Variationen der Beleuchtungsintensität berücksichtigt und auch nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Variationen dieses Algorithmus.\\\\
+  \textbf{Histogramm Ausgleichung}\label{s.ha}\\
+  Die Histogramm Ausgleichung ist eine Nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation-Funktion verwendet werden. Diese Normalisierung-Funktion gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.\\\\
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Zielbildes}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
+  \hline
+  \end{tabular}
+  \end{table}
+  \begin{table}
+  [h]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  0&1&5&1&7&2&0&3\\
+  \hline
+  0&0&5&5&5&2&4&5\\
+  \hline
+  4&5&1&4&1&5&1&4\\
+  \hline
+  5&1&2&4&5&2&6&3\\
+  \hline
+  5&2&6&4&0&4&0&5\\
+  \hline
+  4&0&2&4&7&4&6&2\\
+  \hline
+  5&1&6&1&0&1&1&5\\
+  \hline
+  4&3&2&4&2&5&2&5\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und durch die höchste Graustufe teilt. Das Ergebnis wird gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden.
+  \begin{table}
+  [h]
+  \caption{Mathematische Umsetzung der Histogrammausgleichung}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|}
+  \hline
+  $r_{k}$ & $P_{k}$ & Kumulative Werte & $Kumulative/Gesamt*(L-1)$ & Gerundete nahe Grauwerte\\
+  \hline
+  0 & 8 & 8 & $8/64*7=0.875$ & 1\\
+  \hline
+  1 & 10 & 18 & $18/64*7=1.968$ & 2\\
+  \hline
+  2 & 10 & 28 & $28/64*7=3.0625$ & 3\\
+  \hline
+  3 & 2 & 30 & $30/64*7=3.2812$ & 3\\
+  \hline
+  4 & 12 & 42 & $42/64*7=4.5937$ & 5\\
+  \hline
+  5 & 16 & 58 & $58/64*7=6.3437$ & 6\\
+  \hline
+  6 & 4 & 62 & $62/64*7=6.78125$ & 7\\
+  \hline
+  7 & 2 & 64 & $64/64*7=7$ & 7\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  \textbf{Histogramm Spezifikation}\label{s.hs}\\
+  Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat.
+  Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Hauptbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Hauptbild nicht optimiert ist. Zunächst wird mit beiden Bildern eine Histogramm Ausgleichung durchgeführt. Im Weiteren wird das Referenz-Histogramm mit dem des Hauptbildes kombiniert und angepasst.\\\\
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Referenz-Bildes (B2)}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 0 & 0 & 0 & 0 & 20 & 20 & 16 & 8\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen?und? zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. Nun werden die Histogramme wie in Absch\ref{s.histogramme} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle? Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
+  In einem Beispiel:
+  
+  1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
+  
+  2 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
+  
+  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
+  
+  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
+  
+  ......\\
+  \begin{table}
+  [h]
+  \caption{Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Graustufe & Ausgleichung B1 & Ausgleichung B2 & Spezifiziertes Histogramm\\
+  \hline
+  0 & 1 & 0 & 4\\
+  \hline
+  1 & 2 & 0 & 4\\
+  \hline
+  2 & 3 & 0 & 5\\
+  \hline
+  3 & 3 & 0 & 5\\
+  \hline
+  4 & 5 & 2 & 6\\
+  \hline
+  5 & 6 & 4 & 6\\
+  \hline
+  6 & 7 & 6 & 7\\
+  \hline
+  7 & 7 & 7 & 7\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  Aus der neuen Stufen Verteilung entsteht ein neues Histogramm welches weniger Farbstufen enthält. Dadurch verschiebt sich das Histogramm Richtung weiß und das Bild wird erhellt.
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+
   \subsection{Künstliche Intelligenz}\label{s.ki}
 Künstliche Intelligenz wird heute immer mehr von Firmen und Wissenschaft genutzt. In den letzten Jahren hat die nutzung von künstlichen Inteligenzen enorm zugenommen und Firmen nutzen diese Technologie beispielsweise für die analyse und vohersage von Kundenverhalten, für die Klassifikation von Bildern oder zur Spracherkennung in heutigen Smartphones. Mit künstlicher Intelligenz beschreibt man solche Computer, welche gewisse Aufgaben erledigen, ohne ausdrücklich dafür programmiert worden zu sein. Dabei werden Informationen anhand von Vergleichsdaten dem System zugeführt, wodurch er sich Eigenschaften und Strukturen merkt und durch diese Rückschlüsse und Prognosen ziehen kann. Eine gute Beschreibung geben dabei die Autoren Rich und Knight, in dem sie schreiben:\\\\
  \textit{Das Studium des Problems, Computer dazu zu bringen, Dinge zu tun, bei denen ihnen momentan der Mensch noch überlegen ist.} - (Rich und Knight 1991)\\\\
@@ -286,11 +468,11 @@ Die Grundlage für den mathematischen Ablauf künstlicher neuronaler Netze wurde
 \end{figure}\\
 Als Eingabewert bekommt das Perzeptron ein Gewicht $w$, welches mit den Eingangswert $x$ multipliziert wird. Das Ergebnis dieser beiden Werte, kann als lineare Funktion beschrieben werden.\\
 \begin{eqnarray} f(x) & = & w*x \end{eqnarray}\\
-Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion übergeben. Die Aktivierungsfunktion oder auch Schwellwert genannt, gibt ein Signal weiter, sobald dieser Wert überschritten wird.\\
+Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion ??? g??? übergeben. Die Aktivierungsfunktion oder auch Schwellwert genannt, gibt ein Signal weiter, sobald dieser Wert überschritten wird.\\
 \begin{eqnarray} g( \sum_{i=0}^n x_{i} *w_{i}) \end{eqnarray}\\
-Als Aktivierungsfunktion werden häufig lineare und nicht linearen Funktionen Verwendet. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} addiert.\\
+Als Aktivierungsfunktion können sowohl lineare als auch nicht linearen Funktionen verwendet werden. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} ??? b ??? addiert.\\
 \begin{eqnarray} g(( \sum_{i=0}^n x_{i} *w_{i}) +b \end{eqnarray}\\
-Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht, welches unabhängig der Eingabewerte ist.\\
+Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht ??? w_{jb} ??? , welches unabhängig der Eingabewerte ist.\\
 \begin{eqnarray} Bias = 1*w_{jb} \end{eqnarray}\\\\
 Maschinelles Lernen möchte unter anderem Maschinen in die Lage versetzten Objekte, Strukturen oder auch Abläufe anhand von vorher beigebrachten Beispielen eigenständig zu erkennen. Eine Methode um dieses Ziel erreichen zu können sind die künstlichen neuronalen Netze. Diese werden mit Datensätzen des jeweiligen Schwerpunktes trainiert. Es gibt vier grundlegende Methoden ein solches Netz zu trainieren.\\\\
 \textbf{Überwachtes lernen}\\
@@ -366,9 +548,11 @@ Die Pooling Schicht oder auch \textit{Pooling Layer} kommt nach jeder Faltungssc
 \end{figure}
 \textbf{Fully Connected Layer}
 nachdem das Eingabebild durch alle Faltungs- und Pooling Schichten verarbeitet wurde, werden die Daten an den Fully connected Layer übergeben \cite[14]{sermanet2012convolutional}. Dieser verwendet, wie bei einem normalen KNN, Perzeproten um die Daten zu verarbeiten. Die vorherigen Schichten wurden durchlaufen, damit diese rechenintensive Schicht nicht zu viel Informationen verarbeiten muss. 
-  \subsubsection{Entstehung von Trainingsdaten}\label{s.trainingsdaten} ??? Dieser Abschnitt ist sehr gemischt mit der konkreten umsetzung ???
-Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benötigt es zunächst eine Reihe von Beispieldaten. Anhand dieser Beispieldaten lernt das neuronale Netz, welche Eigenschaften das zu erlernende Objekt hat und wie es aufgebaut ist. Für diesen Vorgang werden üblicherweise mehrere Hunderttausend Daten benötigt, um ein akzeptables Ergebnis zu erzielen. Da für ein solches Training nicht die benötigten Ressourcen zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann ??? Dieser Satz gehört zu durchführung nicht in den Theorewtischen teil???. 
-Eine Möglichkeit, das Training mit weniger Trainingsdaten durchzuführen, ist das Verwenden vortrainierter Netze. Diese Netze wurden mit rund 300.000 Bildern über mehrere Tage trainiert und als Open Source zur Verfügung gestellt. Beim Verwenden dieser Netze werden lediglich die obersten Schichten, welche für die Zuweisung verantwortlich sind, durch den neuen Datensatz verändert. Durch das vortrainieren werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer normalen 12 Megapixel Kamera aufgenommen. Die verwendeten Objekte, müssen von allen möglichen Seiten fotografiert werden, dabei müssen, für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer 12 Megapixel Kamera mehrere 100 MB groß werden, müssen diese auf 100-200 KB komprimiert werden. \\
+  \subsubsection{Entstehung von Trainingsdaten}\label{s.trainingsdaten} 
+Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benötigt es zunächst eine Reihe von Beispieldaten. Anhand dieser Beispieldaten lernt das neuronale Netz, welche Eigenschaften das zu erlernende Objekt hat und wie es aufgebaut ist. Für diesen Vorgang werden üblicherweise mehrere Hunderttausend Daten benötigt, um ein akzeptables Ergebnis zu erzielen. Eine Möglichkeit, das Training mit weniger Trainingsdaten durchzuführen, ist das Verwenden vortrainierter Netze. Diese Netze wurden mit rund 300.000 Bildern über mehrere Tage trainiert und als Open Source zur Verfügung gestellt. Beim Verwenden dieser Netze werden lediglich die obersten Schichten, welche für die Zuweisung verantwortlich sind, durch den neuen Datensatz verändert wodurch wesentlich weniger Testdaten pro Objektklasse benötigt werden. 
+
+
+
 \begin{figure}
 	[h]
 	\centering
@@ -384,187 +568,7 @@ P&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsch\medspace
 R&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsche\medspace nicht\medspace erkannte}
 \end{eqnarray}\\
 Häufig wird ein Schwellwert für die Pseudowahrscheinlichkeit genutzt, mit welchem entschieden wird, wann ein erkanntes Objekt der Rückgabeliste hinzugefügt wird oder nicht. Wird der Schwellwert niedrig angesetzt, werden meist mehr Objekte, als erkannt eingestuft. Dadurch steigt der Rückgabewert mit richtig erkannten Objekten. Gleichzeitig sinkt aber auch die Präzision da natürlicherweise auch mehr falsche Objekte erkannt werden. Objekterkennungsverfahren mit einer hohen Qualität zeigen aber weiterhin eine gute Präzision.
-  \subsection{Digitale Bilder}\label{s.digibilder}
-Damit der Ansatz der These, dass die Farbnormalisierung von Trainingsdaten das Trainingsverhalten und die spätere Genauigkeit künstlicher neuronaler Netze verbessern kann, nachvollzogen werden kann, soll in diesem Unterkapitel, auf die Aufnahme digitaler Bilder, mit deren Eigenschaften und Aufbau eingegangen werden. Außerdem sollen die Schwächen herausgearbeitet und mögliche Lösungsansätze erläutert werden. Zunächst folgt eine kurze Einführung.\\\\
-Noch vor einiger Zeit war die Aufnahme und Verarbeitung von Bildern nur einer kleinen Gruppe von Spezialisten, mit kostspieliger Ausrüstung möglich. Spätestens seid der Entwicklung von digitalen Aufnahmegeräten wie Digitalkameras, Scannern und Multimedia-PCs ist die Aufnahme und Verarbeitung von Bildern, nicht mehr einer kleinen Gruppe von Spezialisten vorbehalten, sondern für jeden erschwinglich. Mittlerweile gibt es eine riesige Community von Menschen, bei denen das Arbeiten mit digitalen Bildern schon längst zum Alltag geworden sind. Durch heutige Bildverarbeitungsprogramme wird ein tiefer gehendes Wissen nicht mehr zwingend vorausgesetzt, denn viele komplexen Abläufe werden automatisiert. Das führt zu dem Problem, das Aufbau und zusammenhänge der Bilder häufig nicht verstanden und falsch genutzt werden. Auch im professionellen Bereich wie, Werbung, Medizin, Deep Learning, werden digitale Bilder fast ausschließlich verwendet. Auch hier entstehen oft, durch das fehlende Verständnis der Zusammenhänge, häufig zur Unterschätzung der Probleme und nicht selten zu ineffizienten Lösungen, teuren Fehlern und persönlicher Frustration.\\
-Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, also mit der Bearbeitung von Bildern mittels Bearbeitungssoftware. In der Bildverarbeitung geht es anders als in der Bearbeitung, um die Software selber, welche für die Konzeption und Erstellung von digitalen Bildern genutzt wird. In der Programmierung sind Bilder nichts weiter als Zahlen-Matrizen und Arrays, welche man nach Belieben lesen und verändern kann, um seine geplanten Ziele zu erreichen. Grundsätzlich bestehen digitale Bilder aus rastern. Diese besitzen mehrere werte, welche auch Pixel genannt werden. In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (CMY, CMYK, HSV, Lab, etc).\\\\
-\textbf{RGB}\label{s.rgb}\\
-Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in () kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).\\\\
-\textbf{HSV}\label{s.hsv}\\
-Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\
-\textbf{CMY/CMYK}\label{s.cmy}\\
-Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.\\\\
-\textbf{Lab}\label{s.lab}\\
-Der Lab-Farbraum ist ein Messraum, in welchem jede wahrnehmbare Farbe enthalten ist. Der Farbraum wurde auf Grundlage der Gegenfarbentheorie konstruiert. Eine wichtige Eigenschaft, ist die Geräteunabhängigkeit. Das bedeutet, die Farben werden unabhängig der Erzeugung und der Wiedergabe definiert. Die umfassende Definition kann in der DIN 6174 nachgelesen werden. Auf Grundlage der Gegenfarbentheorie liegen sich auf der a Achse die Farben Grün und Rot gegenüber. Die b Achse entspricht den Gegenfarben Blau und Gelb. Senkrecht durch die Ebenen befindet sich die L Achse welche von 0 (weiß) bis 100 (Schwarz) geht. Diese gibt die Helligkeit wieder und hat Zwischenschritte für die Graustufen.
-  \subsubsection{Aufbau von Digitalbildern}\label{s.aufbdigibilder}
-Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.\\\\
-\textbf{Histogramme}\label{s.histogramme}\\
-Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digitale}. Speziell bei Bildern zeigen Histogramme die Häufigkeit der auftretenden Intensität-werte. Am einfachsten lässt sich das mit Graustufenbildern nachvollziehen. Ein Beispiel dafür zeigt die (Abbildung \ref{img:histogramm}) für ein Graustufenbild $I$ mit möglichen Intensität-werten im Bereich $I(n,V)E[0,K-1]$ enthält das Histogramm $H$ genau $K$ Einträge. Die Menge der Einträge bei einem 8 Bit Graustufenbild sind $2^8$ Farbabstufungen ($K=2^8=256$). Der Wert des Histogramms an der Stelle $i$ ist $h(i)$ die Anzahl der Pixel von $I$ mit einem Intensitätswert $i$, für alle ($0<i<K$). Mathematisch ausgedrückt ergibt sich $h(i)=card{(u,v) | I(u,v)=i}$\\
-daraus lässt sich entnehmen, dass $h(0)$ die Anzahl der Pixel mit dem Wert 0, $h(1)$ die Anzahl des Wertes 1 usw., $h(255)$ ist schließlich der letzte Wert und gibt die Menge aller weißen Pixel in dem Bild an $(K-1)$. Eine Histogramm Berechnung stellt somit einen eindimensionalen Vektor $h$ der Länge $K$ da.\\
-\begin{figure}
-	[h]
-	\centering
-	\includegraphics[scale=1.0]{Sources/histogramm.jpg}
-	\caption{Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite[42]{burger2009digitale}}
-	\label{img:histogramm}
-\end{figure}
-$card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
-Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
-\textbf{Kontrast}\label{s.kontrast}\\
-Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abb. (NOCH HINZUFÜGEN) die verschiedenen Histogramme zeigen.\\\\
-\textbf{Dynamik}\label{s.dynamik}\\
-Dynamik bedeutet, wie viel verschiedene Pixelwerten in einem Bild genutzt werden, und die jeweilige Anzahl\cite[44]{burger2009digitale}. Im besten Fall entspricht die Dynamik der insgesamt genutzten Anzahl an Pixelwerten. Also $K-1$ genutzter Farbabstufungen, damit der Wertebereich voll ausgeschöpft wird.\\\\
-Anders als der Kontrast, welcher immer erhöht werden kann, solange der maximale Wertebereich nicht erreicht worden ist, kann die Dynamik eines Bildes nicht so leicht verbessert werden. Aus diesem Grund ist eine hohe Dynamik von Vorteil, denn dadurch wird die Gefahr von Qualitätsverlust bei Verarbeitungsschritten verringert. Trotz der Tatsache, das viele Ausgabegeräte mit Farbtiefen von 8 Bit arbeiten, nehmen heutige Kameras bis zu 12-14 Bit pro Kanal auf, um einen möglichen Qualitätsverlust vorzubeugen.
-  \subsubsection{Einfluss von Belichtungen}\label{s.belichtung}
-In dem Kapitel\ref{s.aufbdigibilder} wurde Beschrieben wie die Farben in Bildern gespeichert werden und welche unterschiedlichen Arten von Farbräumen es gibt \cite[41ff.]{burger2009digitale}. Bei der Aufnahme von Bildern ist gerade die Belichtung entscheiden. Eine hohe Belichtung sorgt dafür, dass Farben heller wirken, wobei wenig licht dafür sorgt das Farben dunkler erscheinen. Diese Tatsache kann beim Deep Learning zu Problemen führen, da ein und dasselbe Objekt unterschiedliche Farben annehmen kann und je nach Belichtungsintensität variiert. Ein künstliches neuronales Netz kann Objekte welche es normalerweise trainiert hat nicht immer erkennen, wenn die Farbe zu stark von der eigentlichen Farbe abweicht. Um Belichtungen auf Bildern auszugleichen und zu normalisieren, gibt es einige verfahren, welche diesem Problem entgegenwirken. Die Ausgewählten verfahren werden aufgeführt und beschrieben. Diese stellen nicht die Originalfarbe des Objektes wieder her, sondern sorgen für eine konstante Farbvariation, welche sich nicht stark verändert.
-  \subsubsection{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}
-Die Farbnormalisierung ist ein Thema der Bildverarbeitung und wird hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.\\\\
-\textbf{Gray-World-Algorithmus}\label{s.gw}\\
-Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Es wird davon ausgegangen, dass das Farbspektrum durch drei konstante Faktoren modelliert werden kann. Dafür skalieren die Konstanten $\alpha$, $\beta$ und $\gamma$ an die Kanäle R, G und B. Dadurch kann eine Konstanzlösung erzielt werden, welcher bei unterschiedlichen Belichtungen unveränderlich ist, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird, wie in folgender Formel beschrieben:\\
-\begin{eqnarray} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{eqnarray}\\
-Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein größeres Problem dieses Normalisierung-verfahren besteht darin, das nicht alle Variationen der Beleuchtungsintensität berücksichtigt und auch nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Variationen dieses Algorithmus.\\\\
-\textbf{Histogramm Ausgleichung}\label{s.ha}\\
-Die Histogramm Ausgleichung ist eine Nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation-Funktion verwendet werden. Diese Normalisierung-Funktion gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.\\\\
-\begin{table}
-[h]
-\caption{Tabellarisches Histogramm des Zielbildes}
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
-\hline
-Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
-\hline
-\end{tabular}
-\end{table}
-\begin{table}
-[h]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline
-0&1&5&1&7&2&0&3\\
-\hline
-0&0&5&5&5&2&4&5\\
-\hline
-4&5&1&4&1&5&1&4\\
-\hline
-5&1&2&4&5&2&6&3\\
-\hline
-5&2&6&4&0&4&0&5\\
-\hline
-4&0&2&4&7&4&6&2\\
-\hline
-5&1&6&1&0&1&1&5\\
-\hline
-4&3&2&4&2&5&2&5\\
-\hline
-\end{tabular}
-\end{table}\\
-Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und durch die höchste Graustufe teilt. Das Ergebnis wird gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden.
-\begin{table}
-[h]
-\caption{Mathematische Umsetzung der Histogrammausgleichung}
-\centering
-\begin{tabular}{|l|c|c|c|c|}
-\hline
-$r_{k}$ & $P_{k}$ & Kumulative Werte & $Kumulative/Gesamt*(L-1)$ & Gerundete nahe Grauwerte\\
-\hline
-0 & 8 & 8 & $8/64*7=0.875$ & 1\\
-\hline
-1 & 10 & 18 & $18/64*7=1.968$ & 2\\
-\hline
-2 & 10 & 28 & $28/64*7=3.0625$ & 3\\
-\hline
-3 & 2 & 30 & $30/64*7=3.2812$ & 3\\
-\hline
-4 & 12 & 42 & $42/64*7=4.5937$ & 5\\
-\hline
-5 & 16 & 58 & $58/64*7=6.3437$ & 6\\
-\hline
-6 & 4 & 62 & $62/64*7=6.78125$ & 7\\
-\hline
-7 & 2 & 64 & $64/64*7=7$ & 7\\
-\hline
-\end{tabular}
-\end{table}\\
-\textbf{Histogramm Spezifikation}\label{s.hs}\\
-Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat.
-Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Hauptbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Hauptbild nicht optimiert ist. Zunächst wird mit beiden Bildern eine Histogramm Ausgleichung durchgeführt. Im Weiteren wird das Referenz-Histogramm mit dem des Hauptbildes kombiniert und angepasst.\\\\
-\begin{table}
-[h]
-\caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
-\hline
-Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
-\hline
-\end{tabular}
-\end{table}\\
-\begin{table}
-[h]
-\caption{Tabellarisches Histogramm des Referenz-Bildes (B2)}
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
-\hline
-Anzahl der Pixel & 0 & 0 & 0 & 0 & 20 & 20 & 16 & 8\\
-\hline
-\end{tabular}
-\end{table}\\
-Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen?und? zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. Nun werden die Histogramme wie in Absch\ref{s.histogramme} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle? Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
-In einem Beispiel:
 
-1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
-
-2 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
-
-3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
-
-3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
-
-......\\
-\begin{table}
-[h]
-\caption{Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
-Graustufe & Ausgleichung B1 & Ausgleichung B2 & Spezifiziertes Histogramm\\
-\hline
-0 & 1 & 0 & 4\\
-\hline
-1 & 2 & 0 & 4\\
-\hline
-2 & 3 & 0 & 5\\
-\hline
-3 & 3 & 0 & 5\\
-\hline
-4 & 5 & 2 & 6\\
-\hline
-5 & 6 & 4 & 6\\
-\hline
-6 & 7 & 6 & 7\\
-\hline
-7 & 7 & 7 & 7\\
-\hline
-\end{tabular}
-\end{table}\\
-Aus der neuen Stufen Verteilung entsteht ein neues Histogramm welches weniger Farbstufen enthält. Dadurch verschiebt sich das Histogramm Richtung weiß und das Bild wird erhellt.
-\begin{table}
-[h]
-\caption{Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
-\hline
-Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
-\hline
-Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
-\hline
-\end{tabular}
-\end{table}\\
 \newpage
   \section{Methodik und Durchführung}\label{s.methudurchf}
 Nach der theoretischen Grundlage soll sich der zweite Teil der Arbeit um die Versuchsbeschreibung, Durchführung und Auswertung der Ergebnisse handeln. Dabei werden zunächst die verwendeten Datensätze sowie die umsetzung der Normalisierungs Algorithmen. In den Ergebnissen, wird auf die Versuchsumgebung und die verwendeten Frameworks eingegangen, und wie diese für den Versuch genutzt wurden.
@@ -588,6 +592,8 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \end{table}\\
 Das faster\_rcnn\_inception\_v2\_coco soll für das Projekt verwendet werden. Dieses hat eine mAP von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste mAP hat, sollten die Unterschiede in der Genauigkeit stärker ausfallen. Das ausgewählte Modell wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
   \subsection{Trainingsdaten}\label{s.tdaten}
+  ??? Da für ein solches Training nicht die benötigten Ressourcen zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann ??? Dieser Satz gehört zu durchführung nicht in den Theorewtischen teil???. Durch das vortrainieren werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer normalen 12 Megapixel Kamera aufgenommen. Die verwendeten Objekte, müssen von allen möglichen Seiten fotografiert werden, dabei müssen, für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer 12 Megapixel Kamera mehrere 100 MB groß werden, müssen diese auf 100-200 KB komprimiert werden. ???\\
+
 Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\
 In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:\\\\
 Der erste Datensatz besteht aus mehreren Nahrungsmitteln, welche in der Tabelle \ref{tab:nahrungsmittel} jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen beinhalten. Dieser Datensatz ist mit seinen ca. 1000 Bildern der kleinste Datensatz 
