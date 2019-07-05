@@ -5,29 +5,30 @@
 \BOOKMARK [2][]{subsection.16}{1.4 Struktur der Arbeit}{section.7}% 5
 \BOOKMARK [1][]{section.17}{2 Theoretische Grundlagen}{}% 6
 \BOOKMARK [2][]{subsection.18}{2.1 Digitale Bilder}{section.17}% 7
-\BOOKMARK [3][]{subsubsection.19}{2.1.1 Aufbau von Digitalbildern}{subsection.18}% 8
-\BOOKMARK [3][]{subsubsection.21}{2.1.2 Einfluss von Belichtungen}{subsection.18}% 9
-\BOOKMARK [3][]{subsubsection.22}{2.1.3 Arten der Farbnormalisierung}{subsection.18}% 10
-\BOOKMARK [2][]{subsection.31}{2.2 K\374nstliche Intelligenz}{section.17}% 11
-\BOOKMARK [2][]{subsection.32}{2.3 Neuronale Netze}{section.17}% 12
-\BOOKMARK [3][]{subsubsection.42}{2.3.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.32}% 13
-\BOOKMARK [3][]{subsubsection.47}{2.3.2 Entstehung von Trainingsdaten}{subsection.32}% 14
-\BOOKMARK [2][]{subsection.49}{2.4 Mean average Precision}{section.17}% 15
-\BOOKMARK [1][]{section.51}{3 Methodik und Durchf\374hrung}{}% 16
-\BOOKMARK [2][]{subsection.52}{3.1 Verwendetes Modell}{section.51}% 17
-\BOOKMARK [2][]{subsection.54}{3.2 Trainingsdaten}{section.51}% 18
-\BOOKMARK [2][]{subsection.58}{3.3 Normalisierung-Algorithmen}{section.51}% 19
-\BOOKMARK [3][]{subsubsection.59}{3.3.1 Gray-World-Algorithmus}{subsection.58}% 20
-\BOOKMARK [3][]{subsubsection.79}{3.3.2 Histogramm Ausgleich}{subsection.58}% 21
-\BOOKMARK [3][]{subsubsection.93}{3.3.3 Histogramm Spezifikation}{subsection.58}% 22
-\BOOKMARK [1][]{section.104}{4 Ergebnisse}{}% 23
-\BOOKMARK [2][]{subsection.105}{4.1 Frameworks und Entwicklungsumgebung}{section.104}% 24
-\BOOKMARK [2][]{subsection.106}{4.2 Nahrungsmittel Datensatz}{section.104}% 25
-\BOOKMARK [2][]{subsection.108}{4.3 PascalVOC Datensatz}{section.104}% 26
-\BOOKMARK [2][]{subsection.110}{4.4 Stanford Dogs Dataset}{section.104}% 27
-\BOOKMARK [2][]{subsection.112}{4.5 Zwischenstand}{section.104}% 28
-\BOOKMARK [2][]{subsection.113}{4.6 Obst Datensatz}{section.104}% 29
-\BOOKMARK [2][]{subsection.115}{4.7 Auswertung des Obst Datensatzes}{section.104}% 30
-\BOOKMARK [1][]{section.117}{5 Diskussion}{}% 31
-\BOOKMARK [2][]{subsection.120}{5.1 Laufzeittest}{section.117}% 32
-\BOOKMARK [1][]{section.122}{6 Fazit}{}% 33
+\BOOKMARK [3][]{subsubsection.20}{2.1.1 Aufbau von Digitalbildern}{subsection.18}% 8
+\BOOKMARK [2][]{subsection.21}{2.2 Histogramme}{section.17}% 9
+\BOOKMARK [3][]{subsubsection.25}{2.2.1 Einfluss von Belichtungen}{subsection.21}% 10
+\BOOKMARK [2][]{subsection.26}{2.3 K\374nstliche Intelligenz}{section.17}% 11
+\BOOKMARK [2][]{subsection.27}{2.4 Neuronale Netze}{section.17}% 12
+\BOOKMARK [3][]{subsubsection.37}{2.4.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.27}% 13
+\BOOKMARK [3][]{subsubsection.42}{2.4.2 Entstehung von Trainingsdaten}{subsection.27}% 14
+\BOOKMARK [2][]{subsection.44}{2.5 Mean average Precision}{section.17}% 15
+\BOOKMARK [3][]{subsubsection.46}{2.5.1 Arten der Farbnormalisierung}{subsection.44}% 16
+\BOOKMARK [1][]{section.55}{3 Methodik und Durchf\374hrung}{}% 17
+\BOOKMARK [2][]{subsection.56}{3.1 Verwendetes Modell}{section.55}% 18
+\BOOKMARK [2][]{subsection.58}{3.2 Trainingsdaten}{section.55}% 19
+\BOOKMARK [2][]{subsection.62}{3.3 Normalisierung-Algorithmen}{section.55}% 20
+\BOOKMARK [3][]{subsubsection.63}{3.3.1 Gray-World-Algorithmus}{subsection.62}% 21
+\BOOKMARK [3][]{subsubsection.83}{3.3.2 Histogramm Ausgleich}{subsection.62}% 22
+\BOOKMARK [3][]{subsubsection.97}{3.3.3 Histogramm Spezifikation}{subsection.62}% 23
+\BOOKMARK [1][]{section.108}{4 Ergebnisse}{}% 24
+\BOOKMARK [2][]{subsection.109}{4.1 Frameworks und Entwicklungsumgebung}{section.108}% 25
+\BOOKMARK [2][]{subsection.110}{4.2 Nahrungsmittel Datensatz}{section.108}% 26
+\BOOKMARK [2][]{subsection.112}{4.3 PascalVOC Datensatz}{section.108}% 27
+\BOOKMARK [2][]{subsection.114}{4.4 Stanford Dogs Dataset}{section.108}% 28
+\BOOKMARK [2][]{subsection.116}{4.5 Zwischenstand}{section.108}% 29
+\BOOKMARK [2][]{subsection.119}{4.6 Obst Datensatz}{section.108}% 30
+\BOOKMARK [2][]{subsection.121}{4.7 Auswertung des Obst Datensatzes}{section.108}% 31
+\BOOKMARK [1][]{section.123}{5 Diskussion}{}% 32
+\BOOKMARK [2][]{subsection.124}{5.1 Laufzeittest}{section.123}% 33
+\BOOKMARK [1][]{section.126}{6 Fazit}{}% 34
