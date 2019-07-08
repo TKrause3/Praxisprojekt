@@ -901,14 +901,14 @@ Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das die Normal
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Orange & 1.000 & 1.000 & 1.000 & 1.000\\
-Nektarine & 1.000 & 1.000 & 1.000 & 1.000\\
-Banane & 1.000 & 1.000 & 1.000 & 1.000\\
-Mango & 1.000 & 1.000 & 1.000 & 1.000\\
-Apfel & 1.000 & 1.000 & 0.999 & 1.000\\
-Birne & 1.000 & 1.000 & 1.000 & 1.000\\
+Orange & 0.985 & 0.990 & \textcolor{red}{0.980} & \textcolor{green}{1.000}\\
+Nektarine & \textcolor{red}{0.986} & 0.988 & \textcolor{green}{0.993} & 0.987\\
+Banane & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
+Mango & 0.993 & 0.996 & \textcolor{red}{0.983} & \textcolor{green}{1.000}\\
+Apfel & 0.995 & 0.996 & \textcolor{red}{0.990} & \textcolor{green}{0.999}\\
+Birne & 0.999 & \textcolor{red}{0.998} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
 \hline
-mAP & 1.000 & 1.000 & 1.000 & 1.000\\
+mAP & 0.994 & 0.994 & \textcolor{red}{0.992} & \textcolor{green}{0.997}\\
 \hline
 \end{tabular}
 \end{table}\\
@@ -938,8 +938,17 @@ Bildgröße & Faktor & Dateigröße & GW & HA & HS\\
 \end{tabular}
 \end{table}
 Der Gray World Algorithmus ist im Vergleich zu den anderen Methoden in der Mitte von der Laufzeit bei Verdoppelung der Bildgröße, erhöht sich die Laufzeit um das vierfache. Dabei ist auch die Farbgebung und der Kontrast nicht entscheidend. Die Histogramm Ausgleichung ist in diesem Fall die Schnellste Methode, wobei dafür die Verteilung im Histogramm eine Rolle spielt. Die Laufzeit verändert sich nicht Linear, sondern steigt exponential an. So steigt die Laufzeit beim verdoppeln um den Faktor drei, und beim nächsten mal um den Faktor sechs. Der längste Normalisierungs Algorithmus ist in diesem Fall die Histogramm Spezifikation. Dabei spielt die Größe des Referenzbildes eine wichtige Rolle. Mit einem größeren Referenzbild, würde sich die Laufzeit noch weiter erhöhen. Bei gleich bleibenden Referenzbild erhöht sich die Laufzeit um den Faktor vier. Durch die hohe Grunddauer führt das schnell zu langen Laufzeiten.\\\\
-Dabei muss beachtet werden, das die Laufzeiten nur für ein Bild berechnet wurde. Für ein künstliches neuronales Netz werden meist mehrere Tausend Bilder verwendet. Hier muss, je nach Datensatz, abgewägt werden, ob eine Normalisierung für die erhöhte Laufzeit in Kauf genommen werden soll.   
+Dabei muss beachtet werden, das die Laufzeiten nur für ein Bild berechnet wurde. Für ein künstliches neuronales Netz werden meist mehrere Tausend Bilder verwendet. Hier muss, je nach Datensatz, abgewägt werden, ob eine Normalisierung für die erhöhte Laufzeit in Kauf genommen werden soll.
+\newpage   
   \section{Fazit}\label{s.fazit}
+Für ein abschließendes Fazit wird noch einmal kurz auf jedes Normalisierungs-Verfahren eingegangen und erklärt in welchem Datensatz dies verwendet werden kann.
+\subsection{Gray-World-Algorithmus}
+Der Gray-World-Algorithmus kann prinzipiell bei jedem Datensatz angewendet werden. Der Vorteil ist dann erkennbar, wenn verschiedene Lichtfarben in der späteren Erkennung und im Datensatz auftauchen können. Durch diese Methode wird der Kontrast und Dynamik nicht verändert. Das Farbbild wird insgesamt auf Grundlage des grün-Kanals verschoben. Da dieses Verfahren relativ simpel arbeitet, wird kein großer Einfluss auf spätere künstliche neuronale Netze erzielt.
+\subsection{Histogramm Ausgleich}
+Der Histogramm Ausgleich arbeitet auf Grundlage des Histogramms und versucht den Kontrast in dem Bild zu erhöhen. Eingesetzt werden kann es bei Datensätzen, welche einen einheitlichen Hintergrund verwenden, da für die Normalisierung die Farbverteilung  des gesamten Bildes verwendet wird. Denn je nach Farbverteilung fällt das Ausgabebild nach dem Ausgleich unterschiedlich aus. Schwächen entstehen bei starken Lichtunterschieden. Sollte ein Bild zu dunkel sein können Farbwerte nicht wiederhergestellt werden.
+\subsection{Histogramm Spezifizierung}
+Auch die Histogramm Spezifizierung ist nicht für allgemeine Datensätze geeignet, sondern bei Datensätzen mit einheitlichem Hintergrund. Das liegt zum einen wegen der Verarbeitung des Histogramms, wie beim Histogramm Ausgleich, zum anderen an der Tatsache das für dieses Verfahren ein Referenzbild benötigt wird, auf welchem der Datensatz Normalisiert wird. Dieses Referenzbild ist Effektiver desto ähnlicher es dem Datensatz ist. Die Ergebnisse dieses Verfahrens, haben beim Obst Datensatz eine deutlich erhöhte Genauigkeit erzielt.\\\\
+Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen überprüft. Es wäre eine interessante frage welchen Einfluss diese Verfahren bei Entstehung der Neuronalen Netze zu beobachten und welche Unterschiede dabei auftreten. Außerdem kann für den Versuch mit einheitlichen Trainingsbildern größere Datensätze generiert und getestet werden. Durch die restliche zeit konnte nur die Mindestgröße erstellt werden. interessant wäre es, wie sich die Genauigkeiten bei noch mehr Lichtvariationen verhalten würden.  
   \newpage
   \printbibliography
   \newpage
