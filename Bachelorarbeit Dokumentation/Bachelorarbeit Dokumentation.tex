@@ -220,8 +220,20 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   
   \newpage
   \section*{Vorwort}
-  \section*{Danksagung}
+Vor ihnen liegt die Bachelorarbeit \textit{Der Einfluss von Farbnormalisierung auf die Klassifizierung von Bildern durch künstliche neuronale Netze}. Die Forschung, wurde an der Technischen Hochschule Köln durchgeführt.\\\\
+Diese Bachelorarbeit habe ich zum Abschluss meines Studiums der Medieninformatik an der Technischen Hochschule Köln eigenständig verfasst. Ziel war es herauszufinden, welchen Einfluss die Farbnormalisierung auf die Klassifizierung mittels künstlicher neuronaler Netze hat. Von Mai 2019 bis Juli 2019 beschäftigte ich mich intensiv mit den einzelnen Themenbereichen und dem schreiben der Bachelorarbeit.\\\\
+Zusammen mit meinem Professor, Dr. Martin Eisemann, habe ich die Fragestellung für diese Bachelorarbeit entwickelt. Die Forschung und Durchführung für meine Arbeit war nicht immer einfach und hat des öfteren zu Problemen geführt. Nach einer umfangreichen Analyse der Ergebnisse gelang es mir, die Forschungsfrage zu beantworten. Während dieser Untersuchung waren meine Betreuer, Uwe Müsse und Dr. Benjamin Meyer, stets an meiner Seite. Sie beantworteten meine Fragen und gaben wertvollen Input für die methodische Vorgehensweise, sodass ich meine Forschung erfolgreich fortführen konnte.\\\\
+Aus diesem Grund möchte ich meinem Professor und meinen Betreuern für die Unterstützung und ihre gute Anleitung während dieses Prozesses Danken. Sie haben mir viele Blikwinkel gezeigt, Probleme zu betrachten.\\\\
+Außerdem möchte ich meiner Schwester Nicole Teismann und meinem Schwager Michael Teismann danken, das sie immer ein offenes Ohr hatten und mir bei der Struktur sowie Korrektur geholfen haben. Zu guter Letzt möchte ich meinem Kommilitonen Binh Ngo danken, der Parallel mit mir seine Bachelorarbeit geschrieben hat und immer hilfsbereit war.\\\\
+Ich wünsche Ihnen viel Freude beim Lesen dieser Bachelorarbeit.\\\\
+Torben Krause\\\\
+Gummersbach, 17. Juli 2019
+\newpage
   \section*{Abstract}
+Bei der Klassifizierung von künstlichen neuronalen Netzen, kann es passieren, das es zu Fehlern bei der Identifizierung von Objekten kommt. Das liegt häufig daran das nicht jede Farbe trainiert wurde, welche bei unterschiedlichen Beleuchtungen auftreten kann. Ein möglicher Ansatz war es Die Farben der Datensätze zu normalisieren und dadurch konstanter zu machen. Für dieses Vorhaben, gibt es einige Ansätze welche dieses Problem lösen könnten.\\\\
+Das Ziel dieser Arbeit ist es herauszufinden, ob die Farbnormalisierung von Datensätzen einen Positiven Einfluss auf die Klassifizierung mittels künstlicher neuronaler Netze hat, und welche Beschränkungen diese haben. Dazu wird folgende Forschungsfrage gestellt:Welchen Einfluss, hat Farbnormalisierung von Datensätzen
+auf die Klassifizierung von künstlichen neuronalen Netzen? \\\\
+Um dieser Frage nachzugehen wurden insgesamt 4 Datensätze verwendet und mittels drei verschiedener Normalisierungs-verfahren überprüft. Dabei ist aufgefallen das ein Großteil dieser Verfahren nicht optimal für die Nutzung allgemeiner Datensätze geeignet sind, sondern eher für Datensätze, welche eine einheitliche Umgebung haben. Die Ergebnisse zeigen, das Farbnormalisierung in einem einheitlichen Datensatz eine Erhöhung der Genauigkeit zu folge haben kann. Auf dieser Grundlage ist es empfehlenswert zu differenzieren, welche Eigenschaften der Normalisierungs-Verfahren benötigt werden und zu welchem Zweck der Datensatz erfüllen soll.
   \newpage
   \listoffigures
   \newpage
@@ -257,7 +269,7 @@ Für ein besseres Verständnis der einzelnen Entwicklungsschritte in den später
 In der zweiten Hälfte der Arbeit wird es um die Durchführung und Ergebnisauswertung (Kapitel \ref{s.ergebnisse}) des praktischen Teils der Arbeit gehen. In diesem werden die verwendeten Farbnormalisierungs-Verfahren zusätzlich in der technischen Umsetzung erläutert. Daraufhin werden die Ergebnisse und interpretiert. In einer kurzen Diskussion (Kapitel \ref{s.diskussion}) werden diese behandelt. Nach der Diskussion wird nun das Ergebnis der Auswertung anhand der angeführten These evaluiert und ein Fazit (Kapitel \ref{s.fazit}) der Arbeit getroffen.
   \newpage
   \section{Theoretische Grundlagen}\label{s.grundlagen}
-  Das folgende Kapitel soll eine kurze und leicht verständliche Einführung sein, in dem die Theoretischen Grundlagen über den Aufbau von digitalen Bildern der einfluss von Belichtung sowie den verwendeten Bildbearbeitung Methoden gelegt. Anschlißend folgt ein Überblick über die Grundlagen der künstlichen Intelligen. Der letzte Abschnitt wittmet sich den Schwerpunkten der künstlichen neuronalen Netze. Dabei werden hauptsächlich für die Arbeit relevante Grundlagen vermittelt. 
+  Das folgende Kapitel soll eine kurze und leicht verständliche Einführung sein, in dem die Theoretischen Grundlagen über den Aufbau von digitalen Bildern der Einfluss von Belichtung sowie den verwendeten Bildbearbeitung Methoden gelegt. Anschließend folgt ein Überblick über die Grundlagen der künstlichen Intelligenz. Der letzte Abschnitt wittmet sich den Schwerpunkten der künstlichen neuronalen Netze. Dabei werden hauptsächlich für die Arbeit relevante Grundlagen vermittelt. 
   \subsection{Digitale Bilder}\label{s.digibilder}
   Damit der Ansatz der These, dass die Farbnormalisierung von Trainingsdaten das Trainingsverhalten und die spätere Genauigkeit künstlicher neuronaler Netze verbessern kann, nachvollzogen werden kann, soll in diesem Unterkapitel, auf die Aufnahme digitaler Bilder, mit deren Eigenschaften und Aufbau eingegangen werden. Außerdem sollen die Schwächen herausgearbeitet und mögliche Lösungsansätze erläutert werden. Zunächst folgt eine kurze Einführung.\\\\
 Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, also mit der Bearbeitung von Bildern mittels Bearbeitungssoftware. In der Bildverarbeitung geht es anders als in der Bearbeitung, um die Software selber, welche für die Konzeption und Erstellung von digitalen Bildern genutzt wird. In der Programmierung sind Bilder nichts weiter als Zahlen-Matrizen, wie in Abbildung \ref{img:digitalesbild} zu erkennen, welche man nach Belieben lesen und verändern kann, um seine geplanten Ziele zu erreichen. Grundsätzlich bestehen digitale Bilder aus rastern. Diese besitzen mehrere werte, welche auch Pixel genannt werden. Die Werte entstehen je nach menge der Farbabstufungen. Bei einem Graustufenbild sind das Normalerweise 256 Abstufungen bei einem 8 bit Bild. 
@@ -297,7 +309,7 @@ Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digit
   \begin{figure}
     [h]
     \centering
-    \includegraphics[scale=0.5]{Sources/kontrast.JPG}
+    \includegraphics[scale=0.7]{Sources/kontrast.JPG}
     \caption{Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontast (Mitte), hoher Kontrast (rechts)\cite[45]{burger2009digitale}}
     \label{img:kontrast}
   \end{figure}\\
@@ -306,7 +318,7 @@ Dynamik bedeutet, wie viel verschiedene Intensitätswerte in einem Bild genutzt 
  \begin{figure}
     [h]
     \centering
-    \includegraphics[scale=0.5]{Sources/dynamik.JPG}
+    \includegraphics[scale=0.7]{Sources/dynamik.JPG}
     \caption{Unterschiedlicher Dynamik und die Auswirkungen im Histogramm: hohe Dynamik (links), niedrige Dynamik mit 64 Graustufen (Mitte), extrem niedriger Kontrast mir 6 Graustufen (rechts)\cite[45]{burger2009digitale}}
     \label{img:dynamik}
   \end{figure}\\
@@ -746,7 +758,7 @@ Wie in vorherigen Kapiteln schon beschrieben ist das Trainieren eines künstlich
 Auf Softwareseite gibt es eine Menge an Frameworks, mit welcher sich CNNs realisieren lassen. Einige von denen sind beispielsweise Tensorflow, Keras und Theano. Wegen der vorliegenden Erfahrung und der Möglichkeit Trainingsfortschritte grafisch anzeigen zu können, wird der praktische Teil der Arbeit mittels Tensorflow durchgeführt. Tensorflow ist ein Open Source Framework von Google, welches zum entwickeln künstlicher neuronaler Netze genutzt werden kann. Programmiert wurde das Framework in den Programmiersprachen C und Python, welche auch für die Entwicklung genutzt werden. Mit dem Framework Tensorflow kommen einige Möglichkeiten. Zum einen gibt es eine übersichtliche Dokumentation, zum anderen werden vortrainierte Netze, Open Source und für die Entwicklung die Tensorflow Object Detection API angeboten. Zur Verfügung stehen verschiedenste Netze auf Basis von verschiedenen Datensätzen.
   \subsection{Nahrungsmittel Datensatz}
 Der erste Datensatz welcher untersucht wurde ist der Datensatz, welcher in der Tabelle \ref{tab:nahrungsmitteltest} aufgeführt ist. Dieser enthält im Vergleich zu den anderen Datensätzen weniger Objektklassen und weniger Bilder. Außerdem ist, sind die Objekte unter ähnlichen Bedingungen entstanden. Das bedeutet, dass die Lichteinstrahlung in den meisten Fällen gleich ist und nur auf wenigen unterschiedlichen Hintergründen aufgenommen wurden. In der Tabelle \ref{tab:nahrungsmitteltest} wurde der Nahrungsmittel Datensatz verwendet und enthält die Informationen des originalen Datensatzes, des Gray-World Algorithmus, des Histogramm Ausgleichs und der Histogramm Spezifizierung. Im genauen Betrachten fällt auf, dass kaum nennenswerte Unterschiede bei GW entstanden sind. In manchen Punkten können Verbesserungen in der Genauigkeit ausgewertet werden(Wasser, Orangensaft, Bier), in anderen wiederum ist die Genauigkeit gesunken(Milch, Brunch, mAP).\\
-Bei den Histogramm Normalisierungen (Ausgleich und Spezifizierung) kann mehr interpretiert werden. Auch hier sind die Unterschiede nur in einzelnen Objektklassen besser geworden und in anderen zurückgegangen. Die Varianz der verschiedenen Netze liegt bei gerade mal 0.05, was in der Praxis keinen bedeutenden Unterschied macht. Dennoch schneiden die Histogramm Normalisierungen insgesamt am schlechtesten ab.
+Bei den Histogramm Normalisierungen (Ausgleich und Spezifizierung) kann mehr interpretiert werden. Auch hier sind die Unterschiede nur in einzelnen Objektklassen besser geworden und in anderen zurückgegangen. Die Genauigkeit der verschiedenen Netze variiert bei dieser hohen Genauigkeit sehr stark, was in der Praxis einen bedeutenden Unterschied machen kann. Insgesamt schneiden die Histogramm Normalisierungen am schlechtesten ab.
 \begin{table}
 [h]
 \caption{Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel Datensatz}
@@ -768,7 +780,7 @@ mAP & \textcolor{green}{0.991} & 0.987 & 0.980 & \textcolor{red}{0.978}\\
 \label{tab:nahrungsmitteltest}
 \end{table}
 \subsection{PascalVOC Datensatz}
-Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise große Unterschiede der einzelnen Objektklassen auftreten. Das kann daher resultieren, dass unterschiedlich viele Bilder pro klasse enthalten sind. Ähnlich wie beim vorherigen Datensatz konnte zwischen dem originalen Datensatz und der Gray-World-Normalisierung kein deutlicher Unterschied festgestellt werden. Einige Klassen haben zwar eine höhere durchschnittliche Wahrscheinlichkeit, dennoch gibt es auch hier mehrere Bereiche, wo die Genauigkeit abgenommen hat. Auch die mAP hat ca. 0.008 Genauigkeit verloren. Anders als beim Nahrungsmittel Datensatz schneidet der Histogramm Ausgleich schlechter ab. Nur ein paar Objektklassen konnten besser erkannt werden. Insgesamt verliert das neuronale Netz 0.034 der Genauigkeit, was einen wichtigen Unterschied macht. Einige Objektklassen sinken durch die Ausgleichung unter die 50\% Genauigkeit. Hier wird auch die Schwäche der Histogramm Spezifikation deutlich. Durchschnittlich 0.045 Genauigkeit wird durch die Normalisierung eingebüßt. 
+Beim Auswerten der Genauigkeit des normalen Modells fällt auf, das teilweise große Unterschiede der einzelnen Objektklassen auftreten. Das kann daher resultieren, dass unterschiedlich viele Bilder pro klasse enthalten sind. Ähnlich wie beim vorherigen Datensatz konnte zwischen dem originalen Datensatz und der Gray-World-Normalisierung leichte Verluste festgestellt werden. Einige Klassen haben zwar eine höhere durchschnittliche Wahrscheinlichkeit, dennoch gibt es auch hier mehrere Bereiche, wo die Genauigkeit abgenommen hat. Auch die mAP hat ca. 0.008 Genauigkeit verloren. Anders als beim Nahrungsmittel Datensatz schneidet der Histogramm Ausgleich weitaus schlechter ab. Nur ein paar Objektklassen konnten besser erkannt werden. Insgesamt verliert das neuronale Netz 0.034 der Genauigkeit, was einen gravierenden Unterschied macht. Einige Objektklassen sinken durch die Ausgleichung sogar unter die 50\% Genauigkeit. Hier wird auch die Schwäche der Histogramm Spezifikation deutlich. Durchschnittlich 0.045 Genauigkeit wird durch die Normalisierung eingebüßt. 
 \begin{table}
 [h]
 \caption{Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz}
@@ -803,7 +815,7 @@ mAP & \textcolor{green}{0.718} & 0.710 & 0.698 & \textcolor{red}{0.673}\\
 \end{tabular}
 \end{table}
   \subsection{Stanford Dogs Dataset}
-Auch bei Überprüfung des dritten Datensatzes fallen ähnliche Muster auf. Der GW-Algorithmus weißt bei diesem Datensatz sogar bessere Ergebnisse wie der originale Datensatz auf. Beim vergleichen der Datensätze fällt hier auf, das mehr verschiedene Lichtfarben genutzt wurden, als bei den anderen beiden Datensätzen. Diese konnten vom GW-Algorithmus vereinheitlicht werden. Beim Histogramm Ausgleich und der Spezifikation wurden wie auch bei den vorherigen Datensätzen schlechtere Genauigkeiten beobachtet.   
+Auch bei Überprüfung des dritten Datensatzes fallen ähnliche Muster auf. Der GW-Algorithmus weißt bei diesem Datensatz bessere Ergebnisse auf. Sogar eine verbesserung gegenüber des originalen Datensatzes konnte erzielt werden. Beim vergleichen der Datensätze fällt hier auf, das mehr verschiedene Lichtfarben genutzt wurden, als bei den anderen beiden Datensätzen. Diese konnten vom GW-Algorithmus vereinheitlicht werden. Beim Histogramm Ausgleich und der Spezifikation wurden, wie auch bei den vorherigen Datensätzen deutliche Verschlechterungen in der Genauigkeiten festgestellt.   
 \begin{table}
 [h]
 \caption{Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz}
@@ -867,18 +879,17 @@ Um herauszufinden wodurch die abnehmende Genauigkeit in der Klassifizierung ents
 \caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung}
 \label{img:evalnorm}
 \end{figure}\\
-Durch diesen Test wurde bestätigt, das die Ergebnisse der Histogramm Ausgleichung und Spezifikation sehr unterschiedlich geworden sind. Die Veränderung des Umfeldes beeinflusst also das Ergebnis entscheidend und sorgt für größere Farbveränderungen als der Lichteinfluss.
-Ein Datensatz mit einheitlichem Hintergrund in den Trainingsdaten, könnte mit den normalisierungs-Verfahren besser funktionieren. Um diese Annahme weiter überprüfen zu können, soll ein weiterer Datensatz generiert werden, in welchem ein konstanter Hintergrund festgelegt ist. 
+Durch diesen Test wurde bestätigt, das die Ergebnisse der Histogramm Ausgleichung und Spezifikation sehr unterschiedlich geworden sind. Die Veränderung des Umfeldes beeinflusst also das Ergebnis entscheidend und sorgt für größere Farbveränderungen als der Lichteinfluss selbst.
+Ein Datensatz mit einheitlichem Hintergrund in den Trainingsdaten, könnte mit den normalisierungs-Verfahren besser funktionieren. Um diese Annahme weiter überprüfen zu können, soll ein weiterer Datensatz generiert werden, in welchem ein einheitlicher Hintergrund festgelegt ist. 
 \subsection{Obst Datensatz}
 Für einen weiteren Versuch, wurde der Obstdatensatz erstellt. Dieser besteht aus den Objekten welche in Tabelle \ref{tab:obst} aufgelistet sind. Bei diesem Datensatz wurde darauf geachtet einen einheitlichen Hintergrund zu verwenden, um die Funktionalität bei anderen Einstellungen zu testen. Außerdem wurde im Vergleich zum Nahrungsmittel Datensatz (Tabelle.\ref{tab:nahrungsmittel}) darauf geachtet, ähnlichere Kassen zu verwenden, auf welchen optimaler Weise keine Schrift enthalten ist. Das Netz soll nicht durch die Schrift beeinflusst werden, sondern hauptsächlich die Farben als Orientierung nehmen.
-\begin{table}[htpb]
+\begin{table}[htb]
 \caption{Klassen des Obst Datensatzes mit konstantem Hintergrund}
-\begin{minipage}[r]{.5\textwidth} 
+\center
+\begin{minipage}[c]{.4\textwidth} 
 \includegraphics[width=.7\textwidth]{Sources/Obst_mit_hintergrund}  
 \end{minipage} 
-\hfill
-\begin{minipage}[c]{.5\textwidth}\label{tab:obst} 
-\centering  
+\begin{minipage}[c]{.4\textwidth}\label{tab:obst}   
 \begin{tabular}{|l|l|}
 \hline
 Klassenname & Klassenname\\
@@ -892,7 +903,7 @@ Apfel & Birne\\
 \end{table}  
 Dieser Datensatz wird nun genau wie die vorherigen Datensätze, mit den unterschiedlichen Methoden Normalisiert. Dabei soll zum einen die Genauigkeit der einzelnen Klassen betrachtet werden, zum anderen die Trainingsdaten an sich. Dabei soll überprüft werden, ob die Trainingsbilder wie erwartet aussehen und wie stark Anomalien auftreten. 
 \subsection{Auswertung des Obst Datensatzes}
-Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das die Normalisierungsmethoden keinen Negativen Einfluss auf den Datensatz haben. Da die genauigkeit bei 100\% der Testdaten lagen, kann von den Zahlen aus, leider keine Aussage getroffen werden, inwieweit die Methoden einen positiven Einfluss auf die Klassifizierung haben. Eine weitere Möglichkeit dies zu überprüfen, könnte mit Hilfe besonders schwierigen Testbildern überprüft werden. Dafür sollen Bildaufnahmen bei sehr unterschiedlichen Lichteinflüssen verwendet werden.
+Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das zwei der drein Normalisierungs-Methoden einen positiven Einfluss auf die Klassifizierung haben. Die Genauigkeit der Histogramm Spezifikation schneidet mit 97\% am besten ab. Durch diese Methode konnte eine erhöhung von 43\% erzielt werden. Auch der Gray-World-Algorithmus hat eine leichte Verbesserung von 14\% bewirkt. Lediglich der Histogramm Ausgleich hat die Klassifizierung leicht verschlechtert. Eine weitere Möglichkeit den Einfluss zu überprüfen, wurde mit Hilfe besonders schwierigen Testbildern versucht. Dafür sollen Bildaufnahmen bei extremen unterschiedlichen Lichteinflüssen verwendet werden.
 \begin{table}
 [h]
 \caption{Genauigkeits-Berechnungen des Modells des Obst Datensatzes}
@@ -901,18 +912,18 @@ Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das die Normal
 \hline
 Klassenname & AP(N) & AP(GW) & AP(HA) & AP(HS)\\
 \hline
-Orange & 0.985 & 0.990 & \textcolor{red}{0.980} & \textcolor{green}{1.000}\\
+Orange & \textcolor{red}{0.982} & 0.985 & 0.983 & \textcolor{green}{1.000}\\
 Nektarine & \textcolor{red}{0.986} & 0.988 & \textcolor{green}{0.993} & 0.987\\
 Banane & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
 Mango & 0.993 & 0.996 & \textcolor{red}{0.983} & \textcolor{green}{1.000}\\
 Apfel & 0.995 & 0.996 & \textcolor{red}{0.990} & \textcolor{green}{0.999}\\
 Birne & 0.999 & \textcolor{red}{0.998} & \textcolor{green}{1.000} & \textcolor{green}{1.000}\\
 \hline
-mAP & 0.994 & 0.994 & \textcolor{red}{0.992} & \textcolor{green}{0.997}\\
+mAP & 0.993 & 0.994 & \textcolor{red}{0.992} & \textcolor{green}{0.997}\\
 \hline
 \end{tabular}
 \end{table}\\
-Die Auswertung der normalisierten Trainingsdaten hat ergeben, das wesentlich weniger farb-Anomalien auftreten. Dabei ist aufgefallen das gerade bei den Histogramm Normalisierungen mit einheitlichen Hintergrund deutliche Verbesserungen erzielt wurden. Zu große Veränderungen treten nur dann auf, wenn viele Objekte auf dem Bild enthalten sind, da diese die Umgebung zu stark beeinflussen oder wenn die Beleuchtungen zu extrem verändert werden. Die Histogramm Spezifikation geht mit diesem Problem noch am besten um, weil dieser ein Referenz-Histogramm hat, um es anzupassen. \\\\
+Die Auswertung der normalisierten Trainingsdaten hat ergeben, das wesentlich weniger farb-Anomalien auftreten, wie bei den vorherigen Datensätzen. Dabei ist aufgefallen das gerade bei den Histogramm Normalisierungen mit einheitlichen Hintergrund deutliche Verbesserungen erzielt wurden. Große Veränderungen treten nur dann auf, wenn viele Objekte auf dem Bild enthalten sind, da diese die Umgebung zu stark beeinflussen oder bei der Histogramm Ausgleichung, wenn die Beleuchtungen zu extrem verändert wurde. Die Histogramm Spezifikation geht mit diesem Problem noch am besten um, weil diese ein Referenz-Histogramm verwendet, um die Daten anzupassen. \\\\
 Auch eine Betrachtung der Helligkeitsverteilung der Trainingsdaten werden wesentlich besser wie in den Beispielen in Abbildung \ref{img:hellver} zu erkennen ist. Dafür wurde eine stark unterbelichtete Aufnahme generiert, um die Veränderung nach den Normalisierungs Methoden besser herauszustellen. Die beste Helligkeitsverteilung konnte dabei der Histogramm Ausgleich aufweisen, wobei durch das dunkle Quellbild die Farbinformationen zum großen Teil verloren gegangen sind. Der Gray World hat die Helligkeitsverteilung kaum verändert, was aber daran liegt, das die Farbverteilung durch die Höhe des Grün Kanals verschoben wird und nicht für solche Aufgaben ausgelegt ist. Das insgesamt beste Ergebnis liefert die Histogramm Spezifikation. Nicht nur die Helligkeitsverteilung konnte verbessert werden, auch die Farben konnten vergleichsweise gut wieder hergestellt werden.
   \newpage
 \section{Diskussion}\label{s.diskussion}
@@ -1079,9 +1090,9 @@ Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen über
 \label{img:evalHS}
 \end{figure}
 \newpage
-\begin{figure}[htb]
+\begin{figure}[h]
 \center
-\caption{Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen}
+\caption{Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen auf das Testbild}
 \label{img:hellver}
 \begin{minipage}{0.4\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250.jpg}
@@ -1090,7 +1101,8 @@ Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen über
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250.png}
 \end{minipage}
 \end{figure}
-\begin{figure}[htb]
+\vspace{-1.5cm}
+\begin{figure}[h]
 \center
 \begin{minipage}{0.4\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_GW.jpg}
@@ -1099,7 +1111,8 @@ Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen über
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_GW.png}
 \end{minipage}
 \end{figure}
-\begin{figure}[htb]
+\vspace{-1.5cm}
+\begin{figure}[h]
 \center
 \begin{minipage}{0.4\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_HA.jpg}
@@ -1108,7 +1121,8 @@ Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen über
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_HA.png}
 \end{minipage}
 \end{figure}
-\begin{figure}[htb]
+\vspace{-1.5cm}
+\begin{figure}[h]
 \center
 \begin{minipage}{0.4\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_HS.jpg}

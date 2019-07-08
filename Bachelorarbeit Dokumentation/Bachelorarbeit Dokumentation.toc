@@ -1,76 +1,76 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Einleitung}{6}{section.7}
+\contentsline {section}{\numberline {1}Einleitung}{7}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1}Problemstellung und Ziele}{6}{subsection.8}
+\contentsline {subsection}{\numberline {1.1}Problemstellung und Ziele}{7}{subsection.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2}Erl\IeC {\"a}uterung der These}{6}{subsection.10}
+\contentsline {subsection}{\numberline {1.2}Erl\IeC {\"a}uterung der These}{7}{subsection.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3}Anforderungen}{7}{subsection.11}
+\contentsline {subsection}{\numberline {1.3}Anforderungen}{8}{subsection.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.4}Struktur der Arbeit}{8}{subsection.16}
+\contentsline {subsection}{\numberline {1.4}Struktur der Arbeit}{9}{subsection.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Theoretische Grundlagen}{9}{section.17}
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{10}{section.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Digitale Bilder}{9}{subsection.18}
+\contentsline {subsection}{\numberline {2.1}Digitale Bilder}{10}{subsection.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.1.1}Aufbau von Digitalbildern}{10}{subsubsection.20}
+\contentsline {subsubsection}{\numberline {2.1.1}Aufbau von Digitalbildern}{11}{subsubsection.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Histogramme}{12}{subsection.21}
+\contentsline {subsection}{\numberline {2.2}Histogramme}{13}{subsection.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Einfluss von Belichtungen}{14}{subsubsection.25}
+\contentsline {subsubsection}{\numberline {2.2.1}Einfluss von Belichtungen}{15}{subsubsection.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}K\IeC {\"u}nstliche Intelligenz}{14}{subsection.26}
+\contentsline {subsection}{\numberline {2.3}K\IeC {\"u}nstliche Intelligenz}{15}{subsection.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4}Neuronale Netze}{15}{subsection.27}
+\contentsline {subsection}{\numberline {2.4}Neuronale Netze}{16}{subsection.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.1}Funktionsweise k\IeC {\"u}nstlicher und Faltender neuronaler Netze}{21}{subsubsection.37}
+\contentsline {subsubsection}{\numberline {2.4.1}Funktionsweise k\IeC {\"u}nstlicher und Faltender neuronaler Netze}{22}{subsubsection.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2}Entstehung von Trainingsdaten}{23}{subsubsection.42}
+\contentsline {subsubsection}{\numberline {2.4.2}Entstehung von Trainingsdaten}{24}{subsubsection.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5}Mean average Precision}{24}{subsection.44}
+\contentsline {subsection}{\numberline {2.5}Mean average Precision}{25}{subsection.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.1}Arten der Farbnormalisierung}{25}{subsubsection.46}
+\contentsline {subsubsection}{\numberline {2.5.1}Arten der Farbnormalisierung}{26}{subsubsection.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{29}{section.55}
+\contentsline {section}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{30}{section.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Verwendetes Modell}{29}{subsection.56}
+\contentsline {subsection}{\numberline {3.1}Verwendetes Modell}{30}{subsection.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Trainingsdaten}{29}{subsection.58}
+\contentsline {subsection}{\numberline {3.2}Trainingsdaten}{30}{subsection.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Normalisierung-Algorithmen}{32}{subsection.62}
+\contentsline {subsection}{\numberline {3.3}Normalisierung-Algorithmen}{33}{subsection.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Gray-World-Algorithmus}{32}{subsubsection.63}
+\contentsline {subsubsection}{\numberline {3.3.1}Gray-World-Algorithmus}{33}{subsubsection.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Histogramm Ausgleich}{33}{subsubsection.83}
+\contentsline {subsubsection}{\numberline {3.3.2}Histogramm Ausgleich}{34}{subsubsection.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Histogramm Spezifikation}{34}{subsubsection.97}
+\contentsline {subsubsection}{\numberline {3.3.3}Histogramm Spezifikation}{35}{subsubsection.96}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Ergebnisse}{35}{section.108}
+\contentsline {section}{\numberline {4}Ergebnisse}{36}{section.107}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{35}{subsection.109}
+\contentsline {subsection}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{36}{subsection.108}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Nahrungsmittel Datensatz}{36}{subsection.110}
+\contentsline {subsection}{\numberline {4.2}Nahrungsmittel Datensatz}{37}{subsection.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}PascalVOC Datensatz}{36}{subsection.112}
+\contentsline {subsection}{\numberline {4.3}PascalVOC Datensatz}{37}{subsection.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Stanford Dogs Dataset}{37}{subsection.114}
+\contentsline {subsection}{\numberline {4.4}Stanford Dogs Dataset}{38}{subsection.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Zwischenstand}{38}{subsection.116}
+\contentsline {subsection}{\numberline {4.5}Zwischenstand}{39}{subsection.115}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Obst Datensatz}{39}{subsection.119}
+\contentsline {subsection}{\numberline {4.6}Obst Datensatz}{40}{subsection.118}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{40}{subsection.121}
+\contentsline {subsection}{\numberline {4.7}Auswertung des Obst Datensatzes}{41}{subsection.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Diskussion}{42}{section.123}
+\contentsline {section}{\numberline {5}Diskussion}{43}{section.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Laufzeittest}{42}{subsection.124}
+\contentsline {subsection}{\numberline {5.1}Laufzeittest}{43}{subsection.123}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Fazit}{44}{section.126}
+\contentsline {section}{\numberline {6}Fazit}{45}{section.125}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Gray-World-Algorithmus}{44}{subsection.127}
+\contentsline {subsection}{\numberline {6.1}Gray-World-Algorithmus}{45}{subsection.126}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Histogramm Ausgleich}{44}{subsection.128}
+\contentsline {subsection}{\numberline {6.2}Histogramm Ausgleich}{45}{subsection.127}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Histogramm Spezifizierung}{44}{subsection.129}
+\contentsline {subsection}{\numberline {6.3}Histogramm Spezifizierung}{45}{subsection.128}
