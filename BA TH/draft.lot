@@ -1,0 +1,23 @@
+\babel@toc {ngerman}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pixelbild in ein tabellarisches Histogramm \IeC {\"u}berf\IeC {\"u}hrt}}{23}{table.2.1}% 
+\contentsline {table}{\numberline {2.2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung}}{24}{table.2.2}% 
+\contentsline {table}{\numberline {2.3}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1)}}{24}{table.2.3}% 
+\contentsline {table}{\numberline {2.4}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B2)}}{24}{table.2.4}% 
+\contentsline {table}{\numberline {2.5}{\ignorespaces Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}}{25}{table.2.5}% 
+\contentsline {table}{\numberline {2.6}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}}{25}{table.2.6}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Modelle \cite {google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite {common2018data}}}{26}{table.3.1}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Datensatz mit Nahrungsmitteln}}{27}{table.3.2}% 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}}}{28}{table.3.3}% 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}}}{28}{table.3.4}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel Datensatz}}{33}{table.4.1}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz}}{34}{table.4.2}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz}}{35}{table.4.3}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Klassen des Obst Datensatzes mit konstantem Hintergrund}}{37}{table.4.4}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Genauigkeitsberechnungen des Modells des Obst Datensatzes}}{37}{table.4.5}% 
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Laufzeiten der Normalisierungs-Algorithmen mit verschieden gro\IeC {\ss }en Bildern}}{40}{table.5.1}% 
+\addvspace {10\p@ }

@@ -1,0 +1,328 @@
+%!TEX root = ../draft.tex
+\chapter{Theoretische Grundlagen}\label{s.grundlagen}
+Das folgende Kapitel soll eine kurze und leicht verständliche Einführung sein, in dem die Theoretischen Grundlagen über den Aufbau von digitalen Bildern der Einfluss von Belichtung sowie den verwendeten Bildbearbeitung Methoden gelegt. Anschließend folgt ein Überblick über die Grundlagen der künstlichen Intelligenz. Der letzte Abschnitt wittmet sich den Schwerpunkten der künstlichen neuronalen Netze. Dabei werden hauptsächlich für die Arbeit relevante Grundlagen vermittelt. 
+\section{Digitale Bilder}\label{s.digibilder}
+Damit der Ansatz der These, dass die Farbnormalisierung von Trainingsdaten das Trainingsverhalten und die spätere Genauigkeit künstlicher neuronaler Netze verbessern kann, nachvollzogen werden kann, soll in diesem Unterkapitel, auf die Aufnahme digitaler Bilder, mit deren Eigenschaften und Aufbau eingegangen werden. Außerdem sollen die Schwächen herausgearbeitet und mögliche Lösungsansätze erläutert werden. Zunächst folgt eine kurze Einführung.\\\\
+Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, also mit der Bearbeitung von Bildern mittels Bearbeitungssoftware. In der Bildverarbeitung geht es anders als in der Bearbeitung, um die Software selber, welche für die Konzeption und Erstellung von digitalen Bildern genutzt wird. In der Programmierung sind Bilder nichts weiter als Zahlen-Matrizen, wie in Abbildung \ref{img:digitalesbild} zu erkennen, welche man nach Belieben lesen und verändern kann, um seine geplanten Ziele zu erreichen. Grundsätzlich bestehen digitale Bilder aus rastern. Diese besitzen mehrere werte, welche auch Pixel genannt werden. Die Werte entstehen je nach menge der Farbabstufungen. Bei einem Graustufenbild sind das Normalerweise 256 Abstufungen bei einem 8 bit Bild. 
+\begin{figure}
+[h]
+\centering
+\includegraphics[scale=0.5]{Sources/Digitalesbild.JPG}
+\caption{Aufbau eines Digitalen Bildes mit zwei Helligkeitsabstufungen}
+\label{img:digitalesbild}
+\end{figure}\\
+In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (RGB, HSV, CMY(K), Lab, etc).
+\section{Farbräume digitaler Bilder}\label{s.aufbdigibilder}
+Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.
+ \subsection{RGB}\label{s.rgb}
+Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in Abschnitt \ref{s.digibilder} kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).
+  \subsection{HSV}\label{s.hsv}
+Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.
+  \subsection{CMY(K)}\label{s.cmy}
+Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.
+  \subsection{YUV}\label{s.lab}
+Das YUV-Farbmodell, wird hauptsächlich beim analogen Fernsehen verwendet. Dieser Farbraum verwendet zur Darstellung von Farben zwei Komponenten. Die Lichtstärke oder auch Luminanz (Y) genannt, sowie die Chrominanz (Farbanteil) welche wiederum aus den zwei Unterkomponenten U und V besteht. U und V geben somit die Farbe an. Dafür werden U und V in ein vierteiliges Koordinatensystem gelegt. Auf der X-Achse liegt V und auf der Y-Achse U, dabei besitzt jedes Feld der Koordinatensystems eine Farbe (Rot, Violett, Blau und Grün). Die Farbe wird durch die Kombination beider werte (U und V) bestimmt. Y Stellt das Helligkeitssignal in den Farbraum dar und gibt an wie hell die Farbe dargestellt werden soll. Anders als beim HSV Farbraum wird die Lichtstärke und Sättigung der Farbe durch einen Kanal bestimmt. 
+\section{Histogramme}\label{s.histogramme}
+Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digitale}. Speziell bei Bildern zeigen Histogramme die Häufigkeit der auftretenden Intensität-werte. Am einfachsten lässt sich das mit Graustufenbildern nachvollziehen. Ein Beispiel dafür zeigt die (Abbildung \ref{img:histogramm}) für ein Graustufenbild $I$ mit möglichen Intensität-werten im Bereich $I(n,V)E[0,K-1]$ enthält das Histogramm $H$ genau $K$ Einträge. Die Menge der Einträge bei einem 8 Bit Graustufenbild sind $2^8$ Farbabstufungen ($K=2^8=256$). Der Wert des Histogramms an der Stelle $i$ ist $h(i)$ die Anzahl der Pixel von $I$ mit einem Intensitätswert $i$, für alle ($0<i<K$). Mathematisch ausgedrückt ergibt sich $h(i)=card{(u,v) | I(u,v)=i}$\\
+  daraus lässt sich entnehmen, dass $h(0)$ die Anzahl der Pixel mit dem Wert 0, $h(1)$ die Anzahl des Wertes 1 usw., $h(255)$ ist schließlich der letzte Wert und gibt die Menge aller weißen Pixel in dem Bild an $(K-1)$. Eine Histogramm Berechnung stellt somit einen eindimensionalen Vektor $h$ der Länge $K$ da.\\
+  \begin{figure}
+    [h]
+    \centering
+    \includegraphics[scale=1.0]{Sources/histogramm.jpg}
+    \caption{Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite[42]{burger2009digitale}}
+    \label{img:histogramm}
+  \end{figure}
+$card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
+Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
+\subsection{Kontrast}\label{s.kontrast}
+Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abbildung \ref{img:dynamik} die verschiedenen Histogramme zeigen.\\\\
+  \begin{figure}
+    [h]
+    \centering
+    \includegraphics[scale=0.7]{Sources/kontrast.JPG}
+    \caption{Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontast (Mitte), hoher Kontrast (rechts)\cite[45]{burger2009digitale}}
+    \label{img:kontrast}
+  \end{figure}\\
+\subsection{Dynamik}\label{s.dynamik}
+Dynamik bedeutet, wie viel verschiedene Intensitätswerte in einem Bild genutzt werden, und die jeweilige Anzahl\cite[44]{burger2009digitale}. Im besten Fall entspricht die Dynamik der insgesamt genutzten Anzahl an Pixelwerten (Abbildung \ref{img:dynamik}). Also $K-1$ genutzter Farbabstufungen, damit der Wertebereich voll ausgeschöpft wird.\\
+ \begin{figure}
+    [h]
+    \centering
+    \includegraphics[scale=0.7]{Sources/dynamik.JPG}
+    \caption{Unterschiedlicher Dynamik und die Auswirkungen im Histogramm: hohe Dynamik (links), niedrige Dynamik mit 64 Graustufen (Mitte), extrem niedriger Kontrast mir 6 Graustufen (rechts)\cite[45]{burger2009digitale}}
+    \label{img:dynamik}
+  \end{figure}\\
+Anders als der Kontrast, welcher immer erhöht werden kann, solange der maximale Wertebereich nicht erreicht worden ist, kann die Dynamik eines Bildes nicht so leicht verbessert werden. Aus diesem Grund ist eine hohe Dynamik von Vorteil, denn dadurch wird die Gefahr von Qualitätsverlust bei Verarbeitungsschritten verringert. Trotz der Tatsache, das viele Ausgabegeräte mit Farbtiefen von 8 Bit arbeiten, nehmen heutige Kameras bis zu 12-14 Bit pro Kanal auf, um einen möglichen Qualitätsverlust vorzubeugen.
+\section{Einfluss von Belichtungen}\label{s.belichtung}
+In dem Kapitel \ref{s.aufbdigibilder} wurde Beschrieben wie die Farben in Bildern gespeichert werden und welche unterschiedlichen Arten von Farbräumen es gibt \cite[41ff.]{burger2009digitale}. Bei der Aufnahme von Bildern ist gerade die Belichtung entscheiden. Eine hohe Belichtung sorgt dafür, dass Farben heller wirken, wobei wenig licht dafür sorgt das Farben dunkler erscheinen. Diese Tatsache kann beim Deep Learning zu Problemen führen, da ein und dasselbe Objekt unterschiedliche Farben annehmen kann und je nach Belichtungsintensität variiert. Ein künstliches neuronales Netz kann Objekte welche es normalerweise trainiert hat nicht immer erkennen, wenn die Farbe zu stark von der eigentlichen Farbe abweicht. Um Belichtungen auf Bildern auszugleichen und zu normalisieren, gibt es einige verfahren, welche diesem Problem entgegenwirken. Die Ausgewählten verfahren werden aufgeführt und beschrieben. Diese stellen nicht die Originalfarbe des Objektes wieder her, sondern sorgen für eine konstante Farbvariation, welche sich nicht stark verändert.
+\section{Künstliche Intelligenz}\label{s.ki}
+Künstliche Intelligenz wird heute immer mehr von Firmen und Wissenschaft genutzt. In den letzten Jahren hat die Nutzung von künstlichen Intelligenzen enorm zugenommen und Firmen nutzen diese Technologie beispielsweise für die Analyse und Vorhersage von Kundenverhalten, für die Klassifikation von Bildern oder zur Spracherkennung in heutigen Smartphones. Mit künstlicher Intelligenz beschreibt man solche Computer, welche gewisse Aufgaben erledigen, ohne ausdrücklich dafür programmiert worden zu sein. Dabei werden Informationen anhand von Vergleichsdaten dem System zugeführt, wodurch er sich Eigenschaften und Strukturen merkt und durch diese Rückschlüsse und Prognosen ziehen kann. Eine gute Beschreibung geben dabei die Autoren Rich und Knight, in dem sie schreiben:\\\\
+ \textit{Das Studium des Problems, Computer dazu zu bringen, Dinge zu tun, bei denen ihnen momentan der Mensch noch überlegen ist.} - (Rich und Knight 1991)\\\\
+Ein gutes Beispiel in welchem man das Potenzial von künstlicher Intelligenz sehen kann, ist die Spiele KI  \textit{AlphaGo}. Diese KI wurde von Google entwickelt und ist auf das Spielen des Brettspiels Go trainiert. So konnte \textit{AlphaGo} in einem Match 2016, den damaligen Weltmeister in Go \textit{Lee Sedol} schlagen \cite{Alpha2016GO}. In vier von fünf spielen gewann der Computer. Solche Ergebnisse konnten bis zu diesem Zeitpunkt mit anderen Methoden nicht erzielt werden, da es für damalige Algorithmen zu viele mögliche Spielzüge gab. Durch Deep Learning konnte der Computer ohne feste Algorithmen, besser als der Weltmeister seine Spielzüge Planen. Anhand der Definition von Rich kann man feststellen, dass  \textit{AlphaGo}  im Bereich des Spieles Go als intelligent zählt, da sie dem besten Go-Spieler der Welt deutlich überlegen war.
+  \section{Neuronale Netze}\label{s.neuronalenetze}
+Um das Konzept hinter den künstlichen neuronalen Netzen besser verstehen zu können, betrachten wir zunächst wie der Lernprozess eines Menschen abläuft. Menschliches Lernen ist das Verändern der eigenen Verhaltensstrukturen und die Folgen individueller Erfahrungen \cite{hoffmann2016lern}. Der Lernprozess, kann sowohl bewusst, so wie auch unbewusst unser Verhalten verändern. Menschen adaptieren also die eigenen als auch fremde Erfahrungen zu ihren Gewohnheiten. Diese Prozesse Finden im Gehirn statt, welches aus vielen Nervenzellen besteht. Diese Nervenzellen werden Neuronen genannt und sind untereinander verknüpft, weshalb auch von einem neuronalen Netz gesprochen wird. Maschinelles Lernen nimmt sich also die Funktionsweise des menschlichen Gehirns zum Vorbild \cite[]{ertel2013grundkurs}.\\\\
+\textbf{Menschliches lernen}\\
+Wie bereits erwähnt, sind der Aufbau sowie die Funktionsweise von künstlichen neuronalen Netzen vom menschlichen Gehirns abgeleitet. Das Gehirn besteht aus ungefähr $10^{11}$ Nervenzellen, welche untereinander verknüpft sind \cite[265ff.]{ertel2013grundkurs}. Für den Lernprozess sind demnach viele Neuronen nötig. In der Abbildung \ref{img:neuron} kann man den wesentlichen Aufbau eines Neurons sehen.
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.7]{Sources/neuron.jpg}
+	\caption{Aufbau eines Neurons \cite{neuron2018UoC}}
+	\label{img:neuron}
+\end{figure}\\
+In diesem vereinfachten Modell eines Neurons lassen sich die wesentlichen Komponenten erkennen. Das Neuron selber besteht aus einem Zellkörper (Soma), einem Axon, den Dendriten auf der linken Seite und den Synapsen(Axon Terminals) auf der rechten Seite. Eine Dendrite stellt mit der Synapse eine Verbindung zu anderen Neuronen her. Diese senden elektrische Impulse an die Soma weiter, welche verarbeitet werden. Wenn die Spannung einen gewissen Schwellwert übersteigt, sendet die Soma einen elektrischen Impuls über das Axon. Jede Synapse sendet das Signal an die Dendriten des nächsten Neurons weiter. Die Stärke des Impulses und der Schwellwert, ist bei jedem Neuron unterschiedlich und verändern sich ständig. Der Schwellwert des Neurons ist niedriger, desto öfter es aktiv ist und steigt wenn es selten aktiv ist \cite{schmidt2013physiologie}. Die aufgeführte Funktionsweise beschreibt nur oberflächlich das Verhalten eines neuronalen Netzes und soll hauptsächlich dem weiteren Verständniss dienen.\\\\
+\textbf{Perzeptron}\\
+Die Grundlage für den mathematischen Ablauf künstlicher neuronaler Netze wurde von McCulloch und Pitts in ihrem Buch \textit{A logical calculus oft he ideas immanent in nervous activity} erklärt. Auf diesen Grundlagen simulierte 1953 der Psychologe und Informatiker Frank Rosenblatt das erste künstliche Neuron, welches auch als Perzeptron bekannt wurde. In der Abbildung \ref{img:Perzeptron} wird der Aufbau eines solchen Perzeptrons dargestellt.\\\\\\\\
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.3]{Sources/perzeptron2.png}
+	\caption{Schematische Modellierung eines Perzeptrons nach Rosenblatt \cite{perzeptron2019}}
+	\label{img:Perzeptron}
+\end{figure}\\
+Als Eingabewert bekommt das Perzeptron ein Gewicht $w$, welches mit den Eingangswert $x$ multipliziert wird. Das Ergebnis dieser beiden Werte, kann als lineare Funktion beschrieben werden.
+\begin{eqnarray} f(x) & = & w*x \end{eqnarray}
+Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion $g$ übergeben. Die Aktivierungsfunktion oder auch Schwellwert genannt, gibt ein Signal weiter, sobald dieser Wert überschritten wird.
+\begin{eqnarray} g( \sum_{i=0}^n x_{i} *w_{i}) \end{eqnarray}
+Als Aktivierungsfunktion können sowohl lineare als auch nicht linearen Funktionen verwendet werden. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} $b$ addiert.
+\begin{eqnarray} g(( \sum_{i=0}^n x_{i} *w_{i}) +b \end{eqnarray}
+Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht $w_{jb}$, welches unabhängig der Eingabewerte ist.
+\begin{eqnarray} Bias = 1*w_{jb} \end{eqnarray}
+Maschinelles Lernen möchte unter anderem Maschinen in die Lage versetzten Objekte, Strukturen oder auch Abläufe anhand von vorher beigebrachten Beispielen eigenständig zu erkennen. Eine Methode um dieses Ziel erreichen zu können sind die künstlichen neuronalen Netze. Diese werden mit Datensätzen des jeweiligen Schwerpunktes trainiert. Es gibt vier grundlegende Methoden ein solches Netz zu trainieren.\\\\
+\textbf{Überwachtes lernen}\\
+Das überwachte Lernen funktioniert hauptsächlich mit Datensätzen, welche Eingabedaten sowie Ausgabedaten enthalten. Das künstliche neuronale Netz versucht bei Eingabe der Daten, eine Funktion aufzustellen, welche eine Hypothese darstellt. Diese beschreibt um, was es sich bei dem Datensatz handelt. Die Genauigkeit dieser Hypothese kann durch den Vergleich der enthaltenden Ausgabedaten ermittelt werden. Wenn die Möglichkeiten der Ausgaben endlich sind, handelt es sich um eine Klassifizierung (Bsp.: Milch, Orangensaft, Wasser, etc.). Sollten nur zwei Ausgabewerte möglich sein, ist es eine boolsche bzw. binäre Klassifizierung. Eine Zahl als Ausgabe wird als Regression bezeichnet.\\\\
+\textbf{Nicht überwachtes lernen}\\
+Die zweite Methode wie ein künstliches neuronales Netz trainiert werden kann, ist eine gegenteilige Herangehensweise. Hier werden lediglich die Eingabedaten übergeben. Das neuronale Netz versucht selbstständig auftretende Muster, in den Daten zu erkennen. Als Beispiel könnte man die sinnvolle Zuordnung von Bildern anhand ähnlicher Muster nehmen. Ähnliche Datensätze werden in Kategorien aufgeteilt, jedoch nicht benannt.\\\\
+\textbf{Halb überwachtes Lernen}\\
+Oft werden die beiden Methoden des überwachten und unüberwachten Lernen kombiniert, so hat man meist einen kleinen Datensatz mit Ein- und Ausgabedaten, welche aber nicht explizit wahr sein müssen und einen Teil nur mit Eingabeinformationen. Diese Methode wird häufig bei Umfragen verwendet, wo nicht klar ist, ob der Proband wahrheitsgemäß antwortet. Dabei kann ein systematischer Fehler entstehen. Daraus ergibt sich eine Mischung aus überwachten lernen mit systematischen Fehler und unüberwachten lernen, bei welchem das Netz nach häufig auftretenden Mustern sucht.\\\\
+\textbf{Verstärktes lernen}\\ 
+Das verstärkte Lernen arbeitet auf einem Prinzip, mit welchem richtige Entscheidungen belohnt und falsche bestraft werden. Ein bekanntes Beispiel ist ein Netz, welches virtuell eine Rennstrecke ohne Fehler (nicht von der Strecke abkommen) beenden muss. Bei jedem Fehler muss von vorne begonnen werden, bis die Strecke beendet wird. Ein besonders bekanntes Beispiel ist die GO-KI \textit{AlphaGo} \cite{Alpha2016GO}, welche nur durch die Informationen der Spielregeln trainiert wurde. Die KI wurde in diesem Spiel so gut, das sie den Weltmeister \textit{Lee Sedol} 2016 in vier von fünf Partien GO besiegte.\\\\\\\\
+\textbf{Künstliche neuronale Netze}\\
+Nachdem etwas auf die Grundlagen die verschiedenen Lernverfahren eingegangen wurde, soll in diesem Abschnitt der Aufbau künstlicher neuronaler Netzes und die Logik fokussiert werden. Der mathematische Ablauf der Schichten wird in einem späteren Unterkapitel behandelt.\\
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.5]{Sources/nnet.png}
+	\caption{Aufbau eines künstlichen neuronalen Netzes \cite{bistra2018pic}}
+	\label{img:neuronales_netz}
+\end{figure}\\
+Der Aufbau von klassischen künstlichen neuronalen Netzen kann grundsätzlich in drei Bereiche unterteilt werden. Die erste Schicht stellt der \textit{Input Layer} da. Dieser besteht wie alle folgenden Schichten aus mehreren Neuronen. In diese Schicht werden die Trainingsdaten eingegeben. Jeder wert eines Datensatzes wird mit einem Neuron verbunden. Die Neuronen besitzen eine Gewichtung und einen Schwellwert. Wenn der Schwellwert durch den Eingabewert erreicht wird, sendet das Neuron das Ergebnis seiner Berechnungen an das Neuron der nächsten Schicht weiter. Die folgenden Schichten werden \textit{Hidden Layer} genannt. Die Anzahl der \textit{Hidden Layer} ist variabel und kann so viele Schichten enthalten wie benötigt. Diese Schichten werden auf mehrere verschiedene Merkmale der Eingabedaten trainiert. Dabei werden in frühen Schichten zunächst grobe Strukturen erkannt, welche nach jeder Schicht immer feiner werden. Die letzte Schicht des \textit{Hidden Layer} übergibt seine Informationen an den \textit{Output Layer}. Dieser stellt durch die erhaltenen Daten eine Hypothese auf, in welcher er beschreibt, wie er den Datensatz zuordnet. Dabei gibt das Netz an, zu welcher Wahrscheinlichkeit die Hypothese richtig sein sollte.\\\\
+\textbf{Faltende neuronale Netze}\label{s.cnn}\\
+\textit{Convolutional neural Networks} oder auch faltende neuronale Netze (Abb. \ref{img:cnn}) sind anders als das KNN, an das Konzept des menschlichen Sehens angelehnt \cite{sermanet2012convolutional} und für das Verarbeiten von matrixartigen Datensätzen konzipiert. Dazu zählen beispielsweise Bildaufnahmen \cite{goodfellow2016deep}. Die erste Schicht besteht aus den \textit{Convolutional Layer}. Bei dieser Schicht wird über die Pixel des Eingabebildes eine Schablone gelegt und vertikal wie auch horizontal verschoben. Diese Schablone hat eine ungerade quadratische Abmessung ($3x3$, $5x5$, $7x7$) und eigene Gewichtungen. Diese Schablone bildet ein Skalarprodukt der unterliegenden Pixel und der Gewichtung. Dabei werden die Strukturen hervorgehoben. Diese Schicht kommt mehrmals in einem Netz vor.\\  
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.5]{Sources/cnnet.jpg}
+	\caption{Aufbau eines Convolutional neural Network \cite{info7040061}}
+	\label{img:cnn}
+\end{figure}\\
+Auf den \textit{Convolutional Layer} folgt immer der \textit{Pooling Layer}. Dieser ist für die Komprimierung des Eingabebildes zuständig, damit im späteren Verlauf Rechenleistung gespart werden kann. Auch diese Schicht besteht aus einer Schablone welches über die Pixel des Bildes gelegt werden. Hierbei werden die Farbwerte der unterliegenden Pixel verarbeitet. Diese werden zu einem wert zusammengefasst und übergeben. Nachdem alle \textit{Convolutional} und \textit{Pooling Layer} durchlaufen wurden, werden die Daten an die letzte Schicht (\textit{Fully Connected Layer}) übergeben. Der \textit{Fully Connected Layer} besteht wie beim KNN beschrieben, aus mehreren Perzeptronen-Schichten und gibt die Informationen an den \textit{Output Layer} weiter, welcher schlussendlich eine Hypothese mit zugehöriger Wahrscheinlichkeit ausgibt.\\\\
+\textbf{Loss Funktion}\\
+Bei jedem Trainingsschritt versucht das neuronale Netz, eine Hypothese aufzustellen. Damit das Netz Fortschritte im Lernen macht, ist das sogenannte, Backpropagation welches im nächsten Abschnitt genauer beschrieben wird zuständig, welche auf der Basis des Loss Graphen arbeitet. Die Loss Funktion berechnet den Fehler, welcher das Netz in seinem aktuellen Zustand in der Berechnung begeht, also die Differenz zwischen dem Ist- und Sollwert der Ausgabe. Beispiel einer solchen Funktion ist die euklidische Loss-Funktion:
+\begin{eqnarray} E_{Euclid}&=&\frac{1}{2N} \sum_{n=1}^N || \hat{f_{n}}-f_{n} || \binom{2}{2} \end{eqnarray}
+dabei stellt\\
+
+	$\hat{f}_{n}[-\infty,+\infty]$ den berechneten Ist-Wert und
+	
+	$f_{n}$ den Sollwert dar\\\\
+Das Ergebnis der euklidischen Funktion ist das Maß für den Grad der Abweichung von ist und Sollwert.\\\\
+\textbf{Rückpropagierung}\\
+Die Rückpropagierung oder auch \textit{Backpropagation} \cite{ertel2013grundkurs} ist unter anderem Teil des überwachten Lernens, und beinhaltet das Lernen aus Fehlern. Dadurch das bei einer Klassifizierung Datensätze mit einem Zielwert verwendet werden. Kann das Netz bei einer Zuweisung überprüfen, ob das Ergebnis zu dem Zielwert passt. Dabei wird aus der Ausgabe und dem Zielwert ein Fehler (Loss) berechnet. Sollte das Ergebnis zu weit vom Zielwert abweichen, wird überprüft, welches Perzeptron den größten Einfluss auf die Fehlzuweisung verursacht hat. Dieses Perzeptron wird in seiner Gewichtung angepasst, um den Fehlerwert zu verringern \cite{goodfellow2016deep}.  
+  \subsubsection{Funktionsweise künstlicher und Faltender neuronaler Netze}\label{s.funktwknnundcnn}
+Die zuvor aufgeführten Netzarten haben einen unterschiedlichen Aufbau und bestimmte Einsatzgebiete. Das Convolutional neural Network ist beispielsweise auf das Verarbeiten von Bilddaten optimiert und Künstliche neuronale Netze eher für serielle Daten. In der Struktur sind die Netzarten ähnlich aufgebaut. Das CNN hat neben den üblichen Neuronenschichten zwei zusätzliche Schichten, welche beim KNN nicht vorhanden sind. In den folgenden Abschnitten soll die Funktionsweise dieser zusätzlichen schichten beschrieben werden.\\\\
+\textbf{Faltungsschicht}\\
+Es existieren eine menge von Filtern $n$ welche eine Höhe von $f_{h}$ und einer Breite von $f_{w}$ haben. Dieser Filter wird über das Eingabebild mit der Höhe $e_{h}$ und der breite $e_{w}$ gelegt und in ein Pixel schritten bewegt. Die Ergebnisse stellen eine Liste von Merkmalen da welche auf der Höhe $m_{h}$ und der Breite $m_{w}$ liegen. Formell ausgedrückt:
+\begin{eqnarray} 
+m_{h}&=&(e_{h} - f_{h})+1\\
+m_{w}&=&(e_{w} - f_{w})+1
+\end{eqnarray}
+Um die Verringerung von Informationen nach der Faltung zu verhindern, werden an den Rändern der Bilder Polsterungen, auch \textit{padding} genannt, angehangen \cite[343]{goodfellow2016deep}. Diese Polsterungen bestehen aus Pixeln mit einem Wert von \textit{0}. Die Anzahl der zusätzlichen Pixel ergibt sich aus der Höhe und Breite des Eingabebildes, um wie viele Pixel das Bild vergrößert wird. Formell ausgedrückt:
+\begin{eqnarray}
+p_{h}&=&f_{h} - 1\\
+p_{w}&=&f_{w} - 1
+\end{eqnarray}
+Die Faltungsschicht hat eigene Gewichte, welche beim Vorgang mit denen des Bildes zusammengerechnet wird \cite[331ff.]{goodfellow2016deep}. Für die gleiche Schicht wird derselbe Filter verwendet. Die Weise der Berechnung wird in der Abbildung \ref{img:faltungsschicht}  beschrieben.\\
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.4]{Sources/CNN.png}
+	\caption{Funktionsweise der Faltungsschicht \cite{convolutional2019layer}}
+	\label{img:faltungsschicht}
+\end{figure}\\
+\textbf{Pooling Schicht}\\
+Die Pooling Schicht oder auch \textit{Pooling Layer} kommt nach jeder Faltungsschicht \cite[336f.]{goodfellow2016deep}. Die Aufgabe dieser Schicht ist es das Eingabebild in der Auflösung und den zugehörigen Rechenaufwand für die folgenden Schichten zu reduzieren. Üblicherweise gibt es zwei Verfahren, welche beim Pooling eingesetzt werden. Zum einen das Average Pooling und das am häufigsten verwendete Max Pooling (Abbildung \ref{img:maxpooling}). Auch diese Schicht besteht aus einem quadratischen Filter, welcher wie bei der Faltungsschicht über die Bildpunkte gelegt wird. Dabei wird beim \textit{Max Pooling} der höchste Wert in diesem Bereich ermittelt und übernommen. Bei einem standardmäßigem Kernel von 2x2, wird das Bild um den Faktor 2 Verkleinert. Die Abmessungen sind, anders wie bei der Faltungsschicht, gerade.\\
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=1.8]{Sources/MaxpoolSample2.png}
+	\caption{Funktionsweise des Pooling Layers mit der Max Pooling variante \cite{pooling2018layer}}
+	\label{img:maxpooling}
+\end{figure}\\
+\textbf{Fully Connected Layer}\\
+nachdem das Eingabebild durch alle Faltungs- und Pooling Schichten verarbeitet wurde, werden die Daten an den Fully connected Layer übergeben \cite[14]{sermanet2012convolutional}. Dieser verwendet, wie bei einem normalen KNN, Perzeproten um die Daten zu verarbeiten. Die vorherigen Schichten wurden durchlaufen, damit diese rechenintensive Schicht nicht zu viel Informationen verarbeiten muss. 
+  \subsection{Entstehung von Trainingsdaten}\label{s.trainingsdaten} 
+Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benötigt es zunächst eine Reihe von Beispieldaten. Anhand dieser Beispieldaten lernt das neuronale Netz, welche Eigenschaften das zu erlernende Objekt hat und wie es aufgebaut ist. Für diesen Vorgang werden üblicherweise mehrere Hunderttausend Daten benötigt, um ein akzeptables Ergebnis zu erzielen. Eine Möglichkeit, das Training mit weniger Trainingsdaten durchzuführen, ist das Verwenden vortrainierter Netze. Diese Netze wurden mit rund 300.000 Bildern über mehrere Tage trainiert und als Open Source zur Verfügung gestellt. Beim Verwenden dieser Netze werden lediglich die obersten Schichten, welche für die Zuweisung verantwortlich sind, durch den neuen Datensatz verändert wodurch wesentlich weniger Testdaten pro Objektklasse benötigt werden. 
+\begin{figure}
+	[h]
+	\centering
+	\includegraphics[scale=0.7]{Sources/labelimg.jpg}
+	\caption{Vorbereitung der Datensätzen mit dem Labelimg Programm \cite{labelimg2019}}
+	\label{img:labelimg}
+\end{figure}\\
+Eine Klassifizierung gehört zum überwachten Lernen und benötigt deswegen gelabelte Datensätze. Das Labeln wurde mit dem Open Source Programm \textit{LabelIMG} \cite{labelimg2019} durchgeführt. Dabei wird das zu Trainierende Objekt mit einem rechteckigen Kasten umschlossen und einer Klasse auf den Bildern markiert. Diese Daten werden zunächst in einer XML Datei abgespeichert. 
+  \section{Mean average Precision}\label{s.map}
+Oft können neuronale Netze nicht nur ein Objekt gleichzeitig erkennen, sondern geben als Ergebnis mehrere Hypothesen aus. Dadurch entsteht das Problem, das nicht mehr nur zwischen richtig und falsch unterschieden werden kann, sondern eine Genauigkeit benötigt wird, welche alle möglichen Objekte einbezieht. Eine Metrik welche auf diese Informationen eingeht, ist die (mean) average Precision (AP/mAP). Für die Berechnung wird die Präzision (Precision) und der Rückgabewert eines Ergebnisses benötigt. Die Präzision $P$ beschreibt den Anteil der richtig erkannten Objekte unter allen erkannten Objekten. Der Rückgabewert $R$ ist der korrekte Anteil von allen möglichen Objekten. Formell ausgedrückt:
+\begin{eqnarray}
+P&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsch\medspace erkannte}\\
+R&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsche\medspace nicht\medspace erkannte}
+\end{eqnarray}
+Häufig wird ein Schwellwert für die Pseudowahrscheinlichkeit genutzt, mit welchem entschieden wird, wann ein erkanntes Objekt der Rückgabeliste hinzugefügt wird oder nicht. Wird der Schwellwert niedrig angesetzt, werden meist mehr Objekte, als erkannt eingestuft. Dadurch steigt der Rückgabewert mit richtig erkannten Objekten. Gleichzeitig sinkt aber auch die Präzision da natürlicherweise auch mehr falsche Objekte erkannt werden. Objekterkennungsverfahren mit einer hohen Qualität zeigen aber weiterhin eine gute Präzision.
+\section{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}
+Die Farbnormalisierung ist ein Thema der Bildverarbeitung und wird hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet, das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.
+  \subsection{Ansatz des Gray-World-Algorithmus}\label{s.gw}
+  Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Wenn über die Farben in einem Bild keine Annahmen getroffen werden können, wird davon ausgegangen, dass sich die Farbwerte in einem Bild sich vektoriell zu Grau addieren, also das der Mittelwert vom Bild Grau ist. Sollte das nicht der Fall sein, wird davon ausgegangen, dass das auf eine Farbige Beleuchtung zurückzuführen ist und normalisiert das Bild so, dass die Graue-Welt-Theorie erfüllt wird. Die Farbkanäle werden durch einen Skalierungsfaktor normalisiert, so das der Mittelwert 128 entspricht. Es werden somit Farbstiche herausgefiltert. Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein Problem dieses Normalisierung-verfahren besteht darin, das es nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Ansätze dieser Ausgleichung.
+  \subsection{Ansatz der Histogramm Ausgleichung}\label{s.ha}
+  Die Histogramm Ausgleichung ist eine Nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation-Funktion verwendet werden. Diese Normalisierung-Funktion gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.\\\\
+   \begin{table}
+  [h]
+  \centering
+  \caption{Pixelbild in ein tabellarisches Histogramm überführt}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  0&1&5&1&7&2&0&3\\
+  \hline
+  0&0&5&5&5&2&4&5\\
+  \hline
+  4&5&1&4&1&5&1&4\\
+  \hline
+  5&1&2&4&5&2&6&3\\
+  \hline
+  5&2&6&4&0&4&0&5\\
+  \hline
+  4&0&2&4&7&4&6&2\\
+  \hline
+  5&1&6&1&0&1&1&5\\
+  \hline
+  4&3&2&4&2&5&2&5\\
+  \hline
+  \end{tabular}
+  \end{table}
+  \begin{table}
+  [h]
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und durch die höchste Graustufe teilt. Das Ergebnis wird gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden.
+  \begin{table}
+  [h]
+  \caption{Mathematische Umsetzung der Histogrammausgleichung}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|}
+  \hline
+  $r_{k}$ & $P_{k}$ & Kumulative Werte & $Kumulative/Gesamt*(L-1)$ & Gerundete nahe Grauwerte\\
+  \hline
+  0 & 8 & 8 & $8/64*7=0.875$ & 1\\
+  \hline
+  1 & 10 & 18 & $18/64*7=1.968$ & 2\\
+  \hline
+  2 & 10 & 28 & $28/64*7=3.0625$ & 3\\
+  \hline
+  3 & 2 & 30 & $30/64*7=3.2812$ & 3\\
+  \hline
+  4 & 12 & 42 & $42/64*7=4.5937$ & 5\\
+  \hline
+  5 & 16 & 58 & $58/64*7=6.3437$ & 6\\
+  \hline
+  6 & 4 & 62 & $62/64*7=6.78125$ & 7\\
+  \hline
+  7 & 2 & 64 & $64/64*7=7$ & 7\\
+  \hline
+  \end{tabular}
+  \end{table}
+  \subsection{Ansatz der Histogramm Spezifikation}\label{s.hs}
+  Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat.
+  Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Hauptbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Hauptbild nicht optimiert ist. Zunächst wird mit beiden Bildern eine Histogramm Ausgleichung durchgeführt. Im Weiteren wird das Referenz-Histogramm mit dem des Hauptbildes kombiniert und angepasst.\\\\
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
+  \label{tab:b1}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Referenz-Bildes (B2)}
+  \label{tab:b2}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 0 & 0 & 0 & 0 & 20 & 20 & 16 & 8\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. Nun werden die Histogramme wie in Kapitel \ref{s.histogramme} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle \ref{tab:hs} Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
+  In einem Beispiel:
+  
+  1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
+  
+  2 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
+  
+  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
+  
+  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
+  
+  ......\\
+  \begin{table}
+  [h]
+  \caption{Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}
+  \label{tab:hs}
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+  \hline
+  Graustufe & Ausgleichung B1 & Ausgleichung B2 & Spezifiziertes Histogramm\\
+  \hline
+  0 & 1 & 0 & 4\\
+  \hline
+  1 & 2 & 0 & 4\\
+  \hline
+  2 & 3 & 0 & 5\\
+  \hline
+  3 & 3 & 0 & 5\\
+  \hline
+  4 & 5 & 2 & 6\\
+  \hline
+  5 & 6 & 4 & 6\\
+  \hline
+  6 & 7 & 6 & 7\\
+  \hline
+  7 & 7 & 7 & 7\\
+  \hline
+  \end{tabular}
+  \end{table}\\
+  Aus der neuen Stufen Verteilung entsteht ein neues Histogramm welches weniger Farbstufen enthält. Dadurch verschiebt sich das Histogramm Richtung weiß und das Bild wird erhellt.
+  \begin{table}
+  [h]
+  \caption{Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
+  \hline
+  \end{tabular}
+  \end{table}

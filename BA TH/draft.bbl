@@ -1,0 +1,137 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{EVGW{\etalchar{+}}07}
+
+\bibitem[Aih12]{gray2012world}
+Shunsuke Aihara.
+\newblock color correction algorithm in python, 2012.
+
+\bibitem[Ang18]{bistra2018pic}
+Bistra Angelova.
+\newblock Optical character recognition für chinesische schrift, December
+  2018.
+
+\bibitem[BB01]{buenaposada2001variations}
+Jos{\'e}~M Buenaposada and Luis Baumela.
+\newblock Variations of grey world for face tracking.
+\newblock {\em Image Processing \& Communications}, 7(3-4):51--61, 2001.
+
+\bibitem[BB09]{burger2009digitale}
+Wilhelm Burger and Mark~James Burge.
+\newblock {\em Digitale Bildverarbeitung: Eine Algorithmische Einf{\"u}hrung
+  Mit Java}.
+\newblock Springer-Verlag, 2009.
+
+\bibitem[Coc18]{common2018data}
+Coco.
+\newblock Coco datenset, December 2018.
+
+\bibitem[{cs2}NA]{maxpooling}
+{cs231n}.
+\newblock Convolutional neural networks for visual recognition, N/A N/A.
+
+\bibitem[Dee16]{Alpha2016GO}
+DeepMind.
+\newblock Google deepmind challenge match: Lee sedol vs alphago, March 2016.
+
+\bibitem[Edj18]{evan2018pic}
+Evan EdjeElectronics.
+\newblock Testbilder, December 2018.
+
+\bibitem[Ert13]{ertel2013grundkurs}
+Wolfgang Ertel.
+\newblock {\em Grundkurs k{\"u}nstliche Intelligenz: eine praxisorientierte
+  Einf{\"u}hrung}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem[EVGW{\etalchar{+}}07]{pascal-voc-2007}
+M.~Everingham, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and A.~Zisserman.
+\newblock The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007 {(VOC2007)}
+  {R}esults.
+\newblock https://bit.ly/2Yy6tFG, 2007.
+
+\bibitem[GBCB16]{goodfellow2016deep}
+Ian Goodfellow, Yoshua Bengio, Aaron Courville, and Yoshua Bengio.
+\newblock {\em Deep learning}, volume~1.
+\newblock MIT press Cambridge, 2016.
+
+\bibitem[GWM{\etalchar{+}}03]{goatman2003colour}
+Keith~A Goatman, A~David Whitwam, A~Manivannan, John~A Olson, and Peter~F
+  Sharp.
+\newblock Colour normalisation of retinal images.
+\newblock In {\em Proceedings of medical image understanding and analysis},
+  pages 49--52, 2003.
+
+\bibitem[HE16]{hoffmann2016lern}
+Joachim Hoffmann and Johannes Engelkamp.
+\newblock {\em Lern-und Ged{\"a}chtnispsychologie}.
+\newblock Springer-Verlag, 2016.
+
+\bibitem[J{\"a}h13]{jahne2013digitale}
+Bernd J{\"a}hne.
+\newblock {\em Digitale bildverarbeitung}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem[Jaz16]{histogram2012equalisation}
+Mohammad~Al Jazaery.
+\newblock Opencv python equalizehist colored image, july 2016.
+
+\bibitem[KJYFF11]{KhoslaYaoJayadevaprakashFeiFei_FGVC2011}
+Aditya Khosla, Nityananda Jayadevaprakash, Bangpeng Yao, and Li~Fei-Fei.
+\newblock Novel dataset for fine-grained image categorization.
+\newblock In {\em First Workshop on Fine-Grained Visual Categorization, IEEE
+  Conference on Computer Vision and Pattern Recognition}, Colorado Springs, CO,
+  June 2011. Aditya Khosla and Nityananda Jayadevaprakash and Bangpeng Yao and
+  Li Fei-Fei.
+
+\bibitem[LLC18a]{google2018tensor}
+Google LLC.
+\newblock Bild 3b umschlossen, December 2018.
+
+\bibitem[LLC18b]{google2018tensorflow}
+Google LLC.
+\newblock Tensorflow, December 2018.
+
+\bibitem[LLC18c]{google2018tens}
+Google LLC.
+\newblock Tensorflow detection model zoo, December 2018.
+
+\bibitem[Mis19]{convolutional2019layer}
+Mayank Mishra.
+\newblock Convolutional neural networks, explained, March 2019.
+
+\bibitem[oCSD18]{neuron2018UoC}
+University of~California San~Diego.
+\newblock Why are neuron axons long and spindly? study shows they're optimizing
+  signaling efficiency, July 2018.
+
+\bibitem[PWCL16]{info7040061}
+Min Peng, Chongyang Wang, Tong Chen, and Guangyuan Liu.
+\newblock Nirfacenet: A convolutional neural network for near-infrared face
+  identification.
+\newblock {\em Information}, 7(4), 2016.
+
+\bibitem[SCL12]{sermanet2012convolutional}
+Pierre Sermanet, Soumith Chintala, and Yann LeCun.
+\newblock Convolutional neural networks applied to house numbers digit
+  classification.
+\newblock In {\em Pattern Recognition (ICPR), 2012 21st International
+  Conference on}, pages 3288--3291. IEEE, 2012.
+
+\bibitem[ST13]{schmidt2013physiologie}
+Robert~F Schmidt and Gerhard Thews.
+\newblock {\em Physiologie des Menschen}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem[sW18]{pooling2018layer}
+Computer science Wiki.
+\newblock Max-pooling / pooling, February 2018.
+
+\bibitem[Tzu19]{labelimg2019}
+Darrenl Tzutalin.
+\newblock labelimg, Juny 2019.
+
+\bibitem[Wik19]{perzeptron2019}
+Wikipedia.
+\newblock Künstliches neuron, April 2019.
+
+\end{thebibliography}
