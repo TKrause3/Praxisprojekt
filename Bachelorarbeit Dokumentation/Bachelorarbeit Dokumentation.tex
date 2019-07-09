@@ -221,25 +221,24 @@ plainpages=false,hypertexnames=false,citecolor=black]{hyperref} % Für Verlinkun
   \newpage
   \section*{Vorwort}
 Vor ihnen liegt die Bachelorarbeit \textit{Der Einfluss von Farbnormalisierung auf die Klassifizierung von Bildern durch künstliche neuronale Netze}. Die Forschung, wurde an der Technischen Hochschule Köln durchgeführt.\\\\
-Diese Bachelorarbeit habe ich zum Abschluss meines Studiums der Medieninformatik an der Technischen Hochschule Köln eigenständig verfasst. Ziel war es herauszufinden, welchen Einfluss die Farbnormalisierung auf die Klassifizierung mittels künstlicher neuronaler Netze hat. Von Mai 2019 bis Juli 2019 beschäftigte ich mich intensiv mit den einzelnen Themenbereichen und dem schreiben der Bachelorarbeit.\\\\
-Zusammen mit meinem Professor, Dr. Martin Eisemann, habe ich die Fragestellung für diese Bachelorarbeit entwickelt. Die Forschung und Durchführung für meine Arbeit war nicht immer einfach und hat des öfteren zu Problemen geführt. Nach einer umfangreichen Analyse der Ergebnisse gelang es mir, die Forschungsfrage zu beantworten. Während dieser Untersuchung waren meine Betreuer, Uwe Müsse und Dr. Benjamin Meyer, stets an meiner Seite. Sie beantworteten meine Fragen und gaben wertvollen Input für die methodische Vorgehensweise, sodass ich meine Forschung erfolgreich fortführen konnte.\\\\
-Aus diesem Grund möchte ich meinem Professor und meinen Betreuern für die Unterstützung und ihre gute Anleitung während dieses Prozesses Danken. Sie haben mir viele Blikwinkel gezeigt, Probleme zu betrachten.\\\\
-Außerdem möchte ich meiner Schwester Nicole Teismann und meinem Schwager Michael Teismann danken, das sie immer ein offenes Ohr hatten und mir bei der Struktur sowie Korrektur geholfen haben. Zu guter Letzt möchte ich meinem Kommilitonen Binh Ngo danken, der Parallel mit mir seine Bachelorarbeit geschrieben hat und immer hilfsbereit war.\\\\
+Diese Bachelorarbeit habe ich zum Abschluss meines Studiums der Medieninformatik an der Technischen Hochschule Köln eigenständig verfasst. Ziel war es, herauszufinden welchen Einfluss die Farbnormalisierung auf die Klassifizierung mittels künstlicher neuronaler Netze hat. Von Mai 2019 bis Juli 2019 beschäftigte ich mich intensiv mit den einzelnen Themenbereichen und dem Schreiben der Bachelorarbeit.\\\\
+Zusammen mit meinem Professor, Dr. Martin Eisemann, habe ich die Fragestellung für diese Bachelorarbeit entwickelt. Die Forschung und Durchführung für meine Arbeit war nicht immer einfach und hat des Öfteren zu Problemen geführt. Nach einer umfangreichen Analyse der Ergebnisse gelang es mir, die Forschungsfrage zu beantworten. Während dieser Untersuchung waren meine Betreuer, Uwe Müsse und Dr. Benjamin Meyer, stets an meiner Seite. Sie beantworteten meine Fragen und gaben wertvollen Input für die methodische Vorgehensweise, sodass ich meine Forschung erfolgreich fortführen konnte.\\\\
+Aus diesem Grund möchte ich meinem Professor und meinen Betreuern für die Unterstützung und ihre gute Anleitung während dieses Prozesses danken. Sie haben mir viele Blickwinkel gezeigt, Probleme zu betrachten.\\\\
+außerdem möchte ich meiner Schwester Nicole Teismann und meinem Schwager Michael Teismann danken, das sie immer ein offenes Ohr hatten und mir bei der Struktur sowie Korrektur geholfen haben. Zu guter Letzt möchte ich meinem Kommilitonen Binh Ngo danken, der parallel mit mir seine Bachelorarbeit geschrieben hat und immer hilfsbereit war.\\\\
 Ich wünsche Ihnen viel Freude beim Lesen dieser Bachelorarbeit.\\\\
 Torben Krause\\\\
 Gummersbach, 17. Juli 2019
 \newpage
   \section*{Abstract}
-Bei der Klassifizierung von künstlichen neuronalen Netzen, kann es passieren, das es zu Fehlern bei der Identifizierung von Objekten kommt. Das liegt häufig daran das nicht jede Farbe trainiert wurde, welche bei unterschiedlichen Beleuchtungen auftreten kann. Ein möglicher Ansatz war es Die Farben der Datensätze zu normalisieren und dadurch konstanter zu machen. Für dieses Vorhaben, gibt es einige Ansätze welche dieses Problem lösen könnten.\\\\
-Das Ziel dieser Arbeit ist es herauszufinden, ob die Farbnormalisierung von Datensätzen einen Positiven Einfluss auf die Klassifizierung mittels künstlicher neuronaler Netze hat, und welche Beschränkungen diese haben. Dazu wird folgende Forschungsfrage gestellt:Welchen Einfluss, hat Farbnormalisierung von Datensätzen
-auf die Klassifizierung von künstlichen neuronalen Netzen? \\\\
-Um dieser Frage nachzugehen wurden insgesamt 4 Datensätze verwendet und mittels drei verschiedener Normalisierungs-verfahren überprüft. Dabei ist aufgefallen das ein Großteil dieser Verfahren nicht optimal für die Nutzung allgemeiner Datensätze geeignet sind, sondern eher für Datensätze, welche eine einheitliche Umgebung haben. Die Ergebnisse zeigen, das Farbnormalisierung in einem einheitlichen Datensatz eine Erhöhung der Genauigkeit zu folge haben kann. Auf dieser Grundlage ist es empfehlenswert zu differenzieren, welche Eigenschaften der Normalisierungs-Verfahren benötigt werden und zu welchem Zweck der Datensatz erfüllen soll.
+Bei der Klassifizierung von künstlichen neuronalen Netzen, kann es passieren, dass es zu Fehlern bei der Identifizierung von Objekten kommt. Das liegt häufig daran, dass nicht jede Farbe trainiert wurde, welche bei unterschiedlichen Beleuchtungen auftreten kann. Ein möglicher Ansatz war es, die Farben der Datensätze zu normalisieren und dadurch konstanter zu machen. Für dieses Vorhaben gibt es einige Ansätze, welche dieses Problem lösen könnten.\\\\
+Das Ziel dieser Arbeit ist es, zu überprüfen, ob Farbnormalisierung von Datensätzen einen Positiven Einfluss auf die Klassifizierung mittels künstlicher neuronaler Netze hat, und welche Beschränkungen diese haben. Dazu wird folgende Forschungsfrage gestellt: Welchen Einfluss, hat Farbnormalisierung von Datensätzen auf die Klassifizierung von künstlichen neuronalen Netzen? \\\\
+Um dieser Frage nachzugehen, wurden insgesamt 4 Datensätze verwendet und mittels drei verschiedener Normalisierungs-verfahren überprüft. Dabei ist aufgefallen, dass ein Großteil dieser Verfahren nicht optimal für die Nutzung allgemeiner Datensätze geeignet sind, sondern eher für Datensätze, welche eine einheitliche Umgebung haben. Die Ergebnisse zeigen, dass Farbnormalisierung in einem einheitlichen Datensatz eine Erhöhung der Genauigkeit zu folge haben kann. Auf dieser Grundlage ist es empfehlenswert, zu differenzieren, welche Eigenschaften der Normalisierungsverfahren benötigt werden und zu welchem Zweck der Datensatz erfüllen soll.
+  \newpage
+  \tableofcontents
   \newpage
   \listoffigures
   \newpage
   \listoftables
-  \newpage
-  \tableofcontents
   \newpage
   \section{Einleitung}\label{s.einleitung} 
 In keinem Zeitabschnitt waren digitale Technologien so stark im Fokus wie heutzutage. Gerade der Bereich selbstständig lernender Computer wird in der Forschung untersucht und vorangetrieben. Auch bekannt unter dem Namen \textit{Deep Learning} oder künstliche Intelligenz (KI), ist mit diesen Bezeichnungen meist der Bereich der künstlichen neuronalen Netze gemeint. Solche Netze können durch eingeführte Datensätze oder Regeln lernen. Dadurch werden sie in dem trainierten Bereich \textit{intelligent}. Durch genügend Beispiele in den Trainingsdaten können sie Hypothesen aufstellen. Die Faktoren, welche beim Training wichtig sind, stellen zum einen die Menge, wie auch die Qualität der Trainingsdaten dar, zum anderen die Zeit, in welcher das neuronale Netz trainiert wird. Durch steigende Rechenleistung kann das Verfahren beschleunigt werden, da normalerweise viel Zeit für das Training benötigt wird. In der Vergangenheit konnten die Forschungen durch zu langsame Hardware nicht effektiv weiter geführt werden. Mit der Leistung heutiger CPUs und GPUs ist dies ohne Probleme möglich.\\ 
@@ -280,18 +279,17 @@ Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, 
 \caption{Aufbau eines Digitalen Bildes mit zwei Helligkeitsabstufungen}
 \label{img:digitalesbild}
 \end{figure}\\
-In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (CMY, CMYK, HSV, Lab, etc).\\\\
-\subsubsection{Aufbau von Digitalbildern}\label{s.aufbdigibilder}
-  Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.\\\\
- \textbf{RGB}\label{s.rgb}\\
-  Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in Abschnitt \ref{s.digibilder} kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).\\\\
-  \textbf{HSV}\label{s.hsv}\\
-  Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\\\
-  \textbf{CMY/CMYK}\label{s.cmy}\\
-  Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.\\\\
-  \textbf{Lab}\label{s.lab}\\
-  Der Lab-Farbraum ist ein Messraum, in welchem jede wahrnehmbare Farbe enthalten ist. Der Farbraum wurde auf Grundlage der Gegenfarbentheorie konstruiert. Eine wichtige Eigenschaft, ist die Geräteunabhängigkeit. Das bedeutet, die Farben werden unabhängig der Erzeugung und der Wiedergabe definiert. Die umfassende Definition kann in der DIN 6174 nachgelesen werden. Auf Grundlage der Gegenfarbentheorie liegen sich auf der a Achse die Farben Grün und Rot gegenüber. Die b Achse entspricht den Gegenfarben Blau und Gelb. Senkrecht durch die Ebenen befindet sich die L Achse welche von 0 (weiß) bis 100 (Schwarz) geht. Diese gibt die Helligkeit wieder und hat Zwischenschritte für die Graustufen.
-\newpage
+In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (RGB, HSV, CMY(K), Lab, etc).
+\subsection{Farbräumer digitaler Bilder}\label{s.aufbdigibilder}
+Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.
+ \subsubsection{RGB}\label{s.rgb}
+Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in Abschnitt \ref{s.digibilder} kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).
+  \subsubsection{HSV}\label{s.hsv}
+Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hell-wert oder auch die Helligkeit der Farbe. Der HSV Farbraum besteht aus diesen Koordinaten. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.
+  \subsubsection{CMY(K)}\label{s.cmy}
+Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.
+  \subsubsection{YUV}\label{s.lab}
+Das YUV-Farbmodell, wird hauptsächlich beim analogen Fernsehen verwendet. Dieser Farbraum verwendet zur Darstellung von Farben zwei Komponenten. Die Lichtstärke oder auch Luminanz (Y) genannt, sowie die Chrominanz (Farbanteil) welche wiederum aus den zwei Unterkomponenten U und V besteht. U und V geben somit die Farbe an. Dafür werden U und V in ein vierteiliges Koordinatensystem gelegt. Auf der X-Achse liegt V und auf der Y-Achse U, dabei besitzt jedes Feld der Koordinatensystems eine Farbe (Rot, Violett, Blau und Grün). Die Farbe wird durch die Kombination beider werte (U und V) bestimmt. Y Stellt das Helligkeitssignal in den Farbraum dar und gibt an wie hell die Farbe dargestellt werden soll. Anders als beim HSV Farbraum wird die Lichtstärke und Sättigung der Farbe durch einen Kanal bestimmt. 
 \subsection{Histogramme}\label{s.histogramme}
 Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digitale}. Speziell bei Bildern zeigen Histogramme die Häufigkeit der auftretenden Intensität-werte. Am einfachsten lässt sich das mit Graustufenbildern nachvollziehen. Ein Beispiel dafür zeigt die (Abbildung \ref{img:histogramm}) für ein Graustufenbild $I$ mit möglichen Intensität-werten im Bereich $I(n,V)E[0,K-1]$ enthält das Histogramm $H$ genau $K$ Einträge. Die Menge der Einträge bei einem 8 Bit Graustufenbild sind $2^8$ Farbabstufungen ($K=2^8=256$). Der Wert des Histogramms an der Stelle $i$ ist $h(i)$ die Anzahl der Pixel von $I$ mit einem Intensitätswert $i$, für alle ($0<i<K$). Mathematisch ausgedrückt ergibt sich $h(i)=card{(u,v) | I(u,v)=i}$\\
   daraus lässt sich entnehmen, dass $h(0)$ die Anzahl der Pixel mit dem Wert 0, $h(1)$ die Anzahl des Wertes 1 usw., $h(255)$ ist schließlich der letzte Wert und gibt die Menge aller weißen Pixel in dem Bild an $(K-1)$. Eine Histogramm Berechnung stellt somit einen eindimensionalen Vektor $h$ der Länge $K$ da.\\
@@ -302,10 +300,10 @@ Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digit
     \caption{Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite[42]{burger2009digitale}}
     \label{img:histogramm}
   \end{figure}
-  $card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
-  Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
-  \textbf{Kontrast}\label{s.kontrast}\\
-  Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abbildung \ref{img:dynamik} die verschiedenen Histogramme zeigen.\\\\
+$card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
+Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
+\textbf{Kontrast}\label{s.kontrast}\\
+Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abbildung \ref{img:dynamik} die verschiedenen Histogramme zeigen.\\\\
   \begin{figure}
     [h]
     \centering
@@ -324,10 +322,10 @@ Dynamik bedeutet, wie viel verschiedene Intensitätswerte in einem Bild genutzt 
   \end{figure}\\
 Anders als der Kontrast, welcher immer erhöht werden kann, solange der maximale Wertebereich nicht erreicht worden ist, kann die Dynamik eines Bildes nicht so leicht verbessert werden. Aus diesem Grund ist eine hohe Dynamik von Vorteil, denn dadurch wird die Gefahr von Qualitätsverlust bei Verarbeitungsschritten verringert. Trotz der Tatsache, das viele Ausgabegeräte mit Farbtiefen von 8 Bit arbeiten, nehmen heutige Kameras bis zu 12-14 Bit pro Kanal auf, um einen möglichen Qualitätsverlust vorzubeugen.
 \newpage
-\subsubsection{Einfluss von Belichtungen}\label{s.belichtung}
-In dem Kapitel\ref{s.aufbdigibilder} wurde Beschrieben wie die Farben in Bildern gespeichert werden und welche unterschiedlichen Arten von Farbräumen es gibt \cite[41ff.]{burger2009digitale}. Bei der Aufnahme von Bildern ist gerade die Belichtung entscheiden. Eine hohe Belichtung sorgt dafür, dass Farben heller wirken, wobei wenig licht dafür sorgt das Farben dunkler erscheinen. Diese Tatsache kann beim Deep Learning zu Problemen führen, da ein und dasselbe Objekt unterschiedliche Farben annehmen kann und je nach Belichtungsintensität variiert. Ein künstliches neuronales Netz kann Objekte welche es normalerweise trainiert hat nicht immer erkennen, wenn die Farbe zu stark von der eigentlichen Farbe abweicht. Um Belichtungen auf Bildern auszugleichen und zu normalisieren, gibt es einige verfahren, welche diesem Problem entgegenwirken. Die Ausgewählten verfahren werden aufgeführt und beschrieben. Diese stellen nicht die Originalfarbe des Objektes wieder her, sondern sorgen für eine konstante Farbvariation, welche sich nicht stark verändert.
+\subsection{Einfluss von Belichtungen}\label{s.belichtung}
+In dem Kapitel \ref{s.aufbdigibilder} wurde Beschrieben wie die Farben in Bildern gespeichert werden und welche unterschiedlichen Arten von Farbräumen es gibt \cite[41ff.]{burger2009digitale}. Bei der Aufnahme von Bildern ist gerade die Belichtung entscheiden. Eine hohe Belichtung sorgt dafür, dass Farben heller wirken, wobei wenig licht dafür sorgt das Farben dunkler erscheinen. Diese Tatsache kann beim Deep Learning zu Problemen führen, da ein und dasselbe Objekt unterschiedliche Farben annehmen kann und je nach Belichtungsintensität variiert. Ein künstliches neuronales Netz kann Objekte welche es normalerweise trainiert hat nicht immer erkennen, wenn die Farbe zu stark von der eigentlichen Farbe abweicht. Um Belichtungen auf Bildern auszugleichen und zu normalisieren, gibt es einige verfahren, welche diesem Problem entgegenwirken. Die Ausgewählten verfahren werden aufgeführt und beschrieben. Diese stellen nicht die Originalfarbe des Objektes wieder her, sondern sorgen für eine konstante Farbvariation, welche sich nicht stark verändert.
 \subsection{Künstliche Intelligenz}\label{s.ki}
-Künstliche Intelligenz wird heute immer mehr von Firmen und Wissenschaft genutzt. In den letzten Jahren hat die nutzung von künstlichen Inteligenzen enorm zugenommen und Firmen nutzen diese Technologie beispielsweise für die analyse und vohersage von Kundenverhalten, für die Klassifikation von Bildern oder zur Spracherkennung in heutigen Smartphones. Mit künstlicher Intelligenz beschreibt man solche Computer, welche gewisse Aufgaben erledigen, ohne ausdrücklich dafür programmiert worden zu sein. Dabei werden Informationen anhand von Vergleichsdaten dem System zugeführt, wodurch er sich Eigenschaften und Strukturen merkt und durch diese Rückschlüsse und Prognosen ziehen kann. Eine gute Beschreibung geben dabei die Autoren Rich und Knight, in dem sie schreiben:\\\\
+Künstliche Intelligenz wird heute immer mehr von Firmen und Wissenschaft genutzt. In den letzten Jahren hat die Nutzung von künstlichen Intelligenzen enorm zugenommen und Firmen nutzen diese Technologie beispielsweise für die Analyse und Vorhersage von Kundenverhalten, für die Klassifikation von Bildern oder zur Spracherkennung in heutigen Smartphones. Mit künstlicher Intelligenz beschreibt man solche Computer, welche gewisse Aufgaben erledigen, ohne ausdrücklich dafür programmiert worden zu sein. Dabei werden Informationen anhand von Vergleichsdaten dem System zugeführt, wodurch er sich Eigenschaften und Strukturen merkt und durch diese Rückschlüsse und Prognosen ziehen kann. Eine gute Beschreibung geben dabei die Autoren Rich und Knight, in dem sie schreiben:\\\\
  \textit{Das Studium des Problems, Computer dazu zu bringen, Dinge zu tun, bei denen ihnen momentan der Mensch noch überlegen ist.} - (Rich und Knight 1991)\\\\
 Ein gutes Beispiel in welchem man das Potenzial von künstlicher Intelligenz sehen kann, ist die Spiele KI  \textit{AlphaGo}. Diese KI wurde von Google entwickelt und ist auf das Spielen des Brettspiels Go trainiert. So konnte \textit{AlphaGo} in einem Match 2016, den damaligen Weltmeister in Go \textit{Lee Sedol} schlagen \cite{Alpha2016GO}. In vier von fünf spielen gewann der Computer. Solche Ergebnisse konnten bis zu diesem Zeitpunkt mit anderen Methoden nicht erzielt werden, da es für damalige Algorithmen zu viele mögliche Spielzüge gab. Durch Deep Learning konnte der Computer ohne feste Algorithmen, besser als der Weltmeister seine Spielzüge Planen. Anhand der Definition von Rich kann man feststellen, dass  \textit{AlphaGo}  im Bereich des Spieles Go als intelligent zählt, da sie dem besten Go-Spieler der Welt deutlich überlegen war.
   \subsection{Neuronale Netze}\label{s.neuronalenetze}
@@ -343,7 +341,7 @@ Wie bereits erwähnt, sind der Aufbau sowie die Funktionsweise von künstlichen 
 \end{figure}\\
 In diesem vereinfachten Modell eines Neurons lassen sich die wesentlichen Komponenten erkennen. Das Neuron selber besteht aus einem Zellkörper (Soma), einem Axon, den Dendriten auf der linken Seite und den Synapsen(Axon Terminals) auf der rechten Seite. Eine Dendrite stellt mit der Synapse eine Verbindung zu anderen Neuronen her. Diese senden elektrische Impulse an die Soma weiter, welche verarbeitet werden. Wenn die Spannung einen gewissen Schwellwert übersteigt, sendet die Soma einen elektrischen Impuls über das Axon. Jede Synapse sendet das Signal an die Dendriten des nächsten Neurons weiter. Die Stärke des Impulses und der Schwellwert, ist bei jedem Neuron unterschiedlich und verändern sich ständig. Der Schwellwert des Neurons ist niedriger, desto öfter es aktiv ist und steigt wenn es selten aktiv ist \cite{schmidt2013physiologie}. Die aufgeführte Funktionsweise beschreibt nur oberflächlich das Verhalten eines neuronalen Netzes und soll hauptsächlich dem weiteren Verständniss dienen.\\\\
 \textbf{Perzeptron}\\
-Die Grundlage für den mathematischen Ablauf künstlicher neuronaler Netze wurde von McCulloch und Pitts in ihrem Buch \textit{A logical calculus oft he ideas immanent in nervous activity} erklärt. Auf diesen Grundlagen simulierte 1953 der Psychologe und Informatiker Frank Rosenblatt das erste künstliche Neuron, welches auch als Perzeptron bekannt wurde. In der Abbildung\ref{img:Perzeptron} wird der Aufbau eines solchen Perzeptrons dargestellt.\\
+Die Grundlage für den mathematischen Ablauf künstlicher neuronaler Netze wurde von McCulloch und Pitts in ihrem Buch \textit{A logical calculus oft he ideas immanent in nervous activity} erklärt. Auf diesen Grundlagen simulierte 1953 der Psychologe und Informatiker Frank Rosenblatt das erste künstliche Neuron, welches auch als Perzeptron bekannt wurde. In der Abbildung \ref{img:Perzeptron} wird der Aufbau eines solchen Perzeptrons dargestellt.\\\\\\\\
 \begin{figure}
 	[h]
 	\centering
@@ -351,14 +349,14 @@ Die Grundlage für den mathematischen Ablauf künstlicher neuronaler Netze wurde
 	\caption{Schematische Modellierung eines Perzeptrons nach Rosenblatt \cite{perzeptron2019}}
 	\label{img:Perzeptron}
 \end{figure}\\
-Als Eingabewert bekommt das Perzeptron ein Gewicht $w$, welches mit den Eingangswert $x$ multipliziert wird. Das Ergebnis dieser beiden Werte, kann als lineare Funktion beschrieben werden.\\
-\begin{eqnarray} f(x) & = & w*x \end{eqnarray}\\
-Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion $g$ übergeben. Die Aktivierungsfunktion oder auch Schwellwert genannt, gibt ein Signal weiter, sobald dieser Wert überschritten wird.\\
-\begin{eqnarray} g( \sum_{i=0}^n x_{i} *w_{i}) \end{eqnarray}\\
-Als Aktivierungsfunktion können sowohl lineare als auch nicht linearen Funktionen verwendet werden. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} $b$ addiert.\\
-\begin{eqnarray} g(( \sum_{i=0}^n x_{i} *w_{i}) +b \end{eqnarray}\\
-Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht $w_{jb}$, welches unabhängig der Eingabewerte ist.\\
-\begin{eqnarray} Bias = 1*w_{jb} \end{eqnarray}\\\\
+Als Eingabewert bekommt das Perzeptron ein Gewicht $w$, welches mit den Eingangswert $x$ multipliziert wird. Das Ergebnis dieser beiden Werte, kann als lineare Funktion beschrieben werden.
+\begin{eqnarray} f(x) & = & w*x \end{eqnarray}
+Das Ergebnis der beiden Werte wird an eine Aktivierungsfunktion $g$ übergeben. Die Aktivierungsfunktion oder auch Schwellwert genannt, gibt ein Signal weiter, sobald dieser Wert überschritten wird.
+\begin{eqnarray} g( \sum_{i=0}^n x_{i} *w_{i}) \end{eqnarray}
+Als Aktivierungsfunktion können sowohl lineare als auch nicht linearen Funktionen verwendet werden. Zusätzlich wird dem Ergebnis der Funktion der \textit{Bias} $b$ addiert.
+\begin{eqnarray} g(( \sum_{i=0}^n x_{i} *w_{i}) +b \end{eqnarray}
+Der \textit{Bias} ist eine Art zusätzliches Neuron, für das Verringern von Konvergenz-Problemen, welche bei der Approximation der Funktion auftreten können. Der Bias hat immer einen Eingabewert von 1 und ein Gewicht $w_{jb}$, welches unabhängig der Eingabewerte ist.
+\begin{eqnarray} Bias = 1*w_{jb} \end{eqnarray}
 Maschinelles Lernen möchte unter anderem Maschinen in die Lage versetzten Objekte, Strukturen oder auch Abläufe anhand von vorher beigebrachten Beispielen eigenständig zu erkennen. Eine Methode um dieses Ziel erreichen zu können sind die künstlichen neuronalen Netze. Diese werden mit Datensätzen des jeweiligen Schwerpunktes trainiert. Es gibt vier grundlegende Methoden ein solches Netz zu trainieren.\\\\
 \textbf{Überwachtes lernen}\\
 Das überwachte Lernen funktioniert hauptsächlich mit Datensätzen, welche Eingabedaten sowie Ausgabedaten enthalten. Das künstliche neuronale Netz versucht bei Eingabe der Daten, eine Funktion aufzustellen, welche eine Hypothese darstellt. Diese beschreibt um, was es sich bei dem Datensatz handelt. Die Genauigkeit dieser Hypothese kann durch den Vergleich der enthaltenden Ausgabedaten ermittelt werden. Wenn die Möglichkeiten der Ausgaben endlich sind, handelt es sich um eine Klassifizierung (Bsp.: Milch, Orangensaft, Wasser, etc.). Sollten nur zwei Ausgabewerte möglich sein, ist es eine boolsche bzw. binäre Klassifizierung. Eine Zahl als Ausgabe wird als Regression bezeichnet.\\\\
@@ -367,7 +365,7 @@ Die zweite Methode wie ein künstliches neuronales Netz trainiert werden kann, i
 \textbf{Halb überwachtes Lernen}\\
 Oft werden die beiden Methoden des überwachten und unüberwachten Lernen kombiniert, so hat man meist einen kleinen Datensatz mit Ein- und Ausgabedaten, welche aber nicht explizit wahr sein müssen und einen Teil nur mit Eingabeinformationen. Diese Methode wird häufig bei Umfragen verwendet, wo nicht klar ist, ob der Proband wahrheitsgemäß antwortet. Dabei kann ein systematischer Fehler entstehen. Daraus ergibt sich eine Mischung aus überwachten lernen mit systematischen Fehler und unüberwachten lernen, bei welchem das Netz nach häufig auftretenden Mustern sucht.\\\\
 \textbf{Verstärktes lernen}\\ 
-Das verstärkte Lernen arbeitet auf einem Prinzip, mit welchem richtige Entscheidungen belohnt und falsche bestraft werden. Ein bekanntes Beispiel ist ein Netz, welches virtuell eine Rennstrecke ohne Fehler (nicht von der Strecke abkommen) beenden muss. Bei jedem Fehler muss von vorne begonnen werden, bis die Strecke beendet wird. Ein besonders bekanntes Beispiel ist die GO-KI \textit{AlphaGo} \cite{Alpha2016GO}, welche nur durch die Informationen der Spielregeln trainiert wurde. Die KI wurde in diesem Spiel so gut, das sie den Weltmeister \textit{Lee Sedol} 2016 in vier von fünf Partien GO besiegte.\\\\
+Das verstärkte Lernen arbeitet auf einem Prinzip, mit welchem richtige Entscheidungen belohnt und falsche bestraft werden. Ein bekanntes Beispiel ist ein Netz, welches virtuell eine Rennstrecke ohne Fehler (nicht von der Strecke abkommen) beenden muss. Bei jedem Fehler muss von vorne begonnen werden, bis die Strecke beendet wird. Ein besonders bekanntes Beispiel ist die GO-KI \textit{AlphaGo} \cite{Alpha2016GO}, welche nur durch die Informationen der Spielregeln trainiert wurde. Die KI wurde in diesem Spiel so gut, das sie den Weltmeister \textit{Lee Sedol} 2016 in vier von fünf Partien GO besiegte.\\\\\\\\
 \textbf{Künstliche neuronale Netze}\\
 Nachdem etwas auf die Grundlagen die verschiedenen Lernverfahren eingegangen wurde, soll in diesem Abschnitt der Aufbau künstlicher neuronaler Netzes und die Logik fokussiert werden. Der mathematische Ablauf der Schichten wird in einem späteren Unterkapitel behandelt.\\
 \begin{figure}
@@ -389,7 +387,7 @@ Der Aufbau von klassischen künstlichen neuronalen Netzen kann grundsätzlich in
 \end{figure}\\
 Auf den \textit{Convolutional Layer} folgt immer der \textit{Pooling Layer}. Dieser ist für die Komprimierung des Eingabebildes zuständig, damit im späteren Verlauf Rechenleistung gespart werden kann. Auch diese Schicht besteht aus einer Schablone welches über die Pixel des Bildes gelegt werden. Hierbei werden die Farbwerte der unterliegenden Pixel verarbeitet. Diese werden zu einem wert zusammengefasst und übergeben. Nachdem alle \textit{Convolutional} und \textit{Pooling Layer} durchlaufen wurden, werden die Daten an die letzte Schicht (\textit{Fully Connected Layer}) übergeben. Der \textit{Fully Connected Layer} besteht wie beim KNN beschrieben, aus mehreren Perzeptronen-Schichten und gibt die Informationen an den \textit{Output Layer} weiter, welcher schlussendlich eine Hypothese mit zugehöriger Wahrscheinlichkeit ausgibt.\\\\
 \textbf{Loss Funktion}\\
-Bei jedem Trainingsschritt versucht das neuronale Netz, eine Hypothese aufzustellen. Damit das Netz Fortschritte im Lernen macht, ist das sogenannte, Backpropagation welches im nächsten Abschnitt genauer beschrieben wird zuständig, welche auf der Basis des Loss Graphen arbeitet. Die Loss Funktion berechnet den Fehler, welcher das Netz in seinem aktuellen Zustand in der Berechnung begeht, also die Differenz zwischen dem Ist- und Sollwert der Ausgabe. Beispiel einer solchen Funktion ist die euklidische Loss-Funktion
+Bei jedem Trainingsschritt versucht das neuronale Netz, eine Hypothese aufzustellen. Damit das Netz Fortschritte im Lernen macht, ist das sogenannte, Backpropagation welches im nächsten Abschnitt genauer beschrieben wird zuständig, welche auf der Basis des Loss Graphen arbeitet. Die Loss Funktion berechnet den Fehler, welcher das Netz in seinem aktuellen Zustand in der Berechnung begeht, also die Differenz zwischen dem Ist- und Sollwert der Ausgabe. Beispiel einer solchen Funktion ist die euklidische Loss-Funktion:
 \begin{eqnarray} E_{Euclid}&=&\frac{1}{2N} \sum_{n=1}^N || \hat{f_{n}}-f_{n} || \binom{2}{2} \end{eqnarray}
 dabei stellt\\
 
@@ -402,12 +400,12 @@ Die Rückpropagierung oder auch \textit{Backpropagation} \cite{ertel2013grundkur
   \subsubsection{Funktionsweise künstlicher und Faltender neuronaler Netze}\label{s.funktwknnundcnn}
 Die zuvor aufgeführten Netzarten haben einen unterschiedlichen Aufbau und bestimmte Einsatzgebiete. Das Convolutional neural Network ist beispielsweise auf das Verarbeiten von Bilddaten optimiert und Künstliche neuronale Netze eher für serielle Daten. In der Struktur sind die Netzarten ähnlich aufgebaut. Das CNN hat neben den üblichen Neuronenschichten zwei zusätzliche Schichten, welche beim KNN nicht vorhanden sind. In den folgenden Abschnitten soll die Funktionsweise dieser zusätzlichen schichten beschrieben werden.\\\\
 \textbf{Faltungsschicht}\\
-Es existieren eine menge von Filtern $n$ welche eine Höhe von $f_{h}$ und einer Breite von $f_{w}$ haben. Dieser Filter wird über das Eingabebild mit der Höhe $e_{h}$ und der breite $e_{w}$ gelegt und in ein Pixel schritten bewegt. Die Ergebnisse stellen eine Liste von Merkmalen da welche auf der Höhe $m_{h}$ und der Breite $m_{w}$ liegen. Formell ausgedrückt:\\
+Es existieren eine menge von Filtern $n$ welche eine Höhe von $f_{h}$ und einer Breite von $f_{w}$ haben. Dieser Filter wird über das Eingabebild mit der Höhe $e_{h}$ und der breite $e_{w}$ gelegt und in ein Pixel schritten bewegt. Die Ergebnisse stellen eine Liste von Merkmalen da welche auf der Höhe $m_{h}$ und der Breite $m_{w}$ liegen. Formell ausgedrückt:
 \begin{eqnarray} 
 m_{h}&=&(e_{h} - f_{h})+1\\
 m_{w}&=&(e_{w} - f_{w})+1
-\end{eqnarray}\\
-Um die Verringerung von Informationen nach der Faltung zu verhindern, werden an den Rändern der Bilder Polsterungen, auch \textit{padding} genannt, angehangen \cite[343]{goodfellow2016deep}. Diese Polsterungen bestehen aus Pixeln mit einem Wert von \textit{0}. Die Anzahl der zusätzlichen Pixel ergibt sich aus der Höhe und Breite des Eingabebildes, um wie viele Pixel das Bild vergrößert wird. Formell ausgedrückt:\\
+\end{eqnarray}
+Um die Verringerung von Informationen nach der Faltung zu verhindern, werden an den Rändern der Bilder Polsterungen, auch \textit{padding} genannt, angehangen \cite[343]{goodfellow2016deep}. Diese Polsterungen bestehen aus Pixeln mit einem Wert von \textit{0}. Die Anzahl der zusätzlichen Pixel ergibt sich aus der Höhe und Breite des Eingabebildes, um wie viele Pixel das Bild vergrößert wird. Formell ausgedrückt:
 \begin{eqnarray}
 p_{h}&=&f_{h} - 1\\
 p_{w}&=&f_{w} - 1
@@ -419,43 +417,42 @@ Die Faltungsschicht hat eigene Gewichte, welche beim Vorgang mit denen des Bilde
 	\includegraphics[scale=0.4]{Sources/CNN.png}
 	\caption{Funktionsweise der Faltungsschicht \cite{convolutional2019layer}}
 	\label{img:faltungsschicht}
-\end{figure}
-\newpage
+\end{figure}\\
 \textbf{Pooling Schicht}\\
-Die Pooling Schicht oder auch \textit{Pooling Layer} kommt nach jeder Faltungsschicht \cite[336f.]{goodfellow2016deep}. Die Aufgabe dieser Schicht ist es das Eingabebild in der Auflösung und den zugehörigen Rechenaufwand für die folgenden Schichten zu reduzieren. Üblicherweise gibt es zwei Verfahren, welche beim Pooling eingesetzt werden. Zum einen das Average Pooling und das am häufigsten verwendete Max Pooling (Abbildung \ref{img:maxpooling}). Auch diese Schicht besteht aus einem quadratischen Filter, welcher wie bei der Faltungsschicht über die Bildpunkte gelegt wird. Dabei wird beim \textit{Max Pooling} der höchste Wert in diesem Bereich ermittelt und übernommen. Bei einem standardmäßigem Kernel von 2x2, wird das Bild um den Faktor 2 Verkleinert. Die Abmessungen sind, anders wie bei der Faltungsschicht, gerade. 
+Die Pooling Schicht oder auch \textit{Pooling Layer} kommt nach jeder Faltungsschicht \cite[336f.]{goodfellow2016deep}. Die Aufgabe dieser Schicht ist es das Eingabebild in der Auflösung und den zugehörigen Rechenaufwand für die folgenden Schichten zu reduzieren. Üblicherweise gibt es zwei Verfahren, welche beim Pooling eingesetzt werden. Zum einen das Average Pooling und das am häufigsten verwendete Max Pooling (Abbildung \ref{img:maxpooling}). Auch diese Schicht besteht aus einem quadratischen Filter, welcher wie bei der Faltungsschicht über die Bildpunkte gelegt wird. Dabei wird beim \textit{Max Pooling} der höchste Wert in diesem Bereich ermittelt und übernommen. Bei einem standardmäßigem Kernel von 2x2, wird das Bild um den Faktor 2 Verkleinert. Die Abmessungen sind, anders wie bei der Faltungsschicht, gerade.\\
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=1.8]{Sources/MaxpoolSample2.png}
 	\caption{Funktionsweise des Pooling Layers mit der Max Pooling variante \cite{pooling2018layer}}
 	\label{img:maxpooling}
-\end{figure}
-\textbf{Fully Connected Layer}
+\end{figure}\\
+\textbf{Fully Connected Layer}\\
 nachdem das Eingabebild durch alle Faltungs- und Pooling Schichten verarbeitet wurde, werden die Daten an den Fully connected Layer übergeben \cite[14]{sermanet2012convolutional}. Dieser verwendet, wie bei einem normalen KNN, Perzeproten um die Daten zu verarbeiten. Die vorherigen Schichten wurden durchlaufen, damit diese rechenintensive Schicht nicht zu viel Informationen verarbeiten muss. 
   \subsubsection{Entstehung von Trainingsdaten}\label{s.trainingsdaten} 
 Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benötigt es zunächst eine Reihe von Beispieldaten. Anhand dieser Beispieldaten lernt das neuronale Netz, welche Eigenschaften das zu erlernende Objekt hat und wie es aufgebaut ist. Für diesen Vorgang werden üblicherweise mehrere Hunderttausend Daten benötigt, um ein akzeptables Ergebnis zu erzielen. Eine Möglichkeit, das Training mit weniger Trainingsdaten durchzuführen, ist das Verwenden vortrainierter Netze. Diese Netze wurden mit rund 300.000 Bildern über mehrere Tage trainiert und als Open Source zur Verfügung gestellt. Beim Verwenden dieser Netze werden lediglich die obersten Schichten, welche für die Zuweisung verantwortlich sind, durch den neuen Datensatz verändert wodurch wesentlich weniger Testdaten pro Objektklasse benötigt werden. 
 \begin{figure}
 	[h]
 	\centering
-	\includegraphics[scale=1.0]{Sources/labelimg.jpg}
+	\includegraphics[scale=0.7]{Sources/labelimg.jpg}
 	\caption{Vorbereitung der Datensätzen mit dem Labelimg Programm \cite{labelimg2019}}
 	\label{img:labelimg}
 \end{figure}\\
 Eine Klassifizierung gehört zum überwachten Lernen und benötigt deswegen gelabelte Datensätze. Das Labeln wurde mit dem Open Source Programm \textit{LabelIMG} \cite{labelimg2019} durchgeführt. Dabei wird das zu Trainierende Objekt mit einem rechteckigen Kasten umschlossen und einer Klasse auf den Bildern markiert. Diese Daten werden zunächst in einer XML Datei abgespeichert. 
   \subsection{Mean average Precision}\label{s.map}
-Oft können neuronale Netze nicht nur ein Objekt gleichzeitig erkennen, sondern geben als Ergebnis mehrere Hypothesen aus. Dadurch entsteht das Problem, das nicht mehr nur zwischen richtig und falsch unterschieden werden kann, sondern eine Genauigkeit benötigt wird, welche alle möglichen Objekte einbezieht. Eine Metrik welche auf diese Informationen eingeht, ist die (mean) average Precision (AP/mAP). Für die Berechnung wird die Präzision (Precision) und der Rückgabewert eines Ergebnisses benötigt. Die Präzision $P$ beschreibt den Anteil der richtig erkannten Objekte unter allen erkannten Objekten. Der Rückgabewert $R$ ist der korrekte Anteil von allen möglichen Objekten. Formell ausgedrückt:\\
+Oft können neuronale Netze nicht nur ein Objekt gleichzeitig erkennen, sondern geben als Ergebnis mehrere Hypothesen aus. Dadurch entsteht das Problem, das nicht mehr nur zwischen richtig und falsch unterschieden werden kann, sondern eine Genauigkeit benötigt wird, welche alle möglichen Objekte einbezieht. Eine Metrik welche auf diese Informationen eingeht, ist die (mean) average Precision (AP/mAP). Für die Berechnung wird die Präzision (Precision) und der Rückgabewert eines Ergebnisses benötigt. Die Präzision $P$ beschreibt den Anteil der richtig erkannten Objekte unter allen erkannten Objekten. Der Rückgabewert $R$ ist der korrekte Anteil von allen möglichen Objekten. Formell ausgedrückt:
 \begin{eqnarray}
 P&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsch\medspace erkannte}\\
 R&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsche\medspace nicht\medspace erkannte}
-\end{eqnarray}\\
+\end{eqnarray}
 Häufig wird ein Schwellwert für die Pseudowahrscheinlichkeit genutzt, mit welchem entschieden wird, wann ein erkanntes Objekt der Rückgabeliste hinzugefügt wird oder nicht. Wird der Schwellwert niedrig angesetzt, werden meist mehr Objekte, als erkannt eingestuft. Dadurch steigt der Rückgabewert mit richtig erkannten Objekten. Gleichzeitig sinkt aber auch die Präzision da natürlicherweise auch mehr falsche Objekte erkannt werden. Objekterkennungsverfahren mit einer hohen Qualität zeigen aber weiterhin eine gute Präzision.
-\subsubsection{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}
-Die Farbnormalisierung ist ein Thema der Bildverarbeitung und wird hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet, das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.\\\\
-  \textbf{Gray-World-Algorithmus}\label{s.gw}\\
-  Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Es wird davon ausgegangen, dass das Farbspektrum durch drei konstante Faktoren modelliert werden kann. Dafür skalieren die Konstanten $\alpha$, $\beta$ und $\gamma$ an die Kanäle R, G und B. Dadurch kann eine Konstanzlösung erzielt werden, welcher bei unterschiedlichen Belichtungen unveränderlich ist, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird, wie in folgender Formel beschrieben:\\
-  \begin{eqnarray} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{eqnarray}\\
-  Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein größeres Problem dieses Normalisierung-verfahren besteht darin, das nicht alle Variationen der Beleuchtungsintensität berücksichtigt und auch nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Variationen dieses Algorithmus.\\\\
-  \textbf{Histogramm Ausgleichung}\label{s.ha}\\
+\subsection{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}
+Die Farbnormalisierung ist ein Thema der Bildverarbeitung und wird hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet, das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.
+  \subsubsection{Ansatz des Gray-World-Algorithmus}\label{s.gw}
+  Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Es wird davon ausgegangen, dass das Farbspektrum durch drei konstante Faktoren modelliert werden kann. Dafür skalieren die Konstanten $\alpha$, $\beta$ und $\gamma$ an die Kanäle R, G und B. Dadurch kann eine Konstanzlösung erzielt werden, welcher bei unterschiedlichen Belichtungen unveränderlich ist, indem jeder Farbkanal durch seinen Durchschnittswert geteilt wird, wie in folgender Formel beschrieben:
+  \begin{eqnarray} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{eqnarray}
+  Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein größeres Problem dieses Normalisierung-verfahren besteht darin, das nicht alle Variationen der Beleuchtungsintensität berücksichtigt und auch nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Variationen dieses Algorithmus.
+  \subsubsection{Ansatz der Histogramm Ausgleichung}\label{s.ha}
   Die Histogramm Ausgleichung ist eine Nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation-Funktion verwendet werden. Diese Normalisierung-Funktion gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.\\\\
    \begin{table}
   [h]
@@ -518,13 +515,14 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   7 & 2 & 64 & $64/64*7=7$ & 7\\
   \hline
   \end{tabular}
-  \end{table}\\\\
-  \textbf{Histogramm Spezifikation}\label{s.hs}\\
+  \end{table}
+  \subsubsection{Ansatz der Histogramm Spezifikation}\label{s.hs}
   Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat.
   Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Hauptbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Hauptbild nicht optimiert ist. Zunächst wird mit beiden Bildern eine Histogramm Ausgleichung durchgeführt. Im Weiteren wird das Referenz-Histogramm mit dem des Hauptbildes kombiniert und angepasst.\\\\
   \begin{table}
   [h]
   \caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
+  \label{tab:b1}
   \centering
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
@@ -537,6 +535,7 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   \begin{table}
   [h]
   \caption{Tabellarisches Histogramm des Referenz-Bildes (B2)}
+  \label{tab:b2}
   \centering
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
@@ -546,7 +545,7 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   \hline
   \end{tabular}
   \end{table}\\
-  Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen?und? zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. Nun werden die Histogramme wie in Absch\ref{s.histogramme} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle? Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
+  Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. Nun werden die Histogramme wie in Kapitel \ref{s.histogramme} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle \ref{tab:hs} Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
   In einem Beispiel:
   
   1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
@@ -561,6 +560,7 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   \begin{table}
   [h]
   \caption{Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}
+  \label{tab:hs}
   \centering
   \begin{tabular}{|c|c|c|c|}
   \hline
@@ -602,10 +602,11 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   \section{Methodik und Durchführung}\label{s.methudurchf}
 Nach der theoretischen Grundlage soll sich der zweite Teil der Arbeit um die Versuchsbeschreibung, Durchführung und Auswertung der Ergebnisse handeln. Dabei werden zunächst die verwendeten Datensätze sowie die umsetzung der Normalisierungs Algorithmen. In den Ergebnissen, wird auf die Versuchsumgebung und die verwendeten Frameworks eingegangen, und wie diese für den Versuch genutzt wurden.
  \subsection{Verwendetes Modell}\label{s.modell}
-Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) besitzen eine vielzahl an Datensätzen mit welchen, neuronale Netze trainiert werden können. Einige dieser Netze wurde auf der Object detection API von Tensorflow trainiert und stehen als Open Source zur Verfügung. Die folgende Tabelle führt ausgewählte Modelle auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können.\\
+Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) besitzen eine vielzahl an Datensätzen mit welchen, neuronale Netze trainiert werden können. Einige dieser Netze wurde auf der Object detection API von Tensorflow trainiert und stehen als Open Source zur Verfügung. Die folgende Tabelle \ref{tab:cocomodels} führt ausgewählte Modelle auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können.\\
 \begin{table}
 [h]
 \caption{Modelle \cite{google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite{common2018data}}
+\label{tab:cocomodels}
 \centering
 \begin{tabular}{|l|c|c|}
 \hline
@@ -621,7 +622,7 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \end{table}\\
 Das faster\_rcnn\_inception\_v2\_coco soll für das Projekt verwendet werden. Dieses hat eine mAP von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste mAP hat, sollten die Unterschiede in der Genauigkeit stärker ausfallen. Das ausgewählte Modell wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
   \subsection{Trainingsdaten}\label{s.tdaten}
-Da für ein solches Training die benötigten Trainingsdaten und die Zeit nicht zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann. Durch das vortrainieren der neuronalen Netze, werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer normalen 12 Megapixel Kamera aufgenommen. Die verwendeten Objekte, werden von allen möglichen Seiten fotografiert, dabei müssen für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer der Kamera mehrere Megabyte groß werden, müssen diese auf 100-300 KB komprimiert werden.\\\\
+Da für ein solches Training die benötigten Trainingsdaten und die Zeit nicht zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann. Durch das vortrainieren der neuronalen Netze, werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer normalen 12 Megapixel Kamera aufgenommen. Die verwendeten Objekte, werden von allen möglichen Seiten fotografiert, dabei müssen für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer der Kamera mehrere Megabyte groß werden, müssen diese auf 100-300 KB komprimiert werden.\\
 Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\
 In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:\\\\
 Der erste Datensatz besteht aus mehreren Nahrungsmitteln, welche in der Tabelle \ref{tab:nahrungsmittel} jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen beinhalten. Dieser Datensatz ist mit seinen ca. 1000 Bildern der kleinste Datensatz 
@@ -658,10 +659,11 @@ Tisch & Blumentopf & Sofa & Bildschirm\\
 \end{tabular}
 \label{tab:pvoc}
 \end{table}\\
-Der dritte Datensatz welcher in dieser Arbeit verwendet wird, ist der Hunde Datensatz aus Stanford und beinhaltet 120 verschiedene Hunderassen. Jede Klasse hat um die 200 Bilddaten. Wegen der Struktur des Datensatzes, in einzelnen Ordnern, kann eine Auswahl der priorisierten Hunderassen zusammengestellt werden. Für den Versuch und damit eine bessere Übersicht erreicht werden kann, wurden 20 Hunderassen ausgewählt. Die Annotationen der Daten sind in Form von XML Dateien beigefügt. In der folgenden Tabelle werden die ausgewählten Klassen des Datensatzes zusammengefasst.\\
+Der dritte Datensatz welcher in dieser Arbeit verwendet wird, ist der Hunde Datensatz aus Stanford und beinhaltet 120 verschiedene Hunderassen. Jede Klasse hat um die 200 Bilddaten. Wegen der Struktur des Datensatzes, in einzelnen Ordnern, kann eine Auswahl der priorisierten Hunderassen zusammengestellt werden. Für den Versuch und damit eine bessere Übersicht erreicht werden kann, wurden 20 Hunderassen ausgewählt. Die Annotationen der Daten sind in Form von XML Dateien beigefügt. In der Tabelle \ref{tab:sdd} werden die ausgewählten Klassen des Datensatzes zusammengefasst.\\
 \begin{table}
 [h]
 \caption{Stanford Dog Dataset \cite{KhoslaYaoJayadevaprakashFeiFei_FGVC2011}}
+\label{tab:sdd}
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -676,7 +678,6 @@ Redbone & Borzoi & Irish Wolfhound & Italian Greyhound\\
 \end{tabular}
 \end{table}\\
 Von der Struktur der Datensätze, sind sie ähnlich aufgebaut. Viele verschiedene Klassen mit verschiedenen Szenen und Kontexten. Im weiteren wird zunächst auf die Umsetzung der Normalisierungsverfahren eingegangen, um weiter Erkenntnisse zu erlangen.
-\newpage
 \subsection{Normalisierung-Algorithmen}\label{s.nalgorithmen}
 Für die Normalisierung der Datensätze ist eine Methode nötig, um mehrere Bilder möglichst schnell hintereinander zu bearbeiten. Für die Normalisierung wurden Python Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus verarbeitet. Dafür wurde mit unter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das verarbeiten von Bildern benötigt. 
 \subsubsection{Gray-World-Algorithmus}
@@ -699,7 +700,7 @@ nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
 Zurükwandlung des Bildes in 8 Bit
 img_output = nimg.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
-In dem verwendeten Gray World Algorithmus \cite{gray2012world} zunächst wird das Bild in 32 Bit umgewandelt. Daraufhin wird der Grünkanal verwendet und der Durchschnitt berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals dividiert. Das Ergebnis des wird mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
+Der Gray World Algorithmus \cite{gray2012world} welcher verwendet wird, funktioniert etwas anders als in den Grundlagen beschrieben. Für die Normalisierung der Kanäle, wird der durchschnitt des Grünkanal verwendet, da diese Farbe wichtig für das Helligkeitsempfinden ist. Das Bild wird zunächst in 32 Bit umgewandelt. Daraufhin wird  der Durchschnittswert des Grünkanals berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals dividiert und anschließend mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). Für das verfahren wird keine spezielle Python Bibliothek eingesetzt. 
 \begin{figure}
 	[h]
 	\centering
@@ -707,7 +708,6 @@ In dem verwendeten Gray World Algorithmus \cite{gray2012world} zunächst wird da
 	\caption{Auswirkung des Gray-World Algorithmus}
 	\label{img:gwnimg}
 \end{figure}
-\newpage
 \subsubsection{Histogramm Ausgleich}
 \begin{lstlisting}
 # Importieren des Bildes
@@ -722,15 +722,14 @@ img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
 # Umwandlung des Farbraumes in den BGR Farbraum
 img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
 \end{lstlisting}
-Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum umgewandelt. Der Farbraum ist ähnlich dem Lab Farbraum (Absch.\ref{s.lab}). Der Y Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
+Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum (Kapitel \ref{s.lab} umgewandelt. Der Y-Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben, ausgeglichen. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.7]{Sources/histeq.jpg}
 	\caption{Auswirkung der Histogramm Ausgleichung}
 	\label{img:histogrameq}
-\end{figure}
-\newpage	
+\end{figure}	
 \subsubsection{Histogramm Spezifikation}
 \begin{lstlisting}
 # Importieren des Referenzbildes
@@ -742,7 +741,7 @@ image = io.imread('image.jpg')
 # Weiterleitung der beiden Bilder an die match_histogram-Methode der Skimage Bibliothek
 matched = match_histograms(image, reference, multichannel=True)
 \end{lstlisting}
-Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Absch.\ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist (Abbildung \ref{img:histogramspez}). Die Problematik bei dieser Normalisierungs Methode besteht darin, das ein einheitliches Referenzbild genutzt werden muss auf welchem dann der gesamte Datensatz Normalisiert wird.
+Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Kapitel \ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist (Abbildung \ref{img:histogramspez}). Die Problematik bei dieser Normalisierungs Methode besteht darin, das ein einheitliches Referenzbild genutzt werden muss auf welchem dann der gesamte Datensatz Normalisiert wird.
 \begin{figure}
 	[h]
 	\centering
@@ -850,7 +849,7 @@ mAP & 0.840 & \textcolor{green}{0.848} & 0.829 & \textcolor{red}{0.807}\\
 \end{tabular}
 \end{table}
 \subsection{Zwischenstand}
-Um herauszufinden wodurch die abnehmende Genauigkeit in der Klassifizierung entstanden ist, wurden die Trainingsdaten überprüft. Dabei ist aufgefallen das bei der Histogramm Ausgleichung und der Spezifikation große Unterschiede in den Datensätzen zu erkennen sind. Das könnte daran liegen, das die Normalisierung die Farbinformationen des gesamten Bildes nimmt und diese anpasst. Dabei spielt es einen Unterschied, ob die Umgebung in dem Bild Hell, dunkel oder eine andere dominante Farbe hat. Bei der Histogramm Spezifikation kommt zusätzlich noch das Referenzbild hinzu welches für den Datensatz verwendet wird. Bei der Verwendeten Art von Datensätzen, konnte keine einheitliches Referenzbild genutzt werden, da fast jedes Bild unter anderen Bedingungen entstanden ist. Durch diese unterschiedlichen Trainingsbildern kommt es zu Anomalien in den Normalisierten Bildern (Abbildung \ref{img:evalHA}). Um diese Vermutung zu bestärken, wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen aufgenommen (Abbildung\ref{img:evalnorm}). Darauf hin, wurden die Bilder jeweils mit allen Verfahren Normalisiert. Das Objekt auf dem Bild, wurde vom Hintergrund segmentiert, um zu überprüfen, wie sich die Histogramme des Objektes voneinander unterscheiden. (Abbildung\ref{img:evalHA}).\\
+Um herauszufinden wodurch die abnehmende Genauigkeit in der Klassifizierung entstanden ist, wurden die Trainingsdaten überprüft. Dabei ist aufgefallen das bei der Histogramm Ausgleichung und der Spezifikation große Unterschiede in den Datensätzen zu erkennen sind. Das könnte daran liegen, das die Normalisierung die Farbinformationen des gesamten Bildes nimmt und diese anpasst. Dabei spielt es einen Unterschied, ob die Umgebung in dem Bild Hell, dunkel oder eine andere dominante Farbe hat. Bei der Histogramm Spezifikation kommt zusätzlich noch das Referenzbild hinzu welches für den Datensatz verwendet wird. Bei der Verwendeten Art von Datensätzen, konnte keine einheitliches Referenzbild genutzt werden, da fast jedes Bild unter anderen Bedingungen entstanden ist. Durch diese unterschiedlichen Trainingsbildern kommt es zu Anomalien in den Normalisierten Bildern (Abbildung \ref{img:evalHA}). Um diese Vermutung zu bestärken, wurden Objekte mit gleicher Lichteinstrahlung und gleicher Entfernung auf unterschiedlichen Hintergründen aufgenommen (Abbildung \ref{img:evalnorm}). Darauf hin, wurden die Bilder jeweils mit allen Verfahren Normalisiert. Das Objekt auf dem Bild, wurde vom Hintergrund segmentiert, um zu überprüfen, wie sich die Histogramme des Objektes voneinander unterscheiden. (Abbildung \ref{img:evalHA}).\\
 \begin{figure}[htb]
 \begin{minipage}[c]{0.2\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild1.jpg}
@@ -882,7 +881,7 @@ Um herauszufinden wodurch die abnehmende Genauigkeit in der Klassifizierung ents
 Durch diesen Test wurde bestätigt, das die Ergebnisse der Histogramm Ausgleichung und Spezifikation sehr unterschiedlich geworden sind. Die Veränderung des Umfeldes beeinflusst also das Ergebnis entscheidend und sorgt für größere Farbveränderungen als der Lichteinfluss selbst.
 Ein Datensatz mit einheitlichem Hintergrund in den Trainingsdaten, könnte mit den normalisierungs-Verfahren besser funktionieren. Um diese Annahme weiter überprüfen zu können, soll ein weiterer Datensatz generiert werden, in welchem ein einheitlicher Hintergrund festgelegt ist. 
 \subsection{Obst Datensatz}
-Für einen weiteren Versuch, wurde der Obstdatensatz erstellt. Dieser besteht aus den Objekten welche in Tabelle \ref{tab:obst} aufgelistet sind. Bei diesem Datensatz wurde darauf geachtet einen einheitlichen Hintergrund zu verwenden, um die Funktionalität bei anderen Einstellungen zu testen. Außerdem wurde im Vergleich zum Nahrungsmittel Datensatz (Tabelle.\ref{tab:nahrungsmittel}) darauf geachtet, ähnlichere Kassen zu verwenden, auf welchen optimaler Weise keine Schrift enthalten ist. Das Netz soll nicht durch die Schrift beeinflusst werden, sondern hauptsächlich die Farben als Orientierung nehmen.
+Für einen weiteren Versuch, wurde der Obstdatensatz erstellt. Dieser besteht aus den Objekten welche in Tabelle \ref{tab:obst} aufgelistet sind. Bei diesem Datensatz wurde darauf geachtet einen einheitlichen Hintergrund zu verwenden, um die Funktionalität bei anderen Einstellungen zu testen. Außerdem wurde im Vergleich zum Nahrungsmittel Datensatz (Tabelle \ref{tab:nahrungsmittel}) darauf geachtet, ähnlichere Kassen zu verwenden, auf welchen optimaler Weise keine Schrift enthalten ist. Das Netz soll nicht durch die Schrift beeinflusst werden, sondern hauptsächlich die Farben als Orientierung nehmen.
 \begin{table}[htb]
 \caption{Klassen des Obst Datensatzes mit konstantem Hintergrund}
 \center
@@ -903,7 +902,7 @@ Apfel & Birne\\
 \end{table}  
 Dieser Datensatz wird nun genau wie die vorherigen Datensätze, mit den unterschiedlichen Methoden Normalisiert. Dabei soll zum einen die Genauigkeit der einzelnen Klassen betrachtet werden, zum anderen die Trainingsdaten an sich. Dabei soll überprüft werden, ob die Trainingsbilder wie erwartet aussehen und wie stark Anomalien auftreten. 
 \subsection{Auswertung des Obst Datensatzes}
-Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das zwei der drein Normalisierungs-Methoden einen positiven Einfluss auf die Klassifizierung haben. Die Genauigkeit der Histogramm Spezifikation schneidet mit 97\% am besten ab. Durch diese Methode konnte eine erhöhung von 43\% erzielt werden. Auch der Gray-World-Algorithmus hat eine leichte Verbesserung von 14\% bewirkt. Lediglich der Histogramm Ausgleich hat die Klassifizierung leicht verschlechtert. Eine weitere Möglichkeit den Einfluss zu überprüfen, wurde mit Hilfe besonders schwierigen Testbildern versucht. Dafür sollen Bildaufnahmen bei extremen unterschiedlichen Lichteinflüssen verwendet werden.
+Nach Auswertung der Trainingsergebnisse kann festgestellt werden, das zwei der drein Normalisierungsmethoden einen positiven Einfluss auf die Klassifizierung haben. Die Genauigkeit der Histogramm Spezifikation schneidet mit 97\% am besten ab. Durch diese Methode konnte eine Erhöhung von 43\% erzielt werden. Auch der Gray-World-Algorithmus hat eine leichte Verbesserung von 14\% bewirkt. Lediglich der Histogramm Ausgleich hat die Klassifizierung leicht verschlechtert. Eine weitere Möglichkeit den Einfluss zu überprüfen, wurde mit Hilfe besonders schwierigen Testbildern versucht. Dafür sollen Bildaufnahmen bei extremen unterschiedlichen Lichteinflüssen verwendet werden.
 \begin{table}
 [h]
 \caption{Genauigkeits-Berechnungen des Modells des Obst Datensatzes}
@@ -924,15 +923,16 @@ mAP & 0.993 & 0.994 & \textcolor{red}{0.992} & \textcolor{green}{0.997}\\
 \end{tabular}
 \end{table}\\
 Die Auswertung der normalisierten Trainingsdaten hat ergeben, das wesentlich weniger farb-Anomalien auftreten, wie bei den vorherigen Datensätzen. Dabei ist aufgefallen das gerade bei den Histogramm Normalisierungen mit einheitlichen Hintergrund deutliche Verbesserungen erzielt wurden. Große Veränderungen treten nur dann auf, wenn viele Objekte auf dem Bild enthalten sind, da diese die Umgebung zu stark beeinflussen oder bei der Histogramm Ausgleichung, wenn die Beleuchtungen zu extrem verändert wurde. Die Histogramm Spezifikation geht mit diesem Problem noch am besten um, weil diese ein Referenz-Histogramm verwendet, um die Daten anzupassen. \\\\
-Auch eine Betrachtung der Helligkeitsverteilung der Trainingsdaten werden wesentlich besser wie in den Beispielen in Abbildung \ref{img:hellver} zu erkennen ist. Dafür wurde eine stark unterbelichtete Aufnahme generiert, um die Veränderung nach den Normalisierungs Methoden besser herauszustellen. Die beste Helligkeitsverteilung konnte dabei der Histogramm Ausgleich aufweisen, wobei durch das dunkle Quellbild die Farbinformationen zum großen Teil verloren gegangen sind. Der Gray World hat die Helligkeitsverteilung kaum verändert, was aber daran liegt, das die Farbverteilung durch die Höhe des Grün Kanals verschoben wird und nicht für solche Aufgaben ausgelegt ist. Das insgesamt beste Ergebnis liefert die Histogramm Spezifikation. Nicht nur die Helligkeitsverteilung konnte verbessert werden, auch die Farben konnten vergleichsweise gut wieder hergestellt werden.
+Auch eine Betrachtung der Helligkeitsverteilung der Trainingsdaten werden wesentlich besser wie in den Beispielen in Abbildung \ref{img:hellver} zu erkennen ist. Dafür wurde eine stark unterbelichtete Aufnahme generiert, um die Veränderung nach den Normalisierungsmethoden besser herauszustellen. Die beste Helligkeitsverteilung konnte dabei der Histogramm Ausgleich aufweisen, wobei durch das dunkle Quellbild die Farbinformationen zum großen Teil verloren gegangen sind. Der Gray World hat die Helligkeitsverteilung kaum verändert, was aber daran liegt, dass die Farbverteilung durch die Höhe des Grün Kanals verschoben wird und nicht für solche Aufgaben ausgelegt ist. Das insgesamt beste Ergebnis liefert die Histogramm Spezifikation. Nicht nur die Helligkeitsverteilung konnte verbessert werden, auch die Farben konnten vergleichsweise gut wieder hergestellt werden.
   \newpage
 \section{Diskussion}\label{s.diskussion}
-In diesem Kapitel sollen die Ergebnisse und Erkenntnisse welche im Verlauf der Arbeit herausgearbeitet wurden kurz aufgeführt und erläutert werden, damit am ende ein Gesamtfazit gezogen werden kann.\\\\
-Die Daten der trainierten Netze zeigen, dass mit den verwendeten Datensätzen und den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielt werden konnte. Ein möglicher Grund waren die Datensätzen selber, welche normalisiert wurden. Da manche Normalisierungs-Verfahren die Farbinformationen des gesamten Bildes verwendeten, ist das Ergebnis je nach Umgebung unterschiedlich ausgefallen.
-Daraufhin wurden Testaufnahmen von Objekten auf verschieden Hintergründen aufgenommen, welche aber gleiche Belichtung und Aufnahmewinkel hatten. In den unveränderten Testbilden ist kein großer unterschied in den Histogrammen aufgefallen. Bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen, haben die Objekte eine fast identische Farbverteilung. Lediglich die helligkeit hat etwas variiert. Der normalisierte Datensatz jedoch, zeigt größere Unterschiede in den Histogrammen und den Farben auf. Das könnte daran liegen, dass die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen der Trainingsbildern unterschiedlich ist.\\ 
-Die Überprüfung hat gezeigt, das die Datensätze für den verwendeten Aufbau und den verwendeten Normalisierungs Algorithmen nicht geeignet waren. Bessere Ergebnisse konnten mit dem zusätzlich generierten Obst Datensatz erzielt werden, bei dem alle Trainingsdaten auf dem selben Hintergrund aufgenommen wurden. Dadurch konnten alle Klassen auf der selben Basis normalisiert werden. Gerade die Histogramm Spezifikation (Abbildung \ref{img:hellver}) hat hier besonders gute Ergebnisse erzielt, da der Einsatz eines Referenzbildes besser Funktioniert, und wesentlich weniger Annomalien erzeugt wurden. Auch bei Untersuchung der Helligkeit, konnten wesentliche Verbesserungen erzielt werden. Bei einem stark unterbelichteten Bild wurde durch den Histogramm Ausgleich die Lichtverteilung wesentlich angehoben. Die Farbinformationen konnten jedoch größtenteils nicht wiederhergestellt werden. Durch die Histogramm Spezifikation hat sich auch die Lichtverteilung verbessert und durch das Referenzbild wurden auch die Farbinformationen wiederhergestellt. Der Gray-World-Algorithmus schneidet hier am schlechtesten ab da dieser nicht mit den einzelnen Farbwerten arbeitet, sondern die gesamten Farbkanäle auf Basis des grün-Kanals verschiebt. 
+In diesem Kapitel sollen die Ergebnisse und Erkenntnisse welche im Verlauf der Arbeit herausgearbeitet wurden kurz aufgeführt und erläutert werden, damit am ende ein Gesamtfazit gezogen werden kann.
+\subsection{Datensätze und Netze}
+Die Daten der trainierten Netze zeigen, dass mit den verwendeten Datensätzen und den angewandten Normalisierungsmethoden keine Erhöhung der Genauigkeit erzielt werden konnte. Ein möglicher Grund waren die Datensätze selber, welche normalisiert wurden. Da manche Normalisierungsverfahren die Farbinformationen des gesamten Bildes verwendeten, ist das Ergebnis je nach Umgebung unterschiedlich ausgefallen.
+Daraufhin wurden Testaufnahmen von Objekten auf verschieden Hintergründen aufgenommen, welche aber gleiche Belichtung und Aufnahmewinkel hatten. In den unveränderten Testbildern ist kein großer Unterschied in den Histogrammen aufgefallen. Bei gleicher Lichteinstrahlung und unterschiedlichen Hintergründen, haben die Objekte eine fast identische Farbverteilung. Lediglich die Helligkeit hat etwas variiert. Der normalisierte Datensatz jedoch, zeigt größere Unterschiede in den Histogrammen und den Farben auf. Das könnte daran liegen, dass die Normalisierung nicht nur die Objekte auf den Bildern normalisiert, sondern auch den Hintergrund, welcher bei vielen der Trainingsbilder unterschiedlich ist.\\ 
+Die Überprüfung hat gezeigt, das die Datensätze für den verwendeten Aufbau und den verwendeten Normalisierungsalgorithmen nicht geeignet waren. Bessere Ergebnisse konnten mit dem zusätzlich generierten Obst Datensatz erzielt werden, bei dem alle Trainingsdaten auf demselben Hintergrund aufgenommen wurden. Dadurch konnten alle Klassen auf derselben Basis normalisiert werden. Gerade die Histogramm Spezifikation (Abbildung \ref{img:hellver}) hat hier besonders gute Ergebnisse erzielt, da der Einsatz eines Referenzbildes besser funktioniert, und wesentlich weniger Anomalien erzeugt wurden. Auch bei Untersuchung der Helligkeit konnten wesentliche Verbesserungen erzielt werden. Bei einem stark unterbelichteten Bild wurde durch den Histogramm Ausgleich die Lichtverteilung wesentlich angehoben. Die Farbinformationen konnten jedoch größtenteils nicht wiederhergestellt werden. Durch die Histogramm Spezifikation hat sich auch die Lichtverteilung verbessert und durch das Referenzbild wurden auch die Farbinformationen wiederhergestellt. Der Gray-World-Algorithmus schneidet hier am schlechtesten ab, da dieser nicht mit den einzelnen Farbwerten arbeitet, sondern die gesamten Farbkanäle auf Basis des Grün-Kanals verschiebt. 
 \subsection{Laufzeittest}
-Ein weiterer Einfluss welches die Normalisierungs Algorithmen auf die Klassifizierung von neuronalen Netzen haben, ist neben dem Manipulieren von Trainingsdaten, die Zeit welches die jeweiligen Verfahren benötigen. Um einen Eindruck zu bekommen, wurde Ein Bild in verschiedenen Größen getestet, um herauszufinden wie sich die Laufzeit bei größer werdenden Bilddateien verhält.
+Ein weiterer Einfluss welches die Normalisierungsalgorithmen auf die Klassifizierung von neuronalen Netzen haben, ist neben dem Manipulieren von Trainingsdaten, die Zeit welches die jeweiligen Verfahren benötigen. Um einen Eindruck zu bekommen, wurde ein Bild in verschiedenen Größen getestet, um herauszufinden, wie sich die Laufzeit bei größer werdenden Bilddateien verhält.
 \begin{table}
 [h]
 \caption{Laufzeiten der Normalisierungs-Algorithmen mit verschieden großen Bildern}
@@ -948,18 +948,18 @@ Bildgröße & Faktor & Dateigröße & GW & HA & HS\\
 \hline
 \end{tabular}
 \end{table}
-Der Gray World Algorithmus ist im Vergleich zu den anderen Methoden in der Mitte von der Laufzeit bei Verdoppelung der Bildgröße, erhöht sich die Laufzeit um das vierfache. Dabei ist auch die Farbgebung und der Kontrast nicht entscheidend. Die Histogramm Ausgleichung ist in diesem Fall die Schnellste Methode, wobei dafür die Verteilung im Histogramm eine Rolle spielt. Die Laufzeit verändert sich nicht Linear, sondern steigt exponential an. So steigt die Laufzeit beim verdoppeln um den Faktor drei, und beim nächsten mal um den Faktor sechs. Der längste Normalisierungs Algorithmus ist in diesem Fall die Histogramm Spezifikation. Dabei spielt die Größe des Referenzbildes eine wichtige Rolle. Mit einem größeren Referenzbild, würde sich die Laufzeit noch weiter erhöhen. Bei gleich bleibenden Referenzbild erhöht sich die Laufzeit um den Faktor vier. Durch die hohe Grunddauer führt das schnell zu langen Laufzeiten.\\\\
-Dabei muss beachtet werden, das die Laufzeiten nur für ein Bild berechnet wurde. Für ein künstliches neuronales Netz werden meist mehrere Tausend Bilder verwendet. Hier muss, je nach Datensatz, abgewägt werden, ob eine Normalisierung für die erhöhte Laufzeit in Kauf genommen werden soll.
+Der Gray World Algorithmus ist im Vergleich zu den anderen Methoden in der Mitte von der Laufzeit bei Verdoppelung der Bildgröße, erhöht sich die Laufzeit um das Vierfache. Dabei sind auch die Farbgebung und der Kontrast nicht entscheidend. Die Histogramm Ausgleichung ist in diesem Fall die schnellste Methode, wobei dafür die Verteilung im Histogramm eine Rolle spielt. Die Laufzeit verändert sich nicht linear, sondern steigt exponentiell an. So steigt die Laufzeit beim Verdoppeln um den Faktor drei, und beim nächsten Mal um den Faktor sechs. Der längste Normalisierungsalgorithmus ist in diesem Fall die Histogramm Spezifikation. Dabei spielt die Größe des Referenzbildes eine wichtige Rolle. Mit einem größeren Referenzbild würde sich die Laufzeit noch weiter erhöhen. Bei gleichbleibenden Referenzbild erhöht sich die Laufzeit um den Faktor vier. Durch die hohe Grundlaufzeit führt das schnell zu langen Laufzeiten.\\\\
+Dabei muss beachtet werden, dass die Laufzeiten nur für ein Bild berechnet wurde. Für ein künstliches neuronales Netz werden meist mehrere Tausend Bilder verwendet. Hier muss, je nach Datensatz, abgewägt werden, ob eine Normalisierung für die erhöhte Laufzeit in Kauf genommen werden soll.
 \newpage   
   \section{Fazit}\label{s.fazit}
-Für ein abschließendes Fazit wird noch einmal kurz auf jedes Normalisierungs-Verfahren eingegangen und erklärt in welchem Datensatz dies verwendet werden kann.
+Für ein abschließendes Fazit wird noch einmal kurz auf jedes Normalisierungsverfahren eingegangen und erklärt in welchem Datensatz dies verwendet werden kann.
 \subsection{Gray-World-Algorithmus}
-Der Gray-World-Algorithmus kann prinzipiell bei jedem Datensatz angewendet werden. Der Vorteil ist dann erkennbar, wenn verschiedene Lichtfarben in der späteren Erkennung und im Datensatz auftauchen können. Durch diese Methode wird der Kontrast und Dynamik nicht verändert. Das Farbbild wird insgesamt auf Grundlage des grün-Kanals verschoben. Da dieses Verfahren relativ simpel arbeitet, wird kein großer Einfluss auf spätere künstliche neuronale Netze erzielt.
+Der Gray-World-Algorithmus kann prinzipiell bei jedem Datensatz angewendet werden. Der Vorteil ist dann erkennbar, wenn verschiedene Lichtfarben in der späteren Erkennung und im Datensatz auftauchen können. Durch diese Methode wird der Kontrast und Dynamik nicht verändert. Das Farbbild wird insgesamt auf Grundlage des Grün-Kanals verschoben. Da dieses Verfahren relativ simpel arbeitet, wird kein großer Einfluss auf spätere künstliche neuronale Netze erzielt.
 \subsection{Histogramm Ausgleich}
-Der Histogramm Ausgleich arbeitet auf Grundlage des Histogramms und versucht den Kontrast in dem Bild zu erhöhen. Eingesetzt werden kann es bei Datensätzen, welche einen einheitlichen Hintergrund verwenden, da für die Normalisierung die Farbverteilung  des gesamten Bildes verwendet wird. Denn je nach Farbverteilung fällt das Ausgabebild nach dem Ausgleich unterschiedlich aus. Schwächen entstehen bei starken Lichtunterschieden. Sollte ein Bild zu dunkel sein können Farbwerte nicht wiederhergestellt werden.
+Der Histogramm Ausgleich arbeitet auf Grundlage des Histogramms und versucht den Kontrast in dem Bild zu erhöhen. Eingesetzt werden kann es bei Datensätzen, welche einen einheitlichen Hintergrund verwenden, da für die Normalisierung die Farbverteilung des gesamten Bildes verwendet wird. Denn je nach Farbverteilung fällt das Ausgabebild nach dem Ausgleich unterschiedlich aus. Schwächen entstehen bei starken Lichtunterschieden. Sollte ein Bild zu dunkel sein können Farbwerte nicht wiederhergestellt werden.
 \subsection{Histogramm Spezifizierung}
-Auch die Histogramm Spezifizierung ist nicht für allgemeine Datensätze geeignet, sondern bei Datensätzen mit einheitlichem Hintergrund. Das liegt zum einen wegen der Verarbeitung des Histogramms, wie beim Histogramm Ausgleich, zum anderen an der Tatsache das für dieses Verfahren ein Referenzbild benötigt wird, auf welchem der Datensatz Normalisiert wird. Dieses Referenzbild ist Effektiver desto ähnlicher es dem Datensatz ist. Die Ergebnisse dieses Verfahrens, haben beim Obst Datensatz eine deutlich erhöhte Genauigkeit erzielt.\\\\
-Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen überprüft. Es wäre eine interessante frage welchen Einfluss diese Verfahren bei Entstehung der Neuronalen Netze zu beobachten und welche Unterschiede dabei auftreten. Außerdem kann für den Versuch mit einheitlichen Trainingsbildern größere Datensätze generiert und getestet werden. Durch die restliche zeit konnte nur die Mindestgröße erstellt werden. interessant wäre es, wie sich die Genauigkeiten bei noch mehr Lichtvariationen verhalten würden.  
+Auch die Histogramm Spezifizierung ist nicht für allgemeine Datensätze geeignet, sondern bei Datensätzen mit einheitlichem Hintergrund. Das liegt zum einen wegen der Verarbeitung des Histogramms, wie beim Histogramm Ausgleich, zum anderen an der Tatsache das für dieses Verfahren ein Referenzbild benötigt wird, auf welchem der Datensatz normalisiert wird. Dieses Referenzbild ist Effektiver, desto ähnlicher es dem Datensatz ist. Die Ergebnisse dieses Verfahrens, haben beim Obst Datensatz eine deutlich erhöhte Genauigkeit erzielt.\\\\
+Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen überprüft. Es wäre eine interessante frage welchen Einfluss diese Verfahren bei Entstehung der neuronalen Netze zu beobachten und welche Unterschiede dabei auftreten. Außerdem kann für den Versuch mit einheitlichen Trainingsbildern größere Datensätze generiert und getestet werden. Durch die Restliche zeit konnte nur die Mindestgröße erstellt werden. Interessant wäre es, wie sich die Genauigkeiten bei noch mehr Lichtvariationen verhalten würden.  
   \newpage
   \printbibliography
   \newpage
@@ -1089,47 +1089,34 @@ Die Verfahren wurden in dieser Arbeit mit vortrainierten neuronalen Netzen über
 \caption{Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation}
 \label{img:evalHS}
 \end{figure}
-\newpage
-\begin{figure}[h]
+\begin{figure}[htbp]
 \center
-\caption{Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen auf das Testbild}
-\label{img:hellver}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250.jpg}
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250.png}
 \end{minipage}
-\end{figure}
-\vspace{-1.5cm}
-\begin{figure}[h]
-\center
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_GW.jpg}
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_GW.png}
 \end{minipage}
-\end{figure}
-\vspace{-1.5cm}
-\begin{figure}[h]
-\center
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_HA.jpg}
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_HA.png}
 \end{minipage}
-\end{figure}
-\vspace{-1.5cm}
-\begin{figure}[h]
-\center
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=.8\textwidth]{Sources/Anhang/resize_0250_HS.jpg}
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
+\begin{minipage}{0.49\textwidth}
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_HS.png}
 \end{minipage}
+\caption{Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen auf das Testbild}
+\label{img:hellver}
 \end{figure}
 \newpage
 \section*{Eidesstattliche Erklärung}
