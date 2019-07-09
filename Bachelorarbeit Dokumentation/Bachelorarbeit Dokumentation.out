@@ -5,33 +5,41 @@
 \BOOKMARK [2][]{subsection.15}{1.4 Struktur der Arbeit}{section.6}% 5
 \BOOKMARK [1][]{section.16}{2 Theoretische Grundlagen}{}% 6
 \BOOKMARK [2][]{subsection.17}{2.1 Digitale Bilder}{section.16}% 7
-\BOOKMARK [3][]{subsubsection.19}{2.1.1 Aufbau von Digitalbildern}{subsection.17}% 8
-\BOOKMARK [2][]{subsection.20}{2.2 Histogramme}{section.16}% 9
-\BOOKMARK [3][]{subsubsection.24}{2.2.1 Einfluss von Belichtungen}{subsection.20}% 10
-\BOOKMARK [2][]{subsection.25}{2.3 K\374nstliche Intelligenz}{section.16}% 11
-\BOOKMARK [2][]{subsection.26}{2.4 Neuronale Netze}{section.16}% 12
-\BOOKMARK [3][]{subsubsection.36}{2.4.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.26}% 13
-\BOOKMARK [3][]{subsubsection.41}{2.4.2 Entstehung von Trainingsdaten}{subsection.26}% 14
-\BOOKMARK [2][]{subsection.43}{2.5 Mean average Precision}{section.16}% 15
-\BOOKMARK [3][]{subsubsection.45}{2.5.1 Arten der Farbnormalisierung}{subsection.43}% 16
-\BOOKMARK [1][]{section.54}{3 Methodik und Durchf\374hrung}{}% 17
-\BOOKMARK [2][]{subsection.55}{3.1 Verwendetes Modell}{section.54}% 18
-\BOOKMARK [2][]{subsection.57}{3.2 Trainingsdaten}{section.54}% 19
-\BOOKMARK [2][]{subsection.61}{3.3 Normalisierung-Algorithmen}{section.54}% 20
-\BOOKMARK [3][]{subsubsection.62}{3.3.1 Gray-World-Algorithmus}{subsection.61}% 21
-\BOOKMARK [3][]{subsubsection.82}{3.3.2 Histogramm Ausgleich}{subsection.61}% 22
-\BOOKMARK [3][]{subsubsection.96}{3.3.3 Histogramm Spezifikation}{subsection.61}% 23
-\BOOKMARK [1][]{section.107}{4 Ergebnisse}{}% 24
-\BOOKMARK [2][]{subsection.108}{4.1 Frameworks und Entwicklungsumgebung}{section.107}% 25
-\BOOKMARK [2][]{subsection.109}{4.2 Nahrungsmittel Datensatz}{section.107}% 26
-\BOOKMARK [2][]{subsection.111}{4.3 PascalVOC Datensatz}{section.107}% 27
-\BOOKMARK [2][]{subsection.113}{4.4 Stanford Dogs Dataset}{section.107}% 28
-\BOOKMARK [2][]{subsection.115}{4.5 Zwischenstand}{section.107}% 29
-\BOOKMARK [2][]{subsection.118}{4.6 Obst Datensatz}{section.107}% 30
-\BOOKMARK [2][]{subsection.120}{4.7 Auswertung des Obst Datensatzes}{section.107}% 31
-\BOOKMARK [1][]{section.122}{5 Diskussion}{}% 32
-\BOOKMARK [2][]{subsection.123}{5.1 Laufzeittest}{section.122}% 33
-\BOOKMARK [1][]{section.125}{6 Fazit}{}% 34
-\BOOKMARK [2][]{subsection.126}{6.1 Gray-World-Algorithmus}{section.125}% 35
-\BOOKMARK [2][]{subsection.127}{6.2 Histogramm Ausgleich}{section.125}% 36
-\BOOKMARK [2][]{subsection.128}{6.3 Histogramm Spezifizierung}{section.125}% 37
+\BOOKMARK [2][]{subsection.19}{2.2 Farbr\344umer digitaler Bilder}{section.16}% 8
+\BOOKMARK [3][]{subsubsection.20}{2.2.1 RGB}{subsection.19}% 9
+\BOOKMARK [3][]{subsubsection.21}{2.2.2 HSV}{subsection.19}% 10
+\BOOKMARK [3][]{subsubsection.22}{2.2.3 CMY\(K\)}{subsection.19}% 11
+\BOOKMARK [3][]{subsubsection.23}{2.2.4 YUV}{subsection.19}% 12
+\BOOKMARK [2][]{subsection.24}{2.3 Histogramme}{section.16}% 13
+\BOOKMARK [2][]{subsection.28}{2.4 Einfluss von Belichtungen}{section.16}% 14
+\BOOKMARK [2][]{subsection.29}{2.5 K\374nstliche Intelligenz}{section.16}% 15
+\BOOKMARK [2][]{subsection.30}{2.6 Neuronale Netze}{section.16}% 16
+\BOOKMARK [3][]{subsubsection.40}{2.6.1 Funktionsweise k\374nstlicher und Faltender neuronaler Netze}{subsection.30}% 17
+\BOOKMARK [3][]{subsubsection.45}{2.6.2 Entstehung von Trainingsdaten}{subsection.30}% 18
+\BOOKMARK [2][]{subsection.47}{2.7 Mean average Precision}{section.16}% 19
+\BOOKMARK [2][]{subsection.49}{2.8 Arten der Farbnormalisierung}{section.16}% 20
+\BOOKMARK [3][]{subsubsection.50}{2.8.1 Ansatz des Gray-World-Algorithmus}{subsection.49}% 21
+\BOOKMARK [3][]{subsubsection.52}{2.8.2 Ansatz der Histogramm Ausgleichung}{subsection.49}% 22
+\BOOKMARK [3][]{subsubsection.56}{2.8.3 Ansatz der Histogramm Spezifikation}{subsection.49}% 23
+\BOOKMARK [1][]{section.61}{3 Methodik und Durchf\374hrung}{}% 24
+\BOOKMARK [2][]{subsection.62}{3.1 Verwendetes Modell}{section.61}% 25
+\BOOKMARK [2][]{subsection.64}{3.2 Trainingsdaten}{section.61}% 26
+\BOOKMARK [2][]{subsection.68}{3.3 Normalisierung-Algorithmen}{section.61}% 27
+\BOOKMARK [3][]{subsubsection.69}{3.3.1 Gray-World-Algorithmus}{subsection.68}% 28
+\BOOKMARK [3][]{subsubsection.89}{3.3.2 Histogramm Ausgleich}{subsection.68}% 29
+\BOOKMARK [3][]{subsubsection.103}{3.3.3 Histogramm Spezifikation}{subsection.68}% 30
+\BOOKMARK [1][]{section.114}{4 Ergebnisse}{}% 31
+\BOOKMARK [2][]{subsection.115}{4.1 Frameworks und Entwicklungsumgebung}{section.114}% 32
+\BOOKMARK [2][]{subsection.116}{4.2 Nahrungsmittel Datensatz}{section.114}% 33
+\BOOKMARK [2][]{subsection.118}{4.3 PascalVOC Datensatz}{section.114}% 34
+\BOOKMARK [2][]{subsection.120}{4.4 Stanford Dogs Dataset}{section.114}% 35
+\BOOKMARK [2][]{subsection.122}{4.5 Zwischenstand}{section.114}% 36
+\BOOKMARK [2][]{subsection.125}{4.6 Obst Datensatz}{section.114}% 37
+\BOOKMARK [2][]{subsection.127}{4.7 Auswertung des Obst Datensatzes}{section.114}% 38
+\BOOKMARK [1][]{section.129}{5 Diskussion}{}% 39
+\BOOKMARK [2][]{subsection.130}{5.1 Datens\344tze und Netze}{section.129}% 40
+\BOOKMARK [2][]{subsection.131}{5.2 Laufzeittest}{section.129}% 41
+\BOOKMARK [1][]{section.133}{6 Fazit}{}% 42
+\BOOKMARK [2][]{subsection.134}{6.1 Gray-World-Algorithmus}{section.133}% 43
+\BOOKMARK [2][]{subsection.135}{6.2 Histogramm Ausgleich}{section.133}% 44
+\BOOKMARK [2][]{subsection.136}{6.3 Histogramm Spezifizierung}{section.133}% 45
