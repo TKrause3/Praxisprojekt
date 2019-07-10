@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {2.1}Digitale Bilder}{6}{section.2.1}% 
 \contentsline {section}{\numberline {2.2}Farbr\IeC {\"a}ume digitaler Bilder}{7}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}RGB}{7}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}HSV}{8}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}CMY(K)}{8}{subsection.2.2.3}% 
+\contentsline {subsection}{\numberline {2.2.2}CMY(K)}{8}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}HSV}{8}{subsection.2.2.3}% 
 \contentsline {subsection}{\numberline {2.2.4}YUV}{8}{subsection.2.2.4}% 
 \contentsline {section}{\numberline {2.3}Histogramme}{8}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Kontrast}{10}{subsection.2.3.1}% 
@@ -27,9 +27,9 @@
 \contentsline {subsection}{\numberline {2.8.3}Ansatz der Histogramm Spezifikation}{23}{subsection.2.8.3}% 
 \contentsline {chapter}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{26}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Verwendetes Modell}{26}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Trainingsdaten}{26}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Trainingsdaten}{27}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Normalisierung-Algorithmen}{28}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{28}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{29}{subsection.3.3.1}% 
 \contentsline {subsubsection}{\nonumberline Histogramm Ausgleich}{29}{section*.5}% 
 \contentsline {subsection}{\numberline {3.3.2}Histogramm Spezifikation}{30}{subsection.3.3.2}% 
 \contentsline {chapter}{\numberline {4}Ergebnisse}{32}{chapter.4}% 
