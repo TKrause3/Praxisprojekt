@@ -1,11 +1,12 @@
 %!TEX root = ../draft.tex
 \chapter{Methodik und Durchführung}\label{s.methudurchf}
-Nach der theoretischen Grundlage soll sich der zweite Teil der Arbeit um die Versuchsbeschreibung, Durchführung und Auswertung der Ergebnisse handeln. Dabei werden zunächst die verwendeten Datensätze sowie die Umsetzung der Normalisierungsalgorithmen.Später in den Ergebnissen, wird auf die Versuchsumgebung, die verwendeten Frameworks eingegangen, und wie diese für den Versuch genutzt wurden.
+In diesem Kapitel werden die verwendeten Datensätze aufgeführt und die Umsetzung der Normalisierungsalgorithmen beschrieben.  
  \section{Verwendetes Modell}\label{s.modell}
-Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) besitzen eine Vielzahl an Datensätzen mit welchen, neuronale Netze trainiert werden können. Dabei handelt es sich um verschiedenste Objekte in verschiedenen Umgebungen. Einige dieser Netze wurde auf der \textit{Object detection API} von Tensorflow trainiert und stehen als \textit{Open Source} zur Verfügung. Die folgende Tabelle \ref{tab:cocomodels} führt ausgewählte Modelle auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können, damit ein geeignetes Modell für die Versuche ausgewählt werden kann.
+Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) stellt eine Vielzahl an Datensätzen bereit mit denen neuronale Netze trainiert werden können. Bei den Datensäzen handelt es sich um unterschiedliche Objekte in verschiedenen Umgebungen. %Welcher Netze ? Ich dachte es geht um Datensätze ? 
+Einige Netze welchem mit dem COCO datensätzen traniert wurden stehen als \textit{Open Source} zur Verfügung. Die folgende Tabelle \ref{tab:cocomodels} führt ausgewählte Modelle auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können, damit ein geeignetes Modell für die Versuche ausgewählt werden kann.
 \begin{table}
 [h]
-\caption{Modelle \cite{google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite{common2018data}}
+\caption{Modelle \cite{google2018tens} welche mit dem COCO Dataset Trainiert wurden \cite{common2018data}} %Modelle = vortrainiertes Netz ? 
 \label{tab:cocomodels}
 \centering
 \begin{tabular}{|l|c|c|}
@@ -20,7 +21,7 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \hline
 \end{tabular}
 \end{table}
-Bei der frage, welches Netz für die Versuche ausgewählt werden soll, sollte erstmal definiert werden was herausgestellt werden soll. Dafür ist es wichtig unterschiede der genauigkeiten so deutlich wie möglich zu machen. Aus diesem grund, sollte ein Modell ausgewählt werden, welches eine recht niedrige mAP hat. Somit sollten Unterschiede deutlicher auffallen.\\
+Um die Auswirkungen der Normalisierung deutlich hervorheben zu können wurde bei der Auswahl des Netzes ein Modell ausgewählt, welches eine recht niedrige mAP hat. \\
 Das faster\_rcnn\_inception\_v2\_coco soll für das Projekt verwendet werden. Dieses hat eine \textit{mAP} von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste \textit{mAP} hat, sollten die Auswirkungen, der Normalisierungsverfahren, in der Genauigkeit stärker ersichtlich werden. Das ausgewählte Modell wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
   \section{Trainingsdaten}\label{s.tdaten}
 Da für ein solches Training die benötigten Trainingsdaten und die Zeit nicht zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann. Durch das vortrainieren der neuronalen Netze, werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer 13 Megapixel Kamera eines \textit{Huawei P Smart} aufgenommen. Die verwendeten Objekte werden von vielen verschiedenen Seiten aufgenommen. Dabei müssen für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer der Kamera mehrere Megabyte groß werden, müssen diese auf 100-300 KB komprimiert werden.\\
