@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  11 JUL 2019 17:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  11 JUL 2019 18:20
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -1802,6 +1802,10 @@ Overfull \hbox (5.19582pt too wide) in paragraph at lines 3--4
  Nor-ma-li-sie-rungs-ver-fah-ren durch-
  []
 
+
+LaTeX Warning: Reference `NOCH F\IeC {\"U}LLEN' on page 33 undefined on input l
+ine 9.
+
 [33
 
 
@@ -1839,7 +1843,7 @@ File: Sources/Bild2_histo.png Graphic file (type png)
 Package pdftex.def Info: Sources/Bild2_histo.png  used on input line 125.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
  [36]
-<Sources/Obst_mit_hintergrund.jpg, id=540, 1043.9pt x 782.925pt>
+<Sources/Obst_mit_hintergrund.jpg, id=539, 1043.9pt x 782.925pt>
 File: Sources/Obst_mit_hintergrund.jpg Graphic file (type jpg)
 <use Sources/Obst_mit_hintergrund.jpg>
 Package pdftex.def Info: Sources/Obst_mit_hintergrund.jpg  used on input line 1
@@ -1850,6 +1854,9 @@ Package pdftex.def Info: Sources/Obst_mit_hintergrund.jpg  used on input line 1
 Underfull \hbox (badness 10000) in paragraph at lines 154--51
 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38 <./Sources/Obst_mit_hintergrund.jpg>] [39]
 \openout2 = `chapter/diskussion.aux'.
@@ -2158,12 +2165,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 26530 strings out of 492895
- 485656 string characters out of 3123269
+ 26531 strings out of 492895
+ 485669 string characters out of 3123269
  822712 words of memory out of 3000000
- 29570 multiletter control sequences out of 15000+200000
+ 29571 multiletter control sequences out of 15000+200000
  22373 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,87p,9103b,1905s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2195,9 +2206,9 @@ pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr8.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on draft.pdf (58 pages, 8431018 bytes).
+Output written on draft.pdf (58 pages, 8431716 bytes).
 PDF statistics:
- 1623 PDF objects out of 1728 (max. 8388607)
+ 1624 PDF objects out of 1728 (max. 8388607)
  216 named destinations out of 1000 (max. 500000)
  756 words of extra memory for PDF output out of 10000 (max. 10000000)
 

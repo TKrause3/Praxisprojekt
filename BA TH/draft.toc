@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {4.3}PascalVOC Datensatz}{34}{section.4.3}% 
 \contentsline {section}{\numberline {4.4}Stanford Dogs Dataset}{35}{section.4.4}% 
 \contentsline {section}{\numberline {4.5}Zwischenstand}{36}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Obst Datensatz}{37}{section.4.6}% 
+\contentsline {section}{\numberline {4.6}Obst Datensatz}{38}{section.4.6}% 
 \contentsline {section}{\numberline {4.7}Auswertung des Obst Datensatzes}{38}{section.4.7}% 
 \contentsline {chapter}{\numberline {5}Diskussion}{40}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Datens\IeC {\"a}tze und Netze}{40}{section.5.1}% 
