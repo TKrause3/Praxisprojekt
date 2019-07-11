@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  10 JUL 2019 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  11 JUL 2019 16:57
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -1444,7 +1444,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-<Sources/Vergleich.png, id=177, 578.16pt x 216.81pt>
+<Sources/Vergleich.png, id=165, 578.16pt x 216.81pt>
 File: Sources/Vergleich.png Graphic file (type png)
 <use Sources/Vergleich.png>
 Package pdftex.def Info: Sources/Vergleich.png  used on input line 9.
@@ -1492,7 +1492,7 @@ l.30 	\include{chapter/einleitung}
 
  (chapter/theoretische_grundlagen.tex
 chapter 2.
-<Sources/Digitalesbild.JPG, id=205, 694.09312pt x 328.22626pt>
+<Sources/Digitalesbild.JPG, id=193, 694.09312pt x 328.22626pt>
 File: Sources/Digitalesbild.JPG Graphic file (type jpg)
 <use Sources/Digitalesbild.JPG>
 Package pdftex.def Info: Sources/Digitalesbild.JPG  used on input line 10.
@@ -1510,50 +1510,63 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-] [7 <./Sources/Digitalesbild.JPG>]
-<Sources/histogramm.jpg, id=219, 405.76593pt x 233.37187pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
+
+ []
+
+[7 <./Sources/Digitalesbild.JPG>]
+<Sources/histogramm.jpg, id=208, 405.76593pt x 233.37187pt>
 File: Sources/histogramm.jpg Graphic file (type jpg)
 <use Sources/histogramm.jpg>
 Package pdftex.def Info: Sources/histogramm.jpg  used on input line 31.
 (pdftex.def)             Requested size: 405.76494pt x 233.37129pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--37
-
- []
-
-[8]
-<Sources/kontrast.JPG, id=236, 506.6428pt x 309.40594pt>
+<Sources/kontrast.JPG, id=214, 506.6428pt x 309.40594pt>
 File: Sources/kontrast.JPG Graphic file (type jpg)
 <use Sources/kontrast.JPG>
 Package pdftex.def Info: Sources/kontrast.JPG  used on input line 42.
 (pdftex.def)             Requested size: 354.64755pt x 216.58267pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--46
-
- []
-
-[9 <./Sources/histogramm.jpg>]
-<Sources/dynamik.JPG, id=245, 504.38437pt x 310.15875pt>
+<Sources/dynamik.JPG, id=219, 504.38437pt x 310.15875pt>
 File: Sources/dynamik.JPG Graphic file (type jpg)
 <use Sources/dynamik.JPG>
 Package pdftex.def Info: Sources/dynamik.JPG  used on input line 51.
 (pdftex.def)             Requested size: 353.06665pt x 217.10963pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 26--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--56
+
+ []
+
+[8] [9 <./Sources/histogramm.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1568,7 +1581,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
  []
 
 [11 <./Sources/dynamik.JPG>]
-<Sources/neuron.jpg, id=265, 602.25pt x 361.35pt>
+<Sources/neuron.jpg, id=254, 602.25pt x 361.35pt>
 File: Sources/neuron.jpg Graphic file (type jpg)
 <use Sources/neuron.jpg>
 Package pdftex.def Info: Sources/neuron.jpg  used on input line 69.
@@ -1578,7 +1591,7 @@ Overfull \hbox (11.85237pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
-<Sources/perzeptron2.png, id=270, 1204.5pt x 572.1375pt>
+<Sources/perzeptron2.png, id=259, 1204.5pt x 572.1375pt>
 File: Sources/perzeptron2.png Graphic file (type png)
 <use Sources/perzeptron2.png>
 Package pdftex.def Info: Sources/perzeptron2.png  used on input line 79.
@@ -1608,18 +1621,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--84
 
  []
 
-[12] [13 <./Sources/neuron.jpg>] [14 <./Sources/perzeptron2.png>]
+[12] [13 <./Sources/neuron.jpg>]
 Overfull \hbox (5.59541pt too wide) in paragraph at lines 88--90
 \T1/cmr/m/n/10.95 Der \T1/cmr/m/it/10.95 Bi-as \T1/cmr/m/n/10.95 ist ei-ne Art 
 zu-sätz-li-ches Neu-ron, für das Ver-rin-gern von Konvergenz-Problemen,
  []
 
-<Sources/nnet.png, id=301, 499.3857pt x 269.3262pt>
+[14 <./Sources/perzeptron2.png>]
+<Sources/nnet.png, id=290, 499.3857pt x 269.3262pt>
 File: Sources/nnet.png Graphic file (type png)
 <use Sources/nnet.png>
 Package pdftex.def Info: Sources/nnet.png  used on input line 105.
 (pdftex.def)             Requested size: 249.69223pt x 134.66277pt.
-<Sources/cnnet.jpg, id=307, 739.76375pt x 250.9375pt>
+<Sources/cnnet.jpg, id=296, 739.76375pt x 250.9375pt>
 File: Sources/cnnet.jpg Graphic file (type jpg)
 <use Sources/cnnet.jpg>
 Package pdftex.def Info: Sources/cnnet.jpg  used on input line 115.
@@ -1690,12 +1704,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
  []
 
 [18]
-<Sources/CNN.png, id=340, 501.875pt x 461.725pt>
+<Sources/CNN.png, id=329, 501.875pt x 461.725pt>
 File: Sources/CNN.png Graphic file (type png)
 <use Sources/CNN.png>
 Package pdftex.def Info: Sources/CNN.png  used on input line 148.
 (pdftex.def)             Requested size: 200.74643pt x 184.68672pt.
-<Sources/MaxpoolSample2.png, id=345, 164.25pt x 68.547pt>
+<Sources/MaxpoolSample2.png, id=334, 164.25pt x 68.547pt>
 File: Sources/MaxpoolSample2.png Graphic file (type png)
 <use Sources/MaxpoolSample2.png>
 Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 157.
@@ -1706,35 +1720,43 @@ Overfull \hbox (9.64952pt too wide) in paragraph at lines 143--163
 yer \T1/cmr/m/n/10.95 kommt nach je-der Fal-tungs-schicht [[],
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19]
-<Sources/labelimg.jpg, id=358, 433.62pt x 243.91125pt>
+[19 <./Sources/CNN.png>]
+<Sources/labelimg.jpg, id=347, 433.62pt x 243.91125pt>
 File: Sources/labelimg.jpg Graphic file (type jpg)
 <use Sources/labelimg.jpg>
 Package pdftex.def Info: Sources/labelimg.jpg  used on input line 168.
 (pdftex.def)             Requested size: 303.53192pt x 170.7367pt.
- [20 <./Sources/CNN.png> <./Sources/MaxpoolSample2.png>] [21 <./Sources/labelim
-g.jpg>] [22]
-Overfull \hbox (40.18996pt too wide) in paragraph at lines 226--247
+ [20 <./Sources/MaxpoolSample2.png>] [21 <./Sources/labelimg.jpg>] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+ []
+
+[23]
+Overfull \hbox (40.18996pt too wide) in paragraph at lines 234--255
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--278
+Underfull \hbox (badness 10000) in paragraph at lines 227--256
 
  []
 
-[23] [24]) [25]
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 263--293
+
+ []
+
+[25])
+Underfull \hbox (badness 10000) in paragraph at lines 302--37
+
+ []
+
+[26]
 \openout2 = `chapter/methodik_und_durchfuehrung.aux'.
 
  (chapter/methodik_und_durchfuehrung.tex
 chapter 3.
-[26
+[27
 
 
 
@@ -1744,7 +1766,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--82
 
  []
 
-[27] [28]
+[28] [29]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 85.
 
 ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
@@ -1758,7 +1780,7 @@ File: Sources/gwn.png Graphic file (type png)
 Package pdftex.def Info: Sources/gwn.png  used on input line 103.
 (pdftex.def)             Requested size: 346.89867pt x 130.08699pt.
 
-[29 <./Sources/gwn.png>]
+[30 <./Sources/gwn.png>]
 <Sources/histeq.jpg, id=473, 578.16pt x 216.81pt>
 File: Sources/histeq.jpg Graphic file (type jpg)
 <use Sources/histeq.jpg>
@@ -1769,7 +1791,7 @@ File: Sources/HS_beispiel.png Graphic file (type png)
 <use Sources/HS_beispiel.png>
 Package pdftex.def Info: Sources/HS_beispiel.png  used on input line 139.
 (pdftex.def)             Requested size: 346.89867pt x 130.08699pt.
-) [30 <./Sources/histeq.jpg>] [31 <./Sources/HS_beispiel.png>]
+) [31 <./Sources/histeq.jpg>] [32 <./Sources/HS_beispiel.png>]
 \openout2 = `chapter/ergebnisse.aux'.
 
  (chapter/ergebnisse.tex
@@ -1780,12 +1802,12 @@ Overfull \hbox (5.19582pt too wide) in paragraph at lines 3--4
  Nor-ma-li-sie-rungs-ver-fah-ren durch-
  []
 
-[32
+[33
 
 
 
 
-] [33] [34]
+] [34] [35]
 <Sources/Bild1.jpg, id=526, 782.925pt x 1043.9pt>
 File: Sources/Bild1.jpg Graphic file (type jpg)
 <use Sources/Bild1.jpg>
@@ -1816,25 +1838,25 @@ File: Sources/Bild2_histo.png Graphic file (type png)
 <use Sources/Bild2_histo.png>
 Package pdftex.def Info: Sources/Bild2_histo.png  used on input line 125.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
- [35]
+ [36]
 <Sources/Obst_mit_hintergrund.jpg, id=540, 1043.9pt x 782.925pt>
 File: Sources/Obst_mit_hintergrund.jpg Graphic file (type jpg)
 <use Sources/Obst_mit_hintergrund.jpg>
 Package pdftex.def Info: Sources/Obst_mit_hintergrund.jpg  used on input line 1
 38.
 (pdftex.def)             Requested size: 131.10881pt x 98.3313pt.
- [36 <./Sources/Bild1.jpg> <./Sources/Bild1.png> <./Sources/Bild1_histo.png> <.
+ [37 <./Sources/Bild1.jpg> <./Sources/Bild1.png> <./Sources/Bild1_histo.png> <.
 /Sources/Bild2.jpg> <./Sources/Bild2.png> <./Sources/Bild2_histo.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 154--51
 
  []
 
-[37 <./Sources/Obst_mit_hintergrund.jpg>] [38]
+[38 <./Sources/Obst_mit_hintergrund.jpg>] [39]
 \openout2 = `chapter/diskussion.aux'.
 
  (chapter/diskussion.tex
 chapter 5.
-[39
+[40
 
 
 
@@ -1844,7 +1866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--58
 
  []
 
-[40]
+[41]
 \openout2 = `chapter/fazit.aux'.
 
  (chapter/fazit.tex
@@ -1854,12 +1876,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--65
 
  []
 
-[41
+[42
 
 
 
 
-] [42]
+] [43]
 \openout2 = `chapter/verzeichnisse.aux'.
 
  (chapter/verzeichnisse.tex (draft.lof
@@ -1878,7 +1900,7 @@ er Kon-trast (rechts)[[],
 \tf@lof=\write8
 \openout8 = `draft.lof'.
 
- [43
+ [44
 
 
 
@@ -1887,13 +1909,13 @@ er Kon-trast (rechts)[[],
 \tf@lot=\write9
 \openout9 = `draft.lot'.
 
- (draft.bbl [44
+ (draft.bbl [45
 
 
-] [45
+] [46
 
 
-])) [46]
+])) [47]
 \openout2 = `chapter/anhang.aux'.
 
  (chapter/anhang.tex [1
@@ -2002,94 +2024,94 @@ Package pdftex.def Info: Sources/Bild3_GW_histo.png  used on input line 90.
 .png> <./Sources/Bild2_GW.jpg> <./Sources/Bild2_GW.png> <./Sources/Bild2_GW_his
 to.png> <./Sources/Bild3_GW.jpg> <./Sources/Bild3_GW.png> <./Sources/Bild3_GW_h
 isto.png>]
-<Sources/Bild1_HS.jpg, id=721, 782.925pt x 1043.9pt>
+<Sources/Bild1_HS.jpg, id=722, 782.925pt x 1043.9pt>
 File: Sources/Bild1_HS.jpg Graphic file (type jpg)
 <use Sources/Bild1_HS.jpg>
 Package pdftex.def Info: Sources/Bild1_HS.jpg  used on input line 98.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_HS.png, id=722, 144.54pt x 456.70625pt>
+<Sources/Bild1_HS.png, id=723, 144.54pt x 456.70625pt>
 File: Sources/Bild1_HS.png Graphic file (type png)
 <use Sources/Bild1_HS.png>
 Package pdftex.def Info: Sources/Bild1_HS.png  used on input line 102.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_HS_histo.png, id=723, 462.528pt x 346.896pt>
+<Sources/Bild1_HS_histo.png, id=724, 462.528pt x 346.896pt>
 File: Sources/Bild1_HS_histo.png Graphic file (type png)
 <use Sources/Bild1_HS_histo.png>
 Package pdftex.def Info: Sources/Bild1_HS_histo.png  used on input line 106.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_HS.jpg, id=724, 782.925pt x 1043.9pt>
+<Sources/Bild2_HS.jpg, id=725, 782.925pt x 1043.9pt>
 File: Sources/Bild2_HS.jpg Graphic file (type jpg)
 <use Sources/Bild2_HS.jpg>
 Package pdftex.def Info: Sources/Bild2_HS.jpg  used on input line 111.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_HS.png, id=725, 156.585pt x 468.75125pt>
+<Sources/Bild2_HS.png, id=726, 156.585pt x 468.75125pt>
 File: Sources/Bild2_HS.png Graphic file (type png)
 <use Sources/Bild2_HS.png>
 Package pdftex.def Info: Sources/Bild2_HS.png  used on input line 115.
 (pdftex.def)             Requested size: 32.77832pt x 98.12595pt.
-<Sources/Bild2_HS_histo.png, id=726, 462.528pt x 346.896pt>
+<Sources/Bild2_HS_histo.png, id=727, 462.528pt x 346.896pt>
 File: Sources/Bild2_HS_histo.png Graphic file (type png)
 <use Sources/Bild2_HS_histo.png>
 Package pdftex.def Info: Sources/Bild2_HS_histo.png  used on input line 119.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_HS.jpg, id=727, 782.925pt x 1043.9pt>
+<Sources/Bild3_HS.jpg, id=728, 782.925pt x 1043.9pt>
 File: Sources/Bild3_HS.jpg Graphic file (type jpg)
 <use Sources/Bild3_HS.jpg>
 Package pdftex.def Info: Sources/Bild3_HS.jpg  used on input line 124.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_HS.png, id=728, 143.53625pt x 452.69125pt>
+<Sources/Bild3_HS.png, id=729, 143.53625pt x 452.69125pt>
 File: Sources/Bild3_HS.png Graphic file (type png)
 <use Sources/Bild3_HS.png>
 Package pdftex.def Info: Sources/Bild3_HS.png  used on input line 128.
 (pdftex.def)             Requested size: 32.77832pt x 103.37769pt.
-<Sources/Bild3_HS_histo.png, id=729, 462.528pt x 346.896pt>
+<Sources/Bild3_HS_histo.png, id=730, 462.528pt x 346.896pt>
 File: Sources/Bild3_HS_histo.png Graphic file (type png)
 <use Sources/Bild3_HS_histo.png>
 Package pdftex.def Info: Sources/Bild3_HS_histo.png  used on input line 132.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Anhang/resize_0250.jpg, id=730, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250.jpg, id=731, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250.jpg  used on input line 140
 .
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250.png, id=731, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250.png, id=732, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250.png Graphic file (type png)
 <use Sources/Anhang/resize_0250.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250.png  used on input line 143
 .
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_GW.jpg, id=732, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_GW.jpg, id=733, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_GW.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_GW.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.jpg  used on input line 
 146.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_GW.png, id=733, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_GW.png, id=734, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_GW.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_GW.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.png  used on input line 
 149.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HA.jpg, id=734, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HA.jpg, id=735, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HA.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HA.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.jpg  used on input line 
 152.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HA.png, id=735, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HA.png, id=736, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HA.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HA.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.png  used on input line 
 155.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HS.jpg, id=736, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HS.jpg, id=737, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HS.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HS.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.jpg  used on input line 
 158.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HS.png, id=737, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HS.png, id=738, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HS.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HS.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.png  used on input line 
@@ -2136,12 +2158,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 26533 strings out of 492895
- 485644 string characters out of 3123269
+ 26530 strings out of 492895
+ 485651 string characters out of 3123269
  822712 words of memory out of 3000000
- 29575 multiletter control sequences out of 15000+200000
+ 29570 multiletter control sequences out of 15000+200000
  22373 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,87p,9103b,1905s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2173,9 +2199,9 @@ pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr8.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on draft.pdf (57 pages, 8424396 bytes).
+Output written on draft.pdf (58 pages, 8431274 bytes).
 PDF statistics:
- 1642 PDF objects out of 1728 (max. 8388607)
- 214 named destinations out of 1000 (max. 500000)
- 804 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1624 PDF objects out of 1728 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 756 words of extra memory for PDF output out of 10000 (max. 10000000)
 

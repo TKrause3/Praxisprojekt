@@ -12,17 +12,17 @@ Bildverarbeitung, wird in der heutigen Zeit oft mit Bildbearbeitung assoziiert, 
 \label{img:digitalesbild}
 \end{figure}\\
 In diesen Pixeln werden Bildinformationen wie Farbe und Position festgehalten. Jeder Pixel besteht dabei oft aus drei Kanälen, den R Kanal für Rot, den G Kanal für Grün und den B Kanal für Blau. Diese bilden in bestimmten Kombinationen und Intensitäten ungefähr 16 Millionen verschiedene Farben. Der beschriebene Aufbau wird bei RGB-Bildern verwendet und auch bei Monitoren, Smartphones, etc. Neben dem RGB gibt es noch einige verschiedene Farbräume (RGB, HSV, CMY(K), Lab, etc).
-\section{Farbräume digitaler Bilder}\label{s.aufbdigibilder}
-Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.
- \subsection{RGB}\label{s.rgb}
-Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in Abschnitt \ref{s.digibilder} kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).
-\subsection{CMY(K)}\label{s.cmy}
-Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.
-  \subsection{HSV}\label{s.hsv}
-Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hellwert oder auch die Helligkeit der Farbe. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.
-  \subsection{YUV}\label{s.lab}
+\subsection{Farbräume digitaler Bilder}\label{s.aufbdigibilder}
+Üblicherweise wird bei Digitalbildern mit dem RGB-Farbraum gearbeitet. Aus diesem Grund, wird in dieser Arbeit hauptsächlich auf RGB-Bilder eingegangen. Ein Bild ist wie eine Matrix aufgebaut, dabei kann es sowohl quadratisch wie auch rechteckig Abmessungen haben. Jeder Punkt in der Matrix stellt einen Pixel dar und enthält jeweils einen Rot-, grün-, Blauwert welche zusammen eine beliebige Farbe darstellt. Um die Farbverteilung in einem Bild besser erkennen zu können, werden die Farbwerte in sogenannten Farb-Histogrammen zusammengefasst. Histogramme spielen für die Normalisierungsfunktionen eine Rolle, aus diesem Grund wird das Konzept hinter den Histogrammen und die spätere Manipulation, beschrieben. Für die einfachheitshalber werden Graustufenbildern für die Erklärung verwendet. Anwendbar sind diese auch auf die Histogramme der einzelnen RGB-Kanäle.\\\\
+\textbf{RGB}\label{s.rgb}\\
+Der RGB-Farbraum ist der geläufigste und bekannteste Farbraum dieser besteht wie in Abschnitt \ref{s.digibilder} kurz beschrieben aus drei Farbräumen (Rot-Grün-Blau). Dieses beschreibt, welche Art von Licht ausgestrahlt werden muss, um eine gewünschte Farbe zu erreichen. Die Kombination der einzelnen Farbräume ist eine additive Farbmischung. RGB ist eher ein Farbmodell, da es viele Farbräume gibt, welche sich davon Ableiten (sRGB, AdobeRGB, etc.).\\\\
+\textbf{CMY(K)}\label{s.cmy}\\
+Anders als der RGB-Farbraum benutzt der CMY-Farbraum den subtraktiven anstelle der additiven Farbmischung. Hierbei sind die drei Grundfarben C für Cyan, M für Magenta und Y für Yellow. Bekannt ist diese Farbmischung gerade durch das Malen von Wasserfarben, oder für die Farbpigmente, welche in Druckern genutzt werden. Für den durch die Farbmischung kann der CMY kein richtiges Schwarz erreichen, deswegen wurde der Farbraum CMYK mit einem Parameter erweitert. Das K steht für Schwarz, damit auch schwarz richtig dargestellt werden kann und kein dunkles Grau entsteht.\\\\
+\textbf{HSV}\label{s.hsv}\\
+Anders als der RGB ist der HSV Farbraum aufgebaut, dennoch gibt es auch hier drei Werte. Das H (Hue) seht für den Farbton, welcher angenommen werden soll, S (Saturation) für die Sättigung der ausgewählten Farbe und V (Value) für den Hellwert oder auch die Helligkeit der Farbe. Dieser Farbraum ist gerade in der Kunst beliebt, da die Farbvorstellung besser funktioniert als bei additiven und subtraktiven Farbmischungen.\\\\
+\textbf{YUV}\label{s.lab}\\
 Das YUV-Farbmodell, wird hauptsächlich beim analogen Fernsehen verwendet. Dieser Farbraum verwendet zur Darstellung von Farben zwei Komponenten. Die Lichtstärke oder auch Luminanz (Y) genannt, sowie die Chrominanz (Farbanteil) welche wiederum aus den zwei Unterkomponenten U und V besteht. U und V geben somit die Farbe an. Dafür werden U und V in ein vierteiliges Koordinatensystem gelegt. Auf der X-Achse liegt V und auf der Y-Achse U, dabei besitzt jedes Feld der Koordinatensystems eine Farbe (Rot, Violett, Blau und Grün). Die Farbe wird durch die Kombination beider werte (U und V) bestimmt. Y Stellt das Helligkeitssignal in den Farbraum dar und gibt an wie hell die Farbe dargestellt werden soll. Anders als beim HSV Farbraum wird die Lichtstärke und Sättigung der Farbe durch einen Kanal bestimmt. 
-\section{Histogramme}\label{s.histogramme}
+\subsection{Histogramme}\label{s.histogramme}
 Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digitale}. Speziell bei Bildern zeigen Histogramme die Häufigkeit der auftretenden Intensitätwerte. Am einfachsten lässt sich das mit Graustufenbildern nachvollziehen. Ein Beispiel dafür zeigt die (Abbildung \ref{img:histogramm}) für ein Graustufenbild $I$ mit möglichen Intensitätwerten im Bereich $I(n,V)E[0,K-1]$ enthält das Histogramm $H$ genau $K$ Einträge. Die Menge der Einträge bei einem 8 Bit Graustufenbild sind $2^8$ Farbabstufungen ($K=2^8=256$). Der Wert des Histogramms an der Stelle $i$ ist $h(i)$ die Anzahl der Pixel von $I$ mit einem Intensitätswert $i$, für alle ($0<i<K$). Mathematisch ausgedrückt ergibt sich $h(i)=card{(u,v) | I(u,v)=i}$\\
   daraus lässt sich entnehmen, dass $h(0)$ die Anzahl der Pixel mit dem Wert 0, $h(1)$ die Anzahl des Wertes 1 usw., $h(255)$ ist schließlich der letzte Wert und gibt die Menge aller weißen Pixel in dem Bild an $(K-1)$. Eine Histogramm Berechnung stellt somit einen eindimensionalen Vektor $h$ der Länge $K$ da.\\
   \begin{figure}
@@ -34,7 +34,7 @@ Histogramme beschreiben eine Häufigkeitsverteilung \cite[42ff.]{burger2009digit
   \end{figure}
 $card$ beinhaltet die Anzahl der Elemente einer Menge (\textit{Kardinalität})\\\\
 Die Abb.\ref{img:histogramm} zeigt ein mögliches Histogramm mit einer Farbabstufung von 16 werten. Ein Histogramm zeigt die wichtigsten Eigenschaften eines Bildes, wie beispielsweise die Dynamik oder den Kontrast eines Bildes. Außerdem lässt sich erkennen, ob bei der Bildaufnahme Probleme aufgetreten sind. Diese lassen sich erkennen indem Ausschläge ganz links oder ganz rechts, des Graphen zu erkennen sind. Ein Ausschlag bei 0 oder 255 bedeutet das dort keine Farbinformationen mehr vorhanden sind, und das teile des Bildes, Über- beziehungsweise unterbelichtet sind.\\\\
-\subsection{Kontrast}\label{s.kontrast}
+\textbf{Kontrast}\label{s.kontrast}
 Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild effektiv genutzt werden, also die Differenz der maximalen und minimalen Pixelwerten \cite[44]{burger2009digitale}. Ein Bild welches einen hohen Kontrast hat, nutzt das gesamte Spektrums des Histogramms (Schwarz bis weiß). Der Kontrast, lässt sich also leicht aus einem Histogramm entnehmen, wie in Abbildung \ref{img:dynamik} die verschiedenen Histogramme zeigen.\\\\
   \begin{figure}
     [h]
@@ -42,8 +42,8 @@ Der Kontrast bezeichnet den Bereich von Intensitätstufen, welche in einem Bild 
     \includegraphics[scale=0.7]{Sources/kontrast.JPG}
     \caption{Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontast (Mitte), hoher Kontrast (rechts)\cite[45]{burger2009digitale}}
     \label{img:kontrast}
-  \end{figure}\\
-\subsection{Dynamik}\label{s.dynamik}
+  \end{figure}\\\\
+\textbf{Dynamik}\label{s.dynamik}\\
 Dynamik bedeutet, wie viel verschiedene Intensitätswerte in einem Bild genutzt werden, und die jeweilige Anzahl\cite[44]{burger2009digitale}. Im besten Fall entspricht die Dynamik der insgesamt genutzten Anzahl an Pixelwerten (Abbildung \ref{img:dynamik}). Also $K-1$ genutzter Farbabstufungen, damit der Wertebereich voll ausgeschöpft wird.\\
  \begin{figure}
     [h]
@@ -170,24 +170,26 @@ Damit ein künstliches neuronales Netz Objekte erkennen und zuordnen kann, benö
 	\label{img:labelimg}
 \end{figure}
 Eine Klassifizierung gehört zum überwachten Lernen und benötigt deswegen gelabelte Datensätze. Das Labeln wurde mit dem Open Source Programm \textit{LabelIMG} \cite{labelimg2019} durchgeführt. Dabei wird das zu Trainierende Objekt mit einem rechteckigen Kasten umschlossen und einer Klasse auf den Bildern markiert. Diese Daten werden zunächst in einer XML Datei abgespeichert. 
-  \section{Mean average Precision}\label{s.map}
+  \subsection{Mean average Precision}\label{s.map}
 Oft können neuronale Netze nicht nur ein Objekt gleichzeitig erkennen, sondern geben als Ergebnis mehrere Hypothesen aus. Dadurch entsteht das Problem, das nicht mehr nur zwischen richtig und falsch unterschieden werden kann, sondern eine Genauigkeit benötigt wird, welche alle möglichen Objekte einbezieht. Eine Metrik welche auf diese Informationen eingeht, ist die (mean) average Precision (AP/mAP). Für die Berechnung wird die Präzision (Precision) und der Rückgabewert eines Ergebnisses benötigt. Die Präzision $P$ beschreibt den Anteil der richtig erkannten Objekte unter allen erkannten Objekten. Der Rückgabewert $R$ ist der korrekte Anteil von allen möglichen Objekten. Formell ausgedrückt:
 \begin{eqnarray}
 P&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsch\medspace erkannte}\\
 R&=&\frac{richtig\medspace erkannte}{richtig\medspace erkannte + falsche\medspace nicht\medspace erkannte}
 \end{eqnarray}
 Häufig wird ein Schwellwert für die Pseudowahrscheinlichkeit genutzt, mit welchem entschieden wird, wann ein erkanntes Objekt der Rückgabeliste hinzugefügt wird oder nicht. Wird der Schwellwert niedrig angesetzt, werden meist mehr Objekte, als erkannt eingestuft. Dadurch steigt der Rückgabewert mit richtig erkannten Objekten. Gleichzeitig sinkt aber auch die Präzision da natürlicherweise auch mehr falsche Objekte erkannt werden. Objekterkennungsverfahren mit einer hohen Qualität zeigen aber weiterhin eine gute Präzision.
-\section{Arten der Farbnormalisierung}\label{s.farbnormalisierungen} % Fände zu jedem Normalisierungsverfahren ein vorher nachher bild gut, 
+\section{Arten der Farbnormalisierung}\label{s.farbnormalisierungen}  
 Die Farbnormalisierung ist ein Thema der Bildverarbeitung welches sich hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet, das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.
-  \subsection{Ansatz des Gray-World-Algorithmus}\label{s.gw} % Einwenig dünn für meinen Geschmack vielleich findest du noch ne grafik oder ein Mathematisches beispiel:  https://www.cobocards.com/pool/de/card/377135008/online-karteikarten-was-ist-die-gray-world-assumption-und-wie-funktioniert-sie-/ 
-  % https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/40937/versions/1/screenshot.png
-  Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Wenn über die Farben in einem Bild keine Annahmen getroffen werden können, wird davon ausgegangen, dass sich die Farbwerte in einem Bild sich vektoriell zu Grau addieren, also das der Mittelwert vom Bild Grau ist. Sollte das nicht der Fall sein, wird davon ausgegangen, dass das auf eine Farbige Beleuchtung zurückzuführen ist und normalisiert das Bild so, dass die Graue-Welt-Theorie erfüllt wird. Die Farbkanäle werden durch einen Skalierungsfaktor normalisiert, so das der Mittelwert 128 entspricht. Es werden somit Farbstiche herausgefiltert. Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein Problem dieses Normalisierungverfahren besteht darin, das es nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Ansätze dieser Ausgleichung.
+  \subsection{Ansatz des Gray-World-Algorithmus}\label{s.gw}
+Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Wenn über die Farben in einem Bild keine Annahmen getroffen werden können, wird davon ausgegangen, dass sich die Farbwerte in einem Bild sich vektoriell zu Grau addieren, also das der Mittelwert vom Bild Grau ist. Sollte das nicht der Fall sein, wird davon ausgegangen, dass das auf eine Farbige Beleuchtung zurückzuführen ist und normalisiert das Bild so, dass die Graue-Welt-Theorie erfüllt wird. Die Farbkanäle werden durch einen Skalierungsfaktor normalisiert, so das der Mittelwert 128 entspricht. Es werden somit Farbstiche herausgefiltert. Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein Problem dieses Normalisierungverfahren besteht darin, das es nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Ansätze dieser Ausgleichung.
+\begin{align} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{align}
+Eine Veränderung der Beleuchtungsfarbe kann als Skalierung von $\alpha$, $\beta$ und $\gamma$ für die R-, G-, und B-Kanäle modelliert werden. Als solcher ist der Gray-World für die Variationen der Beleuchtungsfarbe unveränderlich. Dieses Vorgehen berücksichtigt aber nicht alle Intensitäten der Beleuchtungsintensität und ist nicht für Dynamische Szenen geeignet. Aus diesem Grund, gibt es verschiedenste Ansätze dieses Verfahrens.
   \subsection{Ansatz der Histogramm Ausgleichung}\label{s.ha}
   Die Histogramm Ausgleichung ist eine Nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation-Funktion verwendet werden. Diese Normalisierung-Funktion gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.
    \begin{table}
   [h]
   \centering
   \caption{Pixelbild in ein tabellarisches Histogramm überführt}
+  \label{tab:bildha}
   \begin{tabular}{|c|c|c|c|c|c|c|c|}
   \hline
   0&1&5&1&7&2&0&3\\
@@ -207,7 +209,7 @@ Die Farbnormalisierung ist ein Thema der Bildverarbeitung welches sich hauptsäc
   4&3&2&4&2&5&2&5\\
   \hline
   \end{tabular}
-  \end{table}
+  \end{table}\\
   \begin{table}
   [h]
   \centering
@@ -218,8 +220,13 @@ Die Farbnormalisierung ist ein Thema der Bildverarbeitung welches sich hauptsäc
   Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
   \hline
   \end{tabular}
-  \end{table}
-Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und durch die höchste Graustufe teilt. Das Ergebnis wird gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden.
+  \end{table}\\
+Für die Mathematische Herleitung, betrachten wir zunächst ein Graustufenbild $X$ und geben mit $n_{i}$ die Anzahl der Graustufen an, wobei $i$ die Häufigkeit des auftretenden Pixels ist.
+\begin{eqnarray} p_{x}(i)=p(x=i)&=&\frac{n_{i}}{n}, 0\leq i \leq L \end{eqnarray}
+$L$ ist die Gesamtzahl aller Graustufen im Bild (normalerweise 256), $n$ ist die Gesamtzahl der Pixel im Bild und $p_{x}(i)$ welches das normalisierte Histogramm für den Pixelwert $i$ ist. Die Definition der Verteilungsfunktion sieht folgendermaßen aus:\\
+\begin{eqnarray} cdf_{x}(i) &=& \sum_{j=0}^i p_{x}(j)\end{eqnarray}
+Um die Funktionsweise etwas verständlicher zu machen, folgt ein kleines Beispiel. Dafür haben wir ein 8x8 Bild (Tabelle \ref{tab:bildha}), mit 8 Graustufen. Die Pixelverteilung wird in dem Tabellarischen Histogramm zusammengefasst.  
+Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und das Ergebnis wiederum durch die höchste Graustufe. Das Ergebnis wird nun gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden. Häufig wird für diese Verfahren, ein Farbraum gewählt, welcher einen Kanal für die Luminanz besitzen.
   \begin{table}
   [h]
   \caption{Mathematische Umsetzung der Histogrammausgleichung}
@@ -245,9 +252,16 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   7 & 2 & 64 & $64/64*7=7$ & 7\\
   \hline
   \end{tabular}
-  \end{table}
+  \end{table}\\
   \subsection{Ansatz der Histogramm Spezifikation}\label{s.hs}
-Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat. Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Quellbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Quellbild angepasst werden soll. Häufig wird zunächst eine Histogramm Ausgleichung der beiden Bilder durchgeführt. Es kann aber auch mit den Originalbilder durchgeführt werden. Im Weiteren wird das Histogramm des Quellbildes auf das Histogramm des Referenzbildes angepasst.
+Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat. Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Quellbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Quellbild angepasst werden soll. Häufig wird zunächst eine Histogramm Ausgleichung der beiden Bilder durchgeführt. Es kann aber auch mit den Originalbilder durchgeführt werden. Im Weiteren wird das Histogramm des Quellbildes auf das Histogramm des Referenzbildes angepasst. Die mathematische Herleitung beginnt auch hier mit einem Grasstufeneingabebild $X$. Diese Bild hat eine Wahrscheinlichkeitsdichtefunktion $p_{r}(r)$, wobei $r$ ein Graustufenwert ist und $p_{r}(r)$ die Wahrscheinlichkeit für diesen Wert ist. Diese Wahrscheinlichkeit kann aus dem Histogramm des Bildes Berechnet werden:
+\begin{eqnarray} p_{r}(r_{j})&=&\frac{n_{j}}{n} \end{eqnarray}
+Dabei ist $n_{j}$ die frequenz des Graustufenwerts $r_{j}$ und $n$ die Gesamtzahl der Pixel im Bild. Bei betrachtung der gewünschten Ausgabewahrscheinlichkeitsdichtefunktion $p_{z}(z)$. Eine Transformation von $p_{r}(r)$ wird durchgeführt, damit es nach $p_{z}(z)$ anzupassen. Gegeben sind die Funktionen der beiden Bilder:
+\begin{align} S(r_{k})=\sum_{j=0}^k p_{r}(r_{j}) ,& &k=0,1,2,3,4,..,L\end{align}
+\begin{align} G(z_{k})=\sum_{j=0}^k p_{z}(z_{j}) ,& &k=0,1,2,3,4,.., L \end{align}   
+Auch in dieser Herleitung bildet die Gesamtzahl an Graustufen (Normalerweise 256). Im weiteren wird versucht, jeden $r$-Wert in $X$ auf den $z$-Wert abzubilden, welche die gleiche Wahrscheinlichkeit haben. Das heißt:
+\begin{align} S(r_{j})=G(z_{i})& oder & z=G^(-1)(S(r)) \end{align}
+Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt (Kapitel \ref{s.histogramme}).
   \begin{table}
   [h]
   \caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
@@ -274,7 +288,7 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   \hline
   \end{tabular}
   \end{table}\\
-Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt (Kapitel \ref{s.histogramme}). Nun werden die Histogramme wie in Kapitel \ref{s.ha} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle \ref{tab:hs} Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
+Nun werden die Histogramme wie in Kapitel \ref{s.ha} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches wird in Tabelle \ref{tab:hs} Aufgeführt. Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
   In einem Beispiel:
   
   1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
@@ -326,4 +340,4 @@ Aus der neuen Stufen Verteilung entsteht ein neues Histogramm (Tabelle \ref{tab:
   Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
   \hline
   \end{tabular}
-  \end{table}
+  \end{table}\\
