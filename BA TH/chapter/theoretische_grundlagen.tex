@@ -181,16 +181,17 @@ Häufig wird ein Schwellwert für die Pseudowahrscheinlichkeit genutzt, mit welc
 Die Farbnormalisierung ist ein Thema der Bildverarbeitung welches sich hauptsächlich mit künstlicher Farbsicht befasst. Die Verteilung und Darstellung von Farben auf Bildern hängt hauptsächlich von Beleuchtungsbedingungen und der Kamera ab. Das bedeutet, das sich die Farben bei der Aufnahme, je nach Beleuchtung verändern. Das ist gerade im Bereich von \textit{Maschine Learning} problematisch, da diese Farbveränderungen zu Fehlern im Lernprozess und der späteren Genauigkeit führen. Farbnormalisierung-Algorithmen, sollen dafür sorgen, dass die Farbabweichungen durch Lichteinfluss geringere Auswirkungen habe und zu besseren Ergebnissen führen. Im folgenden werden die ausgewählten Algorithmen erläutert, welche im Rahmen dieser Arbeit getestet werden.
   \subsection{Ansatz des Gray-World-Algorithmus}\label{s.gw}
 Bei der Gray-World Normalisierung geht es nicht, wie der Name vermuten lässt um die Umwandlung in ein Graustufenbild, eher werden die verschieden Farbräume abgedunkelt und eingegrenzt. Wenn über die Farben in einem Bild keine Annahmen getroffen werden können, wird davon ausgegangen, dass sich die Farbwerte in einem Bild sich vektoriell zu Grau addieren, also das der Mittelwert vom Bild Grau ist. Sollte das nicht der Fall sein, wird davon ausgegangen, dass das auf eine Farbige Beleuchtung zurückzuführen ist und normalisiert das Bild so, dass die Graue-Welt-Theorie erfüllt wird. Die Farbkanäle werden durch einen Skalierungsfaktor normalisiert, so das der Mittelwert 128 entspricht. Es werden somit Farbstiche herausgefiltert. Wie schon erwähnt, ist diese Art der Farbnormalisierung für verschiedene Farbvariationen unveränderlich. Ein Problem dieses Normalisierungverfahren besteht darin, das es nicht einfach für dynamische Szenen verwendet werden kann. Um solche Probleme zu lösen, gibt es mehrere Ansätze dieser Ausgleichung.
-\begin{align} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{align}
-% Verweis zur Fromel fehlt im Text
-Eine Veränderung der Beleuchtungsfarbe kann als Skalierung von $\alpha$, $\beta$ und $\gamma$ für die R-, G-, und B-Kanäle modelliert werden. Als solcher ist der Gray-World für die Variationen der Beleuchtungsfarbe unveränderlich. Dieses Vorgehen berücksichtigt aber nicht alle Intensitäten der Beleuchtungsintensität und ist nicht für Dynamische Szenen geeignet. Aus diesem Grund, gibt es verschiedenste Ansätze dieses Verfahrens.
-  \subsection{Ansatz der Histogramm Ausgleichung}\label{s.ha}%Verstehe stärker in diesem Zusammenhang nicht, ist die besser oder brachialer ? Wenn die Besser ist müsste erleutert werden das die trotz des dominaten blauen Farbkanals besser ist  
-  Die Histogramm Ausgleichung ist eine nichtlineare Transformation, welche auf Grundlage der Histogramme wie in Kapitel \ref{s.histogramme} beschrieben arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation verwendet werden. Dieses Normalisierungsverfahren gilt stärker als der Gray-World-Algorithmus. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.
+\begin{align} \label{f:gw} (\alpha R, \beta G, \gamma B) \rightarrow\left(\frac{\alpha R} {\frac{\alpha}{n} \sum_{i} R}, \frac{\beta G} {\frac{\beta}{n} \sum_{i} G}, \frac{\gamma B} {\frac{\gamma}{n} \sum_{i} B} \right) \end{align}
+Eine Veränderung der Beleuchtungsfarbe kann als Skalierung von $\alpha$, $\beta$ und $\gamma$ für die R-, G-, und B-Kanäle modelliert werden (\ref{f:gw}). Als solcher ist der Gray-World für die Variationen der Beleuchtungsfarbe unveränderlich. Dieses Vorgehen berücksichtigt aber nicht alle Intensitäten der Beleuchtungsintensität und ist nicht für Dynamische Szenen geeignet. Aus diesem Grund, gibt es verschiedenste Ansätze dieses Verfahrens.
+  \subsection{Ansatz der Histogramm Ausgleichung}\label{s.ha}  
+Die Histogramm Ausgleichung ist eine nichtlineare Transformation, welche auf Grundlage der Histogramme arbeitet. Der Pixelrang wird dabei nicht verändert und kann bei jeder monoton steigenden Farbformation verwendet werden. Dieses Normalisierungsverfahren wird besser als der Gray-World-Algorithmus angesehen, da nicht nur die Farbkanäle beeinflusst werden, sondern die Farbverteilung in den Bildern. Durch die Histogramm Ausgleichung entsteht ein dominanter blauer Kanal, wodurch das Bild oft unnatürlich erscheint.
    \begin{table}
   [h]
   \centering
   \caption{Pixelbild in ein tabellarisches Histogramm überführt}
   \label{tab:bildha}
+  \begin{minipage}{\textwidth}
+  \center
   \begin{tabular}{|c|c|c|c|c|c|c|c|}
   \hline
   0&1&5&1&7&2&0&3\\
@@ -207,13 +208,15 @@ Eine Veränderung der Beleuchtungsfarbe kann als Skalierung von $\alpha$, $\beta
   \hline
   5&1&6&1&0&1&1&5\\
   \hline
-  4&3&2&4&2&5&2&5\\
+  4&5&2&4&2&5&2&5\\
   \hline
   \end{tabular}
-  \end{table}\\
-  \begin{table}
-  [h]
-  \centering
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \hspace{\textwidth}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \center
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
   Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
@@ -221,19 +224,19 @@ Eine Veränderung der Beleuchtungsfarbe kann als Skalierung von $\alpha$, $\beta
   Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
   \hline
   \end{tabular}
-  \end{table}\\
-Für die Mathematische Herleitung, betrachten wir zunächst ein Graustufenbild $X$ und geben mit $n_{i}$ die Anzahl der Graustufen an, wobei $i$ die Häufigkeit des auftretenden Pixels ist.
-\begin{eqnarray} p_{x}(i)=p(x=i)&=&\frac{n_{i}}{n}, 0\leq i \leq L \end{eqnarray}
-% Verweis zur Fromel fehlt im Text
-$L$ ist die Gesamtzahl aller Graustufen im Bild (normalerweise 256), $n$ ist die Gesamtzahl der Pixel im Bild und $p_{x}(i)$ welches das normalisierte Histogramm für den Pixelwert $i$ ist. Die Definition der Verteilungsfunktion sieht folgendermaßen aus:\\
+  \end{minipage}
+  \end{table}
+Für die Mathematische Herleitung, betrachten wir zunächst ein Graustufenbild $X$ und geben mit $n_{i}$ die Anzahl der Graustufen an, wobei $i$ die Häufigkeit des auftretenden Pixels ist. Zu sehen in der Funktion \ref{f:ha1}.
+\begin{eqnarray} \label{f:ha1} p_{x}(i)=p(x=i)&=&\frac{n_{i}}{n}, 0\leq i \leq L \end{eqnarray}
+$L$ ist die Gesamtzahl aller Graustufen im Bild (normalerweise 256), $n$ ist die Gesamtzahl der Pixel im Bild und $p_{x}(i)$ welches das normalisierte Histogramm für den Pixelwert $i$ ist. Die Definition der Verteilungsfunktion kann man in \ref{f:ha2} sehen:
 \begin{eqnarray} cdf_{x}(i) &=& \sum_{j=0}^i p_{x}(j)\end{eqnarray}
-% Verweis zur Fromel fehlt im Text
 Um die Funktionsweise etwas verständlicher zu machen, folgt ein kleines Beispiel. Dafür haben wir ein 8x8 Bild (Tabelle \ref{tab:bildha}), mit 8 Graustufen. Die Pixelverteilung wird in dem Tabellarischen Histogramm zusammengefasst.  
-Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und das Ergebnis wiederum durch die höchste Graustufe. %Verweis auf Tabelle 2.2
+Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen Pixelwert durch die Anzahl aller Pixel teilt und das Ergebnis wiederum durch die höchste Graustufe. Das wird für jede wird für jede Grauabstufung durchgeführt, wie in Tabelle \ref{tab:haberechnung} beschrieben.
  Das Ergebnis wird nun gerundet und der passenden Graustufe zugeordnet. Die Vorgehensweise mit Farbbildern funktioniert gleich, nur das die R, G und B Kanäle verwendet werden. Häufig wird für diese Verfahren, ein Farbraum gewählt, welcher einen Kanal für die Luminanz besitzen.
   \begin{table}
   [h]
   \caption{Mathematische Umsetzung der Histogrammausgleichung}
+  \label{tab:haberechnung}
   \centering
   \begin{tabular}{|l|c|c|c|c|}
   \hline
@@ -256,22 +259,91 @@ Aus der Pixelverteilung wird nun ein Ausgleich berechnet welche den kumulativen 
   7 & 2 & 64 & $64/64*7=7$ & 7\\
   \hline
   \end{tabular}
-  \end{table}\\
-  \subsection{Ansatz der Histogramm Spezifikation}\label{s.hs}
-Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat. Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Quellbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Quellbild angepasst werden soll. Häufig wird zunächst eine Histogramm Ausgleichung der beiden Bilder durchgeführt. Es kann aber auch mit den Originalbilder durchgeführt werden. Im Weiteren wird das Histogramm des Quellbildes auf das Histogramm des Referenzbildes angepasst. Die mathematische Herleitung beginnt auch hier mit einem Grasstufeneingabebild $X$. %X taucht in den Formeln nicht auf .. meinst du vielleicht S oder G ?
- Diese Bild hat eine Wahrscheinlichkeitsdichtefunktion $p_{r}(r)$, wobei $r$ ein Graustufenwert ist und $p_{r}(r)$ die Wahrscheinlichkeit für diesen Wert ist. Diese Wahrscheinlichkeit kann aus dem Histogramm des Bildes Berechnet werden:
-\begin{eqnarray} p_{r}(r_{j})&=&\frac{n_{j}}{n} \end{eqnarray}
-Dabei ist $n_{j}$ die frequenz des Graustufenwerts $r_{j}$ und $n$ die Gesamtzahl der Pixel im Bild. Bei betrachtung der gewünschten Ausgabewahrscheinlichkeitsdichtefunktion $p_{z}(z)$. Eine Transformation von $p_{r}(r)$ wird durchgeführt, damit es nach $p_{z}(z)$ anzupassen. Gegeben sind die Funktionen der beiden Bilder: % S= Quellbild G= Referenzbild? Was ist K ? 
-\begin{align} S(r_{k})=\sum_{j=0}^k p_{r}(r_{j}) ,& &k=0,1,2,3,4,..,L\end{align}
-\begin{align} G(z_{k})=\sum_{j=0}^k p_{z}(z_{j}) ,& &k=0,1,2,3,4,.., L \end{align}   
-Auch in dieser Herleitung bildet die Gesamtzahl an Graustufen (Normalerweise 256). Im weiteren wird versucht, jeden $r$-Wert in $X$ auf den $z$-Wert abzubilden, welche die gleiche Wahrscheinlichkeit haben. Das heißt: %X kommt nicht vor in den Formeln 
-\begin{align} S(r_{j})=G(z_{i})& oder & z=G^(-1)(S(r)) \end{align} % Formel nicht korrekt dargestellt im pdf 
-Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt (Kapitel \ref{s.histogramme}). %Verweis auf ein Kapitel ? Meinst du hier nicht ne Abbildung? 
-  \begin{table}
-  [h]
-  \caption{Tabellarisches Histogramm des Quell-Bildes (B1)} %Matrix von B1 und B2 fehlen 
+  \end{table}
+Die Graustufen werden im weiteren Schritt übernommen und in Das Quellbild eingesetzt. Dabei verschieben sich die Grauwerte so, das den Gerundeten Grauwerten aus Tabelle \ref{tab:haberechnung} entsprechen. Das Ausgeglichen Bild kann man in der Tabelle \ref{tab:hamatrix} betrachten. 
+\begin{table}[htb]
+  \caption{Bildmatrix des Ausgeglichenen Histogramms}
   \label{tab:b1}
   \centering
+  \begin{minipage}{\textwidth}
+  \center
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  1&2&6&2&7&3&1&3\\
+  \hline
+  1&1&6&6&6&3&5&6\\
+  \hline
+  5&6&2&5&2&6&2&5\\
+  \hline
+  6&2&3&5&6&3&7&3\\
+  \hline
+  6&3&7&5&1&5&1&6\\
+  \hline
+  5&1&3&5&7&5&7&3\\
+  \hline
+  6&2&7&2&1&2&2&6\\
+  \hline
+  5&6&3&5&3&6&3&6\\
+  \hline
+  \end{tabular}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \hspace{\textwidth}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \center
+  \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+  \hline
+  Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+  \hline
+  Anzahl der Pixel & 0 & 8 & 10 & 12 & 0 & 12 & 16 & 6\\
+  \hline
+  \end{tabular}
+  \end{minipage}
+  \end{table}
+  \newpage
+  \subsection{Ansatz der Histogramm Spezifikation}\label{s.hs}
+Ähnlich wie die Histogramm Ausgleichung arbeitet die Histogramm Spezifikation. Die Histogramme der roten, grünen und blauen Kanäle werden so umgewandelt, dass sie den Formen von drei spezifischen Histogrammen entsprechen, anstatt sie einfach auszugleichen. Mithilfe dieses Vorgehens wird darauf abgezielt, Bilder zu erhalten welche ein Histogramm einer bestimmten Form haben. Zunächst muss das Bild so konvertiert werden, dass das Histogramm eine bestimmte Form hat. Für diese Methode werden üblicher weise zwei ähnliche Bilder verwendet, einmal das Quellbild und das Referenzbild. Das Referenzbild hat die gewünschte Form des Histogramms, hingegen das Quellbild angepasst werden soll. Häufig wird zunächst eine Histogramm Ausgleichung der beiden Bilder durchgeführt. Es kann aber auch mit den Originalbilder durchgeführt werden. Im Weiteren wird das Histogramm des Quellbildes auf das Histogramm des Referenzbildes angepasst. Die mathematische Herleitung beginnt auch hier mit einem Grasstufeneingabebild $S$. 
+Diese Bild hat eine Wahrscheinlichkeitsdichtefunktion $p_{r}(r)$, wobei $r$ ein Graustufenwert ist und $p_{r}(r)$ die Wahrscheinlichkeit für diesen Wert darstellt. Diese Wahrscheinlichkeit kann aus dem Histogramm des Bildes Berechnet werden:
+\begin{eqnarray} p_{r}(r_{j})&=&\frac{n_{j}}{n} \end{eqnarray}
+Dabei ist $n_{j}$ die frequenz des Graustufenwerts $r_{j}$ und $n$ die Gesamtzahl der Pixel im Bild. Bei betrachtung der gewünschten Ausgabewahrscheinlichkeitsdichtefunktion $p_{z}(z)$. Eine Transformation von $p_{r}(r)$ wird durchgeführt, damit es nach $p_{z}(z)$ anzupassen. Gegeben sind die Funktionen der beiden Bilder: 
+\begin{align} \label{f:quell} S(r_{k})=\sum_{j=0}^k p_{r}(r_{j}) ,& &k=0,1,2,3,4,..,L\end{align}
+\begin{align} \label{f:referenz} G(z_{k})=\sum_{j=0}^k p_{z}(z_{j}) ,& &k=0,1,2,3,4,.., L \end{align}
+Dabei stellt $S$ das Quellbild (\ref{f:quell}) und $G$ das Referenzbild (\ref{f:referenz}) dar. $k$ beinhaltet alle Graustufen bis hin zur höchsten $L$.   
+Auch in dieser Herleitung bildet die Gesamtzahl an Graustufen (Normalerweise 256). Im weiteren wird versucht, jeden $r$-Wert in $S$ auf den $z$-Wert von $G$ abzubilden, welche die gleiche Wahrscheinlichkeit haben. Das heißt:
+\begin{align} S(r_{j})=G(z_{i})& &oder& & z=G^{-1}(S(r)) \end{align} 
+Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen und die mathematische Herleitung eingegangen. Dafür gibt es in den Tabellen \ref{tab:b1} und \ref{tab:b2} zwei Histogramme mit 8 Grauabstufungen. In diesen Tabellen wird aufgeführt, wie oft der jeweilige Grauwert in dem Bild vorkommt. 
+  \begin{table}[htb]
+  \caption{Tabellarisches Histogramm des Quell-Bildes (B1)}
+  \label{tab:b1}
+  \centering
+  \begin{minipage}{\textwidth}
+  \center
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  0&1&5&1&7&2&0&3\\
+  \hline
+  0&0&5&5&5&2&4&5\\
+  \hline
+  4&5&1&4&1&5&1&4\\
+  \hline
+  5&1&2&4&5&2&6&3\\
+  \hline
+  5&2&6&4&0&4&0&5\\
+  \hline
+  4&0&2&4&7&4&6&2\\
+  \hline
+  5&1&6&1&0&1&1&5\\
+  \hline
+  4&5&2&4&2&5&2&5\\
+  \hline
+  \end{tabular}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \hspace{\textwidth}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \center
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
   Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
@@ -279,12 +351,41 @@ Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen u
   Anzahl der Pixel & 8 & 10 & 10 & 2 & 12 & 16 & 4 & 2\\
   \hline
   \end{tabular}
-  \end{table}\\
+  \end{minipage}
+  \vspace{-1 cm}
+  \end{table}
   \begin{table}
   [h]
   \caption{Tabellarisches Histogramm des Referenz-Bildes (B2)}
   \label{tab:b2}
   \centering
+  \begin{minipage}{\textwidth}
+  \center
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  4&6&5&6&6&7&5&5\\
+  \hline
+  5&5&4&4&4&7&4&4\\
+  \hline
+  5&6&4&5&5&6&6&5\\
+  \hline
+  5&4&7&4&5&4&6&7\\
+  \hline
+  4&5&5&5&4&4&6&5\\
+  \hline
+  6&5&4&5&6&6&7&4\\
+  \hline
+  6&4&5&4&7&4&6&5\\
+  \hline
+  7&6&6&5&4&5&6&\\
+  \hline
+  \end{tabular}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \hspace{\textwidth}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \center
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
   Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
@@ -292,21 +393,10 @@ Um die Funktionsweise verständlicher darzustellen, wird kurz auf das Vorgehen u
   Anzahl der Pixel & 0 & 0 & 0 & 0 & 20 & 20 & 16 & 8\\
   \hline
   \end{tabular}
+  \end{minipage}
   \end{table}\\
-Nun werden die Histogramme wie in Kapitel \ref{s.ha} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches ist in Tabelle \ref{tab:hs} dargestellt. %Hier die Tabelle einfügen
-Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
-  In einem Beispiel: %Verstehe das Beispiel nicht :) 
-  
-  1 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
-  
-  2 (B1) am nächsten an 2 (B2) liegt bei Graustufe 4
-  
-  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
-  
-  3 (B1) am nächsten an 4 (B2) liegt bei Graustufe 5
-  
-  ......\\
-  \begin{table}
+Nun werden die Histogramme wie in Kapitel \ref{s.ha} beschrieben, ausgeglichen. Von 0 bis $L-1$ werden die Summen der Pixel berechnet, durch die Anzahl der im Bild enthaltenden Pixel geteilt und mit der höchsten Graustufe $(L-1)$ multipliziert. Das Ergebnis des Ausgleiches ist in Tabelle \ref{tab:hs} dargestellt.
+\begin{table}
   [h]
   \caption{Von zwei Ausgeglichenen Histogrammen zu einem Spezifizierten Histogramm}
   \label{tab:hs}
@@ -332,13 +422,52 @@ Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst d
   7 & 7 & 7 & 7\\
   \hline
   \end{tabular}
-  \end{table}\\
+  \end{table}
+Nun werden die Grauwertverteilungen von B1 und die Verteilung von B2 angepasst dafür wird der nächste Wert aufgerundet von B1 übernommen.\\\\
+In einem Beispiel von Tabelle \ref{tab:hs}: \\
+Bei Graustufe 0 liegt der Wert von B1 bei 1. Der nächst höhere Wert in B2 liegt bei 2 an der Graustufe 4. Dieser Wert wird in das Zielhistogramm übernommen. Dabei werden alle Pixel welche vorher den Grauwert 0 haben in den Grauwert 4 Übertragen. Diese Prinzip, wird für jeden Farbwert des Histogramms durchgeführt.
+  \begin{itemize}
+  \item Grauwert von 1 $\rightarrow$ B1 den Wert 2 $\rightarrow$ B2 den Wert 2 $\rightarrow$ liegt an der Graustufe 4
+  \item Grauwert von 2 $\rightarrow$ B1 den Wert 3 $\rightarrow$ B2 den Wert 4 $\rightarrow$ liegt an der Graustufe 5
+  \item Grauwert von 3 $\rightarrow$ B1 den Wert 3 $\rightarrow$ B2 den Wert 4 $\rightarrow$ liegt an der Graustufe 5
+  \item Grauwert von 4 $\rightarrow$ B1 den Wert 5 $\rightarrow$ B2 den Wert 6 $\rightarrow$ liegt an der Graustufe 6
+  \item Grauwert von 5 $\rightarrow$ B1 den Wert 6 $\rightarrow$ B2 den Wert 6 $\rightarrow$ liegt an der Graustufe 6
+  \item Grauwert von 6 $\rightarrow$ B1 den Wert 7 $\rightarrow$ B2 den Wert 7 $\rightarrow$ liegt an der Graustufe 7
+  \item Grauwert von 7 $\rightarrow$ B1 den Wert 7 $\rightarrow$ B2 den Wert 7 $\rightarrow$ liegt an der Graustufe 7
+  \end{itemize}
 Aus der neuen Stufen Verteilung entsteht ein neues Histogramm (Tabelle \ref{tab:B3}) welches Ähnlichkeiten zum Referenz-Histogramm hat. Dadurch verschiebt sich das Histogramm Richtung weiß und das Bild wird erhellt.
   \begin{table}
   [h]
   \caption{Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}
   \label{tab:B3}
   \centering
+  \begin{minipage}{\textwidth}
+  \center
+  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  4&4&6&4&7&5&4&5\\
+  \hline
+  4&4&6&6&6&5&6&6\\
+  \hline
+  6&6&4&6&4&6&4&6\\
+  \hline
+  6&4&5&6&6&5&7&5\\
+  \hline
+  6&7&7&6&4&6&4&6\\
+  \hline
+  6&4&7&6&7&6&7&7\\
+  \hline
+  6&4&7&4&4&4&4&6\\
+  \hline
+  6&6&5&6&5&6&5&6\\
+  \hline
+  \end{tabular}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \hspace{\textwidth}
+  \end{minipage}
+  \begin{minipage}{\textwidth}
+  \center
   \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
   \hline
   Graustufen & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
@@ -346,4 +475,5 @@ Aus der neuen Stufen Verteilung entsteht ein neues Histogramm (Tabelle \ref{tab:
   Anzahl der Pixel & 0 & 0 & 0 & 0 & 18 & 12 & 28 & 6\\
   \hline
   \end{tabular}
-  \end{table}\\
+  \end{minipage}
+  \end{table}

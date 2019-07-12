@@ -14,11 +14,11 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling variante \cite {pooling2018layer}}}{20}{figure.2.10}% 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labelimg Programm \cite {labelimg2019}}}{21}{figure.2.11}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Auswirkung des Gray-World Algorithmus}}{30}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm Ausgleichung}}{31}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation}}{32}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Auswirkung des Gray-World Algorithmus}}{31}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm Ausgleichung}}{32}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation}}{33}{figure.3.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung}}{37}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung}}{38}{figure.4.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {.2}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Histogramm Ausgleich}}{II}{figure.1..2}% 
