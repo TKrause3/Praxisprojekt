@@ -25,3 +25,5 @@
 \contentsline {figure}{\numberline {.3}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch den Gray-World Algorithmus}}{III}{figure.1..3}% 
 \contentsline {figure}{\numberline {.4}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Normalisiert durch die Histogramm Spezifikation}}{IV}{figure.1..4}% 
 \contentsline {figure}{\numberline {.5}{\ignorespaces Helligkeitsverteilung und den Einfluss der Normalisierungs Algorithmen auf das Testbild}}{V}{figure.1..5}% 
+\contentsline {figure}{\numberline {.6}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch den Histogramm Ausgleich. Oben: PascalVOC Datensatz, Mitte: Nahrungsmittel Datensatz, Unten: Stanford Dog Datensatz}}{VI}{figure.1..6}% 
+\contentsline {figure}{\numberline {.7}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch die Histogramm Spezifikation. Oben: PascalVOC Datensatz, Mitte: Nahrungsmittel Datensatz, Unten: Stanford Dog Datensatz}}{VII}{figure.1..7}% 

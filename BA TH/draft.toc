@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {6.1}Gray-World-Algorithmus}{43}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Histogramm Ausgleich}{43}{section.6.2}% 
 \contentsline {section}{\numberline {6.3}Histogramm Spezifizierung}{43}{section.6.3}% 
-\contentsline {chapter}{Abbildungsverzeichnis}{45}{chapter*.6}% 
-\contentsline {chapter}{Tabellenverzeichnis}{46}{chapter*.7}% 
-\contentsline {chapter}{Literaturverzeichnis}{48}{chapter*.8}% 
+\contentsline {chapter}{Abbildungsverzeichnis}{46}{chapter*.6}% 
+\contentsline {chapter}{Tabellenverzeichnis}{47}{chapter*.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{49}{chapter*.8}% 
 \contentsline {chapter}{ANHANG}{I}{section*.9}% 
