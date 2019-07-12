@@ -21,13 +21,12 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \hline
 \end{tabular}
 \end{table}
-Um die Auswirkungen der Normalisierung deutlich hervorheben zu können wurde bei der Auswahl des Netzes eins ausgewählt, welches eine recht niedrige mAP hat. \\
-Das faster\_rcnn\_inception\_v2\_coco soll für das Projekt verwendet werden. Dieses hat eine \textit{mAP} von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste \textit{mAP} hat, sollten die Auswirkungen, der Normalisierungsverfahren, in der Genauigkeit stärker ersichtlich werden. Das ausgewählte Netz wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
+Um die Auswirkungen der Normalisierung deutlich hervorheben zu können wurde bei der Auswahl des Netzes eins ausgewählt, welches eine recht niedrige mAP hat. Weshalb das faster\_rcnn\_inception\_v2\_coco ausgewählt wurde. Dieses hat eine \textit{mAP} von 28 und eine Geschwindigkeit von 32 ms. Dadurch das es die niedrigste \textit{mAP} hat, sollten die Auswirkungen, der Normalisierungsverfahren, in der Genauigkeit stärker ersichtlich werden. Das ausgewählte Netz wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind.
   \section{Trainingsdaten}\label{s.tdaten}
-Da für ein solches Training die benötigten Trainingsdaten und die Zeit nicht zur Verfügung stehen, sollte eine Möglichkeit gefunden werden, wie das Training auch mit weniger Trainingsdaten durchgeführt werden kann. Durch das vortrainieren der neuronalen Netze, werden nur noch durchschnittlich 150 Bilder pro Objektklasse und eine geringere Trainingszeit benötigt. Die Bilder der eigenen Daten werden mit einer 13 Megapixel Kamera eines \textit{Huawei P Smart} aufgenommen. Die verwendeten Objekte werden von vielen verschiedenen Seiten aufgenommen. Dabei müssen für das Training, pro klasse ungefähr 150 Bilder vorhanden sein. Da die Bilder mit einer der Kamera mehrere Megabyte groß werden, müssen diese auf 100-300 KB komprimiert werden.\\
+Wie bereits in Kapitel \ref{s.trainingsdaten} beschrieben werden zum trainiren eines Neuronalen üblicherweise mehere Hunderttaused Daten benötigt. Durch die Verwendung eines vortrainierten Netzes, werden für das trainieren der eigenen Klassen nur noch durchschnittlich 150 Bilder pro Objektklasse benötigt was die Trainingsdauer deutlich verkürzt. Die Bilder der eigenen Daten werden mit einer 13 Megapixel Kamera eines \textit{Huawei P Smart} aufgenommen. Die verwendeten Objekte werden von vielen verschiedenen Seiten aufgenommen. Da die Bilder erstellten Bilder mehrere Megabyte groß waren, müssten diese auf 100-300 KB komprimiert werden.\\ %Warum müssen die das? 
 Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\
 In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:\\\\
-Der erste Datensatz besteht aus mehreren Nahrungsmitteln, welche in der Tabelle \ref{tab:nahrungsmittel} jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen (Kapitel \ref{s.trainingsdaten}) beinhalten. Dieser Datensatz ist mit seinen ca. 1000 Bildern der kleinste Datensatz. 
+Der erste Datensatz besteht aus 6 Klassen welche in der Tabelle \ref{tab:nahrungsmittel} aufgeführt sind. Jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen (Kapitel \ref{s.trainingsdaten}) beinhalten. Dieser Datensatz ist mit seinen ca. 1000 Bildern der kleinste Datensatz. 
 \begin{table}
 [h]
 \caption{Datensatz mit Nahrungsmitteln}
@@ -82,7 +81,8 @@ Redbone & Borzoi & Irish Wolfhound & Italian Greyhound\\
 Von der Struktur der Datensätze, sind sie ähnlich aufgebaut. Viele verschiedene Klassen mit verschiedenen Szenen und Kontexten. Im weiteren wird zunächst auf die Umsetzung der Normalisierungsverfahren eingegangen, um weiter Erkenntnisse zu erlangen.
 \section{Normalisierung-Algorithmen}\label{s.nalgorithmen}
 Für die Normalisierung der Datensätze ist eine Methode nötig, um mehrere Bilder möglichst schnell hintereinander zu bearbeiten. Für die Normalisierung wurden Python Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus verarbeitet. Dafür wurde mit unter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das verarbeiten von Bildern benötigt. 
-\subsection{Gray-World-Algorithmus}
+%Seitenumbruch
+\subsection{Gray-World-Algorithmus} %Bessere variablen namen wären schön um die lesbarkeit zu erhöhen z.b img statt ning, avarage_green_channel ...  V
 \begin{lstlisting}
 # Importieren des Bildes
 nimg = cv.imread(i, 1)
@@ -94,10 +94,11 @@ mu_g = np.average(nimg[1])
 nimg[0] = np.minimum(nimg[0]*(mu_g/np.average(nimg[0])),255)
 # Berechnung des blau-Kanals:
 nimg[2] = np.minimum(nimg[2]*(mu_g/np.average(nimg[2])),255)
-Zurükwandlung des Bildes in 8 Bit
+Umwandlung des Bildes in 8 Bit
 img_output = nimg.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
-Der Gray World Algorithmus \cite{gray2012world} welcher verwendet wird, funktioniert etwas anders als in den Grundlagen beschrieben. Für die Normalisierung der Kanäle, wird der durchschnitt des Grünkanal verwendet, da diese Farbe wichtig für das Helligkeitsempfinden ist. Das Bild wird zunächst in 32 Bit umgewandelt. Daraufhin wird  der Durchschnittswert des Grünkanals berechnet und zwischengespeichert. Der Grün-Kanal wird nun mit dem durchschnitt des Rot-Kanals dividiert und anschließend mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal. Das verarbeitete Bild wird nun wieder zurück in 8 Bit gewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). Für das verfahren wird keine spezielle Python Bibliothek eingesetzt.
+Der Gray World Algorithmus \cite{gray2012world} welcher verwendet wird, funktioniert etwas anders als in den Grundlagen beschrieben. Für die Normalisierung der Kanäle, wird der durchschnitt des Grünkanal verwendet, da diese Farbe wichtig für das Helligkeitsempfinden ist. % Was ist der unterschied wird hier nicht nur ein anderer Farbkanal als Grau genommen? Verweise auf den Quellcode wären schon "In Zeile 1 wird
+In der Zeile 2 wird der Farbraun des Bildes in 32 Bit umgewandelt. Daraufhin wird in Zeile 6 der Durchschnittswert des Grünkanals berechnet und zwischengespeichert. In der Zeile 8 wird der Grün-Kanal nun mit dem durchschnitt des Rot-Kanals dividiert und anschließend mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal in Zeile 10. Abschließend wird das bearbeitete Bild in 8 Bit gewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). Für das verfahren wird keine spezielle Python Bibliothek eingesetzt. %Weißt du warum das bild erst auf 32 bit hoch skalliert wird und dann auf 8 bit zurück, hatte auch nicht gedacht das das Bild am anfand nur 8 Bit hatte ...
 \begin{figure}
 	[h]
 	\centering
@@ -105,18 +106,16 @@ Der Gray World Algorithmus \cite{gray2012world} welcher verwendet wird, funktion
 	\caption{Auswirkung des Gray-World Algorithmus}
 	\label{img:gwnimg}
 \end{figure}
+%Seitenumbruch da ansonten der Alogorythmus auf zwei seiten steht
 \subsubsection{Histogramm Ausgleich}
 \begin{lstlisting}
 # Importieren des Bildes
-img = cv2.imread('input.jpg')
-# Umwandlung des Farbraumes von BGR zu YUV
-img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
-# Ausgleichung vom Histogramm des Y Kanals
-img_yuv[:,:,0] = cv2.equalizeHist(img_yuv[:,:,0])
-# Umwandlung des Farbraumes in den BGR Farbraum
-img_output = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
+img = cv.imread('input.jpg')
+img_yuv = cv.cvtColor(img, cv.COLOR_BGR2YUV)
+img_yuv[:,:,0] = cv.equalizeHist(img_yuv[:,:,0])
+img_output = cv.cvtColor(img_yuv, cv.COLOR_YUV2BGR)
 \end{lstlisting}
-Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild zunächst vom BGR Farbraum in den YUV Farbraum (Kapitel \ref{s.lab} umgewandelt. Der Y-Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. Das Histogramm des Y Kanals wird, wie in Kapitel \ref{s.histogramme} beschrieben, ausgeglichen. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
+Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild in Zeile 3 vom BGR Farbraum in den YUV Farbraum (Kapitel \ref{s.lab} umgewandelt. Der Y-Kanal wird für die Histogramm Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. In Zeile 4 wird das Histogramm des Y Kanals, wie in Kapitel \ref{s.histogramme} beschrieben, ausgeglichen. Das normalisierte Bild wird von dem YUV Farbraum zurück in den BGR Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
 \begin{figure}
 	[h]
 	\centering
@@ -128,9 +127,7 @@ Für die Histogramm Ausgleichung \cite{histogram2012equalisation} wird das Bild 
 \begin{lstlisting}
 # Importieren des Referenzbildes
 reference = io.imread('reference.jpg')
-# Importieren des zu Normalisierenden Bildes
 image = io.imread('image.jpg')
-# Weiterleitung der beiden Bilder an die match_histogram-Methode der Skimage Bibliothek
 matched = match_histograms(image, reference, multichannel=True)
 \end{lstlisting}
 Der dritte Normalisierungsfunktion welche für die Datensätze angewendet wird, ist die Histogramm Spezifikation (Kapitel \ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist (Abbildung \ref{img:histogramspez}). Die Problematik bei dieser Normalisierungs Methode besteht darin, das ein einheitliches Referenzbild genutzt werden muss auf welchem dann der gesamte Datensatz Normalisiert wird.
