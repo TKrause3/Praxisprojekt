@@ -21,11 +21,11 @@
 \contentsline {subsection}{\numberline {2.4.3}Ansatz der Histogramm Spezifikation}{25}{subsection.2.4.3}% 
 \contentsline {chapter}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{28}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Vortrainierte Netze}{28}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Trainingsdaten}{29}{section.3.2}% 
+\contentsline {section}{\numberline {3.2}Trainingsdaten}{28}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Normalisierung-Algorithmen}{30}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{30}{subsection.3.3.1}% 
-\contentsline {subsubsection}{\nonumberline Histogramm Ausgleich}{31}{section*.5}% 
-\contentsline {subsection}{\numberline {3.3.2}Histogramm Spezifikation}{32}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{31}{subsection.3.3.1}% 
+\contentsline {subsubsection}{\nonumberline Histogramm Ausgleich}{32}{section*.5}% 
+\contentsline {subsection}{\numberline {3.3.2}Histogramm Spezifikation}{33}{subsection.3.3.2}% 
 \contentsline {chapter}{\numberline {4}Ergebnisse}{34}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{34}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Nahrungsmittel Datensatz}{35}{section.4.2}% 
