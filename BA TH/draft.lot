@@ -1,24 +1,24 @@
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Pixelbild in ein tabellarisches Histogramm \IeC {\"u}berf\IeC {\"u}hrt}}{23}{table.2.1}% 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung}}{24}{table.2.2}% 
-\contentsline {table}{\numberline {2.3}{\ignorespaces Bildmatrix des Ausgeglichenen Histogramms}}{24}{table.2.3}% 
-\contentsline {table}{\numberline {2.4}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1)}}{26}{table.2.4}% 
-\contentsline {table}{\numberline {2.5}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B2)}}{26}{table.2.5}% 
-\contentsline {table}{\numberline {2.6}{\ignorespaces Von zwei ausgeglichenen Histogrammen zu einem spezifizierten Histogramm}}{27}{table.2.6}% 
-\contentsline {table}{\numberline {2.7}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}}{27}{table.2.7}% 
+\contentsline {table}{\numberline {2.1}{\ignorespaces Pixelbild in ein tabellarisches Histogramm \IeC {\"u}berf\IeC {\"u}hrt}}{28}{table.2.1}% 
+\contentsline {table}{\numberline {2.2}{\ignorespaces Mathematische Umsetzung der Histogrammausgleichung}}{29}{table.2.2}% 
+\contentsline {table}{\numberline {2.3}{\ignorespaces Bildmatrix des Ausgeglichenen Histogramms}}{29}{table.2.3}% 
+\contentsline {table}{\numberline {2.4}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1)}}{31}{table.2.4}% 
+\contentsline {table}{\numberline {2.5}{\ignorespaces Tabellarisches Histogramm des Referenz-Bildes (B2)}}{31}{table.2.5}% 
+\contentsline {table}{\numberline {2.6}{\ignorespaces Von zwei ausgeglichenen Histogrammen zu einem spezifizierten Histogramm}}{32}{table.2.6}% 
+\contentsline {table}{\numberline {2.7}{\ignorespaces Tabellarisches Histogramm des Quell-Bildes (B1) auf Basis des Referenz-Bildes (B2)}}{32}{table.2.7}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces K\IeC {\"u}nstliche neuronale Netze \cite {google2018tens}, welche mit dem COCO Dataset trainiert wurden \cite {common2018data}}}{28}{table.3.1}% 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Datensatz mit Nahrungsmitteln}}{29}{table.3.2}% 
-\contentsline {table}{\numberline {3.3}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}}}{30}{table.3.3}% 
-\contentsline {table}{\numberline {3.4}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}}}{30}{table.3.4}% 
+\contentsline {table}{\numberline {3.1}{\ignorespaces K\IeC {\"u}nstliche neuronale Netze \cite {google2018tens}, welche mit dem COCO Dataset trainiert wurden \cite {common2018data}}}{33}{table.3.1}% 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Datensatz mit Nahrungsmitteln}}{34}{table.3.2}% 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Pascal Visual Object Classes \cite {pascal-voc-2007}}}{35}{table.3.3}% 
+\contentsline {table}{\numberline {3.4}{\ignorespaces Stanford Dog Dataset \cite {KhoslaYaoJayadevaprakashFeiFei_FGVC2011}}}{35}{table.3.4}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel Datensatz}}{35}{table.4.1}% 
-\contentsline {table}{\numberline {4.2}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz}}{36}{table.4.2}% 
-\contentsline {table}{\numberline {4.3}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz}}{37}{table.4.3}% 
-\contentsline {table}{\numberline {4.4}{\ignorespaces Klassen des Obst Datensatzes mit konstantem Hintergrund}}{39}{table.4.4}% 
-\contentsline {table}{\numberline {4.5}{\ignorespaces Genauigkeitsberechnungen des Modells des Obst Datensatzes}}{40}{table.4.5}% 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Nahrungsmittel-Datensatz}}{40}{table.4.1}% 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem PascalVOC Datensatz}}{41}{table.4.2}% 
+\contentsline {table}{\numberline {4.3}{\ignorespaces Durchschnittliche Genauigkeiten des Modells mit dem Stanford Dog Datensatz}}{42}{table.4.3}% 
+\contentsline {table}{\numberline {4.4}{\ignorespaces Klassen des Obst Datensatzes mit konstantem Hintergrund}}{44}{table.4.4}% 
+\contentsline {table}{\numberline {4.5}{\ignorespaces Genauigkeitsberechnungen des Modells des Obst-Datensatzes}}{45}{table.4.5}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Laufzeiten der Normalisierungs-Algorithmen mit verschieden gro\IeC {\ss }en Bildern}}{42}{table.5.1}% 
+\contentsline {table}{\numberline {5.1}{\ignorespaces Laufzeiten der Normalisierungs-Algorithmen mit verschieden gro\IeC {\ss }en Bildern}}{47}{table.5.1}% 
 \addvspace {10\p@ }
