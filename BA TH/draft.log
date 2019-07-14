@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  13 JUL 2019 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  14 JUL 2019 15:40
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -7,30 +7,30 @@ LaTeX2e <2018-12-01>
 \openout2 = `header.aux'.
 
 (header.tex
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbo
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbo
 ok.cls"
 Document Class: scrbook 2019/02/01 v3.26b KOMA-Script document class (book)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
 ase.sty"
 Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
 se.sty"
 Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
 ty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
 ile.sty"
 Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
 sic.sty"
 Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
@@ -49,12 +49,12 @@ Class scrbook Info: File `scrsize11pt.clo' used instead of
 (scrbook)           file `scrsize11.clo' to setup font sizes on input line 2376
 .
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
 ze11pt.clo"
 File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
 t)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
 rea.sty"
 Package: typearea 2019/02/01 v3.26b KOMA-Script package (type area)
 \ta@bcor=\skip42
@@ -159,17 +159,17 @@ Package tocbasic Info: omitting babel extension for `lot'
 Class scrbook Info: Redefining `\numberline' on input line 6811.
 \bibindent=\dimen102
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
 "
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
-)) ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
+)) ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-global.de
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-global.de
 f"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
@@ -178,12 +178,12 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks18
 \uc@temptokena=\toks19
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.
+)) ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.
 sty"
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
@@ -198,7 +198,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -265,12 +265,12 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eurosym\eurosym.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eurosym\eurosym.s
 ty"
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box29
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.sty
 "
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip58
@@ -279,29 +279,29 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameRule=\dimen105
 \FrameSep=\dimen106
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
 ty"
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
 ty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
 y"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen107
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
 y"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen108
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
@@ -343,25 +343,25 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
 .sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
 .sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
 "
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
 hics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
 ex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
@@ -383,7 +383,7 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              package `fancyhdr' on input line 27.
 
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr
 .sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
@@ -401,16 +401,16 @@ s
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 33.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xargs\xargs.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xargs\xargs.sty"
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
 ty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
 .tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
 s.tex"
 \XKV@toks=\toks25
 \XKV@tempa@toks=\toks26
@@ -422,18 +422,18 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \xargs@toksa=\toks27
 \xargs@toksb=\toks28
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\todonot
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/todonotes\todonot
 es.sty"
 Package: todonotes 2019/01/24 v1.1.2 Todonotes source and documentation.
 Package: todonotes 2018/11/22
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.s
+) ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.s
 ty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
 r.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
@@ -448,49 +448,49 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer
 \tikz.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
 f.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
 rcs.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfutil-common.tex"
 \pgfutil@everybye=\toks29
 \pgfutil@tempdima=\dimen118
 \pgfutil@tempdimb=\dimen119
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfutil-common-lists.tex"))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfutil-latex.def"
 \pgfutil@abb=\box32
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfrcs.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revisio
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revisio
 n.tex")
 Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
 ))
 Package: pgf 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
 fcore.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\p
 gfsys.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgfsys.code.tex"
 Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfkeys.code.tex"
 \pgfkeys@pathtoks=\toks30
 \pgfkeys@temptoks=\toks31
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks32
 ))
@@ -515,41 +515,41 @@ gfkeysfiltered.code.tex"
 \t@pgf@tokc=\toks35
 \pgf@sys@id@count=\count109
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgf.cfg"
 File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfsyssoftpath@smallbuffer@items=\count110
 \pgfsyssoftpath@bigbuffer@items=\count111
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
 \pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcore.code.tex"
 Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 h.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hcalc.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hutil.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hparser.code.tex"
 \pgfmath@dimen=\dimen130
 \pgfmath@count=\count112
@@ -558,31 +558,31 @@ hparser.code.tex"
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.code.tex"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.basic.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.trigonometric.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.random.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.comparison.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.base.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.round.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.misc.code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfunctions.integerarithmetics.code.tex")))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 hfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count113
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint
 .code.tex")
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@picminx=\dimen131
@@ -600,19 +600,19 @@ File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@zx=\dimen143
 \pgf@zy=\dimen144
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@path@lastx=\dimen145
 \pgf@path@lasty=\dimen146
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@shorten@end@additional=\dimen147
 \pgf@shorten@start@additional=\dimen148
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfpic=\box34
@@ -620,112 +620,112 @@ File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@layerbox@main=\box36
 \pgf@picture@serial@count=\count114
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgflinewidth=\dimen149
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@pt@x=\dimen150
 \pgf@pt@y=\dimen151
 \pgf@pt@temp=\dimen152
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfarrowsep=\dimen153
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@max=\dimen154
 \pgf@sys@shading@range@num=\count115
 \pgf@shadingcount=\count116
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfexternal@startupbox=\box37
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
 pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
 moduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfnodeparttextbox=\box38
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
 moduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
 \pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
 \pgf@nodesepstart=\dimen155
 \pgf@nodesepend=\dimen156
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
 \pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
 for.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
 keys.sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gfkeys.code.tex"))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.
 sty"
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 h.code.tex"))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
 gffor.code.tex"
 Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
 h.code.tex")
 \pgffor@iter=\dimen157
 \pgffor@skip=\dimen158
 \pgffor@stack=\toks39
 \pgffor@toks=\toks40
 ))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
 er/tikz\tikz.code.tex"
 Package: tikz 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
 gflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@plot@mark@count=\count117
@@ -746,7 +746,7 @@ File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \tikznumberofcurrentchild=\count120
 \tikz@fig@count=\count121
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
 modulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfmatrixcurrentrow=\count122
@@ -755,27 +755,27 @@ File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 \tikz@expandcount=\count125
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
 er/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
 er/tikz/libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
 er/tikz/libraries\tikzlibraryshadows.code.tex"
 File: tikzlibraryshadows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
 er/tikz/libraries\tikzlibraryfadings.code.tex"
 File: tikzlibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
 gflibraryfadings.code.tex"
 File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count126
 \calc@Bcount=\count127
@@ -790,7 +790,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count129
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/nomencl\nomencl.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/nomencl\nomencl.s
 ty"
 Package: nomencl 2019/05/05 v5.2 Nomenclature package
 Package tocbasic Info: setting babel extension for `nlo' on input line 155.
@@ -803,57 +803,57 @@ Package tocbasic Info: setting babel extension for `nls' on input line 156.
 \openout4 = `draft.nlo'.
 
 Package nomencl Info: Writing nomenclature file draft.nlo on input line 72.
- ("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+ ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace
 .sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty
 "
 Package: babel 2019/06/03 3.32 The Babel package
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.de
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.de
 f"
 File: switch.def 2019/06/03 3.32 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg
 "
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
 man.ldf"
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
 phy)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
 manb.ldf"
 Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
 aphy)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
 "
 File: babel.def 2019/06/03 3.32 Babel common definitions
 \babel@savecnt=\count130
 \U@D=\dimen170
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.
 def")
 \bbl@dirlevel=\count131
 )
 Package babel Info: Making " an active character on input line 121.
 )))
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
 .sty"
 Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox
 .sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count132
@@ -866,14 +866,14 @@ Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count138
 \csq@ltx@everypar=\toks41
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
 .def"
 File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
 .cfg"
 File: csquotes.cfg 
 )
@@ -882,11 +882,11 @@ Package csquotes Info: Option 'babel' depreciated.
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'german' -> 'german/quotes'.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl\colortbl
 .sty"
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen171
 \ar@mcellbox=\box43
@@ -899,7 +899,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \everycr=\toks43
 \minrowclearance=\skip77
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating
 .sty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count139
@@ -908,11 +908,11 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \rot@float@box=\box45
 \rot@mess@toks=\toks44
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\lscape.s
 ty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb
 .sty"
 Package: fancyvrb 2019/01/15
  Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
@@ -923,21 +923,21 @@ Package: fancyvrb 2019/01/15
 \FV@StepNumber=\count142
 \FV@OutFile=\write5
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.st
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.st
 y"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks45
 \verbatim@line=\toks46
 \verbatim@in@stream=\read3
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/moreverb\moreverb
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/moreverb\moreverb
 .sty"
 Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \tab@position=\count143
 \tab@size=\count144
 \listing@line=\count145
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
 .sty"
 \lst@mode=\count146
 \lst@gtempboxa=\box47
@@ -952,24 +952,24 @@ Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
 \lst@lineno=\count151
 \lst@maxwidth=\dimen176
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.
 sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
 \c@lstnumber=\count152
 \lst@skipnumbers=\count153
 \lst@framebox=\box48
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
 .cfg"
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1
 .sty"
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count154
 \float@exts=\toks48
@@ -977,7 +977,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks49
 \@floatcapt=\box50
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\longtable.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\longtable.s
 ty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTleft=\skip80
@@ -998,7 +998,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 )
 Class scrbook Info: longtable captions redefined on input line 213.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/supertabular\supe
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/supertabular\supe
 rtabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count160
@@ -1018,7 +1018,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen188
 \ST@pbox=\box55
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow
 .sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip87
@@ -1026,34 +1026,34 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip88
 \bigstrutjot=\dimen189
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpages
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pdfpages
 .sty"
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.s
 ty"
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\atbegs
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\atbegs
 hi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwar
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwar
 err.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmd
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmd
 s.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.
 sty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )))
 \AM@pagewidth=\dimen190
 \AM@pageheight=\dimen191
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pppdftex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pdfpages\pppdftex
 .def"
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
@@ -1063,16 +1063,16 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count162
 \AM@templatesizebox=\box57
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref
 .sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
 -hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
 -generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
@@ -1108,15 +1108,15 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex
 .sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.
 sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoption
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoption
 s.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
@@ -1124,13 +1124,13 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@linkcounter=\count163
 \Hy@pagecounter=\count164
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.d
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.d
 ef"
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count165
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref
 .cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -1164,13 +1164,13 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package hyperref Info: Driver: hpdftex.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.
 def"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count171
 \c@bookmark@seq@number=\count172
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfil
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfil
 echeck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -1180,7 +1180,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 230.
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/appendix\appendix
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/appendix\appendix
 .sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count173
@@ -1215,17 +1215,17 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 3.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
 pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count176
@@ -1240,11 +1240,11 @@ pdf.mkii"
 \makeMPintoPDFobject=\count181
 \everyMPtoPDFconversion=\toks54
 )
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
 -base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.s
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.s
 ty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
@@ -1264,18 +1264,18 @@ loading the todonotes package. on input line 3.
 \c@lstlisting=\count182
 \AtBeginShipoutBox=\box59
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflscap
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\pdflscap
 e.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package hyperref Info: Link coloring ON on input line 3.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.
 sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettit
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettit
 lestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
@@ -1296,11 +1296,11 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           you can avoid this message with `\usepackage{bookmark}'
 (scrbook)           before \begin{document} on input line 3.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bookmark
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bookmark
 .sty"
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bkm-pdft
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\bkm-pdft
 ex.def"
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 Package auxhook Info: \AddLineBeginMainAux comes a little late,
@@ -1322,7 +1322,7 @@ File: images/balken.png Graphic file (type png)
 Package pdftex.def Info: images/balken.png  used on input line 9.
 (pdftex.def)             Requested size: 409.71974pt x 2.43881pt.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 File: images/balken.png Graphic file (type png)
@@ -1343,7 +1343,7 @@ Package pdftex.def Info: images/logo.pdf  used on input line 8.
 
 
 
-{C:/Users/Torben/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/l
+{C:/Users/Agando/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/l
 ogo.pdf> <./images/balken.png>]
 Overfull \vbox (78.43706pt too high) has occurred while \output is active []
 
@@ -1360,9 +1360,14 @@ This may cause the page layout to be inconsistent, however.
  (chapter/abstract.tex
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 2.
 
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
+Underfull \hbox (badness 10000) in paragraph at lines 3--13
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--13
 
  []
@@ -1448,7 +1453,7 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-<Sources/Vergleich.png, id=165, 578.16pt x 216.81pt>
+<Sources/Vergleich.png, id=159, 578.16pt x 216.81pt>
 File: Sources/Vergleich.png Graphic file (type png)
 <use Sources/Vergleich.png>
 Package pdftex.def Info: Sources/Vergleich.png  used on input line 9.
@@ -1496,7 +1501,7 @@ l.30 	\include{chapter/einleitung}
 
  (chapter/theoretische_grundlagen.tex
 chapter 2.
-<Sources/Digitalesbild.JPG, id=193, 694.09312pt x 328.22626pt>
+<Sources/Digitalesbild.JPG, id=187, 694.09312pt x 328.22626pt>
 File: Sources/Digitalesbild.JPG Graphic file (type jpg)
 <use Sources/Digitalesbild.JPG>
 Package pdftex.def Info: Sources/Digitalesbild.JPG  used on input line 10.
@@ -1535,17 +1540,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--25
  []
 
 [7 <./Sources/Digitalesbild.JPG>]
-<Sources/histogramm.jpg, id=208, 405.76593pt x 233.37187pt>
+<Sources/histogramm.jpg, id=202, 405.76593pt x 233.37187pt>
 File: Sources/histogramm.jpg Graphic file (type jpg)
 <use Sources/histogramm.jpg>
 Package pdftex.def Info: Sources/histogramm.jpg  used on input line 31.
-(pdftex.def)             Requested size: 405.76494pt x 233.37129pt.
-<Sources/kontrast.JPG, id=214, 506.6428pt x 309.40594pt>
+(pdftex.def)             Requested size: 324.61317pt x 186.69774pt.
+<Sources/kontrast.JPG, id=208, 506.6428pt x 309.40594pt>
 File: Sources/kontrast.JPG Graphic file (type jpg)
 <use Sources/kontrast.JPG>
 Package pdftex.def Info: Sources/kontrast.JPG  used on input line 42.
 (pdftex.def)             Requested size: 354.64755pt x 216.58267pt.
-<Sources/dynamik.JPG, id=219, 504.38437pt x 310.15875pt>
+<Sources/dynamik.JPG, id=213, 504.38437pt x 310.15875pt>
 File: Sources/dynamik.JPG Graphic file (type jpg)
 <use Sources/dynamik.JPG>
 Package pdftex.def Info: Sources/dynamik.JPG  used on input line 51.
@@ -1585,7 +1590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
  []
 
 [11 <./Sources/dynamik.JPG>]
-<Sources/neuron.jpg, id=254, 602.25pt x 361.35pt>
+<Sources/neuron.jpg, id=248, 602.25pt x 361.35pt>
 File: Sources/neuron.jpg Graphic file (type jpg)
 <use Sources/neuron.jpg>
 Package pdftex.def Info: Sources/neuron.jpg  used on input line 69.
@@ -1595,7 +1600,7 @@ Overfull \hbox (11.85237pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
-<Sources/perzeptron2.png, id=259, 1204.5pt x 572.1375pt>
+<Sources/perzeptron2.png, id=253, 1204.5pt x 572.1375pt>
 File: Sources/perzeptron2.png Graphic file (type png)
 <use Sources/perzeptron2.png>
 Package pdftex.def Info: Sources/perzeptron2.png  used on input line 79.
@@ -1625,6 +1630,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--84
 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [12] [13 <./Sources/neuron.jpg>]
 Overfull \hbox (5.59541pt too wide) in paragraph at lines 88--90
 \T1/cmr/m/n/10.95 Der \T1/cmr/m/it/10.95 Bi-as \T1/cmr/m/n/10.95 ist ei-ne Art 
@@ -1632,12 +1640,12 @@ zu-sätz-li-ches Neu-ron, für das Ver-rin-gern von Konvergenz-Problemen,
  []
 
 [14 <./Sources/perzeptron2.png>]
-<Sources/nnet.png, id=290, 499.3857pt x 269.3262pt>
+<Sources/nnet.png, id=284, 499.3857pt x 269.3262pt>
 File: Sources/nnet.png Graphic file (type png)
 <use Sources/nnet.png>
 Package pdftex.def Info: Sources/nnet.png  used on input line 105.
 (pdftex.def)             Requested size: 249.69223pt x 134.66277pt.
-<Sources/cnnet.jpg, id=296, 739.76375pt x 250.9375pt>
+<Sources/cnnet.jpg, id=290, 739.76375pt x 250.9375pt>
 File: Sources/cnnet.jpg Graphic file (type jpg)
 <use Sources/cnnet.jpg>
 Package pdftex.def Info: Sources/cnnet.jpg  used on input line 115.
@@ -1708,12 +1716,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
  []
 
 [18]
-<Sources/CNN.png, id=329, 501.875pt x 461.725pt>
+<Sources/CNN.png, id=323, 501.875pt x 461.725pt>
 File: Sources/CNN.png Graphic file (type png)
 <use Sources/CNN.png>
 Package pdftex.def Info: Sources/CNN.png  used on input line 148.
 (pdftex.def)             Requested size: 200.74643pt x 184.68672pt.
-<Sources/MaxpoolSample2.png, id=334, 164.25pt x 68.547pt>
+<Sources/MaxpoolSample2.png, id=328, 164.25pt x 68.547pt>
 File: Sources/MaxpoolSample2.png Graphic file (type png)
 <use Sources/MaxpoolSample2.png>
 Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 157.
@@ -1725,7 +1733,7 @@ yer \T1/cmr/m/n/10.95 kommt nach je-der Fal-tungs-schicht [[],
  []
 
 [19 <./Sources/CNN.png>]
-<Sources/labelimg.jpg, id=347, 433.62pt x 243.91125pt>
+<Sources/labelimg.jpg, id=341, 433.62pt x 243.91125pt>
 File: Sources/labelimg.jpg Graphic file (type jpg)
 <use Sources/labelimg.jpg>
 Package pdftex.def Info: Sources/labelimg.jpg  used on input line 168.
@@ -1782,10 +1790,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
  []
 
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 87.
-("C:\Users\Torben\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<Sources/gwn.png, id=461, 578.16pt x 216.81pt>
+<Sources/gwn.png, id=455, 578.16pt x 216.81pt>
 File: Sources/gwn.png Graphic file (type png)
 <use Sources/gwn.png>
 Package pdftex.def Info: Sources/gwn.png  used on input line 99.
@@ -1796,7 +1804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-<Sources/histeq.jpg, id=482, 578.16pt x 216.81pt>
+<Sources/histeq.jpg, id=476, 578.16pt x 216.81pt>
 File: Sources/histeq.jpg Graphic file (type jpg)
 <use Sources/histeq.jpg>
 Package pdftex.def Info: Sources/histeq.jpg  used on input line 116.
@@ -1806,7 +1814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<Sources/HS_beispiel.png, id=498, 578.16pt x 216.81pt>
+<Sources/HS_beispiel.png, id=492, 578.16pt x 216.81pt>
 File: Sources/HS_beispiel.png Graphic file (type png)
 <use Sources/HS_beispiel.png>
 Package pdftex.def Info: Sources/HS_beispiel.png  used on input line 132.
@@ -1828,38 +1836,38 @@ Overfull \hbox (5.19582pt too wide) in paragraph at lines 3--4
 
 
 ] [35] [36]
-<Sources/Bild1.jpg, id=534, 782.925pt x 1043.9pt>
+<Sources/Bild1.jpg, id=528, 782.925pt x 1043.9pt>
 File: Sources/Bild1.jpg Graphic file (type jpg)
 <use Sources/Bild1.jpg>
 Package pdftex.def Info: Sources/Bild1.jpg  used on input line 104.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1.png, id=535, 144.54pt x 456.70625pt>
+<Sources/Bild1.png, id=529, 144.54pt x 456.70625pt>
 File: Sources/Bild1.png Graphic file (type png)
 <use Sources/Bild1.png>
 Package pdftex.def Info: Sources/Bild1.png  used on input line 108.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_histo.png, id=536, 462.528pt x 346.896pt>
+<Sources/Bild1_histo.png, id=530, 462.528pt x 346.896pt>
 File: Sources/Bild1_histo.png Graphic file (type png)
 <use Sources/Bild1_histo.png>
 Package pdftex.def Info: Sources/Bild1_histo.png  used on input line 112.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2.jpg, id=537, 782.925pt x 1043.9pt>
+<Sources/Bild2.jpg, id=531, 782.925pt x 1043.9pt>
 File: Sources/Bild2.jpg Graphic file (type jpg)
 <use Sources/Bild2.jpg>
 Package pdftex.def Info: Sources/Bild2.jpg  used on input line 117.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2.png, id=538, 153.57375pt x 469.755pt>
+<Sources/Bild2.png, id=532, 153.57375pt x 469.755pt>
 File: Sources/Bild2.png Graphic file (type png)
 <use Sources/Bild2.png>
 Package pdftex.def Info: Sources/Bild2.png  used on input line 121.
 (pdftex.def)             Requested size: 32.77832pt x 100.26424pt.
-<Sources/Bild2_histo.png, id=539, 462.528pt x 346.896pt>
+<Sources/Bild2_histo.png, id=533, 462.528pt x 346.896pt>
 File: Sources/Bild2_histo.png Graphic file (type png)
 <use Sources/Bild2_histo.png>
 Package pdftex.def Info: Sources/Bild2_histo.png  used on input line 125.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
  [37]
-<Sources/Obst_mit_hintergrund.jpg, id=547, 1043.9pt x 782.925pt>
+<Sources/Obst_mit_hintergrund.jpg, id=541, 1043.9pt x 782.925pt>
 File: Sources/Obst_mit_hintergrund.jpg Graphic file (type jpg)
 <use Sources/Obst_mit_hintergrund.jpg>
 Package pdftex.def Info: Sources/Obst_mit_hintergrund.jpg  used on input line 1
@@ -1895,7 +1903,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--58
  (chapter/fazit.tex
 chapter 6.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 9--65
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--65
 
  []
 
@@ -1904,13 +1947,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--65
 
 
 
-] [44]
+] [44] [45]
 \openout2 = `chapter/verzeichnisse.aux'.
 
  (chapter/verzeichnisse.tex (draft.lof
-Overfull \hbox (6.62146pt too wide) in paragraph at lines 6--6
- [][] [][][]\T1/cmr/m/n/10.95 Histogramm ei-nes Grau-stu-fen Bil-des mit 16 Hel
--lig-keits-ab-stu-fun-gen [[], 
+Overfull \hbox (7.83038pt too wide) in paragraph at lines 6--6
+ [][] [][][]\T1/cmr/m/n/10.95 Histogramm ei-nes Graustufen-Bildes mit 16 Hel-li
+g-keits-ab-stu-fun-gen [[], 
  []
 
 
@@ -1923,22 +1966,22 @@ er Kon-trast (rechts)[[],
 \tf@lof=\write8
 \openout8 = `draft.lof'.
 
- [45
+ [46
 
 
 
 
-] [46] (draft.lot)
+] [47] (draft.lot)
 \tf@lot=\write9
 \openout9 = `draft.lot'.
 
- (draft.bbl [47
+ (draft.bbl [48
 
 
-] [48
+] [49
 
 
-])) [49]
+])) [50]
 \openout2 = `chapter/anhang.aux'.
 
  (chapter/anhang.tex
@@ -1950,47 +1993,47 @@ er Kon-trast (rechts)[[],
 
 
 ]
-<Sources/Bild1_HA.jpg, id=701, 782.925pt x 1043.9pt>
+<Sources/Bild1_HA.jpg, id=699, 782.925pt x 1043.9pt>
 File: Sources/Bild1_HA.jpg Graphic file (type jpg)
 <use Sources/Bild1_HA.jpg>
 Package pdftex.def Info: Sources/Bild1_HA.jpg  used on input line 14.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_HA.png, id=702, 148.555pt x 458.71375pt>
+<Sources/Bild1_HA.png, id=700, 148.555pt x 458.71375pt>
 File: Sources/Bild1_HA.png Graphic file (type png)
 <use Sources/Bild1_HA.png>
 Package pdftex.def Info: Sources/Bild1_HA.png  used on input line 18.
 (pdftex.def)             Requested size: 32.77832pt x 101.2113pt.
-<Sources/Bild1_HA_histo.png, id=703, 462.528pt x 346.896pt>
+<Sources/Bild1_HA_histo.png, id=701, 462.528pt x 346.896pt>
 File: Sources/Bild1_HA_histo.png Graphic file (type png)
 <use Sources/Bild1_HA_histo.png>
 Package pdftex.def Info: Sources/Bild1_HA_histo.png  used on input line 22.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_HA.jpg, id=704, 782.925pt x 1043.9pt>
+<Sources/Bild2_HA.jpg, id=702, 782.925pt x 1043.9pt>
 File: Sources/Bild2_HA.jpg Graphic file (type jpg)
 <use Sources/Bild2_HA.jpg>
 Package pdftex.def Info: Sources/Bild2_HA.jpg  used on input line 27.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_HA.png, id=705, 156.585pt x 469.755pt>
+<Sources/Bild2_HA.png, id=703, 156.585pt x 469.755pt>
 File: Sources/Bild2_HA.png Graphic file (type png)
 <use Sources/Bild2_HA.png>
 Package pdftex.def Info: Sources/Bild2_HA.png  used on input line 31.
 (pdftex.def)             Requested size: 32.77832pt x 98.33607pt.
-<Sources/Bild2_HA_histo.png, id=706, 462.528pt x 346.896pt>
+<Sources/Bild2_HA_histo.png, id=704, 462.528pt x 346.896pt>
 File: Sources/Bild2_HA_histo.png Graphic file (type png)
 <use Sources/Bild2_HA_histo.png>
 Package pdftex.def Info: Sources/Bild2_HA_histo.png  used on input line 35.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_HA.jpg, id=707, 782.925pt x 1043.9pt>
+<Sources/Bild3_HA.jpg, id=705, 782.925pt x 1043.9pt>
 File: Sources/Bild3_HA.jpg Graphic file (type jpg)
 <use Sources/Bild3_HA.jpg>
 Package pdftex.def Info: Sources/Bild3_HA.jpg  used on input line 40.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_HA.png, id=708, 150.5625pt x 453.695pt>
+<Sources/Bild3_HA.png, id=706, 150.5625pt x 453.695pt>
 File: Sources/Bild3_HA.png Graphic file (type png)
 <use Sources/Bild3_HA.png>
 Package pdftex.def Info: Sources/Bild3_HA.png  used on input line 44.
 (pdftex.def)             Requested size: 32.77832pt x 98.76785pt.
-<Sources/Bild3_HA_histo.png, id=709, 462.528pt x 346.896pt>
+<Sources/Bild3_HA_histo.png, id=707, 462.528pt x 346.896pt>
 File: Sources/Bild3_HA_histo.png Graphic file (type png)
 <use Sources/Bild3_HA_histo.png>
 Package pdftex.def Info: Sources/Bild3_HA_histo.png  used on input line 48.
@@ -1999,47 +2042,47 @@ Package pdftex.def Info: Sources/Bild3_HA_histo.png  used on input line 48.
 .png> <./Sources/Bild2_HA.jpg> <./Sources/Bild2_HA.png> <./Sources/Bild2_HA_his
 to.png> <./Sources/Bild3_HA.jpg> <./Sources/Bild3_HA.png> <./Sources/Bild3_HA_h
 isto.png>]
-<Sources/Bild1_GW.jpg, id=720, 782.925pt x 1043.9pt>
+<Sources/Bild1_GW.jpg, id=718, 782.925pt x 1043.9pt>
 File: Sources/Bild1_GW.jpg Graphic file (type jpg)
 <use Sources/Bild1_GW.jpg>
 Package pdftex.def Info: Sources/Bild1_GW.jpg  used on input line 56.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_GW.png, id=721, 144.54pt x 456.70625pt>
+<Sources/Bild1_GW.png, id=719, 144.54pt x 456.70625pt>
 File: Sources/Bild1_GW.png Graphic file (type png)
 <use Sources/Bild1_GW.png>
 Package pdftex.def Info: Sources/Bild1_GW.png  used on input line 60.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_GW_histo.png, id=722, 462.528pt x 346.896pt>
+<Sources/Bild1_GW_histo.png, id=720, 462.528pt x 346.896pt>
 File: Sources/Bild1_GW_histo.png Graphic file (type png)
 <use Sources/Bild1_GW_histo.png>
 Package pdftex.def Info: Sources/Bild1_GW_histo.png  used on input line 64.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_GW.jpg, id=723, 782.925pt x 1043.9pt>
+<Sources/Bild2_GW.jpg, id=721, 782.925pt x 1043.9pt>
 File: Sources/Bild2_GW.jpg Graphic file (type jpg)
 <use Sources/Bild2_GW.jpg>
 Package pdftex.def Info: Sources/Bild2_GW.jpg  used on input line 69.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_GW.png, id=724, 153.57375pt x 468.75125pt>
+<Sources/Bild2_GW.png, id=722, 153.57375pt x 468.75125pt>
 File: Sources/Bild2_GW.png Graphic file (type png)
 <use Sources/Bild2_GW.png>
 Package pdftex.def Info: Sources/Bild2_GW.png  used on input line 73.
 (pdftex.def)             Requested size: 32.77832pt x 100.04999pt.
-<Sources/Bild2_GW_histo.png, id=725, 462.528pt x 346.896pt>
+<Sources/Bild2_GW_histo.png, id=723, 462.528pt x 346.896pt>
 File: Sources/Bild2_GW_histo.png Graphic file (type png)
 <use Sources/Bild2_GW_histo.png>
 Package pdftex.def Info: Sources/Bild2_GW_histo.png  used on input line 77.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_GW.jpg, id=726, 782.925pt x 1043.9pt>
+<Sources/Bild3_GW.jpg, id=724, 782.925pt x 1043.9pt>
 File: Sources/Bild3_GW.jpg Graphic file (type jpg)
 <use Sources/Bild3_GW.jpg>
 Package pdftex.def Info: Sources/Bild3_GW.jpg  used on input line 82.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_GW.png, id=727, 143.53625pt x 452.69125pt>
+<Sources/Bild3_GW.png, id=725, 143.53625pt x 452.69125pt>
 File: Sources/Bild3_GW.png Graphic file (type png)
 <use Sources/Bild3_GW.png>
 Package pdftex.def Info: Sources/Bild3_GW.png  used on input line 86.
 (pdftex.def)             Requested size: 32.77832pt x 103.37769pt.
-<Sources/Bild3_GW_histo.png, id=728, 462.528pt x 346.896pt>
+<Sources/Bild3_GW_histo.png, id=726, 462.528pt x 346.896pt>
 File: Sources/Bild3_GW_histo.png Graphic file (type png)
 <use Sources/Bild3_GW_histo.png>
 Package pdftex.def Info: Sources/Bild3_GW_histo.png  used on input line 90.
@@ -2048,94 +2091,94 @@ Package pdftex.def Info: Sources/Bild3_GW_histo.png  used on input line 90.
 .png> <./Sources/Bild2_GW.jpg> <./Sources/Bild2_GW.png> <./Sources/Bild2_GW_his
 to.png> <./Sources/Bild3_GW.jpg> <./Sources/Bild3_GW.png> <./Sources/Bild3_GW_h
 isto.png>]
-<Sources/Bild1_HS.jpg, id=739, 782.925pt x 1043.9pt>
+<Sources/Bild1_HS.jpg, id=737, 782.925pt x 1043.9pt>
 File: Sources/Bild1_HS.jpg Graphic file (type jpg)
 <use Sources/Bild1_HS.jpg>
 Package pdftex.def Info: Sources/Bild1_HS.jpg  used on input line 98.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_HS.png, id=740, 144.54pt x 456.70625pt>
+<Sources/Bild1_HS.png, id=738, 144.54pt x 456.70625pt>
 File: Sources/Bild1_HS.png Graphic file (type png)
 <use Sources/Bild1_HS.png>
 Package pdftex.def Info: Sources/Bild1_HS.png  used on input line 102.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_HS_histo.png, id=741, 462.528pt x 346.896pt>
+<Sources/Bild1_HS_histo.png, id=739, 462.528pt x 346.896pt>
 File: Sources/Bild1_HS_histo.png Graphic file (type png)
 <use Sources/Bild1_HS_histo.png>
 Package pdftex.def Info: Sources/Bild1_HS_histo.png  used on input line 106.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_HS.jpg, id=742, 782.925pt x 1043.9pt>
+<Sources/Bild2_HS.jpg, id=740, 782.925pt x 1043.9pt>
 File: Sources/Bild2_HS.jpg Graphic file (type jpg)
 <use Sources/Bild2_HS.jpg>
 Package pdftex.def Info: Sources/Bild2_HS.jpg  used on input line 111.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_HS.png, id=743, 156.585pt x 468.75125pt>
+<Sources/Bild2_HS.png, id=741, 156.585pt x 468.75125pt>
 File: Sources/Bild2_HS.png Graphic file (type png)
 <use Sources/Bild2_HS.png>
 Package pdftex.def Info: Sources/Bild2_HS.png  used on input line 115.
 (pdftex.def)             Requested size: 32.77832pt x 98.12595pt.
-<Sources/Bild2_HS_histo.png, id=744, 462.528pt x 346.896pt>
+<Sources/Bild2_HS_histo.png, id=742, 462.528pt x 346.896pt>
 File: Sources/Bild2_HS_histo.png Graphic file (type png)
 <use Sources/Bild2_HS_histo.png>
 Package pdftex.def Info: Sources/Bild2_HS_histo.png  used on input line 119.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_HS.jpg, id=745, 782.925pt x 1043.9pt>
+<Sources/Bild3_HS.jpg, id=743, 782.925pt x 1043.9pt>
 File: Sources/Bild3_HS.jpg Graphic file (type jpg)
 <use Sources/Bild3_HS.jpg>
 Package pdftex.def Info: Sources/Bild3_HS.jpg  used on input line 124.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_HS.png, id=746, 143.53625pt x 452.69125pt>
+<Sources/Bild3_HS.png, id=744, 143.53625pt x 452.69125pt>
 File: Sources/Bild3_HS.png Graphic file (type png)
 <use Sources/Bild3_HS.png>
 Package pdftex.def Info: Sources/Bild3_HS.png  used on input line 128.
 (pdftex.def)             Requested size: 32.77832pt x 103.37769pt.
-<Sources/Bild3_HS_histo.png, id=747, 462.528pt x 346.896pt>
+<Sources/Bild3_HS_histo.png, id=745, 462.528pt x 346.896pt>
 File: Sources/Bild3_HS_histo.png Graphic file (type png)
 <use Sources/Bild3_HS_histo.png>
 Package pdftex.def Info: Sources/Bild3_HS_histo.png  used on input line 132.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Anhang/resize_0250.jpg, id=748, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250.jpg, id=746, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250.jpg  used on input line 140
 .
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250.png, id=749, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250.png, id=747, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250.png Graphic file (type png)
 <use Sources/Anhang/resize_0250.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250.png  used on input line 143
 .
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_GW.jpg, id=750, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_GW.jpg, id=748, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_GW.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_GW.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.jpg  used on input line 
 146.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_GW.png, id=751, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_GW.png, id=749, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_GW.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_GW.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.png  used on input line 
 149.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HA.jpg, id=752, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HA.jpg, id=750, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HA.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HA.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.jpg  used on input line 
 152.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HA.png, id=753, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HA.png, id=751, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HA.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HA.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.png  used on input line 
 155.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HS.jpg, id=754, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HS.jpg, id=752, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HS.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HS.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.jpg  used on input line 
 158.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HS.png, id=755, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HS.png, id=753, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HS.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HS.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.png  used on input line 
@@ -2145,181 +2188,181 @@ Package pdftex.def Info: Sources/Anhang/resize_0250_HS.png  used on input line
 
 LaTeX Warning: Float too large for page by 20.50233pt on input line 165.
 
-<images/anomalien/HA/000613.jpg, id=756, 501.875pt x 334.24875pt>
+<images/anomalien/HA/000613.jpg, id=754, 501.875pt x 334.24875pt>
 File: images/anomalien/HA/000613.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000613.jpg>
 Package pdftex.def Info: images/anomalien/HA/000613.jpg  used on input line 170
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.84372pt.
-<images/anomalien/HA/000750.jpg, id=757, 376.40625pt x 501.875pt>
+<images/anomalien/HA/000750.jpg, id=755, 376.40625pt x 501.875pt>
 File: images/anomalien/HA/000750.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000750.jpg>
 Package pdftex.def Info: images/anomalien/HA/000750.jpg  used on input line 173
 .
 (pdftex.def)             Requested size: 77.84775pt x 103.79633pt.
-<images/anomalien/HA/000777.jpg, id=758, 501.875pt x 334.24875pt>
+<images/anomalien/HA/000777.jpg, id=756, 501.875pt x 334.24875pt>
 File: images/anomalien/HA/000777.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000777.jpg>
 Package pdftex.def Info: images/anomalien/HA/000777.jpg  used on input line 176
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.84372pt.
-<images/anomalien/HA/001608.jpg, id=759, 501.875pt x 376.40625pt>
+<images/anomalien/HA/001608.jpg, id=757, 501.875pt x 376.40625pt>
 File: images/anomalien/HA/001608.jpg Graphic file (type jpg)
 <use images/anomalien/HA/001608.jpg>
 Package pdftex.def Info: images/anomalien/HA/001608.jpg  used on input line 179
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HA/003339.jpg, id=760, 433.62pt x 289.08pt>
+<images/anomalien/HA/003339.jpg, id=758, 433.62pt x 289.08pt>
 File: images/anomalien/HA/003339.jpg Graphic file (type jpg)
 <use images/anomalien/HA/003339.jpg>
 Package pdftex.def Info: images/anomalien/HA/003339.jpg  used on input line 182
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.8954pt.
-<images/anomalien/HA/image41.jpg, id=761, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image41.jpg, id=759, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image41.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image41.jpg>
 Package pdftex.def Info: images/anomalien/HA/image41.jpg  used on input line 18
 8.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/image67.jpg, id=762, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image67.jpg, id=760, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image67.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image67.jpg>
 Package pdftex.def Info: images/anomalien/HA/image67.jpg  used on input line 19
 1.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/image104.jpg, id=763, 1335.99126pt x 1001.7425pt>
+<images/anomalien/HA/image104.jpg, id=761, 1335.99126pt x 1001.7425pt>
 File: images/anomalien/HA/image104.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image104.jpg>
 Package pdftex.def Info: images/anomalien/HA/image104.jpg  used on input line 1
 94.
 (pdftex.def)             Requested size: 77.84775pt x 58.35942pt.
-<images/anomalien/HA/image157.jpg, id=764, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image157.jpg, id=762, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image157.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image157.jpg>
 Package pdftex.def Info: images/anomalien/HA/image157.jpg  used on input line 1
 97.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/IMG_20181209_160502.jpg, id=765, 626.34pt x 835.12pt>
+<images/anomalien/HA/IMG_20181209_160502.jpg, id=763, 626.34pt x 835.12pt>
 File: images/anomalien/HA/IMG_20181209_160502.jpg Graphic file (type jpg)
 <use images/anomalien/HA/IMG_20181209_160502.jpg>
 Package pdftex.def Info: images/anomalien/HA/IMG_20181209_160502.jpg  used on i
 nput line 200.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/n02085620_952.jpg, id=766, 417.56pt x 531.9875pt>
+<images/anomalien/HA/n02085620_952.jpg, id=764, 417.56pt x 531.9875pt>
 File: images/anomalien/HA/n02085620_952.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02085620_952.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02085620_952.jpg  used on input l
 ine 206.
 (pdftex.def)             Requested size: 77.84775pt x 99.17918pt.
-<images/anomalien/HA/n02088466_9359.jpg, id=767, 220.825pt x 220.825pt>
+<images/anomalien/HA/n02088466_9359.jpg, id=765, 220.825pt x 220.825pt>
 File: images/anomalien/HA/n02088466_9359.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02088466_9359.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02088466_9359.jpg  used on input 
 line 209.
 (pdftex.def)             Requested size: 62.27843pt x 62.27534pt.
-<images/anomalien/HA/n02088466_9691.jpg, id=768, 501.875pt x 376.40625pt>
+<images/anomalien/HA/n02088466_9691.jpg, id=766, 501.875pt x 376.40625pt>
 File: images/anomalien/HA/n02088466_9691.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02088466_9691.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02088466_9691.jpg  used on input 
 line 212.
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HA/n02089078_4544.jpg, id=769, 427.5975pt x 415.5525pt>
+<images/anomalien/HA/n02089078_4544.jpg, id=767, 427.5975pt x 415.5525pt>
 File: images/anomalien/HA/n02089078_4544.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02089078_4544.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02089078_4544.jpg  used on input 
 line 215.
 (pdftex.def)             Requested size: 77.84775pt x 75.65222pt.
-<images/anomalien/HA/n02091032_12113.jpg, id=770, 501.875pt x 426.59375pt>
+<images/anomalien/HA/n02091032_12113.jpg, id=768, 501.875pt x 426.59375pt>
 File: images/anomalien/HA/n02091032_12113.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02091032_12113.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02091032_12113.jpg  used on input
  line 218.
 (pdftex.def)             Requested size: 77.84775pt x 66.1669pt.
-<images/anomalien/HS/007911.jpg, id=771, 501.875pt x 499.8675pt>
+<images/anomalien/HS/007911.jpg, id=769, 501.875pt x 499.8675pt>
 File: images/anomalien/HS/007911.jpg Graphic file (type jpg)
 <use images/anomalien/HS/007911.jpg>
 Package pdftex.def Info: images/anomalien/HS/007911.jpg  used on input line 227
 .
 (pdftex.def)             Requested size: 77.84775pt x 77.53204pt.
-<images/anomalien/HS/007935.jpg, id=772, 501.875pt x 376.40625pt>
+<images/anomalien/HS/007935.jpg, id=770, 501.875pt x 376.40625pt>
 File: images/anomalien/HS/007935.jpg Graphic file (type jpg)
 <use images/anomalien/HS/007935.jpg>
 Package pdftex.def Info: images/anomalien/HS/007935.jpg  used on input line 230
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HS/008085.jpg, id=773, 501.875pt x 283.0575pt>
+<images/anomalien/HS/008085.jpg, id=771, 501.875pt x 283.0575pt>
 File: images/anomalien/HS/008085.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008085.jpg>
 Package pdftex.def Info: images/anomalien/HS/008085.jpg  used on input line 233
 .
 (pdftex.def)             Requested size: 77.84775pt x 43.90369pt.
-<images/anomalien/HS/008103.jpg, id=774, 501.875pt x 375.4025pt>
+<images/anomalien/HS/008103.jpg, id=772, 501.875pt x 375.4025pt>
 File: images/anomalien/HS/008103.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008103.jpg>
 Package pdftex.def Info: images/anomalien/HS/008103.jpg  used on input line 236
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.22688pt.
-<images/anomalien/HS/008112.jpg, id=775, 501.875pt x 299.1175pt>
+<images/anomalien/HS/008112.jpg, id=773, 501.875pt x 299.1175pt>
 File: images/anomalien/HS/008112.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008112.jpg>
 Package pdftex.def Info: images/anomalien/HS/008112.jpg  used on input line 239
 .
 (pdftex.def)             Requested size: 77.84775pt x 46.39467pt.
-<images/anomalien/HS/image157.jpg, id=776, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image157.jpg, id=774, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image157.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image157.jpg>
 Package pdftex.def Info: images/anomalien/HS/image157.jpg  used on input line 2
 45.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/image159.jpg, id=777, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image159.jpg, id=775, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image159.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image159.jpg>
 Package pdftex.def Info: images/anomalien/HS/image159.jpg  used on input line 2
 48.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/image160.jpg, id=778, 521.95pt x 391.4625pt>
+<images/anomalien/HS/image160.jpg, id=776, 521.95pt x 391.4625pt>
 File: images/anomalien/HS/image160.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image160.jpg>
 Package pdftex.def Info: images/anomalien/HS/image160.jpg  used on input line 2
 51.
 (pdftex.def)             Requested size: 77.84775pt x 58.38234pt.
-<images/anomalien/HS/image240.jpg, id=779, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image240.jpg, id=777, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image240.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image240.jpg>
 Package pdftex.def Info: images/anomalien/HS/image240.jpg  used on input line 2
 54.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/IMG_20181209_160802.jpg, id=780, 626.34pt x 835.12pt>
+<images/anomalien/HS/IMG_20181209_160802.jpg, id=778, 626.34pt x 835.12pt>
 File: images/anomalien/HS/IMG_20181209_160802.jpg Graphic file (type jpg)
 <use images/anomalien/HS/IMG_20181209_160802.jpg>
 Package pdftex.def Info: images/anomalien/HS/IMG_20181209_160802.jpg  used on i
 nput line 257.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/n02085620_1620.jpg, id=781, 501.875pt x 376.40625pt>
+<images/anomalien/HS/n02085620_1620.jpg, id=779, 501.875pt x 376.40625pt>
 File: images/anomalien/HS/n02085620_1620.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085620_1620.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085620_1620.jpg  used on input 
 line 263.
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HS/n02085620_2188.jpg, id=782, 376.40625pt x 501.875pt>
+<images/anomalien/HS/n02085620_2188.jpg, id=780, 376.40625pt x 501.875pt>
 File: images/anomalien/HS/n02085620_2188.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085620_2188.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085620_2188.jpg  used on input 
 line 266.
 (pdftex.def)             Requested size: 62.27843pt x 83.03554pt.
-<images/anomalien/HS/n02085782_1503.jpg, id=783, 216.81pt x 289.08pt>
+<images/anomalien/HS/n02085782_1503.jpg, id=781, 216.81pt x 289.08pt>
 File: images/anomalien/HS/n02085782_1503.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085782_1503.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085782_1503.jpg  used on input 
 line 269.
 (pdftex.def)             Requested size: 77.84775pt x 103.79523pt.
-<images/anomalien/HS/n02085782_1626.jpg, id=784, 621.32124pt x 496.85625pt>
+<images/anomalien/HS/n02085782_1626.jpg, id=782, 621.32124pt x 496.85625pt>
 File: images/anomalien/HS/n02085782_1626.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085782_1626.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085782_1626.jpg  used on input 
 line 272.
 (pdftex.def)             Requested size: 77.84775pt x 62.25092pt.
-<images/anomalien/HS/n02088094_1406.jpg, id=785, 331.2375pt x 501.875pt>
+<images/anomalien/HS/n02088094_1406.jpg, id=783, 331.2375pt x 501.875pt>
 File: images/anomalien/HS/n02088094_1406.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02088094_1406.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02088094_1406.jpg  used on input 
@@ -2386,44 +2429,44 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26675 strings out of 492895
- 490679 string characters out of 3123269
+ 26670 strings out of 492895
+ 490635 string characters out of 3123269
  788712 words of memory out of 3000000
- 29691 multiletter control sequences out of 15000+200000
+ 29688 multiletter control sequences out of 15000+200000
  22058 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,87p,9103b,1256s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecsx2488.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
-n/ec/dpi600\ectt0900.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Torben\AppData\Local\M
-iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Torben\AppD
+ <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecsx2488.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ectt0900.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Agando\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Agando\AppD
 ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\
-Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>
- <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
-csx1095.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecsx2074.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
-r/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Torben\AppData\Local\MiK
-TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Torben\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\To
-rben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <
-C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
-m1200.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1728.pk> <C:\Users\Torben\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Torben/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Torben/App
+Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>
+ <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
+csx1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecsx2074.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Agando\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Agando\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Ag
+ando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <
+C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
+m1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
+/dpi600\eccc1728.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Agando/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Agando/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Torben/AppData/Local/Programs/MiKTeX 
+rs/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on draft.pdf (62 pages, 10976501 bytes).
+Output written on draft.pdf (63 pages, 10976403 bytes).
 PDF statistics:
- 1625 PDF objects out of 1728 (max. 8388607)
- 210 named destinations out of 1000 (max. 500000)
- 906 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1612 PDF objects out of 1728 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 882 words of extra memory for PDF output out of 10000 (max. 10000000)
 

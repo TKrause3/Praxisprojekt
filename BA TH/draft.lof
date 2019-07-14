@@ -3,7 +3,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Szene mit unterschiedlicher Ausleuchtung}}{3}{figure.1.1}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Aufbau eines Digitalen Bildes mit zwei Helligkeitsabstufungen}}{7}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Histogramm eines Graustufen Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}}}{9}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Histogramm eines Graustufen-Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}}}{9}{figure.2.2}% 
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontast (Mitte), hoher Kontrast (rechts)\cite [45]{burger2009digitale}}}{10}{figure.2.3}% 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Unterschiedlicher Dynamik und die Auswirkungen im Histogramm: hohe Dynamik (links), niedrige Dynamik mit 64 Graustufen (Mitte), extrem niedriger Kontrast mir 6 Graustufen (rechts)\cite [45]{burger2009digitale}}}{11}{figure.2.4}% 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Aufbau eines Neurons \cite {neuron2018UoC}}}{13}{figure.2.5}% 
@@ -11,11 +11,11 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic}}}{16}{figure.2.7}% 
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Aufbau eines Convolutional neural Network \cite {info7040061}}}{17}{figure.2.8}% 
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Funktionsweise der Faltungsschicht \cite {convolutional2019layer}}}{19}{figure.2.9}% 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling variante \cite {pooling2018layer}}}{20}{figure.2.10}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling-Variante \cite {pooling2018layer}}}{20}{figure.2.10}% 
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labelimg Programm \cite {labelimg2019}}}{21}{figure.2.11}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Auswirkung des Gray-World Algorithmus}}{31}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm Ausgleichung}}{32}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm-Ausgleichung}}{32}{figure.3.2}% 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation}}{33}{figure.3.3}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Histogramm des Segmentierten Objektes aus dem Nahrungsmittel Datensatz. Ohne Normalisierung}}{38}{figure.4.1}% 
