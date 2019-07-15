@@ -2,28 +2,28 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Szene mit unterschiedlicher Ausleuchtung}}{3}{figure.1.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Aufbau eines Digitalen Bildes mit zwei Helligkeitsabstufungen}}{7}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Histogramm eines Graustufen-Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}}}{9}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontrast (Mitte), hoher Kontrast (rechts)\cite [45]{burger2009digitale}}}{10}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Unterschiedliche Dynamik und die Auswirkungen im Histogramm: hohe Dynamik (links), niedrige Dynamik mit 64 Graustufen (Mitte), extrem niedriger Kontrast mit 6 Graustufen (rechts)\cite [45]{burger2009digitale}}}{11}{figure.2.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Aufbau eines Neurons \cite {neuron2018UoC}}}{13}{figure.2.5}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Schematische Modellierung eines Perzeptrons nach Rosenblatt \cite {perzeptron2019}}}{14}{figure.2.6}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic}}}{16}{figure.2.7}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Aufbau eines Convolutional neural Network \cite {info7040061}}}{17}{figure.2.8}% 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Funktionsweise der Faltungsschicht \cite [330]{goodfellow2016deep}}}{19}{figure.2.9}% 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling-Variante \cite {pooling2018layer}}}{20}{figure.2.10}% 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labeling-Programm \cite {labelimg2019}}}{21}{figure.2.11}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Aufbau eines Digitalen Bildes mit zwei Helligkeitsabstufungen}}{6}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Histogramm eines Graustufen-Bildes mit 16 Helligkeitsabstufungen \cite [42]{burger2009digitale}}}{8}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Unterschiedlicher Kontrast und die Auswirkungen im Histogramm: niedriger Kontrast (links), normaler Kontrast (Mitte), hoher Kontrast (rechts)\cite [45]{burger2009digitale}}}{9}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Unterschiedliche Dynamik und die Auswirkungen im Histogramm: hohe Dynamik (links), niedrige Dynamik mit 64 Graustufen (Mitte), extrem niedriger Kontrast mit 6 Graustufen (rechts)\cite [45]{burger2009digitale}}}{9}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Aufbau eines Neurons \cite {neuron2018UoC}}}{12}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Schematische Modellierung eines Perzeptrons nach Rosenblatt \cite {perzeptron2019}}}{12}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Aufbau eines k\IeC {\"u}nstlichen neuronalen Netzes \cite {bistra2018pic}}}{15}{figure.2.7}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Aufbau eines Convolutional neural Network \cite {info7040061}}}{16}{figure.2.8}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Funktionsweise der Faltungsschicht \cite [330]{goodfellow2016deep}}}{18}{figure.2.9}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Funktionsweise des Pooling Layers mit der Max Pooling-Variante \cite {pooling2018layer}}}{18}{figure.2.10}% 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Vorbereitung der Datens\IeC {\"a}tzen mit dem Labeling-Programm \cite {labelimg2019}}}{19}{figure.2.11}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Auswirkung des Gray-World-Algorithmus}}{31}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm-Ausgleichung}}{32}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation.}}{33}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Auswirkung des Gray-World-Algorithmus}}{30}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Auswirkung der Histogramm-Ausgleichung}}{31}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation.}}{32}{figure.3.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz ohne Normalisierung}}{38}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz ohne Normalisierung}}{37}{figure.4.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {.2}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch den Histogramm-Ausgleich}}{II}{figure.1..2}% 
-\contentsline {figure}{\numberline {.3}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch den Gray-World-Algorithmus}}{III}{figure.1..3}% 
-\contentsline {figure}{\numberline {.4}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch die Histogramm-Spezifikation}}{IV}{figure.1..4}% 
-\contentsline {figure}{\numberline {.5}{\ignorespaces Helligkeitsverteilung und der Einfluss der Normalisierungs-Algorithmen auf das Testbild}}{V}{figure.1..5}% 
-\contentsline {figure}{\numberline {.6}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch den Histogramm-Ausgleich. Oben: PascalVOC-Datensatz, Mitte: Nahrungsmittel-Datensatz, Unten: Stanford Dog-Datensatz}}{VI}{figure.1..6}% 
-\contentsline {figure}{\numberline {.7}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch die Histogramm-Spezifikation. Oben: PascalVOC-Datensatz, Mitte: Nahrungsmittel-Datensatz, Unten: Stanford Dog-Datensatz}}{VII}{figure.1..7}% 
+\contentsline {figure}{\numberline {0.2}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch den Histogramm-Ausgleich. Es ist gut zu erkennen das unterschiedliche Hintergr\IeC {\"u}nde einen gro\IeC {\ss }en Einfluss auf das Ergebnis haben}}{ii}{figure.1..0.2}% 
+\contentsline {figure}{\numberline {0.3}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch den Gray-World-Algorithmus. Unterschiedliche Hintergr\IeC {\"u}nde haben keinen gro\IeC {\ss }en Einfluss auf diese Normalisierungsmethode}}{iii}{figure.1..0.3}% 
+\contentsline {figure}{\numberline {0.4}{\ignorespaces Histogramm des segmentierten Objektes aus dem Nahrungsmittel-Datensatz. Normalisiert durch die Histogramm-Spezifikation. Es ist gut zu erkennen das der Einfluss von ver\IeC {\"a}nderten Hintergr\IeC {\"u}nden eine starke Ver\IeC {\"a}nderung im Ergebnis aufweisen}}{iv}{figure.1..0.4}% 
+\contentsline {figure}{\numberline {0.5}{\ignorespaces Helligkeitsverteilung der Bilder welche mit den Normalisierungsmethoden normalisiert wurden. Besonders gute Ergebnisse sind beim Histogramm-Ausgleich und der Histogramm-Spezifizierung zu erkennen}}{v}{figure.1..0.5}% 
+\contentsline {figure}{\numberline {0.6}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch den Histogramm-Ausgleich. Oben: PascalVOC-Datensatz, Mitte: Nahrungsmittel-Datensatz, Unten: Stanford Dog-Datensatz}}{vi}{figure.1..0.6}% 
+\contentsline {figure}{\numberline {0.7}{\ignorespaces Auftretende Farbanomalien in den drei Datens\IeC {\"a}tzen durch die Histogramm-Spezifikation. Oben: PascalVOC-Datensatz, Mitte: Nahrungsmittel-Datensatz, Unten: Stanford Dog-Datensatz}}{vii}{figure.1..0.7}% 

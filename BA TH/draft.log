@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  15 JUL 2019 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.8)  16 JUL 2019 01:24
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -1458,21 +1458,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ] [3 <./Sources/Vergleich.png>]
-Overfull \hbox (0.5723pt too wide) in paragraph at lines 20--21
+Overfull \hbox (0.5723pt too wide) in paragraph at lines 19--20
 []\T1/cmr/m/n/10.95 Die Nor-ma-li-sie-rungs-ver-fah-ren sol-len auf ver-schie-d
 e-ne Da-ten-sät-ze an-ge-wen-det wer-
  []
 
-) [4] [5]
+) [4]
 \openout2 = `chapter/theoretische_grundlagen.aux'.
 
  (chapter/theoretische_grundlagen.tex
 chapter 2.
-<Sources/Digitalesbild.JPG, id=194, 694.09312pt x 328.22626pt>
+<Sources/Digitalesbild.JPG, id=190, 694.09312pt x 299.61937pt>
 File: Sources/Digitalesbild.JPG Graphic file (type jpg)
 <use Sources/Digitalesbild.JPG>
 Package pdftex.def Info: Sources/Digitalesbild.JPG  used on input line 10.
-(pdftex.def)             Requested size: 347.04572pt x 164.11272pt.
+(pdftex.def)             Requested size: 347.04572pt x 149.80931pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--15
 
@@ -1482,264 +1482,220 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--15
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
+
+ []
+
+[5
+
+
+
+
+] [6 <./Sources/Digitalesbild.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--25
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
 
  []
 
-[6
-
-
-
-
-] [7 <./Sources/Digitalesbild.JPG>]
-<Sources/histogramm.jpg, id=211, 405.76593pt x 233.37187pt>
+<Sources/histogramm.jpg, id=210, 405.76593pt x 233.37187pt>
 File: Sources/histogramm.jpg Graphic file (type jpg)
 <use Sources/histogramm.jpg>
-Package pdftex.def Info: Sources/histogramm.jpg  used on input line 32.
+Package pdftex.def Info: Sources/histogramm.jpg  used on input line 33.
 (pdftex.def)             Requested size: 324.61317pt x 186.69774pt.
-<Sources/kontrast.JPG, id=217, 506.6428pt x 309.40594pt>
+<Sources/kontrast.JPG, id=216, 506.6428pt x 309.40594pt>
 File: Sources/kontrast.JPG Graphic file (type jpg)
 <use Sources/kontrast.JPG>
-Package pdftex.def Info: Sources/kontrast.JPG  used on input line 42.
-(pdftex.def)             Requested size: 303.98802pt x 185.64499pt.
+Package pdftex.def Info: Sources/kontrast.JPG  used on input line 43.
+(pdftex.def)             Requested size: 253.32079pt x 154.70259pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--46
+Underfull \hbox (badness 10000) in paragraph at lines 27--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--46
+Underfull \hbox (badness 10000) in paragraph at lines 27--47
 
  []
 
-[8]
+[7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./Sources/histogramm.jpg>]
-<Sources/dynamik.JPG, id=238, 504.38437pt x 310.15875pt>
+[8 <./Sources/histogramm.jpg>]
+<Sources/dynamik.JPG, id=237, 504.38437pt x 310.15875pt>
 File: Sources/dynamik.JPG Graphic file (type jpg)
 <use Sources/dynamik.JPG>
-Package pdftex.def Info: Sources/dynamik.JPG  used on input line 52.
-(pdftex.def)             Requested size: 302.63295pt x 186.09668pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./Sources/kontrast.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 60--63
+Package pdftex.def Info: Sources/dynamik.JPG  used on input line 53.
+(pdftex.def)             Requested size: 252.19156pt x 155.079pt.
+ [9 <./Sources/kontrast.JPG> <./Sources/dynamik.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--63
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
-[11 <./Sources/dynamik.JPG>]
-<Sources/neuron.jpg, id=261, 602.25pt x 361.35pt>
+[10]
+<Sources/neuron.jpg, id=261, 554.82281pt x 230.36063pt>
 File: Sources/neuron.jpg Graphic file (type jpg)
 <use Sources/neuron.jpg>
-Package pdftex.def Info: Sources/neuron.jpg  used on input line 70.
-(pdftex.def)             Requested size: 421.57211pt x 252.94327pt.
-
-Overfull \hbox (11.85237pt too wide) in paragraph at lines 70--71
- [][] 
- []
-
+Package pdftex.def Info: Sources/neuron.jpg  used on input line 71.
+(pdftex.def)             Requested size: 388.37332pt x 161.25133pt.
 <Sources/perzeptron2.png, id=268, 1204.5pt x 572.1375pt>
 File: Sources/perzeptron2.png Graphic file (type png)
 <use Sources/perzeptron2.png>
-Package pdftex.def Info: Sources/perzeptron2.png  used on input line 80.
-(pdftex.def)             Requested size: 361.35278pt x 171.64256pt.
+Package pdftex.def Info: Sources/perzeptron2.png  used on input line 81.
+(pdftex.def)             Requested size: 301.12427pt x 143.03401pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--85
+Underfull \hbox (badness 10000) in paragraph at lines 65--86
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./Sources/neuron.jpg>]
-Overfull \hbox (2.5681pt too wide) in paragraph at lines 89--91
+[11] [12 <./Sources/neuron.jpg> <./Sources/perzeptron2.png>]
+Overfull \hbox (2.5681pt too wide) in paragraph at lines 90--92
 \T1/cmr/m/n/10.95 Der \T1/cmr/m/it/10.95 Bi-as \T1/cmr/m/n/10.95 ist ei-ne Art 
 zu-sätz-li-ches Neu-ron für das Ver-rin-gern von Konvergenz-Problemen,
  []
 
-<Sources/nnet.png, id=289, 499.3857pt x 269.3262pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
+
+ []
+
+[13]
+<Sources/nnet.png, id=301, 499.3857pt x 269.3262pt>
 File: Sources/nnet.png Graphic file (type png)
 <use Sources/nnet.png>
-Package pdftex.def Info: Sources/nnet.png  used on input line 106.
+Package pdftex.def Info: Sources/nnet.png  used on input line 108.
 (pdftex.def)             Requested size: 249.69223pt x 134.66277pt.
-<Sources/cnnet.jpg, id=295, 739.76375pt x 250.9375pt>
+<Sources/cnnet.jpg, id=307, 739.76375pt x 250.9375pt>
 File: Sources/cnnet.jpg Graphic file (type jpg)
 <use Sources/cnnet.jpg>
-Package pdftex.def Info: Sources/cnnet.jpg  used on input line 116.
+Package pdftex.def Info: Sources/cnnet.jpg  used on input line 118.
 (pdftex.def)             Requested size: 369.88097pt x 125.46843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 97--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./Sources/nnet.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
+Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--123
-
- []
-
-[14 <./Sources/perzeptron2.png>] [15] [16 <./Sources/nnet.png>] [17 <./Sources/
-cnnet.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 129--132
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--136
-
- []
-
-[18]
-<Sources/CNN.png, id=341, 501.875pt x 461.725pt>
+[16 <./Sources/cnnet.jpg>]
+<Sources/CNN.png, id=336, 501.875pt x 461.725pt>
 File: Sources/CNN.png Graphic file (type png)
 <use Sources/CNN.png>
-Package pdftex.def Info: Sources/CNN.png  used on input line 149.
-(pdftex.def)             Requested size: 200.74643pt x 184.68672pt.
-<Sources/MaxpoolSample2.png, id=346, 164.25pt x 68.547pt>
+Package pdftex.def Info: Sources/CNN.png  used on input line 151.
+(pdftex.def)             Requested size: 276.03209pt x 253.94954pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+<Sources/MaxpoolSample2.png, id=348, 164.25pt x 68.547pt>
 File: Sources/MaxpoolSample2.png Graphic file (type png)
 <use Sources/MaxpoolSample2.png>
-Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 158.
-(pdftex.def)             Requested size: 295.64975pt x 123.38446pt.
+Package pdftex.def Info: Sources/MaxpoolSample2.png  used on input line 161.
+(pdftex.def)             Requested size: 213.52496pt x 89.11105pt.
 
-Overfull \hbox (9.64952pt too wide) in paragraph at lines 144--162
+Overfull \hbox (9.64952pt too wide) in paragraph at lines 156--167
 \T1/cmr/m/n/10.95 Die Poo-ling Schicht oder auch \T1/cmr/m/it/10.95 Poo-ling La
 yer \T1/cmr/m/n/10.95 kommt nach je-der Fal-tungs-schicht [[],
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--162
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19 <./Sources/CNN.png>]
-<Sources/labelimg.jpg, id=358, 433.62pt x 243.91125pt>
+[18 <./Sources/CNN.png> <./Sources/MaxpoolSample2.png>]
+<Sources/labelimg.jpg, id=360, 411.78844pt x 280.04625pt>
 File: Sources/labelimg.jpg Graphic file (type jpg)
 <use Sources/labelimg.jpg>
-Package pdftex.def Info: Sources/labelimg.jpg  used on input line 170.
-(pdftex.def)             Requested size: 303.53192pt x 170.7367pt.
-
+Package pdftex.def Info: Sources/labelimg.jpg  used on input line 174.
+(pdftex.def)             Requested size: 247.07495pt x 168.02904pt.
+ [19 <./Sources/labelimg.jpg>] [20]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 <./Sources/MaxpoolSample2.png>] [21 <./Sources/labelimg.jpg>] [22]
-Overfull \hbox (14.17921pt too wide) in paragraph at lines 243--264
+[21]
+Overfull \hbox (14.17921pt too wide) in paragraph at lines 247--268
  [][] 
  []
 
-[23] [24] [25])
-Underfull \hbox (badness 10000) in paragraph at lines 316--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--38
-
- []
-
+[22] [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27]
+[24])
+Underfull \hbox (badness 10000) in paragraph at lines 404--38
+
+ []
+
+[25] [26]
 \openout2 = `chapter/methodik_und_durchfuehrung.aux'.
 
  (chapter/methodik_und_durchfuehrung.tex
 chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--82
+Underfull \hbox (badness 10000) in paragraph at lines 26--80
 
  []
 
-[28
+[27
 
 
 
@@ -1748,42 +1704,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--82
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[28] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 87.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 85.
 ("C:\Users\Agando\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 <Sources/gwn.png, id=476, 578.16pt x 216.81pt>
 File: Sources/gwn.png Graphic file (type png)
 <use Sources/gwn.png>
-Package pdftex.def Info: Sources/gwn.png  used on input line 99.
+Package pdftex.def Info: Sources/gwn.png  used on input line 97.
 (pdftex.def)             Requested size: 346.89867pt x 130.08699pt.
 
-[31 <./Sources/gwn.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+[30 <./Sources/gwn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<Sources/histeq.jpg, id=497, 578.16pt x 216.81pt>
+<Sources/histeq.jpg, id=498, 578.16pt x 216.81pt>
 File: Sources/histeq.jpg Graphic file (type jpg)
 <use Sources/histeq.jpg>
-Package pdftex.def Info: Sources/histeq.jpg  used on input line 116.
+Package pdftex.def Info: Sources/histeq.jpg  used on input line 114.
 (pdftex.def)             Requested size: 404.70924pt x 151.76596pt.
-[32 <./Sources/histeq.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+[31 <./Sources/histeq.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 <Sources/HS_beispiel.png, id=513, 578.16pt x 216.81pt>
 File: Sources/HS_beispiel.png Graphic file (type png)
 <use Sources/HS_beispiel.png>
-Package pdftex.def Info: Sources/HS_beispiel.png  used on input line 132.
+Package pdftex.def Info: Sources/HS_beispiel.png  used on input line 130.
 (pdftex.def)             Requested size: 346.89867pt x 130.08699pt.
-) [33 <./Sources/HS_beispiel.png>]
+) [32 <./Sources/HS_beispiel.png>]
 \openout2 = `chapter/ergebnisse.aux'.
 
  (chapter/ergebnisse.tex
@@ -1794,136 +1750,96 @@ Overfull \hbox (5.19582pt too wide) in paragraph at lines 3--4
  Nor-ma-li-sie-rungs-ver-fah-ren durch-
  []
 
-
-Overfull \hbox (11.91412pt too wide) in paragraph at lines 8--30
-\T1/cmr/m/n/10.95 Normalisierungen am schlech-tes-ten ab. Auch ein Blick auf di
-e Da-ten-sät-ze der Histogramm-
- []
-
-[34
+[33
 
 
 
 
 ]
-Underfull \hbox (badness 2521) in paragraph at lines 34--34
+Underfull \hbox (badness 2521) in paragraph at lines 32--32
 [][][]\T1/cmr/m/n/10.95 Durchschnittliche Ge-nau-ig-kei-ten des Mo-dells mit de
 m PascalVOC-
  []
 
-[35] [36]
-<Sources/Bild1.jpg, id=549, 782.925pt x 1043.9pt>
+[34] [35]
+<Sources/Bild1.jpg, id=550, 782.925pt x 1043.9pt>
 File: Sources/Bild1.jpg Graphic file (type jpg)
 <use Sources/Bild1.jpg>
-Package pdftex.def Info: Sources/Bild1.jpg  used on input line 104.
+Package pdftex.def Info: Sources/Bild1.jpg  used on input line 102.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1.png, id=550, 144.54pt x 456.70625pt>
+<Sources/Bild1.png, id=551, 144.54pt x 456.70625pt>
 File: Sources/Bild1.png Graphic file (type png)
 <use Sources/Bild1.png>
-Package pdftex.def Info: Sources/Bild1.png  used on input line 108.
+Package pdftex.def Info: Sources/Bild1.png  used on input line 106.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_histo.png, id=551, 462.528pt x 346.896pt>
+<Sources/Bild1_histo.png, id=552, 462.528pt x 346.896pt>
 File: Sources/Bild1_histo.png Graphic file (type png)
 <use Sources/Bild1_histo.png>
-Package pdftex.def Info: Sources/Bild1_histo.png  used on input line 112.
+Package pdftex.def Info: Sources/Bild1_histo.png  used on input line 110.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2.jpg, id=552, 782.925pt x 1043.9pt>
+<Sources/Bild2.jpg, id=553, 782.925pt x 1043.9pt>
 File: Sources/Bild2.jpg Graphic file (type jpg)
 <use Sources/Bild2.jpg>
-Package pdftex.def Info: Sources/Bild2.jpg  used on input line 117.
+Package pdftex.def Info: Sources/Bild2.jpg  used on input line 115.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2.png, id=553, 153.57375pt x 469.755pt>
+<Sources/Bild2.png, id=554, 153.57375pt x 469.755pt>
 File: Sources/Bild2.png Graphic file (type png)
 <use Sources/Bild2.png>
-Package pdftex.def Info: Sources/Bild2.png  used on input line 121.
+Package pdftex.def Info: Sources/Bild2.png  used on input line 119.
 (pdftex.def)             Requested size: 32.77832pt x 100.26424pt.
-<Sources/Bild2_histo.png, id=554, 462.528pt x 346.896pt>
+<Sources/Bild2_histo.png, id=555, 462.528pt x 346.896pt>
 File: Sources/Bild2_histo.png Graphic file (type png)
 <use Sources/Bild2_histo.png>
-Package pdftex.def Info: Sources/Bild2_histo.png  used on input line 125.
+Package pdftex.def Info: Sources/Bild2_histo.png  used on input line 123.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
- [37]
-<Sources/Obst_mit_hintergrund.jpg, id=562, 1043.9pt x 782.925pt>
+ [36]
+<Sources/Obst_mit_hintergrund.jpg, id=563, 1043.9pt x 782.925pt>
 File: Sources/Obst_mit_hintergrund.jpg Graphic file (type jpg)
 <use Sources/Obst_mit_hintergrund.jpg>
 Package pdftex.def Info: Sources/Obst_mit_hintergrund.jpg  used on input line 1
-38.
+36.
 (pdftex.def)             Requested size: 131.10881pt x 98.3313pt.
- [38 <./Sources/Bild1.jpg> <./Sources/Bild1.png> <./Sources/Bild1_histo.png> <.
+ [37 <./Sources/Bild1.jpg> <./Sources/Bild1.png> <./Sources/Bild1_histo.png> <.
 /Sources/Bild2.jpg> <./Sources/Bild2.png> <./Sources/Bild2_histo.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 154--52
-
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39 <./Sources/Obst_mit_hintergrund.jpg>] [40]
+[38 <./Sources/Obst_mit_hintergrund.jpg>] [39]
 \openout2 = `chapter/diskussion.aux'.
 
  (chapter/diskussion.tex
 chapter 5.
-[41
+[40
+
+
+
+
+]) [41]
+\openout2 = `chapter/fazit.aux'.
+
+ (chapter/fazit.tex
+chapter 6.
+[42
 
 
 
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 8--59
-
- []
-
-[42]
-\openout2 = `chapter/fazit.aux'.
-
- (chapter/fazit.tex
-chapter 6.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
+Underfull \hbox (badness 10000) in paragraph at lines 8--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
+Underfull \hbox (badness 10000) in paragraph at lines 8--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
+Underfull \hbox (badness 10000) in paragraph at lines 8--66
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--66
-
- []
-
-[43
-
-
-
-
-] [44] [45]
+[43] [44]
 \openout2 = `chapter/verzeichnisse.aux'.
 
  (chapter/verzeichnisse.tex (draft.lof
@@ -1963,6 +1879,17 @@ m Nahrungsmittel-Datensatz.
  []
 
 
+Overfull \hbox (14.32945pt too wide) in paragraph at lines 27--27
+ \T1/cmr/m/n/10.95 den nor-ma-li-siert wur-den. Be-son-ders gu-te Er-geb-nis-se
+ sind beim Histogramm- 
+ []
+
+[45
+
+
+
+
+]
 Overfull \hbox (14.61766pt too wide) in paragraph at lines 28--28
  [][] [][][]\T1/cmr/m/n/10.95 Auftretende Farb-an-oma-li-en in den drei Da-ten-
 sät-zen durch den Histogramm- 
@@ -1990,12 +1917,7 @@ ttel-Datensatz,
 \tf@lof=\write8
 \openout8 = `draft.lof'.
 
- [46
-
-
-
-
-] [47] (draft.lot
+ [46] (draft.lot
 Overfull \hbox (8.06447pt too wide) in paragraph at lines 18--18
  [][] [][][]\T1/cmr/m/n/10.95 Durchschnittliche Ge-nau-ig-kei-ten des Mo-dells 
 mit dem PascalVOC-Datensatz[][] [][]  
@@ -2005,21 +1927,58 @@ mit dem PascalVOC-Datensatz[][] [][]
 \tf@lot=\write9
 \openout9 = `draft.lot'.
 
- (draft.bbl [48
+ (draft.bbl [47
 
 
-] [49
+]
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+[]\T1/cmr/m/sc/10.95 Coco\T1/cmr/m/n/10.95 :  \T1/cmr/m/it/10.95 CO-CO Da-ten-s
+et\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 http : / / cocodataset . org / #
+ho m e$[][]\T1/cmr/m/n/10.95 .
+ []
 
 
-])) [50]
+Underfull \hbox (badness 1496) in paragraph at lines 61--65
+[]\T1/cmr/m/sc/10.95 EdjeElectronics\T1/cmr/m/n/10.95 , Evan:  \T1/cmr/m/it/10.
+95 Test-bil-der\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 https : / / bit . l
+y / 2RjFVHz$[][]\T1/cmr/m/n/10.95 .
+ []
+
+[48
+
+
+]
+Underfull \hbox (badness 1708) in paragraph at lines 130--134
+[]\T1/cmr/m/sc/10.95 LLC\T1/cmr/m/n/10.95 , Goo-gle:  \T1/cmr/m/it/10.95 Bild 3
+b Um-schlos-sen\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 https : / / bit . l
+y / 2QRkQF0$[][]\T1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+[]\T1/cmr/m/sc/10.95 LLC\T1/cmr/m/n/10.95 , Goo-gle:  \T1/cmr/m/it/10.95 Ten-so
+r-flow\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 https : / / www . tensor f l
+ow . org/$[][]\T1/cmr/m/n/10.95 .
+ []
+
+[49]
+Underfull \hbox (badness 2744) in paragraph at lines 196--200
+[]\T1/cmr/m/sc/10.95 Uni-Protokolle\T1/cmr/m/n/10.95 :  \T1/cmr/m/it/10.95 YUV-
+Farbmodell\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 https : / / bit . ly / 2
+Z29MVu$[][]\T1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 208--212
+[]\T1/cmr/m/sc/10.95 Wikipedia\T1/cmr/m/n/10.95 :  \T1/cmr/m/it/10.95 Künst-li-
+ches Neu-ron\T1/cmr/m/n/10.95 .  [][]$\T1/cmtt/m/n/10.95 https : / / bit . ly /
+ 2X m y6oj$[][]\T1/cmr/m/n/10.95 .
+ []
+
+)) [50]
 \openout2 = `chapter/anhang.aux'.
 
- (chapter/anhang.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.I}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11 \part*{Anhang}
-                    [1
+ (chapter/anhang.tex [1
 
 
 
@@ -2027,463 +1986,426 @@ l.11 \part*{Anhang}
 
 
 ]
-<Sources/Bild1_HA.jpg, id=718, 782.925pt x 1043.9pt>
+<Sources/Bild1_HA.jpg, id=758, 782.925pt x 1043.9pt>
 File: Sources/Bild1_HA.jpg Graphic file (type jpg)
 <use Sources/Bild1_HA.jpg>
-Package pdftex.def Info: Sources/Bild1_HA.jpg  used on input line 14.
+Package pdftex.def Info: Sources/Bild1_HA.jpg  used on input line 25.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_HA.png, id=719, 148.555pt x 458.71375pt>
+<Sources/Bild1_HA.png, id=759, 148.555pt x 458.71375pt>
 File: Sources/Bild1_HA.png Graphic file (type png)
 <use Sources/Bild1_HA.png>
-Package pdftex.def Info: Sources/Bild1_HA.png  used on input line 18.
+Package pdftex.def Info: Sources/Bild1_HA.png  used on input line 29.
 (pdftex.def)             Requested size: 32.77832pt x 101.2113pt.
-<Sources/Bild1_HA_histo.png, id=720, 462.528pt x 346.896pt>
+<Sources/Bild1_HA_histo.png, id=760, 462.528pt x 346.896pt>
 File: Sources/Bild1_HA_histo.png Graphic file (type png)
 <use Sources/Bild1_HA_histo.png>
-Package pdftex.def Info: Sources/Bild1_HA_histo.png  used on input line 22.
+Package pdftex.def Info: Sources/Bild1_HA_histo.png  used on input line 33.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_HA.jpg, id=721, 782.925pt x 1043.9pt>
+<Sources/Bild2_HA.jpg, id=761, 782.925pt x 1043.9pt>
 File: Sources/Bild2_HA.jpg Graphic file (type jpg)
 <use Sources/Bild2_HA.jpg>
-Package pdftex.def Info: Sources/Bild2_HA.jpg  used on input line 27.
+Package pdftex.def Info: Sources/Bild2_HA.jpg  used on input line 38.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_HA.png, id=722, 156.585pt x 469.755pt>
+<Sources/Bild2_HA.png, id=762, 156.585pt x 469.755pt>
 File: Sources/Bild2_HA.png Graphic file (type png)
 <use Sources/Bild2_HA.png>
-Package pdftex.def Info: Sources/Bild2_HA.png  used on input line 31.
+Package pdftex.def Info: Sources/Bild2_HA.png  used on input line 42.
 (pdftex.def)             Requested size: 32.77832pt x 98.33607pt.
-<Sources/Bild2_HA_histo.png, id=723, 462.528pt x 346.896pt>
+<Sources/Bild2_HA_histo.png, id=763, 462.528pt x 346.896pt>
 File: Sources/Bild2_HA_histo.png Graphic file (type png)
 <use Sources/Bild2_HA_histo.png>
-Package pdftex.def Info: Sources/Bild2_HA_histo.png  used on input line 35.
+Package pdftex.def Info: Sources/Bild2_HA_histo.png  used on input line 46.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_HA.jpg, id=724, 782.925pt x 1043.9pt>
+<Sources/Bild3_HA.jpg, id=764, 782.925pt x 1043.9pt>
 File: Sources/Bild3_HA.jpg Graphic file (type jpg)
 <use Sources/Bild3_HA.jpg>
-Package pdftex.def Info: Sources/Bild3_HA.jpg  used on input line 40.
+Package pdftex.def Info: Sources/Bild3_HA.jpg  used on input line 51.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_HA.png, id=725, 150.5625pt x 453.695pt>
+<Sources/Bild3_HA.png, id=765, 150.5625pt x 453.695pt>
 File: Sources/Bild3_HA.png Graphic file (type png)
 <use Sources/Bild3_HA.png>
-Package pdftex.def Info: Sources/Bild3_HA.png  used on input line 44.
+Package pdftex.def Info: Sources/Bild3_HA.png  used on input line 55.
 (pdftex.def)             Requested size: 32.77832pt x 98.76785pt.
-<Sources/Bild3_HA_histo.png, id=726, 462.528pt x 346.896pt>
+<Sources/Bild3_HA_histo.png, id=766, 462.528pt x 346.896pt>
 File: Sources/Bild3_HA_histo.png Graphic file (type png)
 <use Sources/Bild3_HA_histo.png>
-Package pdftex.def Info: Sources/Bild3_HA_histo.png  used on input line 48.
+Package pdftex.def Info: Sources/Bild3_HA_histo.png  used on input line 59.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-
-Underfull \hbox (badness 1077) in paragraph at lines 50--50
-[][][]\T1/cmr/m/n/10.95 Histogramm des seg-men-tier-ten Ob-jek-tes aus dem Nahr
-ungsmittel-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.II}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.53 \newpage
-              [2 <./Sources/Bild1_HA.jpg> <./Sources/Bild1_HA.png> <./Sources/B
-ild1_HA_histo.png> <./Sources/Bild2_HA.jpg> <./Sources/Bild2_HA.png> <./Sources
-/Bild2_HA_histo.png> <./Sources/Bild3_HA.jpg> <./Sources/Bild3_HA.png> <./Sourc
-es/Bild3_HA_histo.png>]
-<Sources/Bild1_GW.jpg, id=736, 782.925pt x 1043.9pt>
+ [2 <./Sources/Bild1_HA.jpg> <./Sources/Bild1_HA.png> <./Sources/Bild1_HA_histo
+.png> <./Sources/Bild2_HA.jpg> <./Sources/Bild2_HA.png> <./Sources/Bild2_HA_his
+to.png> <./Sources/Bild3_HA.jpg> <./Sources/Bild3_HA.png> <./Sources/Bild3_HA_h
+isto.png>]
+<Sources/Bild1_GW.jpg, id=777, 782.925pt x 1043.9pt>
 File: Sources/Bild1_GW.jpg Graphic file (type jpg)
 <use Sources/Bild1_GW.jpg>
-Package pdftex.def Info: Sources/Bild1_GW.jpg  used on input line 56.
+Package pdftex.def Info: Sources/Bild1_GW.jpg  used on input line 67.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_GW.png, id=737, 144.54pt x 456.70625pt>
+<Sources/Bild1_GW.png, id=778, 144.54pt x 456.70625pt>
 File: Sources/Bild1_GW.png Graphic file (type png)
 <use Sources/Bild1_GW.png>
-Package pdftex.def Info: Sources/Bild1_GW.png  used on input line 60.
+Package pdftex.def Info: Sources/Bild1_GW.png  used on input line 71.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_GW_histo.png, id=738, 462.528pt x 346.896pt>
+<Sources/Bild1_GW_histo.png, id=779, 462.528pt x 346.896pt>
 File: Sources/Bild1_GW_histo.png Graphic file (type png)
 <use Sources/Bild1_GW_histo.png>
-Package pdftex.def Info: Sources/Bild1_GW_histo.png  used on input line 64.
+Package pdftex.def Info: Sources/Bild1_GW_histo.png  used on input line 75.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_GW.jpg, id=739, 782.925pt x 1043.9pt>
+<Sources/Bild2_GW.jpg, id=780, 782.925pt x 1043.9pt>
 File: Sources/Bild2_GW.jpg Graphic file (type jpg)
 <use Sources/Bild2_GW.jpg>
-Package pdftex.def Info: Sources/Bild2_GW.jpg  used on input line 69.
+Package pdftex.def Info: Sources/Bild2_GW.jpg  used on input line 80.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_GW.png, id=740, 153.57375pt x 468.75125pt>
+<Sources/Bild2_GW.png, id=781, 153.57375pt x 468.75125pt>
 File: Sources/Bild2_GW.png Graphic file (type png)
 <use Sources/Bild2_GW.png>
-Package pdftex.def Info: Sources/Bild2_GW.png  used on input line 73.
+Package pdftex.def Info: Sources/Bild2_GW.png  used on input line 84.
 (pdftex.def)             Requested size: 32.77832pt x 100.04999pt.
-<Sources/Bild2_GW_histo.png, id=741, 462.528pt x 346.896pt>
+<Sources/Bild2_GW_histo.png, id=782, 462.528pt x 346.896pt>
 File: Sources/Bild2_GW_histo.png Graphic file (type png)
 <use Sources/Bild2_GW_histo.png>
-Package pdftex.def Info: Sources/Bild2_GW_histo.png  used on input line 77.
+Package pdftex.def Info: Sources/Bild2_GW_histo.png  used on input line 88.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_GW.jpg, id=742, 782.925pt x 1043.9pt>
+<Sources/Bild3_GW.jpg, id=783, 782.925pt x 1043.9pt>
 File: Sources/Bild3_GW.jpg Graphic file (type jpg)
 <use Sources/Bild3_GW.jpg>
-Package pdftex.def Info: Sources/Bild3_GW.jpg  used on input line 82.
+Package pdftex.def Info: Sources/Bild3_GW.jpg  used on input line 93.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_GW.png, id=743, 143.53625pt x 452.69125pt>
+<Sources/Bild3_GW.png, id=784, 143.53625pt x 452.69125pt>
 File: Sources/Bild3_GW.png Graphic file (type png)
 <use Sources/Bild3_GW.png>
-Package pdftex.def Info: Sources/Bild3_GW.png  used on input line 86.
+Package pdftex.def Info: Sources/Bild3_GW.png  used on input line 97.
 (pdftex.def)             Requested size: 32.77832pt x 103.37769pt.
-<Sources/Bild3_GW_histo.png, id=744, 462.528pt x 346.896pt>
+<Sources/Bild3_GW_histo.png, id=785, 462.528pt x 346.896pt>
 File: Sources/Bild3_GW_histo.png Graphic file (type png)
 <use Sources/Bild3_GW_histo.png>
-Package pdftex.def Info: Sources/Bild3_GW_histo.png  used on input line 90.
+Package pdftex.def Info: Sources/Bild3_GW_histo.png  used on input line 101.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-
-Underfull \hbox (badness 1077) in paragraph at lines 92--92
-[][][]\T1/cmr/m/n/10.95 Histogramm des seg-men-tier-ten Ob-jek-tes aus dem Nahr
-ungsmittel-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.III}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.95 \newpage
-              [3 <./Sources/Bild1_GW.jpg> <./Sources/Bild1_GW.png> <./Sources/B
-ild1_GW_histo.png> <./Sources/Bild2_GW.jpg> <./Sources/Bild2_GW.png> <./Sources
-/Bild2_GW_histo.png> <./Sources/Bild3_GW.jpg> <./Sources/Bild3_GW.png> <./Sourc
-es/Bild3_GW_histo.png>]
-<Sources/Bild1_HS.jpg, id=754, 782.925pt x 1043.9pt>
+ [3 <./Sources/Bild1_GW.jpg> <./Sources/Bild1_GW.png> <./Sources/Bild1_GW_histo
+.png> <./Sources/Bild2_GW.jpg> <./Sources/Bild2_GW.png> <./Sources/Bild2_GW_his
+to.png> <./Sources/Bild3_GW.jpg> <./Sources/Bild3_GW.png> <./Sources/Bild3_GW_h
+isto.png>]
+<Sources/Bild1_HS.jpg, id=796, 782.925pt x 1043.9pt>
 File: Sources/Bild1_HS.jpg Graphic file (type jpg)
 <use Sources/Bild1_HS.jpg>
-Package pdftex.def Info: Sources/Bild1_HS.jpg  used on input line 98.
+Package pdftex.def Info: Sources/Bild1_HS.jpg  used on input line 109.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild1_HS.png, id=755, 144.54pt x 456.70625pt>
+<Sources/Bild1_HS.png, id=797, 144.54pt x 456.70625pt>
 File: Sources/Bild1_HS.png Graphic file (type png)
 <use Sources/Bild1_HS.png>
-Package pdftex.def Info: Sources/Bild1_HS.png  used on input line 102.
+Package pdftex.def Info: Sources/Bild1_HS.png  used on input line 113.
 (pdftex.def)             Requested size: 32.77832pt x 103.56981pt.
-<Sources/Bild1_HS_histo.png, id=756, 462.528pt x 346.896pt>
+<Sources/Bild1_HS_histo.png, id=798, 462.528pt x 346.896pt>
 File: Sources/Bild1_HS_histo.png Graphic file (type png)
 <use Sources/Bild1_HS_histo.png>
-Package pdftex.def Info: Sources/Bild1_HS_histo.png  used on input line 106.
+Package pdftex.def Info: Sources/Bild1_HS_histo.png  used on input line 117.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild2_HS.jpg, id=757, 782.925pt x 1043.9pt>
+<Sources/Bild2_HS.jpg, id=799, 782.925pt x 1043.9pt>
 File: Sources/Bild2_HS.jpg Graphic file (type jpg)
 <use Sources/Bild2_HS.jpg>
-Package pdftex.def Info: Sources/Bild2_HS.jpg  used on input line 111.
+Package pdftex.def Info: Sources/Bild2_HS.jpg  used on input line 122.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild2_HS.png, id=758, 156.585pt x 468.75125pt>
+<Sources/Bild2_HS.png, id=800, 156.585pt x 468.75125pt>
 File: Sources/Bild2_HS.png Graphic file (type png)
 <use Sources/Bild2_HS.png>
-Package pdftex.def Info: Sources/Bild2_HS.png  used on input line 115.
+Package pdftex.def Info: Sources/Bild2_HS.png  used on input line 126.
 (pdftex.def)             Requested size: 32.77832pt x 98.12595pt.
-<Sources/Bild2_HS_histo.png, id=759, 462.528pt x 346.896pt>
+<Sources/Bild2_HS_histo.png, id=801, 462.528pt x 346.896pt>
 File: Sources/Bild2_HS_histo.png Graphic file (type png)
 <use Sources/Bild2_HS_histo.png>
-Package pdftex.def Info: Sources/Bild2_HS_histo.png  used on input line 119.
+Package pdftex.def Info: Sources/Bild2_HS_histo.png  used on input line 130.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-<Sources/Bild3_HS.jpg, id=760, 782.925pt x 1043.9pt>
+<Sources/Bild3_HS.jpg, id=802, 782.925pt x 1043.9pt>
 File: Sources/Bild3_HS.jpg Graphic file (type jpg)
 <use Sources/Bild3_HS.jpg>
-Package pdftex.def Info: Sources/Bild3_HS.jpg  used on input line 124.
+Package pdftex.def Info: Sources/Bild3_HS.jpg  used on input line 135.
 (pdftex.def)             Requested size: 81.94269pt x 109.25433pt.
-<Sources/Bild3_HS.png, id=761, 143.53625pt x 452.69125pt>
+<Sources/Bild3_HS.png, id=803, 143.53625pt x 452.69125pt>
 File: Sources/Bild3_HS.png Graphic file (type png)
 <use Sources/Bild3_HS.png>
-Package pdftex.def Info: Sources/Bild3_HS.png  used on input line 128.
+Package pdftex.def Info: Sources/Bild3_HS.png  used on input line 139.
 (pdftex.def)             Requested size: 32.77832pt x 103.37769pt.
-<Sources/Bild3_HS_histo.png, id=762, 462.528pt x 346.896pt>
+<Sources/Bild3_HS_histo.png, id=804, 462.528pt x 346.896pt>
 File: Sources/Bild3_HS_histo.png Graphic file (type png)
 <use Sources/Bild3_HS_histo.png>
-Package pdftex.def Info: Sources/Bild3_HS_histo.png  used on input line 132.
+Package pdftex.def Info: Sources/Bild3_HS_histo.png  used on input line 143.
 (pdftex.def)             Requested size: 122.91716pt x 92.18636pt.
-
-Underfull \hbox (badness 1077) in paragraph at lines 134--134
-[][][]\T1/cmr/m/n/10.95 Histogramm des seg-men-tier-ten Ob-jek-tes aus dem Nahr
-ungsmittel-
- []
-
-<Sources/Anhang/resize_0250.jpg, id=763, 1043.9pt x 782.925pt>
+ [4 <./Sources/Bild1_HS.jpg> <./Sources/Bild1_HS.png> <./Sources/Bild1_HS_histo
+.png> <./Sources/Bild2_HS.jpg> <./Sources/Bild2_HS.png> <./Sources/Bild2_HS_his
+to.png> <./Sources/Bild3_HS.jpg> <./Sources/Bild3_HS.png> <./Sources/Bild3_HS_h
+isto.png>]
+<Sources/Anhang/resize_0250.jpg, id=815, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250.jpg>
-Package pdftex.def Info: Sources/Anhang/resize_0250.jpg  used on input line 140
+Package pdftex.def Info: Sources/Anhang/resize_0250.jpg  used on input line 152
 .
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250.png, id=764, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250.png, id=816, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250.png Graphic file (type png)
 <use Sources/Anhang/resize_0250.png>
-Package pdftex.def Info: Sources/Anhang/resize_0250.png  used on input line 143
+Package pdftex.def Info: Sources/Anhang/resize_0250.png  used on input line 155
 .
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_GW.jpg, id=765, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_GW.jpg, id=817, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_GW.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_GW.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.jpg  used on input line 
-146.
+158.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_GW.png, id=766, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_GW.png, id=818, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_GW.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_GW.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_GW.png  used on input line 
-149.
+161.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HA.jpg, id=767, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HA.jpg, id=819, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HA.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HA.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.jpg  used on input line 
-152.
+164.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HA.png, id=768, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HA.png, id=820, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HA.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HA.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HA.png  used on input line 
-155.
+167.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
-<Sources/Anhang/resize_0250_HS.jpg, id=769, 1043.9pt x 782.925pt>
+<Sources/Anhang/resize_0250_HS.jpg, id=821, 1043.9pt x 782.925pt>
 File: Sources/Anhang/resize_0250_HS.jpg Graphic file (type jpg)
 <use Sources/Anhang/resize_0250_HS.jpg>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.jpg  used on input line 
-158.
+170.
 (pdftex.def)             Requested size: 160.61255pt x 120.45613pt.
-<Sources/Anhang/resize_0250_HS.png, id=770, 462.528pt x 346.896pt>
+<Sources/Anhang/resize_0250_HS.png, id=822, 462.528pt x 346.896pt>
 File: Sources/Anhang/resize_0250_HS.png Graphic file (type png)
 <use Sources/Anhang/resize_0250_HS.png>
 Package pdftex.def Info: Sources/Anhang/resize_0250_HS.png  used on input line 
-161.
+173.
 (pdftex.def)             Requested size: 200.76492pt x 150.57565pt.
 
-LaTeX Warning: Float too large for page by 20.50233pt on input line 165.
 
-<images/anomalien/HA/000613.jpg, id=771, 501.875pt x 334.24875pt>
+LaTeX Warning: Float too large for page by 34.10234pt on input line 177.
+
+<images/anomalien/HA/000613.jpg, id=823, 501.875pt x 334.24875pt>
 File: images/anomalien/HA/000613.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000613.jpg>
-Package pdftex.def Info: images/anomalien/HA/000613.jpg  used on input line 170
+Package pdftex.def Info: images/anomalien/HA/000613.jpg  used on input line 188
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.84372pt.
-<images/anomalien/HA/000750.jpg, id=772, 376.40625pt x 501.875pt>
+<images/anomalien/HA/000750.jpg, id=824, 376.40625pt x 501.875pt>
 File: images/anomalien/HA/000750.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000750.jpg>
-Package pdftex.def Info: images/anomalien/HA/000750.jpg  used on input line 173
+Package pdftex.def Info: images/anomalien/HA/000750.jpg  used on input line 191
 .
 (pdftex.def)             Requested size: 77.84775pt x 103.79633pt.
-<images/anomalien/HA/000777.jpg, id=773, 501.875pt x 334.24875pt>
+<images/anomalien/HA/000777.jpg, id=825, 501.875pt x 334.24875pt>
 File: images/anomalien/HA/000777.jpg Graphic file (type jpg)
 <use images/anomalien/HA/000777.jpg>
-Package pdftex.def Info: images/anomalien/HA/000777.jpg  used on input line 176
+Package pdftex.def Info: images/anomalien/HA/000777.jpg  used on input line 194
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.84372pt.
-<images/anomalien/HA/001608.jpg, id=774, 501.875pt x 376.40625pt>
+<images/anomalien/HA/001608.jpg, id=826, 501.875pt x 376.40625pt>
 File: images/anomalien/HA/001608.jpg Graphic file (type jpg)
 <use images/anomalien/HA/001608.jpg>
-Package pdftex.def Info: images/anomalien/HA/001608.jpg  used on input line 179
+Package pdftex.def Info: images/anomalien/HA/001608.jpg  used on input line 197
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HA/003339.jpg, id=775, 433.62pt x 289.08pt>
+<images/anomalien/HA/003339.jpg, id=827, 433.62pt x 289.08pt>
 File: images/anomalien/HA/003339.jpg Graphic file (type jpg)
 <use images/anomalien/HA/003339.jpg>
-Package pdftex.def Info: images/anomalien/HA/003339.jpg  used on input line 182
+Package pdftex.def Info: images/anomalien/HA/003339.jpg  used on input line 200
 .
 (pdftex.def)             Requested size: 77.84775pt x 51.8954pt.
-<images/anomalien/HA/image41.jpg, id=776, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image41.jpg, id=828, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image41.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image41.jpg>
-Package pdftex.def Info: images/anomalien/HA/image41.jpg  used on input line 18
-8.
+Package pdftex.def Info: images/anomalien/HA/image41.jpg  used on input line 20
+6.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/image67.jpg, id=777, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image67.jpg, id=829, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image67.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image67.jpg>
-Package pdftex.def Info: images/anomalien/HA/image67.jpg  used on input line 19
-1.
+Package pdftex.def Info: images/anomalien/HA/image67.jpg  used on input line 20
+9.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/image104.jpg, id=778, 1335.99126pt x 1001.7425pt>
+<images/anomalien/HA/image104.jpg, id=830, 1335.99126pt x 1001.7425pt>
 File: images/anomalien/HA/image104.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image104.jpg>
-Package pdftex.def Info: images/anomalien/HA/image104.jpg  used on input line 1
-94.
+Package pdftex.def Info: images/anomalien/HA/image104.jpg  used on input line 2
+12.
 (pdftex.def)             Requested size: 77.84775pt x 58.35942pt.
-<images/anomalien/HA/image157.jpg, id=779, 391.4625pt x 521.95pt>
+<images/anomalien/HA/image157.jpg, id=831, 391.4625pt x 521.95pt>
 File: images/anomalien/HA/image157.jpg Graphic file (type jpg)
 <use images/anomalien/HA/image157.jpg>
-Package pdftex.def Info: images/anomalien/HA/image157.jpg  used on input line 1
-97.
+Package pdftex.def Info: images/anomalien/HA/image157.jpg  used on input line 2
+15.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/IMG_20181209_160502.jpg, id=780, 626.34pt x 835.12pt>
+<images/anomalien/HA/IMG_20181209_160502.jpg, id=832, 626.34pt x 835.12pt>
 File: images/anomalien/HA/IMG_20181209_160502.jpg Graphic file (type jpg)
 <use images/anomalien/HA/IMG_20181209_160502.jpg>
 Package pdftex.def Info: images/anomalien/HA/IMG_20181209_160502.jpg  used on i
-nput line 200.
+nput line 218.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HA/n02085620_952.jpg, id=781, 417.56pt x 531.9875pt>
+<images/anomalien/HA/n02085620_952.jpg, id=833, 417.56pt x 531.9875pt>
 File: images/anomalien/HA/n02085620_952.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02085620_952.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02085620_952.jpg  used on input l
-ine 206.
+ine 224.
 (pdftex.def)             Requested size: 77.84775pt x 99.17918pt.
-<images/anomalien/HA/n02088466_9359.jpg, id=782, 220.825pt x 220.825pt>
+<images/anomalien/HA/n02088466_9359.jpg, id=834, 220.825pt x 220.825pt>
 File: images/anomalien/HA/n02088466_9359.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02088466_9359.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02088466_9359.jpg  used on input 
-line 209.
+line 227.
 (pdftex.def)             Requested size: 62.27843pt x 62.27534pt.
-<images/anomalien/HA/n02088466_9691.jpg, id=783, 501.875pt x 376.40625pt>
+<images/anomalien/HA/n02088466_9691.jpg, id=835, 501.875pt x 376.40625pt>
 File: images/anomalien/HA/n02088466_9691.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02088466_9691.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02088466_9691.jpg  used on input 
-line 212.
+line 230.
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HA/n02089078_4544.jpg, id=784, 427.5975pt x 415.5525pt>
+<images/anomalien/HA/n02089078_4544.jpg, id=836, 427.5975pt x 415.5525pt>
 File: images/anomalien/HA/n02089078_4544.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02089078_4544.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02089078_4544.jpg  used on input 
-line 215.
+line 233.
 (pdftex.def)             Requested size: 77.84775pt x 75.65222pt.
-<images/anomalien/HA/n02091032_12113.jpg, id=785, 501.875pt x 426.59375pt>
+<images/anomalien/HA/n02091032_12113.jpg, id=837, 501.875pt x 426.59375pt>
 File: images/anomalien/HA/n02091032_12113.jpg Graphic file (type jpg)
 <use images/anomalien/HA/n02091032_12113.jpg>
 Package pdftex.def Info: images/anomalien/HA/n02091032_12113.jpg  used on input
- line 218.
+ line 236.
 (pdftex.def)             Requested size: 77.84775pt x 66.1669pt.
 
-Underfull \hbox (badness 3579) in paragraph at lines 220--220
+Underfull \hbox (badness 2359) in paragraph at lines 238--238
 [][][]\T1/cmr/m/n/10.95 Auftretende Farb-an-oma-li-en in den drei Da-ten-sät-ze
 n durch den
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--220
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
 \T1/cmr/m/n/10.95 Histogramm-Ausgleich. Oben: PascalVOC-Datensatz, Mit-te:
  []
 
-<images/anomalien/HS/007911.jpg, id=786, 501.875pt x 499.8675pt>
+<images/anomalien/HS/007911.jpg, id=838, 501.875pt x 499.8675pt>
 File: images/anomalien/HS/007911.jpg Graphic file (type jpg)
 <use images/anomalien/HS/007911.jpg>
-Package pdftex.def Info: images/anomalien/HS/007911.jpg  used on input line 227
+Package pdftex.def Info: images/anomalien/HS/007911.jpg  used on input line 251
 .
 (pdftex.def)             Requested size: 77.84775pt x 77.53204pt.
-<images/anomalien/HS/007935.jpg, id=787, 501.875pt x 376.40625pt>
+<images/anomalien/HS/007935.jpg, id=839, 501.875pt x 376.40625pt>
 File: images/anomalien/HS/007935.jpg Graphic file (type jpg)
 <use images/anomalien/HS/007935.jpg>
-Package pdftex.def Info: images/anomalien/HS/007935.jpg  used on input line 230
+Package pdftex.def Info: images/anomalien/HS/007935.jpg  used on input line 254
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HS/008085.jpg, id=788, 501.875pt x 283.0575pt>
+<images/anomalien/HS/008085.jpg, id=840, 501.875pt x 283.0575pt>
 File: images/anomalien/HS/008085.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008085.jpg>
-Package pdftex.def Info: images/anomalien/HS/008085.jpg  used on input line 233
+Package pdftex.def Info: images/anomalien/HS/008085.jpg  used on input line 257
 .
 (pdftex.def)             Requested size: 77.84775pt x 43.90369pt.
-<images/anomalien/HS/008103.jpg, id=789, 501.875pt x 375.4025pt>
+<images/anomalien/HS/008103.jpg, id=841, 501.875pt x 375.4025pt>
 File: images/anomalien/HS/008103.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008103.jpg>
-Package pdftex.def Info: images/anomalien/HS/008103.jpg  used on input line 236
+Package pdftex.def Info: images/anomalien/HS/008103.jpg  used on input line 260
 .
 (pdftex.def)             Requested size: 77.84775pt x 58.22688pt.
-<images/anomalien/HS/008112.jpg, id=790, 501.875pt x 299.1175pt>
+<images/anomalien/HS/008112.jpg, id=842, 501.875pt x 299.1175pt>
 File: images/anomalien/HS/008112.jpg Graphic file (type jpg)
 <use images/anomalien/HS/008112.jpg>
-Package pdftex.def Info: images/anomalien/HS/008112.jpg  used on input line 239
+Package pdftex.def Info: images/anomalien/HS/008112.jpg  used on input line 263
 .
 (pdftex.def)             Requested size: 77.84775pt x 46.39467pt.
-<images/anomalien/HS/image157.jpg, id=791, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image157.jpg, id=843, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image157.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image157.jpg>
 Package pdftex.def Info: images/anomalien/HS/image157.jpg  used on input line 2
-45.
+69.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/image159.jpg, id=792, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image159.jpg, id=844, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image159.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image159.jpg>
 Package pdftex.def Info: images/anomalien/HS/image159.jpg  used on input line 2
-48.
+72.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/image160.jpg, id=793, 521.95pt x 391.4625pt>
+<images/anomalien/HS/image160.jpg, id=845, 521.95pt x 391.4625pt>
 File: images/anomalien/HS/image160.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image160.jpg>
 Package pdftex.def Info: images/anomalien/HS/image160.jpg  used on input line 2
-51.
+75.
 (pdftex.def)             Requested size: 77.84775pt x 58.38234pt.
-<images/anomalien/HS/image240.jpg, id=794, 391.4625pt x 521.95pt>
+<images/anomalien/HS/image240.jpg, id=846, 391.4625pt x 521.95pt>
 File: images/anomalien/HS/image240.jpg Graphic file (type jpg)
 <use images/anomalien/HS/image240.jpg>
 Package pdftex.def Info: images/anomalien/HS/image240.jpg  used on input line 2
-54.
+78.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/IMG_20181209_160802.jpg, id=795, 626.34pt x 835.12pt>
+<images/anomalien/HS/IMG_20181209_160802.jpg, id=847, 626.34pt x 835.12pt>
 File: images/anomalien/HS/IMG_20181209_160802.jpg Graphic file (type jpg)
 <use images/anomalien/HS/IMG_20181209_160802.jpg>
 Package pdftex.def Info: images/anomalien/HS/IMG_20181209_160802.jpg  used on i
-nput line 257.
+nput line 281.
 (pdftex.def)             Requested size: 77.84775pt x 103.79082pt.
-<images/anomalien/HS/n02085620_1620.jpg, id=796, 501.875pt x 376.40625pt>
+<images/anomalien/HS/n02085620_1620.jpg, id=848, 501.875pt x 376.40625pt>
 File: images/anomalien/HS/n02085620_1620.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085620_1620.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085620_1620.jpg  used on input 
-line 263.
+line 287.
 (pdftex.def)             Requested size: 77.84775pt x 58.38257pt.
-<images/anomalien/HS/n02085620_2188.jpg, id=797, 376.40625pt x 501.875pt>
+<images/anomalien/HS/n02085620_2188.jpg, id=849, 376.40625pt x 501.875pt>
 File: images/anomalien/HS/n02085620_2188.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085620_2188.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085620_2188.jpg  used on input 
-line 266.
+line 290.
 (pdftex.def)             Requested size: 62.27843pt x 83.03554pt.
-<images/anomalien/HS/n02085782_1503.jpg, id=798, 216.81pt x 289.08pt>
+<images/anomalien/HS/n02085782_1503.jpg, id=850, 216.81pt x 289.08pt>
 File: images/anomalien/HS/n02085782_1503.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085782_1503.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085782_1503.jpg  used on input 
-line 269.
+line 293.
 (pdftex.def)             Requested size: 77.84775pt x 103.79523pt.
-<images/anomalien/HS/n02085782_1626.jpg, id=799, 621.32124pt x 496.85625pt>
+<images/anomalien/HS/n02085782_1626.jpg, id=851, 621.32124pt x 496.85625pt>
 File: images/anomalien/HS/n02085782_1626.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02085782_1626.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02085782_1626.jpg  used on input 
-line 272.
+line 296.
 (pdftex.def)             Requested size: 77.84775pt x 62.25092pt.
-<images/anomalien/HS/n02088094_1406.jpg, id=800, 331.2375pt x 501.875pt>
+<images/anomalien/HS/n02088094_1406.jpg, id=852, 331.2375pt x 501.875pt>
 File: images/anomalien/HS/n02088094_1406.jpg Graphic file (type jpg)
 <use images/anomalien/HS/n02088094_1406.jpg>
 Package pdftex.def Info: images/anomalien/HS/n02088094_1406.jpg  used on input 
-line 275.
+line 299.
 (pdftex.def)             Requested size: 77.84775pt x 117.94829pt.
 
-Underfull \hbox (badness 4416) in paragraph at lines 277--277
+Underfull \hbox (badness 3000) in paragraph at lines 301--301
 [][][]\T1/cmr/m/n/10.95 Auftretende Farb-an-oma-li-en in den drei Da-ten-sät-ze
 n durch die
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--277
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
 \T1/cmr/m/n/10.95 Histogramm-Spezifikation. Oben: PascalVOC-Datensatz, Mit-te:
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.IV}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \include{chapter/anhang}
-                              [4 <./Sources/Bild1_HS.jpg> <./Sources/Bild1_HS.p
-ng> <./Sources/Bild1_HS_histo.png> <./Sources/Bild2_HS.jpg> <./Sources/Bild2_HS
-.png> <./Sources/Bild2_HS_histo.png> <./Sources/Bild3_HS.jpg> <./Sources/Bild3_
-HS.png> <./Sources/Bild3_HS_histo.png>]pdfTeX warning (ext4): destination with 
-the same identifier (name{page.V}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.78 \include{chapter/anhang}
-                              [5 <./Sources/Anhang/resize_0250.jpg> <./Sources/
-Anhang/resize_0250.png> <./Sources/Anhang/resize_0250_GW.jpg> <./Sources/Anhang
-/resize_0250_GW.png> <./Sources/Anhang/resize_0250_HA.jpg> <./Sources/Anhang/re
-size_0250_HA.png> <./Sources/Anhang/resize_0250_HS.jpg> <./Sources/Anhang/resiz
-e_0250_HS.png>] [6 <./images/anomalien/HA/000613.jpg> <./images/anomalien/HA/00
-0750.jpg> <./images/anomalien/HA/000777.jpg> <./images/anomalien/HA/001608.jpg>
- <./images/anomalien/HA/003339.jpg> <./images/anomalien/HA/image41.jpg> <./imag
-es/anomalien/HA/image67.jpg> <./images/anomalien/HA/image104.jpg> <./images/ano
-malien/HA/image157.jpg> <./images/anomalien/HA/IMG_20181209_160502.jpg> <./imag
-es/anomalien/HA/n02085620_952.jpg> <./images/anomalien/HA/n02088466_9359.jpg> <
-./images/anomalien/HA/n02088466_9691.jpg> <./images/anomalien/HA/n02089078_4544
-.jpg> <./images/anomalien/HA/n02091032_12113.jpg>] [7 <./images/anomalien/HS/00
-7911.jpg> <./images/anomalien/HS/007935.jpg> <./images/anomalien/HS/008085.jpg>
- <./images/anomalien/HS/008103.jpg> <./images/anomalien/HS/008112.jpg> <./image
-s/anomalien/HS/image157.jpg> <./images/anomalien/HS/image159.jpg> <./images/ano
-malien/HS/image160.jpg> <./images/anomalien/HS/image240.jpg> <./images/anomalie
-n/HS/IMG_20181209_160802.jpg> <./images/anomalien/HS/n02085620_1620.jpg> <./ima
-ges/anomalien/HS/n02085620_2188.jpg> <./images/anomalien/HS/n02085782_1503.jpg>
- <./images/anomalien/HS/n02085782_1626.jpg> <./images/anomalien/HS/n02088094_14
-06.jpg>]
+) [5 <./Sources/Anhang/resize_0250.jpg> <./Sources/Anhang/resize_0250.png> <./S
+ources/Anhang/resize_0250_GW.jpg> <./Sources/Anhang/resize_0250_GW.png> <./Sour
+ces/Anhang/resize_0250_HA.jpg> <./Sources/Anhang/resize_0250_HA.png> <./Sources
+/Anhang/resize_0250_HS.jpg> <./Sources/Anhang/resize_0250_HS.png>] [6 <./images
+/anomalien/HA/000613.jpg> <./images/anomalien/HA/000750.jpg> <./images/anomalie
+n/HA/000777.jpg> <./images/anomalien/HA/001608.jpg> <./images/anomalien/HA/0033
+39.jpg> <./images/anomalien/HA/image41.jpg> <./images/anomalien/HA/image67.jpg>
+ <./images/anomalien/HA/image104.jpg> <./images/anomalien/HA/image157.jpg> <./i
+mages/anomalien/HA/IMG_20181209_160502.jpg> <./images/anomalien/HA/n02085620_95
+2.jpg> <./images/anomalien/HA/n02088466_9359.jpg> <./images/anomalien/HA/n02088
+466_9691.jpg> <./images/anomalien/HA/n02089078_4544.jpg> <./images/anomalien/HA
+/n02091032_12113.jpg>] [7 <./images/anomalien/HS/007911.jpg> <./images/anomalie
+n/HS/007935.jpg> <./images/anomalien/HS/008085.jpg> <./images/anomalien/HS/0081
+03.jpg> <./images/anomalien/HS/008112.jpg> <./images/anomalien/HS/image157.jpg>
+ <./images/anomalien/HS/image159.jpg> <./images/anomalien/HS/image160.jpg> <./i
+mages/anomalien/HS/image240.jpg> <./images/anomalien/HS/IMG_20181209_160802.jpg
+> <./images/anomalien/HS/n02085620_1620.jpg> <./images/anomalien/HS/n02085620_2
+188.jpg> <./images/anomalien/HS/n02085782_1503.jpg> <./images/anomalien/HS/n020
+85782_1626.jpg> <./images/anomalien/HS/n02088094_1406.jpg>]
 \openout2 = `chapter/eid.aux'.
 
  (chapter/eid.tex
@@ -2502,57 +2424,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
  (draft.aux (chapter/titelseite.aux) (chapter/abstract.aux)
 (chapter/inhaltsverzeichnis.aux) (chapter/vorwort.aux) (chapter/einleitung.aux)
 (chapter/theoretische_grundlagen.aux) (chapter/methodik_und_durchfuehrung.aux)
 (chapter/ergebnisse.aux) (chapter/diskussion.aux) (chapter/fazit.aux)
 (chapter/verzeichnisse.aux) (chapter/anhang.aux) (chapter/eid.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26679 strings out of 492895
- 490788 string characters out of 3123269
- 788712 words of memory out of 3000000
- 29691 multiletter control sequences out of 15000+200000
- 22058 words of font info for 47 fonts, out of 3000000 for 9000
+ 26688 strings out of 492895
+ 490900 string characters out of 3123269
+ 788714 words of memory out of 3000000
+ 29694 multiletter control sequences out of 15000+200000
+ 22734 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,87p,9103b,1256s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecsx2488.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
-n/ec/dpi600\ectt0900.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Agando\AppData\Local\M
-iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Agando\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\
-Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk>
+n/ec/dpi600\ectt1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Agando\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\Agando\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\
+Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk>
  <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\e
-csx1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecsx2074.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
-r/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Agando\AppData\Local\MiK
-TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Agando\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Ag
-ando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <
-C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
-m1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\eccc1728.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Agando/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Agando/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on draft.pdf (63 pages, 10980172 bytes).
+csx1440.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecti1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecsx2074.pk> <C:\Users\Agando\AppData\Local\MiK
+TeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Agando\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\Ag
+ando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <
+C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecc
+c1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm1728.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Agando\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\Agando\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk><C:/Users/Agando/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ag
+ando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Users/Agando/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Agando/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Agando/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on draft.pdf (63 pages, 11087314 bytes).
 PDF statistics:
- 1630 PDF objects out of 1728 (max. 8388607)
- 214 named destinations out of 1000 (max. 500000)
+ 1799 PDF objects out of 2073 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
  882 words of extra memory for PDF output out of 10000 (max. 10000000)
 
