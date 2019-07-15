@@ -87,6 +87,12 @@ Aditya Khosla, Nityananda Jayadevaprakash, Bangpeng Yao, and Li~Fei-Fei.
   June 2011. Aditya Khosla and Nityananda Jayadevaprakash and Bangpeng Yao and
   Li Fei-Fei.
 
+\bibitem[K{\"u}p17]{kuppers2017humanoide}
+EW~Udo K{\"u}ppers.
+\newblock {\em Die humanoide Herausforderung: Leben und Existenz in einer
+  anthropoz{\"a}nen Zukunft}.
+\newblock Springer, 2017.
+
 \bibitem[LLC18a]{google2018tensor}
 Google LLC.
 \newblock Bild 3b umschlossen, December 2018.
@@ -102,6 +108,12 @@ Google LLC.
 \bibitem[Mis19]{convolutional2019layer}
 Mayank Mishra.
 \newblock Convolutional neural networks, explained, March 2019.
+
+\bibitem[MP43]{McCulloch1943}
+Warren~S. McCulloch and Walter Pitts.
+\newblock A logical calculus of the ideas immanent in nervous activity.
+\newblock {\em The bulletin of mathematical biophysics}, 5(4):115--133, Dec
+  1943.
 
 \bibitem[oCSD18]{neuron2018UoC}
 University of~California San~Diego.
@@ -133,6 +145,10 @@ Computer science Wiki.
 \bibitem[Tzu19]{labelimg2019}
 Darrenl Tzutalin.
 \newblock labelimg, Juny 2019.
+
+\bibitem[up19]{farbmodell2019uni}
+uni protokolle.
+\newblock Yuv-farbmodell, April 2019.
 
 \bibitem[Wik19]{perzeptron2019}
 Wikipedia.
