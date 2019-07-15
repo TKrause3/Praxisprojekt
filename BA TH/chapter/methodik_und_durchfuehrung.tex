@@ -2,8 +2,8 @@
 \chapter{Methodik und Durchführung}\label{s.methudurchf}
 In diesem Kapitel werden die verwendeten Datensätze aufgeführt und die Umsetzung der Normalisierungsalgorithmen beschrieben.  
  \section{Vortrainierte Netze}\label{s.modell}
-Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) stellt eine Vielzahl an Datensätzen bereit mit denen neuronale Netze trainiert werden können. Bei den Datensäzen handelt es sich um unterschiedliche Objekte in verschiedenen Umgebungen.  
-Einige Netze welchem mit dem COCO datensätzen traniert wurden stehen als \textit{Open Source} zur Verfügung. Die folgende Tabelle \ref{tab:cocomodels} führt ausgewählte neuronale Netze auf, um die Genauigkeit und Geschwindigkeit vergleichen zu können, damit ein geeignetes Netz für die Versuche ausgewählt werden kann.
+Das Unternehmen COCO \cite{common2018data} (Common Objects in Contexts) stellt eine Vielzahl an Datensätzen bereit, mit denen neuronale Netze trainiert werden können. Bei den Datensätzen handelt es sich um unterschiedliche Objekte in verschiedenen Umgebungen.  
+Einige Netze, welche mit den COCO-Datensätzen trainiert wurden, stehen als \textit{Open Source} zur Verfügung. Die folgende Tabelle \ref{tab:cocomodels} führt ausgewählte neuronale Netze auf, um Genauigkeit und Geschwindigkeit vergleichen zu können, damit ein geeignetes Netz für die Versuche ausgewählt werden kann.
 \begin{table}
 [h]
 \caption{Künstliche neuronale Netze \cite{google2018tens}, welche mit dem COCO Dataset trainiert wurden \cite{common2018data}} 
@@ -21,12 +21,12 @@ ssd\_resnet\_50\_fpn\_coco & 35 & 76\\
 \hline
 \end{tabular}
 \end{table}
-Um die Auswirkungen der Normalisierung deutlich hervorheben zu können wurde bei der Auswahl des Netzes eins ausgewählt, welches eine recht niedrige mAP hat. Weshalb das faster\_rcnn\_inception\_v2\_coco ausgewählt wurde. Dieses hat eine \textit{mAP} von 28 und eine Geschwindigkeit von 32 ms. Dadurch, dass es die niedrigste \textit{mAP} hat, sollten die Auswirkungen, der Normalisierungsverfahren, in der Genauigkeit stärker ersichtlich werden. Das ausgewählte Netz wird im folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind, angewendet.
+Um die Auswirkungen der Normalisierung deutlich hervorheben zu können, wurde ein Netz ausgewählt, welches eine recht niedrige mAP hat. Deswegen wurde das faster\_rcnn\_inception\_v2\_coco ausgewählt. Es hat eine \textit{mAP} von 28 und eine Geschwindigkeit von 32 ms. Dadurch, dass es die niedrigste \textit{mAP} hat, sollten die Auswirkungen der Normalisierungsverfahren genauer erkennbar sein, als bei Netzen mit einer höheren mAP. Das ausgewählte Netz wird im Folgenden auf die Datensätze, welche im anschließenden Unterkapitel aufgeführt sind, angewendet.
   \section{Trainingsdaten}\label{s.tdaten}
-Wie bereits in Kapitel \ref{s.trainingsdaten} beschrieben werden zum trainiren eines neuronalen Netzes üblicherweise mehere hunderttaused Daten benötigt. Durch die Verwendung eines vortrainierten Netzes, werden für das trainieren der eigenen Klassen nur noch durchschnittlich 150 Bilder pro Objektklasse benötigt was die Trainingsdauer deutlich verkürzt. Die Bilder der eigenen Daten werden mit einer 13 Megapixel Kamera eines \textit{Huawei P Smart} aufgenommen. Die verwendeten Objekte werden von vielen verschiedenen Seiten aufgenommen. Da die Bilder erstellten Bilder mehrere Megabyte groß waren, müssten diese auf 100-300 KB komprimiert werden. Denn wie in späteren Test zeigen, die Laufzeiten der Algorithmen sich exponentiell verlängern, je größer das Bild ist.\\
-Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze vor den Versuch verwendet. Insgesamt werden die neuronalen Netze mit 3 unterschiedlichen Datensätzen trainiert. Dafür wurden 3 Datensätze heraus gesucht. Der erste Datensatz welcher getestet wird, ist der Nahrungsmittel Datensatz eines früheren Projektes, zum anderen der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Hunderassen Datensatz, Stanford Dog Dataset.\\
-In den folgenden Tabellen werden alle Datensätze mit den zugehörigen Klassen und Anzahl an Trainingsbildern aufgeführt:\\\\
-Der erste Datensatz besteht aus 6 Klassen welche in der Tabelle \ref{tab:nahrungsmittel} aufgeführt sind. Jede klasse besitzt um die 100-150 Bilder welche zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen (Kapitel \ref{s.trainingsdaten}) beinhalten. Dieser Datensatz ist mit seinen ca. 1.000 Bildern der kleinste Datensatz. 
+Wie bereits in Kapitel \ref{s.trainingsdaten} beschrieben, werden zum trainieren eines neuronalen Netzes üblicherweise mehrere hunderttaused Daten benötigt. Durch die Verwendung eines vortrainierten Netzes, werden für das Trainieren der eigenen Klassen nur noch durchschnittlich 150 Bilder pro Objektklasse benötigt. Das hat eine deutliche Verkürzung der Trainingsdauer zur Folge. Die Bilder der eigenen Daten werden mit einer 13-Megapixel-Kamera eines \textit{Huawei P Smart} aufgenommen. Die verwendeten Objekte werden von vielen verschiedenen Seiten aufgenommen. Da die erstellten Bilder mehrere Megabyte groß sind, müssen diese auf 100-300 KB komprimiert werden. Wie auch der Test später zeigen wird, verlängern sich die Laufzeiten der Algorithmen exponentiell, je größer das Bild ist.\\
+Damit am Ende des Projektes möglichst gute Vergleichswerte entstehen, werden mehrere Datensätze für den Versuch verwendet. Insgesamt werden die neuronalen Netze mit drei unterschiedlichen Datensätzen trainiert. Der erste Datensatz, welcher getestet wird, ist der Nahrungsmittel-Datensatz eines früheren Projektes, der Zweite der Datensatz von \textit{Pascal Visual Object Classes} (PascalVOC) und der Dritte der Hunderassen-Datensatz, Stanford Dog Dataset.\\
+In den folgenden Tabellen werden alle Datensätze mit den dazugehörigen Klassen aufgeführt:\\\\
+Der erste Datensatz besteht aus sechs Klassen, welche in der Tabelle \ref{tab:nahrungsmittel} aufgeführt sind. Jede Klasse besitzt um die 100-150 Bilder, die zusätzlich Annotations-Dateien mit den Koordinaten der Klassifizierungsboxen (Kapitel \ref{s.trainingsdaten}) beinhalten. Dieser Datensatz ist mit seinen ca. 1.000 Bildern der kleinste Datensatz. 
 \begin{table}
 [h]
 \caption{Datensatz mit Nahrungsmitteln}
@@ -42,7 +42,7 @@ Brunch - Aufstrich & Margarine - Aufstrich\\
 \end{tabular}
 \label{tab:nahrungsmittel}
 \end{table}
-Der PascalVOC-Datensatz umfasst 20 Klassen und besteht aus 5.000 Bildern. Von 2005 bis 2012 wurde jährlich die PascalVOC-Challenge durchgeführt. Dabei sollte das beste Verfahren für die Segmentierung, Klassifikation und Objekterkennung ermittelt werden. Inhaltlich befasst sich der Datensatz mit einer Reihe unterschiedlicher Klassen, welche in Tabelle \ref{tab:pvoc} zu erkennen sind. Es gibt einige Unterschiede in der Häufigkeit der auftretenden Klassen. Beispielsweise sind in rund 2.000 Bildern insgesamt 4.690 Personen enthalten, weswegen es möglicherweise Unterschiede in der Genauigkeit, der Klassen geben könnte. Die Aufnahmen der Bilder sind thematisch und von der Art der Aufnahme unstrukturiert, was bedeutet, dass teilweise Bilder von einzelnen Objekten, Gruppen von Objekten oder auch ganze Szenen enthalten sind.
+Der PascalVOC-Datensatz umfasst 20 Klassen und besteht aus 5.000 Bildern. Von 2005 bis 2012 wurde jährlich die PascalVOC-Challenge durchgeführt. Dabei sollte das beste Verfahren für die Segmentierung, Klassifikation und Objekterkennung ermittelt werden. Inhaltlich befasst sich der Datensatz mit einer Reihe unterschiedlicher Klassen, welche in Tabelle \ref{tab:pvoc} zu erkennen sind. Es gibt einige Unterschiede in der Häufigkeit der auftretenden Klassen. Beispielsweise sind in rund 2.000 Bildern insgesamt 4.690 Personen enthalten, weswegen es möglicherweise Unterschiede in der Genauigkeit der Klassen geben könnte. Die Aufnahmen der Bilder sind thematisch und von der Art der Aufnahme unstrukturiert, was bedeutet, dass teilweise Bilder von einzelnen Objekten, Gruppen von Objekten oder auch ganze Szenen enthalten sind.
 \begin{table}
 [h]
 \caption{Pascal Visual Object Classes \cite{pascal-voc-2007}}
@@ -78,12 +78,12 @@ Redbone & Borzoi & Irish Wolfhound & Italian Greyhound\\
 \hline
 \end{tabular}
 \end{table}
-Von der Struktur der Datensätze sind sie ähnlich aufgebaut. Viele verschiedene Klassen mit verschiedenen Szenen und Kontexten. Imweiteren wird zunächst auf die Umsetzung der Normalisierungsverfahren eingegangen, um weitere Erkenntnisse zu erlangen.
-\section{Normalisierung-Algorithmen}\label{s.nalgorithmen}
-Für die Normalisierung der Datensätze ist eine Methode nötig, um mehrere Bilder möglichst schnell hintereinander zu bearbeiten. Für die Normalisierung wurden Python-Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus verarbeitet. Dafür wurde mit unter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das Verarbeiten von Bildern benötigt. 
+Die Struktur der Datensätze ist ähnlich aufgebaut. Das heißt, viele verschiedene Klassen mit verschiedenen Szenen und Kontexten. Im Folgenden wird zunächst auf die Umsetzung der Normalisierungsverfahren eingegangen, um weitere Erkenntnisse zu erlangen.
+\section{Normalisierungs-Algorithmen}\label{s.nalgorithmen}
+Für die Normalisierung der Datensätze ist eine Methode nötig, mit der mehrere Bilder möglichst schnell hintereinander bearbeitet werden können. Für die Normalisierung wurden Python-Programme geschrieben, welche nacheinander die Bilder, anhand eines Algorithmus, verarbeiten. Dafür wurden mitunter die \textit{Python Image Libary} und OpenCV genutzt. Beide Bibliotheken werden für das Verarbeiten von Bildern benötigt. 
 \newpage
 \subsection{Gray-World-Algorithmus} 
-Im folgenden wird der Codeblock für den Gray world Algorithmus aufgeführt, wie er in den Versuchen verwendet wurde.\\
+Im Folgenden wird der Codeblock für den Gray-World-Algorithmus aufgeführt, wie er in den Versuchen verwendet wurde.\\
 \begin{lstlisting}
 image = cv.imread(i, 1)
 image = image.transpose(2, 0, 1).astype(np.uint32)
@@ -92,24 +92,24 @@ image[0] = np.minimum(image[0]*(avgGreen/np.average(image[0])),255)
 image[2] = np.minimum(image[2]*(avgGreen/np.average(image[2])),255)
 img_output = image.transpose(1, 2, 0).astype(np.uint8)
 \end{lstlisting}
-Der Gray-World-Algorithmus \cite{gray2012world}, welcher verwendet wird, funktioniert etwas anders als in den Grundlagen beschrieben. Für die Normalisierung der Kanäle wird der Durchschnitt des Grünkanal verwendet, da diese Farbe wichtig für das Helligkeitsempfinden ist. Zunächst wird in Zeile 1, das zu normalisierende Bild mittels OpenCV importiert. In der Zeile 2 wird der Farbraun des Bildes in 32 Bit umgewandelt. Daraufhin wird in Zeile 6 der Durchschnittswert des Grünkanals berechnet und zwischengespeichert. In der Zeile 8 wird der Grün-Kanal nun mit dem Durchschnitt des Rot-Kanals dividiert und anschließend mit dem Minimum des Rot-Kanals multipliziert und übernommen. Der gleiche Vorgang folgt mit dem Blau-Kanal in Zeile 10. Abschließend wird das bearbeitete Bild in 8 Bit gewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). 
+???Der Gray-World-Algorithmus \cite{gray2012world}, welcher hier verwendet wird, funktioniert etwas anders, als in den Grundlagen beschrieben. Für die Normalisierung der Kanäle wird der Durchschnitt des Grünkanals verwendet, da diese Farbe wichtig für das Helligkeitsempfinden ist. Zunächst wird in Zeile 1, das zu normalisierende Bild mittels OpenCV importiert. In der Zeile 2 wird der Farbraum des Bildes in 32 Bit umgewandelt. Daraufhin wird in Zeile 6 der Durchschnittswert des Grünkanals berechnet und zwischengespeichert. In der Zeile 8 wird der Grünkanal nun mit dem Durchschnitt des Rotkanals dividiert und anschließend mit dem Minimum des Rotkanals multipliziert und übernommen. Der gleiche Vorgang erfolgt mit dem Blaukanal in Zeile 10. Abschließend wird das bearbeitete Bild in 8 Bit umgewandelt und ausgegeben (Abbildung \ref{img:gwnimg}). 
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.6]{Sources/gwn.png}
-	\caption{Auswirkung des Gray-World Algorithmus}
+	\caption{Auswirkung des Gray-World-Algorithmus}
 	\label{img:gwnimg}
 \end{figure}
 \newpage
-\subsubsection{Histogramm Ausgleich}
-Weiter geht es mit dem ersten Histogramm normalisierungsverfahren, der Histogramm Ausgleichung. Dieser wird im folgenden aufgeführt und beschrieben.\\
+\subsubsection{Histogramm-Ausgleich}
+Weiter geht es mit dem ersten Histogramm-Normalisierungsverfahren, der Histogramm-Ausgleichung. Diese wird im Folgenden aufgeführt und beschrieben.\\
 \begin{lstlisting}
 image = cv.imread('input.jpg')
 image_yuv = cv.cvtColor(image, cv.COLOR_BGR2YUV)
 image_yuv[:,:,0] = cv.equalizeHist(image_yuv[:,:,0])
 img_output = cv.cvtColor(image_yuv, cv.COLOR_YUV2BGR)
 \end{lstlisting}
-Für die Histogramm-Ausgleichung \cite{histogram2012equalisation} wird das Bild in Zeile 3 vom BGR Farbraum in den YUV Farbraum (Unterabschnitt \ref{s.lab} umgewandelt. Der Y-Kanal wird für die Histogramm-Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. In Zeile 4 wird das Histogramm des Y-Kanals, wie in Abschnitt \ref{s.histogramme} beschrieben, ausgeglichen. Das normalisierte Bild wird von dem YUV-Farbraum zurück in den BGR-Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
+Für die Histogramm-Ausgleichung \cite{histogram2012equalisation} wird das Bild in Zeile 3 vom BGR-Farbraum in den YUV-Farbraum (Unterabschnitt \ref{s.lab} umgewandelt. Der Y-Kanal wird für die Histogramm-Ausgleichung verwendet. Das hat den Grund, dass das Luminanzsignal oder auch Leuchtdichte-Signal die Summe der drei Grundfarben Rot Grün und Blau und die Helligkeitsinformation enthält. In Zeile 4 wird das Histogramm des Y-Kanals, wie in Abschnitt \ref{s.histogramme} beschrieben, ausgeglichen. Das normalisierte Bild wird von dem YUV-Farbraum zurück in den BGR-Farbraum konvertiert und zwischengespeichert. Das Ergebnis wird als Bild ausgegeben (Abbildung \ref{img:histogrameq}).
 \begin{figure}
 	[h]
 	\centering
@@ -119,17 +119,17 @@ Für die Histogramm-Ausgleichung \cite{histogram2012equalisation} wird das Bild 
 \end{figure}	
 \newpage
 \subsection{Histogramm-Spezifikation}
-Der letzte Algorithmus welcher geprüft wird, ist die Histogramm Spezifikation. Hier wird kurz auf die Umsetzung und einem Beispielergebnis eingegangen.\\
+Der letzte Algorithmus, welcher geprüft wird, ist die Histogramm-Spezifikation. Hier wird kurz auf die Umsetzung und ein Beispielergebnis eingegangen.\\
 \begin{lstlisting}
 reference_image = io.imread('reference_image.jpg')
 source_image = io.imread('source_image.jpg')
 matched_image = match_histograms(source_image, reference_image, multichannel=True)
 \end{lstlisting}
-Die dritte Normalisierungsfunktion, welche für die Datensätze angewendet wird, ist die Histogramm-Spezifikation (Unterabschnitt \ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python-Bibliothek \textit{Scikit-image} verwendet. Dafür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder, werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, das dass Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild eine wesentlich bessere Helligkeit aufweist. Die Problematik bei dieser Normalisierungs-Methode besteht darin, dass ein einheitliches Referenzbild genutzt werden muss, auf welchem dann der gesamte Datensatz normalisiert wird.
+Die dritte Normalisierungsfunktion, die auf die Datensätze angewendet wird, ist die Histogramm-Spezifikation (Unterabschnitt \ref{s.hs}) oder auch \textit{Histogramm Matching}. Für den Algorithmus wird die Python-Bibliothek \textit{Scikit-image} verwendet. Hierfür werden ein Referenzbild und ein Zielbild geladen. Diese beiden Bilder werden mit der Funktion \textit{match\_histograms} verarbeitet. Das Zielbild wurde auf das Histogramm des Referenzbildes angepasst. In dem Beispiel \ref{img:histogramspez} kann man gut erkennen, dass das Quellbild, welches stark verdunkelt ist, durch ein gut ausgeleuchtetes Referenzbild, eine wesentlich bessere Helligkeit aufweist. Die Problematik bei dieser Normalisierungs-Methode besteht darin, dass ein einheitliches Referenzbild genutzt werden muss, auf welchem dann der gesamte Datensatz normalisiert wird.
 \begin{figure}
 	[h]
 	\centering
 	\includegraphics[scale=0.6]{Sources/HS_beispiel.png}
-	\caption{Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation}
+	\caption{Das Zielbild wurde mithilfe des Referenzbildes ausgeglichen und angepasst. Auf der linken Seite ist das Ergebnis der Spezifikation.}
 	\label{img:histogramspez}
 \end{figure}
