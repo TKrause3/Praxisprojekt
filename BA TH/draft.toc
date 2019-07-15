@@ -5,40 +5,40 @@
 \contentsline {section}{\numberline {1.2}Erl\IeC {\"a}uterung der These}{3}{section.1.2}% 
 \contentsline {section}{\numberline {1.3}Anforderungen}{3}{section.1.3}% 
 \contentsline {section}{\numberline {1.4}Struktur der Arbeit}{4}{section.1.4}% 
-\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{5}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Digitale Bilder}{5}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Farbr\IeC {\"a}ume digitaler Bilder}{6}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Histogramme}{7}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Einfluss von Belichtungen}{9}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}K\IeC {\"u}nstliche Intelligenz}{10}{section.2.2}% 
-\contentsline {section}{\numberline {2.3}Neuronale Netze}{11}{section.2.3}% 
-\contentsline {subsubsection}{\nonumberline Funktionsweise k\IeC {\"u}nstlicher und faltender neuronaler Netze}{17}{section*.4}% 
-\contentsline {subsection}{\numberline {2.3.1}Entstehung von Trainingsdaten}{19}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Mean average Precision}{20}{subsection.2.3.2}% 
-\contentsline {section}{\numberline {2.4}Arten der Farbnormalisierung}{21}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Ansatz des Gray-World-Algorithmus}{21}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Ansatz der Histogramm-Ausgleichung}{22}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}Ansatz der Histogramm-Spezifikation}{24}{subsection.2.4.3}% 
-\contentsline {chapter}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{27}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Vortrainierte Netze}{27}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Trainingsdaten}{27}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Normalisierungs-Algorithmen}{29}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{30}{subsection.3.3.1}% 
-\contentsline {subsubsection}{\nonumberline Histogramm-Ausgleich}{31}{section*.5}% 
-\contentsline {subsection}{\numberline {3.3.2}Histogramm-Spezifikation}{32}{subsection.3.3.2}% 
-\contentsline {chapter}{\numberline {4}Ergebnisse}{33}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{33}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Nahrungsmittel-Datensatz}{34}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}PascalVOC Datensatz}{34}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}Stanford Dogs Dataset}{35}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}Zwischenstand}{36}{section.4.5}% 
-\contentsline {section}{\numberline {4.6}Obst-Datensatz}{38}{section.4.6}% 
-\contentsline {section}{\numberline {4.7}Auswertung des Obst-Datensatzes}{38}{section.4.7}% 
-\contentsline {chapter}{\numberline {5}Diskussion}{40}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Datens\IeC {\"a}tze und Netze}{40}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Laufzeittest}{41}{section.5.2}% 
-\contentsline {chapter}{\numberline {6}Fazit}{42}{chapter.6}% 
-\contentsline {chapter}{Abbildungsverzeichnis}{46}{chapter*.6}% 
-\contentsline {chapter}{Tabellenverzeichnis}{47}{chapter*.7}% 
-\contentsline {chapter}{Literaturverzeichnis}{49}{chapter*.8}% 
+\contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{6}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Digitale Bilder}{6}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Farbr\IeC {\"a}ume digitaler Bilder}{7}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Histogramme}{8}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Einfluss von Belichtungen}{10}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}K\IeC {\"u}nstliche Intelligenz}{11}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Neuronale Netze}{12}{section.2.3}% 
+\contentsline {subsubsection}{\nonumberline Funktionsweise k\IeC {\"u}nstlicher und faltender neuronaler Netze}{18}{section*.4}% 
+\contentsline {subsection}{\numberline {2.3.1}Entstehung von Trainingsdaten}{20}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Mean average Precision}{21}{subsection.2.3.2}% 
+\contentsline {section}{\numberline {2.4}Arten der Farbnormalisierung}{22}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Ansatz des Gray-World-Algorithmus}{22}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Ansatz der Histogramm-Ausgleichung}{23}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Ansatz der Histogramm-Spezifikation}{25}{subsection.2.4.3}% 
+\contentsline {chapter}{\numberline {3}Methodik und Durchf\IeC {\"u}hrung}{28}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Vortrainierte Netze}{28}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Trainingsdaten}{28}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Normalisierungs-Algorithmen}{30}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Gray-World-Algorithmus}{31}{subsection.3.3.1}% 
+\contentsline {subsubsection}{\nonumberline Histogramm-Ausgleich}{32}{section*.5}% 
+\contentsline {subsection}{\numberline {3.3.2}Histogramm-Spezifikation}{33}{subsection.3.3.2}% 
+\contentsline {chapter}{\numberline {4}Ergebnisse}{34}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Frameworks und Entwicklungsumgebung}{34}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Nahrungsmittel-Datensatz}{35}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}PascalVOC Datensatz}{35}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Stanford Dogs Dataset}{36}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Zwischenstand}{37}{section.4.5}% 
+\contentsline {section}{\numberline {4.6}Obst-Datensatz}{39}{section.4.6}% 
+\contentsline {section}{\numberline {4.7}Auswertung des Obst-Datensatzes}{39}{section.4.7}% 
+\contentsline {chapter}{\numberline {5}Diskussion}{41}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Datens\IeC {\"a}tze und Netze}{41}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Laufzeittest}{42}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}Fazit}{43}{chapter.6}% 
+\contentsline {chapter}{Abbildungsverzeichnis}{47}{chapter*.6}% 
+\contentsline {chapter}{Tabellenverzeichnis}{48}{chapter*.7}% 
+\contentsline {chapter}{Literaturverzeichnis}{50}{chapter*.8}% 
 \contentsline {chapter}{ANHANG}{I}{section*.9}% 
