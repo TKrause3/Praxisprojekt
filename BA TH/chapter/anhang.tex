@@ -1,25 +1,17 @@
 %!TEX root = ../draft.tex
 
 \begin{appendices}
-% \adjustmtc 
+%\adjustmtc 
 \renewcommand{\appendixname}{ANHANG}
 \renewcommand{\appendixtocname}{\appendixname} 
 \addappheadtotoc 
 
-\renewcommand\appendix{\par 
-\setcounter{section}{0}% 
-\setcounter{subsection}{0}% 
-\setcounter{figure}{0}% 
-
-\renewcommand\thesection{\Alph{section}}% 
-\renewcommand\thefigure{\Alph{section}\arabic{figure}}} 
-
-\numberwithin{table}{section} 
-\numberwithin{figure}{section} 
-
 % \begin{mtchideinmaintoc}[0]   %  [-1] Den folgenden Inhalt nicht im großen Inhaltsverzeichnis zeigen, [0] ab Chapter im großen Inhaltsverzeichnis anzeigen
 
 \part*{Anhang}
+\chapter{Vergleichs- und Beispielbilder}
+\section*{Histogramm-Ausgleich}
+In diesem Versuch, wurde ein Objekt auf verschiedenen Hintergründen aufgenommen. Dabei ist Raus gekommen, dass die Umgebung einen entscheidenden Einfluss auf das Ergebnis des Histogramm-Ausgleichs hat. Erkennbar an der Farbveränderung.
 \begin{figure}[htb]
 \begin{minipage}[c]{0.2\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild1_HA.jpg}
@@ -62,6 +54,8 @@
 \label{img:evalHA}
 \end{figure}
 \newpage
+\section*{Gray-World-Algorithmus}
+In diesem Versuch, wurde ein Objekt auf verschiedenen Hintergründen aufgenommen. Beim Gray-World Algorithmus sind kaum Veränderungen der unterschiedlichen Bilder aufgefallen. Dieses Verfahren wird nicht viel von der Umgebung beeinflusst.
 \begin{figure}[htb]
 \begin{minipage}[c]{0.2\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild1_GW.jpg}
@@ -104,6 +98,8 @@
 \label{img:evalGW}
 \end{figure}
 \newpage
+\section*{Histogramm-Spezifikation}
+In diesem Versuch, wurde ein Objekt auf verschiedenen Hintergründen aufgenommen. Dabei ist aufgefallen, dass die Umgebung und das Referenzbild einen entscheidenden Einfluss auf das Ergebnis der Histogramm-Spezifikation hat. Erkennbar an der Farbveränderung.
 \begin{figure}[htb]
 \begin{minipage}[c]{0.2\textwidth}
 \includegraphics[width=\textwidth]{Sources/Bild1_HS.jpg}
@@ -172,14 +168,13 @@
 \begin{minipage}{0.49\textwidth}
 \includegraphics[width=\textwidth]{Sources/Anhang/resize_0250_HS.png}
 \end{minipage}
-\caption{Helligkeitsverteilung der Bilder welche mit den Normalisierungsmethoden normalisiert wurden. Besonders gute Ergebnisse sind beim Histogramm-Ausgleich und der Histogramm-Spezifizierung zu erkennen}
+\caption{Helligkeitsverteilung der Bilder welche mit den Normalisierungsmethoden normalisiert wurden. Besonders gute Ergebnisse sind beim Histogramm-Ausgleich und der Histogramm-Spezifizierung zu erkennen.}
 \label{img:hellver}
 \end{figure}
-\newpage
 \begin{figure}[htb]
 \center
 \begin{minipage}{\textwidth}
-In der Folgenden Abbildung, sind verschiedene Beispiele der Farbanomalien zu sehen, welche beim Histogramm-Ausgleich des Nahrungsmittel-, PascalVOC- und Satanford Dogs-Datensatzes aufgetreten sind.
+In der folgenden Abbildung sind verschiedene Beispiele mit Farbanomalien zu sehen, welche beim Histogramm-Ausgleich des Nahrungsmittel-, PascalVOC- und Satanford Dogs-Datensatzes aufgetreten sind.
 \end{minipage}
 \begin{minipage}{\textwidth}
 \hspace{\textwidth}
@@ -242,25 +237,25 @@ In der Folgenden Abbildung, sind verschiedene Beispiele der Farbanomalien zu seh
 \begin{figure}[htb]
 \center
 \begin{minipage}{\textwidth}
-In der Folgenden Abbildung, sind verschiedene Beispiele der Farbanomalien zu sehen, welche bei der Histogramm-Spezifikation des Nahrungsmittel-, PascalVOC- und Satanford Dogs-Datensatzes aufgetreten sind.
+In der folgenden Abbildung sind verschiedene Beispiele mit Farbanomalien zu sehen, welche bei der Histogramm-Spezifikation des Nahrungsmittel-, PascalVOC- und Satanford Dogs-Datensatzes aufgetreten sind.
 \end{minipage}
 \begin{minipage}{\textwidth}
 \hspace{\textwidth}
 \end{minipage}
 \begin{minipage}{0.19\textwidth}
-\includegraphics[width=\textwidth]{images/anomalien/HS/007911.jpg}
+\includegraphics[width=\textwidth]{images/anomalien/HS/000174.jpg}
 \end{minipage}
 \begin{minipage}{0.19\textwidth}
-\includegraphics[width=\textwidth]{images/anomalien/HS/007935.jpg}
+\includegraphics[width=\textwidth]{images/anomalien/HS/000177.jpg}
 \end{minipage}
 \begin{minipage}{0.19\textwidth}
-\includegraphics[width=\textwidth]{images/anomalien/HS/008085.jpg}
+\includegraphics[width=\textwidth]{images/anomalien/HS/000344.jpg}
 \end{minipage}
 \begin{minipage}{0.19\textwidth}
-\includegraphics[width=\textwidth]{images/anomalien/HS/008103.jpg}
+\includegraphics[width=\textwidth]{images/anomalien/HS/000454.jpg}
 \end{minipage}
 \begin{minipage}{0.19\textwidth}
-\includegraphics[width=\textwidth]{images/anomalien/HS/008112.jpg}
+\includegraphics[width=\textwidth]{images/anomalien/HS/000710.jpg}
 \end{minipage}
 \begin{minipage}{\textwidth}
 \hspace{\textwidth}

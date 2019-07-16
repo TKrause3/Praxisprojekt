@@ -40,4 +40,5 @@
 \contentsline {chapter}{Abbildungsverzeichnis}{46}{chapter*.5}% 
 \contentsline {chapter}{Tabellenverzeichnis}{47}{chapter*.6}% 
 \contentsline {chapter}{Literaturverzeichnis}{50}{chapter*.7}% 
-\contentsline {chapter}{ANHANG}{i}{section*.8}% 
+\contentsline {chapter}{ANHANG}{51}{section*.8}% 
+\contentsline {chapter}{\numberline {A}Vergleichs- und Beispielbilder}{52}{ANHANG.1.A}% 
